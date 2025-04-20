@@ -1,0 +1,1010 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2009/10/surviving-in-degraded-conditio.html">
+<dc:title>Surviving in Degraded Conditions: A Human Analogy</dc:title>
+<dc:description>If you&apos;ve been following my writing of late, you&apos;ll know that I&apos;ve hopped on the Survivability bandwagon with both feet (see my blog post &quot;Defensibility and Recoverability&quot; and the slides from my recent full-day course &quot;Total Enterprise Assurance&quot;). Key to...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-10-05T15:36:33-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2009/10/surviving-in-degraded-conditio.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2009/10/nss-labs-endpoiont-security-re.html" title="NSS Labs&#039; Endpoiont Security Report" />
+    <link rel="next bookmark" href="http://54.197.56.127/2009/10/gainfully-employed-foreground.html" title="Gainfully Employed: Foreground Security" />
+    
+    
+    <title>Surviving in Degraded Conditions: A Human Analogy - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2177" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Surviving in Degraded Conditions: A Human Analogy</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2009-10-05T15:36:33-05:00">October  5, 2009  3:36 PM</abbr>
+
+                                        </span>
+
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2009/10/surviving-in-degraded-conditio.html#trackbacks">1 TrackBack</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>If you've been following my writing of late, you'll know that I've hopped on the Survivability bandwagon with both feet (see my blog post <a href="http://www.secureconsulting.net/2009/08/defensibility_and_recoverabili.html">"Defensibility and Recoverability"</a> and the slides from my recent full-day course <a href="http://falcon.secureconsulting.net/pubs-talks/team-CIScon-2009.pdf">"Total Enterprise Assurance"</a>). Key to this notion of Survivability is being able to operate under degraded conditions. After all, it's not <em>if</em> you're going to be attacked and compromised, but rather <em>when</em>. As such, your organization is already operating under less-than-ideal circumstances. Acknowledge this, accept this, and plan for continuing to operate in such a degraded fashion.</p>
+
+<p>This notion of operating under degraded conditions does not always resonate immediately with people. After all, how can an enterprise function when key systems are under attack or out-right broken? By way of explanation, allow me to provide a human analogy. The human body is, in fact, usually very good at operating under degraded conditions. However, this is not always the case, which can have some very bad results. Allow me to explain further.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>Illness</strong><br />
+Humans are breeding grounds for disease; walking petri dishes of viruses, bacteria, and who knows what else. And yet we continue to exist. Some diseases have had a very strong impact on the human race, nearly to the degree of complete devastation. Many pundits fear the same thing happening again, and soon (hence all the frenzy over Avian Flu and Swine Flu in the past few years, as well as the attention on AIDS in the 80s and early 90s). Regardless, humans continue to survive, and continue to function reasonably well. In fact, without certain "infections" we wouldn't be able to survive at all (e.g. the role of bacteria in digestion). Whether they should or not, humans continue to work and operate heavy equipment (aka "cars") while under the influence of illness.</p>
+
+<p>Similarly, enterprises are rife with infections. They are constantly fighting off viruses, worms, trojans, and various other forms of malicious code (or malware). How well does your organization operate under these degraded conditions? In many cases these days the preferred response to an infected Windows workstation is a wipe and reinstall. How much productivity is lost as a result? More importantly, is it possible to plan for such events such that the impact will be lessened? That is, how do build in tolerance for operating under degrade conditions in the face of infections?</p>
+
+<p>For humans, we build in sick leave and work-from-home policies that allow humans to continue operating despite degraded conditions, and in an effort to limit the effect of infection on other personnel (see my post <a href="http://www.secureconsulting.net/2009/05/presenteeism_and_inadequate_va.html">"Presenteeism and Inadequate Vacation Affect Security"</a> for my thoughts on shortcomings in this current approaches). Progressive organizations are also increasingly promoting healthier living through various "wellness" programs in their organizations, such as by offering flu shots, healthier cafeteria selections, exercise support, support for reducing stress, and so on.</p>
+
+<p>Organizations need to take similar approaches to protecting information resources. They need policies (and standards) that promote the adoption of "healthier" behavior by all personnel. Healthy computing initiatives such as avoiding spam and phishing schemes, safe handling of data, responsible disclosure of sensitive information, and safe web browsing techniques are just a quick sampling of the many opportunities for improvement. Similarly, sysadmins need to adopt and own proactive measures to protect systems and data against attack and compromise, as well as have pre-planned processes in place for dealing with the inevitability of attacks and compromises. You will be operating under degrade conditions at some point in time, if not at all times: plan for it and find way to optimize performance despite it.</p>
+
+<p><strong>Injury</strong><br />
+In many ways, injuries are worse than infections, because their impact, on average, can be far more severe. At the same time, humans seem able to cope with most injuries in a far better way. Why is that? It's unclear, but my guess is that it has to do with the will to survive. Broken arm? No worries, I have another. Broken leg? Splint it, crutch it, move along. Of course, not all injuries are survivable, but we'll assume for the moment that the ones we're talking about here are survivable (death being covered below).</p>
+
+<p>In the enterprise, break-fix is an all-too-common situation. Hardware seems to exist to fail (or so it seems most days). Honestly, there's very little in the organization that isn't subject to break - rules included! This is not, unfortunately, particularly useful in terms of fault tolerance. Broken systems don't work, which means an outage, which means lost productivity, revenue, or worse. Is there a way to operate under degraded conditions that involve a break?</p>
+
+<p>There are a couple ready corollaries to injuries in the computing world, though I'm sure you can think of more. Load-balanced, or otherwise fault-tolerant, systems are one solution. RAID for storage is another. Cloud computing resources and virtualization is another. And son on. The name of the game in each of these is that a single component or system fails, but the failure is absorbed by other components or systems running in parallel. If spares aren't "hot" to take over, then there may be "warm" or "cold" spares at the ready to recover. This is all well-covered territory.</p>
+
+<p>However, let's talk about preventative measures. Human bodies are reasonably frail when considering things like collisions. As such, we've developed several mechanisms to help minimize or prevent injuries stemming from collisions. Pads, helmets, and mouthguards are common in contact sports. Seat belts and roll cages are common in racing vehicles, as are crumple zone and air bags in private vehicles. All of these various preventative measures exist to lessen the damage from an impact; that is, they're designed to minimize injuries and allow the continued operation despite potentially degraded conditions.</p>
+
+<p>Similarly, enterprises can deploy preventative measures to help minimize the damage of various attacks. Backups, data encryption, logging & monitoring, firewalls, intrusion detection & prevention, anti-virus, compartmentalization, strong authentication, incident response planning, and so on, and so forth. These tools exist to not necessarily stop bad things from happening, but to help minimize the damage (think about that for a minute - it's actually a shift in the thinking - do you accept the statement?). Bad things are going to happen. Whether it be a drive failure or a backup tape falling off the back of a truck or an active intrusion into the network. Deployed tools will help with minimizing the damage, but there will be damage (merely having to redirect resources to respond to the situation represents a degree of financial damage). At some point in time, humans will suffer injuries of varying degrees. The same is true for the enterprise. Planning, forethought, and preventative measures can go a long way toward helping minimize the damage while along continued operation under degrade conditions.</p>
+
+<p><strong>Distraction</strong><br />
+One of the more interesting examples of common threats to humans is distraction. First we saw laws requiring the use of hands-free headsets for use with mobile phones (for better or worse). Now we're seeing the emergence of laws prohibiting texting during driving. Humans were already a distractible race, but advances in communication technology has only made that worse. How many more people will walk in front of oncoming traffic while texting, or crash their cars as they text and drive, before we realize that focus is not a bad thing, and that multi-tasking is in fact a myth?</p>
+
+<p>We have similar problems in information assurance/security. Enterprises are frequently distracted by what is commonly called "shiny objective syndrome." That is, the biases of the people making decisions about IT and security are often attracted to what is new and interesting, rather than to what is perhaps challenging and mundane and absolutely necessary. This scenario plays out every week in organizations around the world as they opt to buy cutting-edge technologies that may or may not add value, instead of focusing on the fundamentals of protecting the corporation (see my post <a href="http://www.secureconsulting.net/2009/09/hotel_showerheads.html">"Hotel Showerheads"</a> for my thoughts on failing at the fundamentals, and my older post <a href="http://www.secureconsulting.net/2009/06/cut_through_the_noise_focus_fi.html">"Cut Through the Noise, Focus, Find Success"</a> on the need for focus).</p>
+
+<p>A key failure in the IT industry overall is a shared failure with the business. What is the core purpose, or mission, of the enterprise? What is important to the business? What's the most important data? What operations must continue to support the function of the business? Where is important data stored? How is it protected? How does it traverse the network (ingress AND egress)? These are all key questions that we often seem to busy to ask. If I've seen it once, I've seen it a hundred times. Important projects are derailed, either because of ongoing break-fix problems, or because the attention of key executives cannot be captured for long enough to get important decisions made.</p>
+
+<p>Focus is important. Multi-tasking is a myth. Distractions are plenty. And yet we continue to function despite it all. Distractions represent a common and major form of degradation in operations. Ironically, it's one that can, and should, be easily remedied. Remove distractions, establish focus (and discipline), and see what happens. Oh, and don't go blaming social media for this problem. Distractions existed long before Facebook and Twitter (solitaire, anyone?). It's not the distractions that are at fault here, but rather the culture that tolerates excessive distraction. Culture is set at the top of the organization; the example of executives is almost always followed.</p>
+
+<p><strong>Death</strong><br />
+Perhaps the most critical state of degradation, against which all bets are usually hedged, is death. In the human sense, death is rather final, and really represents the termination of operations. Is there a corollary for the enterprise? In many ways, I think so. I remember several years ago discussing backup sites with a customer. Their corporate HQ was located in the middle of a tornado zone, which meant that HQ could be wiped out any Spring or Summer in the matter of minutes (and, in fact, this nearly happened this year - a tornado missed by well less than a mile, destroying a nearby park). During the out-brief, I asked the VP IT directly "how long would it take to recover from a direct hit to the building, assuming all services were wiped out?" The answer was a sobering "2 weeks to restore data from backups to systems we'd have to acquire on the fly." Suddenly he went pale as he realized what he'd just admitted. Factory workers were paid on a weekly basis, and all payroll processing was now down through central systems at HQ. Given the strength of the union, there was no way they could continue factor operations for 2 weeks without paying employees (many of whom lived paycheck to paycheck). A direct hit would result in major harm to the company, up to and possibly including death. The financial repercussions for all involved would be quite severe.</p>
+
+<p>While few of us like thinking about death, it is in fact a vital part of our planning exercises. Here in the human space we talk about wills and custody. In the enterprise space, we talk about business continuity planning and disaster recovery, and one of the key questions that should be included in those planning discussions is "what would mean death to the enterprise?" It is essential to face mortality, whether it be of the body or the business, and understand the potential impact, the frailty, the strengths, and, more importantly, how to best manage it. Luckily, the enterprise is better positioned to try and avoid death, unlike humans.</p>
+
+<p><em>(Note: This entry is <a href="http://www.t2pa.com/cores/security-and-privacy/practical-security">cross-posted from Truth to Power Association</a>.)</em><br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=degradation&amp;limit=20';return false;" rel="tag">degradation</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20';return false;" rel="tag">infosec</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=survivability&amp;limit=20';return false;" rel="tag">survivability</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">1 TrackBack</h2>
+
+    
+    
+
+
+    
+    
+        
+    <div class="trackbacks-content">
+        
+        <div class="trackback" id="ping-1685">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">How NOT To Build a Security Program</a> from The Falcon's View on <a href="#ping-1685" rel="nofollow">November 13, 2009  5:15 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        Andy Willingham (Andy ITGuy, @andywillingham) had a post up early this week titled "Building a security program from the ground up". It's an interesting read, though a bit on the naive side. Having just come out of an environment where... <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+</div>
+
+
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>October  5, 2009  3:36 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2009/10/nss-labs-endpoiont-security-re.html">NSS Labs' Endpoiont Security Report</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2009/10/gainfully-employed-foreground.html">Gainfully Employed: Foreground Security</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

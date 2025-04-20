@@ -1,0 +1,986 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2011/09/scaling-risk-management.html">
+<dc:title>Scaling Risk Management</dc:title>
+<dc:description>Everybody&apos;s doing it, in some way, shape, or form. It&apos;s inherent in just about every decision in life. Yet, when you try to deconstruct it and look at how it works, as well as try to make it &quot;better,&quot; you...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-09-20T11:05:04-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2011/09/scaling-risk-management.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2011/09/why-netflix-is-splitting-up.html" title="Why Netflix Is Splitting-Up" />
+    <link rel="next bookmark" href="http://54.197.56.127/2011/09/out-of-balance.html" title="Out of Balance" />
+    
+    
+    <title>Scaling Risk Management - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2388" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Scaling Risk Management</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2011-09-20T11:05:04-05:00">September 20, 2011 11:05 AM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>Everybody's doing it, in some way, shape, or form. It's inherent in just about every decision in life. Yet, when you try to deconstruct it and look at how it works, as well as try to make it "better," you end up with some very interesting challenges. I'm talking, of course, about "risk management."</p>
+
+<p>I don't think that anybody would argue that risk management is important. However, that's about where the consensus ends. How you go about doing risk management takes us down a lot of different roads, which diverge based on numerous variables such as the industry you're in, the size of your organization, the types of risk factors you're weighing, and your overall interest and willingness to formalize certain "things" (methods, metrics, etc.).<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>For this post, I want to key-in on one particular challenge: How to scale risk management practices to fit your organization. Researching risk management can take you down a seemingly-endless rabbit hole. This complexity is heightened by the fact that things are continually changing and evolving. The credit crisis triggered in 2008 continues to color our views on risk management, which combines with significant changes in approach that leave a lot in question. More importantly, much of the risk management conversation is being driven by major multi-national orgs in the financial services industry - orgs that have the deep pockets and financial incentive to invest heavily in these practices - but orgs that do not provide very good analogs for "the rest of us."</p>
+
+<p><strong>The Literature</strong></p>
+
+<p>There's no shortage of literature on the topic of risk management these days. I'm not going to pretend to even scratch the surface here, but did want to provide a couple key references.</p>
+
+<p>First and foremost, there's a new joint paper out from the Society of Actuaries, Canadian Institute of Actuaries, and the Casualty Actuarial Society titled <a target="_blank" href="http://www.soa.org/files/pdf/research-new-approach.pdf">"A New Approach for Managing Operational Risk: Addressing the Issues Underlying the 2008 Global Financial Crisis."</a> It's a great read and provides a lot of excellent background information. It's written from the perspective of the insurance industry and financial services, which means it has a distinct bias toward "enhanced" practices more suitable to those verticals. The paper describes what the call "Modern ORM," which is an evolutionary step beyond "Traditional ORM" (ORM, btw, being Operational Risk Management).</p>
+
+<p>Beyond that, there are tons of other references you may want to consider, ranging from <a target="_blank" href="http://www.27000.org/iso-27005.htm">ISO 27005</a> and <a target="_blank" href="http://en.wikipedia.org/wiki/ISO_31000">ISO 31000</a> to <a target="_blank" href="http://csrc.nist.gov/groups/SMA/fisma/Risk-Management-Framework/index.html">NIST RMF</a> to <a target="_blank" href="http://www.cert.org/octave/">CERT OCTAVE</a> to <a target="_blank" href="http://fairwiki.riskmanagementinsight.com/">FAIR</a> to <a target="_blank" href="http://www.coso.org/-ERM.htm">COSO ERM</a> to this <a target="_blank" href="https://public.commentworks.com/CW_DOE_WF/InitiativeDocFiles/46/RMP_Guideline_Draft_for_Public_Comment_08312011-1.pdf">recent draft</a> from the U.S. Dept. of Energy for the Electricity Sector.</p>
+
+<p>Additionally, I'd be remiss if I didn't provide a pointer to the <a target="_blank" href="http://societyinforisk.org/">Society of Information Risk Analysts (SIRA)</a>, without whom this post would be very empty.</p>
+
+<p><strong>An Extremely Brief Primer</strong></p>
+
+<p>There's too much to cover, so allow me to just give you some broad brush-strokes...</p>
+
+<p>1) Enterprise Risk Management (ERM) overarches everything. Underneath it you'll find various other "risk" areas, like ORM, Credit Risk, and Market Risk. Under ORM you'll find InfoRisk (aka "IT Risk" or "InfoSec Risk"). A lot of the focus in financial services today seems to be on ORM, as highlighted by the "Modern ORM" paper mentioned above, in large part because traditional approaches were flawed and contributed to the financial crisis.</p>
+
+<p>2) There are tons of terms. Risk is defined by "Modern ORM" as "...a measure of adverse deviation from the expectation, expressed at a level of uncertainty (probability)." In FAIR, we define risk as "the probable frequency and probable magnitude of future loss." These two definitions are reasonably compatible. Beyond this, we then care about threats (or threat communities) - basically, bad actors who can inflict harm; and, we care about vulnerability, which represents the probability that a threat agent's actions will result in loss.</p>
+
+<p>3) Frequency, Likelihood, Probability, and Possibility. Frequency is a number over time, and it often applies to multiple events over time (e.g. 3 times per year). Likelihood is probability, typically applied to a single event ("what's the probability that X will happen once in time period Y?"). Probability pertains to statistical distributions, which is where we then bring in all sorts of fancy-shmancy stats calculations. Possibility is binary: either it can or cannot happen. Put a single bullet into a revolver and a semi-auto handgun, and they both have a 100% possibility that pulling the trigger will fire the bullet. However, a standard 6-chamber revolver only has a 1/6 probability that the bullet will be fired, whereas the semi-auto has a 100% (1.0) probability of firing with a trigger pull (obviously, assuming everything is in working condition and the safety is off).</p>
+
+<p>There's a lot more that could be said, but it's not necessarily relevant here.</p>
+
+<p><strong>Scaling To Your Needs</strong></p>
+
+<p>In thinking about how best to scale risk management practices I consider a number of different approaches. One place I started was with <a target="_blank" href="http://en.wikipedia.org/wiki/Capability_Maturity_Model_Integration">CMMI</a> to see if there was a logical mapping that could be done in a useful way. The CMMI levels are generically listed as:<br />
+<blockquote>Level 1: Initial - Processes unpredictable, poorly controlled and reactive<br />
+Level 2: Managed - Process characterized for projects and is often reactive<br />
+Level 3: Defined - Process characterized for the organization and is proactive<br />
+Level 4: Quantitatively Managed - Process measured and controlled<br />
+Level 5: Optimizing - Focus on process improvement</blockquote></p>
+
+<p>While these levels are interesting and potentially useful in terms of defining a maturity model for risk management, they do not lend themselves to scaling practices. Let me explain... when I talk about "scaling" here, I'm not necessarily talking about getting a foothold and then expanding and refining those practices. Instead, I'm talking about taking the megalithic practices used within financial services, reducing them to the bare minimums that can then be used by SMBs and other businesses looking to get a start. In a way, there's a potential relationship to a maturity model, but for the purposes of this post I'm not really wanting to go that route (some day I hope to revisit the topic of an ERM maturity model, though).</p>
+
+<p>Suffice to say, a maturity model is interesting, but not useful for scaling things down. The questions then remain: What's essential to RM practices? What are the minimum pieces necessary for smaller orgs to make use of what we've learned without being crushed by the load? As such, I've boiled things down to three (3) key steps.</p>
+
+<p><em>Step #1: Know Thyself</em></p>
+
+<p>First and foremost, you need to know what you have and what your tendencies are. What are your assets? Where are there? How are they protected? Who has access to them? What sort of incidents would be most disruptive or damaging to your business? Much of this information can be gathered informally, and stored in something as simple as a spreadsheet. If you can't articulate what's most important to your business, then you're not going to be able to do much with risk management. How you assess it can vary widely, but what's important is getting a good, comprehensive list on what's important, and then vetting that list to make sure you're not making unsupported assumptions about the values assigned.</p>
+
+<p><em>Step #2: Vision & Strategy</em></p>
+
+<p>Once you know what's important to your business you can then start articulating a vision and strategy. Your vision should be - quite literally - a mental image of how you want things to look. This should impact your strategy for making decisions. In essence, you take the list of assets you've gathered from Step #1 and think about what you're willing to do to protect them. Your vision should address the ideal, while your strategy tempers that vision with a touch of reality. Are there are things that you can do to help achieve that vision? Make a plan and start executing against.</p>
+
+<p><em>Step #3: Find Your Balance</em></p>
+
+<p>There is no shortage of "guidance" on risk management, risk assessment, risk analysis, and so on. It's overwhelming! And, frankly, much of it can be ignored unless you're a major multi-national financial services corporation. If your entire (non-financial services) company is less than 2,000 people, then I'm going to find it unlikely that it makes sense to have a 5-person team dedicated to deep risk analysis (I could be wrong). As you continue scaling things down, say to a 50-person company, the thought that even 1 person would be dedicated full-time to risk analysis seems unrealistic. And, yet, we know that these companies still need to follow reasonable risk management practices (PCI DSS tells me so!;).</p>
+
+<p>The key, then, is finding a good balance. Building and maintaining an asset inventory that includes intellectual capital, applications, and people is a good starting point. Building some lightweight loss tables around those key assets is also a reasonable step. Again, if you know what's important to your business (Step #1), then it becomes much easier to think about how to best protect those assets and, more importantly, how to protect the business against an event leading to loss of that asset. The rest is a matter of finding reasonable balance in making decisions to protect the business. Maybe you'll decide to shoulder certain risks and then self-insure against possible losses. Maybe you'll decide to invest heavily in security measures to protect a data asset. Or maybe you'll decide to outsource everything so that you can make it <a target="_blank" href="http://en.wikipedia.org/wiki/Somebody_Else's_Problem">Somebody Else's Problem (SEP)</a>.</p>
+
+<p>And, that's it... sure, you can do more (LOTS more)... but is it necessary? That's up to you, and depends largely on what you find through these three steps. Maybe your business would greatly benefit from a dedicated risk analyst whose job entails running complex quantitative risk analyses. Or, maybe the mere thought of that is ludicrous and you simply need to make sure that decisions follow a reasonable process that accounts for potential negative (and positive) impact to key assets. Ultimately, it's up to you. However, having <em>something</em> in place is almost certainly better than nothing.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>September 20, 2011 11:05 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2011/09/why-netflix-is-splitting-up.html">Why Netflix Is Splitting-Up</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2011/09/out-of-balance.html">Out of Balance</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

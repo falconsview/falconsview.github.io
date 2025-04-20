@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Evolving OWASP: Reflections on the 2011 Summit  (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2011/02/rsa_2011_books_talks_and_where.html" title="RSA 2011: Books! Talks! (and where I'll be) " />
+   <link rel="next" href="http://www.secureconsulting.net/2011/02/why_i_failed_as_highwinds_secd.html" title="Why I Failed As Highwinds SecDir" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2011/02/evolving_owasp_reflections_on.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/1093"
+    dc:title="Evolving OWASP: Reflections on the 2011 Summit "
+    dc:identifier="http://www.secureconsulting.net/2011/02/evolving_owasp_reflections_on.html"
+    dc:subject="infosec"
+    dc:description="For full Summit coverage and follow-up, check out the OWASP Summit 2011 page. I&apos;m not even home yet, and already my brain is churning. I left Lisbon this morning, heading for home, and then on to San Francisco for RSA-related..."
+    dc:creator="Ben Tomhave"
+    dc:date="2011-02-11T09:43:09-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2011/02/evolving_owasp_reflections_on.html">
+<dc:title>Evolving OWASP: Reflections on the 2011 Summit </dc:title>
+<dc:description>For full Summit coverage and follow-up, check out the OWASP Summit 2011 page. I&apos;m not even home yet, and already my brain is churning. I left Lisbon this morning, heading for home, and then on to San Francisco for RSA-related...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-02-11T09:43:09-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2011/02/rsa_2011_books_talks_and_where.html">&laquo; RSA 2011: Books! Talks! (and where I'll be) </a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2011/02/why_i_failed_as_highwinds_secd.html">Why I Failed As Highwinds SecDir &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Evolving OWASP: Reflections on the 2011 Summit </h2>
+                     <div class="entry" id="entry-2330">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>For full Summit coverage and follow-up, check out the <a target="_blank" href="http://www.owasp.org/index.php/Summit_2011">OWASP Summit 2011 page</a>.</p>
+
+<p>I'm not even home yet, and already my brain is churning. I left Lisbon this morning, heading for home, and then on to San Francisco for RSA-related "festivities" the next day, but since I'm stuck on a plane for several hours here, I thought it would be a good time to jot down some thoughts. Actually, I started making notes in the car this morning en route to the airport... here how it starts:<br />
+<blockquote>As we raced down the highway in excess of 150kph, flying through the lush green hills, kissed by the slowly lifting fog, I couldn't help but let my mind wander freely over this trip and the past couple days. I leave Portugal with a few conclusions:<br />
+&nbsp;&nbsp;&nbsp;* OWASP is doing good and important work.<br />
+&nbsp;&nbsp;&nbsp;* OWASP is going through a transitional period, in part related to generational ascendence.<br />
+&nbsp;&nbsp;&nbsp;* OWASP is strong and filled with wonderfully passionate people.<br />
+&nbsp;&nbsp;&nbsp;* OWASP is application security.</blockquote></p>
+
+<p>Perhaps the writing is a bit over the top, but it's how I feel after what I can only describe as an interesting, yet strangely energizing, event marked by the expression of strong sentiments and passionate drive to make the world a better place. Allow me to expound...<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p><strong>Passionate People</strong></p>
+
+<p>What was the Summit, exactly? Well, it was kind of like a conference, except different. Instead of traditional talking-head lectures, pretty much everything was couched as a hands-on workshop or interactive discussion. It was extremely rare to have a single person at the lead, and in all cases there was a high degree of engagement from participants. Walking between sessions during the day, and even wandering between sessions Wednesday night, it was amazing to see so many openly participating (contributing!) to projects, discussions, and workshops.</p>
+
+<p>Nowhere was passion more readily demonstrated than in the "governance" dynamic session Tuesday evening. People I know and respect got up and voiced their concerns in no uncertain terms. By the end of the night, a clear direction had been laid out, all the while clearing out the bile that had boiling up in some over the course of the year (or more!). Growing mains, miscommunication, and confusion is inevitable as organizations rapidly grow and move; especially an organization that is tackling such a daunting mission of enable application security globally.</p>
+
+<p><strong>Up-n-Coming Leaders</strong></p>
+
+<p>Helping drive much of the passion within OWASP is an emerging cadre of younger leaders. There's nothing more thrilling than seeing the next generation begin to assert itself and start taking ownership of projects and leadership roles. It is only through the dedicated efforts of these new leaders that OWASP will continue to grow and succeed.</p>
+
+<p>Another remarkable point was the degree of participation from our European counterparts. This is the first forum where I've truly seen international collaboration on a truly ubiquitous scale. It was awesome to meet so many non-Americans with such a strong passion for OWASP and appsec. I should also note that it's not <em>just</em> the Europeans, either, but also the Brazilians, who are building strong leadership cadres to promote and grow OWASP locally and global.</p>
+
+<p><strong>Room for Improvement</strong></p>
+
+<p>It would be fool-hardy to somehow imply that OWASP was already adequate, as nothing could be further from the truth. As is true of most things, there is ample room for improvement. Specifically, there are some tough issues that are going to need to be addressed aggressively in the coming months and years:<br />
+&nbsp;&nbsp;&nbsp;* <em>Process Development/Improvement</em>: By it's own admission, the board is not currently strictly following its defined processes when it should be. Its made a commitment to resolve that matter. But, more than that, there is a general lack of formal processes within the organization, which can lead to confusion, miscommunication, and decisions made without following due process. This area will be one of the largest obstacles to overcome in the near-term as it is exceedingly difficult to introduce more rigorous process within a well-established, mid-sized organizations. At the same time, there is a certain degree of irony in OWASP not having very good processes when so many of us actively promote formalizing SDLs wherever possible. ;)</p>
+
+<p>&nbsp;&nbsp;&nbsp;* <em>Formal, Documented Rules (aka "policies)</em>: It's likely that the governing by-laws will need to be amended, at least to a small degree, if for no other reason than to make them better reflect the current status of the organization. However, additional rules need to be established, such as spelling out roles and responsibilities, how authority is delegate, who can become project or committee leads, etc, etc, etc. Everybody is working for the greater good of OWASP, but it's time to put some formal definition around what that means, or what the consensus leadership believes meets the objective of "greater good."</p>
+
+<p>&nbsp;&nbsp;&nbsp;* <em>Improved Communication</em>: Communication is not particularly good within OWASP. There's a lot of confusion, there are a lot of lists, there's no easy way to access most of the information, and so on and so forth. The next point will speak to one of the main obstacles today (the web site), but beyond that there are other improvements to be made. OWASP has mailing lists, twitter, and the web site through which information can be published. For all I know, there might also be a blog. There's no excuse for various announcements not to be heard, and yet that's exactly what is happening today. E.g., external consultants have been retained to help formalize and improve the vision, mission, objectives/goals, and so on. Very few people knew this was going on, despite an assertion that it had been announced. And here the board just figured nobody cared to review what had been proposed... d'oh! My expectation is that leadership will diligently work to greatly improve communication this year. I hope that they formalize rules and processes around this area, too.</p>
+
+<p>&nbsp;&nbsp;&nbsp;* <em>Revamped Web Site</em>: The current OWASP web site rather sucks. It's true! It is nye on impossible to find things on the site. Many people (myself included) use Google instead of the built-in search engine because the site is just that broken. Part of the problem is organization (or lack thereof), part of the problem is too much stale/outdated content that should have been archived years ago, and part of the problem is general maintenance. The underlying code was upgraded recently to improve the basic functionality of the platform, but much more will need to be done. Thankfully, there is a group of interested, passionate people working on developing recommendations as a direct outcome from the Summit.</p>
+
+<p><strong>Willingness to Evolve, Motivated to Serve</strong></p>
+
+<p>Perhaps the most pleasant surprise for me was the openness of the current "old guard" leadership to suggestions for change. Change is necessary and important, especially given how rapidly the organization has grown these past few years. Everybody I spoke with expressed a willingness to do what was right for OWASP, and that translated directly to a willing to change. Never have I seen such a strong balance between outright passion and willing flexibility.</p>
+
+<p>Along these same lines, this group of people we call "members" is really quite remarkable. Smart, motivated, and innovative. It was exceedingly wonderful to see a lack of resistance to innovation, and in fact it was great to see such an interest in evolving practices and the organization. Case-in-point, I led an hour-long "dynamic" session (that is, ad hoc) on formal risk assessment methods that had a full room. Never in my life did I think that I would get a dozen or more interested parties in a room talking about risk assessment, the differences between qualitative and quantitative, the need to define labels/ratings, and so on. It was wonderful! :)</p>
+
+<p><strong>A Promising Future</strong></p>
+
+<p>For as much work as was accomplished this week, I believe that we will historically only see this as a blip on the radar. Though the Summit had been billed as "building OWASP 4.0" I think it really was perhaps more along the lines of v3.5. We do not need a bunch of wholesale changes, but rather a handful of well-considered, targeted changes addressing the issues I've listed above. This is very good news! Going into the Summit I had concerns about the future of the organization, but now I'm reasonably optimistic about things. The next step is to figure out how I can help out more. I hope that you'll join me in formally engaging with OWASP, either as a leader or a volunteer, and always as a member. There are tons of projects that need help, there are committees that need more people, there are events that need volunteers, and there are leaders who need honest feedback and suggestions.<br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=2011&amp;limit=20" rel="tag">2011</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=OWASP&amp;limit=20" rel="tag">OWASP</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=Summit&amp;limit=20" rel="tag">Summit</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on February 11, 2011  9:43 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2011/02/evolving_owasp_reflections_on.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/1093</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2330" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2330);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>February 11, 2011  9:43 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2011/02/rsa_2011_books_talks_and_where.html">RSA 2011: Books! Talks! (and where I'll be) </a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2011/02/why_i_failed_as_highwinds_secd.html">Why I Failed As Highwinds SecDir</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

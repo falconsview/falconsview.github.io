@@ -1,0 +1,1093 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2010/06/its-your-methods-not-your-madn.html">
+<dc:title>It&apos;s Your Methods, Not Your Madness</dc:title>
+<dc:description>There has been a lot of negative, cynical chatter lately about risk assessment and risk management. The average person doesn&apos;t understand it, and people who should understand it oftentimes throw up their hands in despair when citing examples such as...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-06-01T15:59:37-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2010/06/its-your-methods-not-your-madn.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2010/06/best-practice-youre-saying-it.html" title="&quot;Best Practice&quot; (You&#039;re Saying it Wrong)" />
+    <link rel="next bookmark" href="http://54.197.56.127/2010/06/free-advice-for-adobe.html" title="Free Advice for Adobe" />
+    
+    
+    <title>It&#039;s Your Methods, Not Your Madness - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2256" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">It's Your Methods, Not Your Madness</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2010-06-01T15:59:37-05:00">June  1, 2010  3:59 PM</abbr>
+
+                                        </span>
+
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2010/06/its-your-methods-not-your-madn.html#trackbacks">1 TrackBack</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>There has been a <em>lot</em> of negative, cynical chatter lately about risk assessment and risk management. The average person doesn't understand it, and people who should understand it oftentimes throw up their hands in despair when citing examples such as the failures of Wall Street that led to the current economic mess. Unfortunately, all of this despair and cynicism seeks to throw out the baby with the bath water, as if to say that one bad apple spoils an entire orchard.</p>
+
+<p>To me, I think the biggest challenges to risk management today lie in a few key areas: accountability, consequences, and formalized assessment methods. The first two areas are easy to explain. If you're doing a good job assessing and managing risk, then you can start holding people accountable for their decisions and actions. That accountability should then lead to consequences (positive <strong>or</strong> negative). Unfortunately, we live in an era where we fear failure, and thus pad ourselves, our families, our investments, and our country against suffering negative consequences. Without negative consequences, what is the point of managing risk?<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>The last area, I think, is where much of the focus has turned as of late in the infosec industry. Formalized risk assessment methodologies are still generally immature, and they can frequently be problematic. However, many of the arguments made are divisive at best and willfully ignorant at worse. We should be very concerned about this last type of argument, because it tends to lead to a path of FUD, fueled by pseudo-experts who stir the pot with confusion with unknown intentions.</p>
+
+<p><strong>A Bit of Background</strong><br />
+Before going into the various arguments about risk assessment and risk management, it's first important to know a little bit about the conversation, key players, and history.</p>
+
+<p>Key players:<br />
+ * "quals" - This group of people make use of "qualitative" risk assessment practices. That is, rather than use numbers and calculations, they instead develop rubrics that are descriptive in nature.<br />
+ * "quants" - This group of people make use of "quantitative" risk assessment practices. They rely heavily on statistical methods, seeking to put numbers, math, and science behind their reasoning.<br />
+ * "risk cynics" - There is an increasingly vocal group of cynics that repeated make arguments about how risk assessment is a failed discipline, how it will never succeed, and pointing out what they see as fatal flaws in the various approaches. Their arguments tend to be monotonous and repetitive, and you'll note that they generally just tear down without offering viable alternatives.<br />
+ * "indies" - This last group, of which I consider myself part, represents the hopeful few (or maybe many - it's hard to know) who believe that risk assessment and management has a viable future, but we do not generally fall cleanly into any of the above categories. Maybe I should have called this group the "risk optimists," but that wouldn't be completely accurate, either. Maybe realists... ;)</p>
+
+<p>I'll go into more detail below about the typical worn arguments, but here's a quick summary:<br />
+ * "inadequate data" - One of the most common arguments is that we don't have enough data from which to derive reasonable estimates for anything (loss, probability, frequencies, etc.). The actuarial tables leverage by the insurance industry are frequently cited, with a quip that since no such thing exists for infosec, then there's nothing we can do.<br />
+ * "faulty value/loss estimates" - Related to the first argument, this argument keys in on the estimates used to measure impact of a loss event and flames that we cannot reliable estimate the impact of an event like a breach. Sure, we might know how much it would cost to monitor, discover, and recover from a breach, but what about the enduring impact, such as to stock price or consumer confidence?<br />
+ * "faulty probability estimates" - Also related to the first argument, this arguments looks specifically at the probability estimates typically used in risk calculations and says "there are too many unknowns - especially unknown unknowns - to make these estimates even remotely reasonable." This line of argument tends to lead to the next quip.<br />
+ * "unknown unknowns" - My favorite argument is the one that essentially says "we don't know everything, thus we can't know anything." Because the world is infinite, there are threats and vulnerabilities that we have no envisioned, which means we thus cannot estimate their likelihood of occurring, let alone their impact to the business.</p>
+
+<p>We'll go into a lot more detail below, but this should give you a good starting point for now. The big thing to bear in mind with risk management as a discipline is that it has been around for a long time and is, in fact, very mature. Information risk management is a relatively new subset within the overall discipline, and it's suffering through growing pains as one might expect, but that does not nullify the entire discipline, as we'll now see.</p>
+
+<p><strong>Data Suckage</strong></p>
+
+<p>The most common starting point for criticism of information risk management is to target the data. Common complaints are:<br />
+ * There isn't enough data.<br />
+ * The data isn't reliable.<br />
+ * The data isn't consistent.<br />
+Each of these complaints are valid, at least to a point. However, like with everything else you'll see in the ensuing sections that there are ways to mitigate these concerns, not entirely, but to a level that makes it acceptable and useful.</p>
+
+<p><em>Not Enough</em></p>
+
+<p>The first quip, particularly from the crowd affectionately referred to as "concretists," is that there simply is not enough data. If only we had reams upon reams of actuarial data like ye olde insurance firm, then <em>perhaps</em> we might be able to make use of it. Of course, this is really just a cop-out argument, and one that ignores current practices in statistics and probability.</p>
+
+<p>First and foremost, some data is better than no data. Second, even if that data is "salted" (i.e. not all good), it's still useful to us. Through the mathmagic of Bayesian statistics, we can still run calculations and distributions. What we will find, particularly through use of Monte Carlo simulations, is that less data may not have a high degree of confidence, or the scatter plot may be a bit scattered. However, as our data grows, so will our scatter focus, which is all a good thing.</p>
+
+<p>Second, you have to start somewhere. I think the sad part of this "your data sucks" argument is that the "do nothing" alternative is not useful. Of course, this argument often comes from quals who like to go in and make arbitrary assessments that have no grounding in reality. It's sad, really, because if you have some known good data, why would you ignore it and simple run on supposition? It maketh no senseth.</p>
+
+<p>Last, I have to hold to account certain people who use this flog this flagging argument (especially certain "retired" people who yet persistent into their old age meddling in affairs they no longer seem to understand - as a complete non sequitor, I don't think you get to call yourself "retired" if you continually engage in conversations within the industry, and it's even all that much more perplexing that you might use the "I'm retired" excuse when confronted with new research and approaches, yet still like to try tearing these new methods down). Data has been gathering dust in annals for decades now. Why isn't it publicly available? On the flip side, who cares about data more than 20 years old? Yes, the data is lacking, but then again this whole Internet thing has really only been amped up and taken serious by businesses for the south side of 15 years. Give it a little time, eh?</p>
+
+<p><em>Not Reliable</em></p>
+
+<p>Apparently what we need in this world is perfection. It's the ultimate goal, isn't it? It's also not realistic. There is no such thing as perfect data. Or practices. Or methodologies. Please get over it.</p>
+
+<p>Some data is better than no data, even if we recognize that the data is not perfect. As just noted above, we really have less than 15 years of run time during which to gather data. Realistically, it's even less than that - probably more in the range of 10 years. We hear complaints about the reliability of the data we're using, with citations to software engineering theory, but the simple fact is that we can only work with what we have while we develop more.</p>
+
+<p>The data is reliable, assuming you know how to break it out and use it. Look at the <a target="_blank" href="http://www.attrition.org/">Attrition archive</a>. There is adequate data available to make use of for analysis. If we can do trending analysis off this data, then we can absolutely do risk analysis as well.</p>
+
+<p>The key, however, is making sure that we factor in confidence and not work with single absolute numbers. We know the data is a bit unreliable, so we can account for that explicitly. To that end, we typically want to work with ranges instead of single numbers. The tighter the range, the higher our confidence, which will then show through our calculations and visualizations. Notice that this whole time we're still able to make use of the data available.</p>
+
+<p><em>Not Consistent</em></p>
+
+<p>One of the more valid of the concerns about data is its consistency. In this context, I'm talking really about the consistency of its collection and classification. Data breach reporting is a perfect example where, in lieu of standard reporting requirements, we don't necessarily get the same types of data each time. This is a problem that I<a target="_blank" href="http://www.attrition.org/">Attrition</a> and the likes encounter on a regular basis. And even if you have a standard data collection approach, such as <a target="_blank" href="http://securityblog.verizonbusiness.com/2010/02/19/veris-framework-2/">Verizon Business's VerIS Framework</a>, you may still run into consistency challenges when comparing one repository to another (e.g. comparing the Verizon DBIR to Veracode to WASC to Attrition).</p>
+
+<p>This challenge underscores the need for mandates and standardization around data breach reporting, in particular, but it also highlights that we need to be cognizant of where we're getting our data when we start acting on it. We want as much data as possible for the short history available, and we want it to be as reliable as possible, which then means we need to work extra hard on standardizing data sets to ensure consistency and to help weed out bad data, among other things. Little tweaks, such as ensuring that we have consistent placeholder use, can go a long way toward helping ensure that our data is more usable and useful.</p>
+
+<p>In the end, of course, we come back to the same quip as above: some data is better than no data, even if our data confidence is only moderate. Once you have a start, you can then refine your models and data sets over time to ensure better quality data, and to improve your overall analysis.</p>
+
+<p><strong>Method Suckage</strong></p>
+
+<p>Before I launch into this section, if you've not read my post <a target="_blank" href="http://www.secureconsulting.net/2010/05/compliance_risk_management_are.html">"Compliance & Risk Management Are Not the Devil"</a>, then please hop over there for a minute and do so. In particular, check out the section "Risk and Intrinsic Value" for a preview of what I'm about to say...</p>
+
+<p>The next most common argument against information risk assessment is that the methodologies are wholly inadequate. Typically this criticism is leveled against the qualitative methods out there, because, frankly, they're generally quite inadequate. Not to completely discount qualitative assessments, because there is a time and a place, but we need to be careful to separate them out from other types of methods, if only for the purposes of quality and comparison. Back to this in a moment.</p>
+
+<p>One of the primary problems with methods is the historical reliance on <a target="_blank" href="http://www.riskythinking.com/glossary/annualized_loss_expectancy.php">Annualized Loss Expectancy (ALE)</a>. More often than not we end up getting ourselves into trouble by pulling arbitrary numbers out of dark places, when instead we need completely transparency and illumination to see how a number was calculated or derived (as with crypto research, insight into how numbers are manufactured is vital to proving the integrity and reliability of the system). As noted above, where we get our numbers from is rather important, especially when we are performing a quantitative risk assessment.</p>
+
+<p>Too much time is wasted on this attack, though. ALE is not an end-all-be-all kind of number, and is really heavily abused. Frankly, it's just downright wrong to be using it on its own. It needs proper context, which is lacking in a standalone number. More importantly, we shouldn't be using single numbers, but rather ranges. At the same time, it is also valuable to adopt <a target="_blank" href="http://riskmanagementinsight.com/riskanalysis/">Jack Jones'</a> preferred approach of breaking these estimated impacts into primary and secondary. It turns out that we can fairly reliable estimate what our real, direct costs will be for a given security incident. It's the indirect costs where we tend to see much broader scatter, and thus need to compensate accordingly.</p>
+
+<p>The specific quip that I read recently was that there's "no sound method of actually measuring loss magnitude" (sorry, but I've lost the source of the quote, though I think it came from <a target="_blank" href="http://securosis.com/blog/firestarter-the-only-value-loss-metric-that-matters">the Securosis thread on ALE</a>). This quip is about half right. Yes, ahead of time it is extremely difficult to accurately estimate the combined primary and secondary impact. However, getting back to semantics, there are a few key points:<br />
+ * <em>How much accuracy do we need?</em> As we've already discussed, using ranges can help us improve our estimates, and then we can perform statistical analysis on multiple data sets to improve these estimates. But let's not forget that we are not talking about an exact science here. If we were, then we'd not be having these arguments, nor would we be relying on statistical models quite so much. We need enough accuracy to make quality decisions, but we should not believe in some mystical, magical "perfect" result that will solve all problems.<br />
+ * <em>Splitting impact between primary and secondary helps.</em> We can estimate our direct costs fairly well. We know how much hardware, software, and resource time costs. We have a pretty good idea how long it takes to detect and correct major classes of issues. It's the secondary costs where we have a lot more fudge factor. However, at the same time we have enough large examples of security incidents that we can make a reasonable guess at how expensive an incident could be, even if we're using a wide range like $1 to $500m (though obviously want a tighter range than that). Remember, the goal here is providing good enough assessment results to make quality decisions.<br />
+ * <em>Why are focusing so heavily on impact?</em> The focus on financial cost is natural to the business, but it also seems to have its roots in the long-since-debunked myth of Security ROI (or ROSI). Risk management decisions based on information risk assessment and analysis should not be oriented toward trying to estimate a return, but rather on loss control/management. Infosec is trying to helping defend against, and optimize recovery of, security incidents. Information risk management provides us with useful data points to see where we need to improve our spends to help optimize <a target="_blank" href="http://www.secureconsulting.net/2009/08/defensibility_and_recoverabili.html">defensibility and recoverability</a>.</p>
+
+<p><em>Consistency: The Risk Analysis Panacea? (not)</em></p>
+
+<p>Jack Jones has a great post up titled <a target="_blank" href="http://riskmanagementinsight.com/riskanalysis/?p=726">"Managing Inconsistency"</a> in which he talks about this dream state of having consistency between assessments. In the dream state, two assessors will walk into an organization with their own tools and will produce results that have high degree of parity. That is, they will gather their own data, make their own calculations, and yet find that they get the same effective results. It's a nice idea, but is it really all that important? (answer: yes and no)</p>
+
+<p>On the one hand, yes, we do need consistency. Without consistency we then get into issues of integrity and bias. I'm too lazy to go grab the citation at this point, but there's been at least one study released recently that shows how security managers tend to skew roadmaps to their own personal bailiwicks instead of doing what's right by their respective organization. So, yes, we need consistency in order to help reign in some of the chaos that comes from implicit and explicit bias.</p>
+
+<p>However, on the other hand, we need to make sure that we don't look to info risk management as some sort of panacea. Instead, info risk management is a tool in the overall toolbox that we need to use in infosec, just like words are the tools we use to build and convey thoughts. The English language is very instructive on this point in that there are typically multiple ways to say something, getting the same meaning across, all while using different words or word-order. E.g. "My name is Ben." and "Ben is what I am called." are functionally equivalent, and yet they are completely different sentences. What degree of parity is necessary?</p>
+
+<p>The key points here, derived from Jack's post above, are that variance in risk assessment and analysis is manageable, and it is secondary to the overall outcome of the method and the ability of management to make meaningful use of the method's results. As with the data concerns, if we go into an assessment knowing that there is the potential (likelihood) for variance, we can then compensate for it programmatically. Over time, our methodologies should become refined and better tuned to help reduce variance, but until then, we simply need to compensate for it.</p>
+
+<p><em>Methods, Methods Everywhere</em></p>
+
+<p>One last point here is that there a numerous methods, and they're not necessarily all the same or equal. Check out Chris Hayes' quick poll <a target="_blank" href="http://risktical.com/2010/05/25/impromtu-it-risk-assessment-poll/">"Impromtu IT Risk Assessment Poll"</a> for a quick list of a couple approaches. Also note the results and just how many people have no formal approach at all.</p>
+
+<p>We need to start moving more aggressively away from the "security is more art than science" mentality here. In my mind, you don't get to complain about data or methods if you're not helping address the deficiencies. If you're relying on WFITW (Wet Finger In The Wind), then you're as much a part of the problem as those cynics who seek to tear down any serious attempts at improving the situation.</p>
+
+<p><strong>Unknown Unknowns</strong></p>
+
+<p>The final common argument - and by far the most inane - against risk assessment is that of death by unknown unknowns. The argument goes that, because we lack data, and because we don't really know what else is out there (in terms of threats, vulnerabilities, and attackers), then we simply can't make any sort of reasonable estimate of anything. This argument is akin to the iceberg analogy, saying that we can plan all we want for the visible tip of the iceberg, but we'll eventually be sunk by the other 7/8ths of the iceberg that's hidden under the surface.</p>
+
+<p>Of course, there are some problems with this argument. First, we now know how to deal with icebergs. Sonar didn't originally exist, but it sure does now, allowing us to better foresee the problems posed. Second, our statistical analyses leverage ranges to better compensate for unknowns. Third, while we need to care about unknowns, we can also compensate for them directly. There is no requirement to exhaustively enumerate all threats in the universe. Instead, we can take an information-centric approach, choosing to look at ways to optimize <a target="_blank" href="http://www.secureconsulting.net/2009/08/defensibility_and_recoverabili.html">defensibility and recoverability</a>, which is in-and-of-itself a sound strategy.</p>
+
+<p>The bottom line is this: as with all the arguments, we know that we're not dealing with or striving for perfection, and can thus compensate accordingly. In all of these arguments are grains of truth, but none of them are insurmountable. Moreover, given an alternative of "doing nothing" or "working blindly," I'll happily take approaches with a known margin for error.</p>
+
+<p><strong>Cynic Suckage</strong></p>
+
+<p>There's much I could say here about the cynics, but I think I can boil this down to 2 quick points:<br />
+1) Go read David Mortman's post <a target="_blank" href="http://newschoolsecurity.com/2010/06/decision-making-not-analysis-paralysis/">"Decision Making Not Analysis Paralysis"</a>.<br />
+2) If you're criticizing without contributing, then you're not really helping much.</p>
+
+<p>We've come to a weird place in the evolution of this industry. After a plateau of more than a couple years, we're now seeing a huge backlash against misunderstood areas like risk management. It's time to quit whining about the problem and start helping to solve it. My recommendations for minimal action are:<br />
+1) Contribute financially or as a volunteer to the <a target="_blank" href="http://opensecurityfoundation.org/">Open Security Foundation</a>.<br />
+2) Drive your organization to opt into data breach reporting using a framework like the <a target="_blank" href="http://securityblog.verizonbusiness.com/2010/02/19/veris-framework-2/">VerIS Framework</a>.</p>
+
+<p>The next time you see a risk cynic attacking risk assessment and analysis, please do the courageous thing and ask them for alternative solutions. And, when they tell start telling you about their "due diligence" approach, feel free to roll your eyes and ignore them the rest of the day/week/month/life. Not only is a "due diligence" approach antiquated, but even my <a target="_blank" href="http://www.secureconsulting.net/2010/03/legal_defensibility_doctrine.html">legal defensibility approach</a> leaves room for information risk management.</p>
+
+<p><strong>Path to the Future</strong></p>
+
+<p>Information risk management provides us with a viable future. It will, in fact, continue to be core to what we should be doing from an overall assurance perspective. That being said, there are a few cliches that we should keep in mind as we march on:<br />
+ * Security is a journey, not a destination.<br />
+ * Perfection is a myth that does not help us evolve the industry. Idealism, on the other hand, is very useful, so long as it's tempered by a touch of realism. Idealism is <em>not</em> the same as perfection.<br />
+ * There are no silver bullets. Risk is no panacea.<br />
+ * Risk management is not broken, but rather is evolving and improving over time.<br />
+ * Recent failings in risk management (e.g. Wall Street and the economy) are reflective of the need to ensure that the risk v reward balance, complete with negative consequences, must be allowed to function and flourish. If you remove negative consequences, then there's no reason reason to manage risk.<br />
+ * This isn't Lord of the Rings: there isn't one risk measurement to rule them all. Different valid approaches exist, just as there are different data sources with equally valuable, yet distinct, datasets.<br />
+ * There is a time and place for constructive criticism. Outright, non-contributory cynicism does not qualify as constructive criticism.</p>
+
+<p><em>If you've found this post to be interesting or useful, or if you have an interest in earnestly contributing to the development and evolution of information risk management, then I highly recommend joining <a target="_blank" href="http://groups.google.com/group/InfoRiskSociety">"The Society of Information Risk Analysts"</a> mailing list over on Google Groups.</em><br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20';return false;" rel="tag">infosec</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=management&amp;limit=20';return false;" rel="tag">management</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=risk&amp;limit=20';return false;" rel="tag">risk</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">1 TrackBack</h2>
+
+    
+    
+
+
+    
+    
+        
+    <div class="trackbacks-content">
+        
+        <div class="trackback" id="ping-1707">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2010/06/supposition_and_the_drum_beat.html" rel="nofollow">Supposition and the Drum Beat of (Cyber)War</a> from The Falcon's View on <a href="#ping-1707" rel="nofollow">June 29, 2010  3:48 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe." -Albert Einstein The subtitle for this piece could easily be "a whole lotta stupid goin' on." Is it something about summertime, or have we... <a href="http://www.secureconsulting.net/2010/06/supposition_and_the_drum_beat.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+</div>
+
+
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>June  1, 2010  3:59 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2010/06/best-practice-youre-saying-it.html">"Best Practice" (You're Saying it Wrong)</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2010/06/free-advice-for-adobe.html">Free Advice for Adobe</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

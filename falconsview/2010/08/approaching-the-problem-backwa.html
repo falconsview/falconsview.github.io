@@ -1,0 +1,1022 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2010/08/approaching-the-problem-backwa.html">
+<dc:title>Approaching the Problem Backwards</dc:title>
+<dc:description>I&apos;ve read recently, with much interest, a post by Martin McKeay about how he would redesign the PCI framework, as well as an in-depth summary from InfoLawGroup about the most recent entry into the draft legislation pool on security and...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-08-24T11:08:14-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2010/08/approaching-the-problem-backwa.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2010/08/cyber-war-and-the-value-of-fud.html" title="Cyber War and the Value of FUD" />
+    <link rel="next bookmark" href="http://54.197.56.127/2010/09/missing-the-defense-in-dod.html" title="Missing the &quot;Defense&quot; In DoD? " />
+    
+    
+    <title>Approaching the Problem Backwards - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2286" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Approaching the Problem Backwards</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2010-08-24T11:08:14-05:00">August 24, 2010 11:08 AM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2010/08/approaching-the-problem-backwa.html#comments">1 Comment</a>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>I've read recently, with much interest, <a target="_blank" href="http://www.mckeay.net/2010/08/14/how-would-i-write-a-framework-to-replace-pci/">a post by Martin McKeay about how he would redesign the PCI framework</a>, as well as <a target="_blank" href="http://www.infolawgroup.com/2010/08/articles/data-privacy-law-or-regulation/yet-another-proposed-federal-data-security-and-breach-notification-bill-senators-rockefeller-and-pryor-jump-into-the-fray/">an in-depth summary from InfoLawGroup</a> about the most recent entry into the draft legislation pool on security and breach notification. The more I think about this notion of creating standards and laws that spell out certain requirements, the more I think we've gotten it completely backwards. It actually makes me nervous when a regulation goes into such extensive detail, a la PCI DSS, that it tells organizations exactly what they need to do, as if one could possibly say universally what is most appropriate for every organization in their context with their own unique risk profile.</p>
+
+<p>As further evidence that I think we've approach things from the wrong perspective, consider Seth Godin's recent post, <a target="_blank" href="http://sethgodin.typepad.com/seths_blog/2010/08/resilience-and-the-incredible-power-of-slow-change.html">"Resilience and the incredible power of slow change,"</a> in which he says:<br />
+<blockquote>"Cultural shifts create long terms evolutionary changes. Cultural shifts, changes in habits, technologies that slowly obsolete a product or a system are the ones that change our lives. Watch for shifts in systems and processes and expectations. That's what makes change, not big events."</blockquote>He's absolutely hit the nail on the head here. What we need is a culture shift, not some lightning bolt from heaven that suddenly forces a massive corrective action. We're all living with institutional inertia that greatly limits our ability to chart instantaneous course corrections. Instead of mandating long lists of penny-ante requirements, we instead need requirements that will start initiating cultural shifts. In this regard, if PCI DSS 2.0 actually contained a meaningful rewrite, then I would think the new 3-year release cycle would be ok.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>In keeping with Martin's post, all of my commentary then begs the question "How would you rewrite PCI DSS to better initiate a cultural shift?" Glibly, I don't know that PCI DSS is really worth saving since it lacks legal teeth. Realistically, it seems that the card brands will continue down this path, for better or for worse, in an effort to help control (if not reduce) the fraud costs that they bear. That being said, following are some key notions that I think would be useful to see codified, either in PCI DSS or, preferably, in federal law.</p>
+
+<p><strong>Legal Defensibility</strong></p>
+
+<p>One of the first key steps is in creating the right market conditions that would encourage a cultural shift. In that regard, it seems that the logical first step would be pushing through a new legal framework that clearly and concisely creates a liability burden for all organizations as it pertains to protecting data, protecting corporate assets, and just generally implementing adequate security measures. I wrote about codifying legal defensibility in my post <a target="_blank" href="http://www.secureconsulting.net/2010/03/legal_defensibility_doctrine.html">"Legal Defensibility Doctrine"</a> this past March, saying:<br />
+<blockquote>"Part of the elegance in legal defensibility is that it is flexible in a way few other regulations currently are. And, unlike regulations like Sarbanes-Oxley (SOX) or Gram-Leach-Bliley (GLBA), though legal defensibility would not specify exact technical countermeasures, it does create the basis for legal arguments that go to the heart of competence and negligence in the managing of the business. If there is one thing American business culture could use right now, then it is a legal framework that sets the machinery in motion to start building case law around what can be reasonably expected of businesses in terms of protecting themselves and building long-term value."</blockquote>Some will undoubtedly point to SOX and GLBA and remark that if you don't spell out detailed requirements, then nothing will get done. I think such a criticism is valid in the short-term, but goes away when the lawsuits start rolling out. Once the legal framework is in place granting standing to stakeholders, customers, stockholders, business partners, etc., independent of a demonstrated loss (or at least lowering the bar for gaining standing), then this problem ends up working itself out. The key notion to keep in mind here, though, is that we're not looking for an instantaneous change, but rather expect - realistically - to see changes slowly build momentum over the course of several years. You'll first get initial cases that have no real precedent, but then as the judiciary and plaintiffs begin to improve their awareness and savvy, suddenly there will be a surge that helps build significant precedence and case law around the topic.</p>
+
+<p>In the end, then, this cultural shift will hinge on what is or is not "reasonably foreseeable." The arguments around this topic could be epic, but it also shifts the nature of the conversation. If your organization has already proactively built a legal defense that documents your security decisions using sound decision analysis methods, then the burden will shift to the plaintiff to demonstrate that your organization was negligent, which I believe will ultimately come back to this idea of "reasonably foreseeable." Ever better, the courts already have experience with this topic when it comes to data retention, legal holds, and the like, which will I think lead to a better world for all (or so I can dream).</p>
+
+<p><strong>Formal Risk Analysis</strong></p>
+
+<p>At it's core, legal defensibility is really just a risk management strategy, which means that you would necessarily need to perform formal risk analysis. Nonetheless, it seems to make sense to somehow mandate use of formal risk analysis methods as part of an overall decision management approach. How one would go about doing this in a regulation is perhaps a bit squishy, but I think that if you combine it with a mandate for legal defensibility, then it follows naturally that if your decisions are not made on reasonably sound risk analyses, then your position will become less defensible. Such a mandate in this area could also help spur investment and research into this area to help move things forward.</p>
+
+<p><strong>Mandatory Breach Reporting</strong></p>
+
+<p>While it is an urban legend that there isn't adequate data to perform a reasonable quantitative risk analysis, it is still increasingly important that we improve our data around security and breaches. Whether public or private, all breaches should be mandatorily reported to a national data breach clearinghouse (like <a target="_blank" href="http://datalossdb.org/">DatalossDB.org</a>) where the data can be reasonably anonymized (not that it necessarily needs to be) and classified according to a consistent taxonomy (sector, size, nature of the breach, etc., such as VerIS Framework might provide).</p>
+
+<p>Mandatory breach reporting is needed for two main purposes. First, it leads to an improved sense of transparency that is necessary to help rebuild trust relationships. If organizations are working through breaches in secret, then how can we as consumers, stakeholders, stockholders, business partners, or even regulators work to document conformance with the above principles? Second, breach reporting will help us better understand the threat landscape. We know that a handful of large breaches in the past couple years leveraged off a fairly antiquated SQL injection attack. If we had more data, then we could start putting some bricks in place in the foundation of what is "reasonably foreseeable," which in turn would help drive legally defensible strategies.</p>
+
+<p><strong>Common-Sense Policies</strong></p>
+
+<p>One thing Martin says that I disagree with is that "Everything flows from policy." I don't actually believe this to be true, and in fact would argue that policies are at best the 3rd step in the chain after thoroughly defining business requirements and performing a comprehensive risk analysis. Consider v2 of the TEAM Model:</p>
+
+<center><a target="_blank" href="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"><img border="0" hspace="5" vspace="5" width="50%" height="50%" src="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"></a></center>
+
+<p>The business, and by extension its various requirements, must be at the core of any security program. Once you define what's important and necessary, then and only then can you then progress to determining risk tolerance. Once requirements and risk tolerance are establish, THEN you can proceed to writing security policies that are applicable to the business and useful.</p>
+
+<p>Unfortunately, today we don't generally have sensible policies. They're rarely linked to either business requirements or a risk management strategy beyond meeting a compliance checklist item. Case-in-point, as I noted earlier this month, consider policy requirements for passwords (see: <a target="_blank" href="http://www.secureconsulting.net/2010/08/password_complexity_is_lame.html">"Password Complexity is Lame"</a>). They typically focus on complexity, when the simple fact is that length is now more important (ref: <a target="_blank" href="http://www.theregister.co.uk/2010/08/16/password_security_analysis/">"Short passwords 'hopelessly inadequate', say boffins"</a>).</p>
+
+<p>The point here is this: policies should be driven by the risk management strategy, which should in turn by driven by the business and business requirements. In this sense, everything flows from the business, not from policies. We need to make sure that policies are relevant, sensible, and enforceable so that they will contribute to the desired cultural shift.</p>
+
+<p><strong>Closing Thoughts</strong></p>
+
+<p>There are likely other areas that should be considered for inclusion, too, such as reforming awareness training to an approach that further enables culture shifting. The trick to regulations like these is creating the conditions that make cultural change natural and (reasonably) optimal. The idea is that you allow people to make their own decisions, but that you encourage a preferred decision by making it less painful than other possible choices. Specifically, by creating a regulatory environment where making sound, well-reasoned choices works in your favor, while making poor choices results in strong negative consequences, then we can start to have hope once again that executives will start to understand the need for a new direction. For employees, this approach ideally drives a narrowing of the human paradox gap, increasing the connection between actions and consequences.</p>
+
+<p>It seems natural that some form of regulation is necessary today. Unfortunately, we live in a bog of our making, mired in checklists and faux best practices. Until we can shift culture away from this failed mindset to something much more prescient, we will only continue to see the same problems repeating over and over again. While industry regulations like PCI DSS may have moved the needle a little bit, their impact has not generally encompassed the whole of the enterprise, but rather been partitioned in such a manner as to minimize the overall effect on the business. It's time to change things up, eliminating exceptions and mandating what is sensible and useful. If we create the right environment for generating good decision-making, then there is hope that it will lead to a desirable culture shift.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=culture&amp;limit=20';return false;" rel="tag">culture</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20';return false;" rel="tag">infosec</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=PCI&amp;limit=20';return false;" rel="tag">PCI</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=shift&amp;limit=20';return false;" rel="tag">shift</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">1 Comment</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-795" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.thirddefense.com" href="http://www.thirddefense.com" rel="nofollow">Jared Pfost</a></span>
+
+                    | <a href="http://54.197.56.127/2010/08/approaching-the-problem-backwa.html#comment-795"><abbr class="published" title="2010-08-24T16:44:00-05:00">August 24, 2010  4:44 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Excellent post. Another area I'd like to see ingrained culturally is measuring the performance of security services i.e. metrics. As you mention, over time we'll standardize on which metrics and target values are Defensible. Audits are fine for verifying policy conformance. However metrics shine accountability on sustained performance. Metrics are a wonderful culture hack.</p>
+
+<p>ps. "culture hacks" has a nice ring to it. Might make for a good blog series?</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>August 24, 2010 11:08 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2010/08/cyber-war-and-the-value-of-fud.html">Cyber War and the Value of FUD</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2010/09/missing-the-defense-in-dod.html">Missing the "Defense" In DoD? </a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2011/08/pragmatic-risk-management.html">
+<dc:title>Take 2: Pragmatic Risk Management</dc:title>
+<dc:description>Soooo... from the firestorm I sparked with my last post, it&apos;s very clear I did a really lousy job expressing my point, and that I&apos;ve also apparently riled folks up by challenging yet another ax of inforisk management. I&apos;m going...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-08-09T09:45:41-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2011/08/pragmatic-risk-management.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html" title="Skip InfoRisk Tolerance" />
+    <link rel="next bookmark" href="http://54.197.56.127/2011/08/incomplete-thought-orm-and-mat.html" title="Incomplete Thought: ORM and Maturity" />
+    
+    
+    <title>Take 2: Pragmatic Risk Management - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2381" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Take 2: Pragmatic Risk Management</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2011-08-09T09:45:41-05:00">August  9, 2011  9:45 AM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comments">10 Comments</a>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>Soooo... from the firestorm I sparked with <a target="_blank" href="http://www.secureconsulting.net/2011/08/skip-inforisk-tolerance.html">my last post</a>, it's very clear I did a really lousy job expressing my point, and that I've also apparently riled folks up by challenging yet another ax of inforisk management. I'm going to try to approach this topic from a different perspective this time and see if I can't maybe get the point across a bit more clearly. I don't think it'll be any less irritating to some people, but hey, you win some, you lose some...<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>Quick Summary</strong></p>
+
+<p>Before delving into details and rationale, I'll try something new: summarizing my perspective in brief.</p>
+
+<p>In pragmatic terms, "risk tolerance" is nothing more than a reflection of a given decision-maker's attitude in a given decision. Whether this attitude is persistent across decisions wrt security choices is unclear, but seems to trend toward inconsistency these days. Within the context of enterprise risk management (COSO-friendly definition), your decision process is: Define the scenario, assess the risk (which includes threat, vulnerability, and impact), make a decision. As some have stated, "risk tolerance" is implicit in making the decision. However, unlike financial services (especially investments), where you can pre-determine your "risk tolerance," in enterprise risk management (ERM) you are effectively determining your "risk tolerance" on the fly, at decision time. To me, this means we can forget about "risk tolerance" and skip right to "decision analysis" and how you make a legally defensible decision.</p>
+
+<p>For more on how I reached this conclusion, here's a lot more detail and explanation...</p>
+
+<p><strong>A Little Context</strong></p>
+
+<p>Being that I now work for a GRC vendor, I'm tending to think about topics like ERM in a very practical, pragmatic sense. How can I take all of the academic knowledge out there and distill that down into something easily used? Moreover, how do I package that into a service or application that can help abstract-away as much of the theoretical complexities as possible while still providing a useful capability.</p>
+
+<p>There were two key positions from which I was starting last week that got my brain churning on this "risk tolerance" topic. First, I wondered if it's possible to codify "risk tolerance" within the policy framework, which could then be used as a measure in making risk-impacting decisions. Second, I wondered if this could then be further templated or automated within an application such that prospective customers could go through a quick process flow to define their "risk tolerance," which could later be used in risk assessments.</p>
+
+<p>On the first question, the answer seems to be that no, you cannot really define "risk tolerance" ahead of time as you would with your investment strategy. It's simply not adequate to say "we're risk-averse" (or risk-neutral, or risk-seeking) in your policies and then somehow expect that stance to be naturally translated into common sense guidance. The simple fact is that each scenario is going to require an independent risk analysis and decision. As such, the focus should then be on making good quality decisions, and providing methods that ensure consistent quality in those decisions (e.g., making sure enough data is available and/or collected).</p>
+
+<p>The second question becomes relatively moot given the answer to the first question, and then morphs to focus on defining consistent processes (or workflows) that can be leveraged in ensuring consistent quality in decision-making, along with documenting those decisions. The bottom line is ensuring that decisions are legally defensible.</p>
+
+<p>From this, you can then see why I would say "skip inforisk tolerance" because, while it may be an implicit factor, it's one that is applied at decision time rather than in terms of defining a strategic perspective at the outside, as we see in financial services. In practical terms, it's not a useful construct for most risk analyses (there are, of course, exceptions... I would wager that industries like financial services and insurance do have the luxury of spending time on these things, but would point out that their position is also somewhat unique... and I hardly need to point out that their complex models sometimes become corrupted to falsely fit under the pre-defined "risk tolerance," resulting in things like the home mortgage crisis).</p>
+
+<p><strong>What is "Risk Tolerance"?</strong></p>
+
+<p>One of the first questions I asked when researching this question last week was "what is 'risk tolerance' anyway?" I already suspected the answer, but I thought it worth going through the exercise all the same. As I'll note along the way here, I've also encountered other terms, like "risk appetite" and "risk capacity" that generally serve to muddy the waters. I excluded these definitions from my last post since I thought it was self-evident, but I'll now walk through some of them, along with my thought process, to hopefully shed some light on my rationale.</p>
+
+<p>In terms of financial services, and especially as regards investments, there seems to be a consistent definition of "risk tolerance," as reflected in the following two quotes:<br />
+ * "The degree of uncertainty that an investor can handle in regard to a negative change in the value of his or her portfolio." (<a target="_blank" href="http://www.investopedia.com/terms/r/risktolerance.asp#axzz1UWzQCsjv">source</a>)<br />
+ * "In investing, risk tolerance is the willingness of an investor to tolerate risk in making investments." (<a target="_blank" href="http://www.investorglossary.com/risk-tolerance.htm">source</a>)</p>
+
+<p>These quotes are interesting because, while similar, they're also a bit different. The first definition seems to align better with our ERM concepts, while the latter truly speaks to attitudes and decision-time sensitivities.</p>
+
+<p>Interestingly, Wikipedia redirects "risk tolerance" to "risk aversion," which seemed a wee bit odd. The article talks about "risk attitudes" and how people may range from risk-averse to risk-neutral to risk-loving, which is essentially risk tolerance (i.e., how much risk people are willing to tolerate). The article goes into a lot of painful analytical detail using a variety of equations, at which point my brain tuned out and said "that's nice, but show me the small shop that's going to sit down and run those calculations for every decision."<br />
+<a target="_blank" href="http://en.wikipedia.org/wiki/Risk_tolerance">http://en.wikipedia.org/wiki/Risk_tolerance</a></p>
+
+<p>A number of mentions of "risk tolerance" ultimately came back to investment planning. They all generally talked about the same thing: defining what sort of investor you are up front and using those principals to guide your investment decisions. This article, <a target="_blank" href="http://www.theglobeandmail.com/globe-investor/personal-finance/financial-facelift/diy-investor-needs-to-define-risk-tolerance/article1657939/singlepage/#articlecontent">"DIY investor needs to define risk tolerance,"</a> is consistent with a number of posts on the topics.</p>
+
+<p>It's very easy to start getting confused about terms as one reads through all these references. Is it tolerance, or appetite, or capacity? I ran across an interesting post that talked about the difference between tolerance and capacity:<br />
+<blockquote>"Unlike risk tolerance, which essentially reflects the amount of risk that you <em>want</em> to take, risk capacity reflects the amount of risk that you <em>need</em> to take in order to reach your goals. Thus, rather than being an emotional construct, risk capacity is grounded in the reality of your situation. In other words, how much investment risk do you need to take on in order to <strong>[fill in the blank]</strong> in x years? Conversely, how much of a loss could you withstand and still meet those goals given your time horizon?"(<a target="_blank" href="http://www.fivecentnickel.com/2009/05/06/risk-tolerance-vs-risk-capacity/">source</a>)</blockquote></p>
+
+<p>This post is interesting, because it seems to better align with what Chris Hayes (@risktical) was saying on Twitter yesterday in response to my original (and apparently incoherent) post:<br />
+<a target="_blank" href="http://twitter.com/#!/risktical/statuses/100596682676387840">then why do some companies have corporate insurance against oprisk losses specific to technology.</a><br />
+<a target="_blank" href="http://twitter.com/#!/risktical/statuses/100596878667808768">anythings over $x loss gets claimed against a business insurance policy. X being the risk appetite.</a></p>
+
+<p>While his example is interesting, I don't think he's actually talking about "risk tolerance" (and definitely not "risk appetite" - see below), but rather risk capacity. In essence, the decision here is "how much can we lose, and how much do we need to hedge?" With the insurance example, the organization is looking at a risk scenario and they're saying "We can afford to lose up to $X on this scenario, but no more." That sounds like "capacity" to me and not "tolerance." The insurance decision is then a hedge against further losses over that $X (though, interestingly, they may still need to invest beyond that $X into various remediation efforts in order to keep their insurance premiums within range - and heaven help them if they end up having an incident that hits that insurance... but I digress).</p>
+
+<p>More importantly is coming back to my original conclusion, which is that the decision to invest in insurance instead of, or in addition to, risk mitigations is going to be made at decision-time, not in a pre-determined state. Although, I can certainly see where being implicitly (or explicitly) risk-averse might lead one to invest in insurance rather than simply trusting that the controls deployed will be adequate (one could also then argue from a survivability perspective that insurance should <em>always</em> be included, at which point it's not a "risk tolerance" decision, but a basic strategic stance).</p>
+
+<p>Since he mentioned it, I decided that it would also be good to explore this "risk appetite" phrase and see how it compares. As it turns out, we can thank the authors of COSO for inventing the phrase, and for further muddying the waters. Starting with Wikipedia again, I was intrigued to see that <a target="_blank" href="http://en.wikipedia.org/wiki/Risk_appetite">"risk appetite"</a> redirects to <a target="_blank" href="http://en.wikipedia.org/wiki/Enterprise_risk_management">"enterprise risk management."</a> There's not a formal definition of the phrase in the article, but it does at one point describe risk appetite as "risks [the enterprise] will and will not take" (fairly meaningless, really). This entire article seems to hinge specifically on COSO language, which is a bit disappointing, though completely unsurprising (i.e., there's a strong trend in this sub-culture for manufacturing terms and phrases to make something old seem new and different).</p>
+
+<p>Poking around a bit more, I finally found a more-informative article titled <a target="_blank" href="http://www.continuitycentral.com/feature0170.htm">"Determining Risk Appetite"</a> from the former head of E&Y's US ERM practice. In the article, he says:<br />
+<blockquote>"Risk appetite, at the organisational level, is the amount of risk exposure, or potential adverse impact from an event, that the organisation is willing to accept/retain. Once the risk appetite threshold has been breached, risk management treatments and business controls are implemented to bring the exposure level back within the accepted range."</blockquote></p>
+
+<p>Once again we see that "appetite" is merely a new word for an old concept: risk tolerance. The article goes on to describe how to determine "risk appetite." What's particularly interesting, however, is that your first step is assessing risk. Once you've assessed risk, you then make a decision based on your sensitivity. While you can make a valid case that "risk tolerance" (or "appetite") is implicit in this decision, I would argue that describing it in this manner is really being academically nitpicky. You're making a decision with the best information available. You're following a standard process to make that decision. Does "risk" come into play? Sure, in terms of estimating "the probable frequency and probable magnitude of future loss." Does "risk tolerance" come into play? Sure, in terms of "at a given point in time, is the estimated amount of risk tolerable to the business?" However, to get any more academic than this is probably unnecessary or inappropriate. Frankly, it can be a challenge just justifying running through a formal risk analysis since it adds more time to the process, and because many decision-makers still don't see the value (though there IS value).</p>
+
+<p>To wrap this thought: while it's absolutely true that "risk tolerance" and "risk capacity" come into play in making decisions, even if just implicitly, it strikes me as completely unnecessary to drive business leaders into formalizing these concepts behind anything more than "making a well-informed, quality decision."</p>
+
+<p><strong>Pragmatic Risk Management</strong></p>
+
+<p>I'm a strong proponent of theoretical research, as well as pure research without specific application objectives. That said, if theoretical research never leads to applications, then it's not overly useful.</p>
+
+<p>The context for this line of thinking was in relation to how to package a product or service that could improve risk management practices, particularly within SMBs, without it being what we all talk about: very formal, very academic, and seriously lacking in actionable, fiscally responsible guidance. It was also around the context of drafting policies and processes, looking at whether or not "risk tolerance" should - or even can - be defined up front, and then expressed in those policies. The conclusion is: No, it cannot be done. Nor should it, from what I can tell.</p>
+
+<p>For example, we can put reasonably firm definitions around various risk labels (high, medium, low, etc.), and even provide a method for customers to customize those accordingly (we do that with FAIR). However, decisions are not generally made based on risk labels. They're often made, it seems, for far less trivial reasons, like "How much will it cost to fix this? Oh, well, we can't afford that, so I'll accept the risk." And herein lies the problem... even if you did define risk tolerance up front, I find it very unlikely that it would be followed rigorously, or I think it would be defined so inanely that it wouldn't actually trigger a decision.</p>
+
+<p>In fact, I really wonder if most organizations would view information risk (or "IT risk" or maybe even "operational risk") with a risk-neutral attitude? That is, they're not risk-seeking, because there's not generally an up-side, but they also can't afford to be ardently risk-averse, either (there's no such thing as "perfect" or "100%" security). Thus, every decision must be taken individually; it must be legally defensible; and, it should take into consideration as much quality data as possible.</p>
+
+<p>In the end, this means following a relatively standard decision-making process. It means that the right people must review a given scenario, and that, whenever feasible, formal analysis methods should be used. Beyond that, you either get too complicated or too obscure to have much practical value. From a programmatic perspective, this means helping define workflows that minimally gets approval from a key business leader, hopefully capturing enough useful information to afford the decision reasonably high quality, and thus making it legally defensible.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/musings/" rel="tag">musings</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">10 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-19398" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://newschoolsecurity.com/author/russell/" href="http://newschoolsecurity.com/author/russell/" rel="nofollow">Russell Thomas</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19398"><abbr class="published" title="2011-08-15T19:16:47-05:00">August 15, 2011  7:16 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Thanks for the clarifications, Ben.</p>
+
+<p>I still think there is some residual misunderstanding, and maybe a few mis-characterized dichotomies.</p>
+
+<p>In keeping with your perspective (pragmatic, decision-oriented), I'll do my best to explain risk tolerance and why it matters to every decision-maker, whether they analyze it or not, or whether they explicitly quantify it.</p>
+
+<p>First I'll describe a simplified scenario that might fit an SMB.  Let's assume that they face 10 major security decisions in the coming year -- architecture, vendors, policy, staffing, or any other.  A few of those decisions might be independent, but most will be interdependent, meaning that the best/optimal/most justified decision on any one issue will depend on what they decide on several other issues.</p>
+
+<p>Furthermore, assume a limited budget, a limited set of resources, a limited set of knowledge and expertise, and maybe even a low level of maturity in security metrics and security management.</p>
+
+<p>Since their reason for being is something OTHER than security, the implicit decision criteria is "how can we get adequate security, or the best security, given my limited resources and capabilities, so that we can fulfill our PRIMARY business goals?"  Or, more simply, "Am I secure *enough*?"</p>
+
+<p>In this setting, you could define 'risk' to the SMB executive as "future costs of security and security incidents, above and beyond what you've budgeted".  That's pretty simple and doesn't require fancy math.</p>
+
+<p>But since there are no silver bullets in InfoSec, and the threat environment and adversaries are constantly evolving, and so is the technology and business landscape, NONE of the decision alternatives going to be are perfect -- not individually, and not in combination.  There is no way to spend a fixed amount of money and resource and deliver perfect security (a.k.a. risk free).</p>
+
+<p>Even worse for the SMB executive, they can't even apply simple rules like "I'll just spend more... for more layers of security... for more security people... for more policies and audits...." or what ever.  There's good evidence that such measures can actually reduce security.</p>
+
+<p>Let's also assume that not all these decisions happen at once.  Some are decided earlier, some later, and maybe for arbitrary reasons (i.e. a reorganization, an audit, etc.) and not according to logical precedence.  This means that there is a real possibility of making inconsistent and maybe contradictory decisions.</p>
+
+<p>This is the purpose of explicit 'decision criteria' -- to help ensure that decisions made across different contexts are consistent.</p>
+
+<p>As the SMB executive makes each decision, it's hard to see how 'risk tolerance' might fit into that particular decision, as you have pointed out.  But in the cumulative effect of the decisions, it starts to become visible, and it's related to that simple criteria: "Are we secure *enough*?", and specifically to the word "enough".</p>
+
+<p>I won't write it out, but it's easy to imagine a dialog between this executive and his/her board, or investors, or other governance body, where they go back and forth talking about the 10 decisions that have been made and the residual *insecurity*, and how that might translate into loss events, fines, embarrassment, lost contracts, or other negative consequences.  Either in the foreground or in the background, the governance body will be thinking "Can we live with that, if it comes to pass?".  That's the essence of risk tolerance.  </p>
+
+<p>As the previous paragraph shows, it has significance in governance even if no one quantifies it or formalizes it.   But if you leave it informal and unquantified, then the decision-makers are opening themselves up to all sorts of reasoning errors.  And there is a huge amount of empirical evidence that shows that humans are not good at reasoning about low probability, high impact events (Behavioral Economics, Neuro-economics, etc.).  Therefore, we need all the help we can get to avoid those reasoning errors.</p>
+
+<p>If the management team doesn't want to try to quantify risk, or doesn't believe that such quantification is possible, or is too expensive, then quickest/dirtiest approach is to do scenario analysis and then classify various outcomes according to some criteria, maybe only in three classes:</p>
+
+<p>  'A' =  "We can definitely absorb this"<br />
+  'B' = "We might be able to absorb this, but it threatens our viablity"<br />
+  'C' = "We definitely *don't* want to try to absorb this"  (-> transfer w/ insurance, mitigate, or avoid)</p>
+
+<p>This approach avoids the complications of quantification at the expense of having a long list of specific outcome cases and loss of generality.   It will be cumbersome to relate it back to costs, investments, etc. but at least it makes risk tolerance explicit and semi-formal.</p>
+
+<p>Of course, a management team might decide *not* to specify a risk tolerance prior to making InfoSec decisions.  This is probably very common as most business people would rather not think about things going wrong, or how they might be exploited by adversaries that they barely recognize.  Moreover, they may not want to live with the implications of making risk tolerance explicit.  Examples might include admitting that the current spending level is not adequate, or that certain types of business or relationships need to be shut down because the risk is too high.</p>
+
+<p>This leads to my major point -- if risk tolerance is not defined as a decision criteria *somehow*, then it may not be possible to make good trade-off and prioritization decisions over time.  Some areas will be over-emphasized while other areas will be underemphasized.  Because of the sequential nature of decisions and their interdependency, it's very likely that the management team will find it self locked in cycles of overshoot and undershoot, and self-defeating behavior (i.e. committing to a new architecture, but then not adequately funding implementation and transition).  After a few years of this, the organization could be no better off, and maybe worse off than at the start.</p>
+
+<p>To make this point very tangible and practical, consider this decision: How much should an organization spend on security metrics and analysis, and also data sharing?    One alternative is the "Zero Option" = nothing, i.e. every last dollar should be spend on "real security" like appliances, "locking down boxes", policy implementation, incident response, and so on.  This is the "just do it" school of thought for security management.</p>
+
+<p>To argue against this Zero Option, it's necessary to show that the money, time, and resources spent on security metrics, analysis, and data sharing will some how lead to better "real security" than without it.  And it's a lot more than 'which firewall is cheaper'.  The critical issues are about effectiveness -- how security provisions and decisions relate to outcomes.  Simply put: without metrics, analysis, and maybe data sharing, the security managers can't answer the question "Are we secure *enough*?", which, as I described above, is intimately tied to the organization's risk tolerance.</p>
+
+<p>---------</p>
+
+<p>There are a few points you make in your clarification post that I'll comment on now.  Basically, I think the issues below cloud the discussion, rather than clarifying.</p>
+
+<p>1. Terminology ("risk tolerance" vs. "risk appetite" vs. "risk capacity")</p>
+
+<p>Yes, there is confusion in terminology, but inside and outside of finance.  There's not much to be gained by introducing multiple terms that, for InfoSec and OpRisk, basically mean the same thing.</p>
+
+<p>I vote for "risk tolerance" because residual InfoSec risk is something an organization tolerates.  Nobody goes out and says "we need to take more information security risk in order to achieve our business goals".  Businesses 'tolerate' InfoSec risk in various ways -- prevention, detection, loss mitigation, insurance, risk-transfer through contracts (a.k.a. "risk dumping), and other means.  </p>
+
+<p>"Risk capacity" is close in meaning and also a useful concept, but I'm afraid that most organizations and business managers can't make sense of it, unlike other capabilities that are more readily identified.</p>
+
+<p>"Risk appetite" as a term is a distraction, because it ties to finance theory that *only* investments that carry financial risk above the risk-free rate can have a long-run expectation of higher returns.  There's a way to connect finance theory to InfoSec risk management, but I'll skip it for now.</p>
+
+<p>2. False dichotomy between 'academic' and 'pragmatic'</p>
+
+<p>As a former industry guy who is now an academic, I'm sensitive on this topic.  My beef is that you seem to be labeling anything that is beyond the reach of the average small business as 'academic' and 'pie in the sky', with the implication that anything like that is detrimental to 'pragmatists' and should be shunned and avoided.</p>
+
+<p>Such an attitude does a disservice to people working in both academia and industry on 'hard problems' of risk analysis and risk management that are currently beyond the reach of existing methods.</p>
+
+<p>I'll grant you this: there are *some* academic models and methods that are *completely* removed from the practical world and will probably *never* have any practical application  (e.g. the Gordon-Loeb model of optimal security spending).  In such cases, I can't imagine any path from the theoretical model to practical realities.</p>
+
+<p>There is other research that industry people object to for methodological reasons (e.g. the WEIS paper analyzing empirical data in an attempt to compare open source vs. closed source software security).  "Those damn academics!" some people said.  But the problem was not that it was 'academic', but that the method (and maybe the research team, and maybe the data sources) could have been much better.  In such cases, there *is* a path from that research to practical reality, but maybe only with major changes in direction.  Such is the nature of research.</p>
+
+<p>My proposal for "Total Cost of Security" (TCoS) might be called "pie in the sky" because it is not yet implemented and validated in experience.  Fine. But that doesn't mean there is no path to get there.  There are practical obstacles, and some theoretical obstacles, too.  But it is framed in such a way that it could be implemented and could have dramatic implications on a practical level if those obstacles could be solved.  Of course, the complex math will have to be 'behind the scenes', much like consumer credit scoring or Googles search algorithms.</p>
+
+<p>Put another way, I think our state of knowledge and skills is fundamentally inadequate.  It's like the state of medicine before the Germ Theory of disease.  If we only put energy into what works today, then we will be no more effective than Medieval doctors who were limited by the Theory of Humors and techniques like bloodletting:  <a href="http://snltranscripts.jt.org/77/77rtheodoric.phtml." rel="nofollow">http://snltranscripts.jt.org/77/77rtheodoric.phtml.</a></p>
+
+<p>3. "The bottom line is ensuring that decisions are legally defensible."</p>
+
+<p>OK, if this is your ultimate bottom line for evaluating decisions, then risk tolerance and related concepts are not relevant.  "Legally defensible" is all about procedural rationality, and that can be accomplished by attending to the details of process, especially documentation, with no particular concern for outcomes, especially those not explicitly defined in law or regulation.</p>
+
+<p>Yes, I'm know that this is how many (or most) people think about GRC, and I know that there are massive institutional forces reinforcing this view.  It's also the refuge of scoundrels and poor managers who, when the shit hits the fan, defend their actions by saying:  "We complied with all applicable laws and regulations.  All our decisions are legally defensible."  Thus they stay out of jail or avoid a fine or avoid a lawsuit.  Meanwhile, their organization might be worse off, and maybe their stakeholders are worse off, and maybe society is worse off.</p>
+
+<p>If laws and regulations and legal processes were so thorough, accurate, appropriate, context-sensitive, and forward-looking that merely being "legally defensible" was synonymous with answering 'yes' to "Are we secure *enough*?", then I might agree with you.  When it comes to the morality of the possible consequences of inadequate security, legal defensibility is a poor position, in my opinion.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19399" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19399"><abbr class="published" title="2011-08-15T20:11:25-05:00">August 15, 2011  8:11 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Thank you for the very lengthy comment. Unfortunately, it just proves to me that you don't understand a number of the points made. It's just not instructive at this point to go through your comments point-by-point. I do, however, want to provide a few quick responses:</p>
+
+<p>1. It's clear that you don't understand legal defensibility theory. If you did, then you would see that it applies to your (imo skewed) definition of "risk tolerance." For more, please see:<br />
+"The Legal Defensibility Era is Upon Us" by David Navetta.</p>
+
+<p>2. For all your lengthy discourse, you've not disproven my points. All you've shown is that people make decisions, which implicitly include a point-in-time "risk tolerance" (which I acknowledged), but not that people can (or should) establish a universal "risk tolerance" strategy for their organization. In finance/investment, you pre-determine your attitude, which in turn influences your decisions. There isn't an equivalent concept in infosec/inforisk/info-whatever. In large part because, as you rightly pointed out, things change far too quickly.</p>
+
+<p>3. You've manufactured the "false dichotomy" issue by making bad assumptions. My point is, quite simply, that we're very long on academic thinking today as regards metrics and inforisk (or "Operational Risk" - the buzzword du jour), and very short on practical applications. More importantly, the farther people go down the road of non-application, the harder it will be to reset to something useful. Your response is nearly 2000 words long, and yet you missed several key points. It's hard to even enter into a debate with a comment post of that length.</p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19400" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Alex</span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19400"><abbr class="published" title="2011-08-15T20:44:56-05:00">August 15, 2011  8:44 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>"in enterprise risk management (ERM) you are effectively determining your "risk tolerance" on the fly, at decision time."</p>
+
+<p>Only if you're doing it wrong. </p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19401" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://newschoolsecurity.com/author/russell/" href="http://newschoolsecurity.com/author/russell/" rel="nofollow">Russell Thomas</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19401"><abbr class="published" title="2011-08-15T20:56:57-05:00">August 15, 2011  8:56 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>I admit that I'm often windy in my writing.  I just trying to be clear and complete, but maybe trying too much.</p>
+
+<p>About your points:</p>
+
+<p>1) Thanks for the link on "legal defensibility".  I do understand this position, and nothing on this web page or the concepts described changes my view.  "Legal defensibility" is necessary but not sufficient.  Every governance body must also consider the broader ethical and moral implications of their decisions and actions.  This is especially true for organizations in critical infrastructures, national defense, and health, IMHO.</p>
+
+<p>While the article includes 'risk management' as part of a good program for 'legal defensibility', the author doesn't go into how a governance body should handle residual risk.  Instead, the focus is on procedures.  As I said, if your ultimate criteria for decisions is legal defensibility, then risk tolerance can probably be ignored.  </p>
+
+<p>Plus, there are recommendations that do not advance the cause of better security:<br />
+ <br />
+"Even the communication mode is altered -- best practice is to establish ATTORNEY-CLIENT PRIVILEGE to attempt to shield the "sausage making' (and related paper trail) that sometimes goes into developing a security program."  [emphasis added]</p>
+
+<p>This shows that "legally defensible" != best possible InfoSec and risk management.</p>
+
+<p>2. Again, my point is that governance bodies will make better decisions, especially prioritization and trade-off decisions, if they formalize risk tolerance in advance -- either using qualitative or quantitative methods, or some hybrid.</p>
+
+<p>Conversely, if they ignore risk tolerance, they will probably end up with worse performance, looking over a longer time horizon.</p>
+
+<p>3. I'm all in favor of practical applications when the time is right.</p>
+
+<p>Again, sorry of my long reply concealed the main points.</p>
+
+<p>Russ</p>
+
+<p>P.S.  I am very well versed in finance theory and practice, and how risk tolerance is used in financial services.  The conceptual difficulty arises when finance ideas are applied simplistically and too directly.</p>
+
+<p>If, instead, information security is quantified as a cost stream, then it's possible to apply finance theory directly.  But, bowing to your focus on pragmatics and what's possible now, I have not talked about it in this reply.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19402" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19402"><abbr class="published" title="2011-08-16T07:11:55-05:00">August 16, 2011  7:11 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Russ,</p>
+
+<p>1) I think we need to have a separate offline discussion about legal defensibility, because you're grossly misrepresenting it. It's far more than a matter of procedure. Legal defensibility is a method of analyzing decisions in light of how it would be construed by secondary stakeholders. It has direct applications to this "risk tolerance" discussion.</p>
+
+<p>2) You amuse me greatly. What "governance body" are you talking about? Show me an average SMB that has one of those (especially companies with &lt;50 people). This is *exactly* my point with academic vs pragmatic. The vast majority of these discussions on "operational risk" et al are geared directly toward large corporations, and especially toward financial services companies. They do not represent the majority, and thus all of these lengthy, philosophical discussions have no real meaning outside the minority cases.</p>
+
+<p>3) If we want to see change, then it has to make sense and be easy. It concerns me greatly that a lot of info/op-risk-related discussions, such as we see in SIRA and around the likes of Metricon, have gone far down the academic bunny hole, without any concern for how the average person would make use of it. I cannot walk into a company that has no formal programs - regardless of size - and start talking extensively about this stuff. It's (seen as) too complicated, or too time-consuming, or too impractical, etc. Heck, many healthcare orgs can't even tell you what their regulatory burden is, or what their assets are, let alone being able to talk about "risk" in any capacity. This is the bar that we must try to move, not the one that's set within financial services, and that gives people like Alex the perspective to tell people they're doing "risk management" wrong - especially when they're probably not doing anything at all.</p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19403" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://risktical.com" href="http://risktical.com" rel="nofollow">Chris Hayes</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19403"><abbr class="published" title="2011-08-16T09:41:09-05:00">August 16, 2011  9:41 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Hi Ben.  In your original post you suggested that the concept of risk tolerance is not really applicable for IT risk or information risk â€“ which is what I took exception too. I also took exception to some of the phrases you were using interchangeably as well as your assertion that operational risk management is a marketing terms (which is ironic given your employment in the GRC space). It is my opinion that your strict definition of some â€œrisk-xâ€ phrases is very narrow in that it only applies to the discipline of financial risk management.</p>
+
+<p>If you want to be pragmatic â€“ then letâ€™s do so:</p>
+
+<p>Risk capacity â€“ how much I can lose.</p>
+
+<p>Risk appetite â€“ how much I am willing to lose.</p>
+
+<p>These concepts can span risk types â€“ including IT or information risk. By using risk quantification methods, actual / near-miss data collection, and understanding the organizationâ€™s capital posture to create these measurement of risk.</p>
+
+<p>Next, it is generally understood in risk management that IT risk is a subset of operational risk. This is not a marketing term â€“ it is referenced in several frameworks and the rating agencies look at how organizations manage their operational risk â€“ as many failures of companies are usually the result of an operational risk event. Most GRC vendors â€“ especially the vendors that put in E in front of GRC â€“ have designed their products to be more operational centric then IT risk centric (check out OpenPages, BWise, Oracle, TeamConnect, SAS OpRisk, etc for additional details.</p>
+
+<p>There is a lot of â€œrealâ€ work occurring in this space â€“ not just theoretical. Just because detailed methods are not openly shared does not mean there is no collaboration or sharing of concepts occurring. </p>
+
+<p>Good luck in your journey!<br />
+</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19404" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19404"><abbr class="published" title="2011-08-16T10:00:15-05:00">August 16, 2011 10:00 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Chris,</p>
+
+<p>Thanks for the comment. Unfortunately, one nit to pick: I never made any assertion that RM of any sort was a marketing term. I'm not sure where you get that from either of my posts. I'm not sure why you jumped to that conclusion. It was clear from your Twitter commentary that you had jumped to some wonky conclusions. My perspective here doesn't disagree (much) with what you're saying. However, I see a wide variety of industry segments and the reality is that very few orgs have time, resources, or inclination to do anything even remotely formal.</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19405" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.redpointrisk.com" href="http://www.redpointrisk.com" rel="nofollow">Chad Weinman</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19405"><abbr class="published" title="2011-08-16T10:06:46-05:00">August 16, 2011 10:06 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>I have spent considerable time reading all of this discussion. I especially like the focus on searching for real "rubber on the road" directions versus only academic theories. With that said when you look at groups like SIRA, I don't expect to find discussions rooted only in "practical" applications... I expect to see "visionary" or challenging discussions contributed by leaders in the field. It may not always be "practical" but it definitely should be thought-provoking". If one wants practical and easy.. I am sure you can pull a framework from COSO or ISACA or somewhere.</p>
+
+<p>Some other random thoughts:</p>
+
+<p>- You indirectly point out that risk mgt terminology is not consistent across industries and even within industries. This is a point that I believe nobody will challenge and widely known to be an issue. </p>
+
+<p>- I chuckle when Ben states "Your response is nearly 2000 words long, and yet you missed several key points. It's hard to even enter into a debate with a comment post of that length."<br />
+Ben - you would do well to realize that your main article was also well over 2000 words long! And I argue the only point of the article was debate. </p>
+
+<p>Another topic that is repeatedly brought up is around SMB's. The latest comment from Ben speaks to organizations with &lt;50 people. Seriously &lt;50 people? You want to be pragmatic... fine...let me help you out. I doubt any organization is going to buy or take your GRC approach seriously if they are only 50 people large. Unless by pragmatic you plan to offer it for $20 a month (and that may be a stretch). </p>
+
+<p>I am not trying to be a "firestarter" but trying to point out that when wild extreme positions are taken from either side (author or commenter) than no meaningful discussion can occur. I agree we as info risk professionals can't only focus on the largest organizations with significant resources... but we also can't bring up organizations so small that any formal risk management program is "pie in the sky". At least I have never seen a 50-person company with a significant and formal risk management/decision program focused around information security.</p>
+
+<p>- I am quite familiar with an organization (to remain nameless) that is totally committed to the "Legal defensibility" concept and is pretty much crippled in any decision-making situation they're in. The only success story there is how much the 3 separate supporting Legal firms manage to bill the company per year. There are some serious moral concerns I have for how this transforms an organization. Would be happy to discuss off-line.</p>
+
+<p>Overall - good discussion, not sure I completely agree with you Ben, but I do appreciate the challenge you're throwing down (just remember to remain polite ok?). I for one know of someone who definitely has in the "real-world" clearly and formally defined risk tolerance as part of the foundation of a risk management program at an actual organization; with success. I am hoping they themselves may chime in (I am not one to speak for others).<br />
+</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19406" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19406"><abbr class="published" title="2011-08-16T10:20:18-05:00">August 16, 2011 10:20 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Thanks, Chad. A few things...</p>
+
+<p>* "I am sure you can pull a framework from COSO or ISACA or somewhere." - Gack! You're the second person to reference ISACA today. Suffice to say, I'm not a fan. As for COSO, I can't speak to that because you have to buy the darned framework, which is not overly useful. Regardless, I doubt they actually cover this topic; at least not to a degree that would be helpful.</p>
+
+<p>* The main article was nearly 2000 words. Well, actually, I tried to make a much more brief post (here) and it got shredded for not having enough background. More importantly, my point was that a 2000-word comment is hard to parse.</p>
+
+<p>* "I doubt any organization is going to buy or take your GRC approach seriously if they are only 50 people large." - This statement troubles me, for a couple reasons. First, it implies that my posts are somehow designed to sell product. This is *my* blog, not the company's. Second, we should all be concerned about small businesses and how we can enable them to make better decisions. These are the orgs that are getting burned in things like spearphishing banking scams.</p>
+
+<p>* "At least I have never seen a 50-person company with a significant and formal risk management/decision program focused around information security." - This could well be the (intended) thesis of my post. All of this talk about formal RM is good and fine, but show me where any of it is applicable to the SMBs. In ORM terms, all RM is "Time Critical" and without formal processes. The question I have is: Can this be changed without adding undue overhead? I think probably so, but I don't think it will look anything like what bigger orgs are doing.</p>
+
+<p>* "just remember to remain polite" - Trying to, but it's tough when certain "luminaries" take the time to say I'm wrong, but absolutely refuse to engage in the conversation or add any value. I greatly appreciate Russ taking the time to write his responses, though I feel like I need to be sitting across a table from him so that I can get him to explain various parts to me.</p>
+
+<p>Thanks, again, for the comment!</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19407" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.redpointrisk.com" href="http://www.redpointrisk.com" rel="nofollow">Chad Weinman</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html#comment-19407"><abbr class="published" title="2011-08-16T10:34:27-05:00">August 16, 2011 10:34 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>"(intended) thesis of your post"... well if it is.. it definitely is a interesting go. Striving to find a simplified RM approach that gives value without requiring much overhead is a challenge for sure. </p>
+
+<p>and as a disclaimer.... I of course am not condoneing the use of ISACA frameworks... you will be disappointed. I used that reference as a point on "practical and easy" RM; problem is your result will be little true value. </p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>August  9, 2011  9:45 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html">Skip InfoRisk Tolerance</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2011/08/incomplete-thought-orm-and-mat.html">Incomplete Thought: ORM and Maturity</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

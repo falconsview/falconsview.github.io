@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Thoughts for OWASP Consideration... (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2011/01/whats_the_point_of_conferences.html" title="What's the Point of Conferences? " />
+   <link rel="next" href="http://www.secureconsulting.net/2011/01/diminishing_returns_on_small_c.html" title="Diminishing Returns on Small Conferences?" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2011/01/thoughts_for_owasp_considerati.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/1086"
+    dc:title="Thoughts for OWASP Consideration..."
+    dc:identifier="http://www.secureconsulting.net/2011/01/thoughts_for_owasp_considerati.html"
+    dc:subject="musings"
+    dc:description="Jeremiah Grossman got me thinking about this topic a few weeks ago when he posted his thoughts on OWASP. While I&apos;ve been a supporter of OWASP for a few years, I only last year (in 2010) became a member and..."
+    dc:creator="Ben Tomhave"
+    dc:date="2011-01-24T12:15:20-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2011/01/thoughts_for_owasp_considerati.html">
+<dc:title>Thoughts for OWASP Consideration...</dc:title>
+<dc:description>Jeremiah Grossman got me thinking about this topic a few weeks ago when he posted his thoughts on OWASP. While I&apos;ve been a supporter of OWASP for a few years, I only last year (in 2010) became a member and...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-01-24T12:15:20-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2011/01/whats_the_point_of_conferences.html">&laquo; What's the Point of Conferences? </a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2011/01/diminishing_returns_on_small_c.html">Diminishing Returns on Small Conferences? &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Thoughts for OWASP Consideration...</h2>
+                     <div class="entry" id="entry-2323">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>Jeremiah Grossman got me thinking about this topic a few weeks ago when he <a target="_blank" href="http://jeremiahgrossman.blogspot.com/2011/01/open-letter-to-owasp.html">posted his thoughts</a> on OWASP. While I've been a supporter of OWASP for a few years, I only last year (in 2010) became a member and got involved with the local chapter. What I've found has been at times heartening, and other times saddening. Attending AppSecUS and AppSecDC this year further perplexed me as I saw, on the one hand, people interested in promoting software assurance, while on the other hand there seems to be a lot of bickering, confusion, and strife over what the "right thing" might be. Since the OWASP Summit is coming up soon, and since the leadership team is asking for feedback, I thought I'd finally take some time to layout my thoughts and suggestions.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p><strong>1) What's the mission?</strong></p>
+
+<p>What is the mission of OWASP? I've looked on the <a target="_blank" href="http://www.owasp.org/index.php/About_OWASP">OWASP web site</a> and haven't really come up with a good answer. The community is organized around a set of shared <a target="_blank" href="http://www.owasp.org/index.php/About_OWASP#Principles">Principles</a>, but that's not a mission. The Principles are:<blockquote>Free & Open<br />
+Governed by rough consensus & running code<br />
+Abide by a code of ethics (see ethics)<br />
+Not-for-profit<br />
+Not driven by commercial interests<br />
+Risk based approach</blockquote><br />
+That's all good and fine, and lovely things to strive for, but... what's the goal? The OWASP Foundation needs to set a mission and vision for the organization, which will then translate into a set of actionable tasks. The mission could be as simple as "to provide world-class appsec tools and training to developer communities."</p>
+
+<p>My recommendation: jump to my #2 below, and then come back to mission. The mission should be actionable and achievable, but should require a stretch of sorts (that is, not an automatic "win" that means having to start the vision/mission process all over).</p>
+
+<p><strong>2) What's the vision?</strong></p>
+
+<p>In order to write a mission statement, it's first important to visualize the end-goal. What ideal is being sought? Since OWASP is a non-profit organization, I would submit that this vision has nothing to do with profit-motive, whether for itself or for its member sponsors. Instead, the vision should, I think, be along the lines of: "A developer community that has fully integrated and internalize software security/assurance practices to a degree that renders OWASP unnecessary." This is a rule that I apply to myself in almost all situation (especially consulting). I do not ever see myself as the end, but rather a means. In a perfect future world, we should not need dedicated security professionals, because security will be built-in, automatic, and accounted for. QA teams will perform rigorous security testing (whether it be code reviews, threat modeling, or pentesting), and developers will always use the best secure coding practices, helped by numerous tools. This, I think, is a great idealistic vision around which OWASP could then start building a mission.</p>
+
+<p><strong>3) What's the model?</strong></p>
+
+<p>Assume, if you will, that the vision and mission are set similar to how I've described it in #2. How, then do you build to your organization to achieve that goal? I submit that there are three pieces that are essential:</p>
+
+<p><em>a) Build Stronger Chapters</em>: There's a lot of inconsistency between chapters (from what I've heard). It seems that there's really not a very clear roadmap for what you're supposed to do once you start a chapter. What sort of resources are available? What should a meeting look like? How often should you meet? Etc. Chapters need to become better engaged and enhanced in their offerings. I would hope that each chapter could meet at least once a month and provide hands-on training that is geared as much to developers in the community as it might be to appsec practitioners. Developers should be the target audience more than the security community. Which is not to say that we shouldn't also spend time ensuring that appsec practitioners are trained-up, but that it is the developers who need the training.</p>
+
+<p><em>b) Renew Focus on Free Resources</em>: Whether it be tools, or guides, or free training opportunities, OWASP should be focused on delivering all of these things. This point combines well with (a) in that the local chapters then become the primary conduits for delivering and developing these resources.</p>
+
+<p><em>c) Move Away from Conferences in Favor of Tech Summits</em>: Conferences are all good and fine (well, sort of... see my previous piece <a target="_blank" href="http://www.secureconsulting.net/2011/01/whats_the_point_of_conferences.html">"What's the Point of Conferences?"</a>), but let's be honest for a minute and realize that we don't really need more conferences. What we need are technical summits where developers and appsec practitioners can go for good, technical, hands-on content. The cost-model for the AppSec conferences has been pretty good (read: very affordable), but the content value has been generally lacking. It's too much of the same old same old, with talking heads on platforms delivering rote speeches that offer a diminishing return on investment. Instead, I think it would be far more valuable for OWASP to work with local/regional conferences to take an idea like my "AppSec Guerrilla Camp" on the road as a special hands-on track. RSA, Black Hat, large BSides events, CSI, CanSecWest, etc, etc, etc. All of them could easily have an "AppSec Guerrilla Camp" track that is low-cost (or free!) and that provides a bunch of great technical, hands-on sessions that can be immediately applied by developers and appsec practitioners. And, oh, btw... if you're a vendor, these 2-hr sessions provide a great mechanism to start demonstrating the value you bring to the table, opening the door for follow-on work (just sayin').</p>
+
+<p><strong>4) Who should set the agenda?</strong></p>
+
+<p>One thing that concerns me greatly is that OWASP seems to have come to be dominated by a handful of vendors who are forever at odds with each other. I'd never before seen vendor cliques until I attended AppSecUS, and I found the whole thing a bit surreal and unsettling. There is a LOT of business to be had out there, and there's no reason whatsoever to be killing each other as if we're fighting for the last scraps. As such, I think we need to be extremely cautious to not let vendor desires influence OWASP direction unduly. Yes, we rely on sponsors and need those relationships, but the danger is becoming somewhat irrelevant (kind of like the ICSA Labs AV cert.). If the vendors run the show and set the mission with the express unwritten objective of driving more business for themselves, then we run the risk of falling apart. Failure should not be an allowable option at this point, which means putting aside (or redressing) vendor objectives and first settling on a reasonable vision and mission. Once those things are clear, then and only then should vendors start looking at how they can a) support the strategy, and b) (re)align so as to also profit from supporting the strategy.</p>
+
+<p><strong>5) OWASP != BSides</strong></p>
+
+<p>Both organizations (OWASP and Security B-Sides) are non-profit entities (BSides is in concept, though the paperwork is lacking). Both organizations seek to provide value at the lowest price-point possible (oftentimes free). And yet, despite having these similarities, these are two very different organizations, with very different goals. I think that OWASP would be far better served partnering with BSides on conferences than continuing to run their own (with, perhaps, the exception of the AppSecUS and AppSec International events).</p>
+
+<p>At BSides Austin we're actually working with this premise in mind (though unofficially thus far from the OWASP perspective). BSides Austin is being held as an unsanctioned event during SXSW Interactive, which is a major developer conference. I've specifically initiated efforts to launch the "AppSec Guerrilla Camp" at this event in order to provide free, hands-on training for developers and appsec practitioners. The opportunity here is that I view this track as something OWASP can and should be providing and promoting. At the same time, it's a little outside the sweet spot of BSides (which puts on great shows with great speakers in great venues).</p>
+
+<p>My hope is that, assuming all paperwork issues get clarified and resolved (*ahem*BSides), OWASP and BSides will investigate partnering going forward, with BSides providing the event coordination efforts, and OWASP helping provide excellent technical content.</p>
+
+<p><strong>Closing...</strong></p>
+
+<p>In brief summary, I hope that the OWASP Summit 2011 will result in a clarified vision and mission that will immediately translate into a better strategy and renewed energy. OWASP is an awesome organization with wonderful cross-industry support. The opportunity is here to make it even better. But, it has to happen through energizing and engaging the userbase through local chapters. It can be further enhanced by refining the resources utilized and delivered, with the good amplified through some key partnerships, like with Security B-Sides. It will be interesting to see what the future holds, and I'm hopeful that by mid-February we will hear good news that will help propel OWASP through this new decade.<br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=musings&amp;limit=20" rel="tag">musings</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=OWASP&amp;limit=20" rel="tag">OWASP</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on January 24, 2011 12:15 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2011/01/thoughts_for_owasp_considerati.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/1086</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (2)</h3>
+                           
+                                 <a id="c000831"></a>
+                                 <div class="comment" id="comment-831">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.owasp.org" href="http://www.owasp.org" rel="nofollow">Tom Brennan</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Core Values<br />
+<a href="http://www.owasp.org/index.php/Core_Values_and_Definitions" rel="nofollow">http://www.owasp.org/index.php/Core_Values_and_Definitions</a>  (RFC still open btw)</p>
+
+<p>Core Principals<br />
+Be the thriving global community that drives visibility and evolution in the safety and security of the world’s critical software applications and infrastructure.</p>
+
+<p>The rest will be talked about at:  <a href="http://www.owasp.org/index.php/Summit_2011" rel="nofollow">http://www.owasp.org/index.php/Summit_2011</a></p>
+
+<p>;)<br />
+</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.owasp.org" href="http://www.owasp.org" rel="nofollow">Tom Brennan</a>  |
+                                          <a href="#comment-831">January 24, 2011  1:18 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-831" title="Permalink to this comment">January 24, 2011 13:18</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000832"></a>
+                                 <div class="comment" id="comment-832">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Thanks, Tom. That's interesting about the Core Values, though again, that's neither a vision or mission. So, now you have Principles, Code of Ethics, AND Core Values? Too many lists, not enough value.</p>
+
+<p>Unfortunately, the Summit is scheduled for, I think, about the worst possible time imaginable being the week directly before RSA. I personally can't make it as I have to be in San Francisco the end of the week of the Summit (official duties for pre-RSA meetings). I would very much liked to have been at the Summit. I know I'm not the only person affected by this scheduling, either.</p>
+
+<p>-ben</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-832">January 24, 2011  1:29 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-832" title="Permalink to this comment">January 24, 2011 13:29</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2323" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2323);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>January 24, 2011 12:15 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2011/01/whats_the_point_of_conferences.html">What's the Point of Conferences? </a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2011/01/diminishing_returns_on_small_c.html">Diminishing Returns on Small Conferences?</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

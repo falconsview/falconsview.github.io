@@ -1,0 +1,989 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2017/02/rsa-usa-2017-in-review.html">
+<dc:title>RSA USA 2017 In Review</dc:title>
+<dc:description>Now that I&apos;ve had a week to recover from the annual infosec circus event to end all circus events, I figured it&apos;s a good time to attempt being reflective and proffer my thoughts on the event, themes, what I saw,...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2017-02-27T12:37:03-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2017/02/rsa-usa-2017-in-review.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2017/01/ncs-blog-devops-and-separation.html" title="NCS Blog: DevOps and Separation of Duties" />
+    <link rel="next bookmark" href="http://54.197.56.127/2017/02/introspection-on-a-recent-down.html" title="Introspection on a Recent Downward Spiral" />
+    
+    
+    <title>RSA USA 2017 In Review - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2520" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">RSA USA 2017 In Review</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-02-27T12:37:03-05:00">February 27, 2017 12:37 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>Now that I've had a week to recover from the annual infosec circus event to end all circus events, I figured it's a good time to attempt being reflective and proffer my thoughts on the event, themes, what I saw, etc, etc, etc.</p>
+
+<p>For starters, holy moly, 43,000+ people?!?!?!?!?! I mean... good grief... the event was about a quarter of that a decade ago. If you've never been to RSA, or if you only started attending in the last couple years, then it's really hard to describe to you how dramatic the change has been since ~2010 when the numbers started growing like this (to be fair, yoy growth from 2016 to 2017 wasn't all that huge).</p>
+
+<p>With that... let's drill into my key highlights...</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>Size Matters</strong></p>
+
+<p>Why do people like me go to RSA? Because it's the one week in the year where I can see almost every single vendor in the industry, as well as see people I know and like who I otherwise would never get to see in person (aka "networking"). It truly is an enormous event, and it has definitely passed the threshold of being overwhelming. Several people I've know for years did not make the trip this year, and I suspect this will become a trend, but in the meantime, in many ways it's a "must attend" event.</p>
+
+<p>The down-side to an event this large, and something I learned back in my Gartner days, is that - as someone with nearly 2 decades of industry experience - this is not an event where you're going to find much great content. Talks must, out of necessity, be tuned to the median audience, which means looking backward at what was cutting-edge 5-10 years ago. Sad, but true. There's simply not much room for cutting-edge thinking or discussion at the event nay more.</p>
+
+<p>Soooo... why go back? Again, so long as there's business development and networking benefit, it is an essential event, but it's also very costly. Hotel pricing alone makes this an increasingly difficult prospect. For as much as we're spending on hotels each year, I could very likely visit friends in 3-4 different parts of the country and break even on travel costs. It's also increasingly a lot of noise, and much harder to sift value from that noise. I truly believe RSA is nearing the point where they'll have to either break the event into multiple events (kind of like 3 wks of SxSW), or they'll at least need to move to a different model where you're attending a conference within a conference (similar to "schools" within a large university). As it stands today, it's simply too easy to get lost in the shuffle and derive diminishing value.</p>
+
+<p><strong>Automation Nearing the Mainstream</strong></p>
+
+<p>We've been talking about security automation and orchestration for several years now, but it's often been with only a handful of examples, and generally quick forward-looking. We're just now finally reaching the point where the automation message is being picked up in the mainstream and more expansive examples are emerging.</p>
+
+<p>One thing I noticed this year is that "automation" was prevalent in many booths. There are now at least a dozen vendors purportedly in the space (up from the days of it being Invotas (FireEye) and Phantom). No, I can't remember any names, but suffice to say, it's a growing list. Also, separately, I've noticed that orgs like Chef and Puppet have also made an attempt to expand their automation appeal to security (not to mention Service Now doing the same).</p>
+
+<p>The point here is this: The mainstream consensus is finally starting to catch up with the reality that we will never be able to scale human resources fast enough to successfully address the rapidly changing threat landscape. Thus, we absolutely <em>must</em> automate as much as possible. We don't need SOC analysts staring at screens, pushing buttons when a color changes from green to red. That can be automated. Instead, we need to think about these processes and make <em>smart</em> decisions about when and where a human actually needs to be in the loop. This is our future, which we should eagerly embrace because it then frees us up to do much more interesting and exciting things.</p>
+
+<p><strong>DevSecOps/Secure DevOps</strong></p>
+
+<p>Since we're talking about automation, it's only natural to pivot briefly into DevOps/DevSecOps/Secure DevOps. This year's Monday event on DevSecOps was ok, if not highly repetitive. However, initial attendance was strong, and feedback has reportedly been good (the schedule got a bit foobar, so attendance declined after lunch, c'est la vie).</p>
+
+<p>Here's what's important: Companies are continuing to reinvent how they operate, and DevOps is the underlying model. As such, we need to push hard to ensure that Dev and Ops teams have security responsibilities in their assigned duties, and that they are held accountable accordingly. A DevOps co-worker recently complained about this "DevSecOps" thing, and I pointed out that the entire reason for it is as a kludge because security has once again been left behind, and neither Dev nor Ops has taken on (or been assigned) security responsibilities, nor are they being held accountable for poor security decisions. THIS IS A CULTURAL FAILING THAT AFFECTS ALMOST EVERY SINGLE COMPANY AROUND.</p>
+
+<p>In DevOps, the norm is always to point to "gold standard" examples like Netflix, Facebook, Etsy, etc. However, what people oftentimes forget in looking at these orgs is that, for the most part, they started out doing DevOps from the early days. There was very little need for cultural transformation because they were already operating in a DevOps manner. For companies that have been around for much, much, much longer, there will be internal opposition and institutional inertia that will slow down transformations. It's imperative that these cultural attributes be supplanted, aggressively if necessary, in order to remove barriers to change. DevOps provides an amazing template for operating an agile, efficient, effective organization... but <strong>only</strong> if companies fundamentally change how they function, including cultural transformation.</p>
+
+<p><strong>AI, ML, and Big Data Lies</strong></p>
+
+<p>If we were to take all the marketing at face value, then we'd be led to believe that the machines are thinking for themselves and we're a mere small step away from becoming part of The Matrix. Thankfully, that's not really true at all. The majority of companies claiming "AI" today are really being misleading and disingenuous. The simple fact is the majority of products are still based on heuristics or machine learning (ML) - sometimes both.</p>
+
+<p>Heuristics is the traditional pattern matching we've seen for decades upon decades upon decades. Your traditional AV or IDS "solution"? It's primarily based on heuristically matching patterns and signatures to detect "a known bad thing." These are ok, but in the grand scheme they're providing little lasting value.</p>
+
+<p>ML has emerged as an alternative, wherein rather than looking for patterns, we instead model environments or behaviors, and then do alerts based on either matching or deviating from the models (sometimes both!). The ML approach is actually quite promising, though it's premised on the ability to actual create a discrete model of an environment or behavior. It is also imperative that ML engines be constantly rebuilding the models to account for changes in an environment or behavior (for example, imagine building a model of your diet starting in mid-October and running through the end of the year, and then trying to apply that same model to your diet Jan-Mar after you've made major life changes, perhaps as part of a New Year's Resolution).</p>
+
+<p>There is a lot of hope in AI, ML, et al, and I think for good reason. Frankly, ML gives us a lot of value when applied to reasonably discrete environments (e.g., containers), and thus I think we'll continue to see great growth and success in this space. I expect that computing environments will also continue to evolve and grow to make modeling of them that much easier. I think there's much promise.</p>
+
+<p>As for AI itself, we'll have to wait and see, but I suspect we're a good decade+ away from true examples of real-world applications. However, that said, if you're in a lower-level role (analyst, basic infrastructure config, etc.), then now is a good time to invest in training/education to improve your skills to raise yourself up to a higher-level job that will be less easily threatened by AI+automation. As I noted above, we really do not need SOC analysts staring at screens clicking buttons according to a set process. Machines can already do that today. Thus there's no job security in it. Instead, become the person who builds and trains these automation tools, or be the higher-level "fixer" who is activated one automation has done all the base enumeration and examination. The world is changing rapidly, and will look quite different in a decade.</p>
+
+<p><strong>The Threat Is Real / Ignore the FUD</strong></p>
+
+<p>One of my favorite tunes from last year is <a href="https://www.youtube.com/watch?v=3-d6LFLpBvw" target="_blank">Megadeth's "The Threat Is Real"</a> as it's really quite an appropriate phrase. Hacks are succeeding every day. Breaches are so commonplace that the mainstream media has all but lost interest in reporting on them. Incidents are inevitable. And, yet, in some ways they needn't be so inevitable; at least, not to the degree and severity we continually see. Whether it be massive DDoS attacks built on the back of woefully insecure IoT devices or sizable holes in cloud CDN infrastructure a la <a href="https://en.wikipedia.org/wiki/Cloudbleed" target="_blank">Cloudbleed</a>, there are a lot of holes, a lot of bugs, and a lot of undertrained people, all of which will lead to bad days.</p>
+
+<p>That said, we also need to be incredibly mindful and diligent to avoid the FUD. There's too much FUD. It's like running around telling us that "we're all gonna die" as if we don't all accept this as an inevitability. Come on, folks, let's get out of that red mental state (fear/panic/anger) and apply some rational thought. There are tons of things we can be doing to prepare and protect our organizations, our customers/clients, and our resources. We just need to take a deep breath, settle down, and execute.</p>
+
+<p>What should we do? Well, interestingly, it's not all that strange a list. First and foremost, Basic Security Hygiene, which I wrote about while at Gartner nearly 2.5 years ago. Things like robust IAM (centralized, processized, monitored), vuln and patch mgmt, and applying consistent, secure standards for infrastructure and development are all great starting points. Beyond that, it comes down to taking the time to understand your environment and exposures, and investing in tools and techniques that will produce measurable results (<strong>measurement</strong> is key!!!). A progressive security awareness program can be critical to educating and incentivizing people to make better decisions, and really reflects the overall imperative to transform the business and it's underlying culture. We can absolutely make things better, but it requires effort and thoughtfulness.<br />
+---</p>
+
+<p>*whew* Ok... so, there you have it... my thoughts from RSA 2017. All told, it was a so-so week for me personally, but I'll definitely be back for one more year. TBD after that. It's really quite the circus these days. This year was especially difficult with how spread out things were (Moscone South has a major construction project underway, so the Marriott Marquis was enlisted). The wifi and mobile signals in the Marquis dungeon were nonexistent, which was painful. Also painful was the 4 spread out venues for Codebreaker's Bash on Thursday evening. It didn't work. Because people were spread all over, it was difficult to casually run into folks I was hoping to see. Hopefully next year they'll revert to a large single venue (I really, really, really enjoyed the Bash at AT&T Park, though many folks complained about it). Finding a venue for 43k+ people has to be incredibly challenging. Of course, so is finding a hotel room each year, so, ya know, there's that, too. Ha.</p>
+
+<p>Hope you find this interesting/useful! Until next time...</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/conferences/" rel="tag">conferences</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=2017&amp;limit=20';return false;" rel="tag">2017</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=experience&amp;limit=20';return false;" rel="tag">experience</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=review&amp;limit=20';return false;" rel="tag">review</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=RSA&amp;limit=20';return false;" rel="tag">RSA</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>February 27, 2017 12:37 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2017/01/ncs-blog-devops-and-separation.html">NCS Blog: DevOps and Separation of Duties</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2017/02/introspection-on-a-recent-down.html">Introspection on a Recent Downward Spiral</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
