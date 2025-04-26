@@ -1,0 +1,1008 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2011/04/identity-crisis-the-delusion-o.html">
+<dc:title>Identity Crisis: The Delusion of NSTIC</dc:title>
+<dc:description>U.S. Commerce Secretary Gary Locke last week announced the release of the National Strategy for Trusted Identities in Cyberspace (NSTIC) during an event sponsored by the U.S. Chamber of Commerce. The event appears to have been your standard hoopla affair,...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-04-18T12:05:55-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2011/04/identity-crisis-the-delusion-o.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2011/04/grc-and-cloud-security.html" title="GRC and Cloud Security" />
+    <link rel="next bookmark" href="http://54.197.56.127/2011/05/secure360-and-rmisc-2011.html" title="Thoughts on Secure360 and RMISC (2011)" />
+    
+    
+    <title>Identity Crisis: The Delusion of NSTIC - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2358" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Identity Crisis: The Delusion of NSTIC</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2011-04-18T12:05:55-05:00">April 18, 2011 12:05 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>U.S. Commerce Secretary Gary Locke <a target="_blank" href="http://news.cnet.com/8301-31921_3-20054342-281.html">last week announced</a> the release of the <a target="_blank" href="http://www.whitehouse.gov/sites/default/files/rss_viewer/NSTICstrategy_041511.pdf">National Strategy for Trusted Identities in Cyberspace</a> (<a target="_blank" href="http://www.nist.gov/nstic/">NSTIC</a>) during an event sponsored by the U.S. Chamber of Commerce. The event appears to have been your standard hoopla affair, and comes a couple months after circulation of the initial draft. You can read the NSTIC strategy in its entirety here.</p>
+
+<p>Overall, NSTIC is an interesting effort undertaken by the federal government in recognition of the myriad failures limiting the growth of safe, secure online transactions today. In particular, the report puts a major emphasis on the continued use of passwords, and in the need for individuals to have unique credentials for the dozens of sites they interact with on a regular basis. Most people make use of unsafe computing practices, reusing passwords and/or choosing week, but easily remembered, credentials.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>Unfortunately, this initiative appears to be very short-sighted and, at least on face, a bit ludicrous. Yes, passwords are a major problem today, but nothing in the strategy really addresses passwords specifically. Instead, the report targets the lack of a single "trusted" credential and seem to view the solution as being to simply consolidate all credentials into one "strong" credential. They do make mention of smart card technology in the strategy, but they are certainly not mandating any one solution since they want to create room for innovation. I have very low hopes for this approach.</p>
+
+<p><strong>Key Quotes</strong></p>
+
+<p>There's much criticism that can (will) be leveled at this proposal, but let's first look at what it promises.</p>
+
+<p>First up, let's look at the defined "vision" of the plan:<blockquote>"Individuals and organizations utilize secure, efficient, easy-to-use and interoperable identity solutions to access online services in a manner that promotes confidence, privacy, choice, and innovation."</blockquote><br />
+Note that this vision is very utopian in nature. One trend I noticed throughout the document is a tendency toward focusing on the positives. The threat to online identities is only played upon in the initial problem scenario setup, and then is almost completely set aside, even though the plan itself instantiates new threat exposures under the original problem scenario.</p>
+
+<p>Note here that "FIPPs" are "Fair Information Practice Principles":<blockquote>"The eight FIPPs are transparency, individual participation, purpose specification, data minimization, use limitation, data quality and integrity, security, and accountability and auditing."</blockquote></p>
+
+<blockquote>"Universal adoption of the FIPPs in the envisioned Identity Ecosystem will enable a variety of transactions, including anonymous, anonymous with validated attributes, pseudonymous, and uniquely identified--while providing robust privacy protections that promote usability and trust."</blockquote>
+These two quotes are interesting. Again, NSTIC takes a somewhat idealistic approach, trying to find that win-win scenario. Unfortunately, as we'll discuss below, there are a lot of new (and old) challenges that will, I think, lead to compromising on some of these FIPPs. Either that, or it will be found to be unimplementable. Notice that they describe the attributes, but they don't really weight them, or talk about whether or not they can or should be weighted. I think we'll find that the FIPPs, in implementation, are internally contradictory, and will thus lead to weakening some factors in favor of others.<br>
+
+<p>Last, we'll end with a quote from NSTIC on the "voluntary" nature of these "Identity Ecosystem"... <blockquote>"Finally, participation in the Identity Ecosystem will be voluntary: the government will neither mandate that individuals obtain an Identity Ecosystem credential nor that companies require Identity Ecosystem credentials from consumers as the only means to interact with them Individuals shall be free to use an Identity Ecosystem credential of their choice, provided the credential meets the minimum risk requirements of the relying party, or to use any non-Identity Ecosystem mechanism provided by the relying party Individuals' participation in the Identity Ecosystem will be a day-to-day--or even a transaction-to-transaction--choice."</blockquote><br />
+The goal of NSTIC will be to create a single credential that will be universally used. I fully expect that the bar will be lowered, and quickly, to allow for solutions to be presented. Once these solutions are deployed, then I fully expect to see "encouragement" from the feds to speed adoption. For instance, life will be made "easier" in many areas of interacting with the feds, if only you adopt use of an approved NSTIC ID. However, in doing so, you'll inevitably be making security and privacy trade-offs.</p>
+
+<p>Reading the CNET article, "<a target="_blank" href="http://news.cnet.com/8301-31921_3-20054342-281.html">Obama moves forward with Internet ID plan</a>," provided some additional quotes of interest:<blockquote>"During his speech, Locke lashed out at the 'conspiracy theory set' who have criticized the proposal. A column in NetworkWorld.com, for instance, called NSTIC a 'great example of rampant, over-reaching, ignorant, and ill-conceived political foolishness.'"</blockquote><br />
+What you see here is a classic "either you're with us or against us" ploy; one that has been popping up with greater frequency these days. Rather than accept that this idealized plan has weaknesses, they'd rather cast all critics as being "wackos" (note the language "conspiracy theory set") who simply don't get it. Of course, the irony of this all is that we do "get it" and very much so. How many years of infosec experience does Secretary Locke have? I'm guessing it's a lot less than me... in fact, let's <a target="_blank" href="http://en.wikipedia.org/wiki/Gary_Locke">look at who Locke is over on Wikipedia</a>. He's a career politician, currently Commerce Secretary, but also standing nominee to become the next US Ambassador to China. So, I take his comments as purely political defensive maneuvering.</p>
+
+<p>Interestingly, not all in attendance were completely supportive<blockquote>"Sen. Barbara Mikulski, a Maryland Democrat who also spoke today at the Chamber event, seemed to veer a bit off-message--and instead of touting anonymity, she stressed the importance of aiding law enforcement.</p>
+
+<p>Protecting civil liberties is important, Mikulski said. 'But the first civil liberty is to be able to have a job, lead a life, and be able to buy what you want in the way we now buy it, which is through credit cards.'"</blockquote><br />
+These comments highlight one of the many inherent contradictions that will be faced by NSTIC, and that are implicit in the FIPPs. Given the current direction of the political leadership in this country, I do not for one nanosecond believe that there will not be interference from government or law enforcement in these implementations. Moreover, I am extremely concerned that we're seeing the feds start pushing toward a single high-value credential as they stand to gain a lot more than they would lose, even though the average US citizen would be in just he opposite position.</p>
+
+<p>Lastly, I found this insight to be on the verge of being prophetic: <blockquote>"Another concern: Although the White House is describing the NSTIC plan as 'voluntary,' federal agencies could begin to require it for IRS e-filing, applying for Social Security or veterans' benefits, renewing passports online, requesting federal licenses (including ham radio and pilot's licenses), and so on. Then obtaining one of these ID would become all but mandatory for most Americans."</blockquote></p>
+
+<p><strong>Criticism of the Plan</strong></p>
+
+<p>Network World already produced criticism of NSTIC when the draft first came out in January (see: <a target="_blank" href="http://www.networkworld.com/columnists/2011/011411-backspin.html">"NSTIC and the feds HUA problem"</a>). This criticism earned them the bane of Secretary Locke in his "conspiracy theory set" comments. However, I think there are several problems with this proposal.</p>
+
+<p><em>1) NSTIC Solves the Wrong Problem</em></p>
+
+<p>Much of the focus in NSTIC is on creating this so-called "Identity Ecosystem." Unfortunately, it does not generally speak to the core problem, which is ongoing reliance on password-based authentication. Reading between the lines in the report, it seems that their unstated believe is that, if they can reduce the number of accounts people use, then that will trigger peoples' willingness to then adopt use of stronger authentication mechanisms, such as smart card technology.</p>
+
+<p>On the one hand, this seems like a nice idea, but on the other hand, how sure are we that we have truly good, viable, scalable alternatives to passwords? Smart cards have been deployed within the federal space, but we have to bear in mind that deploying to an "enterprise" environment is very different from deploying to the public at large. Moreover, even with the deployment of a smart card, we will STILL have passwords (or PINs) present, which means that we've not really solved the problem, but merely shifted it a bit.</p>
+
+<p>More than anything else, I would love to see major research investments around how to rid the world of passwords altogether. <em>That</em> is the problem that needs to be solved. ID Ecosystem is secondary.</p>
+
+<p><em>2) NSTIC is Anti-Anonymous</em></p>
+
+<p>The notion that NSTIC will protect anonymity is a bit of a joke. In fact, as Sen. Mikulski's comments reflect, there absolutely will be a drive toward providing law enforcement with access. Despite the hand-waving and positivity in the report, I do not for one nanosecond believe in the "good will" of our government. We've been betrayed far too many times, especially since 9/11, and I think that we will only see more of this behavior.</p>
+
+<p>The bottom line is that these credentials will have to have a home somewhere on the Internet, which means that whomever hosts that credential will have the ability to de-anonymize the ID and link it definitively to a person. Moreover, this is the whole point of a "trusted Identity Ecosystem" - to get rid of true anonymity.</p>
+
+<p>Some could (have/will) argue that anonymity doesn't truly exist any more, and to a degree I would agree, but there's still somewhat of an ability to cover most tracks if one were really interested in doing so. This proposal is nothing short than a "cure" to anonymity, which means it is, in fact, anti-democratic, since anonymous speech is a tenant of our (allegedly) free society.</p>
+
+<p><em>3) NSTIC is Anti-Privacy</em></p>
+
+<p>Despite all the talk about FIPPs and protecting privacy, the simple fact is that - as already noted - a single "trusted" credential like this will, by definition, be de-anonymized. Sure, you may be able to control information disclosure in a given authenticated situation, and yes they definitely have put some thought into this topic, but the fact still remains that the ID will be authenticated by a service provider who has fully vetted you and who can tie a credential to a person.</p>
+
+<p>More importantly, this vetting process will necessarily require an individual to disclose even more information than they already do today just to get the "trusted" ID. I would imagine this will require providing Social Security numbers, addresses, possibly submitting to background checks, etc. Where does the line get drawn? And, more importantly, how do we keep the line from continuing to move toward more up-front disclosure of information, all in the name of pseudo-trust on the Internet?</p>
+
+<p>The very existence of a "trusted" ID that has been reasonably linked to an individual means that it will be de-anonymized. Thinking about this from a legal perspective, you're going to have to go to great lengths to tie the ID to a person so that you can then extend how you'll be able to use it in legally-binding transactions. The farther we go down that road, the less private everything will be. Mark my words.</p>
+
+<p><em>4) It <strong>Will</strong> Be Tracked</em></p>
+
+<p>In the report, there is hand-waving about how you, the individual, will be able to control what is disclosed to the other part in a transaction. A model not too dissimilar from the Kerberos protocol is described. However, what is glossed over is that there is, out of necessity, a trusted 3rd party brokering the transaction. What is to stop this 3rd party from then tracking all the touchpoints between consumer and end-party? It seems to me very likely that this is where law enforcement will first focus their efforts. We'll now have mutual authentication, and the consumer will have a strong credential to boot that is tied to them through some sort of rigorous registration process (after all, how else would you ensure that someone is who they claim during registration?). The trusted 3rd party need only keep a record of authentication transactions succeeding with ID X and Site Y and the rest proceeds from there.</p>
+
+<p>Secretary Locke would have us believe that this won't happen, but I see nothing in the plan that would prohibit a provider from tracking basic transactions. Moreover, having experience in these types of systems, I cannot see how the provider wouldn't track this information. At best the authors are being naive, and at worse their actively trying to mislead.</p>
+
+<p><em>5) It <strong>Will</strong> Be Broken</em></p>
+
+<p>In consolidating to a single "trusted" credential, no matter how strongly authenticated, NSTIC is absolutely creating a high-value target. What happens when it's compromised/broken? It will happen at some point in time. Maybe not today. Maybe not tomorrow. But, at some point in the near future, whatever credentials are released as part of this "Identity Ecosystem," they will become compromised. How do you address that event? How do you now a) suspend the ID, b) validate that the actual consumer is who they claim to be, c) prevent the attacker from blocking revocation through impersonation, and d) limit the costs to the consumer for cleaning up the resulting mess? I have very low expectations in this area, and I think it will take one class break of a NSTIC credential system to cause the whole thing to fall apart. That is, unless resilience and recoverability are somehow built into the system, which seems somewhat unlikely given the current draft.</p>
+
+<p>Ironically, this problem ends up coming back to the original problem: How do you prove that someone online is who they claim? You don't. You have to fall back to out-of-band methods. And, as we've seen with account security questions, some of those out-of-band methods are worse than the solutions themselves. Much needs to be done in this area to improve things before NSTIC will be viable.</p>
+
+<p><em>Bonus: It's going to take a generation!!!</em></p>
+
+<p>My last quip here is not so much a criticism of NSTIC as it is a general comment. Whatever we do today to "fix" problems such as the one targeted by NSTIC, it will take at least a generation for it to roll into play and take full effect. There's no way my grandparents - both in their 90s - are going to make use of NSTIC credentials. I'm also somewhat doubtful that the Boomers (my parents included) will be adopting these new approaches. There's simply not much incentive to do so. However, I fully expect that they'll continue to tinker online and undertake a certain percentage of online transactions.</p>
+
+<p>What this all means is that it's going to take another 25 years for any solution to become fully mainstream. Let's now think about where we would all like to see things go in the next 25 years. In the grand scheme of things, I think addressing passwords themselves should be priority #1. I don't think NSTIC ends up being all that important once the password problem is solved. A degree of consolidation is likely inevitable, but we're already seeing that as Twitter, Facebook, and Google credentials are used elsewhere. Perhaps NSTIC provides a mechanism to informally regulate these authentication credentials, but without any legislative teeth, it seems unlikely to go anywhere.</p>
+
+<p>It seems the biggest benefit from NSTIC will be the availability of additional research funding for tackling some of these authentication-related challenges. Out of the whole program, that's probably the biggest benefit. It's too bad we have to deal with all the delusional hoopla and political posturing along the way.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>April 18, 2011 12:05 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2011/04/grc-and-cloud-security.html">GRC and Cloud Security</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2011/05/secure360-and-rmisc-2011.html">Thoughts on Secure360 and RMISC (2011)</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

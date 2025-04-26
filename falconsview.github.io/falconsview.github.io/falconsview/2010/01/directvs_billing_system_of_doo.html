@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>DIRECTV's Billing System of Doom (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2010/01/newark_breach_hype_to_hysteria.html" title="Newark Breach Hype to Hysteria" />
+   <link rel="next" href="http://www.secureconsulting.net/2010/01/do_we_give_google_too_much.html" title="Do We Give Google Too Much?" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2010/01/directvs_billing_system_of_doo.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/982"
+    dc:title="DIRECTV&apos;s Billing System of Doom"
+    dc:identifier="http://www.secureconsulting.net/2010/01/directvs_billing_system_of_doo.html"
+    dc:subject="musings"
+    dc:description="Help me out, folks, cuz I&apos;m at a loss here... I think there&apos;s something seriously wrong with DIRECTV&apos;s billing system... or maybe it&apos;s billing systems? The past couple months I received summary statements by email that said I owed $0.00...."
+    dc:creator="Ben Tomhave"
+    dc:date="2010-01-13T22:48:27-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2010/01/directvs_billing_system_of_doo.html">
+<dc:title>DIRECTV&apos;s Billing System of Doom</dc:title>
+<dc:description>Help me out, folks, cuz I&apos;m at a loss here... I think there&apos;s something seriously wrong with DIRECTV&apos;s billing system... or maybe it&apos;s billing systems? The past couple months I received summary statements by email that said I owed $0.00....</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-01-13T22:48:27-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2010/01/newark_breach_hype_to_hysteria.html">&laquo; Newark Breach Hype to Hysteria</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2010/01/do_we_give_google_too_much.html">Do We Give Google Too Much? &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">DIRECTV's Billing System of Doom</h2>
+                     <div class="entry" id="entry-2210">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>Help me out, folks, cuz I'm at a loss here... I think there's something seriously wrong with DIRECTV's billing system... or maybe it's billing systems? The past couple months I received summary statements by email that said I owed $0.00. This was great - free TV, who wouldn't like that? So, just to be sure, I go online, and sure enough, the online statements say that I owe $0.00.</p>
+
+<p>Then I get my credit card bill (yeah yeah misconfigured payment method sue me - actually, check that, it wasn't my fault, but anyway)... I have charges for the months of Nov and Dec - the very same months where the statements said I owed $0.00. ?!?!?!?!?! So, I start digging further and I find that, yes, the statements do in fact reflect a payment made in conjunction with the billing cycle. As a matter of fact, it turns out that the reason my bills said I owed $0.00 was because they were charging me on the same day that the statements were generated, which meant that my summary would zero out even though I'd just made a payment.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p>Soooo... I call up DIRECTV... "hello, yes, there's a problem with my bill... it keeps saying I owe $0.00 and yet you people keep charging me every month... what is up with that?!" The guy goes through the bill, explains the situation, and then, against all belief, says that this is absolutely correct, it's the way it's always worked. At this point, I'm confused, because through October it hadn't worked that way, but then I move cross-country and suddenly "this is the way it's always worked" (it turns out later he's been with the company all of about 4 months, so whatever). Clearly I'm not going to get anywhere here, so I decide to let it drop and I'll just put a fluff high estimate into my budget and then check the detailed statement each month. Oh, sigh.</p>
+
+<p>It's now mid-January, and I've just received my summary statement. It says I owe an amount that is not $0.00. "Hmmm," I think. "They must have fixed the glitch!" I go online, check it out, sure enough, I owe money and they haven't charged me yet. But wait... what's this? Apparently I now have two different due dates. The summary bill says the balance is due on 1/27, but when I verify my auto payment configuration (to the right account now, thankyouverymuch), IT says the balance is due on 2/1. Uh... huh?</p>
+
+<p>So, here's the thing... on the one hand, I'm hesitant to call DIRECTV because, let's be honest here, I'm not going to get any sort of satisfactory answer. However, on the other hand, I'm concerned that the auto payment will go in on 2/1 and then next month they'll charge me a late fee of some sort. Of course, I sort of secretly hope that this will happen because then it would give me an opportunity to call up and complain at length and wonder loudly about the stability of the company and its systems. Or maybe not.</p>
+
+<p>At any rate, DIRECTV's billing system(s) is/are apparently completely hosed. Maybe this is a sign that they're not long for this world. Or, maybe they just deployed SAP (<a target="_blank" href="http://www.instantrimshot.com/">*rimshot*</a>).<br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=billing&amp;limit=20" rel="tag">billing</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=DIRECTV&amp;limit=20" rel="tag">DIRECTV</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=stupidity&amp;limit=20" rel="tag">stupidity</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on January 13, 2010 10:48 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2010/01/directvs_billing_system_of_doo.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/982</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (2)</h3>
+                           
+                                 <a id="c000705"></a>
+                                 <div class="comment" id="comment-705">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.ashimmy.com" href="http://www.ashimmy.com" rel="nofollow">alan shimel</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Ben - I have had my own issues with directTV billing system. I bundle directv with my att stuff and am supposed to get a discount. It never shows up and every month I with hold the money from my bill payment (i refuse to let them charge me automatically) and them call them and make them put the discount in there. Over the last year there support has gone totally down the tubes!</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.ashimmy.com" href="http://www.ashimmy.com" rel="nofollow">alan shimel</a>  |
+                                          <a href="#comment-705">January 15, 2010  2:48 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-705" title="Permalink to this comment">January 15, 2010 14:48</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000706"></a>
+                                 <div class="comment" id="comment-706">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>@Alan - that's interesting, especially about their support going downhill... I've noticed an increase in promotions from them, too, over the past 6 months or so... perhaps these two paint a picture of their pending demise? They sure spend a lot on advertising, yet I also recall reading about an investigation into their billing practices (summary here: <a href="http://www.lieffcabraser.com/consumer/directv.htm)," rel="nofollow">http://www.lieffcabraser.com/consumer/directv.htm),</a> plus they seem to also have gone through a merger of some sort last year that is also causing them problems (see here: <a href="http://www.prlog.org/10231805-the-directv-group-inc-investor-investigation.html)?" rel="nofollow">http://www.prlog.org/10231805-the-directv-group-inc-investor-investigation.html)?</a> Anyway... not good news at any rate for them... perhaps good news for all of us fooball fans, though... if DirecTV went out of business, then maybe online streaming could be purchased separately? :)</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-706">January 15, 2010  4:20 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-706" title="Permalink to this comment">January 15, 2010 16:20</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2210" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2210);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>January 13, 2010 10:48 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2010/01/newark_breach_hype_to_hysteria.html">Newark Breach Hype to Hysteria</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2010/01/do_we_give_google_too_much.html">Do We Give Google Too Much?</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

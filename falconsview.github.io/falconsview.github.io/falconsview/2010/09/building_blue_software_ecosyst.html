@@ -1,0 +1,329 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Building "Blue" Software Ecosystems (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2010/09/lying_liars_and_the_lies_they.html" title="Lying Liars and the Lies They Tell, or Bad Policy Practices" />
+   <link rel="next" href="http://www.secureconsulting.net/2010/09/geminikrvw_training_at_appsecd.html" title="Gemini/KRvW Training at AppSecDC 2010" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2010/09/building_blue_software_ecosyst.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/1056"
+    dc:title="Building &quot;Blue&quot; Software Ecosystems"
+    dc:identifier="http://www.secureconsulting.net/2010/09/building_blue_software_ecosyst.html"
+    dc:subject="infosec"
+    dc:description="I had the opportunity a couple weeks ago to attend the OWASP AppSec USA 2010 conference in Irvine, CA (this post would have gone up last week, but my laptop hdd died while on travel). Unlike some of the larger..."
+    dc:creator="Ben Tomhave"
+    dc:date="2010-09-21T08:33:14-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2010/09/building_blue_software_ecosyst.html">
+<dc:title>Building &quot;Blue&quot; Software Ecosystems</dc:title>
+<dc:description>I had the opportunity a couple weeks ago to attend the OWASP AppSec USA 2010 conference in Irvine, CA (this post would have gone up last week, but my laptop hdd died while on travel). Unlike some of the larger...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-09-21T08:33:14-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2010/09/lying_liars_and_the_lies_they.html">&laquo; Lying Liars and the Lies They Tell, or Bad Policy Practices</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2010/09/geminikrvw_training_at_appsecd.html">Gemini/KRvW Training at AppSecDC 2010 &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Building "Blue" Software Ecosystems</h2>
+                     <div class="entry" id="entry-2292">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>I had the opportunity a couple weeks ago to attend the OWASP AppSec USA 2010 conference in Irvine, CA (this post would have gone up last week, but my laptop hdd died while on travel). Unlike some of the larger conferences, AppSecUS was a much more intimate affair with only a few hundred attendees. These types of conferences can be a lot of fun as they lend themselves more naturally to open discourse, sharing of experiences, and the building of community. This event did not disappoint.</p>
+
+<p>There were a couple keynotes that particularly captured my attention. The first was by Jeff Williams, head of Aspect Security and President of OWASP. In it he spoke about the need for building-in security frameworks and enablers as part of our software ecosystem. The other talk that I found particularly interesting was by David Rice in which he used the analogy of the anti-pollution movement, along with relatively new thinking about sustainability and the new notion of "going blue" that was introduced by Adam Werbach. Putting these concepts together, and then mixing it in during ensuring hallwaycon discussions raised some interesting notions in my mind.</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p><strong>Ecosystems and Emerging Properties</strong></p>
+
+<p>Williams' talk hit on some familiar ideas that have been bouncing around the industry for quite some time. One key to his talk - and something that I think we're starting to understand industry-wide - is that security isn't a process, despite what people like Bruce Schneier might have said. Instead, security is a state or attribute that is created or achieved. Assurance and governance are the processes that help use to instantiate the properties necessary to achieve a "secure" state. Those processes need to be buttressed by education, training, and awareness along with tools, frameworks, and a dedicated community (btw, in this case "awareness" is more than just flyer campaigns, but instead is talking about an improved degree of consciousness that strengthens the linkage between actions, consequences, and impact).</p>
+
+<p>We already live in an ecosystem (several, really). Applications and systems already exist. New development merely expands this environment, which reminds us that there is still a significant amount of legacy in the ecosystem. As such, it's important to consider that security as an emerging property of software needs to be applied equally to new and old code, despite the divergent challenges represented in each.</p>
+
+<p>The key take-away of Williams' talk was that we need to do a better job mobilizing to provide the tools, frameworks, and other supporting mechanisms that will help lead to a natural emergence of security properties, at least in terms of new code. In terms of legacy code, we're going to have to find ways to convince the business that upgrades are important and necessary. Thus far as an industry we've been fairly reactive, but instead need to switch to a proactive perspective that helps optimize operations and, eventually, leads us to a sustainable existence and the notion of "going blue."</p>
+
+<p><strong>Pollution and Going Blue</strong></p>
+
+<p>David Rice's keynote talk used the anti-pollution movement as an analogy for software security, with code weaknesses equating to pollution itself, and cybercrime, espionage, spam, and malware being chalked up to downstream byproducts akin to acid rain, increased cancer rates, etc. One of the best points Rice made during his talk was that "people will not vote against themselves" in making security decisions. Instead, they will act in what they perceive as being their best self-interest, even though it may not actually be true from an outside perspective.</p>
+
+<p>During his talk, Rice described the four phases through which the anti-pollution movement has progressed. In the first phase, people looked at pollution as a positive that reflected progress and profitability. Pollution was linked to industrialization, which was in turn linked to economic prosperity. However, over time society woke up to realize that pollution wasn't really such a good thing, nor was it inextricably linked to economic prosperity (one could in fact argue that, despite the economic success of industrialization, the costs in terms of quality of life and life expectancy made it rather unsuccessful). However, triggering change was no easy matter, ultimately taking decades to spawn regulations, which eventually led to a tipping point that triggered the second phase.</p>
+
+<p>Phase two was the era of "polluter pays" regulations. The tipping point that triggered stringent regulations was social movement. A significant portion of society realized that pollution was harming people and the environment, causing enormous damage that created unsustainable and destructive conditions that were quite literally killing people. Regulations were not viewed favorably by industry, but due to social activism the politicians (eventually) had to respond to the demands of the electorate and start projecting controls onto industry.</p>
+
+<p>Increased regulations led to sharp increases in operational expenses. Industry was required to implement controls that helped keep pollution in check, or they would face significant fines. Eventually these increased costs reached a tipping point that led to the third phase. At some point, industry realized that it could not continue using bolt-on, ad hoc solutions and thus began looking for ways to achieve compliance while cutting operational expenses. The result was the "green" movement in which we heard common phrases like "reduce, reuse, recycle."</p>
+
+<p>The "green" phase, unfortunately, has limited scalability. At some point, you can remove only so much overhead expense from your operations. Advances in automation eventually reach a stasis point where no more can be done. It is at this point that industry has remained for a significant time until a breakthrough triggered a new evolutionary step. Specifically, certain industry leaders (e.g. GE and Wal-mart) realized that anti-pollution efforts could be leveraged to enhance the top line. That is, rather than simply relying on "green" to cut costs, one could actually leverage off new products and practices to both reduce costs and increase top-line revenue. Consider, for example, the notion of office environments that are almost fully self-contained, recycling water and using renewable energy sources (solar, geo-thermal, wind). Not only do such practices reducing operational costs over time, but they also provide an entirely new industry vertical within which to provide new, innovative products.</p>
+
+<p>Rice leveraged GE "ecomagination" initiative as a prime example of the paradigm shift that occurred, highlighting all the assumptions that ended up being wrong. Rather than being a burden, it turns out that anti-pollution efforts led to out-of-the-box thinking that could identify better methods for operating the business, which in turn led to innovation and revenue growth. Part of the trick here was in being first to market, but at the same time it underscores a key point: in phase 4, rather than simply focusing on enabling business optimization through reduced costs, it was in fact possible to enable business growth that is sustainable and scalable by re-engineering processes, techniques, and looking at new ways of conducting business.</p>
+
+<p>The question, then, is if this model can be replicated with software security, or if it's even a useful analogy. In his talk, Rice concludes that we are somewhere between phases 1 and 2, with an increased focus on regulations. We know how to make phase 3 arguments as we've been using them for years (e.g., engineering principles teach us that spending more time on design and architecture will save us money in terms of maintenance and support costs over time). However, what would the fourth phase, sustainability, look like? How do we redefine our industry and thinking?</p>
+
+<p><strong>Defining Success: An Illusive Goal</strong></p>
+
+<p>Unfortunately, Rice does not today have an answer to what success will ultimately look like. It's not even clear that the concept of "sustainable software security" makes sense. Moreover, if we accept for a moment that the phases are applicable, it then raises the question of whether or not we could possibly skip or accelerate phases. Do we need more regulations, and if we do, will they have the desired impact? What would these regulations look like? Prescribing specific treatments for pollution were straightforward in that pollution was measurable, as was its impact. How do we measure software security over time?</p>
+
+<p>The future, then, seems to hinge on a couple factors. We need to find ways to reliably and consistently measure software security. These measurements need to become mainstream values that are expected and valued by consumers and industry. We need to develop methods for measuring the quality of code output so that the problem can be properly demonstrated and framed. Until then, we may still be able to reach the first tipping point that leads to increased regulation. In fact, one could argue that we're already very near moving into that second "polluter pays" phase. Once stringent regulations are instituted and have become relatively effective, only then can we reach a stasis point that will then hit the next tipping point: acceptance of regulatory burden and a renewed focus on reducing operational expenses. It is at this point where metrics and measurements will become all that much more important.</p>
+
+<p>I have to wonder, though, if there isn't an opportunity to jump the curve from phase 2 straight into phase 3, or possibly even phase 4? We already have a foothold on tools and frameworks that can help us "green" the software industry. Unfortunately, businesses don't today seem to have the impetus to implement these new approaches because they represent increased operational expense. In fact, it can be successfully argued that industries have almost no incentive to spend additional time and money on software security, or even to relent and comply with regulations should they be adopted. Consider companies like Zynga and Facebook, which have been highly successful (to the tune of hundreds of millions of follars) while continuing to push out insecure software. How do you make a successful argument to them that what they're doing is "wrong" and requires a massive security investment?</p>
+
+<p>More importantly, does any of this lead to a "sustainable" future? What does sustainable software security look like? Perhaps this situation creates an opportunity for an innovator to enter who can help create tools that magically churn out secure code, but I'm less than hopeful today.</p>
+
+<p><strong>Here In the Real World</strong></p>
+
+<p>The list of things that don't work is very lengthy. We know that most product certification programs are less than useful since they tend to allow for audit sampling and one-off configurations. Prescriptive regulations like PCI DSS, which providing some benefit, simply cannot evolve quickly enough to truly provide lasting value. More importantly, most regulations are ignored by many small-to-medium companies because the cost-benefit analysis simply doesn't work in their favor. It's far more beneficial (financially) to ignore regulations (legal or industry) than it is to take a significant overhead hit on the expense sheet.</p>
+
+<p>Ambiguous regulations fare just as well, which is not very well at all. Regulations like SOX and GLBA generally lack enough specificity that it creates a wide range of choices that can be construed as achieving compliance. These regulations triggered some actions in larger corps., but overall have done little to move the needle on software security.</p>
+
+<p>At the same time, we need to also keep in mind that the anti-pollution movement was the result of around 100 years of societal evolution. Industry regulations didn't start coming into effect until the 1960s, and we've only now over the past decade started to reach the point of sustainability. Even compressed into "internet time" this means that we're looking at another 20 years or more of evolution. Can we really afford this?</p>
+
+<p>And let's not forget that all of this initiative hinges on enough social movement and activism to trigger politicians to act against their own corporate self-interest and instead choose to craft and enforce regulations that will lead us to the promised land of more secure code. None of this strikes me as overly realistic or viable today.</p>
+
+<p><strong>Next Steps</strong></p>
+
+<p>It seems to me that sustainability is perhaps a useful word, but not a useful goal. Or maybe it's the "green" phase that I have the biggest problem with. At it's core, I think our focus in business is just plain wrong today. Western civilization is built around unsustainable notions of perpetual growth and dominance. What about the supporting systems and frameworks that allow the civilization not only to grow, but also to remain resilient to attack and change? It is herein that the problem lies. Without a focus on resilience and survivability, there can be no sustainability. Sustainable practices will be those that allow systems to continue operating despite degraded conditions, that will lead systems to fail safe and recover quickly (and safely), and that will allow for resiliency that is not currently seen or even properly understood.</p>
+
+<p>Take the current power distribution system. For all the criticism we here about lack of security in these systems, they are perhaps one of the most resilient complex systems that we have today. We in the US perhaps take for granted just how reliable our electricity is. Yes, there are major security problems, and yes SmartGrid scares the heck out of us, but it is really rather remarkable how big of a hit this system can take from a physical threat and continue to operate, or at least fail in such a manner that we don't see transformers and houses exploding and bursting into flame. We should be striving for such a degree of resiliency in our other systems. Aircraft ground and flight control systems may also provide a reasonable model for demonstrating survivability and resiliency.</p>
+
+<p>Beyond having a suitable model to work with, we also need to start developing reasonable metrics and measurements. How do we know if code is secure? Current static and dynamic analysis techniques are simply inadequate to the task, providing less than 50% coverage in the average case. We need to develop better practices that lead to nearly 100% coverage of all applications that can then rate/score the code in a manner that can be tracked over time. We need to develop methods that differentiate between bugs and design flaws, and we need to hold architects and developers accountable for their mistakes. It would be very useful to track individual developer performance over time and tie that performance to compensation and ongoing employment and employability.</p>
+
+<p>In addition to these points, we also need to find a way to generate a more-powerful social movement that can raise us to the regulatory tipping point. Until organizations are required to produce secure code, then they will do very little to further that objective. Of course, the trick here will be in again defining useful measures for performance that can then be enforced. As was the case in the anti-pollution movement, it may simply come down to fining companies based on the output. If you write bad code that leads to compromise, then you should get fined in addition to being required to fix the bugs. Is this an achievable goal? It's hard to say.</p>
+
+<p>Of course, one last point to consider is if regulations are even useful and beneficial at this point. If the punishment for reporting security breaches is too high, then companies may not have proper incentive to report issues when they arise. As such, it may be useful to provide incentives in terms of reduced fines or indemnification that allow companies to make mistakes, just so long as they report them and remediate them in a responsible manner. If a breach is discovered without proper disclose, then the fine should be severe. However, if a breach occurs, but is contained and reported in a reasonable period of time, then the surrounding conditions should also be considered to determine if the practices undertaken were reasonably sufficient. Incidentally, this point ties directly into the notion of legal defensibility. {{{LINK HERE}}}</p>
+
+<p><strong>In Summary</strong></p>
+
+<p>Rice spoke about 4 phases in the anti-pollution movement:<br />
+ * Phase 1: Pollution as a positive<br />
+ * Phase 2: "Polluter pays" regulations (tipping point: social movement)<br />
+ * Phase 3: Going green (tipping point: reducing opex)<br />
+ * Phase 4: Sustainability (aka "going blue") (tipping point: increasing top-line revenue)</p>
+
+<p>Some key talking points are:<br />
+ - Security is an emerging property, not a process.<br />
+ - We have ecosystems, but not ones with desirable (security) properties.<br />
+ - W need to build out better frameworks and support mechanisms to encourage the emergence of security properties.<br />
+ - There is a possible analogy between the anti-pollution movement and software security.<br />
+ - Whether or not the analogy will hold true is undetermined today.<br />
+ - It may instead make sense to substitute "survivability" and "resilience" in lieu of "sustainability."<br />
+ - Metrics and measurements are needed, awareness is needed, and the social drivers are needed.<br />
+ - Regulations that provide indemnification for legally defensible practices may be optimal.</p>
+
+<p>For more information about AppSecUSA 2010, including access to the talks delivered, please visit the following sites:<br />
+<a target="_blank" href="http://www.owasp.org/index.php/AppSec_US_2010,_CA">http://www.owasp.org/index.php/AppSec_US_2010,_CA</a><br />
+<a target="_blank" href="http://www.appsecusa.org/">http://www.appsecusa.org/</a></p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=2010&amp;limit=20" rel="tag">2010</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=AppSecUSA&amp;limit=20" rel="tag">AppSecUSA</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=OWASP&amp;limit=20" rel="tag">OWASP</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=security&amp;limit=20" rel="tag">security</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=software&amp;limit=20" rel="tag">software</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on September 21, 2010  8:33 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2010/09/building_blue_software_ecosyst.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/1056</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2292" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2292);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>September 21, 2010  8:33 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2010/09/lying_liars_and_the_lies_they.html">Lying Liars and the Lies They Tell, or Bad Policy Practices</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2010/09/geminikrvw_training_at_appsecd.html">Gemini/KRvW Training at AppSecDC 2010</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

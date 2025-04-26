@@ -1,0 +1,998 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2013/03/thoughts-on-rsa-us-2013.html">
+<dc:title>Thoughts On RSA US 2013...</dc:title>
+<dc:description>Well well well... what a week! Sadly, I didn&apos;t make a single session (other than my own) due to poor time awareness (several times I realized I had just missed the session I&apos;d been planning to see, derailing myself by...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2013-03-06T11:40:04-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2013/03/thoughts-on-rsa-us-2013.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2013/03/interview-with-gen-raduege.html" title="RSA 2013: Interview with Gen. Raduege (ret.)" />
+    <link rel="next bookmark" href="http://54.197.56.127/2013/03/arguing-against-the-absurd.html" title="Arguing Against the Absurd is Easy, But Not Helpful" />
+    
+    
+    <title>Thoughts On RSA US 2013... - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2461" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Thoughts On RSA US 2013...</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2013-03-06T11:40:04-05:00">March  6, 2013 11:40 AM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>Well well well... what a week! Sadly, I didn't make a single session (other than my own) due to poor time awareness (several times I realized I had just missed the session I'd been planning to see, derailing myself by being chatty... go figure!). Overall, this was one of the best RSA conferences I can recall over the last few years. I mean, it ended with Hugh interviewing Billy Beane... how could it be much better? :)</p>
+
+<p>For everyone I saw in San Francisco last week - it was great seeing you! For those I missed... dreadfully sorry, and I hope we catch-up at any of the many other events I'll be at later this year (e.g., <a target="_blank" href="http://secure360.org/">Secure360</a>, <a target="_blank" href="http://www.rmisc.org/">RMISC</a>, <a target="_blank" href="http://www.misti.com/default.asp?page=65&Return=70&ProductID=5305">MISTI "Big Data Security" conference</a>). It has been a busy year thus far, and the pace will not be lessening anytime soon. Wheeeeeeeeee! ;)</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>Now, on to my annual post-event mega-post... apologies for typos, but I'm not going to go back and edit this thing... :)</p>
+
+<p><strong>3 Trends for 2013</strong></p>
+
+<p>Based on conversations, sessions (or, session titles), and walking the expo floor (ever-so-briefly), I couldn't help noticing a few big trends this year. The first trend actually aligned with the conference theme, which struck me as almost too coincidental not to be a coincidence (if that makes any sense). I've never noticed messaging aligning directly to the main theme before, so this really jumped out at me. Allow me to elaborate...</p>
+
+<p><em>Moving toward actual analysis...</em></p>
+
+<p>The conference theme was "Security in knowledge: Mastering data. Securing the world." In practice, this theme played very heavily to "big data" and "data analytics." This theme is certainly one that's been a hot topic for the past year or two, but is one that is also finally maturing into something plausibly useful (*gasp!*). The big advance I noticed this year was getting beyond vague rhetoric about "managing big data" to better articulated statements and marketing around how to do analytics on very large datasets. Given that I play for a GRC software vendor in my day job, I felt that this message resonated very well with the GRC space. It also helped validate much of what I've been saying the past couple years, such as that GRC's role is increasingly about providing a 2nd tier of analysis that aggregates data and reports from various silos, wherein we already have reasonably good specialized analytics.</p>
+
+<p>One interesting shift in PR/marketing lingo was to also shift everything toward being some form of "analytics"... last year everything was phrased in terms of "risk"... is this a good thing, a bad thing, or just a thing? Hard to tell... we are talking PR/marketing here... ;) That said, though, I was pleasantly surprised to see actual analysis capabilities emerging that seemed to make sense. Usability will of course be the other big question to tackle, but at least it seems to be a step in the right direction.</p>
+
+<p><em>Real risk management...</em></p>
+
+<p>Last year showed a marked increase in casting projects as /something/ risk-related. This year saw the continuation of that trend, with "risk intelligence" persisting, and with the emergence of "risk analytics," which I saw in several places (including at least a couple GRC vendors recasting themselves as "risk analytics" tools/platforms).</p>
+
+<p>More interesting than the show floor, however, were the conversations happening all over the conference. People were talking about risk management for real this year, and not just based on a pile of lousy qualitative finger-in-the-wind measures. The week started very strong with the "Advancing Information Risk Management Practices" half-day seminar, in which I was honored to participate. The presentations of the other panelists were all solid, as was the Q&A from the floor.</p>
+
+<p>For the first time ever, I started to feel like we're finally reaching the tipping point of people who "get it." Sure, there is still a LONG way to go, but this was the most encouraging signs I've seen of late. Just in time for everything to change, of course, but that's almost beside the point... ;) Just the fact that there were so many risk managers present, representing the reasonably sound risk management programs of their orgs, was encouraging to me. Now to finish the transformation by getting these programs fully aligned to business management and yanked out of IT and infosec teams... but I digress... ;)</p>
+
+<p><em>ET&A moves toward behavior modification...</em></p>
+
+<p>Last, another emerging trend that just about slapped me in the face was a major upheaval and revival in the "security awareness training" space. Finally! There are a few small organizations that are now challenging the status quo, offering compelling alternatives that oftentimes focus on behavior modification approaches instead of the tired old "kill by drill approach." At least one vendor is driving toward an integrated knowledgebase approach that will make comprehensive awareness data available to all consumers, including providing the hooks for integrating it into remediation practices.</p>
+
+<p>Of the three trends I note, this one is the best one to watch. Lump-in "gamification" and we see a ground-swell building that will likely change the entire landscape of awareness practices. This is a Good Thing (tm)! I'm also hopeful that this signals a swing back toward education and away from rote training, which has not only been the bane of awareness training, but has also become the downfall of the American education system. I digress, again... :)</p>
+
+<p><strong>Overarching Thoughts</strong></p>
+
+<p>Following are some quick thoughts on the event overall...</p>
+
+<p> * <strong>Too Big?</strong> This conference is *the* big event of the year, but this year it really felt like it was simply too big. The expo spilled over into a second room. There were simply too many talks to catch all the ones I wanted (not that I made them anyway). There were 2-3 talks opposite my own sessions that I would have enjoyed watching. The tracking approach is good, but I almost wonder if there's an opportunity to adopt the "university comprised of several schools" model? Maybe not. Suffice to say, there were a lot of people, a lot of vendors, and a lot of ground to cover. I have to wonder just how sustainable this growth will continue to be...</p>
+
+<p> * <strong>More Vendors Than Delegates?</strong> Probably not, but it sure felt that way. Every time I turned around, I was standing face-to-face with another vendor or consultant. Sure, this is where we all go to network, do deals, and drum-up business, but my goodness... I'd actually love to hear from FTEs who attended as Delegates and get their opinion on things, too. Also, who are Delegates most interested in hearing from: vendors or practitioners? Several orgs (e.g., IIA, ISACA, FS-ISAC) have now modified their rules to effectively ban vendors and consultants as speakers and attendees, instead strongly preferring to hear from practitioners and limiting vendors to the limited expo space. Anyway... this was just the sense I got this year of being surrounded by anybody but our core constituency...</p>
+
+<p> * <strong>20-minute Format = Awesome!</strong> Bill Burns and I presented a 20-minute talk (by design!) and it went very well. I really liked this format, and would highly encourage RSA to allocate more of them in the future. In fact, for that matter, I could very much see only allowing 20-minute talks, requiring that longer sessions be presented in a panel format only. Presenting in 20 minutes requires refining materials and really getting down to business right away. If you think about most longer talks, they typically waste 10-20 minutes on introductions, background, etc., that could just as easily be a handout or external reference. There is <em>one exception</em> to this point, and it has to do with the LAW track and CLE credits. To earn CLEs, sessions must be a minimum of 30 minutes, so I would want to ensure that enough full-length sessions are maintained to help attending lawyers earn their credits. Beyond that, moving all traditional talks to a 20-minute format also means increasing the number of talk slots available, which is also a Good Thing (tm).</p>
+
+<p> * <strong>60-minute Panels Felt Rushed</strong> Speaking as a moderator and panelist, 60 minutes seemed a bit rushed. We had to cut-off several good Q&A interactions in the "Hot Topics in InfoSec Law" panel in order to accommodate giving adequate coverage to the topic. Doing so worked out ok, but another 10 minutes sure would have been handy. For those considering panels next year, please make sure to keep the time limitations in mind when scoping your panel. This thought brings to mind a couple others, which is that it might make sense for RSA to offer sub-categories under "panels" to differentiate between talking-head panels and interactive/Q&A panels, since there is a time and place for both. Anyway... we'll see what the 2014 CFP looks like, eh? :)</p>
+
+<p> * <strong>Wed. & Thurs. PM = Wasted Schedule Space?</strong> Alright, that's perhaps a bit damning, but to be quite honest, I was rather disappointed to realize that both Wednesday and Thursday afternoons were blocked off for (primarily sponsored) keynote sessions, and did not have any track sessions. Wed. & Thurs. PM was also the two timeframes where I could finally get to talks (and I wasn't alone). I realize commitments are made to sponsors at the higher tiers, but what this tells me is that the bar is set too low for getting a guaranteed talk slot. I also noticed 2 rooms allocated for sponsored talks, which seems to reinforce this notion. I say all this, not to stomp on what were undoubtedly some good afternoon keynotes, but because it's nice to have alternatives, plus it would be great to have more talk slots available (given the high competition these days). Either that, or maybe RSA should start strongly encouraging vendors to start their receptions Wednesday afternoon, helping free up some cycles for the evening, as well as suggesting that a Thursday afternoon reception (before the Bash) would be acceptable, too. Just a thought...</p>
+
+<p> * <strong>Booth Babes?</strong> There's not much I care to say on this topic as it's being beaten to death in other places. I did not spend much time on the expo floor this year, but in the little time I did spend there, I was actually pleasantly surprised by improvements around this topic. Yes, a few vendors still felt it necessary to have scantily-clad girls in their booths as bait, but I also found a few notable exceptions, as well as some great creativity. One booth had actors in Star Wars apparel for a photo op. Veracode brought in the real life "Soup Nazi" from Seinfeld days. And, at Stonesoft, I spoke with their in-booth model ("Hope"), who was *not* scantily-clad, and who had rapidly learned many of the sales talking points for the products (vendors, take note: this is a very good approach!). I understand the rationale in catering to prurient interests, but there is much to be said about toning the costumes down while training the models to effectively deliver talking points. Just a thought... oh, and btw, what was the deal with the one booth with blue-shirted lasses with tablets mounted at chest-level? That was weird...</p>
+
+<p> * <strong>A Maturing Industry?</strong> Dare I dream the unimaginable... that this industry may finally be growing-up a bit? Maybe. ;) In all seriousness, though, I felt like products and people were starting to have a much more mature outlook on the industry and problem-space. If true, then this is a wonderful thing that gives me an inkling of hope for the future. I can't wait to see if next year proves me right or wrong! :)</p>
+
+<p><strong>Looking to the Future</strong></p>
+
+<p>Speaking of next year, I was struck by a thought heading into the conference, which was that of what our future looks like relative to people in and around the industry. This line of thought brings me to three (hopefully quick) points:</p>
+
+<p> * <em>A few new faces...</em> I noticed several newer, younger speakers and attendees (ok, I'm getting old), which I thought was good. ow do we build on this success to grow the industry? Where is the next generation? Are they attending? Do they care? What are they up to, and what would be of value to them? I'd like to see some programs launched to get cyber-* students from around the country out to San Francisco to attend the conference each year. Case-in-point, Gen. Raduege noted that there are more than 12,000 students at UMUC in cyber-related programs. Are any of them attending or presenting at RSA? How do we get them there? Now expand this to all the other cyber-* and information assurance programs around the country (and world!). The sooner we can corrupt^H^H^H^H^H^H... er, engage these future generations, then the tighter the feedback loop gets, and the faster we can advance as an industry.</p>
+
+<p> * <em>Transitional career support... pt1</em> There are two aspects to this thought... First, as noted above, there was a noticeable shift with regards to awareness training programs toward behavioral modification, gamification, and knowledgebases. Almost all of these new ideas draw on people from outside the security industry. How do we pull more of these people into the industry? Consider the <a target="_blank" href="http://weis2012.econinfosec.org/">Workshop on the Economics of Information Security (WEIS)</a> and the <a target="_blank" href="https://www.schneier.com/shb2012/">Security and Human Behavior</a> conference. We need to better engage thinkers from outside the industry, not only to better refine the problem-space, but to also provide fresh perspectives and historical context on analogs.</p>
+
+<p> * <em>Transitional career support... pt2</em> The other aspect of career support is generational in nature... specifically, in addition to working toward getting more young people involved and engaged, it would also be great to see better support provided (perhaps via the professional development track, perhaps as separate non-time-conflicting sessions/opportunities) to mid-career professionals who are either looking at transitioning up the chain of command, or who would like to make a horizontal leap into areas with which they have less experience (e.g., cross-pollination between various technical tracks). I'm guessing there are some fun ways to mix things up and help provide people exposure to other areas of the industry. One such topic that I think could be very interesting to mid-career professionals is how to make the transition to management, including what sort of resources might exist for helping develop people management and financial management skills.</p>
+
+<p><strong>In Closing...</strong></p>
+
+<p>The best part of RSA, hands-down, is the networking and conversations. Sure, there are dozens (if not hundreds) of awesome presentations and panels, but without the social aspect this would be "just another conference." Despite all my meandering thoughts above, the one thing I wish more than anything else is to see that culture maintained and grown. Frankly, I wish there were more opportunities (similar to P2P sessions) to kickoff a conversation in a group and then let it just range about freely, without any false requirement to capture results to report back centrally. Part of me wonders if there is a way to bottle the essence of these social attributes, while the other part of me think that trying would ruin the experience. I believe that moving all talks to the 20-minute format, allowing 20 minutes between each session, and pushing for fewer talking-head panels (in favor of more interactive discussions) would help grow this culture. Beyond that... who knows? And, really, who am I to make such a suggestion anyway? Obviously the conference organizers are doing something right given the massive growth these past few years...</p>
+
+<p>I look forward to seeing you all there next year! :)</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/conferences/" rel="tag">conferences</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=2013&amp;limit=20';return false;" rel="tag">2013</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=conference&amp;limit=20';return false;" rel="tag">conference</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=musings&amp;limit=20';return false;" rel="tag">musings</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=reflection&amp;limit=20';return false;" rel="tag">reflection</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=RSA&amp;limit=20';return false;" rel="tag">RSA</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>March  6, 2013 11:40 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2013/03/interview-with-gen-raduege.html">RSA 2013: Interview with Gen. Raduege (ret.)</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2013/03/arguing-against-the-absurd.html">Arguing Against the Absurd is Easy, But Not Helpful</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

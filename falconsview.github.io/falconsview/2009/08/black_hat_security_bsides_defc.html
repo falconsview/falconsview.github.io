@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Black Hat / Security B-Sides / Defcon Thoughts (finally) (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/08/quick_note.html" title="Quick Note..." />
+   <link rel="next" href="http://www.secureconsulting.net/2009/08/tokenization_someone_else_gets.html" title="Tokenization: Someone Else Gets It" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/08/black_hat_security_bsides_defc.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/924"
+    dc:title="Black Hat / Security B-Sides / Defcon Thoughts (finally)"
+    dc:identifier="http://www.secureconsulting.net/2009/08/black_hat_security_bsides_defc.html"
+    dc:subject="infosec"
+    dc:description="Bugger me, I&apos;m still exhausted from 6 days in Vegas. :) It doesn&apos;t help that I caught some sort of ugly nasty cold bug there (along with 100s of my closest friends it seems). Normally I&apos;d call it a good..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-08-10T14:06:14-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/08/black_hat_security_bsides_defc.html">
+<dc:title>Black Hat / Security B-Sides / Defcon Thoughts (finally)</dc:title>
+<dc:description>Bugger me, I&apos;m still exhausted from 6 days in Vegas. :) It doesn&apos;t help that I caught some sort of ugly nasty cold bug there (along with 100s of my closest friends it seems). Normally I&apos;d call it a good...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-08-10T14:06:14-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/08/quick_note.html">&laquo; Quick Note...</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/08/tokenization_someone_else_gets.html">Tokenization: Someone Else Gets It &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Black Hat / Security B-Sides / Defcon Thoughts (finally)</h2>
+                     <div class="entry" id="entry-2149">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>Bugger me, I'm still exhausted from 6 days in Vegas. :) It doesn't help that I caught some sort of ugly nasty cold bug there (along with 100s of my closest friends it seems). Normally I'd call it a good exhaustion, and generally this is true, but being sick (not just "confluenza" as <a href="http://twitter.com/Niki7a/">Niki7a</a> termed it) certainly has taken some of the wind out of my sails.</p>
+
+<p>Overall, for my first trip to BH/DC/etc, I was actually pleasantly surprised, despite thinking that my worst fears had been realized about half-way through things. In general, I hope that I didn't make too complete a fool of myself (I certainly did act foolish at times). This event certainly was positive enough to warrant adding it to my ever-increasing list of "must attend" events.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p>Things are increasingly hazy now, so I figure it's time I hit some of the aesthetic points that made this conference extremely valuable and worthwhile to me. Hopefully my breakdown here is logical, at least in certain dimensions of the multiverse. :)</p>
+
+<p><strong>Black Hat</strong></p>
+
+<p>I'm annoyed and perturbed to say that I missed it almost completely. It's mostly my own fault, but in general I just couldn't make the trip back and forth between Security B-Sides and Caesars quickly enough to catch everything. In particular, I really wanted to hear Schneier's "Reconceptualizing Security" talk, the Hutton/Mortman Model talk (which was sadly opposite Schneier), and a few other talks on breaks, such as Kaminsky's SSL/X.509 talk and the iPhone attacks.</p>
+
+<p>As usual, BH did not disappoint with interesting, if not overhyped, breaks. Overall, though, the content seemed to be generally fine from what I've heard.</p>
+
+<p>About the only thing I did manage to do was spend a little time wandering through the vendor expo, small though it was, just to see who had bothered to pony-up for the show. Of the (maximum) couple dozen booths, I was surprised to see a handful unstaffed some or all of the time (including Cisco when I walked by). That seemed rather odd to me. Why bother paying good money for a booth if there's nobody there to talk you up. Yes, I realize, BH is not RSA, but it is certainly more corporate than the other cons. I'm just sayin', it struck me as odd...</p>
+
+<p><strong>Security BSides</strong></p>
+
+<p>Hands-down the most amazing success of the week was <a href="http://chaordicmind.com/blog/">Mike Dahn</a> pulling off the rapid setup and execution of the <a href="http://www.securitybsides.com/">Security BSides</a> mini-con. This event was launched in conjunction with Neighborcon through the generous support of the 303 crew, without whom none of it would have been successful. It came about as a result of reaching a tipping point where so many quality speakers had their presentations rejected that the humble masses made sure they could still see the speakers they desired.</p>
+
+<p>The crowning jewel of BSides, imo, was the standing-room-only "Feathers will fly Panel" that saw 7 successful women in infosec discuss professional image and gender issues as faced in this historically boyz-oriented industry. What I found particularly remarkable was the spectrum of opinion within the panel itself. 7 women, all of whom could be termed feminists in their own right, each had nuanced opinions that, while not necessarily in discord, certainly were not carbon copies either. In speaking with some of the panelists later, as well as other audience members, it became clear that this topic was of great significance and importance, benefiting the industry as a whole. I personally look forward to seeing more in this area.</p>
+
+<p>Beyond the panel, there were several very good talks from key industry luminaries as Jen Jabbusch, Mike Kershaw, Val Smith, and HD Moore. This doesn't even get into the Neighborcon talks and all the other amazing goodness that I missed over the course of the day.</p>
+
+<p>Of course, talking about the success of BSides would be futile without a special call-out and major thank you to <a href="http://blog.uncommonsensesecurity.com/">Jack Daniel</a> for taking up the reigns and seeing things through when Mike got called away. Jack's efforts, combined with those of key 303'ers like Chris and Jeff, made this event successful through sheer brute force effort. If you know any of these guys, be sure to thank them heartily, because they've helped chart a course for an entirely new style of conference going forward.</p>
+
+<p><strong>Defcon</strong></p>
+
+<p>Of all the cons happening during the week, I was most concerned about Defcon. And by concerned, I mean I was pretty much terrified. I'm just a boring white guy with normal colored hair and generic, if not outright boring, clothes. I don't even have any cool claims to fame such as being able to legally carry a gun and badge. My worst nightmare was that I would go to the daytime events and then sit alone in my hotel room all night because I just didn't fit in. Thankfully, this did not come to pass. It turns out that there are lots of nice people to hang out with. *whew*</p>
+
+<p>In retrospect, I didn't end up attending nearly as many talks at Defcon as I'd hoped. I honestly don't know where the time went. It seems like the con flew by faster than one would have expected. Or maybe I was just too exhausted from the long nights. At any rate, what I did attend was fascinating, and what I observed was even more interesting.</p>
+
+<p>First and foremost, despite the presence of many kiddie posers and other wannabe oddballs, I found this crowd remarkably normal. Maybe I've just been in the security community long enough now to not be thrown by much, but I thought everything was fairly mature and interesting.</p>
+
+<p>Second, I found the relaxed quality of most talks to be most enjoyable. It was not too dissimilar from the effect achieved with BSides, but in a much, much larger venue. The Def Jam panel on FAIL was particularly amusing, while the turbo talk on abusing the credit reporting agencies revealed just how much time and effort people are willing to put into reverse-engineering processes for gain. That talk, in particular, showed me just how screwed we are, really, in the current security model. Any technology, any control, and reaction can be foreseen and side-stepped. The security industry as we know it is broken on many levels, not the least of which in thinking that this is truly a winnable zero-sum game.</p>
+
+<p><strong>Hallwaycon</strong></p>
+
+<p>Perhaps the best aspect of all of these cons were not the formal presentations themselves, but the side conversations that happened all over the place. Whether it be at lunch, dinner, breakfast, in the hallway, in the recovery rooms, etc., there were simply too many outstanding people not to meet, hang with, and just simply enjoy being around.</p>
+
+<p>I cannot understate the inherent value in the social networking aspects of all conferences. This is an aspect that I long overlooked and missed in my early days attending conferences (as far back as 99/00). Sure, it's worthwhile to focus on the training and education opportunities, especially early in one's career, but overall it's the people you meet who will help you be successful in the long run.</p>
+
+<p>The week of BH/BSides/Defcon was certainly no exception to the above rule. I met so many amazing people that I absolutely will not name names for fear of leaving someone out. I will say that I did finally meet a few "big names" whom I'd been hoping to meet over the years. More importantly, I met new faces who I wish I'd known years ago. Bloody wonderful that was.</p>
+
+<p><strong>Partycon</strong></p>
+
+<p>In addition to the daytime Hallwaycon activities one cannot mention Black Hat or Defcon without talking about the parties. Sooooo many parties, and so much generally better (and different) from RSA. Good stuff. As usual, I had very few formal invites to much of anything, but that didn't seem to matter. Heck, I was even admitted to the 303 party after willingly being flogged (true story).</p>
+
+<p>I've found over the years that Partycon is often an even more important social networking venue than Hallwaycon. There's just something about lubricated conversation that seems so much more enjoyable and collegial than the hungover conversations during the day. Don't drink? No worries, I'm sure you'll do ok anyway. In fact, I met at least one groovy person who doesn't drink and look forward to developing the friendship going forward. How often can you say that about life?</p>
+
+<p><strong>Ups, Downs, and General Commentary</strong></p>
+
+<p>So, to say the least, the week was filled with many ups and downs. Ever the self-analyst, I figure there's value in reflecting on some of these thoughts...<br />
+ * Up: Meeting amazing people. Nowhere else would I ever have the wonderful experience that I did in Vegas.<br />
+ * Up: Getting into cool parties and Jet. HUGE thank you to Michelle Schafer for letting me follow her around to the Jet nightclub, in particular. That was a truly unique experience that I will not forget.<br />
+ * Down: Pillow Fight fail. Lots of planning and support went into the EFF fundraiser pillow fight, out of which grew the "Feathers will fly Panel" at BSides. In the end, fate conspired against the organizer and the event simply failed to execute. The good news is that $600 was raised for EFF.<br />
+ * Down: "Early" nights. Ok, I somewhat exaggerate here, but I was rather disappointed that many nights ended by 2am, and probably could have been ended sooner (if I'd been smart). Apparently we're all getting old or something? D'oh... :)<br />
+ * General: I so do not fit in with the hacker crews. Seriously. I'm just not a breaker, at least not at that level. I'm more of a Layer 8 breaker, and from an institutional perspective. Maybe some day people will understand and accept that as having a legitimate place at the table. Until then, I can only aspire to being cool enough to join a crew.<br />
+ * Down: Adam Savage press conference cancelled. I refused to waste half my day Saturday at Defcon standing in line to see him talk. Instead I went to other talks. Why would I do this? Mainly because he'd been scheduled to give a press conference afterwards. Which was subsequently cancelled, which, frankly, really made me mad. I mean, I'm sorry, but you can't spend time with new media (who dominated the press)?!? Bad form... I even had a very good, legit question to ask him... but oh well, screw him...<br />
+ * General: We are all definitely getting older. Ironically, while this is true, we 30 and 40 somethings still represent the up-n-coming generation of security professionals. How weird is that? I hope never to be like the older generation, which balked (hard) at BSides and the under-current of change that they were seeing. I always find it intriguing when the original revolutionaries become mainstream and then get upset over the next wave of revolutionaries. The more things change, the more they stay the same. :)<br />
+ * Down: The Vegas cold bug. I'm always worn out and sick'ish after most cons, but this bug was special and wiped out many people. I'm finally feeling closer to normal nearly a week later, but this was not helpful. Too much work, too little time, and in particular too many deadlines looming in the next week (eep!!!). Yes, RSA USA 2010, I'm talking about you!<br />
+ * Up: Change in the industry is not only possible, but extremely likely. To what? No idea. What's painfully obvious is that we're currently playing a losing game. Something's gotta give. A complete change of the rules is needed.<br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=2010&amp;limit=20" rel="tag">2010</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=Black%20Hat&amp;limit=20" rel="tag">Black Hat</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=BSides&amp;limit=20" rel="tag">BSides</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=conferences&amp;limit=20" rel="tag">conferences</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=Defcon&amp;limit=20" rel="tag">Defcon</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on August 10, 2009  2:06 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/08/black_hat_security_bsides_defc.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/924</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (2)</h3>
+                           
+                                 <a id="c000649"></a>
+                                 <div class="comment" id="comment-649">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.chuvakin.org" href="http://www.chuvakin.org" rel="nofollow">Anton Chuvakin</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>This is an awesome summary, dude. I soo need to steal some of the stuff from it - or at least link to it :-)</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.chuvakin.org" href="http://www.chuvakin.org" rel="nofollow">Anton Chuvakin</a>  |
+                                          <a href="#comment-649">August 11, 2009  7:43 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-649" title="Permalink to this comment">August 11, 2009 19:43</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000651"></a>
+                                 <div class="comment" id="comment-651">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>I publish under a creative commons license, so you're welcome to use what you want, with attribution. :)</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-651">August 17, 2009 12:52 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-651" title="Permalink to this comment">August 17, 2009 12:52</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2149" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2149);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>August 10, 2009  2:06 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/08/quick_note.html">Quick Note...</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/08/tokenization_someone_else_gets.html">Tokenization: Someone Else Gets It</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

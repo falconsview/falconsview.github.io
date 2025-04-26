@@ -1,0 +1,372 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>The Three Domains of Application Security (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2010/01/rsa_2010_check_out_this_iam_1d.html" title="RSA 2010: Check Out This IAM 1-Day Tutorial" />
+   <link rel="next" href="http://www.secureconsulting.net/2010/01/wow_3_years_went_quickly.html" title="Wow, 3 Years Went Quickly" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2010/01/the_three_domains_of_applicati.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/978"
+    dc:title="The Three Domains of Application Security"
+    dc:identifier="http://www.secureconsulting.net/2010/01/the_three_domains_of_applicati.html"
+    dc:subject="infosec"
+    dc:description="It&apos;s quite possible (likely?) that this is not an original idea, but it&apos;s something that occurred to me while we were discussing presentation planning for the year at the most recent OWASP NoVA chapter meeting. To me, application security can..."
+    dc:creator="Ben Tomhave"
+    dc:date="2010-01-11T09:56:50-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2010/01/the_three_domains_of_applicati.html">
+<dc:title>The Three Domains of Application Security</dc:title>
+<dc:description>It&apos;s quite possible (likely?) that this is not an original idea, but it&apos;s something that occurred to me while we were discussing presentation planning for the year at the most recent OWASP NoVA chapter meeting. To me, application security can...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-01-11T09:56:50-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2010/01/rsa_2010_check_out_this_iam_1d.html">&laquo; RSA 2010: Check Out This IAM 1-Day Tutorial</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2010/01/wow_3_years_went_quickly.html">Wow, 3 Years Went Quickly &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">The Three Domains of Application Security</h2>
+                     <div class="entry" id="entry-2206">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>It's quite possible (likely?) that this is not an original idea, but it's something that occurred to me while we were discussing presentation planning for the year at the most recent OWASP NoVA chapter meeting. To me, application security can be neatly divided into three key domains: Architecture, Secure Coding, and Testing. Each of these domains represents a distinct set of practices that need to be addressed to have a truly complete appsec program.</p>
+
+<p>What I find fairly interesting about these domains is that they're not always all considered, whether it be in a software security program, or a Computer Science curriculum, or in contributions from key organizations like OWASP. In fact, it seems that Architecture, in particular, doesn't get much love at all, while a nominal amount of time is spent on secure coding (still less than we need), and while the lion's share of time is dedicate to the development of tools for testing.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p><strong>Architecture</strong><br />
+When I say "architecture" here I'm really using the term loosely. In building construction, it is the job of architects to understand and define the requirements, and then translate them into a design that not only takes into consideration the customer's vision, but that also makes sound decisions about structure, support, stability, and so on.</p>
+
+<p>So it also should be with software architecture. When done well, architecture should be a confluence of experience that brings together not just the customer and the developer, but also operations, security, and any other stakeholders who may have a valuable contribution. The goal here is to pre-vet the design very early in the process in order to gather as many requirements as possible, to produce as complete and sound a design as possible, and to try and ensure that the application will be a lasting success with adequate infrastructure, stability, and security.</p>
+
+<p>It seems that oftentimes this does not happen at all. How many organizations bring everybody together when architecting solutions? How common is it for development teams to consult with operations, security, and other stakeholders at the outset of the process? From what I've seen, this is exceedingly rare. More often than not, operations sees the application and associated requirements on the eve of deployment. Security may not see the design at all, but will rather be expected to pull out a tool for testing, also on the eve of deployment, in hopes of adding some value.</p>
+
+<p>I contend that this overlooked domain is the key to addressing many deficiencies in appsec today. If for no other reason than to create and document dialog around the design process so that each application will move forward with a written history that explains why tradeoff decisions were made (a key component to proving due diligence should something bad happen in the future).</p>
+
+<p><strong>Secure Coding</strong><br />
+The area of secure coding definitely receives attention, whether it be in the form of Top N lists, specialized training for developers, the availability of development tools and environments that help address security, or academic research into improved programming languages, environments, etc. However, despite these efforts, they are still not nearly as prevalent as is desirable, especially at the foundational levels.</p>
+
+<p>This situation is the result of a paradox. It's what I think of as the Perfectionist's Dilemma. If all developers were true perfectionists, and if they were given the time necessary to be perfectionists in their coding, then it seems unlikely that we would have as many problems as we do with the code in production. Of course, at the same time, very little code would ever make it to production. The dilemma is the direct result of a couple factors:<br />
+1) Perfection is unachievable: No matter how we might delude ourselves, there are simply too many factors that go into building complex systems, making it irrational and impossible to achieve perfection. Moreover, how do you define perfection? You may be able to write a single line of interpreted code (print("hello world");) that is semantically "perfect," but that cannot compensate for problems introduced in other areas, such as in the compiler, the OS, etc. If you can't define "perfection," then how can you achieve it?<br />
+2) Humans are fallible: Perhaps a single line of code is trivial and thus a bad example, but show me the developer who is writing a single line of code each year. How many lines of code does the average full-time developer write each year? 10,000? 100,000? 500,000? The larger the number, the greater the likelihood that the human will make a mistake (or, in reality, several).</p>
+
+<p>Since perfection is not achievable, we then turn to tools and testing to compensate for these weaknesses. However, I have to wonder if we put too much faith in these tools. It reminds me of the monologue from early in the movie <em>Top Gun</em> that talks about the history of the US Navy "Top Gun" program and how pilots had become too reliant on the technology and lost some of their skills (see <a target="_blank" href="http://en.wikipedia.org/wiki/United_States_Navy_Fighter_Weapons_School#History">Wikipedia</a> for more details). Have we reached a similar point in appsec where we need to reduce our dependency on our technology in order to take the art to a new level.</p>
+
+<p><strong>Testing</strong><br />
+Here we have the bailiwick of the appsec industry. Vendors have products, and they clearly have the budget to market them. If you were to blindly go off what's prevalent, you'd think that appsec was almost exclusively about the tools available to catch the problems introduced by developer error, etc. Of course, nothing could be farther from the truth. Nonetheless, tools are important and useful.</p>
+
+<p>There are several types and levels of testing, which I won't write about extensively. Suffice to say, whether you want to analyze uncompiled  code or run an automated scan against the resultant application, there's a tool for that. There are also tools to help developers write better code in the first place, not to mention libraries, techniques, APIs, etc., that work toward the same objective.</p>
+
+<p>Though not part and parcel to testing, there are also process-oriented tools, such as secure coding variants of SDLC or SDL, that help achieve some of the objectives outlined above. As an industry, we must be careful to make sure that we do not overlook all classes of tools, while at the same time we need to realize that, as of today, no tool will catch 100% of problems 100% of the time, highlighting the importance of all three domains.</p>
+
+<p><strong>What About Metrics?</strong><br />
+Now, I'm sure a few people out there are saying "yes, yes, fine, but you're clearly missing some things, like metrics!". This is, of course, quite true. Measuring the quality of software is very important, at least if you can find a reliable to do that. The problem, of course, is that simply relying on a metric such as the number of bugs found per lines of code may seem like a good idea, but it may not actually be measuring what people think it's measuring (it's kind of like merit-based pay for teachers based on student performance - it's extremely difficult to do fairly and in a way that actually measures teacher performance rather than student performance).</p>
+
+<p>It is important to remember that appsec is merely one part of an overall enterprise assurance program. As such, it needs to account for requirements, risk, operational security, audit, compliance, quality, performance, and many, many more things. However, if we can begin to bring balance to these three domains - particularly by increasing focus on collaborative architecture - then I believe that we can pave the way to jumping the curve to the next level of performance.<br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=appsec&amp;limit=20" rel="tag">appsec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on January 11, 2010  9:56 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2010/01/the_three_domains_of_applicati.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/978</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (4)</h3>
+                           
+                                 <a id="c000699"></a>
+                                 <div class="comment" id="comment-699">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.hurricanelabs.com" href="http://www.hurricanelabs.com" rel="nofollow">Matt</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Good stuff... especially the secure coding part. "Perfection is unachievable and humans are fallible" Keep up the good work.</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.hurricanelabs.com" href="http://www.hurricanelabs.com" rel="nofollow">Matt</a>  |
+                                          <a href="#comment-699">January 11, 2010 12:27 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-699" title="Permalink to this comment">January 11, 2010 12:27</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000700"></a>
+                                 <div class="comment" id="comment-700">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.newschoolsecurity.com" href="http://www.newschoolsecurity.com" rel="nofollow">Alex</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Is "metrics" a domain or the means to describe state for the above domains?  I would tend toward the latter.  </p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.newschoolsecurity.com" href="http://www.newschoolsecurity.com" rel="nofollow">Alex</a>  |
+                                          <a href="#comment-700">January 11, 2010  2:15 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-700" title="Permalink to this comment">January 11, 2010 14:15</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000701"></a>
+                                 <div class="comment" id="comment-701">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>@Alex - it's the latter - metrics is part of the buttressing that goes with any good program.</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-701">January 11, 2010  2:23 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-701" title="Permalink to this comment">January 11, 2010 14:23</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000702"></a>
+                                 <div class="comment" id="comment-702">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.churchsecuritysolutions.com/" href="http://www.churchsecuritysolutions.com/" rel="nofollow">John McKean</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>This is a great read! In particular the points around "Architecture". Good application requirements, including security, is the foundation for any development project.</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.churchsecuritysolutions.com/" href="http://www.churchsecuritysolutions.com/" rel="nofollow">John McKean</a>  |
+                                          <a href="#comment-702">January 13, 2010 11:33 AM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-702" title="Permalink to this comment">January 13, 2010 11:33</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2206" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2206);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>January 11, 2010  9:56 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2010/01/rsa_2010_check_out_this_iam_1d.html">RSA 2010: Check Out This IAM 1-Day Tutorial</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2010/01/wow_3_years_went_quickly.html">Wow, 3 Years Went Quickly</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

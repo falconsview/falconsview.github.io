@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Do You Need a Security Department? (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/07/pavel_brings_rkc_to_philly_1st.html" title="Pavel Brings RKC to Philly - 1st Time!!" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/07/on_responsibility_without_auth.html" title="On &quot;Responsibility Without Authority&quot;" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/07/do_you_need_a_security_departm.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/914"
+    dc:title="Do You Need a Security Department?"
+    dc:identifier="http://www.secureconsulting.net/2009/07/do_you_need_a_security_departm.html"
+    dc:subject="infosec"
+    dc:description="(There&apos;s been some confusion about my post here. I&apos;m not saying you &quot;can&apos;t&quot; setup a security department. I&apos;m questioning whether you &quot;should&quot; set one up. I wonder if we&apos;ve not created major problems for ourselves by taking too much direct..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-07-16T01:36:46-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/07/do_you_need_a_security_departm.html">
+<dc:title>Do You Need a Security Department?</dc:title>
+<dc:description>(There&apos;s been some confusion about my post here. I&apos;m not saying you &quot;can&apos;t&quot; setup a security department. I&apos;m questioning whether you &quot;should&quot; set one up. I wonder if we&apos;ve not created major problems for ourselves by taking too much direct...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-07-16T01:36:46-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/07/pavel_brings_rkc_to_philly_1st.html">&laquo; Pavel Brings RKC to Philly - 1st Time!!</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/07/on_responsibility_without_auth.html">On "Responsibility Without Authority" &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Do You Need a Security Department?</h2>
+                     <div class="entry" id="entry-2139">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p><strong><em>(There's been some confusion about my post here. I'm not saying you "can't" setup a security department. I'm questioning whether you "should" set one up. I wonder if we've not created major problems for ourselves by taking too much direct ownership over the years, effectively creating a "nanny state" where the front-line folks aren't actually expected to act responsibly.)</em></strong></p>
+
+<p>I had an interesting discussion with my boss today, and I think it warrants further exploration. To give a little background, I'm the head of security for a mid-size tech firm. My role is new, meaning there haven't been any "formal" security practices in the past. Note that this does not mean they've not been doing security "stuff" - just that there hasn't been anything formal around it.</p>
+
+<p>One of my challenges in this position has been to determine how best to setup a formal security program. This is a well-established company, with a variety of obligations and requirements, and that is running on a tight staff. There are not spare people to go around, which means that getting much of anything done is an uphill battle.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p>Without going into my approach (that's a post for another day), I wanted to delve into an interested side-discussion. Specifically, I've begun to wonder if it's really necessary to have a formal, dedicated security department any more. I wonder if we've perhaps reached the point where we simply need a few dedicated champions in key positions, possibly even with a matrix report-to relationship with your CISO/CSO, who can help drive initiatives within each respective area, ranging from risk management to policies to operations to development to audit and testing and beyond.</p>
+
+<p>Ok, I lied, let me talk about my view of the big picture for 1 minute (give or take). The following diagram shows my updated TEAM Model (v2), for which I will be releasing a revised white paper in the not-too-distant future. I think it is fairly self-explanatory, but wanted to highlight it quickly, with this comment: You cannot implement all of this in one big shot at an existing organization - particularly one with limited resources.</p>
+
+<center><a target="_blank" href="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"><img border="0" vspace="5" hspace="5" width="50%" height="50%" src="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"></a></center>
+
+<p>Alrighty, back from that little segue, let's now talk about whether or not you really need a dedicated security department. Overall, I think the answer depends on the context. How big is your organization? What's your resource picture? How are responsibilities currently aligned and assigned? The reason these questions are important is because it helps define your constraints/scope. If you're in a situation like mine where you have no other resources but yourself, no pre-existing formal program, and really not much to lean on, then that is much different from, say, a large corporation that already has a lot of pre-existing program in place.</p>
+
+<p><strong>The IT Insource/Outsource Sine Wave</strong></p>
+
+<p>One thing to key to this question is one of financial prudence, and it seems to strongly resemble the sine wave cycle for evaluating whether to insource or outsource given IT functions. The insource/outsource sine wave is a modulation wave that swings between "definitely outsource" and "definitely insource" based on the cost to the organization. Without delving too much into the theory behind it, consider that a 2-person company is likely much better suited outsourcing a lot of IT than it is in trying to hire a staff to bring the services in-house. However, as that 2-person company grows, they will eventually cross a threshold where it actually makes more fiscal sense to bring those roles in-house. Similarly, if the company again continues to grow, they will eventually cross the threshold again where they can outsource the entirety of IT operations at a price point that is lower than the cost of keeping those resources internal.</p>
+
+<p>Note that this sine wave does not look at other key factors, such as risk management or quality, but instead focuses solely on cost-effectiveness. A more complete analysis would obviously look at other factors to ensure that the quality of services being provided, for example, were in keeping with the expectations of the organization in either insource or outsource models. But I digress...</p>
+
+<p><strong>What's Really Important?</strong></p>
+
+<p>Thinking back to my TEAM Model, then, I wonder what functions are really necessary as part of a dedicated security function, versus what can be delegated out to the respective teams for performance. Again, bear in mind that the ultimate answer will vary depending on the organizational context. That being said, I think it's safe to draw these conclusions:</p>
+
+<p> * If you already have a risk management team, then it makes sense to integrate information risk management into it. In fact, this approach may be far superior to keeping information risk management separate. Note that there may be an opportunity cost in getting your existing risk management team up-to-speed, but there may be significant long-term value here as well.</p>
+
+<p> * Much of information security management responsibilities are operational in nature. You don't necessarily need dedicated security people hardening systems or writing secure code. In fact, I would argue that you almost never should have dedicated security people performing those functions, but should instead focus on ensuring that your existing personnel are well-trained.</p>
+
+<p> * Logging, monitoring, and incident response is an area where I'm going to expect a lot of push-back. Why? Because, let's be honest, we security people don't tend to trust others in the organization (admit it!:). However, let's think about this for a minute. If you have proper policies and reporting in place, why can't your rely on your operations team to implement central logging and monitoring? In terms of incident response, show me an operational team that's not already doing this. Now, there is a potential major exception, and that's in ensuring a forensically sound response to a breach that may require legal support. However, once again, many organizations already have outsourcing arrangements with forensics teams because it's too expensive to maintain a team in-house (unless you're getting breached A LOT, which raises other red flags). I then flip back to ensuring you have a strong policy framework in place with decent training to back it up.</p>
+
+<p> * Policies likely need to be owned by a dedicated security function. Your risk management team isn't going to write them. You darn well better not let your auditors write them. And, while it's likely ok for your operations team to write the procedures and configuration guides, someone still needs to check them. Now, this being said, I've seen organizations outsource the writing of the policies, and this is certainly a viable option. Ultimately, your senior management (or executive) team is responsible for publication and awareness. Overall, then, it seems logical to make this an assigned and dedicated security responsibility. On the other hand, we could assign this responsibility to your Legal Department (or in-house counsel). So, I don't think this is so much a hard-and-fast rule as it is just a limited logical conclusion.</p>
+
+<p> * Security testing should be part of QA. It really should. This quip does not necessarily apply to certain regulatory requirements for qualified assessments, etc. Beyond that, however, this seems to be a set of activities that again maps cleanly into existing practices.</p>
+
+<p> * IT audit should be part of your audit department. If you already have auditors, then IT audit may as well be part of that crowd. Make sure they have someone qualified, and off to the races you go. Ultimately, the reason for rolling these together is because your C*s already read and respond to audit reports. Streamline that reporting and viola you're good to go.</p>
+
+<p>Now, a few caveats here.</p>
+
+<p>1) Obviously, the above assumes a larger organization already.</p>
+
+<p>2) If you're a small organization, then consider outsourcing these responsibilities altogether. Especially if you're already outsourcing much of what you're doing in IT.</p>
+
+<p>3) It is absolutely vital that you have a CISO/CSO who does not report up through IT and who is treated as a true C-level executive. That person should be ultimately responsible for all of this good stuff. In a small company, this person is likely going to be very hands-on in nature.</p>
+
+<p>4) For mid-sized companies, your 1 or 2 dedicated security people should not be overly aggressive about trying to grow the security team. As far as I can tell, it's counter-productive. Even if your operations and development teams (if you have them) are heavily loaded, it will be far more useful and productive to demonstrate their need for additional resources than it will be to try and justify parallel resourcing. Case-in-point: identity and access management. While some facets, such as definition of roles, and policies that support the entire category, clearly should be owned by the CISO/CSO, much of it is purely operational in nature. Moreover, operations (or IT) benefits the most from implementing these solutions in the long-run. Make the case, get their buy-in, help with the project planning, and then get out of the way.</p>
+
+<p>5) There is absolutely a need for a trusted security advisor. Guess what? That person does not necessarily need to be a full-time employee. At some point you will have enough practices in place that the organization can run relatively cleanly. Why burn a full resource, then, on babysitting that infrastructure? It just doesn't seem to make sense to me.</p>
+
+<p><strong>Work Yourself Out of a Job? Crazy Talk!</strong></p>
+
+<p>In essence, I am talking about nothing short of working myself out of a job here. In my context, it absolutely does not make sense to waste the money building a large security team. Much of what needs to be done today has to be owned by other people. My role, then, is far more of a coaching and advising responsibility than anything else. My job will quickly become about defining discrete projects that can have cost and resource estimates attached, be prioritized, and be executed by other people.</p>
+
+<p>There are a few exceptions here. Security policies need to be written and distributed. Training and awareness needs to be conducted. Some oversight needs to be put in place. However, I view many of these things as short-term start-up tasks that in the long-run get handed back over to other teams.</p>
+
+<p>Security has a very bad reputation for getting in the way of work. I'm increasingly of the opinion that the best way around this is to stop pushing projects as "security" work, and instead make them the responsibility of teams like operations/IT. Make a business case, spec out the requirements and the cost, and then hand it over to your management team to own.</p>
+
+<p><strong>What If Nothing Gets Done?</strong></p>
+
+<p>A part of project planning is justifying the project. In the end it's up to the executive management team to make risk decisions. The CISO/CSO can only provide the research and recommendations. If the money isn't available, then there's not much you can do. If there are other priorities that take precedence, then you have to respect that. Why? Because if the core of the business fails, then you won't really need to worry too much about security.</p>
+
+<p><strong>My Point</strong></p>
+
+<p>I fully expect this post to go over like a lead balloon. What I'm saying flies in the face of conventional wisdom, and what's worse, it actually advocates making people be responsible for their actions (outside of security). It's occurred to me, however, that maybe part of our problem in this industry is that we've been in a nanny state for far too long. Why should security accept the responsibility without the authority? Does that really make sense? It certainly isn't fair!</p>
+
+<p>As such, I hope that you will take some time to seriously consider what I'm saying. Having a fully dedicated security department may not, in fact, be in the best interest of the organization. Sure, maybe you can justify a small team, and sure that might qualify as a "department." However, let's not get caught-up in such trivialities and instead look at the big picture. My guess is that a significant percentage of "security" has no place in a dedicated security department. If this is true, then we have an excellent opportunity to redefine this industry, break the counterculture monotony that we've become, and instead focus on making the right people responsible for the right things.<br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=innovation&amp;limit=20" rel="tag">innovation</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on July 16, 2009  1:36 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/07/do_you_need_a_security_departm.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/914</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2009/07/do_you_need_a_security_departm.html" rel="nofollow">Do You Need a Security Department?</a>:</p>
+                           
+                           <a id="p1676"></a>
+                           <div class="trackback" id="ping-1676">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/07/on_responsibility_without_auth.html" rel="nofollow">On "Responsibility Without Authority"</a> from The Falcon's View<br />
+                                    Continuing my line of thinking from my previous post, "Do You Need a Security Department?", I wanted to speak to this notion of having responsibility without authority. It seems to be a problem common to many security people in their... <a href="http://www.secureconsulting.net/2009/07/on_responsibility_without_auth.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1676" rel="nofollow">July 16, 2009 12:10 PM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1689"></a>
+                           <div class="trackback" id="ping-1689">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">How NOT To Build a Security Program</a> from The Falcon's View<br />
+                                    Andy Willingham (Andy ITGuy, @andywillingham) had a post up early this week titled "Building a security program from the ground up". It's an interesting read, though a bit on the naive side. Having just come out of an environment where... <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1689" rel="nofollow">November 13, 2009  5:15 PM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1693"></a>
+                           <div class="trackback" id="ping-1693">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2010/02/uninspired.html" rel="nofollow">Uninspired.</a> from The Falcon's View<br />
+                                    In case you haven't noticed, my blogging has trailed off the last few weeks, roughly corresponding with starting a new contract. There could be any number of reasons why this has happened, but it's nothing you couldn't probably guess at.... <a href="http://www.secureconsulting.net/2010/02/uninspired.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1693" rel="nofollow">February 15, 2010  4:59 PM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (4)</h3>
+                           
+                                 <a id="c000642"></a>
+                                 <div class="comment" id="comment-642">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          Thomas Sanders:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Have you ever taken a look at the ISO 27002? </p>
+
+<p>Section 6.1.2 - Information security activities should be co-ordinated by representatives from different parts of the <br />
+organization with relevant roles and job functions. </p>
+
+<p>Your ideas are not ground-breaking by any means, but you are missing the point of the importance of a separate internal entity.</p>
+
+<p>Some 'security' functions in Security Departments, as you speak to it, are likely there due to lack of experience, time, or job role in any other department. Perhaps even segregation of duties due to compliance and/or regulatory measures. </p>
+
+<p>Some real-world examples of why you believe this is true would be helpful.<br />
+</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          Thomas Sanders  |
+                                          <a href="#comment-642">July 16, 2009  9:02 AM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-642" title="Permalink to this comment">July 16, 2009 09:02</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000643"></a>
+                                 <div class="comment" id="comment-643">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://carnal0wnage.attackresearch.com" href="http://carnal0wnage.attackresearch.com" rel="nofollow">CG</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>I think the above would work as long as someone actually listens to either the CXO thats ultimately in charge or the security guy without a team and not on the org chart.</p>
+
+<p>In larger organizations, he who is not on the org chart has no power and will only be tolerated but until a certain pain threshold. At that point you'll just get blown off because you "dont exist"</p>
+
+<p>good luck with it, responsibility without authority is never fun and functionality will almost always win over security by the operations team.  </p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://carnal0wnage.attackresearch.com" href="http://carnal0wnage.attackresearch.com" rel="nofollow">CG</a>  |
+                                          <a href="#comment-643">July 16, 2009  9:13 AM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-643" title="Permalink to this comment">July 16, 2009 09:13</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000644"></a>
+                                 <div class="comment" id="comment-644">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>@Thomas - </p>
+
+<p>I'm not sure you're understanding my point. As for examples, I can't give you any real world specifics today as it's too early in my journey. My goal throughout my career has always been to work myself out of a job. To do that means that people outside of security have to take responsibility, which ironically seems to happen only rarely.</p>
+
+<p>@CG -</p>
+
+<p>I think you're definitely right, you absolutely need a CISO/CSO who has strong authority who can ensure that policies are enforced, hopefully with consequences. It's important, however, that the right people be subject to those consequences.</p>
+
+<p>-ben</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-644">July 16, 2009  9:53 AM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-644" title="Permalink to this comment">July 16, 2009 09:53</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000645"></a>
+                                 <div class="comment" id="comment-645">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>To Thomas's question, here's an example: Assuming a requirement to pentest annually, should you hire a full-time pentester, or should you outsource the role? If you're a small company with a very small number of target servers, then it probably makes fiscal sense to simply outsource the task to a qualified organization. However, at some point the amount of work will justify having a full-time resource onboard. For example, a full-time resource could have time split between pentesting and assisting with remediation (advising, retesting, etc.).</p>
+
+<p>The point here is that there may or may not be a good justification for bringing a resource in-house, and thus building out a team or department. We need to be careful that we don't always run to the position of always building an internal security department.</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-645">July 16, 2009 11:34 AM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-645" title="Permalink to this comment">July 16, 2009 11:34</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2139" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2139);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>July 16, 2009  1:36 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/07/pavel_brings_rkc_to_philly_1st.html">Pavel Brings RKC to Philly - 1st Time!!</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/07/on_responsibility_without_auth.html">On "Responsibility Without Authority"</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

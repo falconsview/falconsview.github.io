@@ -1,0 +1,478 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Actually, Possibility IS Probability (As Is Likelihood) (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/12/embrace_murphys_law.html" title="Embrace Murphy's Law" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/12/how_not_to_talk_to_customers.html" title="How Not To Talk To Customers" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/12/actually_possibility_is_probab.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/965"
+    dc:title="Actually, Possibility IS Probability (As Is Likelihood)"
+    dc:identifier="http://www.secureconsulting.net/2009/12/actually_possibility_is_probab.html"
+    dc:subject="infosec"
+    dc:description="[[ Please Note: This post has been significantly redacted since it&apos;s original posting. The original opening of the post was a personal attack against an industry analyst. I found myself extremely offended by the tone and timbre of the analyst&apos;s..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-12-08T10:32:31-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/12/actually_possibility_is_probab.html">
+<dc:title>Actually, Possibility IS Probability (As Is Likelihood)</dc:title>
+<dc:description>[[ Please Note: This post has been significantly redacted since it&apos;s original posting. The original opening of the post was a personal attack against an industry analyst. I found myself extremely offended by the tone and timbre of the analyst&apos;s...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-12-08T10:32:31-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/12/embrace_murphys_law.html">&laquo; Embrace Murphy's Law</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/12/how_not_to_talk_to_customers.html">How Not To Talk To Customers &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Actually, Possibility IS Probability (As Is Likelihood)</h2>
+                     <div class="entry" id="entry-2193">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p><em>[[ Please Note: This post has been significantly redacted since it's original posting. The original opening of the post was a personal attack against an industry analyst. I found myself extremely offended by the tone and timbre of the analyst's responses in a Twitter thread, compounded by his publishing a follow-up blog post that changed the message completely and tried to make it sound like he had been reasonable all along. Regardless, it did not justify in any way my publicly lashing out like I did, and as such I have cut all that nasty BS out of this blog post. Hopefully now this thread will represent a worthwhile contribution to the community. Of course, with the change, the title of this piece doesn't really make as much sense, but I'm sure we'll get over it... ]]</em></p>
+
+<p><strong>The Twitter Thread That Started It All</strong></p>
+
+<p>The full transcript of our exchange is below for you to read. Allow me to preface all of this by saying that trying to get a point across in 140 characters is darn near impossible, as can be evidenced by the fact that the other party completely missed my point numerous times. It's not completely his fault, of course. Human nature makes us want to be consistent with our beliefs, even in the face of overwhelming evidence that we're being a total prat.</p>
+
+<p>The original tweet that started it all was:<br />
+<blockquote>"Other than worms, viruses, botnets, and drive-bys, can anyone think of security threats Mac users don't really have to deal with?"</blockquote><br />
+My immediate response was to ask if he was being serious. Because, honestly, I thought he was joking. Why would you ever tell anybody that they shouldn't have to be concerned about common malware or targeted attacks, regardless of platform? This is tantamount to telling people "move to Mac, you'll be safer" - which is not definitively true!</p>
+
+<p>The problem throughout this exchange is that the other person uses circular reasoning to defend his original statement. I consistently question his assertions, and he simply points back into his own argument as proof that he's right. It's a pity, because I really would like to see his evidence that malware is not a threat to Mac users. Unfortunately, despite what his "1337 dudes who understand that stuff" tell him (I think his comment was in reference to 64-bit architecture), the people I've spoken with in the know say that Mac malware exists and is commonly used, though more in targeted, rather than widespread, attacks. I'll comment on this more below.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p><strong>Complete Thread With Commentary</strong></p>
+
+<p>Without further adieu, here's the complete exchange between the analyst and me on Friday (12/4). Note that my comments to him are prefaced with "@[ANALYST]" while his responses to me are prefaced with "@falconsview".</p>
+
+<blockquote>(@[ANALYST] original post) - Other than worms, viruses, botnets, and drive-bys, can anyone think of security threats Mac users don't really have to deal with?    12:27 PM Dec 4th
+
+<p>@[ANALYST] are you joking or serious? on twitter nobody can hear you scream...    12:32 PM Dec 4th</p>
+
+<p>@falconsview I'm serious- Mac users aren't being hit with this stuff. It exists, but near 0 encounter rate.    12:33 PM Dec 4th</p>
+
+<p>Maybe it is only a matter of time. But we don't know the timeframe, and the risks aren't here now.    12:36 PM Dec 4th</p>
+
+<p>Seriously, I know OS X is loaded with vulns, but that's not the point- not that Mac users should be complacent, but the risks are different    12:37 PM Dec 4th</p>
+
+<p>Risk is a numbers game- and we do a disservice if we equate low risk threats with high risk just because something is possible.    12:40 PM Dec 4th<br />
+</blockquote><br />
+This exchange is fascinating, because we see immediately several problems. First, the analyst dismisses the threat of malware to Macs because he's deemed it to be a "low risk threat." Ironically, he talks about this in the context of "risk" as a "numbers games" without defining risk, context, or providing any numbers. Sorry, but you can't have it both ways. Pony up real numbers, or go home.</p>
+
+<p>He also makes a curious assertion, that Mac users aren't being afflicted with malware, even going so far as to declare a "near 0 encounter rate." There is a fatal flaw in his logic. If people like him are telling users not to worry about malware, and they are not running AV or thinking about malware, then how to do they know whether or not they're being affected? It's an inherently false statement. If you're not paying attention or looking for malware, then you're unlikely to find it. Sure, infosec professionals might be fine in this regard, being more likely to notice something funky with their system, but the average user absolutely is not.</p>
+
+<p>Now compound this issue by noting that enterprises are increasingly deploying Mac workstations for their users. We're creating the conditions for a very big malware problem. Of course, never worry, the analyst down-plays it with his fuzzy math in declarative assertions, so the world will most certainly be safe, because he said so.<br />
+<blockquote><br />
+@[ANALYST] ignorance is bliss... the average Mac user isn't really running any sort of AV on their system... how do they know?    12:50 PM Dec 4th</p>
+
+<p>@[ANALYST] lots of cross-platform bugs these days... not to mention that phishing doesn't usually care what OS you're running...    12:51 PM Dec 4th</p>
+
+<p>@falconsview Phishing wasn't on my list... that's on the list of *real* threats. I only have virus, worms, botnets, BT...    12:53 PM Dec 4th</p>
+
+<p>@falconsview Oh please- there is no evidence for widespread Mac malware. No reason for AV for most users.    12:54 PM Dec 4th</p>
+
+<p>@falconsview It isn't ignorance- I filter for viruses on email and never see Mac ones, just Windows ones. I don't use AV on Win7 either.    12:55 PM Dec 4th<br />
+</blockquote><br />
+Gosh, here we go, more faulty conclusions based on vacuum analysis. First off, phishing as often as not deploys malware. So, if phishing is, in fact, a concern, then why isn't malware? Also, to my point here, cross-platform vulnerabilities affect Mac users as much as Windows users, which means that malware is absolutely a threat for this platform, even if the attack is targeting an application and not the OS (at least not directly).</p>
+
+<p>What I find hilarious here is that the analyst's "evidence" that Mac malware is a minimal threat is based on his own limited analysis of his email AV?!? The problem here is that the analyst is suffering from the illusion that email-AV-filtering is some sort of definitive benchmark for malware. Sure, it's a great way to register the background noise, but it does nothing for targeted attacks.</p>
+
+<p>More importantly, for his statement to mean anything, we'd have to believe that the AV vendors are investing tremendous resources into detecting and analyzing Mac-oriented malware. Unfortunately, since Mac users have been told not to worry about malware, there is not much market for Mac AV. More importantly, the number of people who are actively monitoring or noticeably affected by Mac malware is going to be dramatically less than the resources looking at Windows. We've literally created a blind spot here, all because of this fallacy promoted by analysts that users needn't worry about Mac malware. Again... his reasoning is circular here... you don't need to worry about Mac malware, thus you won't need to deploy Mac AV, thus there will be highly limited detection of Mac malware, which means you won't be aware of much Mac malware, thus you don't need to worry about Mac malware...<br />
+<blockquote><br />
+@[ANALYST] oh, man, you're not going to buy into Microsoft "64-bit is more secure" argument, too, are you?    12:59 PM Dec 4th</p>
+
+<p>@[ANALYST] you're changing your parms, now... you asked what threats Mac users don't have to worry about... never said "widespread" there :)    1:01 PM Dec 4th   from TweetDeck   </p>
+
+<p>@falconsview No- to worry about something it needs to be likely encountered by an average user. I didn't change anything.    1:03 PM Dec 4th</p>
+
+<p>@falconsview If you learn 64 bit architectures and anti-exploitation techniques, you find that exploitation of memory flaws is much harder    1:04 PM Dec 4th</p>
+
+<p>@falconsview At least that's what the 1337 dudes who understand that stuff tell me.    1:06 PM Dec 4th</p>
+
+<p>@[ANALYST] it's a new architecture... *shrug* I think people too often equate new to hard(er)... we'll see how things actually play out...    1:10 PM Dec 4th</p>
+
+<p>@[ANALYST] problem is, if the cross-plat apps continue to have issues, 32 vs 64, Win vs Mac will be decreasingly important...    1:11 PM Dec 4th</p>
+
+<p>@falconsview Oh yeah- there will always be attack vectors, but 64 bit really does make it harder.    1:16 PM Dec 4th</p>
+
+<p>@[ANALYST] harder based on how we do things today... it remains to be seen whether or not it makes it harder across the board... I assume "no"    1:17 PM Dec 4th<br />
+</blockquote><br />
+First, on Microsoft, 64-bit, and security... check out the article <a target="_blank" href="http://www.maximumpc.com/article/news/64bit_windows_more_secure_now">"64-bit Windows is More Secure, for Now"</a> for more on that... basically, a malware fellow at Microsoft said that 64-bit architecture is inherently more secure. The truth is that, yes, 64-bit architecture changes the game a bit, but it is far, far, far too early to be declaring any sort of victory over hackers and malware developers. It always takes a little while for malware development on new platforms, so let's hold off a couple years before we try to make any declarations.</p>
+
+<p>Back to the thread, the analyst has, in fact, changed the parameters. His original question asked about "security threats Mac users don't really have to deal with". He did not qualify that statement in any way, such as to say that the threats had to be widespread. He of course denies changing things up, but we all can read the thread here and see that, yes, he did in fact start changing the tune of his argument.</p>
+
+<p>I'm also greatly amused by his "that's what the 1337 dudes who understand that stuff tell me" comment. Who cares? People say stuff blindly all the time (kind of like all of the analyst's assertions in this thread) without having any real backing. 64-bit is a new architecture, hooray, but pardon me for not celebrating prematurely. When 2011 rolls around and we still see a limited number of malware attacks for 64-bit, then I'll concede the point. However, I think that's extremely unlikely, so you'll excuse me if I don't jump on that bandwagon too quickly.<br />
+<blockquote><br />
+@falconsview I do think we'll see more cross platform via things like Flash. But pwnage will be more constrained.    1:17 PM Dec 4th</p>
+
+<p>@[ANALYST] well-constructed targeted attacks can be far more devastating (& lucrative) than the old-school blast 'em all attacks...    1:18 PM Dec 4th</p>
+
+<p>@falconsview How is that germane to the original question?    1:21 PM Dec 4th</p>
+
+<p>@[ANALYST] your premise seems based in mainstream "hit 'em all" attacks to justify users skipping protection - seems faulty premise+logic...    1:29 PM Dec 4th</p>
+
+<p>@falconsview No- my premise is that attacks that are very unlikely for someone to encounter in the real world are a low risk.    1:31 PM Dec 4th</p>
+
+<p>@falconsview Your premise that we need to worry about anything possible has the flaw.    1:31 PM Dec 4th</p>
+
+<p>@falconsview And the position that because platform security has sucked, it will always suck, is ad-hominum. Classic logic flaw.    1:31 PM Dec 4th<br />
+</blockquote><br />
+Here's where the "debate" starts going off the rails. It's interesting to me that the analyst views himself as a superior debater, yet his logic is constantly flawed. His ego is writing checks his logic can't cash.</p>
+
+<p>So, the accusation the analyst makes here is that I'm making an <a target="_blank" href="http://en.wikipedia.org/wiki/Ad_hominem">"ad hominem"</a> argument (he misspelled it). What is that, exactly? Well, he's trying to say that I'm attacking him as a person rather than his argument. However, if you read back into the thread above, I'm not at any point attacking him, just his faulty, unfounded, and often idiotic assertions.</p>
+
+<p>The irony here is that his accusation of using an ad hominem argument is in fact tantamount to making an ad hominem argument. He's assertions have no backing, so he instead decides to start attacking me. He consistently mischaracterizes my questioning of his assertions and seems to lack comprehension of the counter-arguments being made.</p>
+
+<p>Also curious here is his acquiescence that cross-platform attacks are valid and will continue to be a threat (even against Mac users). He quickly qualifies his agreement, however, saying that the success of these attacks will be "more constrained." Yes, this is absolutely true, but also further supports my primary argument. It's not the widespread attacks that I'm worried about, it's the targeted attacks. Read <a target="_blank" href="http://www.csoonline.com/article/print/509739">"Ending the PCI Blame Game"</a> to hear about the so-called "third wave" in infosec and how the world is changing.</p>
+
+<p>Unfortunately, the analyst is missing all of these counter-points. He's too invested in being consistent and "right" that he's not only refusing to entertain counter-arguments, but he's also decided to devolve into ad hominem arguments in his own defense.<br />
+<blockquote><br />
+@[ANALYST] you're implying and assuming points I didn't make... my assertion is we can't assume "better" just because "different"...    1:33 PM Dec 4th</p>
+
+<p>@[ANALYST] and I never said anything ad-hominum... I never said "hey, it's Windows, it will be pwnd"...    1:33 PM Dec 4th<br />
+</blockquote><br />
+I went and looked up ad hominem for this post - it's clear from my comment here that I was thinking of something else.<br />
+<blockquote><br />
+@[ANALYST] in fact, just the opposite, I'm saying "just cuz it's Mac doesn't make it more secure" - that's a completely bogus argument...    1:34 PM Dec 4th</p>
+
+<p>@[ANALYST] this is akin to the classic mono-culture thesis... it's only valid if 1 slice of the pie is much, much bigger than the others...    1:35 PM Dec 4th</p>
+
+<p>@[ANALYST] if the slices are all relatively similar in size, then it will increase target diversity, while giving the illusion of decreased...    1:36 PM Dec 4th</p>
+
+<p>@[ANALYST] ...threat per platform... you need to look at the whole pie, and right now we're not really doing that (not well, anyway)...    1:36 PM Dec 4th<br />
+</blockquote><br />
+I tried to introduce an analogy here, but the analyst missed the point... my point, quite simply, was that he was making a false assertion about an entire class of systems predicated on fuzzy data. Similarly, the mono-culture argument of several years ago does not necessarily hold as true today. So it goes for Mac malware. What may have been true several years ago is not a safe bet today.<br />
+<blockquote><br />
+@falconsview You aren't making a cogent argument- my position is that Macs are at much lower risk of certain threats. That's the reality.    1:40 PM Dec 4th</p>
+
+<p>@falconsview Remember, I'm talking *today*, not trying to predict the future (on Macs)    1:41 PM Dec 4th<br />
+</blockquote><br />
+Of course the analyst doesn't find my argument believable, because I'm challenging all of his assertions. Note that he once again changes the actual basis of his argument. Remember that his first question was about what threats Mac users can ignore. He may have meant to imply all of these other things, but they were not stated, and thus cannot be assumed.</p>
+
+<p>The interesting thing here is that in changing his argument he is effectively conceding the point. Malware is a threat for Macs, and thus it should not be completely ignored. Now he's saying - generically - that it's a "lower risk." In what context? In what environment? How can he make this statement and have it be true for all people in all environments? He can't. This is exactly the risk-as-FUD contention I made in my recent post <a target="_blank" href="http://www.secureconsulting.net/2009/11/befuddled_by_risk.html">"BeFUDdled by Risk"</a>.<br />
+<blockquote><br />
+@falconsview I never claimed Macs were more secure, only that they face less risk of certain attacks.    1:41 PM Dec 4th</p>
+
+<p>@[ANALYST] yes, you're right, Macs are not as likely to be compromised by Windows exploits - great argument    1:45 PM Dec 4th</p>
+
+<p>@[ANALYST] lack of data/evidence does not a case make - you cannot prove the negative - you cannot prove your original assertion    1:46 PM Dec 4th</p>
+
+<p>@[ANALYST] anecdotally, while you're hearing Macs have far less malware, I've heard that they make great squishy targets...    1:47 PM Dec 4th</p>
+
+<p>@[ANALYST] as for cogent, 140chars is hardly conducive to extensive arguments like these...    1:47 PM Dec 4th</p>
+
+<p>@falconsview I can completely prove my position- Mac infection rates are practically 0.    1:51 PM Dec 4th</p>
+
+<p>@falconsview Mac malware rates, according to the AV and cloud filtering vendors, are practically 0.    1:52 PM Dec 4th</p>
+
+<p>@[ANALYST] prove that assertion - show me data that evaluates a statistically significant population of Macs that are not infected...    1:52 PM Dec 4th<br />
+</blockquote><br />
+More baseless "less risk" statements. Where's the evidence? He claims he can "completely prove" his assertions, yet where is the data? As you'll see below, he sandbags my request for proof and tells me it's "all over the place". More importantly, though, is that he's basing his arguments on undefined "risk" and undefined data sources and, as such, has in no way established any credibility. He instead turns nasty in his arguments, gets frustrated, and then begins making almost exclusively ad hominem arguments (attacking me, rather than my questions).<br />
+<blockquote><br />
+@falconsview You have nothing but FUD on your side. macs have vulns, but they aren't being exploited, and the numbers show that.    1:53 PM Dec 4th<br />
+</blockquote><br />
+Oh, sigh... it's funny, isn't it? He uses risk-as-FUD arguments, but then turns around and accuses me of using FUD when I question his assertions. I mean, seriously, read back... all I do is challenge his assertion. I don't make any of my own. That isn't FUD. He's fallen into this trap where I question what he says and he simply bristles and lashes out. Provide a data source, show some credibility for your argument, and then this discussion would change dramatically.<br />
+<blockquote><br />
+@[ANALYST] you're relying on data from vendors who don't provide products for the platform?!? seriously??    1:53 PM Dec 4th</p>
+
+<p>@[ANALYST] it's not FUD - I am challenging your assertion based on lack of data, and because you cannot prove a negative    1:54 PM Dec 4th</p>
+
+<p>BTW- for those listening I firmly believe Apple has serious security problems with OS X. I'm not in the "invulnerable" crowd at all.    1:55 PM Dec 4th</p>
+
+<p>But I can't equate possibility with probability when doing a risk assessment.    1:56 PM Dec 4th<br />
+</blockquote><br />
+Ah, sigh, here again we have a problem with semantics. His entire argument devolves to the semantic issue discussed at the top of this post. Too bad he can't just admit the problem and move on. Of course, he'd also have to provide real evidence, real data, real sources, real references. That's all I ask for, but he's unable or unwilling to provide it.<br />
+<blockquote><br />
+@falconsview Actually, those vendors *do* have products for the platform. Go talk to them yourself like I do.    1:57 PM Dec 4th</p>
+
+<p>@falconsview I don't have time in Twitter to review all the malware numbers and infection rates from many reports- go look it up yourself.    1:58 PM Dec 4th<br />
+</blockquote><br />
+And here we have the cop-out. Again, assertions with no backing. He deflect, he defers, he makes allegations and acts condescendingly, but he doesn't provide any proof. Unfounded assertions, which was my entire point of contention with all of his comments.<br />
+<blockquote><br />
+@[ANALYST] there are, what, 2 vendors who have Mac-based AV, and they've released them this year? clearly there's a biz case based on threat.    1:59 PM Dec 4th</p>
+
+<p>@[ANALYST] provide links if you have such conclusive evidence...    2:00 PM Dec 4th</p>
+
+<p>@falconsview The evidence/data is all over the place, go look it up before you challenge my assertion.    2:00 PM Dec 4th</p>
+
+<p>@falconsview All major AV companies offer mac AV. Every single one. Some going back decades. You clearly don't know the topic.    2:01 PM Dec 4th</p>
+
+<p>@[ANALYST] fine, I quit - end of day here    2:03 PM Dec 4th</blockquote><br />
+</blockquote><br />
+Once again, he makes some interesting assertions. Who qualifies as a "major AV company"? As far as I know, in terms of commercial solutions, only McAfee, Symantec, and Kaspersky have solutions, of which I'm pretty sure Symantec and Kaspersky just (re)launched this past year. Sure, there are lots of "free" AV solutions for the Mac, but I'm not overly confident in them (ClamAV and AVAST are ok, I suppose, but these are not "enterprise" solutions). It looks like Trend Micro released a Mac AV solution this year, too, with a bit more googling.</p>
+
+<p>The point is this: what's causing AV vendors to now, in 2009, start releasing Mac AV products? Presumably because there's a market for it? What's driving the creation of that market? Merely "FUD" and pretty brochures? I find that rather unlikely. AV companies have invested significantly in Mac AV <em>this year</em> - there has to be a strong possibility for an up-side, or they wouldn't do it. What drives this belief? The increased likelihood of a threat, of course.</p>
+
+<p>The funny thing here is that I don't even care if he's right or not, I just want him to actually provide some form of evidence. We spent an hour on this thread and all he did was bluster and back-pedal, changing his parameters a couple times. Oh, and degrade into derisive accusations, probably because his assertions were bogus.</p>
+
+<p><em>Update: Ironically, Schneier has <a target="_blank" href="http://www.schneier.com/blog/archives/2009/12/reacting_to_sec.html">come out and said that Mac and Linux users can ignore AV, too</a>. *sigh* Not the point, but still, these broad assertions are very dangerous, especially when they come from high-profile, reasonable-well-respected infosec people.</em></p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=rant&amp;limit=20" rel="tag">rant</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=semantics&amp;limit=20" rel="tag">semantics</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on December  8, 2009 10:32 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/12/actually_possibility_is_probab.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/965</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (2)</h3>
+                           
+                                 <a id="c000691"></a>
+                                 <div class="comment" id="comment-691">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://securityrevolution.blogspot.com" href="http://securityrevolution.blogspot.com" rel="nofollow">Dominic Vogel</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Terrific rant Ben! </p>
+
+<p>To me many Mac users don't quite understand simple numbers. The vast majority of computers (in the business world and commercial) are still Windows PCs. Therefore, the bad guys are going to go after the larger target. This gives the Macs a false aura of invincibility. As the younger generations are adopting Macs more so than PCs the target area will shift to the Mac OS. </p>
+
+<p>I made a posting regarding the false sense of security that many Mac users have developed on my blog. Let me know what you think.<br />
+ </p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://securityrevolution.blogspot.com" href="http://securityrevolution.blogspot.com" rel="nofollow">Dominic Vogel</a>  |
+                                          <a href="#comment-691">December  9, 2009 11:30 AM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-691" title="Permalink to this comment">December  9, 2009 11:30</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000692"></a>
+                                 <div class="comment" id="comment-692">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Thanks, Dominic! I thought your post was spot-on. I can't decide if it's ignorance, arrogance, or a sense of invincibility that causes people to down-play malware for Macs. To me it seems a bit like a self-fulfilling prophecy: invest the majority of your resources in Windows malware research, and then celebrate how little is found for Macs.</p>
+
+<p>-ben</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-692">December  9, 2009 10:02 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-692" title="Permalink to this comment">December  9, 2009 22:02</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2193" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2193);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>December  8, 2009 10:32 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/12/embrace_murphys_law.html">Embrace Murphy's Law</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/12/how_not_to_talk_to_customers.html">How Not To Talk To Customers</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

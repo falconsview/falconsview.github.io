@@ -1,0 +1,1151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html">
+<dc:title>Skip InfoRisk Tolerance</dc:title>
+<dc:description>In financial risk management - and particularly with investments - there is a reasonable concept of risk tolerance. You can determine ahead of time just how aggressive you want to be with your portfolio, which maps directly to how much...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-08-08T11:44:33-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2011/08/eulogizing-stupidity.html" title="Eulogizing Stupidity" />
+    <link rel="next bookmark" href="http://54.197.56.127/2011/08/pragmatic-risk-management.html" title="Take 2: Pragmatic Risk Management" />
+    
+    
+    <title>Skip InfoRisk Tolerance - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2380" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Skip InfoRisk Tolerance</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2011-08-08T11:44:33-05:00">August  8, 2011 11:44 AM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html#comments">5 Comments</a>
+
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html#trackbacks">1 TrackBack</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>In financial risk management - and particularly with investments - there is a reasonable concept of risk tolerance. You can determine ahead of time just how aggressive you want to be with your portfolio, which maps directly to how much risk you're willing to tolerate (essentially meaning how low a probability of return or how high a probability of loss you're willing to accept). In information risk management we've talked about similar concepts, which on the surface might seem fine, but which in practice seems be inconsistent, unnecessary, and - frankly - outright irrelevant.</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>How this line of thought got started relates to my recently walking through how we would build-out a GRC program, in a generic sense, for customers. Logically, it seemed to make sense that you'd want to first establish your inforisk "tolerance," which could then be used to articulate your priorities and set policy. In practice, however, this isn't how things work. Instead, you gather as much information as possible for a specific decision, and then you decide your risk tolerance on the fly. There isn't really a starting point of "X amount of risk is acceptable."</p>
+
+<p>In flipping things around this way, it seems clear that inforisk management really is better aligned to decision management/analysis than it is to financial risk management. Stop and think about this for a minute (if you'll be so kind). InfoRisk is about decisions, not about risk management; at least, not in the same sense as managing financial risk. This conclusion becomes muddier when you apply a tool like FAIR to your analysis, which helps produce monetary estimates for risk factors around a given scenario. However, if you think about it, you're not using FAIR to establish an up-front risk tolerance, but rather are using it as a decision analysis tool to either evaluate a given scenario, or to evaluate the effectiveness of applying controls to a given scenario.</p>
+
+<p>As such, I think that your GRC process will look something like this:<br />
+1) Establish business requirements, including externally-asserted controls (e.g. regs, contracts).<br />
+2) Establish governance processes.<br />
+3) Articulate and mandate requirements and processes by way of policies, standards, etc.<br />
+4) Identify appropriate controls to meet requirements and support processes.<br />
+5) Measure effectiveness.<br />
+6) Repeat.</p>
+
+<p>In the <a target="_blank" href="http://secureconsulting.net/TEAM-Model.html">TEAM Model</a>, I've boiled that down to a cycle of Risk Mgmt, InfoSec Mgmt, and Quality & Performance Mgmt, which are all centered around the articulation of requirements. I think that model is still correct today, though I think that the Risk Mgmt step is really more about the overall strategic and tactical functions of a <a target="_blank" href="http://www.secureconsulting.net/2011/03/defining-grc-the-discipline.html">GRC program</a>.</p>
+
+<p>What you'll note is absent from all of this is any sort of discussion of "risk tolerance." That's because it's not really a question of tolerance (or "appetite" in some circles), but rather a matter of having as much reliable information as is reasonable at decision time. You'll note that this notion tabs very nicely with legal defensibility theory, too. The only thing missing is survivability, which isn't really missing so much as part of a different conversation, which occurs as part of your overall business requirements and governance strategy (that is: what's important to your business operations? this could also rabbit-trail into a discussion of operational risk...).</p>
+
+<p>Just to wrap this thought up... the next time you hear mention of "risk tolerance," please challenge the assertion... ultimately, with information risk it's not a question of tolerance, but rather decision analysis, and hopefully the ability to measure control effectiveness in the end toward achieving overall governance objectives. Or something like that. ;)<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/musings/" rel="tag">musings</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">1 TrackBack</h2>
+
+    
+    
+
+
+    
+    
+        
+    <div class="trackbacks-content">
+        
+        <div class="trackback" id="ping-7888">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2011/08/pragmatic-risk-management.html" rel="nofollow">Take 2: Pragmatic Risk Management</a> from The Falcon's View on <a href="#ping-7888" rel="nofollow">August  9, 2011 10:10 AM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        Soooo... from the firestorm I sparked with my last post, it's very clear I did a really lousy job expressing my point, and that I've also apparently riled folks up by challenging yet another ax of inforisk management. I'm going... <a href="http://www.secureconsulting.net/2011/08/pragmatic-risk-management.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+</div>
+
+
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">5 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-19390" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Russell Thomas</span>
+
+                    | <a href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html#comment-19390"><abbr class="published" title="2011-08-08T20:44:05-05:00">August  8, 2011  8:44 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Maybe I can build a bridge between your perspective and the idea of risk tolerance.</p>
+
+<p>First I want to point out that you are framing information security as 'what security people do' or maybe 'what decisions security people make, or decisions they influence'.  This is how I interpret your references to decision analysis.  This is a very pragmatic perspective, especially for information security specialists, but it's not the only way of looking at it.  </p>
+
+<p>As I see it, information security is a *judgment* about the present state of assets, defenses, practices, and controls, relative to likely threats.  (see: <a href="http://newschoolsecurity.com/2010/05/getting-the-time-dimension-right/)." rel="nofollow">http://newschoolsecurity.com/2010/05/getting-the-time-dimension-right/).</a>  In this view, decisions are only part of the picture.</p>
+
+<p>Also, it appears that you are framing 'risk' as a collection of individual 'things that might go wrong'.  I label this view as "little 'r' risk".  </p>
+
+<p>But there's another perspective, which I label "big 'R' risk", which is the aggregate financial or economic impact of costs associated with information security.  I've proposed a Total Cost framework to measure big 'R' risk: <a href="http://meritology.com/resources/Total%20Cost%20of%20Cyber%20(In)security.ppt." rel="nofollow">http://meritology.com/resources/Total%20Cost%20of%20Cyber%20(In)security.ppt.</a>  Basically, the total cost stream associated with information security is viewed as a stochastic process, and the probability distribution associated with the stochastic process is estimated, not for prediction purposes but to evaluate the impact of alternative security postures, programs, decisions, etc.  It is in the big 'R' risk perspective that information security can be seen as a subset of operational risk, which in turn can be seen as a subset of enterprise risk.</p>
+
+<p>The reason I'm explaining all this is that 'risk tolerance' becomes most visible in the big 'R' risk perspective.  The probability distribution for Total Costs will always have a 'tail', meaning that the probability of much-higher-than-normal costs is not zero, and in most cases it will be 'material' (to use the accountant's term).</p>
+
+<p>In terms of security costs and investments, a firm can spend more and more money (now or later), but it will never drive that 'tail' to zero.  There is some threshold, labeled 'risk tolerance', where the firm will stop spending to lower the curve in the tail.  This is the big 'R' risk that the firm retains and will need to cover with other resources should worst come to worst.</p>
+
+<p>Of course, this explanation doesn't elaborate all the problems with estimation, uncertainty, incomplete information, and non-stationary stochastic processes.  But each of these, in turn, can be frames as a 'second-order' risk tolerance problem.  The book _How to Measure Anything_ by Doug Hubbard has an excellent discussion on the value of information relative to reducing uncertainty in risk analysis.  The point at which your firm decides *not* to spend more money to get better information or estimates of risk can be called "uncertainty tolerance", or maybe "uncertainty indifference".  The firm is retaining the big 'R' risk associated with this residual uncertainty or lack of knowledge.</p>
+
+<p>All this can be mapped back to the decision analysis that you are focusing on, but only if there is some framework of 'risk drivers', and how individual decisions influence overall big 'R' risk.</p>
+
+<p>Hope this helps.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19391" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html#comment-19391"><abbr class="published" title="2011-08-08T21:11:34-05:00">August  8, 2011  9:11 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Thanks for taking the time to respond here, Russell. Unfortunately, based on the feedback, it seems I've done a really crap job of explaining my point. I'll try to put together a better post on it this week and see if I can't get it better.</p>
+
+<p>In a nutshell, my point was this: outside of financial services, very few businesses are doing anything this formal. It's easy to forget that the vast majority of orgs fall into the SMB category. They're not calculating P values, nor are they probably terribly interested in stochastic models. As such, there's no place for "risk tolerance" (big or little R) because there's no process feeding it. I don't believe that SMBs will ever perform a formal analysis like this.</p>
+
+<p>The other thing missing here is the context in which my thoughts were rolling around. I'm looking at risk * from the perspective of how to build out a product or service offering that can be used to automate as much of the process as possible. However, in the end, when I look at defining a "risk tolerance," I don't see a parallel for inforisk to risk tolerance for financial risk. I don't think you can really make up a risk tolerance profile ahead of time and simply stick to it, but rather will have to evaluate each decision one at a time. In such a case, risk tolerance in the bear vs. bull or conservative vs aggressive manner simply doesn't fly. Anyway...</p>
+
+<p>Clearly I need to work-up a new post here that does a better job explaining the context and the problems I'm seeing. Oh, and yes, I'm absolutely, positively being pragmatic, because that's what customers need. Pie-in-the-sky academic theories are great, but they only go so far as to fuel discussions, debates, etc. If you can't put them into practice, then you've reached the limit of efficacy.</p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19392" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    <img alt="" src="http://54.197.56.127/mt-static/images/comment/google_logo.png" width="16" height="16" />
+
+                    <span class="vcard author">hrbrmstr</span>
+
+                    | <a href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html#comment-19392"><abbr class="published" title="2011-08-08T21:24:02-05:00">August  8, 2011  9:24 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>I disagree. SMBs (let's take a high-end restaurant as an example) absolutely understand risk tolerance. They engage in it (perhaps not mathematically) when hiring people, choosing when to ensure the kitchen is spotless (commercial kitchens are nasty places) for a surprise inspection, deciding what the specials will be, how much of 'x' fresh ingredient to order, etc. They understand variables of spoilage, inspection schedules, interview responses/body language, etc. They even understand risk tolerance in terms of how much income to report to the IRS.</p>
+
+<p>What they need is (and here's where this maps to your idea) core instruction in the infosec/inforisk concepts boiled down into something they can understand (without resorting to math). They need an understanding of the core threats, core controls and core tradeoffs. I'm over-simplifying, but portions of both your post/comment and Russ' comment are right.</p>
+
+<p>We have to help inform folks better and make it practical (or your word â€“ pragmatic â€“Â might be better). Restaurant owners hire lawyers & accountants to help mitigate risks in other areas, perhaps we need a new profession that offers similar services for infosec/inforisk.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19393" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Pete</span>
+
+                    | <a href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html#comment-19393"><abbr class="published" title="2011-08-08T23:52:28-05:00">August  8, 2011 11:52 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>It sounds to me like you are saying since nobody is doing formal analysis that you shouldn't - too circular for me. It might be more useful to determine whether people *should* do something more formal. I am not necessarily convinced this is necessary, but everyone is revealing their risk tolerance when they make decisions, whether they know it or not.</p>
+
+<p>Even deciding to ignore risks that have low likelihood and/or low probability is using risk tolerance in a fairly rudimentary way.</p>
+
+<p>Pete Lindstrom</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19394" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2011/08/skip-inforisk-tolerance.html#comment-19394"><abbr class="published" title="2011-08-09T10:12:56-05:00">August  9, 2011 10:12 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Follow-up post here:<br />
+<a href="http://www.secureconsulting.net/2011/08/pragmatic-risk-management.html" rel="nofollow">http://www.secureconsulting.net/2011/08/pragmatic-risk-management.html</a></p>
+
+<p>Hopefully this provides better context and rationale, since it's clear this post didn't get the job done.</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>August  8, 2011 11:44 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2011/08/eulogizing-stupidity.html">Eulogizing Stupidity</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2011/08/pragmatic-risk-management.html">Take 2: Pragmatic Risk Management</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

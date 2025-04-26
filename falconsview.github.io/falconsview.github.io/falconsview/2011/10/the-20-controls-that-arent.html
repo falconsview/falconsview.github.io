@@ -1,0 +1,1551 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2011/10/the-20-controls-that-arent.html">
+<dc:title>The 20 Controls That Aren&apos;t</dc:title>
+<dc:description>My attention was drawn this morning to an ISC Diary &quot;guest post&quot; by Dr. Eric Cole (&quot;What are the 20 Critical Controls?&quot;). In it, he points to the SANS &quot;20 Critical Security Controls - Version 3.0,&quot; which was released in...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-10-03T10:59:22-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2011/09/risk-tolerance-capacity-and-ap.html" title="Risk Tolerance, Capacity, and Appetite" />
+    <link rel="next bookmark" href="http://54.197.56.127/2011/10/missing-bordersbn-opt-out.html" title="Missing Borders/BN Opt-Out?" />
+    
+    
+    <title>The 20 Controls That Aren&#039;t - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2391" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">The 20 Controls That Aren't</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2011-10-03T10:59:22-05:00">October  3, 2011 10:59 AM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comments">17 Comments</a>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>My attention was drawn this morning to an ISC Diary "guest post" by Dr. Eric Cole (<a target="_blank" href="http://isc.sans.edu/diary.html?storyid=11719">"What are the 20 Critical Controls?"</a>). In it, he points to the <a target="_blank" href="http://www.sans.org/critical-security-controls/">SANS "20 Critical Security Controls - Version 3.0,"</a> which was released in August. In the ISC Diary post, Cole talks about using these controls for "quick wins" and in the controls list itself SANS says "These controls allow those responsible for compliance and those responsible for security to agree, for the first time, on what needs to be done to make systems safer."</p>
+
+<p>Unfortunately, while the list isn't technically inaccurate in terms of capabilities available, there are a few problems. And, contrary to their assertion that compliance and security people can finally agree on something, I don't think these controls are actually controls, let alone a source of true consensus.</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><em>1. They're not "controls"</em></p>
+
+<p>I come from the <a target="_blank" href="http://www.unifiedcompliance.com/">IT UCF</a> school of thinking on controls. When I think of a control statement, I think of something that is discrete (in the mathematical sense) and actionable. The SANS 20CSC list is nothing more than a wish list of products and practices, and they do not immediately translate to actions.</p>
+
+<p>One thing that you might be thinking here is "Sure, that's great, but there are sub-controls under each of those 20 controls, so that's where you get your actionable requirements." I can understand why someone might think that, but it's just not right. Let me give you an example from IT UCF. Here's a list of 4 controls that stack hierarchically under the IT UCF in the "Technical Security" impact zone:</p>
+
+<blockquote>* Establish and maintain an access classification scheme policy and standards.
+<blockquote>* Establish and maintain a security access classification model that limits confidential access to only those individuals who require access.
+<blockquote>* Establish and maintain a business security requirement and an access classification statement for users and service providers for the different systems and networks.
+<blockquote>* Establish clear and consistent guidance between controls, information classification, systems, and networks.</blockquote></blockquote></blockquote></blockquote>
+
+<p>Notice that even the top-level control statement is directly actionable. The SANS list, in contrast, is not nearly so actionable. Really, what they're describing is 20 impact zones (at best), and even that is a bit of a stretch.</p>
+
+<p><em>2. They're not scalable</em></p>
+
+<p>This list of "controls" is more like a shopping wish list, which is all good and fine if you're the largest organization with the deepest pockets. However, how do you go to the smaller firms and tell them that they need to go spend a few million dollars on new technologies, or at least a million or two on outsourcing? I think we oftentimes forget that small firms represent 99.7% of all employer firms in the U.S., and employ more than half of all private sector employees (source: <a target="_blank" href="http://www.sba.gov/advocacy/7495/8420">"How important are small businesses to the U.S. economy?"</a>).</p>
+
+<p>More importantly, the "controls" advocate practices that simply cannot be met by the average small firm. DLP for everybody? A well-trained security staff that is expert in secure network engineering? If nothing else, this list should encourage small firms to simply outsource everything, even if it costs more. However, where's the risk analysis? Is it really sound thinking to arbitrarily tell organizations that they need to adopt certain products and practices?</p>
+
+<p>Certainly, there are places where this makes sense (e.g., AV, patching, basic firewalls, backups). However, beyond that, where do you draw the line? I really disagree with the assertion that this list somehow represents all the practices that every organization should do. Moreover, while I'm sure it maps ok to most major standards or regulations (e.g., FISMA, PCI DSS), it's certainly not the end-all-be-all.</p>
+
+<p><em>3. They're designed to sell product</em></p>
+
+<p>Really, they should call this list "20 Pseudo-Critical Faux Controls for Technology Adoption." It's clear that this list exists to push more product (just see the "View the User Vetted Tools" link), and not just to improve security. Unfortunately, while tools are useful when deployed properly, it is irresponsible and inappropriate to advocate specific technologies across the board (especially specific vendors).</p>
+
+<p>Does this list represent useful information? Sure.<br />
+Is it the absolute minimum list of things that every org should do? No way.<br />
+Is the approach reasonable or comprehensive? Not at all.<br />
+What's missing? Context and program development.</p>
+
+<p>The list is technology-centric. It overlooks policies, governance, and a reasonable risk management approach. Perhaps they feel these things  are implicit, but if you know anything about controls frameworks, then you know that they must be discrete and actionable, and they should be independent of technologies. It's unfortunate that this has been done, but it's not surprising. It is, however, disappointing.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">17 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-19419" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    <a class="commenter-profile" href="http://riskpundit.myopenid.com/"><img alt="" src="http://54.197.56.127/mt-static/images/comment/openid_logo.png" width="16" height="16" /></a>
+
+                    <span class="vcard author"><a title="http://riskpundit.myopenid.com/" href="http://riskpundit.myopenid.com/" rel="nofollow">riskpundit.myopenid.com</a></span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19419"><abbr class="published" title="2011-10-04T14:23:27-05:00">October  4, 2011  2:23 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>I am disappointed at your attack on the SANS 20 Critical Controls. First, they surely are actionable. In fact, each one includes metrics to enable you to evaluate its effectiveness.</p>
+
+<p>Second, they are not all technical controls, although 15 of the 20 are. As the SANS 20CCs document says, the attackers are automated so the defenders must be as well. And while technical controls without well trained people and good process are useless, the inverse is also true. I've seen too many really good security people forced to waste their time with poor tools.</p>
+
+<p>Third, the SANS 20CCs were developed with an understanding of the profiles of attackers. In other words, there is recognition that there are adversaries. LockPath's competitors argue that IT UCF is too compliance oriented. In fact, UCF stands for "Unified Compliance Framework." I would consider the SANS 20CCs a reasonable effort at being threat oriented.</p>
+
+<p>While I surely don't agree with every aspect of the SANS 20CCs, there is a lot of value there.</p>
+
+<p>For example, the first several controls relate to discovering devices and the adherence of their configurations to policies. How can you argue with that? If you don't know what's connected to your network, how can you assure the devices are configured properly? </p>
+
+<p>How many organizations do you know that can demonstrate that all network-attached devices are known and properly configured? Would you attempt to do this manually? How many organizations perform the recommended metric, i.e. add several new devices and see how long it takes the organization to discover them? Too many organizations simply perform a vulnerability assessment quarterly and claim they are compliant.</p>
+
+<p>Finally, SANS is great organization and I applaud their effort at developing a set of threat-oriented controls. </p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19420" class="comment comment-reply">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben Tomhave</a></span> replied to <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19419">comment from riskpundit.myopenid.com</a>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19420"><abbr class="published" title="2011-10-04T14:42:26-05:00">October  4, 2011  2:42 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Thanks for the comment. I'm sorry you're disappointed, but I'm afraid we fundamentally disagree on a number of topics. To your points:</p>
+
+<p>1) The "controls" are absolutely not all actionable *statements* as a control statement should be. For example, "Boundary Defense" does not tell me what to do. Sure, there's a ton of information buried behind each of these 20 items, but that does not make the list itself "controls." The base argument is that this is not a list of controls; an argument that is well-founded and justified.</p>
+
+<p>2) I never said that they were all technical controls. I merely provided 1 example from the "Technical Security" impact zone of the IT UCF to show what an actual control should look like. You're making a faulty assumption.</p>
+
+<p>3) What does LockPath have to do with this discussion? Sounds like you have an alternative agenda here in responding. If you want to have a separate discussion about whether or not UCF is "too compliance oriented," then we can certainly take that up over email or twitter. I think that people who make that claim don't understand how to use UCF, nor do they likely understand products like LockPath Keylight and how they can be used to be comprehensive GRC programs that are not just focused on compliance. That being said, there is an absolute need for automating compliance to help reduce the overall time to complete an audit and, by extension, reduce the financial drag that various compliance initiatives put on the business. Compliance requirements are only going to get worse over time, not better.</p>
+
+<p>As to your argument that controls should be threat-centric, that's your opinion, but not  one I agree with. Many organizations still don't have a good handle on their assets, let alone the value of those assets. Focusing heavily on threats is a major distraction when you can't answer such a fundamental question. Unfortunately, many vendors and businesses in the security industry directly benefit from driving this threat-centric perspective because it helps sell product, often at the expense of making meaningful improvements to enterprise security. We should be seeking to balance intelligence sources and various reference models against the core assets of a business, not trying to drive asset decisions based on the FUDerific threat-centric mindset that has failed this industry over the past couple decades.</p>
+
+<p>Lastly, I never claimed that there wasn't value in the SANS CSC list. In fact, I'm pretty sure I explicitly said that it contains useful (though incomplete) information. As for the rest of your closing comments, again, this belies your bias, which I find not constructive in what could be an otherwise interesting discussion.</p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19421" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    <a class="commenter-profile" href="http://riskpundit.myopenid.com/"><img alt="" src="http://54.197.56.127/mt-static/images/comment/openid_logo.png" width="16" height="16" /></a>
+
+                    <span class="vcard author"><a title="http://riskpundit.myopenid.com/" href="http://riskpundit.myopenid.com/" rel="nofollow">riskpundit.myopenid.com</a></span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19421"><abbr class="published" title="2011-10-04T15:32:57-05:00">October  4, 2011  3:32 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Ben, you are accusing me of a bias? You work for LockPath, whose product is based on IT UCF. But I am surely not attacking LockPath. I don't know much about it. You cannot deny that UCF stands for Unified Compliance Framework. Nor am I minimizing the importance of an automated GRC solution.</p>
+
+<p>Sorry I misinterpreted your comment, "Really, they should call this list '20 Pseudo-Critical Faux Controls for Technology Adoption.' It's clear that this list exists to push more product..," calling it a shopping list. I would like to know which of the 20CCs you do not consider critical. And I would like to know which of the 15 technical controls you would recommend performing manually.</p>
+
+<p>As to compliance-oriented vs. threat-oriented, I guess we'll have to agree to disagree. But need I point out the number of organizations during the last year who achieved regulatory compliance yet were breached anyway?</p>
+
+<p>The SANS 20CCs is based on a documented list 2 pages long of actual attacks that have happened and led to breaches. I would hardly call this list FUD. </p>
+
+<p>The compliance regulations I am involved with are mostly designed to help organizations achieve recommended levels of information security. The notion of bad actors or adversaries is implicit. The problem with many compliance regimes is that they are not updated fast enough given the speed of change of attacker profiles. BTW, the SANS 20CCs suffers from the same problem. But at least it puts you in the right frame of mind.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19422" class="comment comment-reply">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net" href="http://www.secureconsulting.net" rel="nofollow">Ben Tomhave</a></span> replied to <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19421">comment from riskpundit.myopenid.com</a>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19422"><abbr class="published" title="2011-10-04T15:55:48-05:00">October  4, 2011  3:55 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>You certainly have an interesting ability to misinterpret things I'm saying.</p>
+
+<p>1) If you want to dismiss my post because of who I work for, and because the product integrates the IT UCF, then why even bother commenting? The fact is that these are not "controls" by any standard definition. I notice you're not actually providing counter-proof, just kibitzing.</p>
+
+<p>2) Have you ever worked with the IT UCF? I mean the whole thing. If not, then there's no reason to continue this exchange, because your comments reflect a lack of awareness of what all it contains. It is not just a compliance product, regardless of what the product name says. If you'd like to learn more about what it can do, then we should have a sidebar, because I think you'd find that your assumptions are very wrong.</p>
+
+<p>3) What's not critical on that list? A number of things. DLP is not "critical" for all orgs (maybe not for any - it's very expensive and not overly effective). "Application Software Security" similarly does not apply universally, nor does "Boundary Defense" any more (in the highly mobile world, the traditional boundary is almost irrelevant). And so on. The majority of controls don't apply to the majority of orgs (as I noted in the original post).</p>
+
+<p>4) I never said "compliance-oriented" - again, you're so wrapped up in attacking the straw man you've created that you're not actually reading my post or response, but are rather implying statements not made. I'm not in favor of "compliance-oriented" anything. That does not, however, negate that many orgs are hemorrhaging large amounts of money dealing with compliance obligations (as in, not optional). This is a situation that is only going to get worse. Unfortunately, threat-centric is no better an approach than compliance-centric. In fact, it tends to lead to similar problems, which we've seen over and over and over for close to 2 decades now. You cannot simply buy yourself out of this problem, as much as some would have us believe.</p>
+
+<p>5) Did you have a point about the list of "actual attacks"? I'm sorry, but if you think all of those attacks would have been stopped if only the victims had spent more money on technology, then we have more things to disagree about. Technology is not the answer to all problems, and, in fact, oftentimes makes things worse as people buy products and then think they're "secure" despite many other shortcomings. And, guess what? This is independent of threats.</p>
+
+<p>6) Anybody who relies just on compliance requirements to "be secure" are going to be woefully disappointed. Similarly, anybody who thinks that purely looking at a threat-centric model is going to lead to making the right decisions is also going to be disappointed. I have argued, and will continue to argue, that we have too much SNR in this industry, none of which helps businesses better protect themselves. Blindly following a technology-centric strategy is just as faulty as a compliance-centric approach. Ultimately, it comes down to looking at the whole and applying a variety of techniques. Assets are the starting point. Threats, weaknesses, risks, compliance... those are all secondary. Spend a few minutes reading my other posts and you might realize that I'm not advocating anything that you've accused me of here.</p>
+
+<p>Incidentally, I would argue that the SANS 20CSC is just another form of compliance-oriented approach, albeit one that caters heavily to technology solutions. None of this is new, nor has it worked well in the past.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19423" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    <a class="commenter-profile" href="http://riskpundit.myopenid.com/"><img alt="" src="http://54.197.56.127/mt-static/images/comment/openid_logo.png" width="16" height="16" /></a>
+
+                    <span class="vcard author"><a title="http://riskpundit.myopenid.com/" href="http://riskpundit.myopenid.com/" rel="nofollow">riskpundit.myopenid.com</a></span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19423"><abbr class="published" title="2011-10-04T17:11:47-05:00">October  4, 2011  5:11 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>So the heart of your issue with the SANS 20CCs is the definition of "control". Here is the rather simple Wikipedia definition, "Security controls are safeguards or countermeasures to avoid, counteract or minimize security risks."</p>
+
+<p>For a more elaborate definition, here is NIST 800-53, "Security controls are the management, operational, and technical safeguards or <br />
+countermeasures employed within an organizational information system to protect the confidentiality, integrity, and availability of the system and its information."  </p>
+
+<p>In fact, the SANS 20CCs maps back each of their controls to a NIST 800-53 control because they were originally developed to help organizations overwhelmed with the complexity of NIST 800-53.</p>
+
+<p>Therefore I am comfortable with SANS use of the term "control."</p>
+
+<p>Perhaps my leap to compliance-centric vs. threat-centric was too quick. However, the UCF itself says, "The UCF is the only IT compliance framework that helps you eliminate redundant, overlapping compliance requirements across hundreds of different regulations." Sorry if I mis-understood.</p>
+
+<p>Now I would like to address your points about non-critical SANS controls. </p>
+
+<p>Let's start with DLP. SANS is not only referring to the "product" definition of DLP but rather a broader definition that starts with disk drive encryption, which BTW is a PCI DSS regulatory requirement. It goes on, for example, to recommend monitoring outbound network traffic looking for anomalies like unusually large file transfers. Hard to argue with that. On the other hand, I surely understand the limitations of what the industry refers to as DLP solutions. I never said the SANS 20CCs was perfect.</p>
+
+<p>Regarding your comment about the importance of assets, the 20CCs starts exactly there with the first four controls. And the DLP section you denigrated specifically calls out scanning systems looking for sensitive data. How else are you going to differentiate assets?</p>
+
+<p>Regarding Boundary Defense, I agree that this is SANS' weakest because it's recommending traditional boundary defenses that are useless not only due to the highly mobile world, but because the primary attack vectors today are at the application layer. However, there are firewall and proxy solutions that do address these issues. There are still meaningful boundaries between networks of different trust levels and the traffic between them must be controlled.</p>
+
+<p>As far as "buying yourself out the problem," I assume you mean with technical controls, you have no basis for that remark. There is nothing in the SANS 20CCs or any of my comments that implies this. We all recognize the importance of people and process along with technology. </p>
+
+<p>SANS very existence is about training people about security. I would go further and say they provide the best security training out there. Furthermore, virtually all their courses rely on open source tools rather than commercial solutions. You are making inferences that have no basis in fact.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19424" class="comment comment-reply">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben Tomhave</a></span> replied to <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19423">comment from riskpundit.myopenid.com</a>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19424"><abbr class="published" title="2011-10-04T17:21:57-05:00">October  4, 2011  5:21 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Right. So, as established, you don't have any experience with the IT UCF and you're a big fan of SANS.</p>
+
+<p>Unsubscribe.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19425" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.unifiedcompliance.com" href="http://www.unifiedcompliance.com" rel="nofollow">Dorian Cougias</a></span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19425"><abbr class="published" title="2011-10-17T18:22:30-05:00">October 17, 2011  6:22 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Actually, Bill, the author is correct when you look at this in a strict sense.</p>
+
+<p>The author is correct in that the â€œcontrolsâ€ as stated arenâ€™t controls. They arenâ€™t even full sentences.</p>
+
+<p>Take, for instance, â€œcontrol 1â€³ which states â€œInventory of Authorized and Unauthorized Devicesâ€. If it were written â€œestablish and maintain blah blah blahâ€, youâ€™d have a control.</p>
+
+<p>Because to control is to take action (or subvert an action from taking place, or mitigation against an action from taking place) on something or someone. The prepositional phrase stated is without action. Therefore, it isnâ€™t a control.</p>
+
+<p>The easiest way to tell if something is or is not a control is to ask it as a question. It would be absurd to ask â€œdid you Inventory of Authorized and Unauthorized Devices?â€ You â€œcould* ask if the person created, established, maintains, destroys, or any other action relating to the topic.</p>
+
+<p>If someone were to teach the people at SANS a lesson in English, they might re-write those controls this way:</p>
+
+<p>Critical Control 1: Establish and Maintain an Inventory of Authorized and Unauthorized Devices.<br />
+Critical Control 2: Establish and Maintain an Inventory of Authorized and Unauthorized Software.<br />
+Critical Control 3: Implement Secure Configurations for Hardware and Software on Laptops, Workstations, and Servers.<br />
+Critical Control 4: Implement Secure Configurations for Network Devices such as Firewalls, Routers, and Switches.<br />
+Critical Control 5: Initiate and maintain a Boundary Defense program.<br />
+Critical Control 6: Establish, maintain, monitor, and analyze Security Audit Logs.<br />
+Critical Control 7: Establish and Maintain an Application Software Security program.<br />
+Critical Control 8: Control the Use of Administrative Privileges.<br />
+Critical Control 9: Establish and Maintain Access Based on the Need to Know.<br />
+Critical Control 10: Perform Continuous Vulnerability Assessment and Remediation.<br />
+Critical Control 11: Establish and Maintain Account Monitoring and Control program.<br />
+Critical Control 12: Establish and Maintain a Malware Defenses program.<br />
+Critical Control 13: Limit and control the use of Network Ports, Protocols, and Services.<br />
+Critical Control 14: Establish and Maintain Wireless Device Controls<br />
+Critical Control 15: Establish and Maintain a Data Loss Prevention program.<br />
+Critical Control 16: Follow Secure Network Engineering practices.<br />
+Critical Control 17: Perform Penetration Tests and Red Team Exercises.<br />
+Critical Control 18: Establish and Maintain an Incident Response Capability.<br />
+Critical Control 19: Establish and Maintain an Data Recovery Capability.<br />
+Critical Control 20: Perform Security Skills Assessments and Appropriate Training to Fill Gaps.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19426" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19426"><abbr class="published" title="2011-10-18T15:30:48-05:00">October 18, 2011  3:30 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>For continued coverage of this post, including further responses, please see:<br />
+<a href="http://www.cymbel.com/blog/the-20-controls-that-arent-the-falcons-view/" rel="nofollow">http://www.cymbel.com/blog/the-20-controls-that-arent-the-falcons-view/</a></p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19446" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Sharon Waz</span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19446"><abbr class="published" title="2012-01-13T15:12:23-05:00">January 13, 2012  3:12 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Ben, thank you for your opinions on the SANS & other frameworks & overall approach.  I have been following the UCF for a long time, although I've not been able to purchase the matrices I have taken a similar approach to regulatory compliance to include IT within the other business areas impacted for a comprehensive program.  This has always been a tough sell, but how else would an organization fully understand the residual risks & how to prioritze their efforts?  <br />
+I agree with actionable, prescriptive controls.  I have not been able to find a framework has the comprehensive level of detail that is needed.  The requirements for specific regulations e.g. HIPAA HITECH did a good first pass & the PCI DSS security guidance was put in place because big corpos didn't want to loose more money.  Security breaches occur, maybe because it is unclear "what to do" and "how to" implement is missing.  I'm only going to mention audits as a topic for another time.        </p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19454" class="comment comment-reply">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span> replied to <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19446">comment from Sharon Waz</a>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19454"><abbr class="published" title="2012-02-06T17:34:08-05:00">February  6, 2012  5:34 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Hi Sharon,</p>
+
+<p>Thanks for the comment. Just a quick comment or two... It's not desirable for regulations to be prescriptive as the tech landscape is still changing too rapidly for that to be useful and resilient. Instead, the focus should be on articulating a standard of care that is legally defensible and that promotes survivability principles. The requirements should be designed to encourage more responsible (risk management) behaviors, increased disclosure and data sharing around incidents, and more evolved business thinking that incorporates information (IT/infosec) risk management as part of the overall big picture (i.e., incorporating info risk considerations into routine decision making).</p>
+
+<p>A controls framework like IT UCF provides a great method for easing the compliance burden by optimizing GRC operations, but it's just one piece in the overall puzzle. It's still imperative that the gap be permanently bridged between IT/operations and business leadership, with those leaders being held accountable for the performance of their GRC programs (thinking here of GRC as a discipline - see <a href="http://www.secureconsulting.net/2011/03/defining-grc-the-discipline.html)." rel="nofollow">http://www.secureconsulting.net/2011/03/defining-grc-the-discipline.html).</a></p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19465" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Serge</span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19465"><abbr class="published" title="2012-03-23T13:31:26-05:00">March 23, 2012  1:31 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>I completely agree with Ben - not controls at all, not scalable and not risk focused. Pretty much a â€˜wish listâ€™. I am disappointed that so many 'mature' organizations have taken SANS20 as a baseline. BTW, Policy and Risk Management (Assessment), neither Governance nor Assurance is on the 'wish-list' - how convenient...</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19508" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Vasant</span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19508"><abbr class="published" title="2012-09-25T20:40:37-05:00">September 25, 2012  8:40 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Hi Ben,</p>
+
+<p>Might be late joining this discussion.  Few questions:</p>
+
+<p>1. Is the definition of what is a 'Control' that important?  I mean if the ISO standard or UCF spends 2 pages defining the word 'Control' does that make it more effective while some other 'guideline' which as you have defined is Threat oriented (which by the way is the first step in a risk based approach) but sticking to correct definition of CONTROL any less effective.  </p>
+
+<p>2. How is UCF which in IMO is 'normalized' list of other standards any more risk-oriented than the SANS 20 Controls. Both are a set of controls (leave aside the definition or quality). Wouldn't a risk-based approach mean that you analyze your organization, the threats it face, what industry it belongs, size, i.e. risk profile based on the business it conducts, what type of information it processes, its risk appetite and then based on all this, you decide what controls you put in place to mitigate any high or unacceptable level of risk?</p>
+
+<p>Personally, I think comparing UCF to SANS 20 controls is comparing apples to oranges ... both are fruits but have different purposes. An organization needs to choose what fruit they should eat based on what the doctor ordered (risk assessment). </p>
+
+<p>If you are in heavily regulated industry, then it goes without saying that you need to comply first as the risk of non-compliance is too high.  My only problem with compliance approach, which I'm sure you will agree becomes a tick-in-the-box approach.  Now I know the intention of the standard was not to do this, but for most organizations when Security is only a COST, they want to just do it with the least possible budget. Problem is Compliance standards including ISO / NIST / UCF do not change fast enough to incorporate the latest threats. (Of course they get away by prescribing a risk-based approach)</p>
+
+<p>A threat-oriented approach while I agree is technically focused (which means more products) tries to deal with the latest threats.  If social engineering attacks are on the rise, then goes without saying that every organization must educate their employees and try and prevent phishing / USB-plugging / browser-side attacks. Isn't that what SANS is trying to say?  Now technology is NOT a replacement for good processes but on the other hand, processes are NOT complete when you stop at documentation (which sadly most ISO compliance efforts have focused on). </p>
+
+<p>I strongly feel organizations need a hybrid approach where they are balancing good processes (guidance from ISOs, NISTs) with a threat-based approach where they are taking necessary guidance from SANS / VERIZON threat intelligence so that they focus their technology in the right place.  E.g. If an organization has sensitive data then rather than just going and buying DLP technology, first focus on identifying what type of data, its classification, what its value (including what its worth to a adversary etc) and then focus on the technology. Where I like the SANS approach is that it forces you to think whether your choice regarding the technology (DLP) was correct in light of the threat environment.</p>
+
+<p>To explain, the DLP technology is not going to anything if your environment is full of vulnerable systems. That is attacker pivots to a machine and exfiltrates data through a legitimate user and through a SSH tunnel out of the organization. IMO, SANS is hinting fix the vulnerability management process (including deploying the technology) before you think of DLP technology. </p>
+
+<p>That is, I like the SANS approach especially when it comes to prioritizing technology spends. Even if its a wishlist in your opinion, SANS must be commended that it tries to give a sort of a roadmap for organizations how to go about your technology spend. That is, think of an Asset Inventory, Treat High Vulnerabilities, Check Configuration drifts, Malware protection ... Organizations could easily try and see in terms of technology what they are doing and then perhaps fill the gaps in terms of missing technology in the future years. Whether organizations strictly follow the roadmap is upto them.  (There are lot of good books on being happy, ultimately you have to choose what is right for you).</p>
+
+<p>ps: Before I'm accused of being biased towards SANS Critical Controls, here is my peev against it. There is no control or requirement for physical security (yes they do put it out of scope in their introduction).  Assuming all 20 controls are in place, but if physical security is lacking -- I think all of the other controls could be circumvented. ;)</p>
+
+<p>-Vasant</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19509" class="comment comment-reply">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span> replied to <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19508">comment from Vasant</a>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19509"><abbr class="published" title="2012-09-26T09:25:04-05:00">September 26, 2012  9:25 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Vasant,</p>
+
+<p>Much of what you ask is covered in prior comments. Indeed, it is "comparing apples and oranges," but only because SANS purports to provide a list of controls, yet really it's nothing more than just another laundry list of "best practices" - many of which are not directly actionable, but rather represent a wide range of actions and controls. The basic point of the original post was to criticize SANS for producing such a list and then calling it "controls" when it fact they are not controls. It's perhaps a semantics issue, to a degree, but the point still remains: you cannot take each of the 20 "controls" and translate them directly into actions, but rather must interpret them (leaving much room for error) and factor them out into several actions, leading to far more than 20 "actions."</p>
+
+<p>To your other point, I've spoken to the threat-centric fallacy in the past (see <a href="http://www.secureconsulting.net/2011/11/assets-black-swans-and-threats.html)." rel="nofollow">http://www.secureconsulting.net/2011/11/assets-black-swans-and-threats.html).</a> I don't necessarily disagree with the general nature of your comments, but would point out that what you're describing is in fact a standard risk management approach; something that SANS does not general ascribe to (nor does NIST, incidentally - they pretend to, but when you look into their process, you see that they don't actually assess risk, but merely treat everything as "critical" - a bad practice). At the end of the day, organizations are still challenged in clearly articulating what is important to them, what is that keeps the lights on, and how to then prioritize those assets (people/processes/technology) accordingly. There are a few effective ways to tackle these issues, but businesses choose instead to throw money at technologies that they likely don't need, all to show that they're doing something, even if it's ineffective or pointless. *shrug*</p>
+
+<p>Such is the way of things, despite my better efforts to disuade people from such a course...</p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19515" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Vasant</span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19515"><abbr class="published" title="2012-10-02T21:44:22-05:00">October  2, 2012  9:44 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Ben,</p>
+
+<p>".... SANS does not general ascribe to (nor does NIST, incidentally - they pretend to, but when you look into their process, you see that they don't actually assess risk, but merely treat everything as "critical" - a bad practice)"</p>
+
+<p>I agree but then over the years I have understood that is how most organisations have done it ... Give me a set of traffic lights, or colours of the rainbow, lets keep it objective  (btw you might see Australian English creeping in) .. you see in Australia, Risk Management is done as prescribed in the latest ISO standard on Risk Management (ISO 31000 which itself came from the AS 4360 -- you know the identify assets, threats, vulnerabilities, impact / likelihood etc). Now before we can start singing about how we do it downunder, my observation is that most organisations here do the first part of the risk management process i.e. Assess the risk but when it comes to actually controlling the risk ... most organisations have run out of budget for the year "Up till now we were paying for your Mr. IT Risk Mgr, are you saying we have to pay more buying more technology and all the costs that go with it" <br />
+:(  ..... So on oneside while organisations here are following the right process / methodology .. the problem is still we are not getting the problem solved.</p>
+
+<p>Also while doing the risk analysis part from personal conversations with CISOs, IT Security Managers etc .. their biggest concern is that there are NOT overly confident about the numbers they used to calculate the Impact / Likelihood levels etc ... meaning we are only stuck at cell C3.<br />
+On the other hand (and lets leave aside the SANS critical controls research rigor issue), most IT managers seem to relate with the SANS controls. Here is my conversation with IT Security Manager</p>
+
+<p>1. here is a list of 20 things that you can focus on (for marketing sake, lets put in the word Critical Controls as any other words Tips, Guidelines, Requirements, Solutions have too much connotation)hey a</p>
+
+<p>2. each control has been sort of prioritised based on its numbering (1/2 being Foundational controls, 3-5 -- High etc. </p>
+
+<p>3. Rather than worrying about how good or bad this set of controls is.. in the absence of anybody saying it does NOT work ... well let us at least start with this by identifying the gaps  ..  we can meet the risk assessment team when they are close to completing their work) </p>
+
+<p>4. Each control has a set of sub-requirements / controls / guidelines which are themselves tagged as QWs, Config etc which we can further use to prioritise which ones are important and could be done in a phased manner. </p>
+
+<p>The point I'm making here is by the time I have said above most managers are starting to like this model already and are keen to try this model. Contrast this with an ISMS implementation or Risk Assessment process ... most managers with extremely strict budgets are not ready to engage (unless of course the aim was pure ISO certification - of course in case of the latter its project sponsored by marketing really rather than for risk management) ;)</p>
+
+<p>Now we can debate about what is right and wrong ... but I believe we have to go with the flow ... there must be a reason that SANS controls is more well-received!!  Now even if some of rigour is being shortcut -- the point you are trying to make -- personally I think we are doing something about the security problem and NOT WASTING time doing analysis by paralysis (old-fashioned risk assessment without active and on-going management) and/or doing C&A exercises which are doing nothing but killing more trees and/ or whether we are getting enough vitamins from one fruit or lets create a super-fruit by mapping it to other fruits and then just eat that one super-fruit (UCF IMHO).</p>
+
+<p>My 2 Australian cents worth ... :)</p>
+
+<p>-Vasant</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19517" class="comment comment-reply">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span> replied to <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19515">comment from Vasant</a>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19517"><abbr class="published" title="2012-10-03T07:24:22-05:00">October  3, 2012  7:24 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Hi Vasant,</p>
+
+<p>Indeed, operational folks tend to have a very pragmatic, utilitarian mindset about things. They want to do know what needs to be implemented, and leave it at that. Unfortunately, no "Top N" list of "controls," practices, mitigations (e.g., DSD Top 35) will ever be an appropriate strategy, for a couple reasons.</p>
+
+<p>First, the Top N lists are either too little or too much. If they're too little, there will be gaping holes left unmitigated, yet a false sense of confidence that enough has been done. If they're too much, then they'll never be fully implemented and there will, ultimately, also still be holes left unmitigated. Either way, you end up with an inadequately secured environment, and probably with a high price tag attached.</p>
+
+<p>Second, these Top N lists are generic, and seem to suggest that all systems should be treated equally. This is folly, and we all know this. Some systems, data, etc., are more important than others. They should get preferential treatment. However, that's also not universal, right? Think of the TJX and Heartland breaches, where lower-priority areas where attacked in order to then leverage into the more highly secured cardholder data environments. The Top N lists give us no guidance around this, no ability to make good decisions, and thus ends up just adding noise and stress with limited value.</p>
+
+<p>Third, to your point on low confidence in impact estimates... this is a result of an uninformed population not actually understanding what to do or how to do it. It also reflects the threat-centric perspective that these Top N lists generally promote. "You must do these N things, because scary hackers are attacking these things." That's all good and fine, but without a proper asset context, it's meaningless. I'm very much opposed to leading with a threat-centric approach (as noted in the link I posted in my previous response). Start with how the business operates. What functions are most critical to ongoing survival? Once you've identified what keeps the business ticking, you can then - in a top-down manner - derive the assets (people/processes/technology) supporting those functions and start prioritizing from there.</p>
+
+<p>Lastly... I strongly disagree with "going with the flow"... what we're doing, and have been doing for 1-2 decades, IS NOT WORKING. Continuing to do the same things with some twisted expectation of different results is, according to Einstein, the definition of insanity. Rote implementation of generic list of controls/practices, blind adherence to national standards, blind following of C&A processes... none of these are actually successful in protecting our assets. If these approaches were so worthwhile, we wouldn't be having this conversation! Thus, we need to buck the status quo, and aggressively work toward a new vision (e.g., <a href="http://www.secureconsulting.net/2012/06/its-time-to-retire-security-fr.html" rel="nofollow">http://www.secureconsulting.net/2012/06/its-time-to-retire-security-fr.html</a> and <a href="http://www.secureconsulting.net/2012/09/3-ideas-2-unbalance-status-quo.html)." rel="nofollow">http://www.secureconsulting.net/2012/09/3-ideas-2-unbalance-status-quo.html).</a></p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19518" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Vasant</span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-19518"><abbr class="published" title="2012-10-04T00:29:04-05:00">October  4, 2012 12:29 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Hi Ben,</p>
+
+<p>I heard somebody recently say, the problem with Security professionals is that 90% of the time they agree and then spend 90% of their time arguing to death with other professionals about the other 10% rather than getting on with the job.   I guess I'm falling in that category ...</p>
+
+<p>I guess we agree to disagree on some points ... :) so I signout here ... I appreciate that you allowed me to post on your blog and as I have understood there is no right or wrong ... and having a healthy debate is sometimes required so we get a counter-opinion (which sort of helps me know how others think).</p>
+
+<p>cheers, Vasant</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-69676" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Danniel</span>
+
+                    | <a href="http://54.197.56.127/2011/10/the-20-controls-that-arent.html#comment-69676"><abbr class="published" title="2013-05-28T11:02:20-05:00">May 28, 2013 11:02 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>SANS Top 20 controls are not controls. Its like a newbie guide to security. <br />
+NIST-800-53 are controls and its a lot better if you just follow these based on impact and priority !<br />
+ <br />
+I really dont know how they can come up with this. The worst thing is that many decision makers in organizations actually follow this !!</p>
+
+<p>They attack mitigation rating also does not seem to be coming after a lot of thought. No wonder why US organizations get so many succesfull attacks!</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>October  3, 2011 10:59 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2011/09/risk-tolerance-capacity-and-ap.html">Risk Tolerance, Capacity, and Appetite</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2011/10/missing-bordersbn-opt-out.html">Missing Borders/BN Opt-Out?</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

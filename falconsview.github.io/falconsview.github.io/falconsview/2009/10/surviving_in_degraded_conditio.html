@@ -1,0 +1,303 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Surviving in Degraded Conditions: A Human Analogy (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/10/nss_labs_endpoiont_security_re.html" title="NSS Labs' Endpoiont Security Report" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/10/gainfully_employed_foreground.html" title="Gainfully Employed: Foreground Security" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/10/surviving_in_degraded_conditio.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/949"
+    dc:title="Surviving in Degraded Conditions: A Human Analogy"
+    dc:identifier="http://www.secureconsulting.net/2009/10/surviving_in_degraded_conditio.html"
+    dc:subject="infosec"
+    dc:description="If you&apos;ve been following my writing of late, you&apos;ll know that I&apos;ve hopped on the Survivability bandwagon with both feet (see my blog post &quot;Defensibility and Recoverability&quot; and the slides from my recent full-day course &quot;Total Enterprise Assurance&quot;). Key to..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-10-05T15:36:33-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/10/surviving_in_degraded_conditio.html">
+<dc:title>Surviving in Degraded Conditions: A Human Analogy</dc:title>
+<dc:description>If you&apos;ve been following my writing of late, you&apos;ll know that I&apos;ve hopped on the Survivability bandwagon with both feet (see my blog post &quot;Defensibility and Recoverability&quot; and the slides from my recent full-day course &quot;Total Enterprise Assurance&quot;). Key to...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-10-05T15:36:33-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/10/nss_labs_endpoiont_security_re.html">&laquo; NSS Labs' Endpoiont Security Report</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/10/gainfully_employed_foreground.html">Gainfully Employed: Foreground Security &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Surviving in Degraded Conditions: A Human Analogy</h2>
+                     <div class="entry" id="entry-2177">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>If you've been following my writing of late, you'll know that I've hopped on the Survivability bandwagon with both feet (see my blog post <a href="http://www.secureconsulting.net/2009/08/defensibility_and_recoverabili.html">"Defensibility and Recoverability"</a> and the slides from my recent full-day course <a href="http://falcon.secureconsulting.net/pubs-talks/team-CIScon-2009.pdf">"Total Enterprise Assurance"</a>). Key to this notion of Survivability is being able to operate under degraded conditions. After all, it's not <em>if</em> you're going to be attacked and compromised, but rather <em>when</em>. As such, your organization is already operating under less-than-ideal circumstances. Acknowledge this, accept this, and plan for continuing to operate in such a degraded fashion.</p>
+
+<p>This notion of operating under degraded conditions does not always resonate immediately with people. After all, how can an enterprise function when key systems are under attack or out-right broken? By way of explanation, allow me to provide a human analogy. The human body is, in fact, usually very good at operating under degraded conditions. However, this is not always the case, which can have some very bad results. Allow me to explain further.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p><strong>Illness</strong><br />
+Humans are breeding grounds for disease; walking petri dishes of viruses, bacteria, and who knows what else. And yet we continue to exist. Some diseases have had a very strong impact on the human race, nearly to the degree of complete devastation. Many pundits fear the same thing happening again, and soon (hence all the frenzy over Avian Flu and Swine Flu in the past few years, as well as the attention on AIDS in the 80s and early 90s). Regardless, humans continue to survive, and continue to function reasonably well. In fact, without certain "infections" we wouldn't be able to survive at all (e.g. the role of bacteria in digestion). Whether they should or not, humans continue to work and operate heavy equipment (aka "cars") while under the influence of illness.</p>
+
+<p>Similarly, enterprises are rife with infections. They are constantly fighting off viruses, worms, trojans, and various other forms of malicious code (or malware). How well does your organization operate under these degraded conditions? In many cases these days the preferred response to an infected Windows workstation is a wipe and reinstall. How much productivity is lost as a result? More importantly, is it possible to plan for such events such that the impact will be lessened? That is, how do build in tolerance for operating under degrade conditions in the face of infections?</p>
+
+<p>For humans, we build in sick leave and work-from-home policies that allow humans to continue operating despite degraded conditions, and in an effort to limit the effect of infection on other personnel (see my post <a href="http://www.secureconsulting.net/2009/05/presenteeism_and_inadequate_va.html">"Presenteeism and Inadequate Vacation Affect Security"</a> for my thoughts on shortcomings in this current approaches). Progressive organizations are also increasingly promoting healthier living through various "wellness" programs in their organizations, such as by offering flu shots, healthier cafeteria selections, exercise support, support for reducing stress, and so on.</p>
+
+<p>Organizations need to take similar approaches to protecting information resources. They need policies (and standards) that promote the adoption of "healthier" behavior by all personnel. Healthy computing initiatives such as avoiding spam and phishing schemes, safe handling of data, responsible disclosure of sensitive information, and safe web browsing techniques are just a quick sampling of the many opportunities for improvement. Similarly, sysadmins need to adopt and own proactive measures to protect systems and data against attack and compromise, as well as have pre-planned processes in place for dealing with the inevitability of attacks and compromises. You will be operating under degrade conditions at some point in time, if not at all times: plan for it and find way to optimize performance despite it.</p>
+
+<p><strong>Injury</strong><br />
+In many ways, injuries are worse than infections, because their impact, on average, can be far more severe. At the same time, humans seem able to cope with most injuries in a far better way. Why is that? It's unclear, but my guess is that it has to do with the will to survive. Broken arm? No worries, I have another. Broken leg? Splint it, crutch it, move along. Of course, not all injuries are survivable, but we'll assume for the moment that the ones we're talking about here are survivable (death being covered below).</p>
+
+<p>In the enterprise, break-fix is an all-too-common situation. Hardware seems to exist to fail (or so it seems most days). Honestly, there's very little in the organization that isn't subject to break - rules included! This is not, unfortunately, particularly useful in terms of fault tolerance. Broken systems don't work, which means an outage, which means lost productivity, revenue, or worse. Is there a way to operate under degraded conditions that involve a break?</p>
+
+<p>There are a couple ready corollaries to injuries in the computing world, though I'm sure you can think of more. Load-balanced, or otherwise fault-tolerant, systems are one solution. RAID for storage is another. Cloud computing resources and virtualization is another. And son on. The name of the game in each of these is that a single component or system fails, but the failure is absorbed by other components or systems running in parallel. If spares aren't "hot" to take over, then there may be "warm" or "cold" spares at the ready to recover. This is all well-covered territory.</p>
+
+<p>However, let's talk about preventative measures. Human bodies are reasonably frail when considering things like collisions. As such, we've developed several mechanisms to help minimize or prevent injuries stemming from collisions. Pads, helmets, and mouthguards are common in contact sports. Seat belts and roll cages are common in racing vehicles, as are crumple zone and air bags in private vehicles. All of these various preventative measures exist to lessen the damage from an impact; that is, they're designed to minimize injuries and allow the continued operation despite potentially degraded conditions.</p>
+
+<p>Similarly, enterprises can deploy preventative measures to help minimize the damage of various attacks. Backups, data encryption, logging & monitoring, firewalls, intrusion detection & prevention, anti-virus, compartmentalization, strong authentication, incident response planning, and so on, and so forth. These tools exist to not necessarily stop bad things from happening, but to help minimize the damage (think about that for a minute - it's actually a shift in the thinking - do you accept the statement?). Bad things are going to happen. Whether it be a drive failure or a backup tape falling off the back of a truck or an active intrusion into the network. Deployed tools will help with minimizing the damage, but there will be damage (merely having to redirect resources to respond to the situation represents a degree of financial damage). At some point in time, humans will suffer injuries of varying degrees. The same is true for the enterprise. Planning, forethought, and preventative measures can go a long way toward helping minimize the damage while along continued operation under degrade conditions.</p>
+
+<p><strong>Distraction</strong><br />
+One of the more interesting examples of common threats to humans is distraction. First we saw laws requiring the use of hands-free headsets for use with mobile phones (for better or worse). Now we're seeing the emergence of laws prohibiting texting during driving. Humans were already a distractible race, but advances in communication technology has only made that worse. How many more people will walk in front of oncoming traffic while texting, or crash their cars as they text and drive, before we realize that focus is not a bad thing, and that multi-tasking is in fact a myth?</p>
+
+<p>We have similar problems in information assurance/security. Enterprises are frequently distracted by what is commonly called "shiny objective syndrome." That is, the biases of the people making decisions about IT and security are often attracted to what is new and interesting, rather than to what is perhaps challenging and mundane and absolutely necessary. This scenario plays out every week in organizations around the world as they opt to buy cutting-edge technologies that may or may not add value, instead of focusing on the fundamentals of protecting the corporation (see my post <a href="http://www.secureconsulting.net/2009/09/hotel_showerheads.html">"Hotel Showerheads"</a> for my thoughts on failing at the fundamentals, and my older post <a href="http://www.secureconsulting.net/2009/06/cut_through_the_noise_focus_fi.html">"Cut Through the Noise, Focus, Find Success"</a> on the need for focus).</p>
+
+<p>A key failure in the IT industry overall is a shared failure with the business. What is the core purpose, or mission, of the enterprise? What is important to the business? What's the most important data? What operations must continue to support the function of the business? Where is important data stored? How is it protected? How does it traverse the network (ingress AND egress)? These are all key questions that we often seem to busy to ask. If I've seen it once, I've seen it a hundred times. Important projects are derailed, either because of ongoing break-fix problems, or because the attention of key executives cannot be captured for long enough to get important decisions made.</p>
+
+<p>Focus is important. Multi-tasking is a myth. Distractions are plenty. And yet we continue to function despite it all. Distractions represent a common and major form of degradation in operations. Ironically, it's one that can, and should, be easily remedied. Remove distractions, establish focus (and discipline), and see what happens. Oh, and don't go blaming social media for this problem. Distractions existed long before Facebook and Twitter (solitaire, anyone?). It's not the distractions that are at fault here, but rather the culture that tolerates excessive distraction. Culture is set at the top of the organization; the example of executives is almost always followed.</p>
+
+<p><strong>Death</strong><br />
+Perhaps the most critical state of degradation, against which all bets are usually hedged, is death. In the human sense, death is rather final, and really represents the termination of operations. Is there a corollary for the enterprise? In many ways, I think so. I remember several years ago discussing backup sites with a customer. Their corporate HQ was located in the middle of a tornado zone, which meant that HQ could be wiped out any Spring or Summer in the matter of minutes (and, in fact, this nearly happened this year - a tornado missed by well less than a mile, destroying a nearby park). During the out-brief, I asked the VP IT directly "how long would it take to recover from a direct hit to the building, assuming all services were wiped out?" The answer was a sobering "2 weeks to restore data from backups to systems we'd have to acquire on the fly." Suddenly he went pale as he realized what he'd just admitted. Factory workers were paid on a weekly basis, and all payroll processing was now down through central systems at HQ. Given the strength of the union, there was no way they could continue factor operations for 2 weeks without paying employees (many of whom lived paycheck to paycheck). A direct hit would result in major harm to the company, up to and possibly including death. The financial repercussions for all involved would be quite severe.</p>
+
+<p>While few of us like thinking about death, it is in fact a vital part of our planning exercises. Here in the human space we talk about wills and custody. In the enterprise space, we talk about business continuity planning and disaster recovery, and one of the key questions that should be included in those planning discussions is "what would mean death to the enterprise?" It is essential to face mortality, whether it be of the body or the business, and understand the potential impact, the frailty, the strengths, and, more importantly, how to best manage it. Luckily, the enterprise is better positioned to try and avoid death, unlike humans.</p>
+
+<p><em>(Note: This entry is <a href="http://www.t2pa.com/cores/security-and-privacy/practical-security">cross-posted from Truth to Power Association</a>.)</em><br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=degradation&amp;limit=20" rel="tag">degradation</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=survivability&amp;limit=20" rel="tag">survivability</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on October  5, 2009  3:36 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/10/surviving_in_degraded_conditio.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/949</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2009/10/surviving_in_degraded_conditio.html" rel="nofollow">Surviving in Degraded Conditions: A Human Analogy</a>:</p>
+                           
+                           <a id="p1685"></a>
+                           <div class="trackback" id="ping-1685">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">How NOT To Build a Security Program</a> from The Falcon's View<br />
+                                    Andy Willingham (Andy ITGuy, @andywillingham) had a post up early this week titled "Building a security program from the ground up". It's an interesting read, though a bit on the naive side. Having just come out of an environment where... <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1685" rel="nofollow">November 13, 2009  5:15 PM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2177" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2177);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>October  5, 2009  3:36 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/10/nss_labs_endpoiont_security_re.html">NSS Labs' Endpoiont Security Report</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/10/gainfully_employed_foreground.html">Gainfully Employed: Foreground Security</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

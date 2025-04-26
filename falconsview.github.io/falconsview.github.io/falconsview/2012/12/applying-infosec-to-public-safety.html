@@ -1,0 +1,1022 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2012/12/applying-infosec-to-public-safety.html">
+<dc:title>Applying InfoSec Lessons to Public Safety</dc:title>
+<dc:description>The past week in the US has been particularly difficult as we go through the aftermath of a couple more shooting incidents, which tops off a &quot;cluster&quot; year of incidents. While much could be said about the gun control debate,...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2012-12-18T20:41:38-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2012/12/applying-infosec-to-public-safety.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2012/11/does-authorization-matter.html" title="Does &quot;Authorization&quot; Matter?" />
+    <link rel="next bookmark" href="http://54.197.56.127/2012/12/rsa-2013-discount-find-me.html" title="RSA 2013 - Discount &amp; Where to Find Me" />
+    
+    
+    <title>Applying InfoSec Lessons to Public Safety - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2449" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Applying InfoSec Lessons to Public Safety</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2012-12-18T20:41:38-05:00">December 18, 2012  8:41 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>The past week in the US has been particularly difficult as we go through the aftermath of a couple more shooting incidents, which tops off a "cluster" year of incidents. While much could be said about the gun control debate, the deficiency of mental health care in the US, and the psychology of these shooters, I am not going to spend any time on that here. Rather, I want to talk about how we can apply a modern infosec mindset to public safety, which is, after all, really the point of many of those debates. Apologies in advance for this being a rather long post. Hopefully you'll find it thoughtful and worthwhile.</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>Risk Management 101</strong></p>
+
+<p>Before getting into the core points, I want to first level-set. The following principles are important to understand and accept:<br />
+ 1) There will always be threats and threat actors.<br />
+ 2) We cannot harden the world against everything.<br />
+ 3) Given 1 & 2, there will always be risk.</p>
+
+<p>In addition to these principals, it's also important to understand the difference in a couple risk management strategies. Consistently, human nature seems to sprint to a "zero sum" mentality with the objective being to eliminate all threats or weaknesses. Unfortunately, this is a logical fallacy, and a fatal trap. We cannot even know all threats and vulnerabilities, and thus there's no way to eliminate them all.</p>
+
+<p>Instead, it is imperative that we adopt a different strategy based on the principals of resiliency and survivability. While these strategies will necessarily include opportunities to reduce threats and weaknesses, they will also put a premium on detection of, and rapid response to, various incidents. Overall, our public safety strategy will benefit from learning this lesson, which we're still only starting to grasp in mainstream infosec. Prevention and correction are great tools toward helping prepare ourselves, but we cannot do so at the expense of other types of readiness that lead to more effective detection of incidents and the limitation of the magnitude of losses associated with incidents.</p>
+
+<p><strong>Hardening Environments</strong></p>
+
+<p>As just noted, there absolutely is an appropriate place in prevention, such as through hardening environments. One of the key shifts in thinking that has occurred over the past 20 years is from expecting a hostage type situation to an "active shooter" type situation. When your assumption is that the perpetrator does not primarily intend to harm others, then your approach can be more passive. However, if your assumption shifts to assuming that the primary objective of a perpetrator is to cause as much harm as possible, then you need to balance your hardening accordingly.</p>
+
+<p>In infosec, we've seen this shift as well over the past 15+ years. In the late 90s we were really most concerned about opportunist defacers trying to "tag" our sites, but there wasn't too much concern about harm. However, as more and more sensitive data has moved online, so has the nature and focus of the attackers. We now must operate under the assumption that an attacker seeks to cause harm, either by denying us access to data or systems, or by compromising sensitive data.</p>
+
+<p>So it also is with public safety. Columbine taught us that attackers may not be interested in hostages any more, and this startling reality has continued to play-out in ensuing incidents. Similarly, terrorists demonstrated this same shift with the 9/11 attacks, moving away from hostages to using the planes as missiles.</p>
+
+<p>Given this shift in the public safety spectrum, we must also then think about how our hardening approaches change. With infosec, one of the key shifts was getting away from the "crunchy on the outside, gooey on the inside" mentality of relying on hardened perimeters without adequate internal security. And, today, we're even now starting to see increasingly articulate and well-founded arguments to take things a step further, allowing organizations to employee an "active defense" strategy that would potentially enable them to disable botted hosts being used in attacks, or taking down other offending servers (TBD on much of this - especially from a legal basis).</p>
+
+<p>Back to public safety and the real world, we also likely need to see a shift in terms of how we harden our environments. Schools, for instance, cannot simply rely on maintaining locked doors (as the Newtown incident clearly demonstrated). We need to consider hardening these environments a bit more, but without turning them into bunkers, prisons, or reducing functionality. For example, many schools still use the "open layout" approach, meaning classrooms lack doors and other characteristics that would be helpful in a lockdown situation. Going forward, architects and planners must consider a possibility of an active shooter event at a facility and try to design it in such a way as to reduce the effectiveness of such an attack, while also providing mechanisms for rapidly detecting and responding to such an event.</p>
+
+<p>That said... the point of diminishing returns will be quickly reached... after all, shopping malls can only be hardened so much because they are by nature public facilities intended for free access (during regular business hours). Checkpoints and security screening would likely be considered an unacceptable nuisance (not to mention having limited utility). Thus, we have to move beyond simple hardening, and on to other areas of practice.</p>
+
+<p><strong>Threat Management & Intelligence</strong></p>
+
+<p>An ounce of prevention is good, but any more than that can quickly become needlessly expensive. As such, it's also imperative to diversify approaches to include other capabilities. In this case, the addition of threat management and threat intelligence can be very valuable. In infosec, one of the key areas where we see these concepts working is through information sharing networks. The financial services sector has created a relatively mature information sharing network that has allowed it to better respond to various threats. Additionally, there are many services available that help businesses keep track of current and emerging threats and threat capabilities. These practices will never be perfect, but they are helpful.</p>
+
+<p>Another area in infosec where threat intelligence comes into play is simply through monitoring and awareness. I'll talk more about general awareness below, but here let's look at internal monitoring and awareness here. Security Information and Event Management (SIEM) systems represent a potentially important intelligence collection point where businesses can bring together logs and alerts from multiple sources with an eye toward aggregation and correlation. The goal of bringing this data together is to help catch broader patterns before they result in major incidents.</p>
+
+<p>Similar practices can also be applied in the public safety space, and in fact have been used for a while. Closed circuit video surveillance is one such example of a monitoring tool used toward threat management and intelligence. Similarly, local and regional law enforcement frequently offers training opportunities and information bulletins to help organizations stay appraised of the threat environment.</p>
+
+<p>In the post-9/11 world we've also seen a push toward much more information sharing. Sometimes this has worked, and sometimes it hasn't, but that doesn't mean it's not a good idea or the right thing to do. FUSION centers have been established to serve in a capacity similar to our SIEM systems. You can debate their efficacy, but the foundational notion is solid, which is that information needs to be aggregated, correlated, and shared.</p>
+
+<p>For schools, this can mean having better (video) surveillance around the facility to more quickly detect and alert on a threat, as well as providing other mechanisms for quickly reporting concerns. Through training and communication, all personnel could be trained to make use of this system, as well as to follow better situational awareness practices.</p>
+
+<p>For public places like malls, they typically already have monitoring and response plans in place. The challenge is in making sure these practices are properly optimized without being unacceptably expensive.</p>
+
+<p>In both cases, balancing benefit vs. cost will be key (something with which we in infosec are also intimately familiar). It's also important to again realize that this is only one piece of the overall puzzle, and that the objectives here are to improve prevention and detection capabilities toward reducing all loss events.</p>
+
+<p><strong>Sidebar: Limits to Governance and Similar Controls</strong></p>
+
+<p>Before continuing on, let's take a moment to also look at a key lesson from infosec as it pertains to governance (e.g., policies and policy enforcement). You can have all the rules in the world, but that doesn't mean criminals will follow them. Moreover, if enforcement is inconsistent or simply not done, then there will be even bigger gaps between intended coverage and actually effectiveness.</p>
+
+<p>The reason I'm including this sidebar is to provide a word of caution. As we've seen over and over again in infosec, just because you have a policy prohibiting one thing, or requiring another, does <em>not</em> translate to immediate conformance. In fact, simply put, rules are nice, but they're difficult to enforce. To top things off, we've found that without the presence of negative consequences for holding people accountable, there's frequently little impetus for conforming to policies.</p>
+
+<p>There will be much debate in the coming weeks and months, and a lot of it will focus on governance structures. However, governance is really for the law abiding, and not for the criminals. It is imperative when considering new governance structures that one <em>also</em> assume that a certain subset of the population won't conform. Toward that end, penalties must be specified <em>and enforced</em>. Moreover, the penalties must be severe enough to incentive conformance, or disincentive failure to conform.</p>
+
+<p>Overall, policy can be an effective tool for communicating a desired approach, but it is not the end-all-be-all. Additionally, bad policies can have detrimental effect. Consider, for example, the now antiquated export restrictions on encryption software, which were typically circumvented by simply publishing the associated algorithms in academic journals. Or, consider the security researcher exception for the anti-circumvention clause in the DMCA. Or, consider what the negative impact would be of outright banning security tools, which have both positive and negative uses.</p>
+
+<p>In public safety, we must also weigh these conversations accordingly. Sadly, I see a lot of obsession over tools, but without full consideration of or appreciation for the many positive use cases, as well as a lot of misunderstand and misinformation that overhypes the negative use cases. A friend commented over the weekend that ~44 people die each day (in the US) due to drunk driving, which is 100% preventable. However, policy decisions have been made that allow people to own and operate personal vehicles and that allow people to consume alcohol. It's notable that drunk driving incidents have, however, been successful reduced through using a range of alternative approaches. More draconian approach could be applied, but policymakers have chosen not to pursue those avenues. Such thinking shows the necessary tradeoff analysis that must be conducted when setting policies, combined with the sober realization that you simply cannot legislate away all bad things in life. We have, for the most part, learned this lesson in infosec, and have modified our approaches accordingly. We will continue to see these conversations evolve regarding public safety as well.</p>
+
+<p>Back on track now...</p>
+
+<p><strong>Preparedness & Survivability</strong></p>
+
+<p>We've spoken about hardening environments and improving threat management & intelligence, but there's certainly more to be done. In infosec we have finally started to realize (in the mainstream) that the "zero sum" mentality is flawed, and that we will have to absorb security incidents. Accepting this reality is key in a few areas. First, it means realizing that there will continue to be loss events. Second, it means that we need to be prepared for dealing with these loss events. And, third, it means that our focus should not be exclusively on preventing loss events, but on optimizing survivability of these events.</p>
+
+<p>Applying this notion to public safety, we must first come to grips with a sobering reality: we cannot prevent all loss-of-life or casualty events. It's simply not possible, regardless of the type of governance or values of society. Regardless of style of government, every country in the world deals with both accidental and intentionally loss of life. As such, we must realize that, while prevention is a laudable goal, it cannot lead to 100% prevention of bad things. We must, then, employ a different approach.</p>
+
+<p>As such, there are a few things that are important for preparedness and survivability. Having reasonable lockdown procedures is a start, but it also means drilling and evaluating them. However, this is just a defensive measure. As discussed in the Hardening section above, we need to reevaluate how our facilities are designed to ensure that they account for an active shooter attack. Similarly, our procedures and drills must work off this assumption, and our personnel must be trained to respond appropriately to this kind of threat.</p>
+
+<p>One idea that has been tossed about the past few days has been the notion of arming everyone (teachers, principals, etc.) in order to help protect schools. This is a rather silly notion based on the philosophy of projecting power. There's certainly a modicum of rationale in the idea, but overall it's unsupportable. Instead, a better idea is to focus on key full-time positions like office staff and school administrators to ensure that their training includes how to effectively deal with an active shooter. It may also mean going to the next step of providing principals, or specially designated onsite responders, with better tools, such as bullet-proof vests and less-than-lethal weapons (e.g., taser, shotgun with salt or bean bag load, etc.). Additionally, being prepared means being able to monitor for suspicious people and alerting the police calmly and efficiently while others confront the suspects (preferably with a degree of force).</p>
+
+<p>Beyond this, we must also then look into how to ensure survivability. For example, many schools and malls are designed in a way that naturally breaks things up (classrooms, stores, etc.). In infosec we similarly try to segment our environments. Another aspect of this is to build in containment capabilities and strategies. For example, adding a non-alarmed trigger to release fire doors could provide better containment and cover, so long as the fire alarm itself is not triggered, which would then likely make things worse by triggering fire evacuation procedures, exposing everyone to an active threat.</p>
+
+<p>The point here is this: focus on being ready for incidents in order to optimize survival. Don't give in to rigid governance structures that don't generalize well. Be flexible and adaptable, and build that into your overall survival strategy. Furthermore, boost preparedness so that you can shift from reactive to proactive, enabling a much better survival rate.</p>
+
+<p><strong>Situational Awareness</strong></p>
+
+<p>You're prepared. You're geared up for how to survive. Now you need to be aware. If you don't know what's going on around you, then you are S O L.</p>
+
+<p>In infosec we have several random mantras that tell us that we need to measure, monitor, report on, etc, etc, etc. More importantly, we assess. A lot. Risk management cannot be very functional if you're not aware of your environment and if you're not testing various components. This is how we achieve awareness, among other things.</p>
+
+<p>In the real world, public safety would be greatly improved if people would simply pay better attention to what's going on around them. This is <em>not</em> the same as calling for a cadre of amateur spies to inform on their neighbors. What it is saying is that you should have your eyes open, and always know where you are spatially in case you need to go into action following your response plan.</p>
+
+<p>Situational awareness can be heightened through education, training, and regular communication on key areas of concern. Partnering with local law enforcement to discuss various common scenarios and to help refine plans is highly recommended.</p>
+
+<p>I simply cannot stress enough the importance of situational awareness. If we all paid a little better attention, and then stepped up to take appropriate actions or responses when we saw things, then I believe society would function much better in general. This includes simple things like putting smartphones away while driving, looking at people when they're talking to you (body language can say a lot!), and so on.</p>
+
+<p><strong>In Closing...</strong></p>
+
+<p>There's much more that can be said on these topics. For example, I've mostly left out a discussion of "active defense," which is a hot topic in infosec right now. Concealed carry and training principals or specially designated responders to tactically engage an active shooter would, in my mind, qualify as being in the same category. Unfortunately, the laws surrounding an active defense strategy simply aren't adequately understood and refined today to make this feasible in infosec. In public safety, we would need to invest in training and outfitting personnel, or hiring and assigning specialized personnel, in order to follow-through on an active defense plan.</p>
+
+<p>That said, there are some legitimate considerations around active defense. In almost all the recent cases, the attacker turned the gun on himself as soon as he was confronted with an opposing (armed) force. A little bit of armed resistance goes a long way (perhaps the thought in the minds of the Founding Fathers when writing the 2nd Amendment).</p>
+
+<p>Also worth discussing, but at another time, is that of how to modify culture at large to foster healthier, more desirable behavior. Studies have shown repeatedly that playing violent video games (especially the latest ones that are very realistic) ends up increasing the natural aggressive response of gamers, as well as decreasing their natural reluctance to kill. On top of this, we (in the US) currently have a culture that glorifies warriors and aggressively promotes a warrior attitude and lifestyle. This can be healthy and useful for fitness training, for military training, for martial arts training, and for general well-being, but only if it's couched within a larger concept of treating people properly, respectfully, and putting a premium value on life. Unfortunately, our society seems to be consistently devaluing life; a perspective exacerbated by global wars of aggression, remote drone strikes that have killed children and civilians, and the increasingly militarized police forces in our local communities.</p>
+
+<p>Resetting societal values is a daunting task, and something that will take much effort in education and awareness campaigns, as well as through governance changes. These are all things that we in infosec have been grappling with throughout our careers. There are many competing theories on how to change behavior in the workplace. Hopefully we can take some of these examples and expand them out to society at large.</p>
+
+<p>Let us hope that all this craziness will now settle down, and that we can perhaps start improving as a society. Personally, I'm very concerned that this whole "Mayan apocalypse" nonsense (on 12/21/12) will still result in more insanity. Please maintain active situational awareness, be safe, and let's all have a happy holiday season to end the year!</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/musings/" rel="tag">musings</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>December 18, 2012  8:41 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2012/11/does-authorization-matter.html">Does "Authorization" Matter?</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2012/12/rsa-2013-discount-find-me.html">RSA 2013 - Discount & Where to Find Me</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

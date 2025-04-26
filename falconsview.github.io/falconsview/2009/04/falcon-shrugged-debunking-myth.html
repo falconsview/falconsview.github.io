@@ -1,0 +1,1005 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2009/04/falcon-shrugged-debunking-myth.html">
+<dc:title>Falcon Shrugged: Debunking Myths of &quot;PCI Shrugged&quot;</dc:title>
+<dc:description>I&apos;ve finally had a chance to sit down and read &quot;PCI Shrugged: Debunking Criticisms of PCI DSS&quot; by Anton Chuvakin and Ben Rothke. My response to the article can also be construed as a follow-up to my earlier post, here....</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-04-18T14:07:06-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2009/04/falcon-shrugged-debunking-myth.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2009/04/friday-roundup-brief.html" title="Friday Round-up Brief" />
+    <link rel="next bookmark" href="http://54.197.56.127/2009/04/rsa-2009-monday-420-notes.html" title="RSA 2009: Monday 4/20 Notes" />
+    
+    
+    <title>Falcon Shrugged: Debunking Myths of &quot;PCI Shrugged&quot; - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2095" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Falcon Shrugged: Debunking Myths of "PCI Shrugged"</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2009-04-18T14:07:06-05:00">April 18, 2009  2:07 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>I've finally had a chance to sit down and read <a href="http://www.csoonline.com/article/489414/PCI_Shrugged_Debunking_Criticisms_of_PCI_DSS">"PCI Shrugged: Debunking Criticisms of PCI DSS"</a> by Anton Chuvakin and Ben Rothke. My response to the article can also be construed as a follow-up to my earlier post, <a href="http://www.secureconsulting.net/2009/04/sorry_anton_pci_absolutely_is.html">here</a>.</p>
+
+<p>Overall, I take great issue with the article and assertions made. My primary critique is that they're debunking "myths" or "criticisms" that are based in reality, not in abstract and obscure theoretical PCI realms. It does not matter what the PCI Security Council wants us to believe about the DSS. It only matters how the DSS is used and perceived by those required to comply with it. The simple fact is that the DSS <strong>is</strong> a checklist (see the SAQ for example) that has a very narrow scope (billing systems with credit card numbers) and that does not look at larger concepts like risk or maturity.</p>
+
+<p>That being said, allow me to do a section-by-section rebuttal.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>Complaint: PCI is a Distracter from Security and Risk Management?</strong></p>
+
+<p>So, here's the thing: PCI <em>does</em> raise the visibility and priority of security in certain organizations. But, PCI absolutely, positively <em>does not</em> do anything for risk management. Moreover, as a result, PCI is seen as a destination rather than a vehicle, resulting in the problems we see today wherein organizations claim "compliance" in spite of compromises.</p>
+
+<p>"everything about PCI is core security"<br />
+--> This is, unfortunately, nowhere near true. PCI is generally focused only on systems and networks where cardholder data is stored, processed, or transmitted. In a reasonable organization, this is only a small slice out of the overall enterprise. While it is true that some provisions apply more broadly - or at least <em>should</em> be - it seems to be quite uncommon for this to happen.</p>
+
+<p>"Previous data security efforts, such as Sarbanes-Oxley, have encouraged a check-box approach to compliance."<br />
+--> SOX isn't a data security effort, it's about corporate accountability, and assertions to the contrary are a perversion of SOX by organizations like the AICPA and ISACA, who had a direct vested interest in creating this confusion. There have not been other data security efforts - PCI DSS is a first and unique effort in this area. That it falls far short is not surprising given this truth, though in the modern age of information security we <em>should</em> expect more.</p>
+
+<p>"organizations that have developed a formal information security program will find that PCI compliance is useful for security and not an onerous distraction"<br />
+--> PCI doesn't encourage building a security program or organization - it merely encourages compliance for those systems in-scope for the regulation.  While some of the requirements may have broader applicability to organizations, it is then even more expensive to do so, and especially in the current economic environment, organizations are balking.</p>
+
+<p>Let's put it plainly like this: in every quality process improvement initiative there is a short-term spike in cost in order to gain long-term efficiencies and cost savings. In the current economic environment - and even in the environment of the last 3-5 years - organizations are neither willing nor able to shoulder the additional burden. The average L1 merchant spent $2.7m in 2008 on PCI compliance, and the average L2 merchant spent $1.1m. Where did that money come from? Who's footing that bill?</p>
+
+<p>"While an organization can attempt to pursue PCI DSS compliance for compliance sake without regard to security, such irresponsible behavior can hardly be blamed on PCI DSS standard itself."<br />
+--> It's called survivalist and minimalist behavior. What's the incentive here? Organizations are compelled to achieve compliance at the lowest cost possible. Most organizations are not Level 1 merchants, which means they're self-assessing. The card brands are not particularly incentivized to cut off merchants or processors or banks. Merchants are not particularly incentivized to burn millions on compliance with limited benefit. In fact, one could go so far as to argue that if the card brands are going to only fine non-compliant organizations in amounts less than US$100,000/month, then for the average L1 or L2 merchant, it's actually <strong>cheaper</strong> to be fined than to pursue compliance! (see <a href="http://blog.elementps.com/element_payment_solutions/2009/02/pci-compliance-costs.html">this report</a> for info on where the $2.7m and $1.1m numbers come from).</p>
+
+<p>Moreover, let's look at the impact of fines. Say an organization <em>is</em> working on compliance, albeit slowly. Say that the PCI Security Council decides to enforce a fine. Does the fine not work against the compliance objective by taking money away from compliance efforts? Would it not be better that, rather than fine, organizations be required to foot the bill for Council-approved security management consultants to come in and fix things? Just a thought...</p>
+
+<p><strong>Complaint: Data Breaches Prove PCI DSS Useless?</strong></p>
+
+<p>This complaint is particularly interesting. Is a bad regulation useless? Probably not, but nor do I think most rational people are arguing that PCI is useless. It is, however, frustrating and distracting. It imposes a burden that does not accomplish the goals stated. The DSS does not align with the assertions made in the "PCI Shrugged" article, nor with the assertions made by Visa, MasterCard, or the PCI Security Council.</p>
+
+<p>"One should not assume that compliance necessarily means that breaches can't occur."<br />
+--> This is a very good statement, and one that I support wholeheartedly. There is a gross misconception amongst non-security professionals that compliance means much of anything. However, this also raises the question: what is the point of the standard, or compliance? What is the benefit?</p>
+
+<p>"A simpler explanation applies here: they were breached despite being PCI DSS compliant."<br />
+--> Yes, indeed. So, what was the point of achieving PCI compliance? The problem here is that PCI compliance does not secure the <em>enterprise</em>, but rather just the narrow environment containing the cardholder data. Moreover, "clever" scoping further infringes on the effectiveness or compliance.</p>
+
+<p>"It is surprising to the authors that security professionals will hold the view that following an external guidance document can guarantee 100% security to any organization."<br />
+--> It's surprising to me that the authors would think any security professional would hold that view. There are no guarantees, especially in information security. Maybe somebody should share this with the PCI Security Council, because they don't seem to fully agree as they de-certify organizations that were previously declared compliant. Is the loss of compliant status due to bad QSAs, or because security is a moving target?</p>
+
+<p>"In much the same way as a doctor cannot guarantee the health of the patient, neither PCI nor any other regulatory guidance can guarantee that there will not be breaches. 100% PCI compliance does not guarantee an entity is 100% secure or even as secure as they need to be."<br />
+--> If PCI does not ensure the security of organizations - not even reasonable security/assurance - then what's the point? The argument that "something is better than nothing" does not necessarily hold if that "something" doesn't actually solve any problems! Moreover, what is the problem being addressed? If you go to the doctor for a headache and then die outside the office from an aneurism, then that doctor may very well be culpable for missing the diagnosis.</p>
+
+<p><strong>Complaint: PCI is Just Security Theater?</strong><br />
+"For many, PCI compliance means emptying their plates via yet another compliance checklist. They often do the bare minimum in the hope that they can gain compliance and make the QSA go away. At times they may even lie to their QSA or on the Self Assessment Questionnaire (SAQ)."<br />
+--> Lying is an interesting thought... what if the people completing the SAQ aren't qualified to complete it, but don't know any better? One of the biggest faults with the PCI DSS is that the majority of organizations subject to compliance are then self-assessing their degree of compliance. What is the incentive for organizations to report anything other than being most or fully compliant? Moreover, who is filling out the SAQ in the first place? What if these unqualified respondents really do think they're secure? It strikes me as incredibly unreasonable to believe or expect that every self-assessor with a SAQ in hand will actually understand half of what is contained therein. If QSAs can't get it consistently right, how can we reasonable expect self-assessors to be any better?</p>
+
+<p>"Far too many organizations have an audit-based mentality with the frame of mind of evading the auditor, as opposed to a risk-based mentality of protecting the cardholder data."<br />
+--> Wait, I'm sorry, where does PCI mandate a risk management approach to securing the enterprise, or even to protecting cardholder data? Oh, that's right, it doesn't. It provides a prescriptive list of things to implement to protect cardholder data, and then provides a checklist questionnaire (SAQ) for self-assessment (or auditors - aka QSAs - for Level 1 merchants). Of course organizations have an audit-based mentality - that's what they've been brought up to expect and believe! This notion is further reinforced by requiring them to hire auditors.</p>
+
+<p>"PCI DSS is a good start of a security program, not its end. Checklists do have their place in security, but a security program cannot be reduced to a checklist; attempts to pretend that an organization can 'follow the checklist to become secure' are guaranteed to fail."<br />
+--> Duh. Except that "good start" part. The place for a checklist is in procedures that describe in detail how to execute a specific task. Unfortunately, the PCI DSS reads like such a thing; it's a checklist for securing your cardholder data. It is not a standard for building a security program, and in fact it even wanders outside the lines of security at points, such as with configuration management. Unfortunately, all of its guidance can be applied in such a narrow scope that there are limits to the overall usefulness of the requirements.</p>
+
+<p><strong>What the Future Holds</strong><br />
+"Not only is PCI not dead, it is alive and well and maturing. In its current version 1.2, it is still evolving, but it is clearly the best we have."<br />
+--> It's not the best we <em>could</am> have, and that's my point. The "it's the best we have" or "it's as good as we could do" arguments are simply unacceptable. The simple fact is that the PCI DSS was written by people who were not properly qualified for the effort. It's written like an audit checklist precisely because it was authored by auditors! The fundamental problem with the PCI DSS is that it is now being described as something that it was never written as in the first place. It's not a security management standard - it's a cardholder data security standard. Accept it and get over it. Have a problem with this? Great - so do I! The PCI DSS is definitely not the best we can do, but to improve it will mean completely rewriting it from scratch. (btw, I'd love to be involved in PCI DSS v2.0 that completely rewrites the darned thing)</p>
+
+<p>"The authors challenge anyone to find a better standard or regulation."<br />
+--> Just because you can't find something better today doesn't mean there can't be something better. I would, however, argue that there are lots of models and frameworks that are much better suited to securing the enterprise, whether that be *ahem* the <a href="http://falcon.secureconsulting.net/professional/papers/Tomhave_Thesis-FINAL.pdf">TEAM Model</a> or <a href="http://www.sse-cmm.org/index.html">SSE-CMM</a> or <a href="http://fairwiki.riskmanagementinsight.com/">FAIR</a> or even the ISO standards. The point here is that we know how to write good standards, so why are we settling for this thing (PCI DSS)?</p>
+
+<p><strong>Conclusions</strong><br />
+"Most attacks against PCI boil down to we don't like it or PCI is useless, rather than a direct critique of the standard, or ways in which in can be improved. "<br />
+--> This is patently false. Many of us have provided very specific critique of PCI DSS and have provided very specific suggestions for improvement, and yet nobody on the PCI Security Council is listening. If you're not aware of specify critiques or recommendations, then you're probably not paying close attention to infosec discussions in this area.</p>
+
+<p>"PCI has taken the masses of security illiterate companies and forced many of them into some semblance of security."<br />
+--> Again, patently false. It has spawned nothing short of blatant lies and security theater. Lots of hand-waving to give the aura of security with nothing behind it. PCI is a prescriptive standard designed to protect card brands, passing the buck to the merchants. Why is it the responsibility of the merchants? Why isn't it the responsibility of the card brands themselves? Moreover, again, what is the incentive for either party? The only reasonably expected outcome here is security theater.</p>
+
+<p>"PCI is not perfect; but neither is the world in which we live."<br />
+--> Oh, I see, the old "fallible humans" argument. So, we're supposed to accept this garbage because "well, golly, humans are imperfect." The authors admin that the PCI DSS does not secure the enterprise. In practice, we've found that it also does not consistently secure cardholder data. It puts a burden on merchants who are not particularly incentivized to do anything with it. It's not the merchants' data, so why is it their responsibility to secure it? The entire model is broken. This is where we need to see major improvements before we see anything further from the PCI Security Council. Fix the card transaction/processing model, and then see what's left to secure. If done well, the merchants should have very little role or responsibility, and the risks associated with cardholder data breaches should decrease dramatically.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20';return false;" rel="tag">infosec</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=PCI&amp;limit=20';return false;" rel="tag">PCI</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>April 18, 2009  2:07 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2009/04/friday-roundup-brief.html">Friday Round-up Brief</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2009/04/rsa-2009-monday-420-notes.html">RSA 2009: Monday 4/20 Notes</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

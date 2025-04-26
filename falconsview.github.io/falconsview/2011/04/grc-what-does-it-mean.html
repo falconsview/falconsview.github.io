@@ -1,0 +1,1131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2011/04/grc-what-does-it-mean.html">
+<dc:title>GRC: What Does It Mean?</dc:title>
+<dc:description>I&apos;ve already written a bit about how we&apos;ve gotten to where we are today in the infosec industry, as well as having talked a bit about my definition of GRC as a discipline. However, I think there&apos;s value in taking...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-04-05T10:12:12-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2011/04/grc-what-does-it-mean.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html" title="Thoughts on How We&#039;ve Gotten Here" />
+    <link rel="next bookmark" href="http://54.197.56.127/2011/04/grc-and-cloud-security.html" title="GRC and Cloud Security" />
+    
+    
+    <title>GRC: What Does It Mean? - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2356" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">GRC: What Does It Mean?</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2011-04-05T10:12:12-05:00">April  5, 2011 10:12 AM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/04/grc-what-does-it-mean.html#comments">2 Comments</a>
+
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/04/grc-what-does-it-mean.html#trackbacks">1 TrackBack</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>I've already written a bit about <a target="_blank" href="http://www.secureconsulting.net/2011/03/thoughts-on-how-weve-gotten-he.html">how we've gotten to where we are today in the infosec industry</a>, as well as having talked a bit about <a target="_blank" href="http://www.secureconsulting.net/2011/03/defining-grc-the-discipline.html">my definition of GRC as a discipline</a>. However, I think there's value in taking things a step further to delve into what exactly is meant by these three little letters. Specifically, there are some differing opinions on what GRC really means, for which I think it's instructive to spend some time reviewing these definitions with an eye toward finding some practical guidance.</p>
+
+<p>For those who might be wondering, we're again talking here about GRC the discipline and not so much GRC the platform, though we certainly need to consider the platform in a historical context. Most organizations come to GRC as a buzzword-compliant topic via vendor solutions, even though they've been doing some, if not all, of the GRC activities for quite some time. It's from this point that we will start.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>Marketing Mythos</strong></p>
+
+<p>Perhaps the most damning comment one can make about GRC - either as a platform or a discipline - is that it's simply the product of clever marketing efforts. In particular, many in infosec have argued that GRC is really nothing more than a made-up buzzword (like APT and cyberwar) that only serves the purposes of vendors, and goes against the best interests of the business.</p>
+
+<p>The truth is that GRC is more than just a marketing myth. It represents the confluence of several key notions that have matured in parallel over the past 10-15 years. It's probably true that GRC was a bit premature in its market entry and definition, but in the grand scheme of things, GRC is central to all that the business does on a daily basis.</p>
+
+<p>To understand how GRC is more than simply marketing rhetoric, let's take a look at each of the key terms in GRC (Governance, Risk [Management], and Compliance), how those terms are defined in various fora, and then discuss practical applications of each key area. In the end we'll try to pull it all together into one comprehensive "how it all fits together" picture. We'll also discuss where security fits into this mix, since the letter S is notably absent from the GRC acronym.</p>
+
+<p><strong>What Do These Terms Mean, Anyway?</strong></p>
+
+<p>GRC as a discipline has existed since pre-Internet time, though albeit in a more primitive and less technical form. At its core, GRC comes to us from the business management schools with a focus on corporate governance. Once the Internet revolution began, things then started to accelerate and the ability of organizations to effectively manage people and technology became challenged. We hit a tipping point around 2002 as we came out of several accounting scandals. It's at that point that the <a target="_blank" href="http://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act">Sarbanes-Oxley Act of 2002</a> (SOX) came into existence, which in turn triggered increased focus on other existing regulatory frameworks (e.g., <a target="_blank" href="http://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act">HIPAA</a> and <a target="_blank" href="http://en.wikipedia.org/wiki/Gramm%E2%80%93Leach%E2%80%93Bliley_Act"> GLBA </a>). Post-2002, the regulatory environment absolutely exploded, with new regulations both domestically and internationally (e.g., <a target="_blank" href="https://www.pcisecuritystandards.org/security_standards/index.php">PCI DSS</a>, <a target="_blank" href="http://en.wikipedia.org/wiki/Health_Insurance_Portability_and_Accountability_Act#HITECH_Act:_Privacy_Requirements">HITECH</a>, CA SB-1386, various European regs, NERC/FERC regs.).</p>
+
+<p>GRC stands for Governance, Risk (or Risk Management), and Compliance. In many ways it is an odd and arbitrary confluence of concepts, while in other ways it makes perfect sense (more often it's just really confusing). There are a few questions that come out of this framework, which will be addressed in the next couple sections. However, before we even get to that point, let's talk about what each of these terms mean, both definitionally as well as in a practical sense.</p>
+
+<p><em>Governance</em></p>
+
+<p>The first term, Governance, is - I think - the hardest to define. I asked on Twitter recently for people to define, in 140 characters, what IT Governance is. Unsurprisingly, only one (1) person provided a serious response (and he provided 2, actually), which was endorsed by one other person.</p>
+
+<p><a target="_blank" href="http://dictionary.reference.com/browse/governance">Dictionary Definition</a>: "exercise of authority; control" or "a method or system of government  or management."</p>
+
+<p><a target="_blank" href="http://www.oceg.org/view/RB2Project">OCEG "Red Book" 2.0 Definition</a>: "[The] culture, values, mission, structure and layers of policies, processes and measures by which organizations are directed and controlled. Governance, in this context, includes but is not limited to the activities of the Board, for governance bodies at various levels throughout the organization also play a critical role. The tone that is set, followed and communicated at the top is critical to succes."</p>
+
+<p>From <a target="_blank" href="http://www.securityarchitecture.com/">Stephen Gantz</a> (<a target="_blank" href="http://twitter.com/secarch/">@secarch</a>):<br />
+ * "IT Governance: trying to ensure you spend IT $$ and run IT projects that match business priorities/support business objectives"<br />
+ * "Alternative: IT governance keeps you from wasting IT resources on things that provide little or no value"<br />
+(Source tweets available <a target="_blank" href="http://twitter.com/secarch/status/51019678771978241">here</a> and <a target="_blank" href="http://twitter.com/secarch/status/51020083681693696">here</a></p>
+
+<p>In Practical Terms: What we're talking about with Governance overall is, literally, management of an organization. In the sense of "IT Governance" we're then talking about management of technology within organizations. The reason this subset of governance arose is because technology has primarily been considered an overhead expense and is historically rather expensive. Even today, when most technologies are commoditized (to the degree that you can whip out a credit card and go buy tons of server space from Amazon or Google), it is still, nonetheless, something very foreign to human beings.</p>
+
+<p>Originally, it seems that the Governance in GRC was really meant as IT Governance. However, today we see that the niche is broadening, especially as it expands its tendrils into areas like business intelligence. Also, as we'll discuss in the next section, Governance is coupling with Risk Management to start formalizing decision analysis and management practices that have to this point been largely academic.</p>
+
+<p>Back to practical terms, when we think about "Governance" in the GRC context, we should be thinking about how organizations are run, and specifically how IT is efficiently and effectively managed. It applies traditional finance and economic thinking (for better or for worse) to the application of technologies in order to analyze costs, benefits, and effectiveness. We're very familiar with these analyses already in the legacy business context, and IT Governance attempts to extend these practices into newer technology-oriented realms.</p>
+
+<p><em>Risk</em></p>
+
+<p>The second term in GRC is Risk (or Risk Management, per some sources), and man does it give us a lot of headaches! It seems like <em>everything</em> these days is described as risk-this and risk-that. We get vulnerability scans with high, medium, and low risks (sometimes "critical" risks, too!). There is risk in the financial world, risk in the economic world, risk in the legal world, and risk in the IT world. Humans intuitively understand risk in the physical sense, and they seem to have generally grokked financial risk (Wall Street and Fed failures aside), at least in the sense of "nothing ventured, nothing gained." However, when it comes to information risk, well, we're neophytes in the wilderness, unsure how to even measure or describe "risk," let alone <a target="_blank" href="http://www.secureconsulting.net/2011/03/lord-kelvin-was-wrong.html">how to properly manage it</a>.</p>
+
+<p><a target="_blank" href="http://dictionary.reference.com/browse/risk">Dictionary Definition</a>: "1. exposure to the chance of injury or loss; a hazard or dangerous chance"</p>
+
+<p><a target="_blank" href="http://www.oceg.org/view/RB2Project">OCEG "Red Book" 2.0 Definition</a>: "Risk, in this context, is the measure of the likelihood of something happening that will have an effect on achieving objectives; most importantly, but not exclusively, an adverse effect. Thus, Risk Management is the systematic application of processes and structures that enable an organization to identify, evaluate, analyze, optimize, monitor, improve, or transfer risk while communicating risk and risk decisions to stakeholders. The overriding goal of risk management is to realize potential opportunities while managing adverse effects of risk."</p>
+
+<p>From Jack Jones at <a target="_blank" href="http://riskmanagementinsight.com/">Risk Management Insight</a>, creator of <a target="_blank" href="http://riskmanagementinsight.com/faq#what">FAIR</a>:<br />
+ * "Risk isn't a 'thing.' It's a derived value, much like speed."<br />
+ * "Risk = the probable frequency and probable magnitude of future loss"</p>
+
+<p>In Practical Terms: One of the first problems I have with "risk" in general is this: what's the unit of measurement? Or, is it even something that you can measure? I'm not convinced it is. Just as "security" is a state or feeling, so risk also tends to be fuzzy and, frankly, somewhat emotional. When we talk about risk, what we're really talking about is probability as it relates to loss. Don't let others confuse you on this point. Sure, you can "take a risk" and benefit from it, but it's not usually the positives that cause us to give pause and consider things; it's the negatives!</p>
+
+<p>"Risk" in the context of GRC deals with how we make decisions. As such, it's really just a component of Governance, which provides our overall framework for managing, operating, and, frankly, making decisions. If Governance tells us the rules within which we must operate, then "Risk" informs our decisions as we attempt to push the envelope within (or on the edge of) those rules. Pretty much everything we do in life - whether it be writing a blog post or buying a product or driving our car around town or selling professional services - comes with a degree of risk (be it financial, legal, physical, or otherwise). Making reasonably-well-informed decisions that properly account for the chance of a (significant) loss is then imperative to good decision-making as part of Governance. In the future, my expectation is that we will likely see risk management evolving into a larger decision analysis discipline of which risk analysis is one (very key) component.</p>
+
+<p><em>Compliance</em></p>
+
+<p>Generically...</p>
+
+<p><a target="_blank" href="http://dictionary.reference.com/browse/compliance">Dictionary Definition</a>: "1. the act of conforming, acquiescing, or yielding"</p>
+
+<p><a target="_blank" href="http://www.oceg.org/view/RB2Project">OCEG "Red Book" 2.0 Definition</a>: "[The] act of adhering to, and the ability to demonstrate adherence to, mandated requirements defined by laws and regulations, as well as voluntary requirements resulting from contractual obligations and internal policies."</p>
+
+<p>Specifically... compliance is the responsibility of organizations to understand, meet, and manage their regulatory and governance burdens. Or, put another way, organizations have a responsibility to be compliant with their regulatory and governance burdens. Of the three terms in GRC, Compliance is probably the easiest to understand, and yet it's also become one of the most misused and abused terms around. It seems like the vast majority of "security" efforts these days are attributed to Compliance, when, in fact, Compliance should merely be a footnote in the overall scheme of things.</p>
+
+<p>Within the context of GRC, Compliance speaks to Compliance Management, which is the process of managing compliance requirements and the associated remediation and support efforts that go along with those requirements. Simply put: Compliance Management looks at your regulatory, contractual, and policy obligations and helps the organization make a best effort at meeting them.</p>
+
+<p>Anything more than that simple definition should be severely questioned. Unfortunately, due to historic resistance to security improvements (and a historically poor job done by infosec in explaining the need for infosec), we've instead seen Compliance used as a stick to drive orgs to do things. It seems today that the lion's share of IT and infosec budgets are spent on compliance today when, in fact, it should account for a minimal overhead cost.</p>
+
+<p>With respect to Governance and Risk, Compliance is merely a subset. Under Risk, Compliance is the subset that deals with the likelihood that fines or other negative impacts will occur as a result of not meeting an obligation. Under Governance, Compliance merely amounts to taking note of requirements (external and internal) and making a reasonable effort to meet these obligations as best as possible.</p>
+
+<p><strong>What About Security?</strong></p>
+
+<p>One of the more common questions that we're left with in pondering this GRC vertical is this question of where "security" fits with it. My take here is perhaps not consistent with the mainstream today, though I do believe that it will become the common approach in the future (please note that I also speak to the question a bit in my post "<a target="_blank" href="http://www.secureconsulting.net/2011/03/defining-grc-the-discipline.html">Defining GRC (the discipline)</a>"). To understand my thinking, let's first start with version 2 of the Total Enterprise Assurance Management (TEAM) Model.</p>
+
+<center><img border="0" vspace="5" hspace="5" src="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"></center>
+
+<p>If you look at this overall picture, then you will note a few things:<br />
+ 1) "Governance" and "Compliance" aren't anywhere to be found.<br />
+ 2) "Risk" exists, but only as a subset of the overall system.<br />
+ 3) "Security" is only on there once.</p>
+
+<p>Here are the key take-aways from this diagram:<br />
+ 1) Governance is the whole picture. And, really, this is just the IT subset of Governance, which should integrate fully with existing management structures.<br />
+ 2) Compliance informs Requirements with respect to what external and internal obligations exist. Compliance is then enacted through the Policy Framework, which is in turn met through both Information Security Management (operations) and through Quality & Performance Management activities (e.g., audit). Specifically, actions necessary to meet external and internal obligations are addressed under both of these areas depending on the nature of the obligation.</p>
+
+<p>So... why isn't "security" part of GRC? For the same reason that the TEAM Model is not a "security" model. Security is a desirable attribute of a system; an emerging property. Security is not an activity, but a descriptor. All services, all applications, and all systems should be designed, built, and operated in a secure manner that meets the survivability requirements established as part of the overall risk management strategy, which in turn supports the direction of the company as is communicated and managed by the Governance system.</p>
+
+<p><strong>How Does It All Fit Together?</strong></p>
+
+<p>The big, final question: Now that we know what Governance, Risk, and Compliance mean, how do we fit them all together? It's an interesting question, to which very few have successfully developed a good answer. I think that there are probably a few different considerations to bear in mind.</p>
+
+<p>First, <a target="_blank" href="http://www.corp-integrity.com/">Michael Rasmussen</a> says that GRC is about "corporate integrity." I think, to a degree, that is true. In my mind, what he's saying is that GRC platforms, in particular, help keep executives informed and honest. As a discipline, GRC means adopting formalized methods for corporate governance, IT governance, risk assessment, decision analysis, etc. These are all Good Things (tm). However, that being being said, we also have to be careful to which organizations we apply this thinking. A full-scale GRC program, supported by a major GRC platform deployment, is probably not a good fit for your average Mom & Pop shop. How, then, can we scale GRC back to meet their needs?</p>
+
+<p>Another thought of mine involves these GRC tools/platforms... honestly, as it stands today, I really don't care much about them. Before you can make use of tools, you first must get your house in order. You need to start defining formalized governance structures. You need to understand risk management and have reasonably sound ways to leverage it in decision-making. You need to have decent policies and you must have technical controls implemented that help you manage your organization and your risk. Until all of these pieces are in place, there's very little room for a GRC product.</p>
+
+<p>Unfortunately, what we oftentimes see is organizations waking up to "APT" or "StuxNet" or HIPAA+HITECH compliance or PCI DSS or whatever the day's hot-button topic might be and they conclude that "if only we had a GRC solution, then we could magically solve all our problems." Nothing could be further from the truth. You do not need a GRC solution. A GRC solution is a nice-to-have item that can make running your GRC program more effective while reducing overhead, but that's only true if you already have a GRC program in place.</p>
+
+<p>In the end, then, GRC is all about putting together a quality management program within your organization, regardless of size or scale, that helps your organization more effectively manage itself, its activities, its people, and its resources. Governance provides the framework within which to manage, risk analysis provides improved data points that lead to better decision-making processes, and compliance management ensures that we're properly apprised of our external and internal obligations. In many ways, we can analogize GRC as being the brain and nervous system of the body, helping regulate functions, but without actually performing said functions. As such, it's a vital component to any organization, though it's not the only component, but rather is part of the overall complex system.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">1 TrackBack</h2>
+
+    
+    
+
+
+    
+    
+        
+    <div class="trackbacks-content">
+        
+        <div class="trackback" id="ping-2288">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2011/04/grc-and-cloud-security.html" rel="nofollow">GRC and Cloud Security</a> from The Falcon's View on <a href="#ping-2288" rel="nofollow">April 12, 2011  9:50 AM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        I had an epiphany while researching an upcoming talk on cloud security. As part of my research I decided it was time that I finally dig into the Cloud Security Alliance (CSA) efforts to find out what exactly was out... <a href="http://www.secureconsulting.net/2011/04/grc-and-cloud-security.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+</div>
+
+
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">2 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-3719" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://genuinecuriosity.com" href="http://genuinecuriosity.com" rel="nofollow">Dwayne Melancon</a></span>
+
+                    | <a href="http://54.197.56.127/2011/04/grc-what-does-it-mean.html#comment-3719"><abbr class="published" title="2011-04-06T19:41:05-05:00">April  6, 2011  7:41 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Ben - this is an excellent post.  Very comprehensive, and you hit the nail on the head.  </p>
+
+<p>One thing that's vital is the GRC can't just be a cerebral exercise - it needs to drive action, rigor, and "involvement" by the business in order for it to be effective.</p>
+
+<p>There's an opportunity in each of these (G, R, and C) for people to create "GRC Theater" that won't hold up under scrutiny.  I think another vital aspect required for successful, meaningful GRC is 'tone at the top' - management must drive ownership and accountability through controls, and not let people off the hook (i.e. you can't go around it, so you'd better get used to doing it).</p>
+
+<p>--@thatdwayne</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-3721" class="comment comment-reply entry-author-comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    <a class="commenter-profile" href="http://www.secureconsulting.net/"><img alt="" src="http://54.197.56.127/mt-static/images/comment/mt_logo.png" width="16" height="16" /></a>
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> replied to <a href="http://54.197.56.127/2011/04/grc-what-does-it-mean.html#comment-3719">comment from Dwayne Melancon</a>
+
+                    | <a href="http://54.197.56.127/2011/04/grc-what-does-it-mean.html#comment-3721"><abbr class="published" title="2011-04-06T21:37:10-05:00">April  6, 2011  9:37 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Thanks, Dwayne! I agree wholeheartedly with your comments. As important as it is to model proper behavior and truly reward and promote good choices, it is equally important that enterprises not operate in consequence-free environments. Accountability is imperative, and something that I think has become lost at the vast majority of organizations. Excellent remarks!</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>April  5, 2011 10:12 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html">Thoughts on How We've Gotten Here</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2011/04/grc-and-cloud-security.html">GRC and Cloud Security</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

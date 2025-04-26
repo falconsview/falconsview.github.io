@@ -1,0 +1,1014 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2010/04/sas-70-and-the-lies-auditors-t.html">
+<dc:title>SAS 70 and the Lies Auditors Tell</dc:title>
+<dc:description>If you&apos;ve been in the infosec industry for very long at all, then you&apos;ve probably run across auditors (either internal or external). In fact, if you&apos;ve been in the industry for a while, then there&apos;s a good chance you&apos;ve been...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-04-05T13:42:30-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2010/04/sas-70-and-the-lies-auditors-t.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2010/03/freeconference-is-freaking-out.html" title="FreeConference Is Freaking Out" />
+    <link rel="next bookmark" href="http://54.197.56.127/2010/04/i-am-infosec-and-so-can-you.html" title="I Am InfoSec, and So Can You" />
+    
+    
+    <title>SAS 70 and the Lies Auditors Tell - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2243" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">SAS 70 and the Lies Auditors Tell</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2010-04-05T13:42:30-05:00">April  5, 2010  1:42 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>If you've been in the infosec industry for very long at all, then you've probably run across auditors (either internal or external). In fact, if you've been in the industry for a while, then there's a good chance you've <em>been</em> an auditor. Regardless of your history with or view of auditors and audits, it is indisputable that audits are here, have been here for a while, and probably aren't going anywhere any time soon.</p>
+
+<p>This little rant today - and make no mistakes, it is a rant - is focused on that famous little audit standard known as <a target="_blank" href="http://en.wikipedia.org/wiki/Statement_on_Auditing_Standards_No._70:_Service_Organizations">SAS 70, or "Statement on Auditing Standards No. 70: Service Organizations"</a> in long-hand (<a target="_blank" href="http://umiss.lib.olemiss.edu:82/record=b1038093">full text here</a>). I've chosen the SAS 70 as an example because it is very prevalent in the industry, generally overused, and typically afforded far more weight than is really healthy or important. Specifically, the SAS 70 is so ubiquitous that one might think it was one of the most valuable tools in the world, while nothing could be further from the truth.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>A Little Background</strong></p>
+
+<p>To understand SAS 70, you need to first understand that there are 2 types of audits with nuanced differences. I like Wikipedia's description, so here ya go:<br />
+<blockquote>"There are two types of service auditor reports. A Type I service auditorâ€™s report includes the service auditor's opinion on the fairness of the presentation of the service organization's description of controls that had been placed in operation and the suitability of the design of the controls to achieve the specified control objectives. A Type II service auditorâ€™s report includes the information contained in a Type I service auditor's report and also includes the service auditor's opinion on whether the specific controls were operating effectively during the period under review."</blockquote><br />
+So, in a nutshell, Type 1 is combination paper- and interview-based exercise meant to identify and document controls in place, with the auditor's report provide an opinion on the presentation of the materials. As we'll note below, however, this opinion can be rather sketchy. The Type II report does actual tests of the effectiveness of the controls identified in the Type I report.</p>
+
+<p>I've seen a Type I take anywhere from 3-9 months, depending on how mature the organization is in terms of documented controls, and depending largely on the tenacity of the auditor. A SAS 70 15 years ago was a vastly different beast than the one we see today. Moreover, for better or worse I've even now seen large tech organizations making use of a SAS 70 for internal audit (or, so they claimed), since in such large orgs your internal auditors are effectively 3rd parties. But is any of this based on reality?</p>
+
+<p><strong>The Standard's Got No Clothes</strong></p>
+
+<p>If you read the <a target="_blank" href="http://umiss.lib.olemiss.edu:82/record=b1038093">full text</a> of SAS 70, the first thing you should notice is that it <strong>does not</strong> contain a controls framework. It is merely an audit standard that prescribes the <em>process</em> that must be followed when performing this particular type of audit. For those more familiar with PCI DSS, this reality will seem quite strange. An audit standard that provides no controls framework?</p>
+
+<p>This dirty little secret of SAS 70 has been abused for more than a decade, particularly by the likes of people aligned with ISACA and the AICPA who have hidden agenda. The Type I report is meant to identify controls and then document auditor opinion on those controls. But what is the basis for this opinion? The standard has no defined controls, and was in fact released in April 1992! We are following an audit standard that was written well before eCommerce was a reality.</p>
+
+<p>The sad fact is that, more often than not, organizations are being held to either a subjective set of controls for comparison or, worse, a framework that may not have been disclosed or may not have any relevance to their given environment (e.g. CObIT, COSO). Auditors generally bring to the table their experience, but sadly they are rarely current or former security practitioners, nor are they typically all that technical (though this is less the case today than 10 years ago). Especially if you're dealing with the Big N audit firms, it is not unusual to get extremely green and inexperienced auditors making recommendations without having an even remotely adequate background to provide such advice.</p>
+
+<p>Instead, many auditors will cling to their control framework of choice - typically CObIT - and then try to jam that cross-wise down the throat of the audited organization, whether their guidance makes any sense at all. This is, in fact, part of a greater conspiracy by the organizations who train and certify these auditors to push their own mantras regardless of fit to the client organization. Why? For the bottom line, of course. The more closely your organization aligns to the auditor's audit framework, then the more easily the auditors can audit your organization, reducing the amount of time they spend on the audit, and thus increasing their operating profitability since most audits are performed on a flat-rate or long-term contract basis.</p>
+
+<p><strong>ISACA, AICPA, and SOX</strong></p>
+
+<p>One of the more fascinating aspects of the audit business, and a part that often rears its head during SAS 70 audits, is the background role of ISACA and the AICPA. This role first became most apparent to me when I encountered the initial push for <a target="_blank" href="http://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act">Sarbanesâ€“Oxley Act of 2002 (SOX)</a> compliance audits. SOX is a very poorly written Act that makes vague hand-waving motions about requiring better internal controls over financial processes and systems. It was drafted hastily in the wake of Enron scandal and really serves as a warning of what can happen if industry leaves regulation to Congress in the event of an ethical collapse.</p>
+
+<p>Fast-forward to the relevant section here... SOX Section 404... the requirement for annual reporting (by public companies) on the assessment of internal controls <em>as pertain to financial reporting</em>. Note the key qualifier here in that it highly limits scope. SOX has been taken by the <a target="_blank" href="http://en.wikipedia.org/wiki/Public_Company_Accounting_Oversight_Board">Public Company Accounting Oversight Board (PCAOB)</a> and the SEC and been turned into this rather egregious and nasty audit tarpit wherein publicly traded companies are now given very explicit requirements of duties to perform. In general, a risk-based approach must be used to managed these environments, with a risk assessment performed on a regular basis. However, if you listen to the ISACA/AICPA/PCAOB folks - who are oftentimes the same people, or at heavily allied - then you will see a general alignment around COSO for risk management, and ultimately a unified push toward control frameworks like CObIT.</p>
+
+<p>The interesting thing here is that SOX 404 does not mandate these frameworks. In fact, SOX 404 doesn't mandate much of anything at all. Instead, in empowering the PCAOB, and by extension the AICPA and ISACA, SOX 404 has been used to try and force publicly traded companies to use COSO and CObIT, even if companies have other preferred approaches that better match their environments.</p>
+
+<p>Given this psuedo-sanctioned pseudo-codification of COSO and CObIT under SOX 404 enforcement activities, it is often then further misconstrued that other audits, such as SAS 70, should be based on these frameworks. Of course, nothing could be further from the truth. Unfortunately, many auditors will implicitly use these frameworks as the basis for their audit guidance, oftentimes with dissonant results that steer organizations toward practices that may not make much sense in their given context whatsoever.</p>
+
+<p><strong>Auditor Independence</strong></p>
+
+<p>One of my biggest complaints with the role and empowerment of auditors today is the erosion of auditor independence. This attribute is in fact one of the key facets of SOX - one that is oftentimes downplayed by the auditors themselves. There are a couple key aspects to auditor important that are important.</p>
+
+<p>First, on its face, external auditors must not have a vested interest in the financial performance of the company they're auditing. If they do have a vested interest, then a conflict exists wherein the auditor must choose between providing a favorable audit report that could positively affect financial performance, or providing a negative audit report that could negative affect financial performance. This aspect of the rule is fairly self-evident.</p>
+
+<p>However, the second aspect of auditor importance - and one that is frequently overlooked or easily dismissed - pertains to ensuring that the auditors are not in fact running the organization that they are auditing. As a general rule, auditors are not security experts, nor are they business experts, nor are they policy experts, and so on. A good auditor will be expert in audit process, plain and simple, and will understand their role in the overall organization. Unfortunately, many auditors are ambitious and thus wish to transcend their role as "mere auditors."</p>
+
+<p>Unfortunately, if your risk and/or IT organizations are driven or run by auditors (internal OR external), then you have a serious conflict of interest in-hand that must be addressed, because the auditors are effectively writing the rules that they are then testing. That is, the rules exist in a vacuum that most likely lacks any sort of contextual relevance. More importantly, without independence, you cannot rely on the opinion of the auditors because they are codifying their biases into the rules.</p>
+
+<p>It is thus imperative that auditors have minimal vested interest in the performance of the organization. For this reason, I would caution the use of internal auditors without first putting in place very strict barrier to prevent them from having a role in writing the rules that they will later be asked to inspect as part of enforcement. This is not to say that internal audit does not have a role, especially in large organizations. Instead, it is to say that auditors should have their roles well-defined and intentionally segregated from the rest of risk management and operations to help ensure that their objectivity can be optimized.</p>
+
+<p><strong>It's All About Scope</strong></p>
+
+<p>Back to SAS 70... let's talk about one of its biggest weaknesses; a weakness that in fact applies to many audits, including PCI DSS. That weakness is scope. A standard practice in audit and assessment, and one that is particularly exercised with SAS 70, is to define a limited scope. Again, bear in mind that SAS 70 does not itself define a controls framework. As such, there is no real starting point or basis for audit. Instead, it's up to the auditor and the client to define what is to be audited. That scope can be as small or large as the client desires, with a particular tendency toward it being small. Sometimes 3rd party requirements will apply, such as contractual obligations, but otherwise the scope is purely discretionary.</p>
+
+<p>The problem here, of course, is that a client can eventually claim that they've "passed" a SAS 70 audit while barely testing anything at all. And this is of course allowed and perfectly acceptable, though if the reality were to get out, then it may end up doing more harm than good.</p>
+
+<p>At the same time, scope can be an excellent shield against auditor intrusiveness. SOX is again an excellent example. In the first year of compliance audits, it was not uncommon for the auditors to come in and tell organizations what would and would not be in scope. For the most part, this egregious violation of auditor independence resulted in massive audits that went well beyond the necessary scope. Even now I've seen cases where auditors will come in as part of the annual SOX audit and try to say that a certain area will be part of an "extra" value-add audit, even though that extra area is not part of the approved scope, and which has not really been prepared for auditor review.</p>
+
+<p>As such, it is important for client organizations to spend a reasonable amount of time defining the audit scope before the auditors arrive, and then fight vehemently against any changes in scope that auditors may push that do not have direct bearing on the desired audit activities. Do not let your auditors push you around. You're on the hook for the scope - sometimes legally (as is the case with SOX) - and thus you need to be satisfied with the audit scope.</p>
+
+<p><strong>A Snapshot in Time</strong></p>
+
+<p>I think it's conventional wisdom now, but it bears citing nonetheless. Audits, as assessments, are merely a snapshot in time. And, let's be honest, a lot can happen in a short period of time, even in the largest, slaggiest corporations. Consider, for example, a recent client. They were undertaking remediation ahead of a Type II evaluation period based in large part on Type I findings. The problem, however, was that the entire operational leadership team had changed during the course of the Type I audit. Findings that had likely been relevant and accurate at the beginning of the Type I audit 4 months earlier were now being challenged aggressively because new leaders had come onboard and had taken a more charitable view of their own teams.</p>
+
+<p>An audit or assessment is only accurate to the time at which it was performed. If it takes a month or two to close out the report, then there's a strong chance that things will change. This temporal limitation can be very vexatious in trying to perform remediation later.</p>
+
+<p><strong>Certify What?</strong></p>
+
+<p>One of the more annoying things I hear on a regular basis is that such-n-such organization has completed their "SAS 70 certification." Well, umm, no, that's not true. There is no such thing as a "SAS 70 certification." How could there be? As already noted ad nauseum, SAS 70 does not define a controls framework. As such, there's nothing to certify against. Contrast this with ISO 27001/27002, where a list of control objectives and controls are defined, and you will see the folly in claiming a SAS 70 "certification."</p>
+
+<p>What you get from a SAS 70 is an auditor's report, plain and simple. Nothing more, nothing less. It's a report with opinions, either on the completeness of the in-scope controls, or on the operating effectiveness of in-scope controls, but it is still just a report.</p>
+
+<p>Where I really choke on this notion of "SAS 70 certification" is when I find it in contracts. It's essentially a term that cannot be met. Lawyers and business people generally ignore the discrepancy and just do the needful in getting a SAS 70 completed, but if you wanted to really hinge on the fine details, this could be a real interesting test of competency. Personally, if I were writing contract terms, I think that I would be tempted to put in requirements like this just to test the competency of the other side as a basis for gauging whether we should even be working with them. Of course, IANAL, and there's probably a good reason for that... ;)</p>
+
+<p><strong>Final Thoughts</strong></p>
+
+<p>To wrap this up, here are the key take-aways for this post...<br />
+ * There is a role for audit, but it must be limited and controlled.<br />
+ * SAS 70 is just an audit process, it does not define controls.<br />
+ * Beware auditor bias and false assertions.<br />
+ * Beware attempts to under-scope or over-scope audits.<br />
+ * Bear in mind the temporal limitations of all audits and assessments.<br />
+ * In the end, audit is just one piece of the overall puzzle.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=audit&amp;limit=20';return false;" rel="tag">audit</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=auditors&amp;limit=20';return false;" rel="tag">auditors</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=insanity&amp;limit=20';return false;" rel="tag">insanity</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=SAS%2070&amp;limit=20';return false;" rel="tag">SAS 70</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>April  5, 2010  1:42 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2010/03/freeconference-is-freaking-out.html">FreeConference Is Freaking Out</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2010/04/i-am-infosec-and-so-can-you.html">I Am InfoSec, and So Can You</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

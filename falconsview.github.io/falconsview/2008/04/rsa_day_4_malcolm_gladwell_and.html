@@ -1,0 +1,286 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>RSA Day 4: Malcolm Gladwell and the Bash (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2008/04/rsa_2008_day_3.html" title="RSA 2008: Day 3" />
+   <link rel="next" href="http://www.secureconsulting.net/2008/04/rsa_2008_day_5_the_end_is_here.html" title="RSA 2008 Day 5: The End is Here" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2008/04/rsa_day_4_malcolm_gladwell_and.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/645"
+    dc:title="RSA Day 4: Malcolm Gladwell and the Bash"
+    dc:identifier="http://www.secureconsulting.net/2008/04/rsa_day_4_malcolm_gladwell_and.html"
+    dc:subject="infosec"
+    dc:description="This is a very brief middle-of-the-night, post-Codebreakers Bash post. Day 4 was clearly a coasting period... the vendors were all exhausted and in decline... but yet, it was a very good day. :)..."
+    dc:creator="Ben Tomhave"
+    dc:date="2008-04-11T02:55:22-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2008/04/rsa_day_4_malcolm_gladwell_and.html">
+<dc:title>RSA Day 4: Malcolm Gladwell and the Bash</dc:title>
+<dc:description>This is a very brief middle-of-the-night, post-Codebreakers Bash post. Day 4 was clearly a coasting period... the vendors were all exhausted and in decline... but yet, it was a very good day. :)...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2008-04-11T02:55:22-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2008/04/rsa_2008_day_3.html">&laquo; RSA 2008: Day 3</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2008/04/rsa_2008_day_5_the_end_is_here.html">RSA 2008 Day 5: The End is Here &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">RSA Day 4: Malcolm Gladwell and the Bash</h2>
+                     <div class="entry" id="entry-1846">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>This is a very brief middle-of-the-night, post-Codebreakers Bash post. Day 4 was clearly a coasting period... the vendors were all exhausted and in decline... but yet, it was a very good day. :)<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p><strong>Slow Start</strong><br />
+As mentioned in my last post, I got off to a slow start. The first session I made was at 10:50, which is unfortunate, because apparently the session before it that I wanted to see was very good. C'est la vie - you can't do everything all the time. 2 aspirin, 3 tylenol, a protein shake, creatine, and a Thermaflu tab all combined to get me functional. D'oh.</p>
+
+<p><strong>Sessions</strong><br />
+I only made 2 sessions Thursday: Mandiant's security testing preso, and the BT/CNBC panel with the Bruce and the CPO from Sun (who was quite brilliant). The Mandiant session was fine, though a lot of DUH material. I had a hard time staying awake, but otherwise it was fine. As for the BT/CNBC session, it was actually fairly decent, and I got to briefly meet the Sun CPO, who I made an interesting suggestion about privacy legislation. I also got to meet a couple high-level BT people who I'd been wanting to meet.</p>
+
+<p><strong>Keynotes</strong><br />
+I caught part of the Oracle keynote (it sucked). Better, infinitely, was Malcolm Gladwell's preso (of Blink and The Tipping Point authorship fame). He's into psychology and behaviour, which is right up my alley, which was quite cool.</p>
+
+<p><strong>Codebreakers Bash</strong><br />
+The big highlight of the day was the famous Bash, which was a ton of fun. I met some nice folks from Detroit and Toronto and got to dance a bunch. It's very funny having a dance at a major geek conference because there were several layers of watchers with no inclination to join, and moreover, a male:female ration of at least 5:1 (maybe as high as 20:1). Sorry, gents, but that's not exactly too fun. Luckily, one couple from Detroit didn't mind hanging out, and so that was all good.</p>
+
+<p>I also got a chance to chat with Bill B from the AOL days, which was cool because I never really got to know him at all. I also met Paul Kocher, who's speech Weds. I found awesome. And, lastly, I met Father Michael Pintacura, who's business card says "USA Vice Postulator" and whom were think is actually legit (based on google searches). He was dressed in clergy attire, very friendly, and possibly the head of IT for the Vatican?!? Amazing stuff, and he has an office in San Jose.</p>
+
+<p><strong>People</strong><br />
+I've touched on most of the people. I semi-met Malcolm Gladwell Thursday, which was cool. I also rode the escalator up in front of him, and the 2 sound techs behind asked me who he was. I said he was a well-known author in human psychology, behavior and culture (not security). They thought that was cool. Otherwise, most of the folks I met were either BT, or already mentioned above.</p>
+
+<p><strong>End Nearing...</strong><br />
+Friday is just a half-ish day, with the final keynote (Al Gore) at 2:15. I'll be heading out to the wharf after that for an afterglow gathering. I've really greatly enjoyed meeting tons of folks, and sincerely hope to put in a presentation for next year. We'll see what happens. Oh, that reminds me, I met Sandra from RSA who has been the conference organizer for 8 years running. Bravo to her!</p>
+
+<p>Anyway... I'm ready to go home, and wish it would be for longer than 2 nights, but oh well... it's been an excellent experience, and I greatly anticipate next year. :) If you've not been out here, then all I have to say is "WHY NOT?!?!" :)</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=2008&amp;limit=20" rel="tag">2008</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=RSA&amp;limit=20" rel="tag">RSA</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on April 11, 2008  2:55 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2008/04/rsa_day_4_malcolm_gladwell_and.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/645</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2008/04/rsa_day_4_malcolm_gladwell_and.html" rel="nofollow">RSA Day 4: Malcolm Gladwell and the Bash</a>:</p>
+                           
+                           <a id="p1648"></a>
+                           <div class="trackback" id="ping-1648">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2008/05/reflections_on_the_2008_rsa_co.html" rel="nofollow">Reflections on the 2008 RSA Conference</a> from The Falcon's View<br />
+                                    Now that it's May and I've had a few weeks to recover, I've decided that it's time to finally post a thorough retrospective piece on my first attendance of the RSA Conference in San Francisco. Overall, I had a wonderful... <a href="http://www.secureconsulting.net/2008/05/reflections_on_the_2008_rsa_co.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1648" rel="nofollow">May  9, 2008  3:50 PM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="1846" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 1846);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>April 11, 2008  2:55 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2008/04/rsa_2008_day_3.html">RSA 2008: Day 3</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2008/04/rsa_2008_day_5_the_end_is_here.html">RSA 2008 Day 5: The End is Here</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

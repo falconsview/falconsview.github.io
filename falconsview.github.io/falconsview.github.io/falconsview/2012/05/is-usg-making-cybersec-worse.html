@@ -1,0 +1,985 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2012/05/is-usg-making-cybersec-worse.html">
+<dc:title>Is the US Government Making Security Worse?</dc:title>
+<dc:description>The topic of &quot;cybersecurity&quot; is once again very hot in Washington, DC. Unfortunately, this means it&apos;s in the domain and purview of politicians, which should make any self-respecting professional wince. After all, it&apos;s not often that politicians get regulations &quot;just...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2012-05-01T15:38:12-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2012/05/is-usg-making-cybersec-worse.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2012/04/wheres-ben-may-2012-edition.html" title="Where&#039;s Ben? (May 2012 Edition)" />
+    <link rel="next bookmark" href="http://54.197.56.127/2012/05/siracon-wrap-up.html" title="SIRAcon Wrap-up" />
+    
+    
+    <title>Is the US Government Making Security Worse? - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2422" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Is the US Government Making Security Worse?</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2012-05-01T15:38:12-05:00">May  1, 2012  3:38 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>The topic of "cybersecurity" is once again very hot in Washington, DC. Unfortunately, this means it's in the domain and purview of politicians, which should make any self-respecting professional wince. After all, it's not often that politicians get regulations "just right"... one need only look at recent failures like No Child Left Educated (er, Behind, I suppose) to see just how bad things can get when politicians cross the line from legislating toward outcomes vs. legislating very specific practices. The electricity sector provides another ready example, though a bit more complex, insomuch as the detailed NERC Critical Infrastructure Protection (CIP) requirements have overwhelmed organizations that have displayed an underwhelming since of urgency or competency around the topic of cybersecurity.</p>
+
+<p>The point to this mild rant is simply this: the more deeply politicians seem to get involved with cybersecurity, the worse things seem to get. And, lest we be led astray, we should not forget that, aside from the Education sector, civilian agencies in the federal government are perhaps the worst offenders when it comes to failing to implement reasonably solid cybersecurity. There are a few reasons why I think this is the case.</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>1) NIST Is Not the Answer</strong></p>
+
+<p><a target="_blank" href="http://www.secureconsulting.net/2012/03/inevitable-devolution-of-stds.html">I've already written a bit about standards devolving into compliance regimes</a>. However, there's more that needs to be said on the topic, especially as it applies to NIST and FISMA. Of all the compliance regimes I've seen, the one operated by the US Government is the worst offender in terms of ignoring reasonable risk management functions in favor of mindless compliance with requirements that may or may not make any sense in context. Let's look at three examples of where NIST fails.</p>
+
+<p><em>RMF and "Worst Case Scenarios"</em></p>
+
+<p>NIST's <a target="_blank" href="http://csrc.nist.gov/groups/SMA/fisma/framework.html">Risk Management Framework (RMF)</a> is a prime example of compliance regimes gone bad. If RMF were to lead to performing actual risk analysis, then perhaps things would be better. Alas, it's not the case. In fact, it's worse than you might imagine. Rather than not doing risk analysis, they actually advocate doing a very poor approximation based - not on what's reasonable or realistic - but on "worst case" scenarios. It's no wonder everything in the federal space seems to be driven by <a target="_blank" href="http://en.wikipedia.org/wiki/Fear,_uncertainty_and_doubt">FUD</a>.</p>
+
+<p>Evidence of this allegation can be found in response to the first question listed under the RMF <a target="_blank" href="http://csrc.nist.gov/groups/SMA/fisma/Risk-Management-Framework/categorize/faq-categorize-step1.pdf">"Step 1 FAQs"</a> - "1. WHAT IS SECURITY CATEGORIZATION AND WHY IS IT IMPORTANT?" - which says:<br />
+<blockquote>"The security category is based on the potential impact (worst case) to an organization should certain events occur that jeopardize the information and information systems needed by the organization to accomplish its assigned mission, protect its assets and individuals, fulfill its legal responsibilities, and maintain its day-to-day functions."</blockquote><br />
+So, specifically, their "risk" assessment is based on the potential "worst case" impact. Using such an analysis will inevitably lead to poor decision-making, since almost everything can be twisted under a "worst case" mindset to have potentially catastrophic effects. This is not risk assessment or risk management: it's fear-mongering, and a lousy way of life.</p>
+
+<p><em>DOE RMP & ESCRMMI</em></p>
+
+<p>Similar thinking is now emerging within the world of the energy sector, and specifically through the DOE <a target="_blank" href="http://energy.gov/oe/services/cybersecurity/cybersecurity-risk-management-process-rmp">"Risk Management Process" (RMP)</a> - adapted directly from NIST RMF - and the DOE <a target="_blank" href="http://energy.gov/oe/electric-sector-cybersecurity-risk-management-maturity-initiative">"Electric Sector Cybersecurity Risk Management Maturity initiative" (ESCRMMI)</a>, which is not about risk management, but rather about assessing security capabilities in electric sector organizations.</p>
+
+<p>There are many issues around the energy and electric sectors (critical infrastructure in general, really), and this post is not about that. Rather, the key here is to note that the government is once again pushing a prescriptive approach, rather than trying to legislate to a desired outcome. Oh, sure, they <em>think</em> they're driving toward an outcome, but the problem is that their approach is outdated, provably wrong, and detrimental to cybersecurity improvements. These approaches are being sought because of the perception that the NERC CIP requirements haven't been adequately met, and that the electric sector is so woefully insecure that a catastrophic event is in the offing.</p>
+
+<p>Of course, as noted above, we should not be surprised by this fatalistic mindset based on "worst case" thinking - it's how they view "risk assessment"! However, it's also worth pointing out that electricity is still quite reliable and that, despite incidents and outages, the built-in fail-safe reliability measures have - by design! - prevented a major catastrophe. Unfortunately, any risk assessment and analysis that does not take into consideration the probability of given scenario impacts will overlook these truths in favor of FUD and rhetoric. It should give us pause and make us question the agenda(s) that may be in play (e.g., DHS and US CyberCommand perhaps making a play for more direct control over critical infrastructure cybersecurity - not that they have any track record of success in this space!).</p>
+
+<p><em>Quashing Innovation Through Specificity</em></p>
+
+<p>All of these various initiatives have one thing in common: They're overly prescriptive, leading to mindless compliance regimes, and resulting in a detrimental impact on creativity and innovation. If the government applies it's old school thinking to the problem, and then prescribes in great detail their old school approach, then we should not be surprised when a) it fails, and b) it causes people not to seek improvements, but to simply do (and think) less. We do not need more mindless compliance today; we need more innovation!</p>
+
+<p><strong>2) Poor White House Leadership</strong></p>
+
+<p>One might want to eagerly attribute government compliance regimes to Congress since they are ultimately the ones who created the organizing frameworks. However, I think that attribution would be misplaced. Specifically, I think that the White House is increasingly to blame for the wrong directions being followed. Many had high hopes when <a target="_blank" href="http://en.wikipedia.org/wiki/Howard_Schmidt">Howard Schmidt</a> was appointed as Cybersecurity Coordinator for the Obama Administration. Unfortunately, if what I've seen and heard lately is any indication, the wheels are coming off this crazy train, and fast.</p>
+
+<p>Lest you think this is just random innuendo, consider a couple examples... the first is DOE ESCRMMI (mentioned above)... there were a couple interesting attributes to this project. The "ask" from the White House was "assess the security capabilities of electric sector organizations." Somehow this turned into a CMM-style "risk maturity model" that has little to do with "risk" and isn't even really about measuring capability maturity. Rather, an incredibly short timeframe (by government standards) was set to get the assessment running (about 4 months). As such, those behind the initiative appear to have spent more time going down a familiar road (e.g., building off of the Smart Grid CMM) rather than researching and evaluating other viable methods. Ultimately, this comes directly back to the White House.</p>
+
+<p>In at least one other case, I've heard anecdotally that the White House is pushing back on a current line of innovation, questioning the trustworthiness of key components, and advocating an alternative approach that essentially scraps the entire innovation, with the added "plus" of asking for a complete 180-degree flip in data flow (as if this is something that can just be magically done). No clear indication has been revealed thus far as to why their approach - which seems to cater to the whims of auditors (because they're never wrong) - would be preferable. Suffice to say, it's frustrating to be an industry where innovation ends up being actively undermined by people living in an antiquated mindset. Why enable the current failed practices when the important aspects can be automated, freeing traditional resources (like auditors) to focus on more important concerns? (btw, this is not a new problem - <a target="_blank" href="http://www.govinfosecurity.com/blogs/proof-continuous-monitoring-does-works-p-591/op-1">it was mentioned at least as far back as 2010</a> when the current wave of "continuous monitoring" initiatives were starting to gain traction)</p>
+
+<p>If only this was our only challenge...</p>
+
+<p><strong>3) Counter-Productive Legislation</strong></p>
+
+<p>If we're looking to politicians to solve our problems, then I hate to say it, but that's just one more thing we're wrong about. More importantly, we do not need inexpert politicians telling us <em>how</em> to do our jobs. Rather, where regulations are often most effective is in legislating a desired outcome, such as legal defensibility, survivability, or data privacy. Alas, in this age of insipid corruption and excessive corporate influence, we are seeing regulations that are increasingly detailed, and obviously designed to either benefit specific special interests, or be so detailed as to be unsupportable.</p>
+
+<p>To make matters worse, we seem to be in an era of unprecedented government overreach, with politicians not only selling-out wholesale (such as with <a target="_blank" href="https://www.eff.org/issues/acta">ACTA</a> and <a target="_blank" href="https://www.eff.org/issues/coica-internet-censorship-and-copyright-bill">SOPA/PIPA</a>), but also trying to grab more and more power in the digital realm (such as with <a target="_blank" href="http://cyberspying.eff.org/">CISPA</a>).</p>
+
+<p>So, to bring things back full-circle... not only are we seeing exceedingly specific pieces of legislation, sponsored by unqualified amateurs, based on grossly outdated concepts, and serving the needs of special interests, but they're also written in such a way that they expand the role and power of the central government, which <a target="_blank" href="http://www.infosecurity-magazine.com/view/25393/cyberattacks-on-us-federal-it-system-soared-680-in-five-years/">cannot even seem to secure its own systems</a>. This doesn't strike me as a recipe for success. In fact, I think I'll go so far as to say that "no good can come of this."</p>
+
+<p>More importantly, we need to mindful of any regulation that is so specific as to dictate <em>how</em> to do cybersecurity. Such a bill is not productive, and is immediately in danger of becoming obsolete and ineffective before it's signed into law. Instead, the focus needs to be on legislating toward a desirable future state; one that puts a premium on rigorous, defensible risk management, increased visibility and detection, continuous monitoring and reporting that helps shorten the lifecycle on incidents, and an overall approach that ensures survivability rather than implementation of arbitrary controls that may or (more likely) may not make any appreciable difference.</p>
+
+<p><strong>Closing Thoughts</strong></p>
+
+<p>Allow me to close by doing what I've done many times in the past: drawing a parallel with education. We've seen the impact of No Child Left Educated (er, Behind). Schools have shifted dramatically away from "education" to "training," with the end result of teaching to test, incentivizing teachers to cheat in order to save their own jobs, and an overall effect of decreased educational quality. This is a prime example of federal government overreach making a bad situation worse.</p>
+
+<p>Now, in contrast, let's look at the public school system in New Orleans. Yes, that's right, New Orleans - the Big Easy - a notoriously low-end urban environment that historically produces violent drop-outs. According to <a target="_blank" href="http://www.washingtonpost.com/opinions/the-big-easys-school-revolution/2012/04/27/gIQAS4bDmT_story.html">a recent OpEd in the Washington Post</a>, the schools there have started improving dramatically in the aftermath and recovery from Hurricane Katrina in 2005. Why? It seems that the local politicians have gotten out of the way of teachers and administrators, and have shifted to a more outcome-oriented approach. With a directive to make the schools better, and holding people accountable, the results are quite interesting.</p>
+
+<p>The only major negative I still see in the piece is the use of standardized tests as the benchmark of success. As such, this may just be an example of effectively teaching to the test. However, the point still stands: performance increased while politician intervention decreased. In general, innovation thrives when it's not being actively quashed by those in power.</p>
+
+<p>Suffice to say, it's a small victory, but a positive sign. Hopefully it's an early indicator of changes in other areas, including changes in cybersecurity. If ever there was a time to innovate and start demonstrating a better reality - one that beats out the constant deluge of FUD - then now is it. We can get there by making better use of risk analysis techniques, as well as by demonstrating that reasonable outcomes are achievable. Showing positive changes that break from the failed mindset(s) of the past would be a great way to counter all the bad changes that the US Government has been promoting as of late. Here's to hoping for a better future!</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/musings/" rel="tag">musings</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>May  1, 2012  3:38 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2012/04/wheres-ben-may-2012-edition.html">Where's Ben? (May 2012 Edition)</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2012/05/siracon-wrap-up.html">SIRAcon Wrap-up</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

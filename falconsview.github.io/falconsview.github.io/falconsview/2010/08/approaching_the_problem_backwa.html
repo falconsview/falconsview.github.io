@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Approaching the Problem Backwards (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2010/08/cyber_war_and_the_value_of_fud.html" title="Cyber War and the Value of FUD" />
+   <link rel="next" href="http://www.secureconsulting.net/2010/09/missing_the_defense_in_dod.html" title="Missing the &quot;Defense&quot; In DoD? " />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2010/08/approaching_the_problem_backwa.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/1053"
+    dc:title="Approaching the Problem Backwards"
+    dc:identifier="http://www.secureconsulting.net/2010/08/approaching_the_problem_backwa.html"
+    dc:subject="infosec"
+    dc:description="I&apos;ve read recently, with much interest, a post by Martin McKeay about how he would redesign the PCI framework, as well as an in-depth summary from InfoLawGroup about the most recent entry into the draft legislation pool on security and..."
+    dc:creator="Ben Tomhave"
+    dc:date="2010-08-24T11:08:14-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2010/08/approaching_the_problem_backwa.html">
+<dc:title>Approaching the Problem Backwards</dc:title>
+<dc:description>I&apos;ve read recently, with much interest, a post by Martin McKeay about how he would redesign the PCI framework, as well as an in-depth summary from InfoLawGroup about the most recent entry into the draft legislation pool on security and...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-08-24T11:08:14-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2010/08/cyber_war_and_the_value_of_fud.html">&laquo; Cyber War and the Value of FUD</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2010/09/missing_the_defense_in_dod.html">Missing the "Defense" In DoD?  &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Approaching the Problem Backwards</h2>
+                     <div class="entry" id="entry-2286">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>I've read recently, with much interest, <a target="_blank" href="http://www.mckeay.net/2010/08/14/how-would-i-write-a-framework-to-replace-pci/">a post by Martin McKeay about how he would redesign the PCI framework</a>, as well as <a target="_blank" href="http://www.infolawgroup.com/2010/08/articles/data-privacy-law-or-regulation/yet-another-proposed-federal-data-security-and-breach-notification-bill-senators-rockefeller-and-pryor-jump-into-the-fray/">an in-depth summary from InfoLawGroup</a> about the most recent entry into the draft legislation pool on security and breach notification. The more I think about this notion of creating standards and laws that spell out certain requirements, the more I think we've gotten it completely backwards. It actually makes me nervous when a regulation goes into such extensive detail, a la PCI DSS, that it tells organizations exactly what they need to do, as if one could possibly say universally what is most appropriate for every organization in their context with their own unique risk profile.</p>
+
+<p>As further evidence that I think we've approach things from the wrong perspective, consider Seth Godin's recent post, <a target="_blank" href="http://sethgodin.typepad.com/seths_blog/2010/08/resilience-and-the-incredible-power-of-slow-change.html">"Resilience and the incredible power of slow change,"</a> in which he says:<br />
+<blockquote>"Cultural shifts create long terms evolutionary changes. Cultural shifts, changes in habits, technologies that slowly obsolete a product or a system are the ones that change our lives. Watch for shifts in systems and processes and expectations. That's what makes change, not big events."</blockquote>He's absolutely hit the nail on the head here. What we need is a culture shift, not some lightning bolt from heaven that suddenly forces a massive corrective action. We're all living with institutional inertia that greatly limits our ability to chart instantaneous course corrections. Instead of mandating long lists of penny-ante requirements, we instead need requirements that will start initiating cultural shifts. In this regard, if PCI DSS 2.0 actually contained a meaningful rewrite, then I would think the new 3-year release cycle would be ok.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p>In keeping with Martin's post, all of my commentary then begs the question "How would you rewrite PCI DSS to better initiate a cultural shift?" Glibly, I don't know that PCI DSS is really worth saving since it lacks legal teeth. Realistically, it seems that the card brands will continue down this path, for better or for worse, in an effort to help control (if not reduce) the fraud costs that they bear. That being said, following are some key notions that I think would be useful to see codified, either in PCI DSS or, preferably, in federal law.</p>
+
+<p><strong>Legal Defensibility</strong></p>
+
+<p>One of the first key steps is in creating the right market conditions that would encourage a cultural shift. In that regard, it seems that the logical first step would be pushing through a new legal framework that clearly and concisely creates a liability burden for all organizations as it pertains to protecting data, protecting corporate assets, and just generally implementing adequate security measures. I wrote about codifying legal defensibility in my post <a target="_blank" href="http://www.secureconsulting.net/2010/03/legal_defensibility_doctrine.html">"Legal Defensibility Doctrine"</a> this past March, saying:<br />
+<blockquote>"Part of the elegance in legal defensibility is that it is flexible in a way few other regulations currently are. And, unlike regulations like Sarbanes-Oxley (SOX) or Gram-Leach-Bliley (GLBA), though legal defensibility would not specify exact technical countermeasures, it does create the basis for legal arguments that go to the heart of competence and negligence in the managing of the business. If there is one thing American business culture could use right now, then it is a legal framework that sets the machinery in motion to start building case law around what can be reasonably expected of businesses in terms of protecting themselves and building long-term value."</blockquote>Some will undoubtedly point to SOX and GLBA and remark that if you don't spell out detailed requirements, then nothing will get done. I think such a criticism is valid in the short-term, but goes away when the lawsuits start rolling out. Once the legal framework is in place granting standing to stakeholders, customers, stockholders, business partners, etc., independent of a demonstrated loss (or at least lowering the bar for gaining standing), then this problem ends up working itself out. The key notion to keep in mind here, though, is that we're not looking for an instantaneous change, but rather expect - realistically - to see changes slowly build momentum over the course of several years. You'll first get initial cases that have no real precedent, but then as the judiciary and plaintiffs begin to improve their awareness and savvy, suddenly there will be a surge that helps build significant precedence and case law around the topic.</p>
+
+<p>In the end, then, this cultural shift will hinge on what is or is not "reasonably foreseeable." The arguments around this topic could be epic, but it also shifts the nature of the conversation. If your organization has already proactively built a legal defense that documents your security decisions using sound decision analysis methods, then the burden will shift to the plaintiff to demonstrate that your organization was negligent, which I believe will ultimately come back to this idea of "reasonably foreseeable." Ever better, the courts already have experience with this topic when it comes to data retention, legal holds, and the like, which will I think lead to a better world for all (or so I can dream).</p>
+
+<p><strong>Formal Risk Analysis</strong></p>
+
+<p>At it's core, legal defensibility is really just a risk management strategy, which means that you would necessarily need to perform formal risk analysis. Nonetheless, it seems to make sense to somehow mandate use of formal risk analysis methods as part of an overall decision management approach. How one would go about doing this in a regulation is perhaps a bit squishy, but I think that if you combine it with a mandate for legal defensibility, then it follows naturally that if your decisions are not made on reasonably sound risk analyses, then your position will become less defensible. Such a mandate in this area could also help spur investment and research into this area to help move things forward.</p>
+
+<p><strong>Mandatory Breach Reporting</strong></p>
+
+<p>While it is an urban legend that there isn't adequate data to perform a reasonable quantitative risk analysis, it is still increasingly important that we improve our data around security and breaches. Whether public or private, all breaches should be mandatorily reported to a national data breach clearinghouse (like <a target="_blank" href="http://datalossdb.org/">DatalossDB.org</a>) where the data can be reasonably anonymized (not that it necessarily needs to be) and classified according to a consistent taxonomy (sector, size, nature of the breach, etc., such as VerIS Framework might provide).</p>
+
+<p>Mandatory breach reporting is needed for two main purposes. First, it leads to an improved sense of transparency that is necessary to help rebuild trust relationships. If organizations are working through breaches in secret, then how can we as consumers, stakeholders, stockholders, business partners, or even regulators work to document conformance with the above principles? Second, breach reporting will help us better understand the threat landscape. We know that a handful of large breaches in the past couple years leveraged off a fairly antiquated SQL injection attack. If we had more data, then we could start putting some bricks in place in the foundation of what is "reasonably foreseeable," which in turn would help drive legally defensible strategies.</p>
+
+<p><strong>Common-Sense Policies</strong></p>
+
+<p>One thing Martin says that I disagree with is that "Everything flows from policy." I don't actually believe this to be true, and in fact would argue that policies are at best the 3rd step in the chain after thoroughly defining business requirements and performing a comprehensive risk analysis. Consider v2 of the TEAM Model:</p>
+
+<center><a target="_blank" href="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"><img border="0" hspace="5" vspace="5" width="50%" height="50%" src="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"></a></center>
+
+<p>The business, and by extension its various requirements, must be at the core of any security program. Once you define what's important and necessary, then and only then can you then progress to determining risk tolerance. Once requirements and risk tolerance are establish, THEN you can proceed to writing security policies that are applicable to the business and useful.</p>
+
+<p>Unfortunately, today we don't generally have sensible policies. They're rarely linked to either business requirements or a risk management strategy beyond meeting a compliance checklist item. Case-in-point, as I noted earlier this month, consider policy requirements for passwords (see: <a target="_blank" href="http://www.secureconsulting.net/2010/08/password_complexity_is_lame.html">"Password Complexity is Lame"</a>). They typically focus on complexity, when the simple fact is that length is now more important (ref: <a target="_blank" href="http://www.theregister.co.uk/2010/08/16/password_security_analysis/">"Short passwords 'hopelessly inadequate', say boffins"</a>).</p>
+
+<p>The point here is this: policies should be driven by the risk management strategy, which should in turn by driven by the business and business requirements. In this sense, everything flows from the business, not from policies. We need to make sure that policies are relevant, sensible, and enforceable so that they will contribute to the desired cultural shift.</p>
+
+<p><strong>Closing Thoughts</strong></p>
+
+<p>There are likely other areas that should be considered for inclusion, too, such as reforming awareness training to an approach that further enables culture shifting. The trick to regulations like these is creating the conditions that make cultural change natural and (reasonably) optimal. The idea is that you allow people to make their own decisions, but that you encourage a preferred decision by making it less painful than other possible choices. Specifically, by creating a regulatory environment where making sound, well-reasoned choices works in your favor, while making poor choices results in strong negative consequences, then we can start to have hope once again that executives will start to understand the need for a new direction. For employees, this approach ideally drives a narrowing of the human paradox gap, increasing the connection between actions and consequences.</p>
+
+<p>It seems natural that some form of regulation is necessary today. Unfortunately, we live in a bog of our making, mired in checklists and faux best practices. Until we can shift culture away from this failed mindset to something much more prescient, we will only continue to see the same problems repeating over and over again. While industry regulations like PCI DSS may have moved the needle a little bit, their impact has not generally encompassed the whole of the enterprise, but rather been partitioned in such a manner as to minimize the overall effect on the business. It's time to change things up, eliminating exceptions and mandating what is sensible and useful. If we create the right environment for generating good decision-making, then there is hope that it will lead to a desirable culture shift.<br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=culture&amp;limit=20" rel="tag">culture</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=PCI&amp;limit=20" rel="tag">PCI</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=shift&amp;limit=20" rel="tag">shift</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on August 24, 2010 11:08 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2010/08/approaching_the_problem_backwa.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/1053</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (1)</h3>
+                           
+                                 <a id="c000795"></a>
+                                 <div class="comment" id="comment-795">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.thirddefense.com" href="http://www.thirddefense.com" rel="nofollow">Jared Pfost</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Excellent post. Another area I'd like to see ingrained culturally is measuring the performance of security services i.e. metrics. As you mention, over time we'll standardize on which metrics and target values are Defensible. Audits are fine for verifying policy conformance. However metrics shine accountability on sustained performance. Metrics are a wonderful culture hack.</p>
+
+<p>ps. "culture hacks" has a nice ring to it. Might make for a good blog series?</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.thirddefense.com" href="http://www.thirddefense.com" rel="nofollow">Jared Pfost</a>  |
+                                          <a href="#comment-795">August 24, 2010  4:44 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-795" title="Permalink to this comment">August 24, 2010 16:44</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2286" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2286);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>August 24, 2010 11:08 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2010/08/cyber_war_and_the_value_of_fud.html">Cyber War and the Value of FUD</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2010/09/missing_the_defense_in_dod.html">Missing the "Defense" In DoD? </a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

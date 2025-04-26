@@ -1,0 +1,1090 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2009/08/defensibility-and-recoverabili.html">
+<dc:title>Defensibility and Recoverability</dc:title>
+<dc:description>If attending Defcon and meeting some of the hacker crews taught me anything this year, it&apos;s that we&apos;ve pretty much already lost the war and are just squabbling in petty battles. That we continue to think and talk like there...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-08-21T14:20:48-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2009/08/defensibility-and-recoverabili.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2009/08/tokenization-someone-else-gets.html" title="Tokenization: Someone Else Gets It" />
+    <link rel="next bookmark" href="http://54.197.56.127/2009/08/request-fisma-data-transparenc.html" title="Request FISMA Data Transparency" />
+    
+    
+    <title>Defensibility and Recoverability - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2155" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Defensibility and Recoverability</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2009-08-21T14:20:48-05:00">August 21, 2009  2:20 PM</abbr>
+
+                                        </span>
+
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2009/08/defensibility-and-recoverabili.html#trackbacks">6 TrackBacks</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>If attending Defcon and meeting some of the hacker crews taught me anything this year, it's that we've pretty much already lost the war and are just squabbling in petty battles. That we continue to think and talk like there is a winnable case just delays the inevitable. It's not <em>if</em> your organization will be compromised, it's <strong><em>when</em></strong>. If you don't understand and accept this argument, then you're just setting yourself up for a lot of unnecessary pain and suffering.</p>
+
+<p>As cynical as these comments may seem, the simple fact is that the security industry is not right. For that matter, business isn't all that right, either. Whether it be obsession with signature-based tools, or shoddy accounting practices, a fallacious belief that compliance equals security, or simply deluding yourself into not thinking you'd be a target, the outcome is always the same: exposure leads to compromise leads to loss. Yet why be bound by this outmoded way of thinking? Why simply accept that things are broken?<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>It's long been my belief that there are proactive measures that can be taken to reduce exposure. The problem, however, has been one of gauging when you've done "enough." When are your efforts complete? The general fall-back is "industry best practices," but what is the objective being achieved? I've come to believe that there are two key objectives that should be targeted through security, governance, and risk management practices: defensibility and recoverability. Neither of these terms, or their associated concepts, are new, but I felt it was important to highlight them again, and particularly with a twist that you may find new or different.</p>
+
+<p><strong>Defensibility</strong></p>
+
+<p>Historically, when thinking about defensibility, we've usually correlated the concept with something like Defense in Depth (DiD). DiD talks about setting up layered controls within an environment so that if one control fails, then the others will compensate and contain or stop the resultant incident. This notion is all good and fine until one encounters <a href="http://www.securityfocus.com/archive/1/504407">Pete Herzog's MÃ¶bius Defense presentation</a> and you realize that "wow, my DiD isn't really very deep."</p>
+
+<p>The flaw in logic is thinking about defensibility in technical terms. It's not really about the tools you use to defense yourself - or, at least, it should not be. Instead, it should be about legal protection for your organization. Defensibility in the legal community is about establishing a position against which arguments (or accusations), such as on negligence, liability, or criminal wrong-doing, can be countered from sound footing. That is, when your organization has a breach, it can come to the table and demonstrate that it had in fact performed due diligence and can prove that it had upheld a reasonable standard of care.</p>
+
+<p>Using this perspective of legal defensibility changes the game a bit, or at least it should for the techies in the crowd. On the surface, it may seem like it's regressing to a stance of focusing on "best practices" (which Scott Adams, via Dilbert, termed "mediocrity"), which to a point would be true, but beyond that it asks the question: Did you do all that was reasonable in protecting your corporate assets? A subjective question to which would come a subjective answer, but it's an important point to carry forward.</p>
+
+<p>Perhaps the best recent example that I can provide of failing to establish a defensible position is of embattled Heartland CEO Robert Carr (see <a href="http://www.mckeay.net/2009/08/18/they-didnt-just-hack-heartland/">here</a> and <a href="http://chaordicmind.com/blog/2009/08/16/personal-responsibility-in-pci/">here</a> for some good summaries of commentary). In the story from Carr we learn that Heartland was compromised by a relatively old school attack, by a known perpetrator, through systems deemed outside the scope of PCI DSS. More importantly, however, Carr reveals that he thought that PCI compliance equaled security, and thus thought enough was being done. Whether or not this is in fact true can be debated endlessly, but the biggest point to take away from this is that his arguments are weak and indefensible. That is, he admitted to focusing only on certain systems - and even on a limited set of protections for those systems - rather than working to establish a defensible position for the entire enterprise.</p>
+
+<p>Defensibility should be one of your top goals in making arguments for implementing changes in your environment. Forget about risk for a minute as the sole focus of your program (don't forget it about it permanently, because you will need a risk management program to help demonstrate defensibility) and instead consider that if you cannot make an coherent argument in front of 12 angry men that your organization is doing what is reasonable to protect company assets, then you need to identify those gaps and start making real changes.</p>
+
+<p><strong>Recoverability</strong></p>
+
+<p>If the basis of your proactive initiatives is seeking a defensible position, then at the same time you must invest in recoverability. Again, it's not a question of if, but when, you will be compromised. If you work from this assumption, then the second key focus needed is on recoverability. This topic can stretch into multiple directions and layers, about which much has been written, but it cannot be stressed enough. If you do not have regular backups in place of data important to the business, then you are setting yourself up for failure. If you do not have alternative location and communication plans in place addressing natural disasters and epidemics, then you are setting yourself up for failure. If you do not have personnel employed or on retainer to assist with forensics and incident response, then you are setting yourself up for failure.</p>
+
+<p>A key part of recoverability also ties into architecture. How compartmentalized are data and systems within your organization? Can there be more compartmentalization? Also, what other controls are in place that would hasten recover and lessen the impact of a breach? Data encryption? Remote wipe for mobile devices? <a href="http://www.absolute.com/">LoJack for Laptops</a>? Central data storage that has secure access and strong authentication? A legal team that understands tech issues?</p>
+
+<p>In traditional language, we're talking about business continuity planning and disaster recovery plans. The objective is clear: identify what's important and then model threats against those things to build contingency plans. Because, again, the assumption should always be that something bad will happen some day. If it never does, fine, but the chances of that being true are slim to none.</p>
+
+<p>And, by the way, don't forget about logging and monitoring as a key component of recoverability. If you don't have extensive logs of what's happening with your apps and systems, then your options for recovery will be highly limited. How can you prevent the same bad thing from happening again if you don't know what happened in the first place.</p>
+
+<p><strong>Conclusion</strong></p>
+
+<p>The point to this rambling is quite simple: it's time to change our thinking and approach to assurance management. Instead of getting sucked into the black hole of fighting against each new threat and vulnerability, we instead need to structure programs around a defensible argument of due diligence and reasonable care. And, because we know that something bad will happen some day, we must have refined and thorough plans in place to ensure effective and efficient recoverability from incidents.</p>
+
+<p>None of this should sound new, but it should give you pause to reconsider current initiatives. If the war is lost, then perhaps it's time to change the battlefield to one where we can at least feel a little better about our efforts and rekindle hope that perhaps there's a reasonable cause for action. Perhaps this is little solace, but it at least gives us an opportunity to regroup and refocus efforts (such as around data encryption and key management).</p>
+
+<p><em>(Note: cross-posted from the <a href=")http://www.t2pa.com/cores/security-and-privacy/practical-security">Truth to Power Association Practical Security Core</a>.)</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=assurance&amp;limit=20';return false;" rel="tag">assurance</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=defensibility&amp;limit=20';return false;" rel="tag">defensibility</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=recoverability&amp;limit=20';return false;" rel="tag">recoverability</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=security&amp;limit=20';return false;" rel="tag">security</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">6 TrackBacks</h2>
+
+    
+    
+
+
+    
+    
+        
+    <div class="trackbacks-content">
+        
+        <div class="trackback" id="ping-1680">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2009/10/surviving_in_degraded_conditio.html" rel="nofollow">Surviving in Degraded Conditions: A Human Analogy</a> from The Falcon's View on <a href="#ping-1680" rel="nofollow">October  5, 2009  3:38 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        If you've been following my writing of late, you'll know that I've hopped on the Survivability bandwagon with both feet (see my blog post "Defensibility and Recoverability" and the slides from my recent full-day course "Total Enterprise Assurance"). Ke... <a href="http://www.secureconsulting.net/2009/10/surviving_in_degraded_conditio.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div class="trackback" id="ping-1686">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">How NOT To Build a Security Program</a> from The Falcon's View on <a href="#ping-1686" rel="nofollow">November 13, 2009  5:15 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        Andy Willingham (Andy ITGuy, @andywillingham) had a post up early this week titled "Building a security program from the ground up". It's an interesting read, though a bit on the naive side. Having just come out of an environment where... <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div class="trackback" id="ping-1690">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html" rel="nofollow">Creating Epic Fail Conditions: PCI and Best Practices</a> from The Falcon's View on <a href="#ping-1690" rel="nofollow">December  4, 2009  4:58 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        I grow increasingly impatient over the entrenched status quo. Throughout all the blah-blah from vendors, analysts, consultants, etc., there is very little new - let alone hopeful - news to look forward to. Why? Because the old school mindset fails... <a href="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div class="trackback" id="ping-1698">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2010/03/legal_defensibility_doctrine.html" rel="nofollow">Legal Defensibility Doctrine</a> from The Falcon's View on <a href="#ping-1698" rel="nofollow">March 24, 2010 10:56 AM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        In August 2009 I wrote about "Defensibility and Recoverability", in which I started developing the notion of using a legal basis for building a defensible position. I later expanded on this notion in the post "Creating Epic Fail Conditions: PCI... <a href="http://www.secureconsulting.net/2010/03/legal_defensibility_doctrine.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div class="trackback" id="ping-1702">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2010/06/its_your_methods_not_your_madn.html" rel="nofollow">It's Your Methods, Not Your Madness</a> from The Falcon's View on <a href="#ping-1702" rel="nofollow">June  1, 2010  4:04 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        There has been a lot of negative, cynical chatter lately about risk assessment and risk management. The average person doesn't understand it, and people who should understand it oftentimes throw up their hands in despair when citing examples such as... <a href="http://www.secureconsulting.net/2010/06/its_your_methods_not_your_madn.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div class="trackback" id="ping-1732">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2010/03/legal-defensibility-doctrine.html" rel="nofollow">Legal Defensibility Doctrine</a> from The Falcon's View on <a href="#ping-1732" rel="nofollow">March 14, 2011  4:49 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        In August 2009 I wrote about "Defensibility and Recoverability", in which I started developing the notion of using a legal basis for building a defensible position. I later expanded on this notion in the post "Creating Epic Fail Conditions: PCI... <a href="http://www.secureconsulting.net/2010/03/legal-defensibility-doctrine.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+</div>
+
+
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>August 21, 2009  2:20 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2009/08/tokenization-someone-else-gets.html">Tokenization: Someone Else Gets It</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2009/08/request-fisma-data-transparenc.html">Request FISMA Data Transparency</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

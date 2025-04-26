@@ -1,0 +1,1414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2009/02/pci-dss-v12-in-a-nutshell.html">
+<dc:title>PCI DSS v1.2 in a Nutshell</dc:title>
+<dc:description>I&apos;ve gotten to the point that I&apos;m tired of continually referring back to the PCI DSS document over and over again simply to figure out what it is that still needs to be done. In order to better wrap my...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-02-12T18:05:55-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2009/02/pci-dss-v12-in-a-nutshell.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2009/02/sports-and-risk-decisions.html" title="Sports and Risk Decisions" />
+    <link rel="next bookmark" href="http://54.197.56.127/2009/02/some-random-security-thoughts.html" title="Some Random Security Thoughts" />
+    
+    
+    <title>PCI DSS v1.2 in a Nutshell - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2069" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">PCI DSS v1.2 in a Nutshell</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2009-02-12T18:05:55-05:00">February 12, 2009  6:05 PM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2009/02/pci-dss-v12-in-a-nutshell.html#comments">4 Comments</a>
+
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2009/02/pci-dss-v12-in-a-nutshell.html#trackbacks">1 TrackBack</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>I've gotten to the point that I'm tired of continually referring back to the PCI DSS document over and over again simply to figure out what it is that still needs to be done. In order to better wrap my brain around things, then, I decided to summarize the requirements as best as possible, including specifying action items under each high-level requirement based on the detailed requirements contained therein. Since I found this to be useful, I thought others might, too. Comments extremely welcomed as improving this benefits everyone. In terms of length, this fits into a reasonably-formatted 12-page document now, as opposed to the 59 pages used in the standard.</p>
+
+<p><strong>I. Introduction</strong></p>
+
+<p>The Payment Card Industry Data Security Standard (PCI DSS, or PCI for shore) version 1.2 was released in Fall 2008. This release was the third iteration of PCI, and represents its continuing evolution. Version 1.2 is structured in the manner of the audit procedures guide of previous versions, making the standard easier to comprehend from an implementation standpoint. That being said, the standard lacks an implementation guide that sets forth action items against which an enterprise can execute. That is the goal of this document.</p>
+
+<p><strong>Scope of Requirements</strong></p>
+
+<p>Contrary to popular belief, not all requirements are limited to just the cardholder data. As such, it is imperative that the scope of requirements be carefully considered and understood when planning for remediation.</p>
+
+<p><strong>Reference</strong><br />
+The full standard and supporting documentation is available from:<br />
+<a href="https://www.pcisecuritystandards.org/">https://www.pcisecuritystandards.org/</a></p>
+
+<p><strong>Document Approach</strong><br />
+The approach of this document is to list a requirement, summarize it as concisely as possible, and then list actionable requirements. All statements are derived directly from PCI DSS 1.2.</p>
+
+<p><strong>Disclaimer</strong><br />
+The author is not a PCI Qualified Security Assessor (QSA). When in doubt, it is best to err on the side of caution. If youâ€™re subject to external assessment by a QSA, then you should work closely with them to get questions answered suitably, especially in the case of planned compensating controls.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>II. The Requirements and Commentary</strong></p>
+
+<p>Following are the requirements listed within PCI with associated summary commentary and specification of actionable items.</p>
+
+<p><strong>Requirement:</strong><br />
+Requirement 1: Install and maintain a firewall configuration to protect cardholder data</p>
+
+<p><strong>Summary:</strong><br />
+You need to implement a DMZ for your cardholder environment, within which you need to setup a bubble that contains the database wherein cardholder data is stored. You need to establish formal processes for approving and testing all firewall and router configurations and changes.</p>
+
+<p>As part of this process, a current network diagram must be maintained, along with documentation of roles and responsibilities, and of all authorized services/ports that are exposed, along with a justification and description of security measures taken. In general, all "untrusted" network connections must be firewalled, including to the Internet, partner networks, and wireless environments. Rules must be narrowly focused, limiting both ingress and egress traffic.</p>
+
+<p>Access controls into the cardholder environment must be IP-specific, must not expose internal (RFC1918) addresses (such as by using NAT with IP masquerading), and servers should not be allowed to open new egress connections. The firewalls must not be bypassable to the Internet and must be stateful inspection type firewalls. All rule sets must be reviewed at least every 6 months.</p>
+
+<p><strong>Action Items:</strong><br />
+1. Establish firewall and router configuration standards.<br />
+ * Document formal process for approving and testing all connections and changes.<br />
+ * Maintain a current network diagram.<br />
+ * A firewall is required at each Internet and DMZ connection point.<br />
+ * Document roles and responsibilities for network management.<br />
+ * All services/ports must be documented, justified, and secured.<br />
+ * Rule sets must be reviewed at least every 6 months.</p>
+
+<p>2. Firewall off untrusted networks, including the Internet and wireless networks.<br />
+ * An â€œuntrusted networkâ€ is any network not directly owned, controlled, or managed by your organization.<br />
+ * Implement a DMZ for cardholder data within a further internal zone containing the database with cardholder data (a â€œbubbleâ€ or â€œenclaveâ€).<br />
+ * Specific configuration practices: use IP-specific rules that restrict both ingress and egress traffic based on a default deny-all stance, prevent bypassing the firewall, route internal address internally rather than through the internet, use stateful inspection firewalls, use NAT with IP masquerading to limit exposure of RFC1918 IP space, and be sure to properly secure, synchronize, and backup router and firewall configurations.<br />
+ * 1.3.5 says â€œRestrict outbound traffic from the cardholder data environment to the Internet such that outbound traffic can only access IP addresses within the DMZ.â€ This requirement seems to be poorly written, but appears to mean that database servers in the bubble within the overall cardholder DMZ should only be allowed access to servers in the DMZ, and to nowhere else. Such a requirement could introduce interesting challenges for patch and vulnerability management if strictly adhered to.</p>
+
+<p>3. Personal firewall software is required on mobile and employee-owned computers with direct Internet access.</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 2: Do not use vendor-supplied defaults for system passwords and other security parameters</p>
+
+<p><strong>Summary:</strong><br />
+Change all vendor defaults. This includes passwords, SSIDs, SNMP strings, and anything else that could be used to expose cardholder data. Additionally, system configuration standards must be developed based on known good practices, including limiting to one primary function per server, disabling unnecessary and insecure services and protocols, configuring security parameters as appropriate, and removing unnecessary files and components. Remote administrative access must use a secured protocol.</p>
+
+<p><strong>Action Items:</strong><br />
+1. Change default passwords, wireless SSIDs, and SNMP strings before deployment.</p>
+
+<p>2. Develop system configuration standards based on known good practices that address the following:<br />
+ * One primary function per server<br />
+ * Disable unnecessary and insecure services and protocols<br />
+ * Configure security parameter as appropriate<br />
+ * Remove unnecessary files and components</p>
+
+<p>3. Remote administration must use a secured protocol.</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 3: Protect stored cardholder data</p>
+
+<p><strong>Summary:</strong><br />
+Wherever possible, do not store cardholder data. You may not store the full magnetic strip data, the card-verification code/value, or the PIN or encrypted PIN block. You may store the cardholder's name, the primary account number (PAN), the expiration date, and the service code. With the exception of personnel authorized for specific business needs, display of the card number must be masked to at least the first six and last four digits (preferably less).</p>
+
+<p>In storage, the PAN must me rendered unreadable using either a hash or strong encryption. If using disk encryption, then logical access has to be managed independent from the OS without the keys being tied to user accounts. Encryption keys must be stored securely and properly managed, with access restricted to a need-to-know basis, with minimum replication or duplication.</p>
+
+<p>Formalized, documented key management must address key generation, secure distribution, secure storage, periodic key rotation (at least annually), retirement of old or compromised keys, split knowledge and dual control of keys, mechanisms to prevent the unauthorized substitution of keys. All personnel with access to key materials or systems must sign a key custodian form.</p>
+
+<p><strong>Action Items:</strong><br />
+1. Minimize the storage of cardholder data through the development and enforcement of a data retention policy.</p>
+
+<p>2. Strictly limit what data is stored and displayed. Specifically:<br />
+ * Do not store the full magnetic strip, the card verification code/value, or the PIN or encrypted PIN block.<br />
+ * Mask display of the full PAN to only first six and last four digits, maximum, with the exception of explicitly authorized personnel with a business need.<br />
+ * Cardholder name, PAN, expiration data, and service code may be stored.</p>
+
+<p>3. Render the PAN unreadable in storage using hashing, truncation, index tokens and pads, or strong encryption using good key management practices.<br />
+ * If disk encryption is used, then logical access must be independent of the OS without the keys tied to user accounts.<br />
+ * Access must be restricted on a need-to-know basis.<br />
+ * Secure storage must be used with minimal replication or duplication.</p>
+
+<p>4. Fully document and implement good key management practices that address the full lifecycle, including generation, secure distribution, storage, periodic key rotation (at least annually), and retirement of old or compromised keys.<br />
+ * Key management practices must enforce split knowledge and dual control of keys, as well as preventing the unauthorized substitution of keys.<br />
+ * Key custodians must sign a custodian agreement.</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 4: Encrypt transmission of cardholder data across open, public networks</p>
+
+<p><strong>Summary:</strong><br />
+Cardholder data must be protected with strong encryption when transmitted across public networks (e.g. Internet, wireless, GSM, GPRS). Industry best practices for wireless networks must be applied. An unencrypted PAN must never be transmitted using end-user messaging technologies (e.g. email, IM, chat).</p>
+
+<p><strong>Action Items:</strong><br />
+1. Strong cryptographic controls must be used to protect the transmission of cardholder over open, public networks, including the Internet, wireless networks, GSM, and GPRS.</p>
+
+<p>2. Industry best practices must be used for securing wireless networks (e.g. no WEP).</p>
+
+<p>3. An unencrypted PAN must never be transmitted via end-user messaging technologies such as email, instant message (IM), or chat.</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 5: Use and regularly update anti-virus software or programs</p>
+
+<p><strong>Summary:</strong><br />
+Antivirus (AV) from a reputable AV vendor must be installed on any systems that are commonly afflicted with malware. AV must be current, active, and generating audit logs. These requirements must be addressed in security policy, including stipulating audit log retention of at least 12 months with 3 months immediately available (in accordance with 10.7).</p>
+
+<p><strong>Action Items:</strong><br />
+1. Deploy a reputable AV solution to systems commonly afflicted with malware.</p>
+
+<p>2. Ensure that the AV is current, active, and generating audit logs, in accordance with associated security policies and standards on the topic, and retaining the logs in accordance with 10.7 (at least one year, with 3 months online).</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 6: Develop and maintain secure systems and applications</p>
+
+<p><strong>Summary:</strong><br />
+Implement patch and vulnerability management policies and procedures. Critical security patches must be applied within 1 month, using a risk-based approach to prioritizing patches. Software must be developed using secure coding practices within a software development lifecycle. The lifecycle must address testing patches and configuration changes prior to deployment, including validating input, proper error handling, secure storage of cryptographic materials, secured communication, and access controls (preferably role-based). The lifecycle must also establish separate development/test and production environment, enforce separation of personnel duties between dev/test and prod, must not use life data in test/dev, and must clean up environments prior to deployment, including removing test data, test accounts, custom application accounts, user IDs, and passwords.<br />
+Custom code must be reviewed for vulnerabilities. Deployment must follow change control procedures that document the impact of the change, garner management sign-off, test operational functional, and prepare back-out procedures.</p>
+
+<p>Secure web application development practices must be followed based, in part, on the work of OWASP, and addressing cross-site scripting (XSS), inject flaws, malicious file execution, insecure direct object refers, CSRF, information leaks and improper error handling, broken authentication and session mgmt, insecure crypto mgmt, insecure communication, failure to restrict URL access (enforced workflow, etc). Additionally, special security measures must be developed for public-facing web applications, including regular code review (at least annually) or the deployment of a web application (proxy) firewall.</p>
+
+<p><strong>Action Items:</strong><br />
+1. Prioritize patches using a risk-based approach and apply them as appropriate<br />
+ * â€œCritical security patchesâ€ must be applied within 1 month of release.</p>
+
+<p>2. Deploy a vulnerability management plan that results in updates to configuration standards.</p>
+
+<p>3. Leverage secure coding practices as part of a well-defined software development lifecycle, complete with quality assurance and code review capabilities.<br />
+ * All patches and configuration changes must be tested to validate input, proper error handling, secure storage of cryptographic materials, secure communication, and role-based access controls (RBAC).<br />
+ * The dev/test and production environments must be separated.<br />
+ * Separation of duties must be enforced between dev/test and prod personnel.<br />
+ * Live data must not be used in the dev/test environment(s).<br />
+ * Test data and accounts, and custom application accounts, user IDs, and passwords, must be removed prior to production deployment.<br />
+ * Custom code must be reviewed for vulnerabilities.<br />
+ * Secure web application security practices, such as those advocated by OWASP, must be followed.<br />
+ * The following code weaknesses must be addressed: cross-site scripting (XSS), inject flaws, malicious file execution, insecure direct object refers, cross-site request forgery (CSRF), info leaks and improper error handling, broken authentication and session mgmt, insecure crypto mgmt, insecure communication, and failure to restrict URL access (enforced workflow, etc).</p>
+
+<p>4. Implement and following robust change control/management procedures. These procedures should:<br />
+ * Document the impact of the change.<br />
+ * Garner management sign-off for the change.<br />
+ * Test operational functionality prior to deployment.<br />
+ * Include back-out procedures.</p>
+
+<p>5. Special security functionality is required for public-facing web applications in the form of either regular code reviews (at least annually) or deployment of a web application (proxy) firewall (for Apache users, check out ModSecurity at http://www.modsecurity.org/).</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 7: Restrict access to cardholder data by business need to know</p>
+
+<p><strong>Summary:</strong><br />
+Based on the principles of default deny-all and least privilege, limit access to cardholder data on a need-to-know basis. Implement an automated access control system based on roles that covers all system components.</p>
+
+<p><strong>Action Items:</strong><br />
+1. Using automated access controls in a default deny all configuration, limit system and data access as is explicitly authorized and needed for business functions.<br />
+ * Role-based controls must be based on the principles of least privilege and default deny.<br />
+ * The role-based access control systems must cover all system components.</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 8: Assign a unique ID to each person with computer access</p>
+
+<p><strong>Summary:</strong><br />
+All users must be assigned, and use, a unique ID that is protected by a password, passphrase, or 2-factor credentials. Remote access must be protected by 2-factor authentication. Passwords must be protected by strong cryptography (hashing is fine). All access to databases containing cardholder data must be authenticated.</p>
+
+<p>User management processes must be well defined. Identities must be verified before allowing password resets. First-time passwords must be set to a unique value and an immediate password change must be forced at first use. Accounts for terminated personnel must be removed immediately. Accounts inactive for 90 days must be removed or disabled, while vendor maintenance accounts must be disabled at all times unless in use. Group, shared, or generic accounts are not to be used.</p>
+
+<p>Passwords must be changed at least every 90 days, must have a minimum length of 7 alphanumeric characters, with a history of 4 passwords. 6 failed login attempts must result in a locked account, which should persist for 30 minutes unless overridden by an administrator. Accounts idle for 15 minutes must lock or logout. Password policies must be clearly communicated to all personnel.</p>
+
+<p><strong>Action Items:</strong><br />
+1. Assign all users a unique ID and a password, passphrase, or 2-factor credentials.<br />
+ * 2-factor authentication is required for remote access.<br />
+ * Do not use group, shared, or generic accounts or passwords.<br />
+ * All individual access to cardholder databases must be authenticated.</p>
+
+<p>2. Implement proper, well-documented identity and access management.<br />
+ * First-time passwords must be set to a unique value and the first login must force an immediate password change.<br />
+ * Identities must be verified prior to resetting passwords or accounts.<br />
+ * Passwords must be protected using strong cryptographic methods (hashing is acceptable).<br />
+ * Accounts assigned to terminated personnel must be disabled or removed immediately upon termination.<br />
+ * Vendor maintenance accounts must be disabled unless in use.<br />
+ * Accounts inactive for 90 days must be disabled or removed.<br />
+ * Passwords must be changed at least every 90 days.<br />
+ * Passwords must be a minimum of 7 alphanumeric characters in length.<br />
+ * A minimum password history of 4 must be set.<br />
+ * Accounts must be locked or disabled after a maximum of 6 failed login attempts, resulting in a minimum 30-minute lockout, unless overridden by an administrator.<br />
+ * Idle logins must timeout after at most 15 minutes, requiring the user to re-enter their credentials.<br />
+ * All password policies must be communicated to applicable personnel.</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 9: Restrict physical access to cardholder data</p>
+
+<p><strong>Summary:</strong><br />
+Implement strict physical security controls around your cardholder environment, leveraging automated access control and monitoring mechanisms (badges, cameras, etc.), and retaining all audit/access logs for at least 3 months (unless otherwise restricted by law). All control and monitoring mechanisms must themselves be physically protected. Access logs should be reviewed and correlated (for example, badge access should correlate to video monitoring). Access to enabled network jacks, wireless APs, gateways, and handheld devices must be restricted.<br />
+A badging system must be implemented to effectively manage visitors, including requiring explicit authorization for visitors wishing to access the cardholder environment, issuing a physical token that expires, and requesting surrender of the token prior to visitor departure. Access should be logged and retained for 3 months (unless prohibited by law), capturing details including the visitor's name, company represented, and employee authorizing the visit.</p>
+
+<p>Policies and procedures must be documented and enforced pertaining to the control and security of physical data. Materials must be clearly classified and labeled, backups should be maintained off-site, secure couriers or other trackable delivery methods must be used, and physical security must be reviewed at least annually. Management must approve all physical moves of cardholder data, media with cardholder data must be inventoried at least annually, and must be securely destroyed when no longer required (e.g. shredded, incinerated, pulped, or otherwise rendered unrecoverable). These practices and requirements apply to all types of media, including paper.</p>
+
+<p><strong>Action Items:</strong><br />
+1. Implement facility access controls.<br />
+ * Implement a badging system to easily distinguish between employees and visitors.<br />
+ * Define specific visitor handling procedures that garner explicit authorization for accessing the cardholder environment, including assigning a physical token that expires (e.g. badge, sticker), and request surrender of the token at the end of the visit.<br />
+ * Establish and retain (minimum 3 months, unless otherwise restricted by law) a visitor log that captures visitor name, entity represented, and the authorizing employee.</p>
+
+<p>2. Implement facility monitoring.<br />
+ * Deploy video cameras or other access control mechanisms to monitor access.<br />
+ * Review and correlated collected data, and retain data for at least 3 months, unless otherwise restricted by law.<br />
+ * Protect cameras and other mechanisms from tampering or disabling.</p>
+
+<p>3. Implement physical security measures.<br />
+ * Restrict access to enabled network jacks, wireless access points (APs), gateways, and handheld devices.<br />
+ * Store back-up media in a secure location (preferably off-site) and review these security measures at least annually.<br />
+ * Physically secure all paper and media containing cardholder data, including clearly classifying and labeling confidential materials.<br />
+ * Maintain inventory logs of all media and conduct and inventory audit on at least an annual basis.<br />
+ * All physical moves of cardholder data require management approval and, if shipped, must use a secured courier or other trackable delivery method.<br />
+ * Media should be securely destroyed when no longer required, such as through shredding, incineration, or pulping physical media, or otherwise rendering electronic media unrecoverable.<br />
+ * Publish physical security policies and procedures.</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 10: Track and monitor all access to network resources and cardholder data</p>
+
+<p><strong>Summary:</strong><br />
+Merchants are required to implement reasonably extensive audit logs for the cardholder environment, capturing individual access to cardholder data, all root/administrator actions, invalid logical access attempts, use of identification and authentication mechanisms, creation and deletion of system-level objects, access to audit logs, and the initialization of the audit logs. Logs are to be retained for at least a year, with 3 months of data immediately accessible. The minimum details to be logged include user identification, type of event, date and time, event disposition (success/failure), origination of the event, and identity of the name of the affected data, system component, or resource.</p>
+
+<p>To support analysis, all servers should be synchronized to a proper, reliable time source (NTP server - there are more details about this, but suffice to say it needs to be locked down and explicitly allowed). Logs must be reviewed on a daily basis, though automated tools can be used to meet the requirement.</p>
+
+<p><strong>Action Items:</strong><br />
+1. Implement and secure detailed audit trails.<br />
+ * Capture all individual access to cardholder data, all root/administrator actions, all access to audit trails, invalid logical access attempts, use of identification and authentication mechanisms, initialization of audit logs, and the creation and deletion of system-level objects.<br />
+ * Audits logs must minimally capture user identification, type of event, data and time, event disposition (success/failure), event origination, and identify the name of the affected data, system component, or resource.<br />
+ * Audit trails must be secured, limiting access on a need-to-know basis, protecting the integrity of the logs (including using of integrity monitoring solutions), and backing the logs up to a central server or media.<br />
+ * Externally facing systems must log to an internal server.<br />
+ * All systems generating logs must be synchronized to a common time source that has been setup in an approved manner and that is explicitly authorized to receive time updates from specific external sources.</p>
+
+<p>2. Review and retain audit logs.<br />
+ * Logs must be review on a daily basis, though tools may be used to meet this requirement.<br />
+ * Audit trails must be retained for at least one year, with at least 3 months online and immediately available.</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 11: Regularly test security systems and processes</p>
+
+<p><strong>Summary:</strong><br />
+Testing must be done on a quarterly and annual basis. Quarterly tests include checking for rogue wireless access points, external vulnerability scans, and internal vulnerability scans. Penetration testing (internal and external) must be performed at least annually and must target both networks and applications. A QSA or ASV is not required for penetration testing, but an ASV is required for the external vulnerability scans. Additionally, IDS/IPS must be in place to monitor access to cardholder data, as does file-integrity monitoring software.</p>
+
+<p><strong>Action Items:</strong><br />
+1. Mandatory quarterly tests:<br />
+ * Rogue wireless access point scans.<br />
+ * External vulnerability scans by an ASV.<br />
+ * Internal vulnerability scans with rescans until clean.</p>
+
+<p>2. Mandatory annual tests:<br />
+ * Internal network and application penetration tests.<br />
+ * External network and application penetration tests.<br />
+ * No QSA or ASV requirement, tester just must be qualified.</p>
+
+<p>3. IDS/IPS and file-integrity monitoring software must be deployed to monitor access to cardholder data and to protect associated systems.</p>
+
+<p><br />
+<strong>Requirement:</strong><br />
+Requirement 12: Maintain a policy that addresses information security for employees and contractors</p>
+
+<p><strong>Summary:</strong><br />
+Security policies must be drafted and maintained that address all PCI DSS requirements, and that including processes for formal risk assessment, risk management, and annual review and update of policies. The security policy framework must include the development of daily operational security procedures and must clearly define roles and responsibilities.</p>
+
+<p>Usage policies must garner explicit management approval per person and device, and must explicitly inventory and track what is approved for whom, including labeling devices with owner, contact, and approved purpose, as well as explicitly detailing acceptable uses and network locations. Requirements that were previously noted must be codified, too, including automatic disconnect of idle remote sessions and disabling vendor remote access unless active. Mythically, usage policies must prohibit the copying, moving, and storage of cardholder data to local drives or media when being remotely accessed (called â€œmythicalâ€ because of itâ€™s unenforceability).</p>
+
+<p>Security management responsibilities must be clearly defined to establish, document, and distribute security policies and procedures, monitor and analyze security alerts and information, distribute security alerts and information as appropriate, establish, document, and distribute incident response and escalation procedures, administer user accounts, and monitor and control all access to data.</p>
+
+<p>A formal security awareness program must be implemented and run at least annually, including garnering written acknowledgement of reading and understanding security policies and procedures. Background checks must be implemented as part of candidate screening. An incident response plan must be implemented. And, last but not least, if you share data with service providers, then you'll need to apply all of this good stuff to them as well (and make sure you get it into your contracts).</p>
+
+<p><strong>Action Items:</strong><br />
+1. Publish security policies, standards, and procedures.<br />
+ * Policies must address all applicable PCI requirements.<br />
+ * Policies must include an annual process for formal risk assessment and risk management.<br />
+ * Policies must undergo an annual review, incorporating appropriate updates.<br />
+ * Policies must clearly define roles and responsibilities.<br />
+ * If cardholder data is shared with service providers, then all policies and procedures outlined in the security program must be applied to the third parties as well.<br />
+ * Develop daily operational security procedures.<br />
+ * Implement an incident response plan.<br />
+ * Implement background check as part of candidate screening.</p>
+
+<p>2. Develop usage policies for critical employee-facing technologies.<br />
+ * Usage policies should address topics such as remote-access technologies, wireless technologies, removable electronic media, laptops, personal data/digital assistants (PDAs), e-mail usage and Internet usage.<br />
+ * All usage must be authenticated and explicitly authorized by management.<br />
+ * Devices must be inventoried per person and labeled with owner, contact, and purpose.<br />
+ * Devices must be authorized for specific uses and network locations.<br />
+ * A list of company-approved products should be maintained.<br />
+ * Usage policies must stipulate automatic disconnect for idle remote connections and the default disabling of vendor remote access.<br />
+ * Policies must prohibit copying, movement, or storage of cardholder data on local drives and media while the data is being remotely accessed.</p>
+
+<p>3. Assign security management responsibilitiesâ€¦<br />
+ * â€¦to establish, document, and distribution security policies, standards, and procedures.<br />
+ * â€¦to monitor and analyze security alerts and information, distributing as appropriate.<br />
+ * â€¦to establish, document, and distribute incident response and escalation procedures.<br />
+ * â€¦to administer user accounts.<br />
+ * â€¦to monitor and control all access to data.</p>
+
+<p>4. Implement a formal security awareness program.<br />
+ * The program must be run at least annually and requires written acknowledgment of reading/understanding security policy and procedures.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20';return false;" rel="tag">infosec</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=PCI%20DSS&amp;limit=20';return false;" rel="tag">PCI DSS</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">1 TrackBack</h2>
+
+    
+    
+
+
+    
+    
+        
+    <div class="trackbacks-content">
+        
+        <div class="trackback" id="ping-1672">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2009/06/pci_is_a_distraction_proof.html" rel="nofollow">PCI Is a Distraction (proof!)</a> from The Falcon's View on <a href="#ping-1672" rel="nofollow">June  2, 2009 11:19 AM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        I don't care what anybody on the pro-PCI side of the argument says, PCI is absolutely a distraction. How do I know? Because I've just realized that I've been completely distracted by it in my new/current position. For those who... <a href="http://www.secureconsulting.net/2009/06/pci_is_a_distraction_proof.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+</div>
+
+
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">4 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-750" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">pcigeek</span>
+
+                    | <a href="http://54.197.56.127/2009/02/pci-dss-v12-in-a-nutshell.html#comment-750"><abbr class="published" title="2010-04-01T19:11:34-05:00">April  1, 2010  7:11 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>You have an interesting view on PCI 1.2, Section 1.3.5.</p>
+
+<p>AFAIK, I haven't been able to get a clear definitive answer/recommendation/guideline on what this really means.</p>
+
+<p>The way the spec is worded, it practically disallows all connectivities (not just DB) from the bubble to the outside world.  All accesses stopped at the DMZ.. I am curious as to how companies who are PCI compliant today implemement this control if they have a need to send data out via SFTP/SSH etc.. <br />
+</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-751" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2009/02/pci-dss-v12-in-a-nutshell.html#comment-751"><abbr class="published" title="2010-04-05T13:41:47-05:00">April  5, 2010  1:41 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>@pcigeek -</p>
+
+<p>I think the key is the "to the Internet" phrasing. So, if you're running MS SQL Server, for example, then you can have it update off of WSUS in your DMZ. Or, it seems that you could even plausibly setup a proxy to handle all calls outbound as needed.</p>
+
+<p>Remember that the testing procedures for 1.3.5 say "Verify that outbound traffic from the cardholder data environment to the Internet can only access IP addresses within the DMZ." This leaves the door wide open for a lot of ways to still get the traffic out without violating the specification of the rule. Whether or not this is in keeping with the spirit of the rule is, of course, an entirely different matter.</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19441" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">PÃ¤r Andersson</span>
+
+                    | <a href="http://54.197.56.127/2009/02/pci-dss-v12-in-a-nutshell.html#comment-19441"><abbr class="published" title="2011-12-28T08:37:05-05:00">December 28, 2011  8:37 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Hi,</p>
+
+<p>regarding the separation of prod and test. How should that be separated? We run in  a virtualized environment and today this is not separated. This means that we share prod and test on the same hw/hypervisor. I have a suggestion to implement 3 envs: 1. PROD in-scope PCI-DSS 2. PROD out-of-scope PCI-DSS 3 Test/Dev. But what did we achieve then from a PCI-DSS perspective by having a common test environment supporting both in- and out-of-scope testing. Any experience how to deal with this in practice in relation to virtualized environments?</p>
+
+<p>/Pelle</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19443" class="comment comment-reply">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span> replied to <a href="http://54.197.56.127/2009/02/pci-dss-v12-in-a-nutshell.html#comment-19441">comment from PÃ¤r Andersson</a>
+
+                    | <a href="http://54.197.56.127/2009/02/pci-dss-v12-in-a-nutshell.html#comment-19443"><abbr class="published" title="2012-01-06T17:11:15-05:00">January  6, 2012  5:11 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Hi Pelle,</p>
+
+<p>The PCI Council released new guidance last Summer on PCI DSS and virtualization that I think you'll find particularly useful. You can find it at:<br />
+<a href="https://www.pcisecuritystandards.org/documents/Virtualization_InfoSupp_v2.pdf" rel="nofollow">https://www.pcisecuritystandards.org/documents/Virtualization_InfoSupp_v2.pdf</a></p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>February 12, 2009  6:05 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2009/02/sports-and-risk-decisions.html">Sports and Risk Decisions</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2009/02/some-random-security-thoughts.html">Some Random Security Thoughts</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

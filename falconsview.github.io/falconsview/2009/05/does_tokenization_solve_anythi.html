@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Does Tokenization Solve Anything? (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/05/well_that_didnt_work.html" title="Well, /That/ Didn't Work!" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/05/which_came_first_the_software.html" title="Which Came First: The Software or The Security?" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/05/does_tokenization_solve_anythi.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/883"
+    dc:title="Does Tokenization Solve Anything?"
+    dc:identifier="http://www.secureconsulting.net/2009/05/does_tokenization_solve_anythi.html"
+    dc:subject="infosec"
+    dc:description="I&apos;ve been on the hunt for a solution to the PCI problem. You might be wondering &quot;which problem is that?&quot; The problem, as I see it, is that L2-4 merchants have to accept, handle, transmit, and ultimately store cardholder data...."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-05-15T13:07:27-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/05/does_tokenization_solve_anythi.html">
+<dc:title>Does Tokenization Solve Anything?</dc:title>
+<dc:description>I&apos;ve been on the hunt for a solution to the PCI problem. You might be wondering &quot;which problem is that?&quot; The problem, as I see it, is that L2-4 merchants have to accept, handle, transmit, and ultimately store cardholder data....</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-05-15T13:07:27-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/05/well_that_didnt_work.html">&laquo; Well, /That/ Didn't Work!</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/05/which_came_first_the_software.html">Which Came First: The Software or The Security? &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Does Tokenization Solve Anything?</h2>
+                     <div class="entry" id="entry-2108">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>I've been on the hunt for a solution to the PCI problem. You might be wondering "which problem is that?" The problem, as I see it, is that L2-4 merchants have to accept, handle, transmit, and ultimately store cardholder data. Thus, the high risk associated with merchants and their generally lax/lacking security practices.</p>
+
+<p>To me, the solution here is to get the data out of the hands of the merchants. If the merchants don't have the cardholder data, then you don't need to worry (as much) about them getting compromised. The question is if there are solutions in the market that accomplish this goal. One such solution is "tokenization" - but I'm not convinced it actually saves you much.</p>
+
+<p>With tokenization solutions, your card processor provides you with a non-sensitive token to store in your billing system in lieu of the CCN itself. Ok, all good and fine, but that's where things stop. With this solution I see 2 major problems. First, you're still accepting the CCN through your site, and thus have to secure systems in accordance with PCI. Second, it would appear that you then rely on APIs (or compiled software) that can then conduct some transactions with the CCN (though I would hope you couldn't get the CCN back).</p>
+
+<p>My primary concern with a tokenization solution is the first one listed above. If you still have cardholder data flowing through your site, then you're still subject to almost all of the PCI requirements. The main ones you can side-step are encryption, key management, and certain nuances of the network security requirements (such as the proxy). Beyond that, you still have to shoulder the cost of compliance for the rest of your site.</p>
+
+<p>Given this apparent case, one must then wonder: is outsourcing to a tokenization provider really more cost-effective than simply fixing the problem directly on your own systems? Sure, it transfers some of the responsibility away from you, to an org that is geared toward protecting that data. But at what cost? Moreover, now you have to trust this 3rd party not to get compromised, while you still have to share in the responsibility of protecting the data.</p>
+
+<p>In the end, it seems to me that the right solution is to move all of the CC acceptance and processing off of the merchant platforms. I think this can be done in a couple ways, and it seems that there may be a couple solutions out there (<a href="http://epx.com/">EPX</a>, <a href="http://www.paymetric.com/">Paymetric</a>), but again it's not fully clear if they are in fact fully transferring the CC acceptance, processing, and storage, or if they're really just a more involved tokenization company. Paymetric's site talks extensively about ERP integration, suggesting a tokenization practice. EPX explicitly talks about tokenization, while making the claim that merchants "Never process, transmit or store data". Of course, the EPX site also says "Eliminate the nightmare of PCI" - which I think is probably not true.</p>
+
+<p>Tokenization may reduce the burden of PCI, but it definitely does not eliminate it completely, and I'm left to wonder if the reduction is even enough to warrant the outsourcing cost. What else am I missing out there? Is this problem being solved, and well?</p>
+                           </div>
+                           
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=PCI&amp;limit=20" rel="tag">PCI</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=solutions&amp;limit=20" rel="tag">solutions</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=tokenization&amp;limit=20" rel="tag">tokenization</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on May 15, 2009  1:07 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/05/does_tokenization_solve_anythi.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/883</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2009/05/does_tokenization_solve_anythi.html" rel="nofollow">Does Tokenization Solve Anything?</a>:</p>
+                           
+                           <a id="p1668"></a>
+                           <div class="trackback" id="ping-1668">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/05/more_on_tokenization.html" rel="nofollow">More on Tokenization</a> from The Falcon's View<br />
+                                    In a previous post, "Does Tokenization Solve Anything?", I questioned what the value was if the cardholder data still passed through your site. I've had the opportunity this week to look at three of these solutions, and have been pleasantly... <a href="http://www.secureconsulting.net/2009/05/more_on_tokenization.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1668" rel="nofollow">May 21, 2009  1:47 PM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1677"></a>
+                           <div class="trackback" id="ping-1677">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/08/tokenization_someone_else_gets.html" rel="nofollow">Tokenization: Someone Else Gets It</a> from The Falcon's View<br />
+                                    Apparently I'm not in fact insane, but do in fact know a little something about things that don't make much sense. One of those things is the mythical tokenization that has been heralded in marketing hype as the next greatest... <a href="http://www.secureconsulting.net/2009/08/tokenization_someone_else_gets.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1677" rel="nofollow">August 17, 2009 12:50 PM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (4)</h3>
+                           
+                                 <a id="c000697"></a>
+                                 <div class="comment" id="comment-697">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          Alex Pezold:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>I approach this comment very humbly as I believe you probably have done much more research on this topic than I.  With this, I believe the purpose of tokenization is to 1) reduce risk to the customer’s environment by eliminating as much CC data as possible, and 2) to reduce the impact PCI has on an environment by shrinking the scope.  Based on what I know of tokenization, it is no silver bullet, but it does achieve both goals above.</p>
+
+<p>Ultimately, like you, I would like to see that silver bullet for removing all CC data from our client’s environments.<br />
+</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          Alex Pezold  |
+                                          <a href="#comment-697">December 30, 2009  5:52 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-697" title="Permalink to this comment">December 30, 2009 17:52</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000698"></a>
+                                 <div class="comment" id="comment-698">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>@Alex -</p>
+
+<p>I think you're right, I just question whether or not it's achieving either of those objectives. Too often I see orgs with multiple billing systems and I wonder, will the tokenization solution just become yet another layer of complexity in an already over-complex environment?</p>
+
+<p>In terms of shrinking the scope, I'm not fully convinced it actually achieves that goal. If it's a 1-to-1 match for an existing billing system, it's simply a shell game, moving the CC data from one box to another. Most solutions are built on the premise that your flows don't change, which means your PCI scope very likely stays almost exactly the same. Not much gain there.</p>
+
+<p>Thanks for the comment!</p>
+
+<p>-ben</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-698">January  2, 2010  6:43 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-698" title="Permalink to this comment">January  2, 2010 18:43</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000723"></a>
+                                 <div class="comment" id="comment-723">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.voltage.com" href="http://www.voltage.com" rel="nofollow">Mark Bower</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Nice debate topic. The root issue is PCI Scope, as "defined" by QSA's who may or may not fully understand security or the merchant or enterprise IT environment. If anyone has attended QSA training they would see the gaps emerge quickly in knowledge levels which vary from industry hardened experts to extremely inexperienced technicians who lack basic infosec awareness. Hence we have the drive to scope reduction over risk management - that is, if scope can be easily pinned down :)</p>
+
+<p>One of the reasons Tokenization has taken off is that it permits merchants to side step a lot of PCI DSS because tokenization is not defined specifically in the PCI DSS Standard. This is bound to change, but right now it is more difficult to assess Tokenization as “correctly” implemented or not by a QSA - there's no guidance, no “Section 3.X – Tokenization Requirements”. Defining what "cardholder data" is also a grey area in PCI and debate rages. QSA's are trained that encrypted cardholder data is cardholder data – a bizarre circumstance to anyone who's experienced in encryption and key management- and which seems to be missing the critical overlooked addendum "if there is explicit access to the specific encryption key used to encrypt the cardholder data". However, this seems to have come about as breaches from badly implemented systems have taken place – e.g. putting your keys in the same database as the encrypted data, encrypting with a key left sitting unprotected in a store controlled that anyone can then copy. Bzzzt! Danger! But was the encryption itself bad? No ? Was the key management bad ? Yes. So why not reduce scope with encryption one asks? Well, true end to end encryption will do just that - from swipe to acquirer /processor for example (not to be confused with Point to Point...but thats another topic).</p>
+
+<p>Tokenization on the other hand leverages the grey area of the standard and thus creating the concept of the "disassociated" data item - the token - which can therefore be used to reduce scope – at least for now. This is also missing the critical addendum "can reduced scope if and only the entity who owns the token cannot easily detokenize to clear data, the token is not reversible itself or weakly constructed, and does not retain a 1:1 relationship to live data or permit replay attacks in token dependent systems as a means to defraud systems". Such reversibility with an token service or an in house solution may be a simple phone call or dispute requests, or accessing a weakly managed  service API or an in-house database and/or its API. I've heard so many QSA's talk as though Tokenization is "stronger" than encryption without fully understanding either: Quite alarming - both from what may have passed as "compliant", and the level of knowledge in stating such. Both Encryption and Tokenization have their place, and the format preserving encryption approaches can essentially provide the benefits of Tokenization without the ugly massive token lookup database that still has to be managed by someone, somewhere.</p>
+
+<p>The challenge is the PCI council created a clarification FAQ note on scope and encrypted data, but the way the answer is described is still unclear. Tokenization is yet again not mentioned in the same way, and the encryption model the clarification is based on looks upon the problem of scope and encrypted data from an assumption that keys are merely dished out to people. A modern cryptographic approach perhaps involving hardware key management and public key techniques eliminates this – but this fact seems to be lost in the confusion and we have the mantra: encrypted data is cardholder data, again without analysis, logic, or reason.</p>
+
+<p>My view is that scope and Tokenization will change in 2010. Oddly, despite encryption being a very mature technology and with care can be implemented extremely well, it comes under more scrutiny for correct implementation in PCI DSS because the risks of use and implementation are well known and can be tested, managed, and controlled - hence the is "in scope".</p>
+
+<p>Taking a regulation side-stepping approach is short lived. This is especially true if by tokenization, all one is doing is becoming an issuer of a "number" that has a local 1:1 mapping to live data which represents value.  How is that descoping? Its making a previously insecure entity an "issuer" of a proxy card number....just as you noted, billing, booking, forward reservation systems can make active decisions based on the proxy…and thus open that to potential abuse, without even knowing a live credit card number - by proxy if you will.</p>
+
+<p>Tokenization also suffers from a widely varying range of implementations and indeed scale/security problems – that big database is going to get bigger. Some Tokenization approaches are good and some scarily bad and insecure – e.g. using poor hashing techniques to create tokens without about as much strength as 30 bits of encryption, or describing techniques which hide the fact that encryption is used up front to get the token in the first place - and sadly an almost implicit assumption of reducing scope from many QSA's without detailed analysis or risk assessment of exactly why. To them, Token = out of scope, end of story. Bzzzt! Danger!</p>
+
+<p>As scope reduction reduces QSA costs, the drive towards it is economic vs risk driven: a short term benefit, but without care a potential long term disaster. Thus, I expect as both the quality/experience of the QSA's improves and the PCI Council moves to the new standard in May 2010 its likely in my opinion that Tokenization will come under more intense scrutiny and potentially some form of standardization and guidance. </p>
+
+<p>Those rare but very experienced QSA's that really know IT risk and payment processing environments and truly help in managing risk already know this. However, time will tell and hopefully logic and best practice will prevail to deliver the original intent of PCI – reducing risk.</p>
+
+<p>-Mark</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.voltage.com" href="http://www.voltage.com" rel="nofollow">Mark Bower</a>  |
+                                          <a href="#comment-723">January 26, 2010  4:18 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-723" title="Permalink to this comment">January 26, 2010 16:18</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000830"></a>
+                                 <div class="comment" id="comment-830">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://ericdives.com/" href="http://ericdives.com/" rel="nofollow">Eric Stewart</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>I've been reading up on tokenization since my current employer utilizes it (not for credit card info as far as I know, but for other reasons).  Everything I've read has left me (not an InfoSec expert by any means, and more and more I'm learning what I don't know) thinking, "I don't really see how that's much better, since 1) Someone still has to secure the user info, and 2) now someone has to be responsible for and secure a database where the tokens can be mapped to real data."</p>
+
+<p>Somewhere on this page the term "shell game" was used.  That's exactly what it is ... and if the shell game isn't played well (and considering the players involved, one would guess it might be no better than the "original game" they were playing), tokenization doesn't seem to gain much.</p>
+
+<p>At the very least, encryption shouldn't become ignored when using tokens - they should be used together.</p>
+
+<p>It may not be "as dangerous" for (an unauthorized) someone to have the token as it would be for them to have the actual information ... but it still seems dangerous to me.  So they have a little more work to do before they can get actionable data ... that's never stopped them before.</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://ericdives.com/" href="http://ericdives.com/" rel="nofollow">Eric Stewart</a>  |
+                                          <a href="#comment-830">January 19, 2011 10:03 AM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-830" title="Permalink to this comment">January 19, 2011 10:03</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2108" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2108);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>May 15, 2009  1:07 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/05/well_that_didnt_work.html">Well, /That/ Didn't Work!</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/05/which_came_first_the_software.html">Which Came First: The Software or The Security?</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

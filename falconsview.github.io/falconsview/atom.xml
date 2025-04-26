@@ -1,0 +1,994 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>The Falcon&apos;s View</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/" />
+    <link rel="self" type="application/atom+xml" href="http://secureconsulting.net/atom.xml" />
+    <id>tag:secureconsulting.net,2018-03-11:/12</id>
+    <updated>2020-11-30T13:25:40Z</updated>
+    <subtitle>Mental meanderings of an infosec obsessive...</subtitle>
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type Pro 7.4.0</generator>
+
+<entry>
+    <title>In With A Roar, Out With A Whimper</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2020/11/in-with-a-roar-out-with-a-whim.html" />
+    <id>tag:secureconsulting.net,2020://12.2545</id>
+
+    <published>2020-11-30T13:24:39Z</published>
+    <updated>2020-11-30T13:25:40Z</updated>
+
+    <summary>It&apos;s been nearly 2 years since I&apos;ve written anything for my blog here, and I can&apos;t say that there&apos;s much of a good reason for it. Part of the reason has been prohibitions from past employers on doing anything public...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="personal" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="2020" label="2020" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="difficulty" label="difficulty" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="pandemic" label="pandemic" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="resolutions" label="resolutions" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>It's been nearly 2 years since I've written anything for my blog here, and I can't say that there's much of a good reason for it. Part of the reason has been prohibitions from past employers on doing anything public without their express approval, but the sad truth is that - despite a few ideas popping up here or there - I've just lacked the energy or wherewithal to really sitting and put word to prose.</p>
+
+<p>I had resolved at the start of 2020 to reverse that trend, as well as to start giving talks at conferences again. In general, several short stints over the past 5 years have really taken a toll, not to mention dealing with the combined and last effects of pneumonia and subsequent bouts of depression. Overall, as of last January, it seemed like 2020 would be the year to turn the page on some of these issues and begin getting myself back on-track. Little did I know how the year would unfold.</p>]]>
+        <![CDATA[<p>For the most part, the year has been one of dealing with frustration, disappointment, fear, panic, and just a general malaise stemming from the ongoing pandemic. As far as we know, we have not officially had COVID in our household, though we certainly had illnesses in Dec-Feb that sound a whole heck of a lot like it. Sadly, back in those days, despite asking, I was told I wouldn't be tested because I hadn't been to China in the previous 6 weeks or in direct contact with someone who had (nevermind having been in contact with people who *had* been to China in Q4 2019). Details, details.</p>
+
+<p>Through my job at the time, I came upon an idea for a talk, which I titled "7 Layers of Container Insecurity." The talk was originally accepted for InfoSec World 2020 within the container security workshop, which of course then get rebooted and re-envisioned due to the pandemic. I recorded the talk for ISW in early June and attended its playback in late June. Sadly, the talk was only lightly attended and the recording itself had technical issues (a good summary of Q2 2020, I think).</p>
+
+<p>I also made a job change in June 2020. While I greatly loved my job with Hilton and hated to leave, the reality was that 3 months on reduced pay was taking a toll, and there was no expectation that things were going to change anytime soon. So, when a couple recruiters pinged me over opportunities with companies less affected by the pandemic, I agreed to talk to folks and see what was out there. By late May I had settled on my current employer, gave notice, and started the new job on June 15th.</p>
+
+<p>In the meantime, it's just been the usual slog; a combination of the challenges of starting a new job along with the ongoing stresses of pandemic lockdowns and cancelled vacation plans. As the Summer progressed, this also then included the uncertainty around how school would resume in August and if these four walls could really be sufficient for a family of 4 who were really quite tired of run into each other all day every day. But we survived, snuck away for a few days to get out of the house, and got everyone setup for work and school in the remote world.</p>
+
+<p>Overall, it's actually been a fairly smooth school year for my wife (2nd grade teacher) and my kids (now 7th and 2nd grades). I setup dedicated workspaces for all of them, and that's at least allowed them to be productive and focused. Really, the only major challenge is we simply don't have enough room in this house for everything it's being asked to do these days. I know many people have been led to move this Fall just to get more space, and I fully understand and appreciate the intention. But, we persist, and we will get through it all, eventually.</p>
+
+<p>In late October I had the opportunity to record the "7 Layers of Container Insecurity" talk for the 2020 ISC2 Security Congress. The recording went very smoothly and I couldn't help feeling particularly good about it. The talk aired live during the conference on November 17th and - I later found out - it was extremely well-attended. I received attendees numbers, scores, and feedback about a week later, and I was absolutely blown-away by what I received. First, more than 2000 people attended the session live. That's a lot of people! Second, I had an average rating of 4.72 (out of 5). Not too bad. Third, the Word document sent to me contained 14 pages (!!!) of feedback! I mean, as if it wasn't enough that more than 2k people watched the talk, and that many great questions were asked, but to received 14 pages of comments... just, wow! And not just general comments, but... overwhelmingly positive comments! Hands-down the best-reviewed talk I've ever given. Absolutely astounding and humbling! Many people went so far as to declare the talk the best they'd heard all conference or even all year. Highly validating, to say the least.</p>
+
+<p>Along with that high note, I also made the decision to start cutting out some of the sources of negativity in my life. Namely, dumping Facebook and significantly paring back social media activity in general. The national election and related campaigns really took a toll on me, as did the looming stresses of our school district forcing teachers back into the classroom despite climbing COVID-19 infections regionally and nationally. It was very difficult in late October, especially, to keep my head above water. So, cut the cruft and move on. And, I have to say, what a good decision that has been!</p>
+
+<p>Alright, so to bring things back into focus... it's November 30th and I have a month left to finish getting things back on-track from where I envisioned they would be over the course of 2020... and that's why I'm writing this personal stream-of-consciousness post... it's to get the writing juices flowing again and eliminate the excuses I've had all year for not actually doing something that I very much enjoy and have missed tremendously.</p>
+
+<p>With that, I'll close this post, and with a commitment to myself to sit down and actually create more content going forward. Two years is an awfully long time to go without making use of such an outlet of expression...</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>A Shortage in Common Sense: The Myth of the Talent Gap</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2019/01/a-shortage-in-common-sense-the.html" />
+    <id>tag:secureconsulting.net,2019://12.2544</id>
+
+    <published>2019-01-28T14:39:19Z</published>
+    <updated>2019-01-31T14:52:36Z</updated>
+
+    <summary>I have a visceral reaction every time I encounter yet another article bemoaning the so-called &quot;talent gap&quot; or &quot;labor gap&quot; in cybersecurity. Having been in and out of the job market several times over the past decade (for better and,...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="leadership-management" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="work-jobs" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="cybersecurity" label="cybersecurity" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="gap" label="gap" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="labor" label="labor" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="mythology" label="mythology" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="myths" label="myths" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="shortage" label="shortage" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="talent" label="talent" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>I have a visceral reaction every time I encounter yet another article bemoaning the so-called "talent gap" or "labor gap" in cybersecurity. Having been in and out of the job market several times over the past decade (for better and, more often, for worse), I can honestly say this is utter nonsense. The roots of this clamor began more than a decade ago in DC as federal agencies grappled with modernizing, making use of the annual Sept/Oct budget season to decry how poor and helpless they were in order to justify demands for ever-increasing budgets. Local universities (such as <a href="https://www.umuc.edu/" target="_blank">UMUC</a>) quickly caught on to the marketing plan and rapidly launched a cybersecurity degree program. Meanwhile, ISC2 helped ensure that the CISSP was a mandatory component for hiring in many positions.</p>
+
+<p>While I am still in the midst of a job search (one that's a year old at this point), I find I need to speak out on the recent <a href="https://techcrunch.com/2019/01/27/too-few-cybersecurity-professionals-is-a-gigantic-problem-for-2019/" target="_blank">TechCrunch OpEd piece "Too few cybersecurity professionals is a gigantic problem for 2019"</a> in order to address some of the nonsensical statements made that really have no business being taken seriously. The author does get a couple things right, but not enough to compensate for perpetuating many myths that need to be put to rest.</p>]]>
+        <![CDATA[<p>Allow me to start by addressing some sound-bites from the piece:</p>
+
+<p><strong>"Seasoned cyber pros typically earn $95,000 a year, often markedly more, and yet job openings can linger almost indefinitely. The ever-leaner cybersecurity workforce makes many companies desperate for help."</strong></p>
+
+<p>There are several reasons why positions often sit open for long periods of time: they require an existing clearance; hiring managers are obtusely fixated on experience with a very narrow list of tools (a tool is a tool is a tool!); recruiters aren't even passing resumes along to hiring managers, often because of a failure to find keywords, sometimes because of useless biases (e.g., I've had several short stints due to layoffs and projects being terminated - outside my control! - which is used to rule me out), or just as often because they don't have the first clue what they're looking for; positions are requiring "experience" with far too many things; the interview process focuses too much on tool fit rather than people fit, including failing to evaluate attitude, aptitude, and adaptability.</p>
+
+<p>The bottom line here is this: if you see a position that's been open a long time, then that's a red flag. Something is broken in the hiring process. There are literally thousands (likely tens of thousands) of quality candidates on the market today with varying degrees of experience all trying to find work, and yet we cannot land these positions because of arbitrary requirements.</p>
+
+<p>Oh, and by the way, one of those arbitrary requirements is geographical. If you have 2 or more offices in separate geographic areas, then you have an implicit "remote worker" policy, because a certain percentage of your workforce is working in a location separate from your primary HQ. Not everyone wants to live in big cities. Not everyone wants to move to key tech "capitals" like Silicon Valley or Austin, TX, or Seattle or NYC or DC or Boston. Those places are all expensive (in some cases <em>very</em> expensive) and, especially for junior hires, completely inaccessible financially. It is beyond time to support remote workers and introduce flexibility into the workplace. It's ironic that in 1998-2001, when there was also allegedly a labor shortage, companies were willing to do far more things to attract and retain talent. <Strong>All of that</strong> has gone away since the recession in 2009. It's time to wake up and change.</p>
+
+<p><strong>"Between September 2017 and August 2018, U.S. employers posted nearly 314,000 jobs for cybersecurity pros."</strong></p>
+
+<p>Posting a job with "cybersecurity" (or comparable) in a title or description is a far cry from the position actually being oriented to cybersecurity. This is a situation that has worsened in the last few years. I encounter numerous "cybersecurity" roles that have little-to-nothing to do with cybersecurity. For example, it's very common to find "DevSecOps" positions that are acutely focused on DevOps automation. Or, sometimes they're just recast application security roles that got a trendy bump to "DevSecOps." Similarly, the "security architect" title has become a veritable grab bag of random terms, tools, and duties, and can be anything from a SOC analyst to hands-on engineer to manager to developer and so on.</p>
+
+<p>Authors of job postings are really doing themselves and the labor pool a major disservice by failing to write clear, concise, accurate job postings. It's very common to encounter posts that list everything but the kitchen sink, not because they need actual direct experience with everything under the sun, but because they aspirationally believe that some day they might need those skills, or, worse, because they really need hire 5 people, but only got approval for 1 slot, and so they try to find a mythological being who's expert in secure coding, appsec, netsec, cloud security, container security, traditional infrastructure, cloud infrastructure, divination, unicorn taming, and budget mastery. Worse, they then start out interviews by asking if the candidate has experience with a handful of tools, and failing that, either drop the candidate (because oooOOOOooo there's magic in big security vendor tools) or force them to continue through a process that reveals an increasingly bad fit.</p>
+
+<p>And now, the kicker: You shouldn't be hiring this many security people anyway! There's a delicious irony to being interviewed for a dedicated and growing cybersecurity team/program that espouses "build security in" ideology. If your org is really so interested in building security into everything, then quit trying to create massive cybersecurity teams/programs that only lead to failed old enablement practices and "otherness" that actually alienates your internal clients and decreases security. But I digress...</p>
+
+<p><strong>"Companies are trying to cope in part by relying more aggressively on artificial intelligence and machine learning, but this is still at a relatively nascent stage and can never do more than mitigate the problem."</strong></p>
+
+<p>First, never say never, m'kay? That's just silly. Second, while vendors are aggressively pushing AI/ML solutions, most of it isn't even AI or ML (it's amazing how many products are just elaborate regex schemes under the hood!). The phrase "snake oil" comes to mind. Third - and this is <em>very</em> important! - the focus should absolutely, positively be on automation and orchestration today. There are tons of things that can be automated, and there is a growing pool of reasonably qualified candidates with experiencing using generic A&O tools (e.g., ansible, puppet, chef, etc.).</p>
+
+<p>The key takeaway here is this: AI/ML is an easy target for throwing stones, but the comment obscures an important lesson, which is that organizations are not doing enough with automation and orchestration, especially as it pertains to security. This reality needs to be remedied ASAP!</p>
+
+<p><strong>"These are ideal candidates, but, in fact, the backgrounds of budding cyber pros need not be nearly this good."</strong></p>
+
+<p>There is no perfect, and perfect is the enemy of good. Hiring managers, HR, and recruiters: pay attention! You. Should. Be. Hiring. For. People. Fit. And. Aptitude. FULL STOP. If you're having trouble "finding good candidates," then YOU ARE THE PROBLEM. I could rant endlessly on this point, but won't. Introspection, please.</p>
+
+<p><strong>"Almost no cybersecurity pro over 30 today has a degree in cybersecurity and many don't even have degrees in computer science."</strong></p>
+
+<p>Mmmmmmmmmmaaaaybe. I'm over 30. I have an undergrad in CompSci. I have a Master's degree in Engineering Mgmt with a concentration in InfoSec Mgmt. Also, the older millenials are now hitting their 30s. Cybersecurity (or comparable) degrees have been around for 15+ years. This statement is in many ways demonstrably false, but more important IT DOESN'T MATTER ONE BIT!</p>
+
+<p>The problem, again, is with the hiring process, including having arbitrary "requirements" that artificially shrink the labor pool (which is the point the author seems to be making here). QUIT HIRING BASED ON A PUNCH LIST! Sing it with me: attitude, aptitude, and adaptability! These are the key qualities you should be seeking in the majority of hires.</p>
+
+<p>Here's a perfect example: I interviewed in mid-2018 for a "security architect" role that had been open for a very long time (red flag!). When I hopped on what I thought was a quick intro call with the hiring manager, I was instead met with the hiring manager and 2 reports (red flag!). The 2 reports gushed over how awesome the hiring manager was to work for (odd), and then they launched into questions. Every single question was about hadoop security, even though the first question they asked was "do you have extensive experience securing hadoop?" to which I answered "none, really, but it's just a NOSQL data store, so *shrug*." Moreover, the hiring manager was a total jerk on the call (not sure if this was being done as a stress test tactic or because the guy was just a jerk). I would be asked a question, I would start to answer (literally, I'd just get a couple words out of my mouth, like "Well, for starters...") and the hiring manager would jump in, tell me my answer was insufficient (I hadn't even answered yet!), and then demand I "get to the point." Suffice to say, I cut the interview off and then provided strong feedback to the third-party recruiter to run away.</p>
+
+<p>There are 2 lessons from this experience: 1) The job description (JD) was completely and wholly inadequate. While it mentioned hadoop experience as a requirement, it became immediately clear that they didn't so much want a security architect as they wanted a hadoop expert (go get a contractor - sheesh!). 2) Don't be jerks to candidates! If that hiring manager is allowed to exist and persist within that organization, then that is absolutely <em>not</em> a place I would ever consider working (and have avoided applying or being submitted there ever since).</p>
+
+<p>Key takeaways: If you're having trouble finding candidates, make sure the JD is accurate, and make sure your hiring manager is doing a good job representing the company. It's still a small industry and many of us talk and share stories. Wanna kill your applicant pool? Become known as a horrible place to work that's filled with belligerents and "brilliant jerks." I'm a big fan of Reed Hastings' (Netflix) "no brilliant jerks" policy. Hugely and most biggestly important.</p>
+
+<p><strong>"Asking too much from prospective pros isn't the only reason behind the severe cyber manpower shortage."</strong></p>
+
+<p>Perhaps not, but it's a major factor in hiring decisions. If you cannot offer any semblance of work-life balance, especially for your experienced hires who may very well have families, then you need to re-evaluate your org culture. Moreover, organizations must immediately stop trying to hire single resources to fill 5 different roles. These candidates are rare, if they exist at all, and it's killing your hiring process. More importantly, it means you don't actually know your priorities, AND... it says you're not willing to invest in your people to help them develop into the retainable talent you so desperately need. Once again, it's time for some serious introspection here!</p>
+
+<p><strong>"One key finding was that 43% of those polled said their organization provides inadequate security training resources, heightening the possibility of a breach."</strong></p>
+
+<p>Ya gotta love the orthogonal throw-away quip... this comment has nothing to do with the "labor gap," nor is it about the challenges of tech hiring. This point actually pertains directly to organizational culture. At face, it's true, insomuch as organizations tend to over-rely on annual security (and privacy) training, among other things. However, what it really reflects is a huge problem with pretty much all organizations in that they don't really make security a priority, they don't make it a shared responsibility, and they don't hire the right people in HR, org dev, or security to help executive leadership transform org culture in a favorable and necessary manner.</p>
+
+<p><strong>"IBM, for example, creates what it calls "new collar" jobs, which prioritize skills, knowledge and willingness to learn over degrees."</strong></p>
+
+<p><strong>"Technology companies still must work much harder to broaden their range of potential candidates, seeking smart, motivated and dedicated individuals who would be good teammates."</strong></p>
+
+<p>To close on something a bit more positive, I very much agree with and appreciate these points. But, again, this is all about organizations needing to fix themselves, and ASAP at that. If you think hiring for a cybersecurity role is purely about running down a list of arbitrary "requirements" and only accepting candidates who meet all (or most) of them, then you're failing. I've mentioned it several times throughout my post here, and I'll say it once again: Hire for attitude, aptitude, and adaptability!!! If you don't know how to do this, then get educated and fix your hiring process.</p>
+
+<p>The analogy I've used of late is this: A car repair shop does not hire a mechanic simply because they know how to use metric vs. standard/imperial wrenches. No sane person would say "oh, I'm sorry, you only know how to use wrenches in millimeter sizes, but we need someone who can use a wrench in fractions of inches." Think about that for a second! How insane would that be?! And yet... this is <em>exactly</em> how the vast majority of orgs are trying to hire tech talent. "Oh, I'm sorry, you've worked with Symantec, but not McAfee or Trend? We need someone experienced with those other brands." Or, "Oh, we're a Rapid7 shop here, so I don't see how your Tenable (or Qualys) experience really applies." Or, "When were you last 'hands-on' in a role? Oh, I see, it's been a few years? Well, thanks for your time..." Etc. Etc. Etc.</p>
+
+<p>These are all things I have experienced first-hand in the past year. Tech is tech, tools are tools, and the most important thing is my willingness and ability to learn and adapt. But, alas, very few organizations want to invest in their people. Very few organizations know how to interview for attitude, aptitude, and adaptability. It's truly sad, and I think it's a skill that organizations have actually lost in the last 10-15 years. I had a great job with AOL, and I landed it not because I had experience with every security tool on the market, but because I had a solid base technical knowledge and I had the attitude, aptitude, and adaptability to quickly learn and apply new things. THIS HAS BEEN LOST IN TODAY'S JOB MARKET.</p>
+
+<p>---<br />
+To close this ranty post out, I just want to reiterate, for the umpteenth time, that I strongly believe the "talent gap" or "labor shortage" is largely imagined and manufactured because organizations don't know how to hire, make absolutely no commitment to train and retain their people, and have in general completely lost their way. It's very sad and very troubling. We used to know how to do this! Where have all these skills gone within HR and management?</p>
+
+<p>Part of these issues are a direct result of cuts made during previous economic down-turns, but I also suspect that we're seeing the "day-trader" mentality as it hits hiring, too. In this age of 24x7 news and pervasive, ubiquitous social media, and endless amounts of raw outrage... we have lost our humanity within organizations. Human resources has always ultimately been about protecting organizations from their people, but it has really gotten broken badly in the past decade. Hiring managers are often forced to do too much with too little, all while being stuck following grossly outmoded thinking and strategies (e.g., if you build a SOC today thinking people first, then automation and orchestration, then I'm sorry to say that you're already starting 10 yrs behind the curve).</p>
+
+<p>If you're trying to hire people, then you need to force introspection and open dialogue within your organization, and you need to DO IT NOW. I'm a GenX'er. I want to do good work with a good org and good team where I'm treated respectfully, but allowed work-life balance. I would like to have some meaning in my job. Younger generations are reportedly even more concerned about this last point, wanting to contribute meaningfully. Once upon a time, I was told by a higher-up that corporations could not exist if they weren't benefiting the general good of society. I'm not completely sure this is true, but I would love for it to be so. However, in application, what this means is that organizations must also take care of their people, which many are failing at today. Forget about all the various movements and management fads out there and take this to heart: If you want good employees who will stick with you, then you have to hire good people AND TREAT THEM RIGHT. It really is just that simple.</p>
+
+<p>As a closing remark, I strongly recommend that people go read Laloux's <em><a href="http://www.reinventingorganizations.com/" target="_blank">Reinventing Organizations</a></em> as it is remarkable and a necessary evolution in business management.</p>
+
+<p><strong>Addendum (1/31/19)</strong>: One additional observation: Numbers lie. I have found here in the DC market that many jobs get reposted multiple times by placement/search firms. Positions, for example, with major firms like Fannie, Freddie, ManTech, DHS, CapOne, etc., will often show up a dozen times or more, but listed by the headhunter firms and not the actually hiring company. So, imagine that out of, say, 300k job postings for "cybersecurity," that number may actually be closer to 25-30k in real jobs. Quite shocking to think about and realize, and as a job searcher it's extremely frustrating. I'll literally get a flurry of inquiries from a half dozen or more recruiters when a new position posts. Crazy.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Business Must Change: InfoSec in 2019</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2019/01/business-must-change-infosec-i.html" />
+    <id>tag:secureconsulting.net,2019://12.2543</id>
+
+    <published>2019-01-03T15:14:38Z</published>
+    <updated>2019-01-03T15:16:39Z</updated>
+
+    <summary>I don&apos;t know about you, but I am happy to see 2018 ended. Personally, it was a very difficult year, capping a very difficult decade. Now, as we embark into 2019, it&apos;s time to sit up and realize that we&apos;ve...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="infosec" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="leadership-management" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="agile" label="agile" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="devops" label="DevOps" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="generativity" label="generativity" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="infosec" label="infosec" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="lean" label="lean" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="reformation" label="reformation" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="reinvention" label="reinvention" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="video" label="video" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>I don't know about you, but I am happy to see 2018 ended. Personally, it was a very difficult year, capping a very difficult decade. Now, as we embark into 2019, it's time to sit up and realize that we've now been in this world of e-commerce for more than 20 years (yes, really!). Many, many, many things have changed dramatically over that time, whether it be electronics (smartphones!) or communication (social media!) or transportation (electric vehicles!). However, one thing that really has not changed much is how businesses function, which is really quite sad if you think about it.</p>]]>
+        <![CDATA[<p>There is tons of research and evidence that shows we're now clearly within the 4th industrial age. We all know about the 1st and 2nd industrial revolutions, with the first lasting about 100 years and ending around WWI, and the second being slightly shorter and ending around the end of WWII, but many people don't realize that the 3rd age - of analog-digital transformation, mechanical automation, and industrial transformation - occurred up until sometime in the 1980s or 1990s (dividing lines are always fuzzy with such things). That said, there was definitely a watershed moment in the mid-1990s marking a clear transition from the old Deming-era industrial ways to this modern digital era.</p>
+
+<p>That brings us to 2019... and the imperative for drastic changes across the board, and in particular with how businesses are structured and function (vs. the current dysfunction). More importantly, these changes are also necessary if we have any hope of fixing our organizations to be more secure and to quit hemorrhaging cash at alarming rates, whether it be from massive breaches or insane spending on pointless tools or simply just being wasteful. Here's what I believe needs to happen ASAP, and is especially important in this fragile and declining (American) economy:</p>
+
+<p><strong>1) Flat, Agile, Lean, Empowered, Generative</strong></p>
+
+<p>First and foremost, organizations need to reinvent themselves. I'm a huge proponent of Frédéric Laloux's <em>Reinventing Organizations</em> (http://www.reinventingorganizations.com/) in which he talks about a better way to structure and manage. Specifically, he advocates for a flatter structure in which people are empowered to make decisions and take actions in the best interests of the whole. No, this does not mean outright anarchy and chaos, but instead advocates for nurturing a caretaker attitude within all employees such that they truly care. <strong>This is a very difficult thing to do!</strong> Especially for large enterprises, can you imagine a culture-shift that makes people care about the org and the missions and the products/services being created/provided? Daunting, to say the least.</p>
+
+<p>One of the ways to get there, however, is to start adopting practices from Agile and Lean and start applying them to business management. Small teams should operate in a manner that is reasonably autonomous and empowered. You're asking people to do a task, so let them do it! However, what they do should be within a framework that emphasizes the greater good, lean principles (like eliminating waste), and - most importantly - thinking about generativity (that is, the lasting impact and sustainability of the work for and on future generations). I would submit that this seemingly small (but not trivial) change in management can have HUGE impact overall, including on the security of the organization.</p>
+
+<p>Consider, if you will, that fundamentally we in infosec want people to make better decisions. Truly, that's at the core of much that we do. Those "better decisions" might equate to not falling for (spear)phishing attacks, choosing hardened environments over default installs, or following reasonable secure coding practices in the development process (to name a few). However, when people are empowered to make their own decisions <em>and are held accountable for the lasting impacting</em>, then and only then will they start adopting more of a caretaker mentality and start considering long-term impacts. BUT!!! - and this is very important - it also means breaking from the micromanagement techniques that have become so prevalent in business over the past 20 years. Because so much work is intangible (not physical products being produced), it is vastly more difficult to monitor and manage for quality. As such, part of this reinvention of business operations is to completely throw away factory-style TQM practices (including those created by Deming) in favor of digital-style TQM practices that better measure modern-day business functions and outputs. Ergo, what seems so small is in no way trivial or easy.</p>
+
+<p><strong>2) DevOps, Automation, and Outsourcing</strong></p>
+
+<p>This conversation naturally brings is to the DevOps movement, which is singularly the most important "invention" of the past decade. It provides a roadmap for how organizations should function overall. Key within DevOps is the notion of automation, but also equally important is the notion of outsourcing, whether that be to cloud providers or consultants/specialists or other "*-as-a-Service" providers (e.g., mainframes-as-a-service). No matter how you look at it, DevOps is the way that business should operate, and that is - interestingly enough - exactly matched to the org management model that Laloux describes (without ever getting into technology or DevOps!).</p>
+
+<p>First and foremost, let's talking about what DevOps is: it's a <strong>cultural movement</strong> designed to fundamentally alter how business functions. It is <em>not</em> just about agile or automation or tools/toolchains or anything so simple or crass. It is a broad-scale change in business model and operation; and, it applies to everyone! Know what else parallels this target audience of *everyone*? That's right, it's infosec. Further, just as DevOps advocates applying agile and lean principles (among other things) to business operations, so does infosec advocate applying better security and risk mgmt principles to everything in the organization, too. How do you get people to make better decisions? You educate them, you help them optimize their flow, you provide timely and relevant feedback (preferably as quickly as possible), and you structure in resilience such that when failures happen (they will), they don't bring down the entire organization. Those are the Three Ways of DevOps as introduced within <em>The Phoenix Project</em> way back in 2013.</p>
+
+<p>From a functional perspective, this means a few very specific things for infosec: 1) We must continue to work in a collaborative and consultative manner with everyone else in the organization. 2) We must heavily emphasize ways to automate much of what we're doing to minimize the overhead and functional impact on business operations while trying to achieve our desired goals (e.g., through federated identity with MFA, through deployment of SOAR tools to automate much of otherwise-wasteful SOC practices, through extensive process automation around all forms of access control/mgmt). 3) Similarly, we should continually push decision-makers within projects to ask, first and foremost, the "build or buy?" question, with an emphasis on outsourcing where possible. Our <em>architectures</em> should be built around APIs, integrations, and interoperability such that we avoid vendor lock-in as much as possible, have data portability (or, perhaps more accurately, application portability while we retain control to our own data), and find ways to optimize security and business by leveraging and integrating specialized resources.</p>
+
+<p><strong>3) InfoSec Bifurcation: Functional vs. Strategic</strong></p>
+
+<p>All of this discussion then brings us to a core challenge: we must change how infosec is structured, operates, and performs. Going forward, it's essential to bifurcate infosec between functional and strategic roles. Most functional roles should be directly embedded within technical teams, and should emphasize use of specialized resources. For example, we should not see large infosec/CISO organizations any more, but instead should see functional technical security resources, such as firewall engineers and appsec engineers, directly embedded into their closest related teams (e.g., network teams, dev/DevOps teams, etc.). Functional roles are specialists who are expert at particular operations.</p>
+
+<p>To this end, we need to get away from these "everything but the kitchen sink" roles, whether they be called "security managers" or "security architects" or "DevSecOps engineers." These titles have become so buzzword-overloaded as to be completely meaningless! I have interviewed <em>extensively</em> over the past year+, and the one universal principle is that organizations are trying to find one magical, perfect hire with expert-level experience in anything and everything, which is just patently wrong and stupid and mythological. If you think you need someone who is expert in infosec AND development AND systems AND automation AND incident response AND AND AND... just stop. Please. You're seeking the impossible, setting yourself up for failure and disappointment, and - more importantly - you're causing pain (for yourself and others). Focus on the true <em>functional</em> requirements needed and go hire for that. Nobody can do it all (certainly not well), and there is incredible value in hiring a diverse set of personnel, whether they be FTEs or - far more likely these days - contractors. In fact, I would even go so far as to challenge people to stop thinking about full-time resources for all these functional roles, and instead think about DevOps and the gig culture and how to grab specialist contract resources as needed to perform project work and then move on. Truly, change your thinking and divert from the old, broken models.</p>
+
+<p>Lastly, <strong>do</strong> invest in <em>strategic</em> resources. For example, a true security architect will have a broad background within strength of vision, the ability to run an entire project from start to finish (including: problem definition, solution identification and evaluation, solution testing/POC, and solution deployment). Managers and executives should also be strategic overall, focusing on ways to ensure that everything is agile, everything is lean (waste-reducing), and <strong>not</strong> micromanaging anything. For example, instead of riding a project hard to drive to completion, instead ask "Why is this project spec'd to take so long?" or "What are the obstacles to progress, completion, and success?" When looking at projects <em>strategically</em>, you will then find that you are instead looking at ways of working, how to be more agile, how to be more efficient and effective, and overall how to help empower people to work smarter. It's amazing the difference when you let people do their jobs and focus instead on helping them achieve their goals. Also, in doing this, it allows management ranks to thin and flatten, fewer managers can manage more projects and personnel, and so on. For infosec, this means finding and developing <em>leaders</em> and - of equal importance - not forcing people to leave their specialty behind simply to "move up the ranks." There shouldn't be ranks so much as effective leadership and the division between strategic and functional actors. Making this change will further the first two points above in reforming how the organization operates, while also allowing infosec progress to truly be made in a reformational matter.</p>
+
+<p>---<br />
+I hope to write in more depth about all of these points in the coming weeks and months. First thing's first, though: I need a steady source of income! Yes, 2018 was rough, and it ended just as it had been going all along; on a major note of disappointment. But... a new year means the opportunity to turn the page, find something better. In the meantime, please take this message out to everyone and let's see if we can finally hit a tipping point in how businesses function and finally instigate meaningful change.</p>
+
+<p>Cheers & Happy New Year!</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>The Quest for Optimal Security</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2018/08/the-quest-for-optimal-security.html" />
+    <id>tag:secureconsulting.net,2018://12.2542</id>
+
+    <published>2018-08-06T17:55:28Z</published>
+    <updated>2018-08-06T18:13:39Z</updated>
+
+    <summary>There&apos;s no shortage of guidance available today about how to structure, build, and run a security program. Most guidance comes from a standpoint of inherent bias, whether it be to promote a product class, specific framework/standard, or to best align...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="infosec" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="architecture" label="architecture" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="behavior" label="behavior" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="culture" label="culture" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="infosec" label="infosec" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="management" label="management" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="optimal" label="optimal" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="program" label="program" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="risk" label="risk" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="security" label="security" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="strategy" label="strategy" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>There's no shortage of guidance available today about how to structure, build, and run a security program. Most guidance comes from a standpoint of inherent bias, whether it be to promote a product class, specific framework/standard, or to best align with specific technologies (legacy/traditional infrastructure, cloud, etc.). Given all the competing advice out there, I often find it's hard to suss out exactly what one should be doing. As someone actively on the job hunt, this reality is even more daunting because job descriptions will typically contain a smattering of biases, confirmed or contradicted through interview processes. But, I digress...</p>
+
+<p>At end of day, the goal of your security program <em>should</em> be to chart a path to an optimal set of capabilities. What exactly constitutes "optimal" will in fact vary from org to org. We know this is true because otherwise there would already be a settled "best practice" framework to which everyone would align. That said, there are a lot of common pieces that can be leveraged in identifying the optimal program attributes for your organization.</p>]]>
+        <![CDATA[<p><strong>The Basics</strong></p>
+
+<p>First and foremost, your security program <em>must</em> account for basic security hygiene, which creates the basis for arguing <a href="http://www.secureconsulting.net/2010/03/legal-defensibility-doctrine.html" target="_blank">legal defensibility</a>; which is to say, if you're not doing the basics, then your program can be construed insufficient, exposing your organization to legal liability (a growing concern). That said, what exactly constitutes "basic security hygiene"?</p>
+
+<p>There are a couple different ways to look at basic security hygiene. For starters, you can look at it be technology grouping:<br />
+ - Network<br />
+ - Endpoint<br />
+ - Data<br />
+ - Applications<br />
+ - IAM<br />
+ - etc.</p>
+
+<p>However, listing out specific technologies can become cumbersome, plus it doesn't necessarily lend itself well to thinking about security architecture and strategy. A few years ago I came up with an approach that looks like this:</p>
+
+<p><a href="http://secureconsulting.net/assets_c/2018/08/Ben-matrix-24.html" onclick="window.open('http://secureconsulting.net/assets_c/2018/08/Ben-matrix-24.html','popup','width=1045,height=698,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://secureconsulting.net/assets_c/2018/08/Ben-matrix-thumb-600xauto-24.png" width="600" height="400" alt="Ben-matrix.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></a></p>
+
+<p>More recently, I learned of the <a href="https://www.owasp.org/index.php/OWASP_Cyber_Defense_Matrix" target="_blank">OWASP Cyber Defense Matrix</a>, which takes a similar approach to mine above, but mixing it with the <a href="https://www.nist.gov/cyberframework" target="_blank">NIST Cybersecurity Framework</a>.</p>
+
+<center><a href="https://www.owasp.org/index.php/OWASP_Cyber_Defense_Matrix" target="_blank"><img src="https://www.owasp.org/images/0/05/Cyber_Defense_Matrix.png" width="600"></a></center><br>
+
+<p>Overall, I like the simplicity of the CDM approach as I think it covers sufficient bases to project a legally defensible position, while also ensuring a decent starting point that will cross-map to other frameworks and standards depending on the needs of your organization (e.g., maybe you need to move to ISO 27001 or complete a SOC 1/2/3 certification).</p>
+
+<p><strong>Org Culture</strong></p>
+
+<p>One of the oft-overlooked, and yet insanely important, aspects of designing an approach to optimal security for your organization is to understand that it must exist completely within the organization's culture. After all, the organization is comprised of people doing work, and pretty much everything you're looking to do will have some degree of impact on those people and their daily lives.</p>
+
+<p><a href="http://secureconsulting.net/assets_c/2018/08/Ben-pyramid-25.html" onclick="window.open('http://secureconsulting.net/assets_c/2018/08/Ben-pyramid-25.html','popup','width=948,height=538,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://secureconsulting.net/assets_c/2018/08/Ben-pyramid-thumb-600xauto-25.png" width="600" height="340" alt="Ben-pyramid.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></a></p>
+
+<p>As such, when you think about everything, be it basic security hygiene, information risk management, or even behavioral infosec, you must first consider how it fits with org culture. Specifically, you need to look at the values of the organization (and its leadership), as well as the behaviors that are common, advocated, and rewarded.</p>
+
+<p>If what you're asking people to do goes against the incentive model within which they're operating, then you <em>must</em> find a way to either better align with those incentives or find a way to change the incentives such that they encourage preferred behaviors. We'll talking more about behavioral infosec below, so for this section the key takeaway is this: organizational culture creates the incentive model(s) upon which people make decisions, which means you absolutely <em>must</em> optimize for that reality.</p>
+
+<p>For more on my thoughts around org culture, please see my post <a href="https://www.linkedin.com/pulse/quit-talking-security-culture-fix-org-ben-tomhave/" target="_blank">"Quit Talking About "Security Culture" - Fix Org Culture!"</a></p>
+
+<p><strong>Risk Management</strong></p>
+
+<p>Much has been said about risk management over the past decade+, whether it be PCI DSS advocating for a "risk-based approach" to vulnerability management, or updates to the NIST Risk Management Framework, or various advocation by ISO 27005/31000 or proponents of a quantitative approach (such as the FAIR Institute).</p>
+
+<p>The simply fact is that, once you have a reasonable base set of practices in place, almost everything else should be driven by a risk management approach. However, what this means within the context of optimal security can vary substantially, not the least being due to staffing challenges. If you are a small-to-medium-sized business, then your reality is likely one where you, at best, have a security leader of some sort (CISO, security architect, security manager, whatever) and then maybe up to a couple security engineers (doers), maybe someone for compliance, and then most likely a lot of outsourcing (MSP/MSSP/MDR, DFIR retainer, auditors, contractors, consultants, etc, etc, etc).</p>
+
+<p>Risk management is not your starting point. As noted above, there are a number of security practices that we <em>know</em> must be done, whether that be securing endpoints, data, networks, access, or what-have-you. Where we start needing risk management is when we get beyond the basics and try to determine what else is needed. As such, the crux of optimal security is having an information risk management capability, which means your overall practice structure might look like this:</p>
+
+<p><a href="http://secureconsulting.net/assets_c/2018/08/Ben-pyramid2-26.html" onclick="window.open('http://secureconsulting.net/assets_c/2018/08/Ben-pyramid2-26.html','popup','width=1174,height=681,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://secureconsulting.net/assets_c/2018/08/Ben-pyramid2-thumb-600xauto-26.png" width="600" height="348" alt="Ben-pyramid2.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></a></p>
+
+<p>However, don't get wrapped around the axel too much on how the picture fits together. Instead, be aware that your basics come first (out of necessity), <em>then</em> comes some form of risk mgmt., which will include gaining a deep understanding of org culture.</p>
+
+<p><strong>Behavioral InfoSec</strong></p>
+
+<p>The other major piece of a comprehensive security program is behavioral infosec, which I have talked about previously in my posts <a href="https://www.linkedin.com/pulse/introducing-behavioral-infosec-ben-tomhave/" target="_blank">"Introducing Behavioral InfoSec"</a> and <a href="https://www.linkedin.com/pulse/design-behavior-awareness-ben-tomhave/" target="_blank">"Design For Behavior, Not Awareness."</a> In these posts, and other places, I talk about the imperative to key in on organizational culture, and specifically look at behavior design as part of an overall security program. However, there are a couple key differences in this approach that set it apart from traditional security awareness programs.<br />
+ 1) Behavioral InfoSec acknowledges that we are seeking preferred behaviors within the context of organizational culture, which is the set of values of behaviors promoted, supported, and rewarded by the organization.<br />
+ 2) We move away from basic "security awareness" programs like annual CBTs toward practices that seek measurable, lasting change in behavior that provide positive security benefit.<br />
+ 3) We accept that all security behaviors - whether it be hardening or anti-phishing or data security (etc) - must either align with the inherent cultural structure and incentive model, or seek to change those things in order to heighten the motivation to change while simultaneously making it easier to change.</p>
+
+<p>To me, shifting to a behavioral infosec mindset is imperative for achieving success with embedding and institutionalizing desired security practices into your organization. Never is this more apparent than in looking at the <a href="https://www.behaviormodel.org/" target="_blank">Fogg Behavior Model</a>, which explains behavior thusly:</p>
+
+<center><img src="https://www.behaviormodel.org/index_files/fogg-behavior-model-updated.png" target="_blank"></center>
+
+<p>In writing, it says that behavior happens when three things come together: motivation, ability, and a trigger (prompt or cue). We can diagram behavior (as above) wherein motivate is charted on the Y-axis from low to high, ability is charted on the X-axis from "hard to do" to "easy to do," and then a prompt (or trigger) that falls either to the left or right of the "line of action," which means the prompt itself is less important than one's motivation and the ease of the action.</p>
+
+<p>We consistently fail in infosec by not properly accounting for incentive models (motivation) or by asking people to do something that is, in fact, too difficult (ability; that is, you're asking for a change that is hard, maybe in terms of making it difficult to do their job, or maybe just challenging in general). In all things, when we think about information risk mgmt. and the kinds of changes we want to see in our organizations beyond basic security hygiene, it's imperative that we also under the cultural impact and how org culture will support, maybe even reward, the desired changes.</p>
+
+<p>Overall, I would argue that my original pyramid diagram ends up being more useful insomuch as it encourages us to think about info risk mgmt. and behavioral infosec in parallel and in conjunction with each other.</p>
+
+<p><strong>Putting It All Together</strong></p>
+
+<p>All of these practices areas - basic security hygiene, info risk mgmt, behavioral infosec - ideally come together in a strategic approach that achieves optimal security. But, what does that really mean? What are the attributes, today, of an optimal security program? There are lessons we can learn from agile, DevOps, ITIL, Six Sigma, and various other related programs and research, ranging from Deming to Senge and everything in between. Combined, "optimal security" might look something like this:<br />
+<blockquote>
+<strong>Conscious</strong><br />
+&nbsp;&nbsp;&nbsp;- Generative (thinking beyond the immediate)<br />
+&nbsp;&nbsp;&nbsp;- Mindful (thinking of people and orgs in the whole)<br />
+&nbsp;&nbsp;&nbsp;- Discursive (collaborative, communicative, open-minded)</p>
+
+<p><strong>Lean</strong><br />
+&nbsp;&nbsp;&nbsp;- Efficient (minimum steps to achieve desired outcome)<br />
+&nbsp;&nbsp;&nbsp;- Effective (do we accomplish what we set out to do?)<br />
+&nbsp;&nbsp;&nbsp;- Managed (haphazard and ad hoc are the enemy of lasting success)</p>
+
+<p><strong>Quantified</strong><br />
+&nbsp;&nbsp;&nbsp;- Measured (applying qualitative or quantitative approaches to test for efficiency and effectiveness)<br />
+&nbsp;&nbsp;&nbsp;- Monitored (not just point-in-time, but watched over time)<br />
+&nbsp;&nbsp;&nbsp;- Reported (to align with org culture, as well as to help reform org culture over time)</p>
+
+<p><strong>Clear</strong><br />
+&nbsp;&nbsp;&nbsp;- Defined (what problem is being solved? what is the desired outcome/impact? why is this important?)<br />
+&nbsp;&nbsp;&nbsp;- Mapped (possibly value stream mapping, possibly net flows or data flows, taking time to understand who and what is impacted)<br />
+&nbsp;&nbsp;&nbsp;- Reduced (don't bite off too much at once, acknowledge change requires time, simplify simplify simplify)</p>
+
+<p><strong>Systematic</strong><br />
+&nbsp;&nbsp;&nbsp;- Systemic understanding (the organization is a complex organism that must work together)<br />
+&nbsp;&nbsp;&nbsp;- Automated where possible (don't install people where an automated process will suffice)<br />
+&nbsp;&nbsp;&nbsp;- Minimized complexity (perfect is the enemy of good, and optimal security is all about "good enough," so seek the least complex solutions possible)<br />
+</blockquote>
+Obviously, much, much more can be said about the above, but that's fodder for another post (or a book, haha). Instead, I present the above as a starting point for a conversation to help move everyone away from some of our traditional, broken approaches. Now is the time to take a step back and (re-)evaluate our security programs and how best to approach them.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Forget C-I-A, Availability Is King</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2018/05/forget-c-i-a-availability-is-k.html" />
+    <id>tag:secureconsulting.net,2018://12.2541</id>
+
+    <published>2018-05-16T16:37:27Z</published>
+    <updated>2018-05-16T17:13:21Z</updated>
+
+    <summary>In the traditional parlance of infosec, we&apos;ve been taught repeatedly that the C-I-A triad (confidentiality, integrity, availability) must be balanced in accordance with the needs of the business. This concept is foundational to all of infosec, ensconced in standards and...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="infosec" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="leadership-management" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="risk-management" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="availability" label="availability" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="cia" label="CIA" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="confidentiality" label="confidentiality" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="inforisk" label="inforisk" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="integrity" label="integrity" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="video" label="video" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>In the traditional parlance of infosec, we've been taught repeatedly that the C-I-A triad (confidentiality, integrity, availability) must be balanced in accordance with the needs of the business. This concept is foundational to all of infosec, ensconced in standards and certification exams and policies. Yet, today, it's essentially wrong, and moreover isn't a helpful starting point for a security discussion.</p>]]>
+        <![CDATA[<p>The simple fact is this: availability is king, while confidentiality and integrity are secondary considerations that rarely have a default predisposition. We've reached this point thanks in large part to the cloud and the advent of utility computing. That is, we've reached a point where we assume uptime and availability will always be optimal, and thus we don't need to think about it much, if at all. And, when we do think about it, it falls under the domain of <a href="https://landing.google.com/sre/" target="_blank">site reliability engineering (SRE)</a> rather than being a security function. And that's a good thing!</p>
+
+<p>If you remove availability from the C-I-A triad, you're then left with confidentiality and integrity, which can be boiled down to two main questions:<br />
+ 1) What are the data protection requirements for each dataset?<br />
+ 2) What are the anti-corruption requirements for each dataset and environment?</p>
+
+<p>In the first case you quickly go down the data governance path (inclusive of data security), which must factor in requirements for control, retention, protection (including encryption), and masking/redaction, to name a few things. From an overall "big picture" perspective, we can then more clearly view data protection from an inforisk perspective, and interestingly enough it now makes it much easier to drill down in a quantitative risk analysis process to evaluate the overall exposure to the business.</p>
+
+<p>As for anti-corruption (integrity) requirements, this is where we can see traditional security practices entering the picture, such as through ensuring systems are reasonably hardened against compromise, as well as appsec testing (to protect the app), but then also dovetailing back into data governance considerations to determine the potential impact of data corruption on the business (whether that be fraudulent orders/transactions; or, tampering with data, like a student changing grades or an employee changing pay rates; or, even data corruption in the form of injection attacks).</p>
+
+<p>What's particularly interesting about integrity is applying it to cloud-based systems and viewing it through a cost control lens. Consider, if you will, a cloud resource being compromised in order to run cryptocurrency mining. That's a violation of system integrity, which in turn may translate into sizable opex burn due to unexpected resource utilization. This example, of course, once again highlights how you can view things through a quantitative risk assessment perspective, too.</p>
+
+<p>At the end of the day, C-I-A are still useful concepts, but we're beyond the point of thinking about them in balance. In a utility compute model, availability is assumed to approach 100%, which means it can largely be left to operations teams to own and manage. Even considerations like DDoS mitigations frequently fall to ops teams these days, rather than security. Making the shift here then allows one to more easily talk about inforisk assessment and management within each particular vertical (confidentiality and integrity), and in so doing makes it much easier to apply quantitative risk analysis, which in turn makes it much easier to articulate business exposure to executives in order to more clearly manage the risk portfolio.</p>
+
+<p>(PS: Yes, I realize business continuity is often lumped under infosec, but I would challenge people to think about this differently. In many cases, business continuity is a standalone entity that blends together a number of different areas. The overarching point here is that the traditional status quo is a failed model. We must start doing things differently, which means flipping things around to identify better approaches. SRE is a perfect example of what happens when you move to a utility computing model and then apply systems and software engineering principles. We should be looking at other ways to change our perspective rather than continuing to do the same old broken things.)</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Measure Security Performance, Not Policy Compliance</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2018/03/measure-security-performance-n.html" />
+    <id>tag:secureconsulting.net,2018://12.2540</id>
+
+    <published>2018-03-12T13:12:27Z</published>
+    <updated>2018-03-12T13:15:15Z</updated>
+
+    <summary>I started my security (post-sysadmin) career heavily focused on security policy frameworks. It took me down many roads, but everything always came back to a few simple notions, such as that policies were a means of articulating security direction, that...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="infosec" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="compliance" label="compliance" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="kpis" label="KPIs" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="metrics" label="metrics" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="policies" label="policies" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="security" label="security" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>I started my security (post-sysadmin) career heavily focused on security policy frameworks. It took me down many roads, but everything always came back to a few simple notions, such as that policies were a means of articulating security direction, that you had to prescriptively articulate desired behaviors, and that the more detail you could put into the guidance (such as in standards, baselines, and guidelines), the better off the organization would be. Except, of course, that in the real world nobody ever took time to read the more detailed documents, Ops and Dev teams really didn't like being told how to do their jobs, and, at the end of the day, I was frequently reminded that publishing a policy document didn't translate to implementation.</p>
+
+<p>Subsequently, I've spent the past 10+ years thinking about better ways to tackle policies, eventually reaching the point where I believe "less is more" and that anything written and published in a place and format that isn't "work as usual" will rarely, if ever, get implemented without a lot of downward force applied. I've seen both good and bad policy frameworks within organizations. Often they cycle around between good and bad. Someone will build a nice policy framework, it'll get implemented in a number of key places, and then it will languish from neglect and inadequate upkeep until it's irrelevant and ignored. This is not a recipe for lasting success.</p>
+
+<p>Thinking about it further this week, it occurred to me that part of the problem is thinking in the old "compliance" mindset. Policies are really to blame for driving us down the checkbox-compliance path. Sure, we can easily stand back and try to dictate rules, but without the adequate authority to enforce them, and without the resources needed to continually update them, they're doomed to obsolescence. Instead, we need to move to that "security as code" mentality and find ways to directly codify requirements in ways that are naturally adapted and maintained.</p>]]>
+        <![CDATA[<p><strong>End Dusty Tomes and (most) Out-of-Band Guidance</strong></p>
+
+<p>The first daunting challenge of security policy framework reform is to throw away the old, broken approach with as much gusto and finality as possible. Yes, there will always be a need for certain formally documented policies, but overall an organization Does. Not. Need. large amounts of dusty tomes providing out-of-band guidance to a non-existent audience.</p>
+
+<p>Now, note a couple things here. First, there is a time and a place for providing out-of-band guidance, such as via direct training programs. However, it should be the minority of guidance, and wherever possible you should seek to codify security requirements directly into systems, applications, and environments. For a significant subset of security practices, it turns out we do not need to repeatedly consider whether or not something should be done, but can instead make the decision once and then roll it out everywhere as necessary and appropriate.</p>
+
+<p>Second, we have to realize and accept that traditional policy (and related) documents only serve a formal purpose, not a practical or pragmatic purpose. Essentially, the reason you put something into writing is because a) you're required to do so (such as by regulations), or b) you're driven to do so due to ongoing infractions or the inability to directly codify requirements (for example, requirements on human behavior). What this leaves you with are requirements that can be directly implemented and that are thus easily measurable.</p>
+
+<p><strong>KPIs as Policies (et al.)</strong></p>
+
+<p>If the old ways aren't working, then it's time to take a step back and think about why that might be and what might be better going forward. I'm convinced the answer to this query lies in stretching the "security as code" notion a step further by focusing on security performance metrics for everything and everyone <em>instead of security policies</em>. Specifically, if you think of policies as requirements, then you should be able to recast those as metrics and key performance indicators (KPIs) that are easily measured, and in turn are easily integrated into dashboards. Moreover, going down this path takes us into a much healthier sense of quantitative reasoning, which can pay dividends for improved information risk awareness, measurement, and management.</p>
+
+<p>Applied, this approach scales very nicely across the organization. Businesses already operate on a KPI model, and converting security requirements (née policies) into specific measurables at various levels of the organization means ditching the ineffective, out-of-band approach previously favored for directly specifying, measuring, and achieving desired performance objectives. Simply put, we no longer have to go out of our way to argue for people to conform to policies, but instead simply start measuring their performance and incentivize them to improve to meet performance objectives. It's then a short step to integrating security KPIs into all roles, even going so far as to establish departmental, if not whole-business, security performance objectives that are then factored into overall performance evaluations.</p>
+
+<p>Examples of security policies-become-KPIs might include metrics around vulnerability and patch management, code defect reduction and remediation, and possibly even phishing-related metrics that are rolled up to the department or enterprise level. When creating security KPIs, think about the policy requirements as they're written and take time to truly understand the objectives they're trying to achieve. Convert those objectives into measurable items, and there you are on the path to KPIs as policies. For more on thoughts on security metrics, I recommend checking out the CIS Benchmarks as a starting point.</p>
+
+<p><strong>Better Reporting and the Path to Accountability</strong></p>
+
+<p>Converting policies into KPIs means that nearly everything is natively built for reporting, which in turn enables executives to have better insight into the security and information risk of the organization. Moreover, shifting the focus to specific measurables means that we get away from the out-of-band dusty tomes, instead moving toward achieving actual results. We can now look at how different teams, projects, applications, platforms, etc., are performing and make better-informed decisions about where to focus investments for improvements.</p>
+
+<p>This notion also potentially sparks an interesting future for current GRC-ish products. If policies go away (mostly), then we don't really need repositories for them. Instead, GRC products can shift to being true performance monitoring dashboards, allowing those products to broaden their scope while continuing to adapt other capabilities, such as those related to the so-called "SOAR" market (Security Orchestration, Automation, and Response). If GRC products are to survive, I suspect it will be by either heading further down the information risk management path, pulling in security KPIs in lieu of traditional policies and compliance, or it will drive more toward SOAR+dashboards with a more tactical performance focus (or some combination of the two). Suffice to say, I think GRC as it was once known and defined is in its final days of usefulness.</p>
+
+<p>There's one other potentially interesting tie-in here, and that's to overall data analytics, which I've noticed slowly creeping into organizations. A lot of the focus has been on using data lakes, mining, and analytics in lieu of traditional SIEM and log management, but I think there's also a potentially interesting confluence with security KPIs, too. In fact, thinking about pulling in SOAR capabilities and other monitoring and assessment capabilities and data, it's not unreasonable to think that KPIs become the tweakable dials CISOs (and up) use to balance out risk vs reward in helping provide strategic guidance for address information risk within the enterprise. At any rate, this is all very speculative and unclear right now, but something to nonetheless watch. But I have digressed...</p>
+
+<p>---<br />
+The bottom line here is this: traditional policy frameworks have generally outlived their usefulness. We cannot afford to continue writing and publishing security requirements in a format that isn't easily accessible in a "work as usual" format. In an Agile/DevOps world, "security as code" is imperative, and that includes converting security requirements into KPIs.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>The Thankless Life of Analysts</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2018/01/the-thankless-life-of-analysts.html" />
+    <id>tag:www.secureconsulting.net,2018://12.2530</id>
+
+    <published>2018-01-25T20:45:11Z</published>
+    <updated>2018-01-25T21:09:36Z</updated>
+
+    <summary>There are shenanigans afoot, I tell ya; shenanigans! I was recently contacted by an intermediary asking if I&apos;d be interested in writing a paid blog post slamming analysts, to be published on my own blog site, and then promoted by...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="analyst" label="analyst" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="criticism" label="criticism" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="firm" label="firm" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="gartner" label="Gartner" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="realism" label="realism" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="skepticism" label="skepticism" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>There are shenanigans afoot, I tell ya; shenanigans!</p>
+
+<p>I was recently contacted by an intermediary asking if I'd be interested in writing a paid blog post slamming analysts, to be published on my own blog site, and then promoted by the vendor. No real details were given other than the expectation to slam analyst firms, but once I learned who was funding the initiative, it became pretty clear what was going on. Basically, this vendor has received, or is about to receive, a less-than-stellar review and rating from one of the analyst firms and they're trying to get out in front of the news by trying to proactively discredit analyst reports.</p>
+
+<p>My response to the offer was to decline, and now as I'm hearing some may take up the opportunity, I've decided it's time to myself get out ahead of this potential onslaught of misleading propaganda. Mind you, I'm not a huge fan of the analyst firms, and I found myself incredibly frustrated and disappointed during my time at Gartner when I was constantly told to write about really old and boring topics rather than being allowed to write more progressive reports that would actually help move the industry forward. But I'll get to that in a moment...</p>]]>
+        <![CDATA[<p><strong>How Research Happens</strong></p>
+
+<p>First and foremost, let's talk about how research happens. I can only speak from my direct experience at Gartner, but my understanding is it's not too dissimilar at other organizations. Also, let me provide a disclaimer or three: I don't work for Gartner any more, I never wrote Magic Quadrant reports, and I really have nothing to personally gain from defending or attacking them. As always, my goal here is to be fair and balanced (for real, not in a Fox News or CNN kinda way).</p>
+
+<p>So, research... there are a lot of different kinds of reports, but let's talk a little bit about the biggies that everyone sees (e.g., MQs, Waves, etc.). These reports typically combine primary research (customer surveys and interviews) with analysis of open source information and interviews with the vendors themselves. One of the first challenges is defining a market niche, followed by then identifying vendors in the niche, and then conducting the research. For vendors who whine about being excluded from the research process, part of this is your fault for not making yourself known to analysts, and part of this is falling victim to arbitrary market segment rules created to keep the pool of rated vendors to a reasonable size (think for example, of the old, retired Gartner MQ for EGRC, which easily could have included hundreds of vendors, so instead was arbitrarily pared down to 20 or so vendors who no one in their right mind would ever put on a comparative chart).</p>
+
+<p>Customer surveys (references) generally play a huge role in information collection, and the pros and cons highlighted in those surveys and interviews will often get incorporated directly into reports. Which is to say, keep your customers happy and be sure any customer references you provide aren't going to trash you! Beyond that, it then comes down to an analyst's judgment (and biases) in terms of how they score you. The scoring <strong>is</strong> consistent across all vendors included in a report insomuch as the same criteria are used for everyone.</p>
+
+<p>Contrary to popular mythos, analysts are <em>not</em> compensated for sales, renewals, etc., and that is precisely to keep the analysts as neutral and objective as possible. That said, I've noted that it's very common for larger vendors to buy lots of analyst time in order to increase their exposure to the analyst(s) covering them. This has included off-site analyst information seminars in sunny locations, which I've always found a bit suspect. The bottom line here, though, is that if there's an image of bias and favoritism toward larger, richer vendors, it's at least partly correct insomuch as the major players can afford the extra face time that helps keep their offerings fresh in the mind of the analysts.</p>
+
+<p>Additionally, there's also a self-reinforcing cycle at play. The large vendors have the largest marketing budgets, and thus tend to drive a lot of customer inquiries to analysts about their products. As the inquiries increase, so does the imperative for an analyst to speak with the vendors on a regular basis in order to keep apprised of ongoing developments. Most large vendors have a dedicated analyst liaison whose job is to ensure all the analyst firms are getting regularly briefings on products and product strategy, which in turn may trigger research notes sharing updates from the vendors, etc, etc, etc.</p>
+
+<p><strong>It's Not Foolproof / The Ombudsman</strong></p>
+
+<p>The research and publishing process is not foolproof. Humans are involved, which means bias will always be present in varying degrees, and mistakes will be made. As noted already, it's fairly easy to increase your influence over an analyst simply by increasing your company's exposure. And, in many ways, you <em>should</em> be doing this as much as you can (within reasonable limits - i.e., most major vendors offer quarterly updates). But, nonetheless, the process has failings, and in many ways you should give analysts a break... to a degree, anyway! Oh, and btw, let's also bear in mind that it <em>is</em> a process, and often a lengthy one. You'll notice new MQs only come out ever 2-4 years. Do you know why that is? Because a) research takes a long time, b) writing and internal peer review takes a long time, and c) review and sign-off from vendors takes a long time.</p>
+
+<p>The biggest problem I have with analyst reports like the MQ is how the market niche is defined. For example, in the former "IT GRC" space, a company in that space was once marked down and held back from the Leaders quadrant because they hadn't yet expanded into Europe, nor did they have 24x7x365 support. Such criteria are rather arbitrary, especially at the time. To be honest, nobody really needed or was asking for 24x7x365 tech support for the product because it wasn't critical path. And yet, there was the criteria, and the subsequent markdown against our product. This sort of thing <em>feels</em> arbitrary, and in many examples such criteria really are as such, but we also have to view it from the larger perspective and realize that a report trying to compare a hundred or more vendors also isn't going to be very useful (as that EGRC report continually proved).</p>
+
+<p>Vendors have a recourse if they feel they're treated unfairly. First and foremost, they're given access to draft report language pertaining to them so they can review and offer corrections or refutations. Failing that, if an analyst won't revise a report in response to a vendor objection, the vendor may also engage the ombudsman process and file a formal complaint. This process is generally reliable, but isn't itself foolproof, as demonstrated by the Netscout v Gartner lawsuit filed in Connecticut in 2014 (<a href="https://www.cmswire.com/cms/information-management/vendor-sues-gartner-over-magic-quadrant-pay-to-play-model-026133.php" target="_blank">filing</a>, <a href="https://blogs.gartner.com/ombudsman/2017/09/12/judge-grants-gartner-motion-to-dismiss-netscout-law-suit/" target="_blank">Gartner on outcome</a>, <a href="https://www.netscout.com/news/press-release/responds-court-decision" target="_blank">Netscout on outcome</a>). Overall, a lawsuit is a lousy way to try and resolve issues, though I feel it's certainly better than a guerrilla marketing campaign meant to undermine analysts in general.</p>
+
+<p><strong>Part of the Problem</strong></p>
+
+<p>Now, all of this apologist explaining is great, but let's be clear: analyst firms are as much a problem as they are a help. I, for one, take issue with much that the analyst firms say and do, and I'm very ready to point out some of those failings, including:<br />
+ * Targeting the mainstream with information that was "current" 10+ years ago doesn't move the industry forward.<br />
+ * Reports end up driving customer decisions based on an incorrect understanding of the conclusions.<br />
+ * Bias due to increased exposure and influence aren't effectively managed.</p>
+
+<p>Starting from the first point, one of the problems that frustrated me most as a Gartner analyst was that I wasn't allowed to write "forward-leaning" research because I was told there wasn't an apparent market for it. To be fair, in some ways that's correct; the "average" company today is not on the cutting edge, and in fact very much needs to be told (repeatedly) to do the basics.</p>
+
+<p>However, there are other issues here that are harmful. For example, much of the focus in analyst reporting is on tools and vendors, not on processes and practices and architectures. As such, we see the notorious "shiny object syndrome" in full effect every time an executive returns from an event or reads a new report. Just because a product is a "leader" in a report does NOT mean that you need to run out and buy them.</p>
+
+<p>In fact, just because someone is a "leader" doesn't mean they're the best choice for your organization. Analyst reports are notoriously misrepresented, and of course get heavily played-up by marketing departments as some sort of definitive pronouncement, when in fact it's just one data point. Something I often pointed out to clients as an analyst was that you really want to look at the report in the inverse to make sure you're not pursuing a product that a) didn't make it into a report because they weren't mature enough, b) scored very poorly in a report for not meeting a number of sound criteria, or c) were otherwise cautioned against in a report. That is where the real values lies; not in who may or may not be a "leader" in a space. Often you'll find buying a product from a "leader" comes at much greater cost, while other products in the middle of the pack would be more than sufficient for your organization's needs and provide much quicker ROI overall.</p>
+
+<p>The bottom line here is that analyst firms must be seen as they are: generic advisors on products. They're not foolproof, they're not unfailing, they're not completely unbiased (no such thing), they're not necessarily producing comprehensive reports (where does free and open source fit in a report on commercial offerings?!), and the reports are absolutely, positively <strong>not</strong> telling you which products to buy or making specific product recommendations suitable to your organization.</p>
+
+<p>---<br />
+At the end of the day, treat analyst reporting as an input into your product decisions, but do <em>not</em> use them as the only consideration, and do not over-weight their input. Choosing a product should be part of an architectural process that first defines and understands a problem-space, and then progresses to identifying and evaluating possible solutions for that problem-space (assuming the problem-space is even worth solving!). Starting from an analyst report on the assumption that they're providing product recommendations <em>for you specifically</em> is patently incorrect, and will almost certainly lead to pain down the line. Misusing analyst reports is not the fault of the analysts, just like buying into vendor marketing campaigns without reasonable scrutiny and critical thinking is unwise.</p>
+
+<p>As for people who are eager to attack and undermine analyst firms, be wary of their agenda, because you never know who might be paying for their criticism. If there's one thing I've found over the years, people like to think they know all about analyst firms even though they've never worked for one. As with everything, a healthy dose of skepticism goes a long way (for both critics and advocates!).</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Design For Behavior, Not Awareness</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2017/10/design-for-behavior-not-awaren.html" />
+    <id>tag:www.secureconsulting.net,2017://12.2529</id>
+
+    <published>2017-10-31T15:24:57Z</published>
+    <updated>2017-10-31T15:32:15Z</updated>
+
+    <summary>October was National Cybersecurity Awareness Month. Since today is the last day, I figured now is as good a time as any to take a contrarian perspective on what undoubtedly many organizations just did over the past few weeks; namely,...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="infosec" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="awareness" label="awareness" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="behavior" label="behavior" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="change" label="change" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="design" label="design" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="fogg" label="Fogg" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="security" label="security" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>October was National Cybersecurity Awareness Month. Since today is the last day, I figured now is as good a time as any to take a contrarian perspective on what undoubtedly many organizations just did over the past few weeks; namely, wasted a lot of time, money, and good will.</p>]]>
+        <![CDATA[<p>Most security awareness programs and practices are horrible BS. This extends out to include many practices heavily promoted by the likes of SANS, as well as the current state of "best" (aka, failing miserably) practices. We shouldn't, however, be surprised that it's all a bunch of nonsense. After all, awareness budgets are tiny, the people running these programs tend to be poorly trained and uneducated, and in general there's a ton of misunderstanding about the point of these programs (besides checking boxes).</p>
+
+<p>To me, there are three kinds of security awareness and education objectives:<br />
+ 1) Communicating new practices<br />
+ 2) Addressing bad practices<br />
+ 3) Modifying behavior</p>
+
+<p>The first two areas really have little to do with behavior change so much as they're about communication. The only place where behavior design comes into play is when the secure choice isn't the easy choice, and thus you have to build a different engagement model. Only the third objective is primarily focused on true behavior change.</p>
+
+<p><strong>Awareness as Communication</strong></p>
+
+<p>The vast majority of so-called "security awareness" practices are merely focused on communication. They tell people "do this" or "do that" or, when done particularly poorly, "you're doing X wrong idiots!" The problem is that, while communication is important and necessary, rarely are these projects approached from a behavior design perspective, which means nobody is thinking about effectiveness, let alone how to measure for effectiveness.</p>
+
+<p>Take, for example, communicating updated policies. For example, maybe your organization has decided to revise its password policy yet again (woe be to you!). You can undertake a communication campaign to let people know that this new policy is going into effect on a given date, and maybe even explain why the policy is changing. But, that's about it. You're telling people something theoretically relevant to their jobs, but not much more. This task could be done just as easily be your HR or internal communication team as anyone else. What value is being added?</p>
+
+<p>Moreover, the best part of this is that you're not trying to change a behavior, because your "awareness" practice doesn't have any bearing on it; technical controls do! The password policy is implemented in IAM configurations and enforced through technical controls. There's no need for cognition by personnel beyond "oh, yeah, I now have to construct my password according to new rules." It's not like you're generally giving people the chance to opt out of the new policy, and there's no real decision for them to make. As such, the entire point of your "awareness" is communicating information, but without any requirement for people to make better choices.</p>
+
+<p><strong>Awareness as Behavior Design</strong></p>
+
+<p>The real role of a security awareness and education program should be on designing for behavior change, then measuring the effectiveness of those behavior change initiatives. The most rudimentary example of this is the anti-phishing program. Unfortunately, anti-phishing programs also tend to be horrible examples because they're implemented completely wrong (e.g., failure to benchmark, failure to actually design for behavior change, failure to get desired positive results). Yes, behavior change is what we want, but we need to be judicious about what behaviors we're targeting and how we're to get there.</p>
+
+<p>I've had a strong interest in security awareness throughout my career, including having built and delivered awareness training and education programs in numerous prior roles. However, it's only been the last few years that I've started to find, understand, and appreciate the underlying science and psychology that needs to be brought to bear on the topic. Most recently, I completed <a href="http://bjfogg.org/" target="_blank">BJ Fogg</a>'s Boot Camp on behavior design, and that's the lens through which I now view most of these flaccid, ineffective, and frankly incompetent "awareness" programs. It's also what's led me to redefine "security awareness" as "<a href="http://www.secureconsulting.net/2017/08/introducing-behavioral-infosec.html" target="_blank">behavioral infosec</a>" in order to highlight the importance of applying better thinking and practices to the space.</p>
+
+<p>Leveraging Fogg's models and methods, we learn that Behavior happens when three things come together: Motivation, Ability, and a Trigger (aka a prompt or cue). When designing for behavior change, we must then look at these three attributes together and figure out how to specifically address Motivation and Ability when applying/instigating a trigger. For example, if we need people to start following a better, preferred process that will help reduce risk to the organization, we must find a way to make it <em>easy to do</em> (Ability) or find ways to make them <em>want to follow</em> the new process (Motivation). Thus, when we tell them "follow this new process" (aka Trigger), they'll make the desired choice.</p>
+
+<p>In this regard, technical and administrative controls should be buttressed by behavior design whenever a <em>choice</em> must be made. However, sadly, this isn't generally how security awareness programs view the space, and thus just focus on communication (a type of Trigger) without much regard for also addressing Motivation or Ability. In fact, many security programs experience frustration and failure because what they're asking people to do is hard, which means the average person <em>is not able</em> to do what's asked. Put a different way, <em>the secure choice must be the easy choice</em>, otherwise it's unlikely to be followed. Similarly, research has shown time and time again that telling people <em>why</em> a new practice is desirable will greatly increase their willingness to change (aka Motivation). Seat belt awareness programs are a great example of bringing together Motivation (particularly focused on negative outcomes from failure to comply, such as reality of death or serious injury, as well as fines and penalties), Ability (it's easy to do), and Triggers to achieved a desired behavioral outcome.</p>
+
+<p>Overall, it's imperative that we start applying behavior design thinking and principles to our security programs. Every time you ask someone to do something different, you must think about it in terms of Motivation and Ability and Trigger, and then evaluate and measure effectiveness. If something isn't working, rather than devolving to a blame game, instead look at these three attributes and determine if perhaps a different approach is needed. And, btw, this may not necessarily mean making your secure choice easier so much as making the insecure choice more difficult (for example, someone recently noted on twitter that they simply added a wait() to their code to force deprecation over time)</p>
+
+<p><strong>Change Behavior, Change Org Culture</strong></p>
+
+<p>Another interesting aspect of this discussion on behavior design is this: organizational culture is the aggregate of behaviors and values. That is to say, when we can change behaviors, we are in fact changing org culture, too. The reverse, then, is also true. If we find bad aspects of org culture leading to insecure practices, we can then factor those back into the respective behaviors, and then start designing for behavior change. In some cases, we may need to break the behaviors into chains of behaviors and tackle things more slowly over time, but looking at the world through this lens can be quite enlightening. Similarly, looking at the values ensconced within org culture also let's us better understand motivations. People generally want to perform their duties, and do a reasonably decent job at it. This is generally how performance is measured, and those duties and performance measures are typically aligned against outcomes and - ultimately - values.</p>
+
+<p>One excellent lesson that DevOps has taught us (there are many) is that we absolutely <em>can</em> change how the org functions... BUT... it does require a shift in org culture, which means changing values and behaviors. These sorts of shifts can be done either top-down or bottom-up, but the reality is that top-down is much easier in many regards, whereas bottom-up requires that greater consensus and momentum be built to achieve a breakthrough.</p>
+
+<p>DevOps itself is cultural in nature and focuses heavily on changing behaviors, ranging from how dev and ops function, to how we communicate and interact, and so on. Shortened feedback loops and creating space for experimentation are both <em>behavioral</em>, which is why so many orgs struggle with how to make them a reality (that is, it's not simply a matter of better tools). Security absolutely should be taking notes and applying lessons learned from the DevOps movement, including investing in understanding behavior design.</p>
+
+<p>---<br />
+To wrap this up, here are three quick take-aways:</p>
+
+<p>1) Reinvent "security awareness" to be "behavioral infosec" toward shifting to a behavior design approach. Behavior design looks at Motivation, Ability, and Triggers in affecting change.</p>
+
+<p>2) Understand the difference between controls (technical and administrative) and behaviors. Resorting to basic communication may be adequate if you're implementing controls that take away choices. However, if a new control requires that the "right" choice be made, you must then apply behavior design to the project, or risk failure.</p>
+
+<p>3) Go cross-functional and start learning lessons from other practice areas like DevOps and even HR. Understand that everything you're promoting must eventually tie back into org culture, whether it be through changes in behavior or values. Make sure you clearly understand what you're trying to accomplish, and then make a very deliberate plan for implementing changes while addressing all appropriate objectives.</p>
+
+<p>Going forward, let's try to make "cybersecurity awareness month" about something more than tired lines and vapid pejoratives. It's time to reinvent this space as "behavioral infosec" toward achieving better, measurable outcomes.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Incremental &quot;Gains&quot; Are Just Slower Losses</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2017/10/incremental-gains-are-just-slo.html" />
+    <id>tag:www.secureconsulting.net,2017://12.2528</id>
+
+    <published>2017-10-29T16:16:32Z</published>
+    <updated>2017-10-29T16:20:17Z</updated>
+
+    <summary>Anton Chuvakin and I were having a fun debate a couple weeks ago about whether incremental improvements are worthwhile in infosec, or if it&apos;s really necessary to &quot;jump to the next curve&quot; (phrase origin: Guy Kawasaki&apos;s &quot;Art of Innovation,&quot; watch...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="infosec" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="curve" label="curve" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="failure" label="failure" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="incremental" label="incremental" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="innovation" label="innovation" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="jump" label="jump" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="success" label="success" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>Anton Chuvakin and I were having a fun debate a couple weeks ago about whether incremental improvements are worthwhile in infosec, or if it's really necessary to "jump to the next curve" (phrase origin: Guy Kawasaki's "<a href="https://guykawasaki.com/the_art_of_inno/" target="_blank">Art of Innovation</a>," watch <a href="https://www.youtube.com/watch?v=Mtjatz9r-Vc" target="_blank">his TedX</a>) in order to make meaningful gains in security practices. Anton even went so far as to <a href="https://blogs.gartner.com/anton-chuvakin/2017/10/20/soar-and-curve-jumping-in-security-operations/" target="_blank">write about it</a> a little over a week ago (sorry for the delayed response - work travel). As promised, I feel it's important to counter his arguments a bit.</p>]]>
+        <![CDATA[<p>Anton started by asking, <strong>"[Can] you really jump to the "next curve" in security, or do you have to travel the entire journey from the old ways to the cutting edge?"</strong></p>
+
+<p>Of course, this is a sucker's question, and it belies misunderstanding the whole "jump to the next curve" argument, which was conceived by Kawasaki in relation to innovation, but can be applied to strategy in general. In speaking of the notion, Kawasaki says "True innovation happens when a company jumps to the next curve-or better still, invents the next curve, so set your goals high." And this, here, is the point of arguing for organizations to not settle for incremental improvements, but instead to aim higher.</p>
+
+<p>To truly understand this notion in context, let's first think about what would be separate curves in a security practice vertical. Let's take Anton's example of SOCs, SIEM, log mgmt, and threat hunting. To me, the curves might look like this:<br />
+ - You have no SOC, SIEM, log mgmt<br />
+ - You start doing some logging, mostly locally<br />
+ - You start logging to a central location and having a team monitor and manage<br />
+ - You build or hire a SOC to more efficiently monitor and respond to alerts<br />
+ - You add in stronger analytics, automation, and threat hunting capabilities</p>
+
+<p>Now, from a security perspective, if you're in one of the first couple stages today (and a lot of companies are!), then a small incremental improvement like moving to central logs might <em>seem</em> like a huge advance, but you'd be completely wrong. Logically, you're not getting much actual risk reduction by simply dumping all your logs to a central place </em>unless you're also adding monitoring, analytics, and response+hunting capabilities at the same time</em>!</p>
+
+<p>In this regard, "jump to the next curve" would likely mean hiring an MSSP to whom you can send all your log data in order to do analytics and proactive threat hunting. Doing so <em>would</em> provide a meaningful leap in security capabilities and would help an organization catch-up. Moreover, even if you spent a year making this a reality, it's a year well-spent, whereas a year spent simply enabling logs without sending them to a central repository for meaningful action doesn't really improve your standing at all.</p>
+
+<p><strong>In Closing</strong></p>
+
+<p>In the interest in keeping this shorter than usual, let's just jump to the key takeaways.</p>
+
+<p>1) The point of "jump to the next curve" is to stop trying to "win" through incremental improvements of the old and broken, instead leveraging innovation to make up lost ground ground by skipping over short-term "gains" that cost you time without actually gaining anything.</p>
+
+<p>2) The farther behind you are, the more important it is to look for curve-jumping opportunities to dig out of technical debt. Go read DevOps literature on how to address technical debt, and realize that with incremental gains, you're at best talking about maintaining your position, not actually catching up. Many organizations are far behind today and cannot afford such an approach.</p>
+
+<p>3) Attacks are continuing to rapidly evolve, which means your resilience relies directly on your agility and ability to make sizable gains in a short period of time. Again, borrowing from DevOps, it's past time to start leveraging automation, cloud services, and agile techniques to reinvent the security program (and, really, organizations overall) to leap out of antiquated, ineffective practices.</p>
+
+<p>4) Anton quipped that "The risks with curve jumping are many: you can jump and miss (wasting resources and time) or you can jump at the wrong curve or you simply have no idea where to jump and where the next curve is." To a degree, yes, this is true. But, in many ways, for organizations that are 5-10 years behind in practices (again, this applies to a LOT of you!), we know exactly where you should go. Even Gartner advice can be useful in this regard! ;) The worst thing you can do is decide not to take an aggressive approach to getting out of technical security debt for fear of choosing the "wrong" path.</p>
+
+<p>5) If you're not sure where the curves are, here's a few suggestions:<br />
+ - Identity as Perimeter - move toward <a href="https://www.beyondcorp.com/" target="_blank">Zero Trust</a>, heavily leveraging federated identity/IDaaS<br />
+ - Leverage an MSSP to central manage and monitor log data, including analytics and threat hunting<br />
+ - Automate, automate, automate! You don't need to invest in expensive security automation tools. You can do a lot with general purpose IT automation tools (like Ansible, Chef, Puppet, Jenkins, Travis, etc.). If you think you need a person staring a dashboard, clicking a button when a color changes, then I'm sorry to tell you that this can and should be automated.<br />
+ - If your org writes code, then adopt DevOps practices, getting a CI/CD pipeline built, with appsec testing integrated and automated.<br />
+ - Heavily leverage cloud services for <em>everything</em>!</p>
+
+<p>Good luck, and may the odds be ever in your favor! :)</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>A Change In Context</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2017/09/a-change-in-context.html" />
+    <id>tag:www.secureconsulting.net,2017://12.2527</id>
+
+    <published>2017-09-22T14:39:11Z</published>
+    <updated>2017-09-22T14:41:09Z</updated>
+
+    <summary>Today marks the end of my first week in a new job. As of this past Monday, I am now a Manager, Security Engineering, with Pearson. I&apos;ll be handling a variety of responsibilities, initially mixed between security architecture and team...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="work-jobs" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="change" label="change" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="job" label="job" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="new" label="new" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="pearson" label="Pearson" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="work" label="work" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>Today marks the end of my first week in a new job. As of this past Monday, I am now a Manager, Security Engineering, with Pearson. I'll be handling a variety of responsibilities, initially mixed between security architecture and team management. I view this opportunity as a chance to reset my career after the myriad challenges experienced over the past decade. In particular, I will now finally be able to say I've had administrative responsibility for personnel, lack of which having held me back from career progression these past few years.</p>
+
+<p>This change is a welcome one, and it will also be momentous in that it will see us leaving the NoVA/DC area next Summer. The destination is not finalized, but it seems likely to be Denver. While it's not the same as being in Montana, it's the Rockies and at elevation, which sounds good to me. Not to mention I know several people in the area and, in general, like it. Which is not to say that we dislike where we live today (despite the high price tag). It's just time for a change of scenery.</p>
+
+<p>I plan to continue writing on the side here (and on <a href="https://www.linkedin.com/in/btomhave" target="_blank">LinkedIn</a>), but the pace of writing may slow again in the short-term while I dedicate most of my energy to ramping up the day job. The good news, however, is this will afford me the opportunity to continue getting "real world" experience that can be translated and related in a hopefully meaningful manner.</p>
+
+<p>Until next time, thanks and good luck!</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Quit Talking About &quot;Security Culture&quot; - Fix Org Culture!</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2017/09/quit-talking-about-security-culture.html" />
+    <id>tag:www.secureconsulting.net,2017://12.2526</id>
+
+    <published>2017-09-06T13:40:40Z</published>
+    <updated>2017-09-06T13:57:04Z</updated>
+
+    <summary>I have a pet peeve. Ok, I have several, but nonetheless, we&apos;re going to talk about one of them today. That pet peeve is security professionals wasting time and energy pushing a &quot;security culture&quot; agenda. This practice of talking about...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="infosec" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="behavior" label="behavior" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="culture" label="culture" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="design" label="design" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="organizational" label="organizational" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="security" label="security" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>I have a pet peeve. Ok, I have several, but nonetheless, we're going to talk about one of them today. That pet peeve is security professionals wasting time and energy pushing a "security culture" agenda. This practice of talking about "security culture" has arisen over the past few years. It's largely coming from security awareness circles, though it's not always the case (looking at you anti-phishing vendors intent on selling products without the means and methodology to make them truly useful!).</p>
+
+<p>I see three main problems with references to "security culture," not the least of which being that it continues the bad old practices of days gone by.</p>]]>
+        <![CDATA[<p><strong>1) It's Not Analogous to Safety Culture</strong></p>
+
+<p>First and foremost, you're probably sitting there grinding your teeth saying "But safety culture initiatives work really well!" Yes, they do, but here's why: Safety culture can - and often does - achieve a zero-sum outcome. That is to say, you <em>can</em> reduce safety incidents to ZERO. This factoid is excellent for when you're around construction sites or going to the hospital. However, I have very bad news for you. Information (or cyber or computer) security will <em>never</em> be a zero-sum game. Until the entirety of computing is revolutionized, removing humans from the equation, you will never prevent all incidents. Just imagine your "security culture" sign by the entrance to your local office environment, forever emblazoned with "It Has Been 0 Days Since Our Last Incident." That's not healthy or encouraging. That sort of thing would be outright demoralizing!</p>
+
+<p>Since you can't be 100% successful through preventative security practices, you must then shift mindset to a couple things: better decisions and resilience. Your focus, which most of your "security culture" programs are trying to address (or should be), is helping people make better decisions. Well, I should say, some of you - the few, the proud, the quietly isolated - have this focus. But at the end of the day/week/month/year you'll find that people - including well-trained and highly technical people - will still make mistakes or bad decisions, which means you can't bank on "solving" infosec through better decisions.</p>
+
+<p>As a result, we must still architect for resiliency. We must assume something will breakdown at some point resulting in an incident. When that incident occurs, we must be able to absorb the fault, continue to operate despite degraded conditions, while recovering to "normal" as quickly, efficiently, and effectively as possible. Note, however, that this focus on resiliency doesn't really align well with the "security culture" message. It's akin to telling people "Safety is really important, but since we have no faith in your ability to be safe, here's a first aid kit." (yes, that's a bit harsh, to prove a point, which hopefully you're getting)</p>
+
+<p><strong>2) Once Again, It Creates an "Other"</strong></p>
+
+<p>One of the biggest problems with a typical "security culture" focus is that it once again creates the wrong kind of enablement culture. It says "we're from infosec and we know best - certainly better than you." Why should people work to make better decisions when they can just abdicate that responsibility to infosec? Moreover, since we're trying to optimize resiliency, people can go ahead and make mistakes, no big deal, right?</p>
+
+<p>Part of this is ok, part of it is not. On the one hand, from a DevOps perspective, we want people to experiment, be creative, be innovative. In this sense, resilience and failure are a good thing. However, note that in DevOps, the responsibility for "fail fast, recover fast, learn fast" <em>is on the person doing the experimenting</em>!!! The DevOps movement is diametrically opposed to fostering enablement cultures where people (like developers) don't feel the pain from their bad decisions. It's imperative that people have ownership and responsibility for the things they're doing. Most "security culture" dogma I've seen and heard works against this objective.</p>
+
+<p>We want enablement, but we don't want enablement culture. We want "freedom AND responsibility," "accountability AND transparency," etc, etc, etc. Pushing "security culture" keeps these initiatives separate from other organizational development initiatives, and more importantly it tends to have at best a temporary impact, rather than triggering lasting <em>behavioral</em> change.</p>
+
+<p><strong>3) Your Goal Is Improving the Organization</strong></p>
+
+<p>The last point here is that your goal should be to improve the organization and the overall organizational culture. It should not be focused on point-in-time blips that come and go. Additionally, your efforts must be aimed toward <em>lasting</em> impact and not be anchored around a cult of personality.</p>
+
+<p>As a starting point, you should be working with org dev personnel within your organization, applying behavior design principles. You should be identifying what the target behavior is, then working backward in a piecemeal fashion to determine whether that behavior can be evoked and institutionalized through one step or multiple steps. It may even take years to accomplish the desired changes.</p>
+
+<p>Another key reason for working with your org dev folks is because you need to ensure that anything "culture" that you're pursuing is fully aligned with other org culture initiatives. People can only assimilate so many changes at once, so it's often better to align your work with efforts that are already underway in order to build reinforcing patterns. The worst thing you can do is design for a behavior that is in conflict with other behavior and culture designs underway.</p>
+
+<p>All of this is to underline the key point that "security culture" is the wrong focus, and can in some cases even detract from other org culture initiatives. You want to improve decision-making, but you have to do this one behavior at a time, and glossing over it with the "security culture" label is unhelpful.</p>
+
+<p>Lastly, you need to think about your desired behavior and culture improvements in the broader context of organizational culture. Do yourself a favor and go read Laloux's <em><a href="http://www.reinventingorganizations.com/" target="_blank">Reinventing Organizations</a></em> for an excellent treatise on a desirable future state (one that aligns extremely well with DevOps). As you read Laloux, think about how you can design for security behaviors in a self-managed world. That's the lens through which you should view things, and this is where you'll realize a "security culture" focus is at best distracting.</p>
+
+<p>---<br />
+So... where should you go from here? The answer is three-fold:<br />
+ 1) Identify and design for desirable behaviors<br />
+ 2) Work to make those behaviors easy and sustainable<br />
+ 3) Work to shape organizational culture as a whole</p>
+
+<p>Definitionally, here are a couple starters for you...</p>
+
+<p>First, per <a href="http://www.foggmethod.com/" target="_blank">Fogg</a>, Behavior happens when three things come together: Motivation, Ability (how hard or easy it is to do the action), and a Trigger (a prompt or cue). When Motivation is high and it's easy to do, then it doesn't take much prompting to trigger an action. However, if it's difficult to take the action, or the motivation simply isn't there, you must then start looking for ways to address those factors in order to achieve the desired behavioral outcome once triggered. This is the basis of behavior design.</p>
+
+<p>Second, when you think about culture, think of it as the aggregate of behaviors collectively performed by the organization, along with the values the organization holds. It may be helpful, as Laloux suggests, to think of the organization as its own person that has intrinsic motivations, values, and behaviors. Eliciting behavior change from the organization is, then, tantamount to changing the organizational culture.</p>
+
+<p>If you put this all together, I think you'll agree with me that talking about "security culture" is anathema to the desired outcomes. Thinking about behavior design in the context of organizational culture shift will provide a better path to improvement, while also making it easier to explain the objectives to non-security people and to get buy-in on lasting change.</p>
+
+<p>Bonus reference: You might find <a href="https://www.entrepreneur.com/article/299587" target="_blank">this article</a> interesting as it pertains to evoking behavior change in others.</p>
+
+<p>Good luck!</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Introducing Behavioral Information Security</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2017/08/introducing-behavioral-infosec.html" />
+    <id>tag:www.secureconsulting.net,2017://12.2525</id>
+
+    <published>2017-08-29T14:37:50Z</published>
+    <updated>2017-08-29T14:49:24Z</updated>
+
+    <summary>I recently had the privilege of attending BJ Fogg&apos;s Behavior Design Boot Camp. For those unfamiliar with Fogg&apos;s work, he started out doing research on Persuasive Technology back in the 90s, which has become the basis for most modern uses...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="infosec" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>I recently had the privilege of attending <a href="https://bjfogg.org/" target="_blank">BJ Fogg's</a> <a href="https://www.bjfogg.com/bootcamp.html" target="_blank">Behavior Design Boot Camp</a>. For those unfamiliar with Fogg's work, he started out doing research on <a href="http://captology.stanford.edu/" target="_blank">Persuasive Technology</a> back in the 90s, which has become the basis for most modern uses of technology to influence people (for example, use of Facebook user data to influence the 2016 US Presidential Election). The focus of the boot camp was around "behavior design," which was suggested to me by a friend who's a leading expert in modern, progress security awareness program management.</p>
+
+<p>Thinking about how best to apply this new-found knowledge, I've been mulling opportunities for application of Fogg models and methods. Suddenly, it occurred to me, "Hey, you know what we really need is a new sub-field that combines all aspects of security behavior design, such as security awareness, anti-phishing, social engineering, and even UEBA." I concluded that maybe this sub-field would be called something like "behavioral security" and started doing searches on the topic.</p>]]>
+        <![CDATA[<p>Well, low-and-behold, it already exists! There is already a well-established sub-field within information security (infosec) known as "<a href="https://www.google.com/search?q=%22Behavioral+Information+Security%22&oq=%22Behavioral+Information+Security" target="_blank">Behavioral Information Security</a>." Most of the literature I've found (and there's a <em>lot</em> in academia) has popped-up over the past 5 years or so. However, I did find a reference to "behavioral security" dating back to May 2004 (see <a href="http://www.computerworld.com/article/2564621/security0/behavioral-network-security--is-it-right-for-your-company-.html" target="_blank">"Behavioral network security: Is it right for your company?"</a>).</p>
+
+<p>Going forward, I believe that organizations and standards should stop listing "security awareness" as a single line item requirement, and instead pivot to the expanding domain of "behavioral infosec." NIST CSF would be a great place to start (though I'm assuming it's too late for the v1.1 release, expected sometime soon). Nonetheless, I will be using this phrasing and description going forward.</p>
+
+<p>The inevitable question you might have is, "How do you define the domain/sub-field of Behavioral Information Security?" To me, the answer is quite simple: Any practice or capability that monitors or seeks to modify human behavior to reduce risk or improve security falls under behavioral infosec. These practice areas would include everything from modern, progressive security education, training, and awareness programs (these are programs well beyond posters and blind anti-phishing, including developer education tied to appsec testing data), progressive anti-phishing programs (that is, those that baseline and then measure impact), all forms of social engineering (including red team testing, blue team testing, etc.), and user behavior monitoring through tools like UEBA (User and Entity Behavior Analytics).</p>
+
+<p>Behavioral InfoSec Engineering programs and teams should be instantiated that are charged with these practice areas (definitely security awareness and various testing, measuring, and reporting practices). Personnel should be suitably trained, not just in analytical areas, but also in technical areas in order to best develop technical content and practices designed to impact human behavior.</p>
+
+<p>Lastly, why human behavior as a focus? Because reports (like VzB DBIR) consistently report year after year after year that one wrong click by a human can break an entire security chain. Thus, we need to help <em>people</em> make better decisions. This notion is also very DevOps-friendly thinking. We should not want to see large security programs built and maintained within organizations, but rather must work to thoroughly embed as many security practices and decisions as possible within non-security teams in order to improve security overall (this is something emphasized in DevSecOps programs). Security resources will never scale sufficiently on their own, which means we have to scale in other ways.</p>
+
+<p>As an added bonus, to see the power of behavior design, I strongly recommend trying out BJ Fogg's "Tiny Habits" program, which is freely available here: <a href="http://tinyhabits.com/" target="_blank">http://tinyhabits.com/</a></p>
+
+<p>cheers and good luck!</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Confessions of an InfoSec Burnout</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2017/08/confessions-of-an-infosec-burnout.html" />
+    <id>tag:www.secureconsulting.net,2017://12.2524</id>
+
+    <published>2017-08-29T14:34:27Z</published>
+    <updated>2017-08-29T14:36:39Z</updated>
+
+    <summary>Soul-crushing failure. If asked, that is how I would describe the last 10 years of my career, since leaving AOL. I made one mistake, one bad decision, and it&apos;s completely and thoroughly derailed my entire career. Worse, it&apos;s unclear if...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="work-jobs" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="burnout" label="burnout" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="career" label="career" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="depression" label="depression" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="failure" label="failure" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="security" label="security" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>Soul-crushing failure.</p>
+
+<p>If asked, that is how I would describe the last 10 years of my career, since leaving AOL.</p>
+
+<p>I made one mistake, one bad decision, and it's completely and thoroughly derailed my entire career. Worse, it's unclear if there's any path to recovery as failure piles on failure piles on failure.</p>]]>
+        <![CDATA[<p><strong>The Ground I've Trod</strong></p>
+
+<p>To understand my current state of career decrepitude, as well as how I've seemingly become an industry pariah...</p>
+
+<p>I have worked for 11 different organizations over the past 10 years. I left AOL in September 2007, right before a layoff (I should have waited for the layoff and gotten a package!). I had been there for more than 3.5 years and I was miserable. It was a misery of my own making in many ways. My team manager had moved up the ranks, leaving an opening. All my teammates encouraged me to throw my hat in the ring, but I demurred, telling myself I simply wasn't ready to manage. Oops. Instead, our new manager came through an internal process, and immediately made life un-fun. I left a couple months later.</p>
+
+<p>When I left AOL, it was to take a regional leadership role in BT-INS (BT Global Services - they bought International Network Services to build-out their US tech consulting). A month into the role as security lead for the Mid-Atlantic, where I was billable on day 1, the managing director left and a re-org merged us in with a different region where there was already a security lead. 2 of 3 sales reps left and the remaining person was unable and unwilling to sell security. I sat on the bench for a long time, traveling as needed. An idle, bored Ben is a bad thing.</p>
+
+<p>From BT I took a leadership role with this weird tech company in Phoenix. There was no budget and no staff, but I was promised great things. They let me start remote for a couple months before relocating. I knew it was a bad fit and not a good company before we made the move. I could feel it in my gut. But, I uprooted the family in the middle of the school year (my wife is an elementary teacher) and went to Phoenix, ignoring my gut. 6 months later they eliminated the position. The fact is that they'd hired a new General Counsel who also claimed a security background (he had a CISSP), and thus they made him the CISO. The year was 2009, the economy was in tatters after the real estate bubble had burst. We were stranded in a dead economy and had no place to go.</p>
+
+<p>Thankfully, after a month of searching, someone threw me a life-line and I promptly started a consulting gig with Foreground Security. Well, that was a complete disaster and debacle. We moved back to Northern Virginia and my daughter immediately got sick and ended up in the hospital (she'd hardly had a sniffle before!). By the time she got out of the hospital I was sicker than I'd ever been before. The doctors had me on a couple different antibiotics and I could hardly get out of bed. This entire time the president of the company would call and scream at me every day. Literally, yelling at the top of his lungs over the phone. Hands-down the most unprofessional experience I'd had. The company partnership subsequently fell apart and I was kacked in the process. I remember it clearly to this day: I'm at my parents house in NW MN over the winter holidays and the phone rings. It's the company president, who starts out by telling me they'd finally had the kid they were expecting. And, they're letting me go. Yup, that's how the conversation went ("We had a baby. You're termed.").</p>
+
+<p>Really, being out of Foreground was a relief given how awful it had been. Luckily they relocated us no strings attached, so I didn't owe anything. But, I once again was out of a job for the second time in 3 months. I'd had 3 employers in 2009 and ended the year unemployed.</p>
+
+<p>In early 2010 I was able to land a contract gig, thinking I'd try a solo practice. It didn't work out. The client site was in Utah, but they didn't want to pay for a ton of travel, so I tried working remotely, but people refused to answer the phone or emails, meaning I couldn't do the work they wanted. The whole situation was a mess.</p>
+
+<p>Finally, I connected with Peter Hesse at Gemini Security Solutions to do a contract-to-hire tryout. His firm was small, but had a nice contract with a large client that helped underpin his business. He brought me in to do a mix of consulting and biz dev, but after a year+ of trying to bring in new opportunities (and have them shot down internally for various reasons), I realized that I wasn't going to be able to make a difference there. Plus, being reminded almost daily that I was an expensive resource didn't help. I worked my butt off but in the end it was unappreciated, so I left for LockPath.</p>
+
+<p>The co-founders of LockPath had found me when I was in Phoenix thanks to a paper I'd written on PCI for some random website. They came out to visit me and told me what they were up to. I kept in touch with them over the years, including through their launch of Keylight 1.0 on 10/10/10. I somewhat forced my way into a role with them, initially to build a pro svcs team, but that got scrapped almost immediately and I ended up more in a traveling role, presenting at conferences to help get the name out there, as well as doing customer training. After a year-and-a-half of doing this, they hired a full-time training coordinator who immediately threw me under the bus (it was a major wtf moment). They wanted to consolidate resources at HQ and moving to Kansas wasn't in the cards, so seeing the writing on the wall I started a job search. Things came to an end in mid-May while I was on the road for them. I remember it clearly, having dropped my then-3yo daughter with the in-laws the night before, I had just gotten into my hotel room in St. Paul, MN, ahead of Secure360 and the phone rang. I was told it was over, but he was going to think about it overnight. I asked "Am I still representing the company when I speak at the conference tomorrow?" and got no real answer, but was promised one first thing the next morning. That call never came, so I spoke to a full room the next morning and worked the booth all that day and the morning after that. I met my in-laws for lunch to pick-up my kiddo, and was sitting in the airport awaiting our flight home when the call finally came in delivering the final news. I was pretty burned-out at that time, so in many ways it was welcome news. Startup life can be crazy-intense, and I thankfully maintain a decent relationship with the co-founders today. But those days were highly stressful.</p>
+
+<p>The good news was that I was already in-process with Gartner, and was able to close on the new gig a couple weeks later. Thus started what I thought would be one of my last jobs. Alas, I was wrong. As was much with my time there.</p>
+
+<p><strong>It bears noting here before I go any further an important observation:</strong> The onboarding experience is all-important. If you screw it up, then it sets a horrible tone for the entire gig, and the likelihood of success drops significantly. If onboarding is professional and goes smoothly, then people will feel valued and able to contribute. If it goes poorly, then people will feel undervalued from the get-go and they will literally start from an emotional hole. Don't do this to people! I don't care if you're a startup or a Fortune 50 large multi-national. Take care of people from Day 1 and things will go well. Fail at it and you'd might as well stop and release them asap.</p>
+
+<p>Ok, anyway... back to Gartner. It was a difficult beginning. I was assigned a mentor, per their process, but he was gone 6 of the first 9 weeks I was there. I was sent to official "onboarding training" the end of August (the week before Labor Day!) despite having been there for 2 months by that time. I was not prepped at all before going to onboarding, and as it turns out I should have been. Others showed up with documents to be edited and an understanding of the process. I showed up completely stressed out, not at all ready to do the work that was expected, and generally had a very difficult time. It was also the week before Labor Day, which at the time meant it was teacher workshops, and I was on the road for it with 2 young kids at home. Thankfully, the in-laws came and helped out, but suffice to say it was just really not good all-around.</p>
+
+<p>I really enjoyed the manager I worked for initially, but all that changed in February 2014 when my former mentor, with whom I did not at all get along, became the team manager. The stress levels immediately spiked as the focus quickly shifted to strong negativity. I had been struggling to get paper topics approved and was fighting against the reality that the target audience for Gartner research is not the leading edge of thinking, but the middle of the market. It took me nearly a full year to finally get my feet under me and start producing at an appropriate pace. My 1 yr mark roughly corresponded with the mid-year review, which was highly negative. By the end of the year I finally found my stride and had a ton of research in the pipeline (most of which would publish in early 2015). Unfortunately, the team manager, Captain Negative, couldn't see that and gave me one of the worst performance reviews I've ever received. It was hands-down the most insulted I'd ever been by a manager. It seemed very clear from his disrespectful actions that I wasn't wanted there, and so I launched an intensive job search. Meanwhile, I published something like 4 papers in 6 weeks while also having 4 talks picked up for that year's Security & Risk Management Conference. All I heard from my manager was negativity despite all that progress and success. I felt like shit, a total failure. There were no internal opportunities, so outward I looked, eventually landing at K12.</p>
+
+<p>Oh, what a disaster that place was. K12 is hands-down the most toxic environment I've ever seen (and I've seen a lot!). Literally, all 10 people with whom I'd interviewed had lied to me - egregiously! I'd heard rumblings of changes in the executive ranks, but the hiring manager assured me there was nothing that would affect me. A new CIO - my manager's boss - started the same day I did. Yup, nothing that would affect me. Ha. Additionally, it turns out that they already had a "security manager" of sorts working in-house. He wasn't part of the interview process for my "security architect" role. They said they were doing DevOps, but it was just a side pilot that wasn't getting anywhere. Etc. Etc. Etc. Suffice to say, it was really bad. I frankly wondered how they were still in business, especially in light of the constant stream of lawsuits emanating from the states where they had "online public schools." Oy... </p>
+
+<p>Suffice to say, I started looking for work on Day 1 at K12. But, there wasn't much there, and recruiters were loathe to talk to me given such a short stint. Explanations weren't accepted, and I was truly stuck. The longer I was there, the worse it looked. Finally, my old manager from AOL reached out as he was starting a CISO role at Ellucian. He rescued me and in October 2015 I started with them in a security architect role.</p>
+
+<p>There's not much I can say about my experience at Ellucian. Things seemed ok at first, but after a CIO change a few months in, plus a couple other personnel issues, things got wonky, and it became clear my presence was no longer desired. When your boss starts cancelling weekly 1-on-1 meetings with you, it becomes pretty clear that he doesn't really want you there. New Context reached out in May 2016 and offered me an opportunity to do research and publishing for them, so I jumped at it and got the heck out of dodge. It turns out, this was a HUGE mistake, too... </p>
+
+<p>There's even less I can say about New Context... we'll just put it at this: Despite my best efforts, I was never able to get things published due to a lack of internal approvals. After a year of banging my head against the wall, my boss and I concluded it wasn't going to happen, and they let me go a couple weeks later.</p>
+
+<p>From there, I launched my own solo practice and signed what was to be a 20-wk contract with an LA-based client. They had been chasing me for several months to come help them out in a consulting (staff augmentation, really) capacity. I closed the deal with them and started on July 31st of this year. That first week was a mess with them not being ready for me on day 1, then sending me a botched laptop build on day 2, and then finally getting me online on day 3. I flew to LA to be on-site with them the following week and immediately locked horns with the other security architect. That first week on-site was horribly stressful. Things had finally started leveling off last wk, and then yesterday (Monday 8/28/17) they called and cancelled the contract. While I'm disappointed, it's also a bit of a relief. It wasn't a good fit, it was a very difficult client experience, and overall I was actively looking for new opportunities while I did what I could for them.</p>
+
+<p><strong>Shared Culpability or Mea Culpa?</strong></p>
+
+<p>After all these years, I'm tired of taking the blame and being the seemingly constant punchline to some joke I don't get. I'm tired, I'm burned-out, I'm frustrated, I'm depressed, and more than anything I just don't understand why things have gone so completely wrong over the past 10 years. How could one poor decision result in so much career chaos and heartache? It's astonishing. And appalling. And depressing.</p>
+
+<p>I certainly share responsibility in all of this. I tend to be a fairly high-strung person (less so over the years) and onboarding is always highly stressful for me. Increasingly, employers want you engaged and functional on Day 1, even though that is incredibly unrealistic. Onboarding must be budgeted for a <em>minimum</em> of 3-6 months. If a move is involved, then even longer! Yet nobody is willing to allow that any more. I don't know if it's mythology or downward pressure or what... but the expectations are completely unreasonable.</p>
+
+<p>But I do have a responsibility here, and I've certainly not been Mr. Sunshine the past few years, which means I tend to come off as extremely negative and sarcastic, which can be off-putting to people. Attitude is something I need to focus on when starting, and I need to find ways to better manage all the stress that comes with commencing a new gig.</p>
+
+<p>That said, I also seem to have a knack for picking the wrong jobs. This even precedes my time at AOL, which is really a shining anchor in the middle of a turbulent career. Coming into the workforce just before the DOT-COM bubble burst, I've been through lots of layoffs and turmoil. I simply have a really bad track record of making good employment choices. I'm not even sure how to go about fixing that, short of finding people to advise me on the process.</p>
+
+<p>However, lastly, it's important for companies to realize that they're also failing employees. The onboarding process is immensely important. Treating people respectfully and mindfully from Day 1 is immensely important. Setting reasonable expectations is immensely important. If you do not actively work to set your personnel up for success, then it is extremely unlikely that they'll achieve it! And even in this day and age where companies really, truly don't value personnel (except for execs and directors), it must be acknowledged that there is a significant cost in lost productivity, efficiency, and effectiveness that can be directly tied to employee turnover. This includes making sure managers are reasonably well trained and are actually well-suited to being managers. You owe it to your employees to treat them as humans, not just replaceable cogs in a machine.</p>
+
+<p><strong>Where To Go From Here?</strong></p>
+
+<p>The pull of deep depression is ever stronger. Resistance becomes evermore difficult with each successive failure. I feel like I cannot buy a break. My career is completely off-track and I decreasingly see a path to recovery. Every morning is a struggle to get up and look for work yet again. I feel like I've been doing this almost constantly for the past 10 years. I've not been settled anywhere since AOL (maybe BT).</p>
+
+<p>I initially launched a solo practice, Falcon's View Consulting, to handle some contracts. And, that's still out there if I need it. However, what I really need is a full-time job. With a good, stable company. In a role with a good manager. A role that eventually has upward mobility (in order to get back on track).</p>
+
+<p>Where that role is based I really do not care (my family might). Put me in a leadership role, pay me a reasonable salary, and relocate me to where you need me. At this point, I'm willing to go to bat and force the family to move, but you gotta make it easy and compelling. Putting me into financial hardship won't get it done. Putting me into a difficult position with no support won't get it done. Moving me and not being committed to keeping me onboard through the most stressful times won't get it done.</p>
+
+<p>I'm quite seriously at the end of my rope. I feel like I have about one more chance left, after which it'll be bankruptcy and who knows what... I've given just about everything I can to this industry, and my reward has been getting destroyed in the process. This isn't sustainable, it isn't healthy, and it's altogether stupid.</p>
+
+<p>I want to do good work. I want to find an employer that values me that I can stay with for a reasonable period of time. I've never gone into any FTE role thinking "this is just a temporary stop while I find something better." I throw my whole self into my work, which is - I think - why it is so incredibly painful when rejection and failure final happen. But I don't know another way to operate. Nor should anyone else, for that matter.</p>
+
+<blockquote><em>Two roads diverged in the woods / And I... I took the wrong one / And that has made all the difference</em></blockquote>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>On Titles, Jobs, and Job Descriptions (Not All Roles Are Architects)</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2017/08/on-titles-jobs-and-job-descrip.html" />
+    <id>tag:www.secureconsulting.net,2017://12.2523</id>
+
+    <published>2017-08-02T13:16:26Z</published>
+    <updated>2017-08-02T13:21:00Z</updated>
+
+    <summary>Folks: Please stop calling every soup-to-nuts, everything-but-the-kitchen-sink security job a &quot;security architect&quot; role. It&apos;s harmful to the industry and it&apos;s doing you no favors trying to find the right resources. In fact, please stop posting these &quot;one role does everything...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="work-jobs" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="analyst" label="analyst" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="architect" label="architect" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="engineer" label="engineer" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="hiring" label="hiring" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="security" label="security" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="titles" label="titles" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>Folks: Please stop calling every soup-to-nuts, everything-but-the-kitchen-sink security job a "security architect" role. It's harmful to the industry and it's doing you no favors trying to find the right resources. In fact, please stop posting these "one role does everything security under the sun" positions altogether. It's hurting your recruitment efforts, and it makes it incredibly difficult to find positions that are a good fit. Let me explain...</p>
+
+<p>For starters, there are generally three classes of security people, management and pentesters aside:<br />
+ - Analysts<br />
+ - Engineers<br />
+ - Architects</p>
+
+<p>(Note that these terms tend to be loaded due to their use in other industries. In fact, in some states you might even have to come up with a different equivalent term for positions due to legal definitions (or licensing) of roles. Try to bear with me and just go with the flow, eh?)</p>]]>
+        <![CDATA[<p>Analysts are people who think about stuff and write about stuff and sometimes help initiate actions, but they are not the implementers of security tools or practices. An analyst may or may not be particularly technical, depending on the nature of the role. For example, there are tons of entry-level SOC analyst positions today that can provide a first taste of infosec work life. You rarely need to have a lot of technical skills, at least initially, to land one of these gigs (this varies by org). Similarly, there are GRC analyst roles that tend not to be technical at all (despite often including "technical writing," such as for policies, in the workload). On the far end of the spectrum, you may have incident response (IR) analysts who are very technical, but again note the nature of their duties: thinking about stuff, writing about stuff, and maybe initiating actions (such as the IR process or escalations therein).</p>
+
+<p>Engineers are people who do most of the hands-on work. If you're looking for someone to do a bunch of implementation work, particularly around security tools and tech, then you want a security engineer, and that should be clearly stated in your job description. Engineers tend to be people who really enjoy implementation and maintenance work. They like rolling up their sleeves and getting their hands dirty. You might also see "administrator" used in this same category (though that's muddy water as sometimes a "security administrator" might be more like an analyst in being less technical, skilled in one kind of tool, like adding and removing users to Active Directory or your IAM of choice). In general, if you're listing a position that has implementation responsibilities, then you need to be calling it an engineer role (or equivalent), not an analyst and certainly not an architect.</p>
+
+<p>Architects are not your implementers. And, while they are thinkers who may do a fair amount of technical writing, the key differentiators here are that 1) they tend to be way more technical than the average analyst, 2) they see a much bigger picture than the average analyst or engineer, and 3) they've often risen to this position through one or both of the other roles, but almost certainly with considerable previous hands-on implementation experience as an engineer. It's very important to understand that your architects, while likely having a background in engineering, is unlikely to want to do much hands-on implementation work. What hands-on work they are willing/interested to do is likely focused heavily on proofs of concept (POCs) and testing new ideas and technologies. Given their technical backgrounds, they'll be able to go toe-to-toe on technical topics with just about anyone in the organization, even though they may not be able to sit down and crank out a bunch of server builds in short order any more (or, maybe they can!). A good security architect provides experiential, context-relevant guidance on how to design /secure/ systems and applications, as well as providing guidance on technology purchasing decisions, technical designs, etc. Where they differ from, say, GRC/policy analysts is that when they provide a recommendation on something, they can typically back it up with more than a flaccid reference to "best practices" or some other lame appeal to authority; they can instead point to proven experiences and technical rationale.</p>
+
+<p>Going all the way back to before my Gartner days, I've long told SMBs that their first step should <strong>not</strong> be hiring a security manager, but rather a security architect who reports up through the IT food chain, preferably directly to the IT manager/director or CIO (depending on size and structure of the org). The reason for this recommendation is that small IT shops already have a number of engineers/administrators and analysts, but what they oftentimes lack is someone with broad AND deep technical expertise in security who can provide all sorts of guidance and value to the organization. Part and parcel to this is that SMBs especially <strong>do not</strong> need to build out a "security team" or "security department"! (In fact, I often argue only the largest enterprises should ever go this route, and only to improve efficiency and effectiveness. Status quo and conventional wisdom be damned.) Most small IT shops just need someone to help out with decisions and evaluations to ensure that the organization is making smart security decisions. This security architect role should <strong>not</strong> be focused on implementation or administration, but instead should be serving in an almost quasi-EA (enterprise architect) role that cuts across the entire org. In many ways, a security architect in a counselor who works with teams to improve their security decisions. It's common in larger organizations for security architects to have a focus on one part of the business simply as a matter of scale and supportability.</p>
+
+<p>So that's it. Nothing too crazy, right? But, I think it's important. Yes, some of you may debate and question how I've defined things, and that's fine, but the main takeaway here, hopefully, is that job descriptions need to be reset again around some standard language. In particular, orgs need to stop listing a ton of implementation work for "security architect" roles because that's misleading and really not what a security architect does. Properly titling and describing roles is very important, and will help you more readily find your ideal candidates. Calling everything a "security architect" does not do anything positive for you, and it serves to frustrate and disenfranchise your candidate pools (not to mention wasting your time on screening).</p>
+
+<p>fwiw. ymmv. cheers!</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Reflection on Working From Home</title>
+    <link rel="alternate" type="text/html" href="http://secureconsulting.net/2017/03/reflection-on-wfh.html" />
+    <id>tag:www.secureconsulting.net,2017://12.2522</id>
+
+    <published>2017-03-30T16:08:02Z</published>
+    <updated>2017-03-30T16:13:17Z</updated>
+
+    <summary>In a moment of introspection last night, it occurred to me that working from home tends to amplify any perceived slight or sources of negativity. Most of my &quot;human&quot; interactions are online only, which - for this extrovert - means...</summary>
+    <author>
+        <name>Ben Tomhave</name>
+        <uri>http://www.secureconsulting.net/</uri>
+    </author>
+    
+        <category term="musings" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    <category term="depression" label="depression" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="reflection" label="reflection" scheme="http://www.sixapart.com/ns/types#tag" />
+    <category term="workfromhome" label="work from home" scheme="http://www.sixapart.com/ns/types#tag" />
+    
+    <content type="html" xml:lang="en-us" xml:base="http://secureconsulting.net/">
+        <![CDATA[<p>In a moment of introspection last night, it occurred to me that working from home tends to amplify any perceived slight or sources of negativity. Most of my "human" interactions are online only, which - for this extrovert - means my energy is derived from whatever "interaction" I have online in Twitter, Facebook, email, Slack, etc.</p>]]>
+        <![CDATA[<p>It turns out that this can be highly problematic. Last year I turned off Facebook for months at a time because of all the negativity. I constantly felt myself slipping into depression because everything weighed me down. And don't get me wrong, I'm as much a source of negative posts as anyone else. I don't think we can help it in this political environment.</p>
+
+<p>However, where this gets particularly challenging is around non-internet interactions. Whether it be having tea with a friend or just chatting with them on the phone... I've come to realize that a lot of my happiness ends up hanging on these very rare interactions, which can be highly problematic when folks are busy or when unexpected events conspire to prevent such meetings. The negative side of my brain then latches onto these as "proof" that I'm unworthy of friends or friendship and starts trying to commence the dark downward spiral.</p>
+
+<p>To that end, now that I'm aware of these feelings, I can start developing mechanisms to cope with them. I think one of the big challenges for someone my age, with a family and working from home, is trying to find new opportunities for interaction. Real interactions - not phony interactions via "networking" events and BS like that. We're kind of at that point in the parenthood cycle where the kids' schedules tend to dominate our lives.</p>
+
+<p>Anyway... this is my observation for the morning. I need to find new forms of positive human interactions. Preferably real human interactions. And, in the meantime, I need to stop letting negative interactions and disappointments amplify disproportionately to the degree that it triggers a major downward swing. This is not an easy thing to do, but in seeing the pattern, at least now I can tackle it.</p>]]>
+    </content>
+</entry>
+
+</feed>
