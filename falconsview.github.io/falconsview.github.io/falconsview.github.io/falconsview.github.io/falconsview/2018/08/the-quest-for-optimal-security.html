@@ -1,0 +1,859 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://secureconsulting.net/styles.css" type="text/css" />
+<link rel="start" href="http://secureconsulting.net/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://secureconsulting.net/atom.xml" />
+<script type="text/javascript" src="http://secureconsulting.net/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://secureconsulting.net/2018/08/the-quest-for-optimal-security.html">
+<dc:title>The Quest for Optimal Security</dc:title>
+<dc:description>There&apos;s no shortage of guidance available today about how to structure, build, and run a security program. Most guidance comes from a standpoint of inherent bias, whether it be to promote a product class, specific framework/standard, or to best align...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2018-08-06T12:55:28-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://secureconsulting.net/2018/08/the-quest-for-optimal-security.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://secureconsulting.net/2018/05/forget-c-i-a-availability-is-k.html" title="Forget C-I-A, Availability Is King" />
+    <link rel="next bookmark" href="http://secureconsulting.net/2019/01/business-must-change-infosec-i.html" title="Business Must Change: InfoSec in 2019" />
+    
+    
+    <title>The Quest for Optimal Security - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://secureconsulting.net/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2542" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">The Quest for Optimal Security</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2018-08-06T12:55:28-05:00">August  6, 2018 12:55 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>There's no shortage of guidance available today about how to structure, build, and run a security program. Most guidance comes from a standpoint of inherent bias, whether it be to promote a product class, specific framework/standard, or to best align with specific technologies (legacy/traditional infrastructure, cloud, etc.). Given all the competing advice out there, I often find it's hard to suss out exactly what one should be doing. As someone actively on the job hunt, this reality is even more daunting because job descriptions will typically contain a smattering of biases, confirmed or contradicted through interview processes. But, I digress...</p>
+
+<p>At end of day, the goal of your security program <em>should</em> be to chart a path to an optimal set of capabilities. What exactly constitutes "optimal" will in fact vary from org to org. We know this is true because otherwise there would already be a settled "best practice" framework to which everyone would align. That said, there are a lot of common pieces that can be leveraged in identifying the optimal program attributes for your organization.</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>The Basics</strong></p>
+
+<p>First and foremost, your security program <em>must</em> account for basic security hygiene, which creates the basis for arguing <a href="http://www.secureconsulting.net/2010/03/legal-defensibility-doctrine.html" target="_blank">legal defensibility</a>; which is to say, if you're not doing the basics, then your program can be construed insufficient, exposing your organization to legal liability (a growing concern). That said, what exactly constitutes "basic security hygiene"?</p>
+
+<p>There are a couple different ways to look at basic security hygiene. For starters, you can look at it be technology grouping:<br />
+ - Network<br />
+ - Endpoint<br />
+ - Data<br />
+ - Applications<br />
+ - IAM<br />
+ - etc.</p>
+
+<p>However, listing out specific technologies can become cumbersome, plus it doesn't necessarily lend itself well to thinking about security architecture and strategy. A few years ago I came up with an approach that looks like this:</p>
+
+<p><a href="http://secureconsulting.net/assets_c/2018/08/Ben-matrix-24.html" onclick="window.open('http://secureconsulting.net/assets_c/2018/08/Ben-matrix-24.html','popup','width=1045,height=698,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://secureconsulting.net/assets_c/2018/08/Ben-matrix-thumb-600xauto-24.png" width="600" height="400" alt="Ben-matrix.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></a></p>
+
+<p>More recently, I learned of the <a href="https://www.owasp.org/index.php/OWASP_Cyber_Defense_Matrix" target="_blank">OWASP Cyber Defense Matrix</a>, which takes a similar approach to mine above, but mixing it with the <a href="https://www.nist.gov/cyberframework" target="_blank">NIST Cybersecurity Framework</a>.</p>
+
+<center><a href="https://www.owasp.org/index.php/OWASP_Cyber_Defense_Matrix" target="_blank"><img src="https://www.owasp.org/images/0/05/Cyber_Defense_Matrix.png" width="600"></a></center><br>
+
+<p>Overall, I like the simplicity of the CDM approach as I think it covers sufficient bases to project a legally defensible position, while also ensuring a decent starting point that will cross-map to other frameworks and standards depending on the needs of your organization (e.g., maybe you need to move to ISO 27001 or complete a SOC 1/2/3 certification).</p>
+
+<p><strong>Org Culture</strong></p>
+
+<p>One of the oft-overlooked, and yet insanely important, aspects of designing an approach to optimal security for your organization is to understand that it must exist completely within the organization's culture. After all, the organization is comprised of people doing work, and pretty much everything you're looking to do will have some degree of impact on those people and their daily lives.</p>
+
+<p><a href="http://secureconsulting.net/assets_c/2018/08/Ben-pyramid-25.html" onclick="window.open('http://secureconsulting.net/assets_c/2018/08/Ben-pyramid-25.html','popup','width=948,height=538,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://secureconsulting.net/assets_c/2018/08/Ben-pyramid-thumb-600xauto-25.png" width="600" height="340" alt="Ben-pyramid.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></a></p>
+
+<p>As such, when you think about everything, be it basic security hygiene, information risk management, or even behavioral infosec, you must first consider how it fits with org culture. Specifically, you need to look at the values of the organization (and its leadership), as well as the behaviors that are common, advocated, and rewarded.</p>
+
+<p>If what you're asking people to do goes against the incentive model within which they're operating, then you <em>must</em> find a way to either better align with those incentives or find a way to change the incentives such that they encourage preferred behaviors. We'll talking more about behavioral infosec below, so for this section the key takeaway is this: organizational culture creates the incentive model(s) upon which people make decisions, which means you absolutely <em>must</em> optimize for that reality.</p>
+
+<p>For more on my thoughts around org culture, please see my post <a href="https://www.linkedin.com/pulse/quit-talking-security-culture-fix-org-ben-tomhave/" target="_blank">"Quit Talking About "Security Culture" - Fix Org Culture!"</a></p>
+
+<p><strong>Risk Management</strong></p>
+
+<p>Much has been said about risk management over the past decade+, whether it be PCI DSS advocating for a "risk-based approach" to vulnerability management, or updates to the NIST Risk Management Framework, or various advocation by ISO 27005/31000 or proponents of a quantitative approach (such as the FAIR Institute).</p>
+
+<p>The simply fact is that, once you have a reasonable base set of practices in place, almost everything else should be driven by a risk management approach. However, what this means within the context of optimal security can vary substantially, not the least being due to staffing challenges. If you are a small-to-medium-sized business, then your reality is likely one where you, at best, have a security leader of some sort (CISO, security architect, security manager, whatever) and then maybe up to a couple security engineers (doers), maybe someone for compliance, and then most likely a lot of outsourcing (MSP/MSSP/MDR, DFIR retainer, auditors, contractors, consultants, etc, etc, etc).</p>
+
+<p>Risk management is not your starting point. As noted above, there are a number of security practices that we <em>know</em> must be done, whether that be securing endpoints, data, networks, access, or what-have-you. Where we start needing risk management is when we get beyond the basics and try to determine what else is needed. As such, the crux of optimal security is having an information risk management capability, which means your overall practice structure might look like this:</p>
+
+<p><a href="http://secureconsulting.net/assets_c/2018/08/Ben-pyramid2-26.html" onclick="window.open('http://secureconsulting.net/assets_c/2018/08/Ben-pyramid2-26.html','popup','width=1174,height=681,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="http://secureconsulting.net/assets_c/2018/08/Ben-pyramid2-thumb-600xauto-26.png" width="600" height="348" alt="Ben-pyramid2.png" class="mt-image-center" style="text-align: center; display: block; margin: 0 auto 20px;" /></a></p>
+
+<p>However, don't get wrapped around the axel too much on how the picture fits together. Instead, be aware that your basics come first (out of necessity), <em>then</em> comes some form of risk mgmt., which will include gaining a deep understanding of org culture.</p>
+
+<p><strong>Behavioral InfoSec</strong></p>
+
+<p>The other major piece of a comprehensive security program is behavioral infosec, which I have talked about previously in my posts <a href="https://www.linkedin.com/pulse/introducing-behavioral-infosec-ben-tomhave/" target="_blank">"Introducing Behavioral InfoSec"</a> and <a href="https://www.linkedin.com/pulse/design-behavior-awareness-ben-tomhave/" target="_blank">"Design For Behavior, Not Awareness."</a> In these posts, and other places, I talk about the imperative to key in on organizational culture, and specifically look at behavior design as part of an overall security program. However, there are a couple key differences in this approach that set it apart from traditional security awareness programs.<br />
+ 1) Behavioral InfoSec acknowledges that we are seeking preferred behaviors within the context of organizational culture, which is the set of values of behaviors promoted, supported, and rewarded by the organization.<br />
+ 2) We move away from basic "security awareness" programs like annual CBTs toward practices that seek measurable, lasting change in behavior that provide positive security benefit.<br />
+ 3) We accept that all security behaviors - whether it be hardening or anti-phishing or data security (etc) - must either align with the inherent cultural structure and incentive model, or seek to change those things in order to heighten the motivation to change while simultaneously making it easier to change.</p>
+
+<p>To me, shifting to a behavioral infosec mindset is imperative for achieving success with embedding and institutionalizing desired security practices into your organization. Never is this more apparent than in looking at the <a href="https://www.behaviormodel.org/" target="_blank">Fogg Behavior Model</a>, which explains behavior thusly:</p>
+
+<center><img src="https://www.behaviormodel.org/index_files/fogg-behavior-model-updated.png" target="_blank"></center>
+
+<p>In writing, it says that behavior happens when three things come together: motivation, ability, and a trigger (prompt or cue). We can diagram behavior (as above) wherein motivate is charted on the Y-axis from low to high, ability is charted on the X-axis from "hard to do" to "easy to do," and then a prompt (or trigger) that falls either to the left or right of the "line of action," which means the prompt itself is less important than one's motivation and the ease of the action.</p>
+
+<p>We consistently fail in infosec by not properly accounting for incentive models (motivation) or by asking people to do something that is, in fact, too difficult (ability; that is, you're asking for a change that is hard, maybe in terms of making it difficult to do their job, or maybe just challenging in general). In all things, when we think about information risk mgmt. and the kinds of changes we want to see in our organizations beyond basic security hygiene, it's imperative that we also under the cultural impact and how org culture will support, maybe even reward, the desired changes.</p>
+
+<p>Overall, I would argue that my original pyramid diagram ends up being more useful insomuch as it encourages us to think about info risk mgmt. and behavioral infosec in parallel and in conjunction with each other.</p>
+
+<p><strong>Putting It All Together</strong></p>
+
+<p>All of these practices areas - basic security hygiene, info risk mgmt, behavioral infosec - ideally come together in a strategic approach that achieves optimal security. But, what does that really mean? What are the attributes, today, of an optimal security program? There are lessons we can learn from agile, DevOps, ITIL, Six Sigma, and various other related programs and research, ranging from Deming to Senge and everything in between. Combined, "optimal security" might look something like this:<br />
+<blockquote><br />
+<strong>Conscious</strong><br />
+&nbsp;&nbsp;&nbsp;- Generative (thinking beyond the immediate)<br />
+&nbsp;&nbsp;&nbsp;- Mindful (thinking of people and orgs in the whole)<br />
+&nbsp;&nbsp;&nbsp;- Discursive (collaborative, communicative, open-minded)</p>
+
+<p><strong>Lean</strong><br />
+&nbsp;&nbsp;&nbsp;- Efficient (minimum steps to achieve desired outcome)<br />
+&nbsp;&nbsp;&nbsp;- Effective (do we accomplish what we set out to do?)<br />
+&nbsp;&nbsp;&nbsp;- Managed (haphazard and ad hoc are the enemy of lasting success)</p>
+
+<p><strong>Quantified</strong><br />
+&nbsp;&nbsp;&nbsp;- Measured (applying qualitative or quantitative approaches to test for efficiency and effectiveness)<br />
+&nbsp;&nbsp;&nbsp;- Monitored (not just point-in-time, but watched over time)<br />
+&nbsp;&nbsp;&nbsp;- Reported (to align with org culture, as well as to help reform org culture over time)</p>
+
+<p><strong>Clear</strong><br />
+&nbsp;&nbsp;&nbsp;- Defined (what problem is being solved? what is the desired outcome/impact? why is this important?)<br />
+&nbsp;&nbsp;&nbsp;- Mapped (possibly value stream mapping, possibly net flows or data flows, taking time to understand who and what is impacted)<br />
+&nbsp;&nbsp;&nbsp;- Reduced (don't bite off too much at once, acknowledge change requires time, simplify simplify simplify)</p>
+
+<p><strong>Systematic</strong><br />
+&nbsp;&nbsp;&nbsp;- Systemic understanding (the organization is a complex organism that must work together)<br />
+&nbsp;&nbsp;&nbsp;- Automated where possible (don't install people where an automated process will suffice)<br />
+&nbsp;&nbsp;&nbsp;- Minimized complexity (perfect is the enemy of good, and optimal security is all about "good enough," so seek the least complex solutions possible)<br />
+</blockquote><br />
+Obviously, much, much more can be said about the above, but that's fodder for another post (or a book, haha). Instead, I present the above as a starting point for a conversation to help move everyone away from some of our traditional, broken approaches. Now is the time to take a step back and (re-)evaluate our security programs and how best to approach them.</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://secureconsulting.net/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=architecture&amp;limit=20';return false;" rel="tag">architecture</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=behavior&amp;limit=20';return false;" rel="tag">behavior</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=culture&amp;limit=20';return false;" rel="tag">culture</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20';return false;" rel="tag">infosec</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=management&amp;limit=20';return false;" rel="tag">management</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=optimal&amp;limit=20';return false;" rel="tag">optimal</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=program&amp;limit=20';return false;" rel="tag">program</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=risk&amp;limit=20';return false;" rel="tag">risk</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=security&amp;limit=20';return false;" rel="tag">security</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=strategy&amp;limit=20';return false;" rel="tag">strategy</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://secureconsulting.net/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-links widget">
+    <h3 class="widget-header">Pages and Links</h3>
+    <div class="widget-content">
+        <ul>
+            <li><a href="/disclaimer.html" target="_blank">[ Disclaimer ]</a></li>
+            <li><a href="/bio-resume.html" target="_blank">[ Bio & Resume ]</a></li>
+            <li><a href="/papers-publications.html" target="_blank">[ Old Papers & Publications ]</a></li>
+            <li><a href="/talks.html" target="_blank">[ Public Speaking ]</a></li>
+            <li><a href="/TEAM-Model.html" target="_blank">[ TEAM Model ]</a></li>
+            <li><a href="/old-pages.html" target="_blank">[ Old Pages ]</a></li>
+            <br>
+            <li><a href="https://twitter.com/falconsview/" target="_blank" alt="Twitter"><img src="/twitter-logo-transparent-small.png"alt="Twitter" width="40" /></a>&nbsp;
+            <a href="https://www.linkedin.com/in/btomhave/" target="_blank" alt="LinkedIn"><img src="/In-2C-48px-R.png"alt="LinkedIn" width="40" /></a>&nbsp;
+            <a href="https://supporters.eff.org/donate" target="_blank" alt="EFF"><img src="/eff-logo-plain-rgb.png" alt="EFF" width="40" /></a>
+            <br>
+            <li><img src="http://secureconsulting.net/mt-static/images/status_icons/feed.gif" alt="RSS" width="15" height="15" /> <a href="http://secureconsulting.net/atom.xml">RSS Feed</a></li>
+
+        </ul>
+    </div>
+</div><div class="widget-recent-entries widget-archives widget">
+    <h3 class="widget-header">Recent Entries</h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://secureconsulting.net/2019/01/business-must-change-infosec-i.html">Business Must Change: InfoSec in 2019</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2018/08/the-quest-for-optimal-security.html">The Quest for Optimal Security</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2018/05/forget-c-i-a-availability-is-k.html">Forget C-I-A, Availability Is King</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2018/03/measure-security-performance-n.html">Measure Security Performance, Not Policy Compliance</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2018/01/the-thankless-life-of-analysts.html">The Thankless Life of Analysts</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/10/design-for-behavior-not-awaren.html">Design For Behavior, Not Awareness</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/10/incremental-gains-are-just-slo.html">Incremental "Gains" Are Just Slower Losses</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/09/a-change-in-context.html">A Change In Context</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/09/quit-talking-about-security-culture.html">Quit Talking About "Security Culture" - Fix Org Culture!</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/08/introducing-behavioral-infosec.html">Introducing Behavioral Information Security</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+<div class="widget-archive-monthly-dropdown widget-archive widget">
+   <h3 class="widget-header"><a href="http://secureconsulting.net/archives.html">Archives</a></h3>
+   <div class="widget-content">
+      <select onchange="nav(this)">
+         <option>Select a Month...</option>
+         
+         <option value="http://secureconsulting.net/2019/01/">January 2019</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2018/08/">August 2018</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2018/05/">May 2018</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2018/03/">March 2018</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2018/01/">January 2018</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/10/">October 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/09/">September 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/08/">August 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/03/">March 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/02/">February 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/01/">January 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/12/">December 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/09/">September 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/08/">August 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/07/">July 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/05/">May 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/04/">April 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/02/">February 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/11/">November 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/09/">September 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/07/">July 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/06/">June 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/05/">May 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/04/">April 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/03/">March 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/01/">January 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/09/">September 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/08/">August 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/07/">July 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/04/">April 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/03/">March 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/02/">February 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/01/">January 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/12/">December 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/11/">November 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/10/">October 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/09/">September 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/08/">August 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/07/">July 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/06/">June 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/03/">March 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/02/">February 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/01/">January 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/12/">December 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/11/">November 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/10/">October 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/09/">September 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/08/">August 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/07/">July 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/06/">June 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/05/">May 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/04/">April 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/03/">March 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/02/">February 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/01/">January 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/12/">December 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/11/">November 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/10/">October 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/09/">September 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/08/">August 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/07/">July 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/06/">June 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/05/">May 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/04/">April 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/03/">March 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/02/">February 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/01/">January 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/12/">December 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/11/">November 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/10/">October 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/09/">September 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/08/">August 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/07/">July 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/06/">June 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/05/">May 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/04/">April 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/03/">March 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/02/">February 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/01/">January 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/12/">December 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/11/">November 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/10/">October 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/09/">September 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/08/">August 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/07/">July 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/06/">June 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/05/">May 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/04/">April 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/03/">March 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/02/">February 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/01/">January 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/12/">December 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/11/">November 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/10/">October 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/09/">September 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/08/">August 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/07/">July 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/06/">June 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/05/">May 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/04/">April 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/03/">March 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/02/">February 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/01/">January 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/12/">December 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/11/">November 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/10/">October 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/09/">September 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/08/">August 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/07/">July 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/06/">June 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/05/">May 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/04/">April 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/03/">March 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/02/">February 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/01/">January 2007</option>
+         
+      </select>
+   </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+/* <![CDATA[ */
+function nav(sel) {
+   if (sel.selectedIndex == -1) return;
+   var opt = sel.options[sel.selectedIndex];
+   if (opt && opt.value)
+      location.href = opt.value;
+}
+/* ]]> */
+</script>
+        
+    
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>August  6, 2018 12:55 PM</em>.</p>
+    
+        <p><a href="http://secureconsulting.net/2018/05/forget-c-i-a-availability-is-k.html">Forget C-I-A, Availability Is King</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://secureconsulting.net/2019/01/business-must-change-infosec-i.html">Business Must Change: InfoSec in 2019</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://secureconsulting.net/">main index</a> or look in the <a href="http://secureconsulting.net/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-creative-commons widget">
+   <div class="widget-content">
+      <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+      This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+   </div>
+</div>
+
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://secureconsulting.net/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Thoughts on Akamai's "EdgeTokenization" Solution (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2010/09/appsecdc_2010_schedule_is_post.html" title="AppSecDC 2010 Schedule is Posted (Includes Me!)" />
+   <link rel="next" href="http://www.secureconsulting.net/2010/10/reflections_on_energysec_summi.html" title="Reflections on EnergySec Summit 2010" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2010/09/thoughts_on_akamais_edgetokeni.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/1060"
+    dc:title="Thoughts on Akamai&apos;s &quot;EdgeTokenization&quot; Solution"
+    dc:identifier="http://www.secureconsulting.net/2010/09/thoughts_on_akamais_edgetokeni.html"
+    dc:subject="infosec"
+    dc:description="You might have noticed an article yesterday on CSO Online titled &quot;Akamai releases &apos;game changing&apos; cloud-based payment service&quot; and wondered &quot;that&apos;s interesting - I wonder what it all means?&quot; That was certainly the case for me and, I have to..."
+    dc:creator="Ben Tomhave"
+    dc:date="2010-09-28T15:05:59-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2010/09/thoughts_on_akamais_edgetokeni.html">
+<dc:title>Thoughts on Akamai&apos;s &quot;EdgeTokenization&quot; Solution</dc:title>
+<dc:description>You might have noticed an article yesterday on CSO Online titled &quot;Akamai releases &apos;game changing&apos; cloud-based payment service&quot; and wondered &quot;that&apos;s interesting - I wonder what it all means?&quot; That was certainly the case for me and, I have to...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-09-28T15:05:59-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2010/09/appsecdc_2010_schedule_is_post.html">&laquo; AppSecDC 2010 Schedule is Posted (Includes Me!)</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2010/10/reflections_on_energysec_summi.html">Reflections on EnergySec Summit 2010 &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Thoughts on Akamai's "EdgeTokenization" Solution</h2>
+                     <div class="entry" id="entry-2296">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>You might have noticed an article yesterday on CSO Online titled <a target="_blank" href="http://www.csoonline.com/article/619053/akamai-releases-game-changing-cloud-based-payment-service-">"Akamai releases 'game changing' cloud-based payment service"</a> and wondered "that's interesting - I wonder what it all means?" That was certainly the case for me and, I have to say, I'm a little disappointed now that I've gotten under the hood a bit.</p>
+
+<p>Before I go any further, let me be clear on something up front: I think this technology is a good thing, I think what Akamai is doing is laudable, and I hope that merchants make use of the solution. I've been saying for a couple years now that part of the "solution" to PCI compliance concerns is to simply get cardholder data out of merchants' hands. This solution helps accomplish that goal. However, it's no panacea, and we need to be cautious how much hope we place in it.</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p><strong>Not Really "Game-Changing"</strong></p>
+
+<p>This solution is not really very different from what we have today. It's a subtle variation on current tokenization solutions. The tokenization itself still happens the same way. The gateway component is still present. The cardholder data is still being stored somewhere. What's really different here is that, rather than requiring use of a redirect or an iframe or an API call to get cardholder data out of a merchant's environment, it is instead being intercepted mid-flight by Akamai, who in turn tokenizes it through the gateway and then passes the token on to the merchant.</p>
+
+<p>There are a couple things happening here that are very noteworthy:<br />
+ * <em>De-SSL Interception</em>: Akamai is intercepting the SSL-wrapped connection from the customer to the merchant, breaking (or, terminating) that connection a la an SSL proxy. That is to say, though you as an end-user might think that you have a secure SSL connection end-to-end to the merchant, this isn't actually the case. Of course, this also isn't new for Akamai, which has provided this service to customers for a while. One open question here is whether or not the connection from Akamai to the merchant is using SSL. Technically it's not required by PCI DSS since there isn't cardholder information. However, one would hope a new SSL connection is instantiated to protect the rest of the session.<br />
+ * <em>Transparent Tokenization</em>: Rather than requiring merchants to embed code into their site, or to redirect to the gateway, the cardholder data is simply being transparently captured and tokenized in-flight. This is really a rather remarkable feat considering one must assume the tolerance for performance impact is very low. So, not only is the SSL connection being terminated early, but the card value is grabbed, tokenized, and then the connection is restarted to the merchant site using the tokenized value rather than the real card data.</p>
+
+<p><strong>Transferred Risk, Not Improved Security</strong></p>
+
+<p>One issue that arose in conversation on Twitter yesterday while discussing the solution was a bit of term confusion. This solution provides a mechanism for merchants to transfer the risk of managing cardholder data to someone else. Interestingly, it's not clear who they're transferring the risk to, or what sort of contractual coverage will be in place. One might think at first blush that Akamai is shouldering the new risk burden, but that's only partly true, and probably not as much so as you might think. Really, it seems that their gateway partner, CyberSource, ultimately bears the brunt of the transferred risk, since they're the ones who will be storing cardholder data.</p>
+
+<p>What I think is important to note here is that, more than mere semantics, there is a fundamental difference between transferring (or reducing) risk and improving security. This service does not make merchant systems or applications any more secure. It merely reduces the exposure of cardholder data (and, really, just the credit card value - the merchant's payment system will remain in place, complete with customer data). The question I asked of Akamai CSO Andy Ellis yesterday was "does this make merchants any more secure?" The answer here is a definitive "no." Yes, merchants are reducing their own risk burden, but this solution does not make them any more secure.</p>
+
+<p>At the same time, depending on how the contracts are written, there's still a possibility that the risk transference won't be complete. This is a topic for lawyers to hash out in painful detail, but it's something that nonetheless needs to be considered. If your contract, as a merchant, is with Akamai, then will you also have a contract with CyberSource? Be careful how you answer, because you're still technically covered by PCI DSS, and thus still need to make sure your 3rd party providers are also compliant!</p>
+
+<p><strong>Still Subject to PCI DSS Reqs. 9 & 12 (?)</strong></p>
+
+<p>One of the arguments made in favor of fully outsourcing payment card processing is that it eliminates all your responsibilities and exposure under PCI DSS. However, I'm finding that hard to believe given the documentation that the PCI Council makes available. Case in point, consider the following explanations for the different types of Self-Assessment Questionnaires:</p>
+
+<center><a target="_blank" href="https://www.pcisecuritystandards.org/saq/instructions_dss.shtml"><img alt="PCI-SAQs.png" border="0" hspace="5" vspace="5" src="http://www.secureconsulting.net/2010/09/28/PCI-SAQs.png" width="400" /></a></center>
+
+<p>Based on those definitions, it would seem that users of Akamai's EdgeTokenization solution - or any other outsourcing solution - would still be required to complete the SAQ A. The PCI Council seems to be very particular about who can complete the SAQ A, based on this:</p>
+
+<center><a target="_blank" href="http://www.secureconsulting.net/2010/09/28/SAQ-A-eligibility.png"><img alt="SAQ-A-eligibility.png" border="0" hspace="5" vspace="5" src="http://www.secureconsulting.net/2010/09/28/SAQ-A-eligibility.png" width="400" /></a></center>
+
+<p>However, given these two blocks of text, it seems fairly clear that, per SAQ A, merchants are still required to comply with certain parts of Requirements 9 (<em>Restrict physical access to cardholder data</em>) and 12 (<em>Maintain a policy that addresses information security for employees and contractors</em>). In fact, 12.8 is specifically focused on managing third-parties to whom card processing is outsourced. The introduction to <a target="_blank" href="https://www.pcisecuritystandards.org/security_standards/pci_dss_download.html">PCI DSS itself</a> seems fairly clear on this matter:</p>
+
+<blockquote>"For those entities that outsource storage, processing, or transmission of cardholder data to third-party service providers, the Report on Compliance (ROC) must document the role of each service provider, clearly identifying which requirements apply to the reviewed entity and which apply to the service provider. There are two options for third-party service providers to validate compliance: 1) They can undergo a PCI DSS assessment on their own and provide evidence to their customers to demonstrate their compliance, or 2) If they do not undergo their own PCI DSS assessment, they will need to have their services reviewed during the course of each of their customer's PCI DSS assessments. See the bullet beginning “For managed service provider (MSP) reviews” under Part 3 in the “Instructions and Content for Report on Compliance” section below for more information.
+<br><br>
+"Additionally, merchants and service providers must manage and monitor the PCI DSS compliance of all associated third parties with access to cardholder data. Refer to Requirement 12.8 in this document for details."</blockquote>
+
+<p>I'm not a QSA, nor do I work for the PCI Council, nor am I a merchant (any more), but this all seems fairly straightforward to me. Does outsourcing drastically reduce the compliance burden? Yes, absolutely. However, it does not eliminate it altogether, despite assertions some have made to the contrary.</p>
+
+<p><strong>Leaking Secrets?</strong></p>
+
+<p>Historically, we've not known much about how Akamai functions. They've been very good at keeping a low profile, all the while providing a considerable portion of Internet backbone. If you were to dig, I think you'd be surprised to see just how much traffic ends up going to Akamai instead of the site you think you're visiting. This latest product, however, pulls back the curtain a bit and gives insight into what is potentially a bit creepy. If you've been concerned about how much data Google has on us all, then consider how much data Akamai has access to (whether they're keeping it or not).</p>
+
+<p>As noted, they're intercepting SSL communications, terminating it on their networks on behalf of their customers. It's unclear if that SSL connection is then restarted, or if the back-end calls are in the clear. As much as we've been told to use SSL everywhere, this raises a potential concern about it's effectiveness. In fact, one could go so far as to decry SSL as a scam perpetrated on the masses given how easily it's being broken down.</p>
+
+<p>It's also somewhat ironic the furor over federal officials who want to break Internet encryption. From <a target="_blank" href="http://www.nytimes.com/2010/09/27/us/27wiretap.html?_r=1">a NY Times article yesterday</a>:<br />
+"Federal law enforcement and national security officials are preparing to seek sweeping new regulations for the Internet, arguing that their ability to wiretap criminal and terrorism suspects is “going dark” as people increasingly communicate online instead of by telephone."</p>
+
+<p>Not to point out the obvious, but if I were these officials, I think I'd just buddy-up to companies like Akamai in order to gain surreptitious access to data. Imagine <a target="_blank" href="http://www.us-cert.gov/federal/analytical.html">US-CERT's Einstein Program</a> sitting on Akamai's backbone. Hmmm... and yet where's the concern over what Akamai does as part of their standard business practices? At least the federal government is subject to certain legal constructs (like the US Constitution).</p>
+
+<p>What this raises for me is a potential red flag around privacy. It would be interesting to have insight into how data access is being used, particularly with respect to national security requests, broad Internet traffic monitoring, and the like. I don't say this to stir the pot, per say, but because it's interesting to me what gets people in a twist. As a society, we seem to worry about government intrusion while overlooking corporate intrusions like frequent buyer programs, Google analytics, Facebook privacy management, and so on.</p>
+
+<p><strong>More Enablement Culture</strong></p>
+
+<p>The last point that I think bears highlighting here is the continued expansion of the enablement culture. One of the key problems facing the IT and security industries today is that the decision-makers are generally far removed from the results (consequences+impacts) of their decisions and actions. Users click on links in spam that result in infections and in swoops IT to magically fix it. Sure, we send people to annual awareness training, and we give them cutesy trinkets, but in the end very little difference is made.</p>
+
+<p>Solutions like EdgeTokenization seem to bring to mind a larger variation of this problem. To my original question to Andy Ellis, this solution does not make these merchants any more secure. Instead, it transfers the risk to another organization on the premise that this third party is much better prepared to manage that risk. Unfortunately, because it does not improve security around the system, it merely gives the illusion of improved security. Reduced risk is not, however, the same as better security. Here's why...</p>
+
+<p>In the world of FAIR risk analysis, risk has two (2) main components: loss event frequency (LEF) and loss magnitude (LM). LEF is further broken down into threat event frequency (TEF - comprised of Contact Frequency and Probability of Action) and vulnerability (Vuln - comprised of Threat Capability and Resistance Strength). In the case of EdgeTokenization, risk is reduced in two key areas: TEF and LM. That is, the likelihood that a threat agent will attack seems to decrease (maybe) because the cardholder data is no longer present. At the same time, even if a threat agent does attack, the correlated Loss Magnitude should be significantly lower, with a most likely scenario being slight reduced primary costs, and much lower secondary costs. Which is to say that the financial risk borne by the merchant should be lower by virtue of not having as much "data of value" in their potentially-compromised environment.</p>
+
+<p>What's important to note here, though, is that at no point does Resistance Strength improve/increase. EdgeTokenization does not improve the relative security of the payment card system (or, CRM system as the case may be). At the same time, switching to EdgeTokenization (rather than wholesale outsourcing the entire billing/payment platform) will almost certain de-emphasize the environment, likely reducing the security investment made in protecting it. Without the requirements of PCI DSS, what's the likelihood that these systems will be secured at all? Moreover, I have to wonder if implementing this solution would undermine the need for buying a PA-DSS certified product, since you're no longer dealing directly with cardholder data? You could then continue to use a really awful platform like Platypus since it's not required to meet full DSS compliance. This scenario is but one example of the enablement culture created that literally discourages applying much, if any, security consideration to what are actually rather important systems.</p>
+
+<p>To summarize, and expand upon, this section, consider the following cases where the enablement culture is expanded:<br />
+ * <em>Merchants feel less pain</em>: As already discussed, solutions like EdgeTokenization do not improve the security of their environments, but does reduce the risk. In effect, merchants will now feel less pain in the case of a compromise, even though the degree of compromise can be as severe as before. Card values may not be compromised, but customer information probably will, not to mention the impact of having servers compromised in general. However, the likelihood of fines and judgments is greatly reduced. The reduced likelihood of meaningful consequences in the face of bad things happening is no incentive for improvement.<br />
+ * <em>Broken system sustained</em>: I'm particularly concerned that this solution furthers this broken payment card system in a way that is tangible and useful to the card brands, but without really doing much to save the world (so to speak). I hope that Akamai makes a ton of money off this proposition, but I also suspect that the card brands aren't necessarily paying for it even though they stand to benefit handsomely. Then again, maybe Akamai is being quietly funded for this project by the PCI Council...<br />
+ * <em>Continued promotion of credit and consumerization</em>: This is more an economic and political issue, but the current state of the American economy is due in large part to the extreme binge of credit-based spending and consumerization that has devoured us whole. Anything that continues to make these problems worse rather than better is vexing, though in a philosophical and ethical manner.</p>
+
+<p>The bottom line here is that I grow tired of security professionals and the security industry producing solutions that remove a clear connection between actions/decisions and the resulting consequences and impact. All responsible parties should feel pain when bad things happen as a result of their decisions/actions. Unfortunately, we live in a paternalistic period where big brother (not always the government, btw!) steps in to help shield us from negative impacts.</p>
+
+<p>A poignant comment from Andy Ellis was to point out the parallels in my concerns with the <a target="_blank" href="http://en.wikipedia.org/wiki/Peltzman_effect">Peltzman effect</a>, which is described on Wikipedia thusly:<br />
+"The Peltzman effect is the hypothesized tendency of people to react to a safety regulation by increasing other risky behavior, offsetting some or all of the benefit of the regulation."</p>
+
+<p>I think we are already seeing this effect in play, and it worries me that the more we abstract merchants from their security responsibilities, the more likely it is that they'll run poorly secured systems that can be compromised at the drop of a hat. Putting this into a broader national security context, this is not a good thing. I'm happy Akamai is helping get cardholder data out of the hands of merchants, but I maintain serious concerns about the particular method. Also, mark my words: a class breach of tokenization solutions will come some day. When that happens, how will we respond? How will we view this solution then?</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=PCI%20DSS&amp;limit=20" rel="tag">PCI DSS</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=tokenization&amp;limit=20" rel="tag">tokenization</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on September 28, 2010  3:05 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2010/09/thoughts_on_akamais_edgetokeni.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/1060</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (4)</h3>
+                           
+                                 <a id="c000803"></a>
+                                 <div class="comment" id="comment-803">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>I'm a believer in incremental steps to achieve security. If you focus on developing a 100% secure solution, you'll never make it to market. I fully agree, a tokenization solution for payments is not going to address other vulnerabilities that may exist in an e-commerce application, but that is not the intent. The intent is to secure the payment data and solutions like this do address this issue.</p>
+
+<p>The pain point for merchants (right now) is the requirement to be PCI compliant. The card brands will shut down the merchant if they are not PCI compliant (or charge hefty fines and increase rates). Unless the merchant must comply with HIPPA, there is no equivalent for the other information that you mentioned -- no fines, no shutting down. I like you would argue everything should be secure, but many merchants have the blinders on because of whatever reasons. I see any improvement, like securing the payment data, as a step in the right direction (albeit maybe a small step).</p>
+
+<p>"Game changer!", I don't see it. We've had a solution available for years now that tokenizes the payment info and prevents it from entering the merchant system. The only difference is possible no programming required (if the solution really matches the marketing info). I'm not a fan of this SSL proxy technique, mainly because I don't like the idea of some "black box" decrypting my data and sniffing through it for whatever. I also look at everything not only from a security mind set, but a supportability one as well. All solutions have support issues from time to time and my experience is that "transparent" components tend to insert their own unique problems into the mix that can be difficult to pin-point and isolate.<br />
+</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a>  |
+                                          <a href="#comment-803">October 14, 2010  2:03 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-803" title="Permalink to this comment">October 14, 2010 14:03</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000804"></a>
+                                 <div class="comment" id="comment-804">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>One other note, for this solution, what if something breaks the "SSL proxy" layer -- does this mean that the payment data will be passed directly to the previously non-PCI compliant e-commerce application?</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a>  |
+                                          <a href="#comment-804">October 14, 2010  2:08 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-804" title="Permalink to this comment">October 14, 2010 14:08</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000807"></a>
+                                 <div class="comment" id="comment-807">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>@Steve -</p>
+
+<p>You misunderstand. I'm not suggesting a need for "perfect" security, especially since it doesn't exist. What I am indicating is that tokenization solutions remove (most of) the regulatory burden without positively impacting security. Risk is reduced, true, through reduced likely impact from a breach. However, the merchants are still just as easily hacked as before. I'm greatly concerned that this only widens the Human Paradox Gap (see <a href="http://www.securitycatalyst.com/why-people-are-not-the-problem-and-where-to-look-hint-grab-a-mirror/)" rel="nofollow">http://www.securitycatalyst.com/why-people-are-not-the-problem-and-where-to-look-hint-grab-a-mirror/)</a> by further separating them from the impact of their decisions. I think that we will soon see the unintended consequences, complete with negative impact, of these decisions.</p>
+
+<p>-ben</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-807">October 18, 2010  7:42 AM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-807" title="Permalink to this comment">October 18, 2010 07:42</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000811"></a>
+                                 <div class="comment" id="comment-811">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>I understand what you are saying and long term I agree (short-term gain vs. long term pain). Ignorance, while bliss, may not be the best prescription for security success -- I think we both agree on this. But I go back to my belief that security can be applied incrementally. I believe that short term gain can offer some benefit and this is probably where we disagree. I argue that all things being equal, someone using a safe to store his or her money in an unlocked and insecure house has less risk of getting it stolen than that same person stacking the money on the nightstand. Yes, the unlocked and insecure house is a big problem and should be addressed, but the house is not the pain point for many merchants at the moment, the payment info is.</p>
+
+<p>--steve</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a>  |
+                                          <a href="#comment-811">October 18, 2010  1:51 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-811" title="Permalink to this comment">October 18, 2010 13:51</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2296" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2296);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>September 28, 2010  3:05 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2010/09/appsecdc_2010_schedule_is_post.html">AppSecDC 2010 Schedule is Posted (Includes Me!)</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2010/10/reflections_on_energysec_summi.html">Reflections on EnergySec Summit 2010</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

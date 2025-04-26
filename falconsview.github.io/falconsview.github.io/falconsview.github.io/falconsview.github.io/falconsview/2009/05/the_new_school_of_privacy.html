@@ -1,0 +1,325 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>The New School of Privacy (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/05/presenteeism_and_inadequate_va.html" title="Presenteeism and Inadequate Vacation Affect Security" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/05/more_on_tokenization.html" title="More on Tokenization" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/05/the_new_school_of_privacy.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/891"
+    dc:title="The New School of Privacy"
+    dc:identifier="http://www.secureconsulting.net/2009/05/the_new_school_of_privacy.html"
+    dc:subject="infosec"
+    dc:description="It&apos;s 2009 and time for a new notion of privacy... the first decade of the century is quickly coming to a close... the advances in technology over the past 15 years (or more, really) have been astounding... in my lifetime..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-05-20T12:25:08-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/05/the_new_school_of_privacy.html">
+<dc:title>The New School of Privacy</dc:title>
+<dc:description>It&apos;s 2009 and time for a new notion of privacy... the first decade of the century is quickly coming to a close... the advances in technology over the past 15 years (or more, really) have been astounding... in my lifetime...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-05-20T12:25:08-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/05/presenteeism_and_inadequate_va.html">&laquo; Presenteeism and Inadequate Vacation Affect Security</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/05/more_on_tokenization.html">More on Tokenization &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">The New School of Privacy</h2>
+                     <div class="entry" id="entry-2116">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>It's 2009 and time for a new notion of privacy... the first decade of the century is quickly coming to a close... the advances in technology over the past 15 years (or more, really) have been astounding... in <em>my</em> lifetime computers have gone from being something only used in special businesses and academia, to being a novelty, to being mainstream, to being a fully integrated part of life. Along with this evolution in technology has come an evolution in the amount and types of data available on us. Some of that data is generated by 3rd party sources, but today much if it is also generated directly by us.</p>
+
+<p>Bruce Schneier had <a href="http://www.schneier.com/blog/archives/2009/05/marc_rotenberg.html">a post up recently</a> highlighting an essay by Marc Rotenberg over on HuffingtonPost.com (full article <a href="http://www.huffingtonpost.com/marc-rotenberg/privacy-vs-security-pr_b_71806.html">here</a>). The essay is originally from November 9, 2007, and so may seem a bit dated if you read through it. Moreover, "security" in this context is more about "national security," but some of his points are quite apropos. I like this early quote from his piece:<br />
+<blockquote>"First, the privacy laws in the United States came about in response to new technologies. Far from accepting the view that innovation invariably erodes privacy, the United States has an excellent record for creating the legal rules that limit intrusive and unjustified invasions into private life."</blockquote><br />
+The tenet of his article is that too much privacy has been sacrificed in the name of "national security". I would argue that it's much worse than that: we are sacrificing privacy in lieu of corporate interests and at the (in)discretion of our friends, colleagues, and acquaintances.</p>
+
+<p>We had an excellent discussion on this very topic at the annual <a href="http://www.abanet.org/scitech/ec/isc/">ABA InfoSec Committee</a> meeting last month. One of the speakers talked about how privacy now means different things to different generations. Traditionally, privacy has been about preventing intrusions - about keeping what's behind closed doors to oneself. In this traditional view, as long as you did something in private (within reason), then it was nobody else's business. One could argue that the <a href="http://www.usconstitution.net/xconst_Am4.html">4th Amendment</a> is structure precisely toward this right to privacy.</p>
+
+<p>However, with the advent of social networking technologies (the BBS, public web forums, Instant Messaging, Wikis, MySpace, Facebook, Twitter, and so on), there has been a fundamental shift in how data is made available. Generationally, there is a corresponding shift in thinking about privacy of that data. No longer is privacy viewed as a war against intrusion. The data is there, plain to see, oftentimes more available than is likely sensible. In this new context, privacy becomes a matter of access control and authorized use. Platforms like Facebook and Twitter allow you to control (if you choose) who can see your data ("access control"). With this control of access then comes the notion of authorized use.</p>
+
+<p>To give a concrete example, let's look at Facebook. In the privacy settings you can control who can see what you write, post, etc. One of the options is "friends only". Say you've chosen "friends only" for all of your content. You now post some sort of missive disparaging a co-worker, or your boss, or your employer. You know what I'm talking about - one of those "gosh my boss is a jackass" quips that you only intend for friends' ears. Now say that one of your friends is also a co-worker, and they for whatever reason make a comment to your boss about your quip. Perhaps it's an innocuous comment, like "hey, are you giving [friend] a hard time?", but no matter how you look at it, that data leaks out beyond your intended audience. In essence, the implied authorized use was violated.</p>
+
+<p>Consider this, then, to be the new school of privacy: Privacy is the control and authorized use of personal information. <strong>Privacy is not about intrusion, but rather a social contract with those around you; a contract where what you say is intended to stay with those around you and not to wander any further without explicit approval.</strong> Pursuing and supporting this notion, of course, introduces a couple interesting challenges.</p>
+
+<p><strong>Culture Shift</strong></p>
+
+<p>First and foremost, there is a fundamental challenge in the current culture. While 20-somethings and younger may natively adhere to this new school of privacy, they are not generally supported by older generations. In essence, what we're talking about is engraining a philosophy of discretion into everyone's core being. This seems to be a problem that even the 20-somethings have encountered brutally in getting punished at school or fired from jobs for their social network missives.</p>
+
+<p>Unfortunately, as is true with most cultural issues, this one cannot be solved quickly. Just as older generations still have funny ideas about information technology, so will they be equally challenged to learn to trust that everyone around them will be discrete (ironic given the swingers of the Baby Boomer generation, but anyway). At its most fundamental level, our culture must shift away from the paparazzi mindset, where nobody has any privacy in public, to a mindset that your life is inherently private unless you explicitly authorize the contrary.</p>
+
+<p>What is particularly interesting is that some cultures already have this kind of value, in varying forms. In India, for example, you do not just take pictures of people, even if they're out in public. In Germany, you own all of your data, and you can require companies to remove all traces of it (even from backups). In France, you'd be unsurprised to see a couple making out on a street-corner, while in Amsterdam you wouldn't be surprised by someone using a pissoirs. In Ancient Rome, toilets were holes lined up next to each other with no dividers.</p>
+
+<p>The point here, belabored in excruciating terms, is that cultural norms have changed over time, and it is time for another shift. <strong>In this age we need to revert to a healthier practice and perspective in which we all have our sphere of privacy, regardless of where we are or what we're doing.</strong> Just because we open our mouths, or put fingers to keyboard (30 years ago I would have said "pen to paper";), does not mean that we intend a public audience. Just because we buy a certain brand of shoe or a certain type of fruit does not mean that we intend for that information to be tracked.</p>
+
+<p><strong>Legal Support</strong></p>
+
+<p>Perhaps one of the greatest challenges today facing the new school of privacy is that of legal support - or the lack thereof. In this regard, we have a true generational problem. Our elected politicians have very little vested interest in protecting the privacy of individual citizens when compared to corporate interests.  <a href="http://www.abajournal.com/weekly/fordham_law_class_collects_scalia_info_justice_is_steamed">Even when SCOTUS judges learn first-hand how easy it is to aggregate a full profile</a>. We are still expected to trust government and corporations, despite having that trust betrayed on a repeatable basis. Moreover, these politicians still live under the old school concept of preventing intrusion. They do not fully understand or appreciate that the data is now out there, everywhere; that our only viable way forward is to construct protections around the individual asserting control and authority over data about them.</p>
+
+<p>Moreover, these protections need to extend beyond basic constructs. It is imperative that aggregate data developed by 3rd parties be part of the equation. If the shopping habits tracked by my supermarket loyalty card is so useful, then why has one of the local major supermarkets dropped it? Why has Wal-Mart never used them? Perhaps it's because there are better ways to accomplish the same goal without violating the privacy of individuals by collecting their data without need or true authorization.</p>
+
+<p>This shift will require much heavy lifting. It's my expectation that it will, in fact, take at least a generation to move in this direction. However, it is an important and necessary change, and one that must come to be if we are to regain some control over our lives.</p>
+
+<p><strong>Final Thoughts</strong></p>
+
+<p>The new school of privacy is about shifting away from traditional values pegged against preventing intrusion to new values pegged against access control and authorization. To facilitate this shift, it will be necessary to improve the underlying legal framework, shifting the power back to the individual. At the same time, cultural values must shift toward a unified principle of discretion. It's time to get out of the paparazzi mindset and start focusing on what we put into our social networks, how we control that information, and how we express our authorization for its use.</p>
+                           </div>
+                           
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=innovation&amp;limit=20" rel="tag">innovation</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=privacy&amp;limit=20" rel="tag">privacy</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on May 20, 2009 12:25 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/05/the_new_school_of_privacy.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/891</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2009/05/the_new_school_of_privacy.html" rel="nofollow">The New School of Privacy</a>:</p>
+                           
+                           <a id="p1669"></a>
+                           <div class="trackback" id="ping-1669">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/05/a_realistic_case_for_regulatio.html" rel="nofollow">A Realistic Case for Regulations</a> from The Falcon's View<br />
+                                    Mark Curphy had an interesting post last week titled "The Future : Regulation is Futile – Market Forces Will Prevail" with which I take a bit of an issue. In particular, I question his premise, that market forces are able... <a href="http://www.secureconsulting.net/2009/05/a_realistic_case_for_regulatio.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1669" rel="nofollow">May 26, 2009 11:54 AM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1675"></a>
+                           <div class="trackback" id="ping-1675">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/06/privacy_doghouse_city_of_bozem.html" rel="nofollow">Privacy Doghouse: City of Bozeman, MT</a> from The Falcon's View<br />
+                                    Well, well, well. My adopted home state is in the news late this week, and for good reason. Apparently the geniuses at town hall in Bozeman decided that, as part of their "background check," they would not only ask what... <a href="http://www.secureconsulting.net/2009/06/privacy_doghouse_city_of_bozem.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1675" rel="nofollow">June 19, 2009  4:28 PM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1694"></a>
+                           <div class="trackback" id="ping-1694">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2010/02/the_need_for_consumeroriented.html" rel="nofollow">The Need for Consumer-Oriented Intervention</a> from The Falcon's View<br />
+                                    I had an interesting conversation on the plane last week with a retired choir director/professor who had recently experienced fraudulent charges on his bank account. As I had disclosed my profession, he wanted to know how this could have happened... <a href="http://www.secureconsulting.net/2010/02/the_need_for_consumeroriented.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1694" rel="nofollow">February 25, 2010 12:46 PM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2116" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2116);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>May 20, 2009 12:25 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/05/presenteeism_and_inadequate_va.html">Presenteeism and Inadequate Vacation Affect Security</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/05/more_on_tokenization.html">More on Tokenization</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

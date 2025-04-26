@@ -1,0 +1,1174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html">
+<dc:title>Thoughts on How We&apos;ve Gotten Here</dc:title>
+<dc:description>You might be wondering how it is that we got to this point in industry evolution. It seems like very little has actually improved over the past decade+. Sure, there are a lot more products out there, but many seem...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-03-30T15:36:21-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2011/03/lord-kelvin-was-wrong.html" title="Lord Kelvin Was Wrong" />
+    <link rel="next bookmark" href="http://54.197.56.127/2011/04/grc-what-does-it-mean.html" title="GRC: What Does It Mean?" />
+    
+    
+    <title>Thoughts on How We&#039;ve Gotten Here - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2355" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Thoughts on How We've Gotten Here</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2011-03-30T15:36:21-05:00">March 30, 2011  3:36 PM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html#comments">4 Comments</a>
+
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html#trackbacks">1 TrackBack</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>You might be wondering how it is that we got to this point in industry evolution. It seems like very little has actually improved over the past decade+. Sure, there are a lot more products out there, but many seem to fall short on delivery (shocking, I'm sure), and the threats have only grown exponentially in number and skill. If you don't think you're pwnd or on the verge of being pwnd, well, I'm here to tell you that nothing could be further from the truth (FUD? maybe, but only if it's not true!).</p>
+
+<p>There's a lot of history in this industry, despite the fact that we seem to keep reinventing ourselves every few years. The irony is that, the more things change, the more things stay the same. That being said, while I'm sure you all know these things, I think it bears covering some of the history, at least as I've seen it first-hand over the past 15+ years.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>In The Beginning...</strong></p>
+
+<p>When I started my career in IT and infosec some 16.5 years ago (seriously? almost 17 years? sheesh!!), we were just starting to network everybody. I very clearly remember pulling cable, terminating cable, installing NICs and drivers into Windows for Workgroups PCs, including installing Trumpet Winsock (which reminds me: <a target="_blank" href="http://thanksfortrumpetwinsock.com/">go thank its creator!</a>). Back then, our main concern was with viruses that were communicated machine-to-machine either via bad email attachments or infected boot sectors on floppy disks.</p>
+
+<p>Our primary focus for security was around basic anti-virus and OS hardening. If you had a firewall, cool, if not, then bastion host it was! Eventually web servers became commonplace, and then CGI gateways were deployed, typically leveraging PERL modules to run things server-side... and then it all exploded from there. Suddenly you had basic web applications, forms, etc., that were exploitable and spewing data everywhere. In the span of about 5 years, things grew at an alarming rate, with very little security could do to keep pace... it became an outlandish firefight, and we were losing.</p>
+
+<p><strong>Then Came The Auditors...</strong></p>
+
+<p>Starting sometime in the '90s (maybe earlier) the Big N accounting firms added IT audit as part of their normal financial audit activities. The objective at the time was to establish via the IT audit process that the financial systems were "trusted," which would then allow the financial audit to just use automated controls built into these systems to run their activities. Unfortunately, the requirements were fairly stringent, and thus systems rarely, if ever, achieved that "trusted" status.</p>
+
+<p>The real driver behind this push for "trusted" status was the bottom line. Most audit firms sign mulit-year deals with their clients, with only nominal rate increases year-over-year. It's a fairly common practice and good for business. However, most companies are under pressure to continue increasing profitability each year, which becomes a bit of a challenge when you're essentially on a fixed income with your clients. Enter automated controls (in the audit world). If you can rely on your financial systems, then you don't have to allocate as much time or resources to perform the financial audit, which means reducing your overhead on the project and, as a result, your profits increase. The economics are simple and straightforward, really.</p>
+
+<p>However, at some point we got off track. Groups like ISACA and the IT Governance Institute (associated with ISACA), which have historically grown directly out of the IT audit industry with Big N firm backing, started taking things a bit farther. Rather than simply being satisfied with optimizing audits to help facilitate the financial audit, now IT audit became an entirely independent beast. We started seeing SAS-70 applied everywhere for everything (even though it really doesn't tell you much of anything, since it's not actually tied to any specific security or governance requirements - it's merely a standard process for performing an audit).</p>
+
+<p>Out of this environment came COBIT, which was initially postured as an audit framework that, if implemented by the clients, would help further reduce IT audit costs. At the same time, the "trusted system" criteria went by the wayside, reducing the bar for making use of automated controls. The cumulative result has been increased dictation of approaches and requirements by auditors to the business without having any real stake in the well-being of the business.</p>
+
+<p><strong>Scandals+SOX: The Tipping Point</strong></p>
+
+<p>The real tipping point for this shift in the IT audit industry, and it's resultant impact on the security industry, occurred in 2000-2002 after a variety of accounting scandals (Enron, WorldCom, and Tyco) rocked the U.S., leading to the creation and implementation of the <a target="_blank" href="http://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act">Sarbanes-Oxley Act of 2002</a>. It was at this point that the regulatory environment sharply shifted to the compliance-driven mentality. The <a target="_blank" href="http://en.wikipedia.org/wiki/Public_Company_Accounting_Oversight_Board">Public Company Accounting Oversight Board (PCAOB)</a> was created, and it immediately aligned itself with the <a target="_blank" href="http://en.wikipedia.org/wiki/American_Institute_of_Certified_Public_Accountants">American Institute of Certified Public Accountants (AICPA)</a> and, by extension, ISACA.</p>
+
+<p>A couple things happened almost immediately... first, I saw external auditors start aggressively ramming COBIT down the throats of their clients... they would literally come into an environment that they knew nothing about, which they visited at most once per year, and would tell businesses "you <em>have</em> to implement COBIT as part of SOX compliance." It was one of the most ridiculous and egregiously incorrect things I'd seen in my career. COBIT has never been mandated in any legislation (moreover, if something was going to be mandated, it's far more likely that it would take the form of the COSO Enterprise Risk Framework).</p>
+
+<p>The truly irritating thing that would happen next, though, was that execs and internal audit teams - who also didn't really understand the internal IT or security landscape - would start parroting these comments from external auditors. Fortunately, when pressed, these IT auditors would not generally hold their ground on this point, and would eventually relent and admit that it may not be the best approach for our organization.</p>
+
+<p>The second, and more significant, impact of SOX was the sudden shift to the compliance-driven mindset. GRC was soon to follow, again coming largely from these Big N audit firms who were looking for ways to shrink overhead costs and find opportunities for additional "consulting" (coming out of their audit practices). The compliance-driven approach to "security" seems to have come into its own as a direct result of SOX and the related fall-out, and it's only gotten worse over the past decade, thanks in part to adding PCI DSS into the mix (another regulation of dubious purpose).</p>
+
+<p><strong>Differing Viewpoints</strong></p>
+
+<p>One of the more interesting debates that has arisen over the past 10+ years has been over core approaches to infosec. Ultimately, you have about four main viewpoints that enter into consideration.</p>
+
+<p> * <em>Auditors</em>: As already discussed, the auditor viewpoint has shifted from the "trusted systems" mindset in the '90s that had been oriented toward supporting the financial audit to the compliance-oriented mindset that we see today. This viewpoint tends to be top-down in nature and is often aligned with the CFO or other governance-minded interests, though rarely with technical executives. It's often derisively referred to as "checklist security."</p>
+
+<p> * <em>Security People</em>: The security industry is largely dominated by discourse from the security perspective (shocking!). This viewpoint tends to diverge around the exact preferred approach (more below), but for the most part we get a healthy dose of threat research, vulnerability research, hands-on technical testing, policy, architecture, etc. This viewpoint tends to use a very bottom-up approach, and is most often aligned with IT (for better or for worse).</p>
+
+<p> * <em>Ops Folks</em>: Or, maybe IT folks. This group is operationally focused, which means the viewpoint is by nature very bottom-up. Their mission is keeping things running as best as possible. Unfortunately, there's a gulf between them and senior management, which can lead to major problems. They don't necessarily like many of the things that security people will require, but they also don't generally like the auditors, since in both cases these distinct groups will require more work for them.</p>
+
+<p> * <em>Execs / Management</em>: It would be foolish to omit our puppet masters. ;) In all seriousness, though, this top-down viewpoint tends to be oriented toward business administration and does not, on average, care too much about technical (IT) details. Unfortunately, this is where major communication breakdowns will occur. They tend to understand the auditors better than the security or ops folks, which tends to lead to more problems than it solves. If there's one area where we in infosec should be investing our energies, it's in finding creative and effective ways to inform and educate executives without asking them to change what they're doing or to revise their focus.</p>
+
+<p>Incidentally, one perspective I've not represented here is that of the "risk managers." I'm not convinced that they are, or should be, their own distinct viewpoint, or if they fall under a combination of security and executives (depending on org). It is, however, worth keeping them in mind.</p>
+
+<p>Taking these viewpoints into consideration, it's then interesting to look at where some of the battle-lines have been drawn, particularly over the past decade. There are three general groups that are worth noting today:</p>
+
+<p> * <em>Enterprise Risk Management (ERM)</em>: A subset of the populace believes in a risk-based approach. Such an outlook is worthwhile because, at it's core, business is risk-oriented (though they're talking about financial and legal risk, as well as things like opportunity costs, vs looking at information risk). ERM has matured a lot in the past decade, in particular as it has moved away from simplistic ALE-based analyses. Most ERM practices have adopted some quantitative analysis methods, and we're starting to see evidence-based risk management emerge as the preferred hybridized approach.</p>
+
+<p> * <em>Governance, Risk, and Compliance (GRC)</em>: In this context, GRC tends to be very narrowly defined by the audit folks. In fact, if you look at audit-grown GRC materials and programs, they're almost completely compliance-centric (this is not the <a target="_blank" href="http://www.secureconsulting.net/2011/03/defining-grc-the-discipline.html">"GRC as a discipline"</a> that I wrote about previously). In conversations, then, the focus is on what your regulatory requirements are and how best to meet them. The auditors can then come in on a regular basis, run down the list, check the boxes, and life is grand. They don't generally look much at risk, at least not in the way and to the same degree as ERM folks would. Risk management in the GRC context is really just a basic due diligence approach for prioritizing workload (something, incidentally, that PCI DSS even advocates with their official "prioritized approach"). To the audit-originating GRC crowd, the 'C' tends to be more important than the 'G' or the 'R' even though we in security would argue that just the opposite should be true.</p>
+
+<p> * <em>Unified Compliance (UC)</em>: There's another middle ground in all of this talk, and it's what we've come to think of as the "unified compliance" crowd. Under unified compliance we're looking at a very sound approach to central requirements management and mapping, which then translates into interlaced and correlated control frameworks. UC is not really at odds with either the ERM or GRC camp, and in fact helps out in both areas (most GRC platforms, for example, leverage a UC approach - typically from IT UCF). It's unclear, really, if ERM makes enough use of UC, but they're very compatible in that they both tend to see the worlds through the filter of building frameworks, whereas GRC is often focused almost fatally on compliance initiatives. The UC folks do tend to dislike the compliance-centric approach of the narrowly-focused GRC crowd, because such a focus overlooks the importance and value of frameworks.</p>
+
+<p><strong>Differing Approaches</strong></p>
+
+<p>I've already made allusion to several of these points, but I think it's worth spelling them out in a bit more detail. We're probably all familiar with them, but it's still good to call them out and discuss them. It's intriguing to me that there's much debate about one approach over another as I think that, with a couple exceptions, the best approach is readily apparent. Unfortunately, we're living through a transitional period in time where IT is really still in the "emerging" category, which means that senior management is still not fully comfortable with it. My guess is that it will likely be another 25 years before all of this is considered mainstream common sense.</p>
+
+<p> * <em>Compliance-Driven Security</em>: I've touched on this several times throughout the post. In general, the compliance-driven approach to security starts with regulatory requirements and simply focuses on ticking off those check boxes. Unfortunately, these approaches are rarely comprehensive in nature, leaving many holes still to be exploited (e.g. Heartland Payment Systems). Just because your environment can cleanly pass an audit does not mean that you've done nearly enough to secure your environment. By way of comparison, consider a car passing a limited multi-point inspection that doesn't take into consideration a leaking fuel line. Would you consider it to be safe? Probably not, and yet, unless the checklist covers "ensure fuel line is not leaking," then it'll pass without issue. A compliance-driven focus will only lead to deficiencies and failure in the (near) future.</p>
+
+<p> * <em>Risk-Driven Security</em>: For 10 years we've heard a lot about leveraging risk management to drive our security programs. And, for the most part, this isn't the wrong thing to want. However, that said, information risk analysis is still in its infancy, and there are still many detractors. Whereas actuarial sciences are generally accepted without question, inforisk does not enjoy such a degree of acceptance. Until risk analysis methods mature a little further, and until we see evidence-based risk management become the mainstream approach, we're simply not going to get enough traction. Interestingly, if you consider <a target="_blank" href="http://www.secureconsulting.net/2009/07/16/TEAMv2.png">v2 of my TEAM Model</a>, you'll notice that risk is a key part, but it's not the only part, just as requirements (a nod to compliance) are a key part, but not the only part.</p>
+
+<p> * <em>Ops-Driven Security</em>: We've seen this approach in effect for probably 20 years, and it's simply not been overly effective. Using a bottom-up operational focus can be fine, to a point, but eventually you need executive buy-in and support. The ops-driven approach focuses largely on securing the environment using technical solutions, such as firewalls, identity & access management, SSL, encryption, etc. There's nothing wrong with this, per se, but there are limitations. More importantly, ops-driven security tends to be susceptible to manager bias, which can lead to significantly wasteful spending. Moreover, making decisions that are strictly focused on operational needs without having a broader perspective on the overall environment and associated impacts to users and business processes can be downright devastating.</p>
+
+<p> * <em>Process-Driven Security</em>: I started advocating for process-driven security around '99-2000. In my view of things, too much money was being wasted on ops-driven security efforts, while at the same time people loved to talk about security policies that meant little to anybody. These things were not successful or useful. Unfortunately, ITIL became popular a couple years later, which corrupted the vision of process-driven security, and then things went completely off the rails as compliance-driven security began to come into its own. To this day, I still strongly believe that we should be investing time and energy into processes rather than policies, but I'm afraid it's an uphill battle. Perhaps the most telling sign of the demise of this approach is how process has become bureaucracy, such as in the federal sector. <a target="_blank" href="http://en.wikipedia.org/wiki/W._Edwards_Deming">Deming</a> is, I'm sure, spinning in his grave.</p>
+
+<p> * <em>Networked Systems Survivability ("survivability")</em>: The latest and greatest thinking in infosec these days is that we should shift away from this faulty and failed zero-sum approach and instead change the rules altogether to focus on survivability. Overall, I think that this will emerge as the preferred approach in most areas, though it does have a few limitations. For example, once someone makes a copy of your protected data, then there may be little you can do to reduce the impact of that loss. Nonetheless, from an infrastructure and services perspective, survivability absolutely makes sense, and will, as I've noted, likely become the standard approach. In this security model, you put a premium on detection and response, with the goal being to minimize the negative impact of an event so that operations can continue despite degraded conditions. There's still a component of defense that combines risk-driven and ops-driven approaches, taking reasonable steps to protect oneself from attack; but, the philosophy openly acknowledges that the asymmetric manner of threats makes complete protection impossible. As such, plan for failures, maximize detection and recovery, and build systems that fail in a reasonably predictable and safe manner. Add in a healthy dose of processes to cover response so that hard decisions are already made ahead of time, rather than relying on making good in-the-heat-of-the-moment decisions during an event.</p>
+
+<p><strong>Closing Thoughts</strong></p>
+
+<p>It's interesting to look at where we came from to better understand how we've gotten to this current point in infosec evolution. What's particularly interesting to me is that I think we're now on the cusp of entering the 2nd generation era of GRC, wherein the narrow, compliance-centric focus created by the audit firms will start to erode and become replaced by something more comprehensive and useful. It's very clear that no one approach is necessarily best on its own, but that, rather, we need to look to hybridized approaches like survivability that seek to maximize the best in these various approaches.</p>
+
+<p>Case-in-point, there is a place for leveraging a compliance-driven focus, but it's not as part of a GRC program. Rather, the compliance focus should be split between routine audit & assessment activities and defining the requirements that are provided as input to governance and risk analysis activities. Ultimately, I think that we'll see decision analysis emerging to supersede much of the risk analysis discussion, using various risk analysis techniques (e.g. evidence-based risk analysis) as an appropriately weighted input for overall corporate governance.</p>
+
+<p>At the same time, we need to actively work to keep evolving and maturing these various disciplines. We need to actively resist the undue influence of the big audit/accounting firms and instead insist that they fit within our models, rather than letting them continue to run roughshod over organizations with their audit- and compliance-focused approaches that benefit few but them.</p>
+
+<p>For me, it's an exciting time to start getting a foothold in GRC (the discipline) as I think the timing is right for initiating change and helping organizations launch into the next phase of growth and management. Hopefully others will join me in welcoming the opportunity for evolution such that we can <a target="_blank" href="http://blog.guykawasaki.com/2006/01/the_art_of_inno.html">jump to the next curve</a>.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/musings/" rel="tag">musings</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">1 TrackBack</h2>
+
+    
+    
+
+
+    
+    
+        
+    <div class="trackbacks-content">
+        
+        <div class="trackback" id="ping-2026">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2011/04/grc-what-does-it-mean.html" rel="nofollow">GRC: What Does It Mean?</a> from The Falcon's View on <a href="#ping-2026" rel="nofollow">April  5, 2011 11:00 AM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        I've already written a bit about how we've gotten to where we are today in the infosec industry, as well as having talked a bit about my definition of GRC as a discipline. However, I think there's value in taking... <a href="http://www.secureconsulting.net/2011/04/grc-what-does-it-mean.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+</div>
+
+
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">4 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-3716" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Steve McGraw</span>
+
+                    | <a href="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html#comment-3716"><abbr class="published" title="2011-03-31T11:43:57-05:00">March 31, 2011 11:43 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>This is actually one of the better articles on the various blogs I read. While I don't agree with every opinion here it is directionally very accurate. Good work Ben!</p>
+
+<p>Steve </p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-3717" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://thirddefense.wordpress.com/" href="http://thirddefense.wordpress.com/" rel="nofollow">Jared</a></span>
+
+                    | <a href="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html#comment-3717"><abbr class="published" title="2011-03-31T16:46:33-05:00">March 31, 2011  4:46 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Excellent post. I cut my teeth in 94. In the 90â€™s and early 00â€™s, security wasnâ€™t a requirement and systems/tools werenâ€™t widely available to develop secure solutions. I remember session state via hidden form fields, NT (restrict anonâ€¦), win2k with everything enabled, etc. By 03, we had the capability to develop resilient solutions and incidents to enable educated tradeoff decisions.</p>
+
+<p>I think youâ€™re missing the most important approach: process maturity. SDL, change mngt, device config, data protection, education. The tools are there for security to be part of the cost of doing business vs an additional tax. The desire to measure processes and hold stakeholders accountable is lacking. The VZ breach report shows what, 90ish% of breaches from fundamental control lapses. Execs who measure process maturity, metrics, enforce accountability, and leverage evidence to make informed business decisions are successful.</p>
+
+<p>So if process maturity is the answer, why arenâ€™t more folks doing it? In my experience, itâ€™s difficult to prioritize the investment when executive management doesnâ€™t require mature process. Leadership achieves goals. Itâ€™s rare when a leader equates spending resources on process maturity as the optimal path to make money.</p>
+
+<p>I think weâ€™ll continue to vacillate until incidents reach a level where leadership is forced to act on the root cause. </p>
+
+<p>The state of compliance is another symptom. Auditâ€™s job is to compare actual vs. policy. For compliance to make a difference, policies should include mature process reqs (SLAâ€™s, metrics, service catalogs, defined roles, failure mode analysis, compensation carrots and sticks). Now thatâ€™s an audit report Iâ€™d like to read.</p>
+
+<p>On a positive note, I see more folks heading in this direction. Itâ€™s often new CISO/CIOs who have exec support and the opportunity to affect change without self-incrimination. </p>
+
+<p>I love security because the technology evolves constantly, even though the problems have been the same for 7 years. Itâ€™s also incredibly rewarding to see morale shift as a team moves from reactive to proactive. One of my favorite metrics as a manager was the % time bitching during happy hour. My secret way to measure process maturity :-)<br />
+</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-3718" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html#comment-3718"><abbr class="published" title="2011-04-01T19:25:02-05:00">April  1, 2011  7:25 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Thanks, Jared,</p>
+
+<p>I agree with you, to a point. However, as noted in the piece, process-driven security has gotten a bad rep because it's turned into ugly bureaucracy that actual detracts rather than adding value. Moreover, organizations (or, sr+exec mgmt) lack the willpower to mandate process definition and improvement. This is where I believe survivability comes into play. It puts the focus on the financials with an emphasis on facilitating the continued existence of the business. That much of the implementation supporting survivability ends up being in process maturity is not coincidental. ;)</p>
+
+<p>My belief is that it will take until we're completely through the current boomer generation before the real changes start sticking for good. I think Gen X and younger are far more comfortable with IT, the Internet, and all its trappings; in ways that my parents' generation simply can't grasp. Due to longer lifespans, I think it'll be another 20 years before we're fully through this phase and into the next and beyond.</p>
+
+<p>I'm glad to hear that you think folks are moving that way. I would generally agree, though change is hard and simply takes time. My hope is that we'll be able to "jump the curve" and finally make up a little of the lost ground over the course of the next decade or two.</p>
+
+<p>Thanks for your comments!</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-3722" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://sapran.com" href="http://sapran.com" rel="nofollow">sapran</a></span>
+
+                    | <a href="http://54.197.56.127/2011/03/thoughts-on-how-weve-gotten-he.html#comment-3722"><abbr class="published" title="2011-04-15T03:33:02-05:00">April 15, 2011  3:33 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Having some internal auditor background and working in infosec consulting at the moment, I literally enjoyed every word of the post.</p>
+
+<p>Thank you very much.</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>March 30, 2011  3:36 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2011/03/lord-kelvin-was-wrong.html">Lord Kelvin Was Wrong</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2011/04/grc-what-does-it-mean.html">GRC: What Does It Mean?</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

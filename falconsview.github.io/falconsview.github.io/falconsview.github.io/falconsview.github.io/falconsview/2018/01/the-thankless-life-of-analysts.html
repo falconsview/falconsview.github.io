@@ -1,0 +1,795 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://secureconsulting.net/styles.css" type="text/css" />
+<link rel="start" href="http://secureconsulting.net/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://secureconsulting.net/atom.xml" />
+<script type="text/javascript" src="http://secureconsulting.net/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://secureconsulting.net/2018/01/the-thankless-life-of-analysts.html">
+<dc:title>The Thankless Life of Analysts</dc:title>
+<dc:description>There are shenanigans afoot, I tell ya; shenanigans! I was recently contacted by an intermediary asking if I&apos;d be interested in writing a paid blog post slamming analysts, to be published on my own blog site, and then promoted by...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2018-01-25T15:45:11-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://secureconsulting.net/2018/01/the-thankless-life-of-analysts.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://secureconsulting.net/2017/10/design-for-behavior-not-awaren.html" title="Design For Behavior, Not Awareness" />
+    <link rel="next bookmark" href="http://secureconsulting.net/2018/03/measure-security-performance-n.html" title="Measure Security Performance, Not Policy Compliance" />
+    
+    
+    <title>The Thankless Life of Analysts - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://secureconsulting.net/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2530" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">The Thankless Life of Analysts</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2018-01-25T15:45:11-05:00">January 25, 2018  3:45 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>There are shenanigans afoot, I tell ya; shenanigans!</p>
+
+<p>I was recently contacted by an intermediary asking if I'd be interested in writing a paid blog post slamming analysts, to be published on my own blog site, and then promoted by the vendor. No real details were given other than the expectation to slam analyst firms, but once I learned who was funding the initiative, it became pretty clear what was going on. Basically, this vendor has received, or is about to receive, a less-than-stellar review and rating from one of the analyst firms and they're trying to get out in front of the news by trying to proactively discredit analyst reports.</p>
+
+<p>My response to the offer was to decline, and now as I'm hearing some may take up the opportunity, I've decided it's time to myself get out ahead of this potential onslaught of misleading propaganda. Mind you, I'm not a huge fan of the analyst firms, and I found myself incredibly frustrated and disappointed during my time at Gartner when I was constantly told to write about really old and boring topics rather than being allowed to write more progressive reports that would actually help move the industry forward. But I'll get to that in a moment...</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>How Research Happens</strong></p>
+
+<p>First and foremost, let's talk about how research happens. I can only speak from my direct experience at Gartner, but my understanding is it's not too dissimilar at other organizations. Also, let me provide a disclaimer or three: I don't work for Gartner any more, I never wrote Magic Quadrant reports, and I really have nothing to personally gain from defending or attacking them. As always, my goal here is to be fair and balanced (for real, not in a Fox News or CNN kinda way).</p>
+
+<p>So, research... there are a lot of different kinds of reports, but let's talk a little bit about the biggies that everyone sees (e.g., MQs, Waves, etc.). These reports typically combine primary research (customer surveys and interviews) with analysis of open source information and interviews with the vendors themselves. One of the first challenges is defining a market niche, followed by then identifying vendors in the niche, and then conducting the research. For vendors who whine about being excluded from the research process, part of this is your fault for not making yourself known to analysts, and part of this is falling victim to arbitrary market segment rules created to keep the pool of rated vendors to a reasonable size (think for example, of the old, retired Gartner MQ for EGRC, which easily could have included hundreds of vendors, so instead was arbitrarily pared down to 20 or so vendors who no one in their right mind would ever put on a comparative chart).</p>
+
+<p>Customer surveys (references) generally play a huge role in information collection, and the pros and cons highlighted in those surveys and interviews will often get incorporated directly into reports. Which is to say, keep your customers happy and be sure any customer references you provide aren't going to trash you! Beyond that, it then comes down to an analyst's judgment (and biases) in terms of how they score you. The scoring <strong>is</strong> consistent across all vendors included in a report insomuch as the same criteria are used for everyone.</p>
+
+<p>Contrary to popular mythos, analysts are <em>not</em> compensated for sales, renewals, etc., and that is precisely to keep the analysts as neutral and objective as possible. That said, I've noted that it's very common for larger vendors to buy lots of analyst time in order to increase their exposure to the analyst(s) covering them. This has included off-site analyst information seminars in sunny locations, which I've always found a bit suspect. The bottom line here, though, is that if there's an image of bias and favoritism toward larger, richer vendors, it's at least partly correct insomuch as the major players can afford the extra face time that helps keep their offerings fresh in the mind of the analysts.</p>
+
+<p>Additionally, there's also a self-reinforcing cycle at play. The large vendors have the largest marketing budgets, and thus tend to drive a lot of customer inquiries to analysts about their products. As the inquiries increase, so does the imperative for an analyst to speak with the vendors on a regular basis in order to keep apprised of ongoing developments. Most large vendors have a dedicated analyst liaison whose job is to ensure all the analyst firms are getting regularly briefings on products and product strategy, which in turn may trigger research notes sharing updates from the vendors, etc, etc, etc.</p>
+
+<p><strong>It's Not Foolproof / The Ombudsman</strong></p>
+
+<p>The research and publishing process is not foolproof. Humans are involved, which means bias will always be present in varying degrees, and mistakes will be made. As noted already, it's fairly easy to increase your influence over an analyst simply by increasing your company's exposure. And, in many ways, you <em>should</em> be doing this as much as you can (within reasonable limits - i.e., most major vendors offer quarterly updates). But, nonetheless, the process has failings, and in many ways you should give analysts a break... to a degree, anyway! Oh, and btw, let's also bear in mind that it <em>is</em> a process, and often a lengthy one. You'll notice new MQs only come out ever 2-4 years. Do you know why that is? Because a) research takes a long time, b) writing and internal peer review takes a long time, and c) review and sign-off from vendors takes a long time.</p>
+
+<p>The biggest problem I have with analyst reports like the MQ is how the market niche is defined. For example, in the former "IT GRC" space, a company in that space was once marked down and held back from the Leaders quadrant because they hadn't yet expanded into Europe, nor did they have 24x7x365 support. Such criteria are rather arbitrary, especially at the time. To be honest, nobody really needed or was asking for 24x7x365 tech support for the product because it wasn't critical path. And yet, there was the criteria, and the subsequent markdown against our product. This sort of thing <em>feels</em> arbitrary, and in many examples such criteria really are as such, but we also have to view it from the larger perspective and realize that a report trying to compare a hundred or more vendors also isn't going to be very useful (as that EGRC report continually proved).</p>
+
+<p>Vendors have a recourse if they feel they're treated unfairly. First and foremost, they're given access to draft report language pertaining to them so they can review and offer corrections or refutations. Failing that, if an analyst won't revise a report in response to a vendor objection, the vendor may also engage the ombudsman process and file a formal complaint. This process is generally reliable, but isn't itself foolproof, as demonstrated by the Netscout v Gartner lawsuit filed in Connecticut in 2014 (<a href="https://www.cmswire.com/cms/information-management/vendor-sues-gartner-over-magic-quadrant-pay-to-play-model-026133.php" target="_blank">filing</a>, <a href="https://blogs.gartner.com/ombudsman/2017/09/12/judge-grants-gartner-motion-to-dismiss-netscout-law-suit/" target="_blank">Gartner on outcome</a>, <a href="https://www.netscout.com/news/press-release/responds-court-decision" target="_blank">Netscout on outcome</a>). Overall, a lawsuit is a lousy way to try and resolve issues, though I feel it's certainly better than a guerrilla marketing campaign meant to undermine analysts in general.</p>
+
+<p><strong>Part of the Problem</strong></p>
+
+<p>Now, all of this apologist explaining is great, but let's be clear: analyst firms are as much a problem as they are a help. I, for one, take issue with much that the analyst firms say and do, and I'm very ready to point out some of those failings, including:<br />
+ * Targeting the mainstream with information that was "current" 10+ years ago doesn't move the industry forward.<br />
+ * Reports end up driving customer decisions based on an incorrect understanding of the conclusions.<br />
+ * Bias due to increased exposure and influence aren't effectively managed.</p>
+
+<p>Starting from the first point, one of the problems that frustrated me most as a Gartner analyst was that I wasn't allowed to write "forward-leaning" research because I was told there wasn't an apparent market for it. To be fair, in some ways that's correct; the "average" company today is not on the cutting edge, and in fact very much needs to be told (repeatedly) to do the basics.</p>
+
+<p>However, there are other issues here that are harmful. For example, much of the focus in analyst reporting is on tools and vendors, not on processes and practices and architectures. As such, we see the notorious "shiny object syndrome" in full effect every time an executive returns from an event or reads a new report. Just because a product is a "leader" in a report does NOT mean that you need to run out and buy them.</p>
+
+<p>In fact, just because someone is a "leader" doesn't mean they're the best choice for your organization. Analyst reports are notoriously misrepresented, and of course get heavily played-up by marketing departments as some sort of definitive pronouncement, when in fact it's just one data point. Something I often pointed out to clients as an analyst was that you really want to look at the report in the inverse to make sure you're not pursuing a product that a) didn't make it into a report because they weren't mature enough, b) scored very poorly in a report for not meeting a number of sound criteria, or c) were otherwise cautioned against in a report. That is where the real values lies; not in who may or may not be a "leader" in a space. Often you'll find buying a product from a "leader" comes at much greater cost, while other products in the middle of the pack would be more than sufficient for your organization's needs and provide much quicker ROI overall.</p>
+
+<p>The bottom line here is that analyst firms must be seen as they are: generic advisors on products. They're not foolproof, they're not unfailing, they're not completely unbiased (no such thing), they're not necessarily producing comprehensive reports (where does free and open source fit in a report on commercial offerings?!), and the reports are absolutely, positively <strong>not</strong> telling you which products to buy or making specific product recommendations suitable to your organization.</p>
+
+<p>---<br />
+At the end of the day, treat analyst reporting as an input into your product decisions, but do <em>not</em> use them as the only consideration, and do not over-weight their input. Choosing a product should be part of an architectural process that first defines and understands a problem-space, and then progresses to identifying and evaluating possible solutions for that problem-space (assuming the problem-space is even worth solving!). Starting from an analyst report on the assumption that they're providing product recommendations <em>for you specifically</em> is patently incorrect, and will almost certainly lead to pain down the line. Misusing analyst reports is not the fault of the analysts, just like buying into vendor marketing campaigns without reasonable scrutiny and critical thinking is unwise.</p>
+
+<p>As for people who are eager to attack and undermine analyst firms, be wary of their agenda, because you never know who might be paying for their criticism. If there's one thing I've found over the years, people like to think they know all about analyst firms even though they've never worked for one. As with everything, a healthy dose of skepticism goes a long way (for both critics and advocates!).</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://secureconsulting.net/musings/" rel="tag">musings</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=analyst&amp;limit=20';return false;" rel="tag">analyst</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=criticism&amp;limit=20';return false;" rel="tag">criticism</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=firm&amp;limit=20';return false;" rel="tag">firm</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=Gartner&amp;limit=20';return false;" rel="tag">Gartner</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=realism&amp;limit=20';return false;" rel="tag">realism</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://secureconsulting.net/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=skepticism&amp;limit=20';return false;" rel="tag">skepticism</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://secureconsulting.net/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-links widget">
+    <h3 class="widget-header">Pages and Links</h3>
+    <div class="widget-content">
+        <ul>
+            <li><a href="/disclaimer.html" target="_blank">[ Disclaimer ]</a></li>
+            <li><a href="/bio-resume.html" target="_blank">[ Bio & Resume ]</a></li>
+            <li><a href="/papers-publications.html" target="_blank">[ Old Papers & Publications ]</a></li>
+            <li><a href="/talks.html" target="_blank">[ Public Speaking ]</a></li>
+            <li><a href="/TEAM-Model.html" target="_blank">[ TEAM Model ]</a></li>
+            <li><a href="/old-pages.html" target="_blank">[ Old Pages ]</a></li>
+            <br>
+            <li><a href="https://twitter.com/falconsview/" target="_blank" alt="Twitter"><img src="/twitter-logo-transparent-small.png"alt="Twitter" width="40" /></a>&nbsp;
+            <a href="https://www.linkedin.com/in/btomhave/" target="_blank" alt="LinkedIn"><img src="/In-2C-48px-R.png"alt="LinkedIn" width="40" /></a>&nbsp;
+            <a href="https://supporters.eff.org/donate" target="_blank" alt="EFF"><img src="/eff-logo-plain-rgb.png" alt="EFF" width="40" /></a>
+            <br>
+            <li><img src="http://secureconsulting.net/mt-static/images/status_icons/feed.gif" alt="RSS" width="15" height="15" /> <a href="http://secureconsulting.net/atom.xml">RSS Feed</a></li>
+
+        </ul>
+    </div>
+</div><div class="widget-recent-entries widget-archives widget">
+    <h3 class="widget-header">Recent Entries</h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://secureconsulting.net/2018/03/measure-security-performance-n.html">Measure Security Performance, Not Policy Compliance</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2018/01/the-thankless-life-of-analysts.html">The Thankless Life of Analysts</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/10/design-for-behavior-not-awaren.html">Design For Behavior, Not Awareness</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/10/incremental-gains-are-just-slo.html">Incremental "Gains" Are Just Slower Losses</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/09/a-change-in-context.html">A Change In Context</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/09/quit-talking-about-security-culture.html">Quit Talking About "Security Culture" - Fix Org Culture!</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/08/introducing-behavioral-infosec.html">Introducing Behavioral Information Security</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/08/confessions-of-an-infosec-burnout.html">Confessions of an InfoSec Burnout</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/08/on-titles-jobs-and-job-descrip.html">On Titles, Jobs, and Job Descriptions (Not All Roles Are Architects)</a></li>
+        
+    
+        
+            <li><a href="http://secureconsulting.net/2017/03/reflection-on-wfh.html">Reflection on Working From Home</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+<div class="widget-archive-monthly-dropdown widget-archive widget">
+   <h3 class="widget-header"><a href="http://secureconsulting.net/archives.html">Archives</a></h3>
+   <div class="widget-content">
+      <select onchange="nav(this)">
+         <option>Select a Month...</option>
+         
+         <option value="http://secureconsulting.net/2018/03/">March 2018</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2018/01/">January 2018</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/10/">October 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/09/">September 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/08/">August 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/03/">March 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/02/">February 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2017/01/">January 2017</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/12/">December 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/09/">September 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/08/">August 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/07/">July 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/05/">May 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/04/">April 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2016/02/">February 2016</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/11/">November 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/09/">September 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/07/">July 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/06/">June 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/05/">May 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/04/">April 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/03/">March 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2015/01/">January 2015</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/09/">September 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/08/">August 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/07/">July 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/04/">April 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/03/">March 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/02/">February 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2014/01/">January 2014</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/12/">December 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/11/">November 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/10/">October 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/09/">September 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/08/">August 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/07/">July 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/06/">June 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/03/">March 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/02/">February 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2013/01/">January 2013</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/12/">December 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/11/">November 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/10/">October 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/09/">September 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/08/">August 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/07/">July 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/06/">June 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/05/">May 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/04/">April 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/03/">March 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/02/">February 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2012/01/">January 2012</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/12/">December 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/11/">November 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/10/">October 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/09/">September 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/08/">August 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/07/">July 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/06/">June 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/05/">May 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/04/">April 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/03/">March 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/02/">February 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2011/01/">January 2011</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/12/">December 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/11/">November 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/10/">October 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/09/">September 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/08/">August 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/07/">July 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/06/">June 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/05/">May 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/04/">April 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/03/">March 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/02/">February 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2010/01/">January 2010</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/12/">December 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/11/">November 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/10/">October 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/09/">September 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/08/">August 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/07/">July 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/06/">June 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/05/">May 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/04/">April 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/03/">March 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/02/">February 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2009/01/">January 2009</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/12/">December 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/11/">November 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/10/">October 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/09/">September 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/08/">August 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/07/">July 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/06/">June 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/05/">May 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/04/">April 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/03/">March 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/02/">February 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2008/01/">January 2008</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/12/">December 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/11/">November 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/10/">October 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/09/">September 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/08/">August 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/07/">July 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/06/">June 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/05/">May 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/04/">April 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/03/">March 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/02/">February 2007</option>
+         
+    
+        
+         <option value="http://secureconsulting.net/2007/01/">January 2007</option>
+         
+      </select>
+   </div>
+</div>
+<script type="text/javascript" charset="utf-8">
+/* <![CDATA[ */
+function nav(sel) {
+   if (sel.selectedIndex == -1) return;
+   var opt = sel.options[sel.selectedIndex];
+   if (opt && opt.value)
+      location.href = opt.value;
+}
+/* ]]> */
+</script>
+        
+    
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>January 25, 2018  3:45 PM</em>.</p>
+    
+        <p><a href="http://secureconsulting.net/2017/10/design-for-behavior-not-awaren.html">Design For Behavior, Not Awareness</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://secureconsulting.net/2018/03/measure-security-performance-n.html">Measure Security Performance, Not Policy Compliance</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://secureconsulting.net/">main index</a> or look in the <a href="http://secureconsulting.net/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-creative-commons widget">
+   <div class="widget-content">
+      <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+      This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+   </div>
+</div>
+
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://secureconsulting.net/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

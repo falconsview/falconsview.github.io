@@ -1,0 +1,703 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="generator" content="Movable Type Pro 6.3.7" />
+    <link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+    <link rel="start" href="http://54.197.56.127/" title="Home" />
+    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+    <script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+    
+    <script type="text/javascript">
+    var blog_id = '13';
+    var page_id = '2533';
+    </script>
+    <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/">
+<dc:title>The Falcon&apos;s View</dc:title>
+<dc:description>Mental meanderings of an infosec obsessive...</dc:description>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+</License>
+</rdf:RDF>
+-->
+
+    <link rel="canonical" href="http://54.197.56.127/blogs/" />
+    <title>The Falcon&#039;s View</title>
+    
+</head>
+<body id="professional-website" class=" layout-wm">
+    <div id="container">
+        <div id="container-inner">
+            <div id="header">
+                <div id="header-inner">
+                    <div id="header-content">
+
+                        <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+                        <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+                        <div class="widget-sign-in widget">
+    <h3 class="widget-header">Sign In</h3>
+    <div id="signin-widget-content" class="widget-content"></div>
+</div>
+<script type="text/javascript">
+/* <![CDATA[ */
+function mtUpdateSignInWidget(u) {
+    var el = document.getElementById('signin-widget-content');
+    var content = '';
+    if (!el) return;
+    if (u) {
+        if (u && u.is_authenticated) {
+            user = u;
+            mtSaveUser();
+        } else {
+            // user really isn't logged in; so let's do this!
+            return mtSignIn();
+        }
+    } else {
+        u = mtGetUser();
+    }
+    if (u && u.name && !u.is_anonymous) {
+        var url;
+        if (u.is_authenticated) {
+            if (u.is_author) {
+                url = 'http://54.197.56.127/mt/mt-comments.cgi?__mode=edit_profile&blog_id=13';
+                url += '&static=' + encodeURIComponent( location.href );
+            } else {
+                url = u.url;
+            }
+        } else if (u.url) {
+            url = u.url;
+        } else {
+            url = null;
+        }
+        var content = 'You are signed in as ';
+        if (url)
+            content += '<a href="' + url + '">' + u.name + '</a>';
+        else
+            content += u.name;
+        content += '.  (<a href="javascript:void(0)" onclick="return mtSignOutOnClick()">sign out</a>)';
+    } else if (u && u.is_banned) {
+        content = 'You do not have permission to sign in to this blog.';
+    } else {
+        content = '<a href="javascript:void(0)" onclick="return mtSignInOnClick(\'signin-widget-content\')">Sign In</a>';
+    }
+    el.innerHTML = content;
+}
+mtAttachEvent('usersignin', mtUpdateSignInWidget);
+mtUpdateSignInWidget();
+/* ]]> */
+</script>
+
+                    </div>
+                </div>
+            </div>
+            <div id="main-navigation">
+                <div id="main-navigation-inner">
+                    <ul>
+    <li class="first"><a href="http://54.197.56.127/">Home</a></li>
+
+
+    <li class=" on"><a href="http://54.197.56.127/blogs/">Blogs</a></li>
+
+
+    
+
+    
+    
+    <li class=""><a href="http://54.197.56.127/about/about.html">About</a></li>
+    
+
+    
+    
+    <li class="last"><a href="http://54.197.56.127/contact/contact.html">Contact</a></li>
+    
+</ul>
+
+
+                    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="13,12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+                </div>
+            </div>
+
+            <div id="breadcrumbs">
+                <div id="breadcrumbs-inner">
+                    <p id="breadcrumbs-content">
+                        <a href="http://54.197.56.127/">The Falcon&#039;s View</a> &gt; 
+    
+        
+            
+            
+        
+    
+                    </p>
+                </div>
+            </div>
+
+            <div id="content">
+                <div id="content-inner">
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+
+<h1 id="page-title" class="archive-title">Blogs</h1>
+
+
+    <div id="entry-2530" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2018/01/the-thankless-life-of-analysts.html" rel="bookmark">The Thankless Life of Analysts</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2018-01-25T15:45:11-05:00">January 25, 2018  3:45 PM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>There are shenanigans afoot, I tell ya; shenanigans!</p>
+
+<p>I was recently contacted by an intermediary asking if I'd be interested in writing a paid blog post slamming analysts, to be published on my own blog site, and then promoted by the vendor. No real details were given other than the expectation to slam analyst firms, but once I learned who was funding the initiative, it became pretty clear what was going on. Basically, this vendor has received, or is about to receive, a less-than-stellar review and rating from one of the analyst firms and they're trying to get out in front of the news by trying to proactively discredit analyst reports.</p>
+
+<p>My response to the offer was to decline, and now as I'm hearing some may take up the opportunity, I've decided it's time to myself get out ahead of this potential onslaught of misleading propaganda. Mind you, I'm not a huge fan of the analyst firms, and I found myself incredibly frustrated and disappointed during my time at Gartner when I was constantly told to write about really old and boring topics rather than being allowed to write more progressive reports that would actually help move the industry forward. But I'll get to that in a moment...</p>
+        </div>
+
+
+
+        <div class="asset-more-link">
+            Continue reading <a href="http://54.197.56.127/2018/01/the-thankless-life-of-analysts.html#more" rel="bookmark">The Thankless Life of Analysts</a>.
+        </div>
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+    <div id="entry-2529" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2017/10/design-for-behavior-not-awaren.html" rel="bookmark">Design For Behavior, Not Awareness</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-10-31T10:24:57-05:00">October 31, 2017 10:24 AM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>October was National Cybersecurity Awareness Month. Since today is the last day, I figured now is as good a time as any to take a contrarian perspective on what undoubtedly many organizations just did over the past few weeks; namely, wasted a lot of time, money, and good will.</p>
+        </div>
+
+
+
+        <div class="asset-more-link">
+            Continue reading <a href="http://54.197.56.127/2017/10/design-for-behavior-not-awaren.html#more" rel="bookmark">Design For Behavior, Not Awareness</a>.
+        </div>
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+    <div id="entry-2528" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2017/10/incremental-gains-are-just-slo.html" rel="bookmark">Incremental "Gains" Are Just Slower Losses</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-10-29T11:16:32-05:00">October 29, 2017 11:16 AM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>Anton Chuvakin and I were having a fun debate a couple weeks ago about whether incremental improvements are worthwhile in infosec, or if it's really necessary to "jump to the next curve" (phrase origin: Guy Kawasaki's "<a href="https://guykawasaki.com/the_art_of_inno/" target="_blank">Art of Innovation</a>," watch <a href="https://www.youtube.com/watch?v=Mtjatz9r-Vc" target="_blank">his TedX</a>) in order to make meaningful gains in security practices. Anton even went so far as to <a href="https://blogs.gartner.com/anton-chuvakin/2017/10/20/soar-and-curve-jumping-in-security-operations/" target="_blank">write about it</a> a little over a week ago (sorry for the delayed response - work travel). As promised, I feel it's important to counter his arguments a bit.</p>
+        </div>
+
+
+
+        <div class="asset-more-link">
+            Continue reading <a href="http://54.197.56.127/2017/10/incremental-gains-are-just-slo.html#more" rel="bookmark">Incremental "Gains" Are Just Slower Losses</a>.
+        </div>
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+    <div id="entry-2527" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2017/09/a-change-in-context.html" rel="bookmark">A Change In Context</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-09-22T09:39:11-05:00">September 22, 2017  9:39 AM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>Today marks the end of my first week in a new job. As of this past Monday, I am now a Manager, Security Engineering, with Pearson. I'll be handling a variety of responsibilities, initially mixed between security architecture and team management. I view this opportunity as a chance to reset my career after the myriad challenges experienced over the past decade. In particular, I will now finally be able to say I've had administrative responsibility for personnel, lack of which having held me back from career progression these past few years.</p>
+
+<p>This change is a welcome one, and it will also be momentous in that it will see us leaving the NoVA/DC area next Summer. The destination is not finalized, but it seems likely to be Denver. While it's not the same as being in Montana, it's the Rockies and at elevation, which sounds good to me. Not to mention I know several people in the area and, in general, like it. Which is not to say that we dislike where we live today (despite the high price tag). It's just time for a change of scenery.</p>
+
+<p>I plan to continue writing on the side here (and on <a href="https://www.linkedin.com/in/btomhave" target="_blank">LinkedIn</a>), but the pace of writing may slow again in the short-term while I dedicate most of my energy to ramping up the day job. The good news, however, is this will afford me the opportunity to continue getting "real world" experience that can be translated and related in a hopefully meaningful manner.</p>
+
+<p>Until next time, thanks and good luck!</p>
+        </div>
+
+
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+    <div id="entry-2526" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2017/09/quit-talking-about-security-culture.html" rel="bookmark">Quit Talking About "Security Culture" - Fix Org Culture!</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-09-06T08:40:40-05:00">September  6, 2017  8:40 AM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>I have a pet peeve. Ok, I have several, but nonetheless, we're going to talk about one of them today. That pet peeve is security professionals wasting time and energy pushing a "security culture" agenda. This practice of talking about "security culture" has arisen over the past few years. It's largely coming from security awareness circles, though it's not always the case (looking at you anti-phishing vendors intent on selling products without the means and methodology to make them truly useful!).</p>
+
+<p>I see three main problems with references to "security culture," not the least of which being that it continues the bad old practices of days gone by.</p>
+        </div>
+
+
+
+        <div class="asset-more-link">
+            Continue reading <a href="http://54.197.56.127/2017/09/quit-talking-about-security-culture.html#more" rel="bookmark">Quit Talking About "Security Culture" - Fix Org Culture!</a>.
+        </div>
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+    <div id="entry-2525" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2017/08/introducing-behavioral-infosec.html" rel="bookmark">Introducing Behavioral Information Security</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-08-29T09:37:50-05:00">August 29, 2017  9:37 AM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>I recently had the privilege of attending <a href="https://bjfogg.org/" target="_blank">BJ Fogg's</a> <a href="https://www.bjfogg.com/bootcamp.html" target="_blank">Behavior Design Boot Camp</a>. For those unfamiliar with Fogg's work, he started out doing research on <a href="http://captology.stanford.edu/" target="_blank">Persuasive Technology</a> back in the 90s, which has become the basis for most modern uses of technology to influence people (for example, use of Facebook user data to influence the 2016 US Presidential Election). The focus of the boot camp was around "behavior design," which was suggested to me by a friend who's a leading expert in modern, progress security awareness program management.</p>
+
+<p>Thinking about how best to apply this new-found knowledge, I've been mulling opportunities for application of Fogg models and methods. Suddenly, it occurred to me, "Hey, you know what we really need is a new sub-field that combines all aspects of security behavior design, such as security awareness, anti-phishing, social engineering, and even UEBA." I concluded that maybe this sub-field would be called something like "behavioral security" and started doing searches on the topic.</p>
+        </div>
+
+
+
+        <div class="asset-more-link">
+            Continue reading <a href="http://54.197.56.127/2017/08/introducing-behavioral-infosec.html#more" rel="bookmark">Introducing Behavioral Information Security</a>.
+        </div>
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+    <div id="entry-2524" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2017/08/confessions-of-an-infosec-burnout.html" rel="bookmark">Confessions of an InfoSec Burnout</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-08-29T09:34:27-05:00">August 29, 2017  9:34 AM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>Soul-crushing failure.</p>
+
+<p>If asked, that is how I would describe the last 10 years of my career, since leaving AOL.</p>
+
+<p>I made one mistake, one bad decision, and it's completely and thoroughly derailed my entire career. Worse, it's unclear if there's any path to recovery as failure piles on failure piles on failure.</p>
+        </div>
+
+
+
+        <div class="asset-more-link">
+            Continue reading <a href="http://54.197.56.127/2017/08/confessions-of-an-infosec-burnout.html#more" rel="bookmark">Confessions of an InfoSec Burnout</a>.
+        </div>
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+    <div id="entry-2523" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2017/08/on-titles-jobs-and-job-descrip.html" rel="bookmark">On Titles, Jobs, and Job Descriptions (Not All Roles Are Architects)</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-08-02T08:16:26-05:00">August  2, 2017  8:16 AM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>Folks: Please stop calling every soup-to-nuts, everything-but-the-kitchen-sink security job a "security architect" role. It's harmful to the industry and it's doing you no favors trying to find the right resources. In fact, please stop posting these "one role does everything security under the sun" positions altogether. It's hurting your recruitment efforts, and it makes it incredibly difficult to find positions that are a good fit. Let me explain...</p>
+
+<p>For starters, there are generally three classes of security people, management and pentesters aside:<br />
+ - Analysts<br />
+ - Engineers<br />
+ - Architects</p>
+
+<p>(Note that these terms tend to be loaded due to their use in other industries. In fact, in some states you might even have to come up with a different equivalent term for positions due to legal definitions (or licensing) of roles. Try to bear with me and just go with the flow, eh?)</p>
+        </div>
+
+
+
+        <div class="asset-more-link">
+            Continue reading <a href="http://54.197.56.127/2017/08/on-titles-jobs-and-job-descrip.html#more" rel="bookmark">On Titles, Jobs, and Job Descriptions (Not All Roles Are Architects)</a>.
+        </div>
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+    <div id="entry-2522" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2017/03/reflection-on-wfh.html" rel="bookmark">Reflection on Working From Home</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-03-30T11:08:02-05:00">March 30, 2017 11:08 AM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>In a moment of introspection last night, it occurred to me that working from home tends to amplify any perceived slight or sources of negativity. Most of my "human" interactions are online only, which - for this extrovert - means my energy is derived from whatever "interaction" I have online in Twitter, Facebook, email, Slack, etc.</p>
+        </div>
+
+
+
+        <div class="asset-more-link">
+            Continue reading <a href="http://54.197.56.127/2017/03/reflection-on-wfh.html#more" rel="bookmark">Reflection on Working From Home</a>.
+        </div>
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+    <div id="entry-2521" class="entry-asset asset hentry">
+    <div class="asset-header">
+        <h2 class="asset-name entry-title"><a href="http://54.197.56.127/2017/02/introspection-on-a-recent-down.html" rel="bookmark">Introspection on a Recent Downward Spiral</a></h2>
+        <div class="asset-meta">
+            <span class="byline">
+    
+                By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2017-02-27T19:15:01-05:00">February 27, 2017  7:15 PM</abbr>
+    
+            </span>
+
+            
+            
+
+        </div>
+    </div>
+    <div class="asset-content entry-content">
+
+        <div class="asset-body">
+            <p>Alrighty... now that my <a href="http://www.secureconsulting.net/2017/02/rsa-usa-2017-in-review.html" target="_blank">RSA summary post</a> is out of the way, let's get into a deeply personal post about how absolutely horrible of a week I had at RSA. Actually, that's not fair. The first half of the week was ok, but some truly horrible human beings targeted me (on social media) on Wednesday of that week, and it drove me straight down into a major depressive crash that left me reeling for days (well, frankly, through to today still).</p>
+
+<p>I've written about <a href="http://www.secureconsulting.net/2014/09/on-depression-and-burnout.html" target="_blank">my struggles with depression</a> in the past, and so in the name of continued transparency and hope that my stories can help others, I wanted to relate this fairly recent tale.</p>
+
+<p>If you can't understand or identify with this story, I'm sorry, but that's on you.</p>
+        </div>
+
+
+
+        <div class="asset-more-link">
+            Continue reading <a href="http://54.197.56.127/2017/02/introspection-on-a-recent-down.html#more" rel="bookmark">Introspection on a Recent Downward Spiral</a>.
+        </div>
+
+    </div>
+    <div class="asset-footer"></div>
+</div>
+
+
+
+</div>
+                    </div>
+                <div id="beta">
+    <div id="beta-inner">
+        <div class="widget-recent-blogs widget-archives widget">
+    <h3 class="widget-header">Blogs</h3>
+    <div class="widget-content">
+        <dl>
+        
+            <dt><a href="http://54.197.56.127/">The Falcon's View</a></dt>
+            <dd class="entry-meta">Entries (913) Comments (354)</dd>
+        
+        </dl>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-tag-cloud widget">
+    <h3 class="widget-header">Tag Cloud</h3>
+    <div class="widget-content">
+        <ul>
+
+            <li class="rank-1"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20&amp;blog_id=13';return false;" rel="tag">infosec</a></li>
+
+
+
+            <li class="rank-2"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=misc&amp;limit=20&amp;blog_id=13';return false;" rel="tag">misc</a></li>
+
+
+
+            <li class="rank-2"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=politics&amp;limit=20&amp;blog_id=13';return false;" rel="tag">politics</a></li>
+
+
+
+            <li class="rank-3"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=stupidity&amp;limit=20&amp;blog_id=13';return false;" rel="tag">stupidity</a></li>
+
+
+
+            <li class="rank-4"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=scary%20government&amp;limit=20&amp;blog_id=13';return false;" rel="tag">scary government</a></li>
+
+
+
+            <li class="rank-4"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=technology&amp;limit=20&amp;blog_id=13';return false;" rel="tag">technology</a></li>
+
+
+
+            <li class="rank-4"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=humor&amp;limit=20&amp;blog_id=13';return false;" rel="tag">humor</a></li>
+
+
+
+            <li class="rank-4"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=reading&amp;limit=20&amp;blog_id=13';return false;" rel="tag">reading</a></li>
+
+
+
+            <li class="rank-4"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=books&amp;limit=20&amp;blog_id=13';return false;" rel="tag">books</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=RSA&amp;limit=20&amp;blog_id=13';return false;" rel="tag">RSA</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=economics&amp;limit=20&amp;blog_id=13';return false;" rel="tag">economics</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=musings&amp;limit=20&amp;blog_id=13';return false;" rel="tag">musings</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=security&amp;limit=20&amp;blog_id=13';return false;" rel="tag">security</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=innovation&amp;limit=20&amp;blog_id=13';return false;" rel="tag">innovation</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=research&amp;limit=20&amp;blog_id=13';return false;" rel="tag">research</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=babble&amp;limit=20&amp;blog_id=13';return false;" rel="tag">babble</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=non-fiction&amp;limit=20&amp;blog_id=13';return false;" rel="tag">non-fiction</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=rant&amp;limit=20&amp;blog_id=13';return false;" rel="tag">rant</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=2008&amp;limit=20&amp;blog_id=13';return false;" rel="tag">2008</a></li>
+
+
+
+            <li class="rank-5"><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=fitness&amp;limit=20&amp;blog_id=13';return false;" rel="tag">fitness</a></li>
+
+        </ul>
+    </div>
+</div>
+
+
+
+        <div class="widget-recent-entries widget-archives widget">
+    <h3 class="widget-header">Recent Entries</h3>
+    <div class="widget-content">
+        <dl>
+        
+            <dt><a href="http://54.197.56.127/2017/02/rsa-usa-2017-in-review.html">RSA USA 2017 In Review</a></dt>
+        
+            <dd class="entry-blog">on <a href="http://54.197.56.127/">The Falcon's View</a></dd>
+            <dd class="entry-meta">By Ben Tomhave | Comments (0)</dd>
+        
+    
+        
+            <dt><a href="http://54.197.56.127/2017/01/ncs-blog-devops-and-separation.html">NCS Blog: DevOps and Separation of Duties</a></dt>
+        
+            <dd class="entry-blog">on <a href="http://54.197.56.127/">The Falcon's View</a></dd>
+            <dd class="entry-meta">By Ben Tomhave | Comments (0)</dd>
+        
+    
+        
+            <dt><a href="http://54.197.56.127/2017/01/ncs-blog-minimum-viable-must-i.html">NCS Blog: "Minimum Viable" MUST Include Security</a></dt>
+        
+            <dd class="entry-blog">on <a href="http://54.197.56.127/">The Falcon's View</a></dd>
+            <dd class="entry-meta">By Ben Tomhave | Comments (0)</dd>
+        
+        </dl>
+    </div>
+</div>
+        
+    
+
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this website's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+
+    </div>
+</div>
+
+
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footer-inner">
+                    <div id="footer-content">
+                        <div class="widget-powered widget">
+    <div class="widget-content">
+        <span>Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a></span>
+    </div>
+</div>
+
+                        <div class="widget-footer-links widget">
+    <h3 class="widget-header">Links</h3>
+    <div class="widget-content">
+        <ul>
+            <li><a href="http://54.197.56.127/">Home</a></li>
+
+        </ul>
+    </div>
+</div>
+
+
+
+
+                        <div class="widget-creative-commons widget">
+                            <div class="widget-content">
+                                This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Creative Commons License</a>.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

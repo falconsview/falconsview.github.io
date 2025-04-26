@@ -1,0 +1,351 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Notes on "The Psychology of Security" (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2007/02/ow_yet_another_climbing_injury.html" title="Ow!  Yet Another Climbing Injury (YACI)..." />
+   <link rel="next" href="http://www.secureconsulting.net/2007/03/new_threats_in_web_20_1.html" title="New Threats in Web 2.0" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2007/02/notes_on_the_psychology_of_sec_1.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/248"
+    dc:title="Notes on &quot;The Psychology of Security&quot;"
+    dc:identifier="http://www.secureconsulting.net/2007/02/notes_on_the_psychology_of_sec_1.html"
+    dc:subject="infosec"
+    dc:description="I recently read Daniel Gilbert&apos;s Stumbling on Happiness (I blog briefly about it here), which got me to thinking about the tricks the brain plays on us and how this might apply to security. Interestingly, not long after that Dr...."
+    dc:creator="Ben Tomhave"
+    dc:date="2007-02-27T08:38:43-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2007/02/notes_on_the_psychology_of_sec_1.html">
+<dc:title>Notes on &quot;The Psychology of Security&quot;</dc:title>
+<dc:description>I recently read Daniel Gilbert&apos;s Stumbling on Happiness (I blog briefly about it here), which got me to thinking about the tricks the brain plays on us and how this might apply to security. Interestingly, not long after that Dr....</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2007-02-27T08:38:43-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2007/02/ow_yet_another_climbing_injury.html">&laquo; Ow!  Yet Another Climbing Injury (YACI)...</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2007/03/new_threats_in_web_20_1.html">New Threats in Web 2.0 &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Notes on "The Psychology of Security"</h2>
+                     <div class="entry" id="entry-1398">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>I recently read <a href="http://www.randomhouse.com/kvpa/gilbert/">Daniel Gilbert's <em>Stumbling on Happiness</em></a> (I blog briefly about it <a href="http://www.secureconsulting.net/2007/01/excellent_book_on_the_tricky_b.html">here</a>), which got me to thinking about the tricks the brain plays on us and how this might apply to security.  Interestingly, not long after that Dr. Bruce Schneier posted a paper titled <a href="http://www.schneier.com/essay-155.html"><em>The Psychology of Security</em></a>, which he presented at the 2007 RSA Conference.  In reading through his paper, I found a considerable amount of similarity with Gilbert's book, which was interesting.  More interesting, however, were insights I've gained into how we as infosec practitioners might be able to better present security concepts to consumers and customers so that they'll welcome what we offer, rather than resist security improvements.</p>
+
+<p>Following are my notes from reading Schneier's paper, plus some additional follow-up.</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p>* Security needs to address primitive constructs for risk assessment.  Human brains have not evolved to account for modern threats.</p>
+
+<p>* Findings (e.g., assurance) should always be placed into a context of gains rather than losses because people are risk averse to gains.  To illustrate, an example:</p>
+
+<p>Subjects were divided into two groups. One group was given the choice of these two alternatives:</p>
+
+<blockquote>
+* Alternative A: A sure gain of $500.<br>
+* Alternative B: A 50% chance of gaining $1,000.
+</blockquote>
+The other group was given the choice of:
+
+<blockquote>
+* Alternative C: A sure loss of $500.<br>
+* Alternative D: A 50% chance of losing $1,000.
+</blockquote>
+The study showed that people were far more likely to choose A over B, but in contrast strongly preferred D over C.  What this means is that given a gain situation, people preferred a sure thing.  However, if they had to choose a loss, then they were willing to take a risk if it meant they might not lose as much (or anything at all).  Studies also showed that people responded more favorably to the A-B type gain comparison than to the C-D type loss comparison.
+
+<p>For findings, this means that we should state requirements in terms of a sure gain in security, rather than as a chance of a gain.  If this can't be done, then the next best thing is to frame the preferred choice as a chance of loss rather than as a sure loss.</p>
+
+<p>* Along these same lines, people are more likely to accept incremental gains, but not incremental losses.  Also, they're more likely to trade off more security to keep what they have.  As such, we need to make sure findings are phrased as a win-win scenario as much as possible -- in an effort to prevent the feeling that something is being lost.</p>
+
+<p>* People inherently assume that there is a greater probability of a good outcome than a bad outcome.</p>
+
+<p>* People are far more likely to accept risks if they feel that they have control over them.  As such, findings should frame risks in a manner that suggests the risks can't be controlled (minimized), only prepared for.  While we're definitely trying to remove vulnerabilities, overall what we're trying to do is develop resilient systems.  The trick here is to get people to think about threats in a manner similar to natural disasters, rather than as technical challenges that can be manipulated.  It's not a matter of if we'll be attacked, but when.  Not a matter of if we'll have failures, but when.  And so on.</p>
+
+<p>* Easily remembered data carries greater weight than hard-to-remember data.  Research also shows that examples need to be personal, detailed, and vivid.  Even if the example does not have an immediate impact, studies have shown that over time vivid examples stand out far more clearly than staid examples.  This means that statistics alone are not adequate.  We essentially need testimonials that can be used to reinforce threats.  Making these examples personal is the big key.  Stories about other companies will be less effective than stories about our own company.  We also need to work to bring security stories to the forefront, much like headline news.  The more people hear about, and think about, security incidents, the more likely they are to be concerned about those things and take actions accordingly.</p>
+
+<p>* When presenting risks, it is more effective to frame them individually than in a group.  Meaning, each finding in a report should be addressed independently, if possible.  Findings addressed in a group will decrease the overall feeling of risk than if addressed individually.</p>
+
+<p>* More information is <strong><em>not</em></strong> the key.  Studies have shown that people are already overwhelmed by the amount of information available.  Thus, the more we can boil things down, the better.  Sure, it doesn't hurt to have the data to back assertions up.  However, it's probably not information the average person needs to see.</p>
+
+<p>Some additional reading, derived from the end notes of the paper, include:</p>
+
+<p><a href="http://www.latimes.com/news/opinion/commentary/la-op-gilbert2jul02,0,7539379.story">Daniel Gilbert's LA Times article</a></p>
+
+<p><a href="http://www.jnd.org/dn.mss/being_analog.html">Don Norman's <em>Being Analog</em></a></p>
+
+<p>I've also ordered some of the books listed in the end notes, and have picked up a couple essays by Freud for comparison.  My main concern is not to put too much weight in likely "pop psychology" sources, but to now ferret out better academic resources.</p>
+
+<p><script type="text/javascript"><!--<br />
+google_ad_client = "pub-1650146097997910";<br />
+google_ad_width = 468;<br />
+google_ad_height = 60;<br />
+google_ad_format = "468x60_as";<br />
+google_ad_type = "text_image";<br />
+google_ad_channel = "";<br />
+google_color_border = "CCCCCC";<br />
+google_color_bg = "CCCCCC";<br />
+google_color_link = "000000";<br />
+google_color_text = "333333";<br />
+google_color_url = "666666";<br />
+//--><br />
+</script><br />
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"><br />
+</script><br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=research&amp;limit=20" rel="tag">research</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on February 27, 2007  8:38 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2007/02/notes_on_the_psychology_of_sec_1.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/248</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2007/02/notes_on_the_psychology_of_sec_1.html" rel="nofollow">Notes on "The Psychology of Security"</a>:</p>
+                           
+                           <a id="p1165"></a>
+                           <div class="trackback" id="ping-1165">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2007/03/odds_and_ends.html" rel="nofollow">Odds and Ends</a> from The Falcon's View<br />
+                                    Time for another miscellaneous entry in ye olde blog. Today I thought I'd focus on a few quicks hits on personal cultural exploration. Later this week: posts on upcoming travel, meeting with bright young minds of the future, and the... <a href="http://www.secureconsulting.net/2007/03/odds_and_ends.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1165" rel="nofollow">March 11, 2007  8:02 PM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1562"></a>
+                           <div class="trackback" id="ping-1562">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2007/03/reflections_on_the_minnesota_t.html" rel="nofollow">Reflections on the Minnesota Trip...</a> from The Falcon's View<br />
+                                    It's Monday and I'm back to work after my brief trip to Minnesota. Visited my parents, spoke to 3 groups of students at Concordia, had an excellent conversation with Dad's psychology prof colleague M about research I'm working on, hung... <a href="http://www.secureconsulting.net/2007/03/reflections_on_the_minnesota_t.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1562" rel="nofollow">March 20, 2007 12:17 AM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1563"></a>
+                           <div class="trackback" id="ping-1563">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2007/03/another_week_gone_whew.html" rel="nofollow">Another Week Gone... *whew*</a> from The Falcon's View<br />
+                                    Thaaaaaank goodness it is indeed Friday. It's been a very busy week, and I'm just glad it's over. Ran a few times (mostly poorly). Lifted on Tuesday (very well). But, the theme, by-in-large, has been work, work, work! Overall, it's... <a href="http://www.secureconsulting.net/2007/03/another_week_gone_whew.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1563" rel="nofollow">March 30, 2007  9:09 PM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="1398" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 1398);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>February 27, 2007  8:38 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2007/02/ow_yet_another_climbing_injury.html">Ow!  Yet Another Climbing Injury (YACI)...</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2007/03/new_threats_in_web_20_1.html">New Threats in Web 2.0</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

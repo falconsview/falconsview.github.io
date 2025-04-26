@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+   <channel>
+      <title>The Falcon&apos;s View</title>
+      <link>http://www.secureconsulting.net/</link>
+      <description>Mental meanderings of an infosec obsessive...</description>
+      <language>en</language>
+      <copyright>Copyright 2011</copyright>
+      <lastBuildDate>Wed, 09 Mar 2011 21:03:01 -0500</lastBuildDate>
+      <generator>http://www.sixapart.com/movabletype/</generator>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs> 
+
+      
+      <item>
+         <title>Upgrade+Migration Update</title>
+         <description><![CDATA[<p>This is just a quick update to let you know that the upgrade portion of my "Upgrade+Migration" project has completed successfully (yay!). I'm going to let things simmer here for a couple days to make sure everything is good before I move on to the next phase. In the meantime, you can find me in Austin, TX, Fri-Sat (3/11-12) where I'll be helping run - and speaking at - <a target="_blank" href="http://www.keepsecurityweird.org/">Security B-Sides Austin 2011</a>! Yeehaw! :)</p>]]>
+		      </description>
+         <link>http://www.secureconsulting.net/2011/03/upgrademigration_update.html</link>
+         <guid>http://www.secureconsulting.net/2011/03/upgrademigration_update.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">miscellaneous</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">technology</category>
+        
+        
+         <pubDate>Wed, 09 Mar 2011 21:03:01 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>FYI: Pending Site Upgrade+Migration</title>
+         <description><![CDATA[<p>Just a heads-up, if this blog suddenly disappears from your feed in the next couple weeks, please check back to make sure your RSS link is correct. Those following on SBN or Feedburner should be unaffected, and I expect those directly linked to my feed will be unaffected as well. Nonetheless, I thought I'd let y'all know... just in case!</p>]]>
+		      </description>
+         <link>http://www.secureconsulting.net/2011/03/fyi_pending_site_upgrademigrat.html</link>
+         <guid>http://www.secureconsulting.net/2011/03/fyi_pending_site_upgrademigrat.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">miscellaneous</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">technology</category>
+        
+        
+         <pubDate>Tue, 08 Mar 2011 11:55:43 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>Email Platform Migration</title>
+         <description><![CDATA[<p>Just an fyi, I'm migrating email to a new platform. If everything works properly, then there should be no impact to you (if you're emailing me). Come Monday most DNS records should have flushed. If for some reason you can't reach me via email, then please resort to an alternative communication method (TXT, Twitter, FB, IM, non-secureconsulting.net address).</p>
+
+<p>Thanks!</p>]]>
+		      </description>
+         <link>http://www.secureconsulting.net/2011/03/email_platform_migration.html</link>
+         <guid>http://www.secureconsulting.net/2011/03/email_platform_migration.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">miscellaneous</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">email</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">migration</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">misc</category>
+        
+         <pubDate>Fri, 04 Mar 2011 16:56:54 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>AppSec DC 2010 Video Posted</title>
+         <description><![CDATA[<p>The video of my <a target="_blank" href="http://www.owasp.org/index.php/OWASP_AppSec_DC_2010">OWASP AppSec DC 2010</a> talk, <a target="_blank" href="http://www.owasp.org/index.php/The_Unintended_Consequences_of_Beating_Users_with_Carrot_Sticks:_Radical_Thoughts_on_Security_Reform">"The Unintended Consequences of Beating Users with Carrot Sticks: Radical Thoughts on Security Reform"</a>, is now available online. You can <a target="_blank" href="http://vimeo.com/groups/asdc10/videos/19908922">watch the video on Vimeo</a>, and follow along with <a target="_blank" href="http://www.slideshare.net/tomhave/the-unintended-consequences-of-beating-users-with-carrot-sticks-radical-thoughts-on-security-reform">a sanitized version of the slides on SlideShare</a>.<br />
+</p>]]>
+		      </description>
+         <link>http://www.secureconsulting.net/2011/03/appsec_dc_2010_video_posted.html</link>
+         <guid>http://www.secureconsulting.net/2011/03/appsec_dc_2010_video_posted.html</guid>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">2010</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">AppSec</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">DC</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">OWASP</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">video</category>
+        
+         <pubDate>Thu, 03 Mar 2011 15:26:45 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>Survivability Rather Than Security Metrics </title>
+         <description><![CDATA[<p>(Note: this is a somewhat incomplete thought.)<br />
+There's been a lot of talk of late about security metrics, but I'm increasingly inclined to think that we're shooting at the wrong elusive target. Why do we keep chasing after measuring relatively immeasurable things? Instead, I think we should be starting with the things that we can measure. After all, security is a feeling, not a tangible outcome, right?<br />
+</p>]]>
+		      <![CDATA[<p>Instead of measuring something so squishy, let's instead look at the operational metrics that we can absolutely measure. For example:<br />
+ - Uptime<br />
+ - Availability<br />
+ - Performance (e.g., TPS, MIPS)<br />
+ - Time-to-Fix<br />
+ - <a target="_blank" href="http://en.wikipedia.org/wiki/Mean_time_between_failures">MTBF</a> (for a broad definition of "failure") <br />
+ - SNR (representative here - i.e., how much "background noise" do we get from scans vs. detected legit attacks)<br />
+ - Visibility (into code, into environment, etc.)</p>
+
+<p>These strike me as useful metrics to track, at least operationally, with an ability to then roll them up into tactical, and even strategic, reports. Thinking about this all in terms of survivability, then, we want to be able to answer these questions:<br />
+ - Have operations been negatively impacted?<br />
+ - Were we able to continue operations despite degraded conditions?<br />
+ - What measurable impact occurred during the impact period?<br />
+ - How quickly can we resolve issues once detected?</p>
+
+<p>These, I think, are very useful metrics to monitor. One could rightly argue that they're primarily IT operations metrics, but they go directly toward key infosec objectives, too. In terms of survivability, they help us gain a better picture about resiliency, such as benchmarking how recoverability, as well as to a degree defensibility.</p>
+
+<p>Defensibility, of course, is where we start potentially getting back into squishiness. We have a similar problem with performing a FAIR risk analysis, too, when we look at the "Vulnerability" factor, since there's no simple, reliable, consistent way to measure it (i.e., this is one of the more subjective values in the overall scheme of things).</p>
+
+<p>Putting this thought into a properly framed risk management context, based around survivability as the main driver, I think that metrics developed along these lines are more useful today, while also being reasonably accurate and precise. It's time to put aside fuzzy "security" metrics in favor of something that tells the business just how reliable its systems and applications are.<br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/03/survivability_rather_than_secu.html</link>
+         <guid>http://www.secureconsulting.net/2011/03/survivability_rather_than_secu.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">metrics</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">survivability</category>
+        
+         <pubDate>Wed, 02 Mar 2011 14:29:32 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>RSA 2011: In Summary</title>
+         <description><![CDATA[<p>Another RSA Conference has come and gone, and boy, what a busy week it was! Maybe I'm just finally getting to "attendee vet" status, but it seems like every year my time becomes increasingly overbooked. Not that this is a bad thing, mind you; it's just that I'm now thoroughly exhausted and will need a week or two to recover. ;)</p>
+
+<p>Overall, RSA was very good this year. My talks went well, my meetings went well, and it was awesome to see a lot of friends and friendly faces. The vendors really put on very good receptions this year, which was a nice return from the last couple years, which have been a bit lean. Shout-outs go to <a target="_blank" href="http://www.barracudanetworks.com/">Barracuda</a> and <a target="_blank" href="http://www.whitehatsec.com/">White Hat Security</a> for each putting on very nice parties. Kudos also to <a target="_blank" href="http://www.securitybloggersnetwork.com/">Security Bloggers Network</a> for once again running an awesome gathering of writers.<br />
+</p>]]>
+		      <![CDATA[<p>If there was any room for disappointed in RSA, it was with the continued lack of true innovation displayed by vendors, and the apparent continued presence in a tech rut that we find ourselves these days. I'm certain there must be innovative ideas out there for attacking the security space, but those ideas simply aren't making it to the show floor.</p>
+
+<p><strong>Themes</strong></p>
+
+<p>As far as I could tell, there were a few themes this year (some interesting, some note):<br />
+ * <em>Cloud</em>: Whatever that means. This non-event "event" is starting to remind me of the move to outsourcing in the late 90s. There are concerns, but most of the technology is merely being migrated to virtualized platforms. There's not much in the way of "new" here. The need for good lawyers, however, is imperative. *Everybody* seems to have a "cloud" solution of some sort these days.<br />
+ * <em>Sandboxing</em>: I saw several solutions that incorporated sandboxing, whether it be for protecting the browser, improving AV, automating malware analysis, or even hosting an embedded OS on a USB pendrive in a sandboxed environment. All of these solutions are built on the back of maturing (or mature) virtualization capabilities, and I think we'll continue to see good innovation here for the next couple years. I'll be rather disappointed if we aren't all running sandboxed browsers by this time next year.<br />
+ * <em>Mobile</em>: It seems like every time a new platform comes out, that we must then start from scratch with security. Why is that? Anyway... mobile security is a huge hot-button topic this year, thanks to the boom in smartphones and tablet devices. iOS and Android are, of course, the big targets of opportunity, and of course riddled with holes. McAfee seems to be starting to make a strong name for themselves in the space, and I'm sure we'll continue to see vendors racing to fill the void. On a related note, please check out the <a target="_blank" href="http://www.owasp.org/index.php/OWASP_Mobile_Security_Project">OWASP Mobile Security Project</a> as they have a lot of good work started that should produce tangible results later this year. Better yet: join up! :)<br />
+ * <em>Urgent Calls for Public/Private Partnerships</em>: I've been fascinated to hear an increasingly desperate tenor in the pleas from the public sector for improved public/private partnerships. I'm not fully sure I understand the motivation. It's not that I disagree, but that these sorts of relationships seem to have had limited benefit in the past. On the flip side, we're already seeing a reasonable amount of partnership, such as around smart grid and crypto research. Nonetheless, this seemed to be a theme at the conference.</p>
+
+<p><strong>Good Times</strong><br />
+<img alt="RSA-2011-BJJ-cropped.jpg" src="http://www.secureconsulting.net/2011/02/23/RSA-2011-BJJ-cropped.jpg" width="35%" border="0" vspace="5" hspace="5" align="right" />There have been several negative responses to RSA from various "known" names in the industry. In a couple cases, people who had never attended before left feeling like they'd wasted their week. I must admit that I felt this way the first time I attended, but each year thereafter has gotten better. RSA is a *huge* conference, and it thus takes a couple years to get acclimated and start realizing all the benefits.</p>
+
+<p>Most of us don't go to RSA to be speakers or to meet with vendors. Instead, RSA is where you go to meet people, catch-up with friends, and to get business done. The talks each years are fine, but it's not a hacker con, and thus nobody should expect a lot of whiz-bang presentations. At the same time, if you're open to learning about other aspects of the security industry, then this is a great place to be.</p>
+
+<p>As mentioned, I enjoyed several of the receptions this year, as well as attending my first speakers' dinner (I didn't go last year and regretted my decision). I also greatly enjoyed getting a chance to meet with various people and organizations all week. Overall, I thought this year was very positive, and that it lacked the economics-induced black cloud of the past two years.</p>
+
+<p>The other event that made this year fun was participating in the annual Brazilian Jiu-Jitsu Smackdown on Thursday evening. I skipped last year (another regretted decision), and so was eager to join this year. It was a lot of fun! My first time joining 2 years ago was a major beat-down for me, a fairly inexperienced white belt. This year, however, as a more confident, better-skilled blue belt, went much better, and was overall far more enjoyable. Good stuff!</p>
+
+<p><strong>Talk Summaries</strong><br />
+<img alt="RSA-2011-Clinton-cropped.jpg" src="http://www.secureconsulting.net/2011/02/23/RSA-2011-Clinton-cropped.jpg" width="30%" border="0" vspace="5" hspace="5" align="right" />Admittedly, I didn't get to very many talks this year, which isn't necessarily a good or bad thing. I did, however, make it to both of my talks, which I suppose is the important thing. That said, I did attend a few talks, including Mr. Clinton's closing keynote, and wanted to highlight what I heard or how it went.<br />
+ * <em>Mogull's "Everything DLP" Talk</em>: Rich literally turned off his slides for the majority of the talk and just went through everything you might want to know about DLP, engaging in conversation with the audience, in what I think was a great talk. Take note, speakers: you do not need slides to have a good talk. Moreover, dumping the slides shows you know your topic very well!<br />
+ * <em>Rothke's Social Media Talk</em>: Ben covered some interesting points on how we're basically all screwed and privacy is a lost illusion. Sad, really, but true. On the bright side, we're pretty much all equally SOL. Ok, so it wasn't quite that bad (or was it)? :) I liked the talk, though.<br />
+ * <em>Risk Mgmt Smackdown Panel</em>: Let me start by say: Oh, sigh. Poor Alex Hutton. What do you do when the main opposition insists on reading statements rather than engaging in an actual discussion? More importantly, who in the world rejects all analogies outright on the basis that what we do is so special that nothing comes close to comparing? And, lastly, how relevant, really, are studies of "cyber criminals" from the 60s, 70s, and 80s? I mean, seriously. *sigh*<br />
+ * <em>GRC-201 Panel</em>: I led a panel titled "Reasonably Foreseeable, Legally Defensible" consisting of Dave Navetta (InfoLaw Group), Serge Jorgensen (Sylint Group), Raf Los (HP), and Dan Houser (ISC2/Cardinal Health). For me, this was a lot of fun. I did everything I could to get the panel and audience pumped up first thing in the morning (we had an 8:30am Wed. start time), and then literally stood in the back of the room and let the panel talk. We had decent audience participation and I was overall quite pleased with how it went. Hopefully attendee reviews will agree! A hearty "thank you" to the panelists for a job well done!!<br />
+ * <em>LAW-403 Talk</em>: The last talk slot of the conference, Dave Willson (NEK) and I gave an ethics talk on the reactive use of force in cyberspace. The talk was originally proposed by Randy Sabett, who was supposed to be the lead speaker. He had to bail for work reasons, so I recruited Dave to join since he had just retired from 20 years in Army JAG doing cyberlaw, and is now working in similar areas. Overall, I think the talk went ok. We had a lot of audience participation, which is definitely a positive, though it disrupted the flow of the talk. We'll see how the attendee ratings are for the session. Dave and I recorded a 20-minute version of the talk the previous afternoon for RSA (no idea when/where it will post), which went very well. For both sessions I tried to adopt an interview style with Dave as the SME in the room. I think that technique was generally effective (certainly for the recording). It was very hard to bring adequate energy for this final talk of the conference.</p>
+
+<p><strong>My Other Posts on RSA 2011</strong></p>
+
+<p>Here are my previous posts on RSA 2011:<br />
+ * <a target="_blank" href="http://www.secureconsulting.net/2011/02/rsa_2011_books_talks_and_where.html">"RSA 2011: Books! Talks! (and where I'll be)"</a><br />
+ * <a target="_blank" href="http://www.secureconsulting.net/2011/02/rsa_2011_disinnovation_sandbox.html">"RSA 2011: (dis)Innovation Sandbox"</a><br />
+ * <a target="_blank" href="http://www.secureconsulting.net/2011/02/rsa_2011_imation_expands_offer.html">"RSA 2011: Imation Expands Offerings"</a><br />
+ * <a target="_blank" href="http://www.secureconsulting.net/2011/02/rsa_2011_meet_federated_networ.html">"RSA 2011: Meet Federated Networks"</a></p>
+
+<p><strong>Miscellaneous</strong></p>
+
+<p>In case you're curious, I popped-up in a couple other places during the week, including:<br />
+ * Tripwire Blog: <a target="_blank" href="http://www.tripwire.com/blog/security/top-security-issues-for-2011-data-loss-prevention-and-internal-threats/">"Top security issues for 2011: Data loss prevention and internal threats"</a></p>
+
+<p>Also, as I mentioned before the conference, I had two (2) books come out to which I contributed. Both were from the ABA Press.</p>
+
+<p><a target="_blank" href="http://www.abanet.org/abastore/productpage/5450059"><img alt="ABA-data-breach-book-cropped.jpg" src="http://www.secureconsulting.net/2011/02/23/ABA-data-breach-book-cropped.jpg" width="35%" border="0" vspace="5" hspace="5" align="left" /></a></p>
+
+<p><a target="_blank" href="http://www.abanet.org/abastore/productpage/5450058"><img alt="ABA-infosec-book-cropped.jpg" src="http://www.secureconsulting.net/2011/02/23/ABA-infosec-book-cropped.jpg" width="35%" border="0" vspace="5" hspace="5" align="right" /></a><br />
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>]]></description>
+         <link>http://www.secureconsulting.net/2011/02/rsa_2011_in_summary.html</link>
+         <guid>http://www.secureconsulting.net/2011/02/rsa_2011_in_summary.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">2011</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">RSA</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">summary</category>
+        
+         <pubDate>Wed, 23 Feb 2011 17:37:33 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>RSA 2011: Meet Federated Networks</title>
+         <description><![CDATA[<p>Given work load, I only had opportunity to interview one other business for RSA 2011. Sifting through all the meeting requests can be quite daunting, but <a target="_blank" href="http://www.federatednetworks.com/">Federated Networks</a> made a unique impression with some of their offerings that I felt compelled to meet with CEO Dave Lowenstein.<br />
+</p>]]>
+		      <![CDATA[<p>The long-and-short of it is this: Federated Networks (FN) is a privately held startup that has been working on security products for the past 5+ years. Based out of Toronto, they're now on the verge of releasing several security products that will target a wide range of customers, from the consumer to enterprise to government space. Full details are a bit limited today, but their solutions include what will be a free consumer-oriented sandbox technology, as well as a proprietary replacement for SSL. They also have a WAF-like product that will be available. Lowenstein says that they are planning to do a staggered release schedule of their products starting this Spring.</p>
+
+<p>BT Counterpane's ethical hacking team has recently completed an assessment of some of these technologies, and reportedly the products performed well. FN is hoping that their products will be disruptive in the marketplace, and if half of what Lowenstein talked about ends up standing up to scrutiny, then I think there's a good chance he'll be proven right.</p>
+
+<p>Beyond this, there's not much information I can share. I'll be looking for their product releases this coming Fall. FN also indicated that BT will next be testing their e-Voting solution, which I'll be interested to hear more about it as well.<br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/02/rsa_2011_meet_federated_networ.html</link>
+         <guid>http://www.secureconsulting.net/2011/02/rsa_2011_meet_federated_networ.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">2011</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">Federated</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">FN</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">Networks</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">press</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">review</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">RSA</category>
+        
+         <pubDate>Wed, 23 Feb 2011 15:55:36 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>RSA 2011: Imation Expands Offerings </title>
+         <description><![CDATA[<p><a target="_blank" href="http://www.imation.com/en-us/Imation-Products/Defender-Collection/F-200-Bio/"><img alt="450x450_IL_DefenderF200Bio_FrontOpen.jpg" src="http://www.secureconsulting.net/2011/02/23/450x450_IL_DefenderF200Bio_FrontOpen.jpg" width="225" height="225" border="0" vspace="5" hspace="5" align="right" /></a>I had the opportunity to interview reps from <a target="_blank" href="http://www.imation.com/en-us/">Imation</a> on the expo floor at RSA 2011 last week. The meeting request had interested me because my mental image of Imation was that of a fairly staid and stable storage media company. And, to a degree, this mental image was not incorrect. However, despite their solid maintenance of well-known media brands like Memorex and TDK, I was excited to see that Imation is also branching out into new areas.</p>
+
+<p>A couple products from Imation's new Defender Collection struck me as being very interesting. These products include having biometrics and encryption capabilities, as well as a self-contained, pendrive-based Windows environment in development (making them only the 2nd vendor to do this, following on the heels of SPYRUS).</p>
+
+<p>In addition to these new product lines, Imation has also begun developing software to support these devices. You, the reader, might think this is a fairly logical extension (you'd be right), but don't overlook the fact that standing up an entirely new software division to support new products is a somewhat risky venture, and something that represents Imation's strong commitment to these new product lines. The software will, in particular, provide central management and authentication integration for the new Defender line of devices, which should make them particularly appealing to the enterprise (at least for Windows-oriented folks today).<br />
+</p>]]>
+		      <![CDATA[<p><strong>The F200+Biometrics Device</strong></p>
+
+<p>For demonstration and experimentation purposes, I received an F200+BIO USB storage device from the good folks at Imation. The device (Imation-supplied picture above) features 32GB storage, FIPS 140-2 Level 3 validated encryption using AES 256, and 2-factor authentication (password+biometric).</p>
+
+<p>Installing the device on my Mac was, unfortunately, less than trivial. No documentation was provided in the retail box, and when I plugged the device in for the first time, it did not show up as a connected device. A quick search of the Imation support pages indicated that a firmware update may be needed, so I contacted Support for more information. After a few minutes on the line with a rep, he found the information, took my email address, and promised to email the update to me. Unfortunately, the files received didn't include directions on how to install them, nor was it obvious what the files were (i.e., they didn't come as a pkg or dmg, so I didn't know how to use them). As it turned out, one of the files was a PDF missing the .pdf extension, which included upgrade directions. The directions pointed me to a Windows-based PC to flash the firmware so that I could then use the device with Mac OS X 10.6.</p>
+
+<p>Loading up my Win7 VM, the device was immediately detected and I was prompted to go through setup/configuration. These devices can support up to 10 users, each with their own protected storage space (which is rather cool). In my case, I simply created 1 user for myself, and opted to only use single-factor authentication (biometrics). Enrollment was straightforward, with 5 swipes per finger (for a minimum of 2 fingers) required. You could swipe all 10 fingers if you wanted to do so, or maybe even ask someone else to swipe in a finger should you want to have a device and single storage partition shared among a team.</p>
+
+<p>Once everything was updated and configured, then the device worked like a charm. Upon initial detection, it shows up as "LOCKED" until you swipe your finger to unlock it, at which point it changes to "PRIVATE". On the Mac, an "Application" disc volume also shows up, which contains the Windows app code and documentation. One of the quirks of the device on Mac is that every time I connect and biometrically authenticate, OS X gives me a pop-up window indicating that the volume had not be dismounted properly. This, despite having ejected both the PRIVATE and Application volume. Another interesting quirk was that every time I attempted to eject the Application volume, it automatically re-mounted it and the LOCKED volume, making it essentially impossible to cleanly dismount. This might be part of the cause of the issues. Only long-term testing will be able to prove whether or not there are lasting data storage issues, though my guess is that it won't matter.</p>
+
+<p>In terms of performance, the encryption did not appear to introduce any latency. The device has an onboard processor to do hardware-level encryption, allowing transfer speeds to be very high. I copied over a 480MB ISO image (the OWASP Live CD) and it only took about a minute to complete the operation.</p>
+
+<p><em>Conclusion</em>: The F200+BIO is definitely a nifty device, and I think it's a solid representation of the entire Defender Collection that Imation is releasing. I'm very eager to see the beta release their embedded Windows product in the near future, particularly because it will help provide competition for SPYRUS and lead to what I hope will be even better price points. It seems likely that the SPYRUS solution will be more mature initially, but I feel confident that Imation will quickly get up to speed and provide some reasonable competition in this space.<br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/02/rsa_2011_imation_expands_offer.html</link>
+         <guid>http://www.secureconsulting.net/2011/02/rsa_2011_imation_expands_offer.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">2011</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">Imation</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">press</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">review</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">RSA</category>
+        
+         <pubDate>Wed, 23 Feb 2011 15:19:08 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>RSA 2011: (dis)Innovation Sandbox</title>
+         <description><![CDATA[<p>Maybe I don't understand the meaning of the word "innovation." Every year I walk through RSA's "Innovation Sandbox," and every year I reach teh same conclusion: if this is "innovation," then no wonder we're so far behind the opposition! This year's assortment of vendors was no better than the previous years, with a couple exceptions.<br />
+</p>]]>
+		      <![CDATA[<p>"Science Fair" competitors:<br />
+ * <em>CipherCloud (Trustosphere)</em>: Similar to an entry from last year, this is a gateway appliance that sits on the edge of your enterprise and intercepts a variety of fields, tokenizing or encrypting data before it goes into the cloud. Interesting? Sure. Innovative? Not so much (we saw this last year). I'm sure they have key differentiators, but - as was true last year - I'm not sure I see much need or demand for this today. Another case of a solution being used to kludge human behavior.<br />
+ * <em>ENTERSECT</em>: Another 2-factor solution (definitely not a new idea), particularly oriented to mobile devices, but without simply being a one-time-password (OTP) method. I didn't get more details beyond this as I just couldn't bring myself to hear the pitch.<br />
+ * <em>Gazzang</em>: Though not what I would consider "innovative," this was nonetheless a potentially useful product. They're essentially an on-system middleware product (just above the kernel) for doing inline transparent encryption for MySQL databases. I question their market strategy, though, with Oracle having purchased Sun, the owner of MySQL.<br />
+ * <em>HyTrust</em>: Just another configuration appliance, this one geared to virtual environments. What I don't get is that it was listed as v2.1. Ummm... if you've released 2.1 full versions in the last year, then I have some concerns...<br />
+ * <em>Incapsula</em>: Oh, look, a WAF. Is this innovative? Incapsula is a spin-off from Imperva, with a focus on distribute WAF for the cloud. You know, like what <a target="_blank" href="http://www.artofdefence.com/">Art of Defence</a> has been successfully deploying for a couple years now. Heck, AOD is on the expo floor at RSA for at least it's 2nd year this year. Ummm... so, note to RSA Conferences: This is not the definition of "innovation."<br />
+ * <em>Invincea</em>: One of two interesting products in the same space, attacking problems in slightly different ways. Basically, this is a sandboxed browser environment (Quaresso calls theirs an "emphemeral browser"). It's an interesting idea, and very much inline with what companies like beCrypt are doing in their autonomous environments.<br />
+ * <em>Pawaa Software</em>: I didn't get a chance to dig into this solution very far, though it sounds interesting and mildly untenable. From the description and literature, it looks to be a wrapper file format for asserting and enforcing security controls. An interesting idea, but probably not as a standalone product. *IF* it's any good, then I have to believe they'll be snarfed up by a bigger vendor sooner than later.<br />
+ * <em>Quaresso</em>: Their "ephemeral browser" is an interesting idea. Basically, again, a sandboxed environment. Nothing too crazy, but definitely a better approach than the norm. I expect this to become SOP for all browsers in the future.<br />
+ * <em>Silver Tail Systems</em>: This product helps limit attack success by using statistics-based heuristical inline analysis to make a quick determination of "good" or "bad" and then action it accordingly. In many ways it reminds me of Trustifier (which I still barely understand), though instead of using algebras with compiler theory, they're instead using the AV heuristics model (which has had limited success historically). A nice idea, but one that I think will have limited legs. I'd be surprised if Symantec or McAfee didn't acquire them in the next couple years.<br />
+ * <em>Symplified</em>: I have no idea what this product does. I couldn't get through the marketing buzzwords, nor did I get a chance to speak with their reps (they were fairly busy). To me, it seems that if you can't clearly state what you do in a sentence, but rather waste that space on marketing garbage, well, then you probably don't deserve much real attention.</p>
+
+<p>Overall, I'm disappointed again with the lack of truly innovative solutions. I have to believe there is better stuff out there, though the rules for getting into the exhibit are a bit wonky. Will any of these products revolutionize the industry? Nope. Oh, well...<br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/02/rsa_2011_disinnovation_sandbox.html</link>
+         <guid>http://www.secureconsulting.net/2011/02/rsa_2011_disinnovation_sandbox.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">2011</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">Innovation</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">RSA</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">Sandbox</category>
+        
+         <pubDate>Tue, 15 Feb 2011 14:26:22 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>Forget SmartGrid, Micro-Generation Is the Future </title>
+         <description><![CDATA[<p>A very brief post here... on a topic I've mentioned to people in the past, but have never put into writing. Really, this is as much an incomplete thought as anything else...</p>
+
+<p>Yes, SmartGrid technology will be needed in the future, but I'm gravely concerned that we're investing in the wrong technologies today. All the talk and focus is on how it will help improve the electric grid, but it does little to address one fundamental problem: it still relies on the fundamentally flawed premise of central power generation and long-haul distribution.<br />
+</p>]]>
+		      <![CDATA[<p>Instead of investing in SmartGrid, I strongly believe we should be heavily investing in <a target="_blank" href="http://en.wikipedia.org/wiki/Microgeneration">micro-generation</a>. Micro-generation is the deployment of localized power generators (on a small scale) that are designed to service a single facility or location. The interesting thing about micro-generation is that implementation means reducing the overall load on the power grid while also undermining "critical infrastructure" concerns.</p>
+
+<p>For the power companies, micro-generation also represents a new and very interesting opportunity for new revenue. And, incidentally, this would (today, anyway) likely be revenue that is outside most of the heavy regulations. True, new rules would be inevitable, but overall the impact would be highly positive.</p>
+
+<p>Imagine if every commercial facility had its own power generation. The peak daytime load would then be greatly lowered on the grid. And, if engineered well, this approach could also help improve generation capabilities and overall grid capacity and stability by having companies sell-back their excess energy (if they so desired), particularly at night during off-peak hours.</p>
+
+<p>If you remove reliance on power distribution, then many safety and security issues go away. For example, major snow+ice storms would no longer take out most commercial sites through downed power lines, which would in turn allow power companies to focus on restoring service to "legacy" customers (such as residential neighborhoods). However, also potentially interesting is the idea that neighborhoods (e.g., HOAs) could band together and setup their own micro-generation capabilities for a neighborhood.</p>
+
+<p>Also, couple this with the current move from AC to DC power and you can start seeing a future where SmartGrid itself is less important. Oh how I wish that the political entities would wake up and smell the ozone on this topic...<br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/02/forget_smartgrid_microgenerati.html</link>
+         <guid>http://www.secureconsulting.net/2011/02/forget_smartgrid_microgenerati.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">musings</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">energy</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">musings</category>
+        
+         <pubDate>Fri, 11 Feb 2011 09:52:52 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>Why I Failed As Highwinds SecDir</title>
+         <description><![CDATA[<p>I started writing this post a few weeks ago, but am only now getting back to it. After getting a good outline going, I simply couldn't bring myself to write it. Part of my resistance, I think, comes in the pain of self-realization. At the same time, I'm sometimes loathe to share these personal revelations as I'm never sure how people will take them. My hope is that you'll read this and think "lessons learned" and not "what a dope." Anyway...<br />
+</p>]]>
+		      <![CDATA[<p>For a little background, I took a job as Security Director in January 2009 with a small tech firm in Phoenix called Highwinds. They did a couple different things, split along the lines of USENET services and a CDN. The company had grown through acquisition, and as such had all the legacy software+system issues you might imagine. There were a variety of other issues, such as internal politics and power struggles, and certainly no shortage of security concerns, especially given a need to make forward progress on PCI DSS compliance.</p>
+
+<p>About 8 months after starting the job, including a move from NoVA to Phoenix a couple months into things (a move that, to this day, I'm kicking myself over - always listen to your gut!!), my position was terminated and I was cut adrift in one of the worst markets in the country. The termination came right on the heels of my speaking at a small conference in Montana (for which I had been approved to travel!), and really served to knock the wind out of me hard. I had just started to feel like I was settling in the role and starting to understand how I needed to proceed and was more than a little angry over the sudden change of status.</p>
+
+<p>The bottom line, though, is that I failed at the job. No, I didn't fail because I didn't know what to do, but because I failed to effectively communicate. It's ironic, I suppose, that someone as verbal as I am could fail at fundamental communication, but that is in fact what happened. In a nutshell:<br />
+&nbsp;&nbsp;&nbsp;-- The prioritized approach I had developed was right.<br />
+&nbsp;&nbsp;&nbsp;-- The staffing issues I had identified were right.<br />
+&nbsp;&nbsp;&nbsp;-- However, I did not effectively communicate this plan to the C-level team (too abstract).<br />
+&nbsp;&nbsp;&nbsp;-- Ergo, failure.</p>
+
+<p>It's amazing how important clear communication is, especially when trying to share a serious message that requires explicit action and fundamental changes. And yet, when given a chance to brief the C-level team, I completely dropped the ball, using a very short slide deck that simply created more questions and confusion without actually setting forth and sort of plan of action. No wonder the CEO walked out of the meeting, turned to the GC and asked "is it me or has he done nothing in 6 months?" Nothing could have been further from the truth, and yet this was the message I somehow relayed through my presentation! Ack!</p>
+
+<p>The important lesson to learn here is that it's imperative to clearly communicate a plan of action. It is not adequate to simply share a vision and leave it up to people outside the industry to fill in the blanks. Maybe some execs are ok with a more abstract approach, but this team certainly was not ok with such an approach, and I completely failed in my duty to reassure them of the choice that they'd made in hiring me.</p>
+
+<p><strong>Not Completely My Fault</strong></p>
+
+<p>Now, all of this said, I can't take full credit for my failures. Well, I guess I could, but to do so would be uncharitable to myself and ignore the hard work, blood, sweat, and tears that went into this fatal scenario that was, I think, doomed from the outset. How so? Well...<br />
+&nbsp;&nbsp;&nbsp;* <em>Inadequate Support</em>: Plain and simple, I was never fundamentally supported in the position. I knew this before the move to Phoenix at a very fundamental level, but had hoped that being on-site would help resolve some of these concerns. As it turned out, I got put in a nice office 6 floors away from the entire ops team and was subsequently shut-out. It was very clear that I wasn't wanted there, and had really only been hired to say "yes, we have a security person," but without any intention to change things. Case-in-point, I tried to help accelerate a SSO project, which was assigned to one of the sysadmins, who subsequently ignored it until he finally snapped and yelled at me, announcing that he had no intention of doing the work assigned. He quit a couple weeks later, and the project never made any progress.</p>
+
+<p>&nbsp;&nbsp;&nbsp;* <em>Politics</em>: I came onboard in the midst of a protracted and increasingly volatile political battle. By all rights, I should never have been moved to AZ, but rather should have been moved to corp. HQ in Winter Park, FL. The Phoenix office was home to ops, but it was pretty much all acquired talent who had been running their own businesses, and who were being allowed to still operate with a high degree of independence. Unfortunately, this led to lots of decisions being made at a point too close to ops that didn't necessarily reflect a useful overall strategy for the company. Phoenix functioned like a subsidiary within the company, which created all sorts of challenges. IT, which was based at corp HQ, wasn't even providing support for the Phoenix office even though a significant number of people were based there. Dysfunctional hardly begins to describe what that environment was like.</p>
+
+<p>&nbsp;&nbsp;&nbsp;* <em>An Overwhelming Amount of Work</em>: I was amazed at how little security had been implemented. My tasking was primarily PCI compliance, and I had a tough time getting my brain around it. It took me a couple months simply to map out all the gaps that required remediation. In the end, I was able to initiate a project to address the majority of concerns in the cardholder environment (no idea if that project was ever completed). However, it was very daunting task, and one that took my a long time to get my brain wrapped around. It was one of the situations where there were literally several top priorities issues that needed to be addressed. And, given the lack of support, there was simply no place for me to start or any way to get anything meaningful done.</p>
+
+<p>&nbsp;&nbsp;&nbsp;* <em>Wrong Person For the Job (sort of)</em>: In many ways, I was the wrong person for the job. Or, more correctly, I needed one other person - a solid, hands-on technical security resource, to help make headway. It quickly became clear that I couldn't lead the security charge AND implement all the necessary changes. Moreover, as I needed to be the "bad guy" in many cases, delivering bad news, it would have been very useful to have someone technical who could endear themselves with the ops team and actually made some progress. Alas, it wasn't going to happen.</p>
+
+<p>Suffice to say, I now find the experience instructive, even though it represents a spectacular failure in my career. I'm confident that I could tackle a comparable position in the future and a) avoid a bad environment, while b) getting stuff done.<br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/02/why_i_failed_as_highwinds_secd.html</link>
+         <guid>http://www.secureconsulting.net/2011/02/why_i_failed_as_highwinds_secd.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Life_Lessons</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">musings</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">work-jobs</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">failure</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">Highwinds</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">reflection</category>
+        
+         <pubDate>Fri, 11 Feb 2011 09:47:35 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>Evolving OWASP: Reflections on the 2011 Summit </title>
+         <description><![CDATA[<p>For full Summit coverage and follow-up, check out the <a target="_blank" href="http://www.owasp.org/index.php/Summit_2011">OWASP Summit 2011 page</a>.</p>
+
+<p>I'm not even home yet, and already my brain is churning. I left Lisbon this morning, heading for home, and then on to San Francisco for RSA-related "festivities" the next day, but since I'm stuck on a plane for several hours here, I thought it would be a good time to jot down some thoughts. Actually, I started making notes in the car this morning en route to the airport... here how it starts:<br />
+<blockquote>As we raced down the highway in excess of 150kph, flying through the lush green hills, kissed by the slowly lifting fog, I couldn't help but let my mind wander freely over this trip and the past couple days. I leave Portugal with a few conclusions:<br />
+&nbsp;&nbsp;&nbsp;* OWASP is doing good and important work.<br />
+&nbsp;&nbsp;&nbsp;* OWASP is going through a transitional period, in part related to generational ascendence.<br />
+&nbsp;&nbsp;&nbsp;* OWASP is strong and filled with wonderfully passionate people.<br />
+&nbsp;&nbsp;&nbsp;* OWASP is application security.</blockquote></p>
+
+<p>Perhaps the writing is a bit over the top, but it's how I feel after what I can only describe as an interesting, yet strangely energizing, event marked by the expression of strong sentiments and passionate drive to make the world a better place. Allow me to expound...<br />
+</p>]]>
+		      <![CDATA[<p><strong>Passionate People</strong></p>
+
+<p>What was the Summit, exactly? Well, it was kind of like a conference, except different. Instead of traditional talking-head lectures, pretty much everything was couched as a hands-on workshop or interactive discussion. It was extremely rare to have a single person at the lead, and in all cases there was a high degree of engagement from participants. Walking between sessions during the day, and even wandering between sessions Wednesday night, it was amazing to see so many openly participating (contributing!) to projects, discussions, and workshops.</p>
+
+<p>Nowhere was passion more readily demonstrated than in the "governance" dynamic session Tuesday evening. People I know and respect got up and voiced their concerns in no uncertain terms. By the end of the night, a clear direction had been laid out, all the while clearing out the bile that had boiling up in some over the course of the year (or more!). Growing mains, miscommunication, and confusion is inevitable as organizations rapidly grow and move; especially an organization that is tackling such a daunting mission of enable application security globally.</p>
+
+<p><strong>Up-n-Coming Leaders</strong></p>
+
+<p>Helping drive much of the passion within OWASP is an emerging cadre of younger leaders. There's nothing more thrilling than seeing the next generation begin to assert itself and start taking ownership of projects and leadership roles. It is only through the dedicated efforts of these new leaders that OWASP will continue to grow and succeed.</p>
+
+<p>Another remarkable point was the degree of participation from our European counterparts. This is the first forum where I've truly seen international collaboration on a truly ubiquitous scale. It was awesome to meet so many non-Americans with such a strong passion for OWASP and appsec. I should also note that it's not <em>just</em> the Europeans, either, but also the Brazilians, who are building strong leadership cadres to promote and grow OWASP locally and global.</p>
+
+<p><strong>Room for Improvement</strong></p>
+
+<p>It would be fool-hardy to somehow imply that OWASP was already adequate, as nothing could be further from the truth. As is true of most things, there is ample room for improvement. Specifically, there are some tough issues that are going to need to be addressed aggressively in the coming months and years:<br />
+&nbsp;&nbsp;&nbsp;* <em>Process Development/Improvement</em>: By it's own admission, the board is not currently strictly following its defined processes when it should be. Its made a commitment to resolve that matter. But, more than that, there is a general lack of formal processes within the organization, which can lead to confusion, miscommunication, and decisions made without following due process. This area will be one of the largest obstacles to overcome in the near-term as it is exceedingly difficult to introduce more rigorous process within a well-established, mid-sized organizations. At the same time, there is a certain degree of irony in OWASP not having very good processes when so many of us actively promote formalizing SDLs wherever possible. ;)</p>
+
+<p>&nbsp;&nbsp;&nbsp;* <em>Formal, Documented Rules (aka "policies)</em>: It's likely that the governing by-laws will need to be amended, at least to a small degree, if for no other reason than to make them better reflect the current status of the organization. However, additional rules need to be established, such as spelling out roles and responsibilities, how authority is delegate, who can become project or committee leads, etc, etc, etc. Everybody is working for the greater good of OWASP, but it's time to put some formal definition around what that means, or what the consensus leadership believes meets the objective of "greater good."</p>
+
+<p>&nbsp;&nbsp;&nbsp;* <em>Improved Communication</em>: Communication is not particularly good within OWASP. There's a lot of confusion, there are a lot of lists, there's no easy way to access most of the information, and so on and so forth. The next point will speak to one of the main obstacles today (the web site), but beyond that there are other improvements to be made. OWASP has mailing lists, twitter, and the web site through which information can be published. For all I know, there might also be a blog. There's no excuse for various announcements not to be heard, and yet that's exactly what is happening today. E.g., external consultants have been retained to help formalize and improve the vision, mission, objectives/goals, and so on. Very few people knew this was going on, despite an assertion that it had been announced. And here the board just figured nobody cared to review what had been proposed... d'oh! My expectation is that leadership will diligently work to greatly improve communication this year. I hope that they formalize rules and processes around this area, too.</p>
+
+<p>&nbsp;&nbsp;&nbsp;* <em>Revamped Web Site</em>: The current OWASP web site rather sucks. It's true! It is nye on impossible to find things on the site. Many people (myself included) use Google instead of the built-in search engine because the site is just that broken. Part of the problem is organization (or lack thereof), part of the problem is too much stale/outdated content that should have been archived years ago, and part of the problem is general maintenance. The underlying code was upgraded recently to improve the basic functionality of the platform, but much more will need to be done. Thankfully, there is a group of interested, passionate people working on developing recommendations as a direct outcome from the Summit.</p>
+
+<p><strong>Willingness to Evolve, Motivated to Serve</strong></p>
+
+<p>Perhaps the most pleasant surprise for me was the openness of the current "old guard" leadership to suggestions for change. Change is necessary and important, especially given how rapidly the organization has grown these past few years. Everybody I spoke with expressed a willingness to do what was right for OWASP, and that translated directly to a willing to change. Never have I seen such a strong balance between outright passion and willing flexibility.</p>
+
+<p>Along these same lines, this group of people we call "members" is really quite remarkable. Smart, motivated, and innovative. It was exceedingly wonderful to see a lack of resistance to innovation, and in fact it was great to see such an interest in evolving practices and the organization. Case-in-point, I led an hour-long "dynamic" session (that is, ad hoc) on formal risk assessment methods that had a full room. Never in my life did I think that I would get a dozen or more interested parties in a room talking about risk assessment, the differences between qualitative and quantitative, the need to define labels/ratings, and so on. It was wonderful! :)</p>
+
+<p><strong>A Promising Future</strong></p>
+
+<p>For as much work as was accomplished this week, I believe that we will historically only see this as a blip on the radar. Though the Summit had been billed as "building OWASP 4.0" I think it really was perhaps more along the lines of v3.5. We do not need a bunch of wholesale changes, but rather a handful of well-considered, targeted changes addressing the issues I've listed above. This is very good news! Going into the Summit I had concerns about the future of the organization, but now I'm reasonably optimistic about things. The next step is to figure out how I can help out more. I hope that you'll join me in formally engaging with OWASP, either as a leader or a volunteer, and always as a member. There are tons of projects that need help, there are committees that need more people, there are events that need volunteers, and there are leaders who need honest feedback and suggestions.<br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/02/evolving_owasp_reflections_on.html</link>
+         <guid>http://www.secureconsulting.net/2011/02/evolving_owasp_reflections_on.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">2011</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">OWASP</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">Summit</category>
+        
+         <pubDate>Fri, 11 Feb 2011 09:43:09 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>RSA 2011: Books! Talks! (and where I&apos;ll be) </title>
+         <description><![CDATA[<p>(updated 2/3/11 with link to preview podcast for GRC-201 panel)</p>
+
+<p>Good grief, RSA is almost upon us! This year will be another busy one for me in San Francisco. I have 2 talks scheduled, 2 books coming out, and I'm involved with 3 different events. As such, I wanted to share some of these announcements with you on the off-chance that you might like to attend one of my sessions, or just meet-up face-to-face. If you see me, please introduce yourself!<br />
+</p>]]>
+		      <![CDATA[<p><strong>General Schedule</strong></p>
+
+<p>Sat-Sun: ABA ISC Annual Pre-RSA Meeting<br />
+Mon: Mini-Metricon 5.5, then RSA Innovators Sandbox<br />
+Tues: Speakers' Dinner at night, sessions during the day<br />
+Wed: Moderating the panel for GRC-201 (details below), various and sundry the rest of the day - This panel is going to be AWESOME!!! :)<br />
+Thurs: Mostly free for exploring the expo, interviewing some folks, etc.<br />
+Fri: Speaking with Dave Willson in LAW-403 (details below), after-glow at Scoma's</p>
+
+<p><strong>RSA Talks</strong></p>
+
+<p>GRC-201 "Reasonably Foreseeable, Legally Defensible"<br />
+Wed 08:30am, Orange Room 300, 70 minutes<br />
+<a target="_blank" href="https://365.rsaconference.com/community/connect/blog/2011/02/02/podcast-reasonably-foreseeable-legally-defensible">Preview Podcast</a></p>
+
+<center><a target="_blank" href="http://www.secureconsulting.net/2011/02/01/GRC-201.png"><img alt="GRC-201.png" border="0" vspace="5" hspace="5" src="http://www.secureconsulting.net/2011/02/01/GRC-201.png" width="450" /></a></center>
+
+<p>LAW-403 "Ethical Considerations Involving the Use of Force in Cyberspace"<br />
+Fri 11:20am, Orange Room 310, 50 minutes<br />
+<a target="_blank" href="https://365.rsaconference.com/community/connect/blog/2011/01/19/podcast-ethical-considerations-involving-the-use-of-force-in-cyberspace">Preview Podcast</a></p>
+
+<center><a target="_blank" href="http://www.secureconsulting.net/2011/02/01/LAW-403.png"><img alt="LAW-403.png" border="0" vspace="5" hspace="5" src="http://www.secureconsulting.net/2011/02/01/LAW-403.png" width="450" /></a></center>
+
+<p><br />
+<strong>Books!</strong></p>
+
+<p>I am excited to announce (a little ahead of the official word) that 2 books to which I've contributed will be released during RSA!</p>
+
+<p><em>Data Breach and Encryption Handbook</em><br />
+<a target="_blank" href="http://www.abanet.org/abastore/productpage/5450059">http://www.abanet.org/abastore/productpage/5450059</a></p>
+
+<p><em>Information Security and Privacy: A Practical Guide for Global Executives, Lawyers and Technologists</em><br />
+<a target="_blank" href="http://www.abanet.org/abastore/productpage/5450058">http://www.abanet.org/abastore/productpage/5450058</a><br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/02/rsa_2011_books_talks_and_where.html</link>
+         <guid>http://www.secureconsulting.net/2011/02/rsa_2011_books_talks_and_where.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">2011</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">books</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">RSA</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">schedule</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">talks</category>
+        
+         <pubDate>Tue, 01 Feb 2011 21:35:25 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>ShmooCon 2011 After-Report </title>
+         <description><![CDATA[<p>I don't attend many hacker cons because, quite frankly, I'm not really the hacker type. No, no... it's true... I'm more of the corporate wonk type with a penchant for strategy, architecture, policies, and the like... all important things in infosec, but things that are not generally featured or of interest to hacker cons. Nonetheless, I go, hoping against hope that I'll see something interesting and that at least a couple talks won't be so poorly constructed or delivered that I'll either flee or fall asleep.</p>
+
+<p>For this year's hacker con adventure I opted to attend ShmooCon, which I think I'll now add to the annual schedule (especially given the low cost and easy proximity). It was a decent experience with the requisite number of "omg we're so screwed" moments, coupled with all the social attributes necessary to make the event fun. I learned a few things, but mostly have ideas for the future. As is typical of my previous experiences attending a specific con for the first time, I know that my next attendance of the con will be better because I'll know the ropes a bit and have my expectations better adjusted.</p>
+
+<p>So, without further adieu...<br />
+</p>]]>
+		      <![CDATA[<p><strong>Venue</strong></p>
+
+<p>The event was held this year, for the first time, at the Washington Hilton Hotel, which is <a target="_blank" href="http://en.wikipedia.org/wiki/Reagan_assassination_attempt">where Pres. Reagan was shot in 1981</a> (if you look at the pictures there, this shows the entrance at the Terrace level where the conference was held). From that perspective, it was kind of interesting/curious/surreal to be at such an historic place. But I digress...</p>
+
+<p>The Hilton was recently remodeled, touting highly limited sight-lines everywhere, and overall the venue seemed to be very nicely appointed. There were, however, a few oddities. The main ballroom where the opening talks were held, and which was later split "in twain" (to quote King Bruce), was less than ideal. As <a target="_blank" href="http://twitter.com/jack_daniel">Jack Daniel</a> said, "Every seat has an unobstructed view. Of columns." These two rooms were, as a result, long and narrow, making it hard to read slides from the back, not to mention the challenge of finding a speaker amongst the obstructions.</p>
+
+<p>Another oddity was a very narrow corner around the outside of this ballroom area. There is a 6' choke-point corner that tended to make a real mess of people moving between the vendor space area and the contest area. This was perhaps more an annoyance than a "problem," but it's something that stuck out.</p>
+
+<p>And, lastly, given all the curves and corners, designed to reduce sight-lines to protect dignitaries, navigation was at times confusing. The third track of the con was in the International Ballroom West (which we're not certain was actually on the west side), and getting there from the main area was at times a bit disorienting.</p>
+
+<p>Perhaps the biggest negative to this venue, though, was how stringent security was about clearing areas when they closed. People were apparently rushed out of the main conference area Friday night when it was deemed "closed" (effectively killing some hallwaycon chats), and we also found that when the lobby bar closed on both nights, security then promptly stepped in and, in no uncertain terms, told us to leave. Note that this is an open area that adjoins seats in the lobby area. I think that, in part, they were creating open space for the cleaning staff to work, but overall it was just not a positive thing. Events like these thrive on the social aspects, where many of the best discussions occur outside of the formal tracks. To have those chats forcibly interrupted by an overzealous staff was off-putting.</p>
+
+<p><strong>Talk Content Quality</strong></p>
+
+<p>I'm increasingly incensed by the lack of adequate training and preparedness that speakers display at conferences. On the one hand, the technical content is usually very sound, but the presentation of that content more often than not leaves a lot to be desired. If these conferences prove one thing, over and over again, it's that being super-smart does not immediately translate into being a good public speaker.</p>
+
+<p>Overall, I was a bit disappointed in the selection of talks. It seemed like there were a lot of talks on mobile security (Android, specifically), as well as on removable devices (e.g., USB pendrives). While I'm sure it was all very interesting, it was very hard to sort through and pick who would be best.</p>
+
+<p>By the way, as I think about content... what in the world has happened to Mudge? I feared the worst, and I can only conclude my fears have been realized... my comment to a couple people ahead of time was "I'll be curious to see just how filtered he is now." and I was unsurprised, yet disappointed, to be right in my implicit assumption that DARPA has fairly well muzzled him. The whole thing was kind of disconcerting...</p>
+
+<p><strong>Schedule</strong></p>
+
+<p>I really liked the schedule format that was used, and I think this should be called out as a great strength. A 10am start on Saturday and Sunday was wonderful after a late night. The mid-day Friday start was also nice, allowing me (a local) to miss the morning commuter traffic. Having the firetalks on Friday and Saturday night was also great, although I was a little disappointed that I wasn't then able to attend the official ShmooCon party (despite having a wristband, which I later gave to someone else). I could have attended the party, but by the time we made it to the hotel lobby after the firetalks, people were already filtering back from the event indicating that free drinks were mostly gone. Ah, well. Suffice to say, it was a good structure.</p>
+
+<p>If I were to make one quip, though, it's this: I don't think the "Build It" track was either named right or filled with the right talks. I dunno, maybe it's just me, but when I think of the "builder" vs "breaker" dichotomy in infosec, it doesn't map to the talks scheduled. In my mind, if the "Build It" track was mapped to the "builder" sub-culture, then it would have been a bunch of anti-hacker-con-cliche talks. Ya know... my kind of stuff! :) Instead, I think maybe the "Build It" track was supposed to be about things that were built, but then again, not all talks actually seemed to follow that rubric... I dunno... whatever... as you can see, I've clearly not reconciled it yet, even.</p>
+
+<p><strong>People/Socializing</strong></p>
+
+<p>My favorite part these days of any conference is in meeting people, watching people, and just generally being around people (I told you I wasn't a "hacker"!). Hacker cons always bring out a special sort, too. It was a lot of fun hanging out, seeing folks, and counting the utili-kilts. I also amused myself by watching the stares and double-takes of non-con people in the hotel as various con attendees wandered about. It's really quite remarkable how thoroughly a hacker con can take over a venue! :)</p>
+
+<p>Anyway...<br />
+Will I go back to ShmooCon again? Yes.<br />
+Is there room for an improved experience? Definitely!<br />
+Did the Potters do a good job? Absolutely!<br />
+Was the venue perfect? No, but then, what venue is?<br />
+Were the talks great? Not really, from the ones I saw, but others saw different talks and disagree. *shrug*</p>
+
+<p>See you next time ShmooCon!<br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/02/shmoocon_2011_afterreport.html</link>
+         <guid>http://www.secureconsulting.net/2011/02/shmoocon_2011_afterreport.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">infosec</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">musings</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">2011</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">infosec</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">musings</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">ShmooCon</category>
+        
+         <pubDate>Tue, 01 Feb 2011 20:28:20 -0500</pubDate>
+      </item>
+      
+      <item>
+         <title>A Fictitious Story (Shmoo+Snow=Conspiracy!) </title>
+         <description><![CDATA[<p>While shoveling snow this evening I occupied myself by composing the following... :)<br />
+</p>]]>
+		      <![CDATA[<blockquote><strong>Authorities Investigate Con Organizers</strong>
+
+<p>Federal authorities opened an investigation Thursday into the local organizers of the "ShmooCon" security conference held in the District each year. Agents suspect the Potters of tampering with, or otherwise compromising, the super-secret government weather machine, causing copious amounts of snow to fall on the DC metro area in conjunction with the annual event.</p>
+
+<p>Authorities first began to suspect a connection between the major snowfalls and ShmooCon in 2010 when a pair of storms bookended the event. Such quantities of snow are not generally considered to be normal for the area, and someone pointed out that "this wasn't the first time" that a major snow had occurred around the time of the event. This week's snowfall, which left hundreds stranded without any way to order a Hoffacino from their local Starbucks, has confirmed investigators' suspicions.</p>
+
+<p>Self-described "security curmudgeon" Jack Daniel (possible alias) commented that "snows like this are more normal on the Cape," referring to his home neighborhood in the Boston, MA, community. When pressed, he acquiesced that if there <em>was</em> a super-secret government weather machine, then it was probably networked and easily hackable. While he did not overtly indicate the Potters, he did relent and admit that ShmooCon and the associated Shmoo Group do have a reputation for being notorious hackers who may be capable of such a feat. He also recommended that maintainers of the alleged super-secret government weather machine should invest in product from his employer, <a target="_blank" href="http://www.astaro.com/">Astaro Internet Security</a>.</p>
+
+<p>When questioned, the Potters decried the allegations as a massive right-wing conspiracy, lamenting "Why won't you feds just leave us alone already?!? Can't you see we have enough problems getting all this schwag to the venue??" Federal agents declined to comment on why the Potters' home was the only one in a 30-mile radius to not be plowed-out after the storm. In fact, some reports suggested that snow was intentionally plowed into their driveway, though this could not be confirmed.</p>
+
+<p>In response to the Potters' counter-allegations, former President George W. Bush chortled and snickered, then referred journalists to consult with "ol' Dicky boy" and "red rover, red rover, send Karl right over." Former veep Cheney was unavailable for comment and rumored to be hold-up in his underground lair counting the money saved by foisting all blame for the <em>Deepwater Horizon</em> oil spill onto BP.</p>
+
+<p>Former Bush advisor Karl Rove did answer calls about the alleged right-wing conspiracy. In response, he suggested that this was, in fact, a left-wing conspiracy perpetrated by environmental extremists and pointed to the "conveniently coincidental timing of Keith Olbermann's departure from MSNBC." Olbermann's location was unknown when this article went to press and thus was unavailable for questioning. Mr. Rove also implied a potential connection to WikiLeaks and Julian Assange while also mumbling something about "advanced persistent threat" and "Obama" under his breath (a connection was not immediately apparent).</p>
+
+<p>At the end of the day, authorities seem convinced of the Shmoo/snow connection and promised to hold the Potters as long as necessary. Charges of obstructing merriment were being considered, along with allegations of domestic terrorism, correlating the impact of the snow storm to a weapon of mass destruction. Formal charges are pending completion of the formal investigation. It's expected that ShmooCon will proceed this weekend as planned, despite the act of nature (or sabotage). However, attendees should be prepared to be subjected to full-scale TSA "naked scanner" assessments. Attendees found to not have their barcodes tattooed to themselves in metallic paint will likely not be admitted.<br />
+</blockquote></p>
+
+<p>Hope to see you at ShmooCon! :)<br />
+</p>]]></description>
+         <link>http://www.secureconsulting.net/2011/01/a_fictitious_story_shmoosnowco.html</link>
+         <guid>http://www.secureconsulting.net/2011/01/a_fictitious_story_shmoosnowco.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">humor</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">miscellaneous</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">miscellaneous</category>
+        
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">creative</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">fiction</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">humor</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">ShmooCon</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#tag">writing</category>
+        
+         <pubDate>Wed, 26 Jan 2011 20:24:14 -0500</pubDate>
+      </item>
+      
+   </channel>
+</rss>

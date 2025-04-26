@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>BeFUDdled by Risk (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/11/life_as_a_moving_experience.html" title="Life As a Moving Experience" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html" title="Creating Epic Fail Conditions: PCI and Best Practices" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/11/befuddled_by_risk.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/961"
+    dc:title="BeFUDdled by Risk"
+    dc:identifier="http://www.secureconsulting.net/2009/11/befuddled_by_risk.html"
+    dc:subject="infosec"
+    dc:description="&quot;You keep using that word. I do not think it means what you think it means.&quot; -Inigo Montoya in The Princess Bride In the past couple months I&apos;ve come to hate the word &quot;risk&quot; and its associated phrase &quot;risk management.&quot;..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-11-30T10:35:51-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/11/befuddled_by_risk.html">
+<dc:title>BeFUDdled by Risk</dc:title>
+<dc:description>&quot;You keep using that word. I do not think it means what you think it means.&quot; -Inigo Montoya in The Princess Bride In the past couple months I&apos;ve come to hate the word &quot;risk&quot; and its associated phrase &quot;risk management.&quot;...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-11-30T10:35:51-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/11/life_as_a_moving_experience.html">&laquo; Life As a Moving Experience</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html">Creating Epic Fail Conditions: PCI and Best Practices &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">BeFUDdled by Risk</h2>
+                     <div class="entry" id="entry-2189">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <blockquote>"You keep using that word. I do not think it means what you think it means." -Inigo Montoya in <em>The Princess Bride</em></blockquote>
+
+<p>In the past couple months I've come to hate the word "risk" and its associated phrase "risk management." It's not because risk itself is inherently bad or wrong, or that the need for good, quality risk management has changed. Rather, it's the overuse and misuse of the term that is really grating on me. Despite a lot more talk about risk, it seems that it's even less understood and even more poorly defined than ever before.</p>
+
+<p>Perhaps the most egregious "risk" annoyance is its constant use as a FUD hammer for pushing products or agendas. It seems that every time we turn around, <em>somebody</em> is proclaiming that <em>something</em> is a <strong>HIGH RISK</strong> (bold, all caps, exclamation, exclamation, exclamation, omg we're all gonna die!). Unless, of course, we buy their product or support their agenda.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p>This problem is pervasive across multiple industries, most of which are these days loosely associated with "security" (I heard an ad on the radio last week that Northrup Grumman is now describing itself as a "security services company" - not because they're doing anything different, mind you, but because that's where a lot of the money is... homeland security, national defense and security, cyberwarfare and cybersecurity, etc.). Not that this is any different than ever before, but it seems that you cannot trust much of anything you read or hear these days. If you do, you'll be buying into irrational, FUD-based agendas that seek only to take your money and leave you no better off.</p>
+
+<p>This line of thinking makes me wonder... if you're not particularly experienced with security or risk management, what hope do you have of really dealing effectively with any of this FUD and BS? If some vendor or VAR or consultant comes in making bold statements about "high risk" findings or issues, how do you evaluate and validate what's being said?</p>
+
+<p>It seems to me that every time someone hear's the word "risk" they should immediately jump to a quick interrogation based on the following rubric:<br />
+1) Has "risk" been defined in my context?<br />
+2) Has the identified "risk" been prioritized within my context?<br />
+3) Is the "risk" being used to describe a problem or to promote a "solution"?<br />
+4) Has the "risk" been properly weighted against comparable concerns?</p>
+
+<p>If the answers to these questions are inadequate, or simply "no," then you probably have a case of risk abuse on your hands. #3 there is a particular red flag to watch out for, with vendors, politicians, and mainstream media most notorious for flogging "critical issues" with "high risk" that are taken completely out of context and hyped up well beyond anything reasonable. If a vendor sends you marketing materials that talk about "risk" at all, then you should be highly suspicious. How do they know what is or is not a high risk for your organization?</p>
+
+<p>We could go on to talk about how to structure risk profiles and a risk management program, but it's too much at this point. Organizations are failing at the simple step of vetting and validating what they're hearing. Until organizations and people quit accepting all "risk" claims at face value, there's really no point in talking about risk management. Why? Because you won't get the right kind of understanding or buy-in necessary to be successful.</p>
+
+<p>It's time we empower people to challenge blind assertions. It's time to give them the basic tools, such as the responsibility to question what they're told, to begin fighting the rising tide of what is no less than fraud and deceit. Once these basic steps are taken, then we can talk about how to evolve that into a formal risk management program.</p>
+
+<p>Refuse to be terrorized. Refute blind assertions. Question all non-contextual risk statements</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=FUD&amp;limit=20" rel="tag">FUD</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=risk&amp;limit=20" rel="tag">risk</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=stupidity&amp;limit=20" rel="tag">stupidity</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on November 30, 2009 10:35 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/11/befuddled_by_risk.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/961</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2009/11/befuddled_by_risk.html" rel="nofollow">BeFUDdled by Risk</a>:</p>
+                           
+                           <a id="p1691"></a>
+                           <div class="trackback" id="ping-1691">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/12/actually_possibility_is_probab.html" rel="nofollow">Actually, Possibility IS Probability (As Is Likelihood)</a> from The Falcon's View<br />
+                                    Independent analyst and industry golden boy Rich Mogull is playing word games, and he's being a belligerent, sanctimonious jerk about it (he implies in his opening paragraph that his "win" in the "debate" was never in question - too bad... <a href="http://www.secureconsulting.net/2009/12/actually_possibility_is_probab.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1691" rel="nofollow">December  8, 2009 10:47 AM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (5)</h3>
+                           
+                                 <a id="c000685"></a>
+                                 <div class="comment" id="comment-685">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://lukenotricks.blogspot.com/2009/11/fudgeddaboudit.html" href="http://lukenotricks.blogspot.com/2009/11/fudgeddaboudit.html" rel="nofollow">Luke O'Connor</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Ben, could not agree more. My recent take on FUD is at the link above</p>
+
+<p>rgs Luke</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://lukenotricks.blogspot.com/2009/11/fudgeddaboudit.html" href="http://lukenotricks.blogspot.com/2009/11/fudgeddaboudit.html" rel="nofollow">Luke O'Connor</a>  |
+                                          <a href="#comment-685">November 30, 2009  8:17 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-685" title="Permalink to this comment">November 30, 2009 20:17</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000686"></a>
+                                 <div class="comment" id="comment-686">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Thanks, Luke! Ironically, my motivations for this piece were independent of the writing of Anton and the others. I'm simply burned out on risk being the buzzword du jour this year.</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-686">November 30, 2009  9:27 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-686" title="Permalink to this comment">November 30, 2009 21:27</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000687"></a>
+                                 <div class="comment" id="comment-687">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://securityrevolution.blogspot.com" href="http://securityrevolution.blogspot.com" rel="nofollow">Dominic Vogel</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Terrific insight Ben! I always enjoy infosec blogs that focus on the bigger issues rather than just the nitty-gritty technical stuff. The word "risk" and "risk management" as you've pointed-out has lost all meaning; it's been reduced to a buzz word. Like you said being terrorized by FUD and applying risk mgmt in response is useless. Risk needs to be viewed objectively and realistically.</p>
+
+<p>I'll be following your blog from now on! Take a look at my infosec blog (securityrevolution.blogspot.com) and my musings on some of the more holistic aspects of the field.</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://securityrevolution.blogspot.com" href="http://securityrevolution.blogspot.com" rel="nofollow">Dominic Vogel</a>  |
+                                          <a href="#comment-687">December  1, 2009  3:50 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-687" title="Permalink to this comment">December  1, 2009 15:50</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000688"></a>
+                                 <div class="comment" id="comment-688">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secsocial.com" href="http://www.secsocial.com" rel="nofollow">Erin</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>YAY!!!! Ben wrote a concise blog that didn't take me 2 trips to the bathroom to read! LOLZ!</p>
+
+<p>Seriously, nice write-up.</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secsocial.com" href="http://www.secsocial.com" rel="nofollow">Erin</a>  |
+                                          <a href="#comment-688">December  1, 2009  5:20 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-688" title="Permalink to this comment">December  1, 2009 17:20</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000689"></a>
+                                 <div class="comment" id="comment-689">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>@Dominic - Thanks! I'll definitely check out your blog.</p>
+
+<p>@Erin - haha - glad you liked it! :)</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-689">December  1, 2009  8:27 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-689" title="Permalink to this comment">December  1, 2009 20:27</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2189" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2189);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>November 30, 2009 10:35 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/11/life_as_a_moving_experience.html">Life As a Moving Experience</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html">Creating Epic Fail Conditions: PCI and Best Practices</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

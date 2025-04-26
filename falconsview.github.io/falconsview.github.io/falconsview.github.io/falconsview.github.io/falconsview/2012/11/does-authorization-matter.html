@@ -1,0 +1,991 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2012/11/does-authorization-matter.html">
+<dc:title>Does &quot;Authorization&quot; Matter?</dc:title>
+<dc:description>Context is everything. The headline question is, of course, a troll. Authorization definitely matters, and especially within the context of the Computer Fraud and Abuse Act (CFAA), which is the trigger for this post. A fusillade of question around authorization...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2012-11-27T10:53:41-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2012/11/does-authorization-matter.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2012/11/3-ideas-for-mitigating-robocalls.html" title="3 Ideas For Mitigating Robocallers" />
+    <link rel="next bookmark" href="http://54.197.56.127/2012/12/applying-infosec-to-public-safety.html" title="Applying InfoSec Lessons to Public Safety" />
+    
+    
+    <title>Does &quot;Authorization&quot; Matter? - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2448" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Does "Authorization" Matter?</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2012-11-27T10:53:41-05:00">November 27, 2012 10:53 AM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>Context is everything. The headline question is, of course, a troll. Authorization definitely matters, and especially within the context of the Computer Fraud and Abuse Act (CFAA), which is the trigger for this post. A fusillade of question around authorization cropped up last week thanks in large part to <a target="_blank" href="http://erratasec.blogspot.com/2012/11/you-are-committing-crime-right-now.html">a blog post by @ErrataRob</a> in which he states that the CFAA is dangerously vague and indeterminate on this question of authorization. In some ways he was right, but in others it was just misleading... to make matters worse, the coverage through the tech industry has been a touch fatalistic, trending toward uninformed and absurd... so, here goes my contribution! (read that as you will;)</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>Irony</strong></p>
+
+<p>The first thing worth pointing out is that Rob's opening statement (and the opening, humorous statements by J4vv4d in <a target="_blank" href="http://www.j4vv4d.com/video/watching-this-video-is-a-crime/">his vlog</a> derived from Rob's post) was wrong. Rob opens his post stating,"Are you reading this blog? If so, you are committing a crime under 18 USC 1030(a) (better known as the "Computer Fraud & Abuse Act" or "CFAA"). That's because I did not explicitly authorize you to access this site, but you accessed it anyway." It turns out that this comment is absolutely, positively wrong; and, demonstrably so at that.</p>
+
+<p>You see, the ErrataSec blog is hosted on Blogger.com, which is a Google property. Signing up for a Blogger account means that you are agreeing to the Terms of Service (a contract). Moreover, for the site to be accessible, you are explicitly configuring it to publicly available. Therefore, Rob has, in fact, explicitly authorized "the public" to view the site. Moreover, he has explicitly authorized Google to publish his content in their services, without limitation. Specifically, <a target="_blank" href="https://www.google.com/intl/en/policies/terms/">Google's Terms of Service (TOS)</a> says:<br />
+<blockquote>"When you upload or otherwise submit content to our Services, you give Google (and those we work with) a worldwide license to use, host, store, reproduce, modify, create derivative works (such as those resulting from translations, adaptations or other changes we make so that your content works better with our Services), communicate, publish, publicly perform, publicly display and distribute such content. The rights you grant in this license are for the limited purpose of operating, promoting, and improving our Services, and to develop new ones. This license continues even if you stop using our Services (for example, for a business listing you have added to Google Maps). Some Services may offer you ways to access and remove content that has been provided to that Service. Also, in some of our Services, there are terms or settings that narrow the scope of our use of the content submitted in those Services. Make sure you have the necessary rights to grant us this license for any content that you submit to our Services."</blockquote><br />
+So, you see... his opening statement is patently false (as several commenters, including myself, have pointed out). While this certainly makes it hard to proceed to his further arguments, we'll see fit to do so, lest we fall victim to a logical fallacy (<a target="_blank" href="http://yourlogicalfallacyis.com/the-fallacy-fallacy">the "fallacy fallacy"</a>)</p>
+
+<p><strong>CFAA, Authorization, Damage, Implied Consent</strong></p>
+
+<p>The ax against which Rob seeks to grind is the dated and much-maligned Computer Fraud and Abuse Act (CFAA; full modern text available <a target="_blank" href="http://codes.lp.findlaw.com/uscode/18/I/47/1030">here</a> and <a target="_blank" href="http://www.law.cornell.edu/uscode/text/18/1030?quicktabs_8=1#quicktabs-8">here</a>). The nit he picks is with how one knows whether or not one is authorized. However, this is a bit of a ruse, because the CFAA does not look exclusively at "authorized access," but also looks at things like whether or not the system was "protected," "public," government-owned, and if damage was caused. Depending on reading, you may also potentially see the scope being somewhat constrained to financial services and national defense considerations (though this isn't necessarily the case).</p>
+
+<p>Rob is definitely right in that "authorization" is not clearly and unequivocally defined in the statute. However, we're fortunate in that this is not the only consideration. In fact, where this authorization thinking usually leans is toward the concept of "implied consent" and whether or not a site is considered "public." Most web sites, for example, are by their nature "public" unless some form of access control has been implemented in order to delineate between what is and is not authorized access.</p>
+
+<p>Implied consent could be a bit of a slippery slope, and it is complicated by the classic <a target="_blank" href="http://corporate.findlaw.com/litigation-disputes/movie-day-at-the-supreme-court-or-i-know-it-when-i-see-it-a.html">"I know it when I see it"</a> argument. For the most part, however, a "reasonable man" argument can be used to parse and vet most considerations around authorization and implied consent. Where things get murky is when independent security researchers (like Rob) start working in the gray areas between authorized and unauthorized access.</p>
+
+<p>This gray area is really, I believe, what drove Rob's post... triggered in large part by the <a target="_blank" href="http://www.wired.com/threatlevel/2012/11/att-hacker-found-guilty/">recent conviction of former Goatse Security personality Andrew "weev" Auernheimer</a>. I'll come back to Auernheimer in a couple minutes, because I think his case is far more clear-cut than Rob might have us believe in his post. First, though, let's look at a couple legal carve-outs provided for security researchers.</p>
+
+<p><strong>So, You Wanna Hack^H^H^H^HResearch Legally, Eh?</strong></p>
+
+<p>There are two main considerations here for security researchers:<br />
+  1) CFAA and similar regulations on authorized level of access and damages<br />
+  2) DMCA anti-circumvention exceptions</p>
+
+<p>In the latter case, the DMCA has actually been one of the more controversial regulations, with it's seemingly random, inconsistent, and nearly incomprehensible process for getting research exceptions allowed, and then maintained, by the U.S. Copyright Office. As noted in <a target="_blank" href="http://en.wikipedia.org/wiki/Digital_Millennium_Copyright_Act#Effect_on_research">the associated Wikipedia article</a>, the DMCA has had a chilling effect on some security research, particularly around DRM and cryptanalysis. This is a cat-n-mouse game that has no end in sight... but I digress...</p>
+
+<p>With respect to independent security researchers looking for holes on public web sites, there has been - as Rob has pointed - vague and inconsistent enforcement. If you're conducting research, then I believe one key thing to keep in mind at all times is responsible disclosure practices. As I'll discuss in the next section, failing to follow reasonable practices around validation and disclosure are what seem most likely to come back and bite you (hard). However, even then, one must be exceedingly cautious, especially when dealing with large multi-nationals that have deep pockets and a willingness to burn legal fees pursuing (er, crushing) security researchers.</p>
+
+<p>What I find fascinating is how stupid and fatalistic these large corporations are. If a researcher acts in good faith, follows a reasonable approach that doesn't cause harm, and follows responsible disclosure practices, then there should not only be no adverse reaction, but there should be protection under the law. After all, it's beneficial to companies to have bugs responsibly reported to them. Today we are seeing several major corps. launching bug bounty programs, following the lead of Google and Microsoft. Hopefully this trend will continue. Ironically, it's worth noting that AT&T - the plaintiff in the Auernheimer case - now has a <a target="_blank" href="https://developer.att.com/developer/apiDetailPage.jsp?passedItemId=10700235">bug bounty program</a>, despite getting the book thrown at him.</p>
+
+<p><strong>Oh, Auernheimer...</strong></p>
+
+<p>The interesting thing about Rob's original post was that he seemed to have been motivated by outrage over the Auernheimer conviction. However, looking at <a target="_blank" href="http://en.wikipedia.org/wiki/Weev#AT.26T_data_breach">the scant details available</a> about the case, it seems like this is a pretty clear case of exceeding authorized access and causing harm. According to the media reports, Auernheimer was convicted of one count of identity fraud and one count of "conspiracy to access a computer without authorization." He remains free on bail pending the outcome of an appeal.</p>
+
+<p><a target="_blank" href="http://www.wired.com/threatlevel/2012/11/att-hacker-found-guilty/">This Wired article</a> provides some background. Basically, Auernheimer and his associate tumbled onto an enumeration vulnerability on the AT&T web site wherein a person could enter an arbitrary iPad ICC-ID and find out the email address associated with that devices. They identified the vulnerability, and they validated it through testing.</p>
+
+<p>It's at this point where I suspect the CFAA conspiracy charges come into play. If they had contact AT&T directly, disclosed the vulnerability, and then waited for a response, then I suspect that this entire case would have been avoided. Unfortunately, this is not how they proceeded. Instead, they did two things, which make these researchers look unreasonable and irresponsible. First, they wrote a script to automate the enumeration attack and used it against the AT&T web site to collect a bunch of ICC-ID/email pairings. Second, they contacted media site Gawker and disclosed their findings. It wasn't until after these two things had been done that they also then contacted AT&T. Hell hath no fury like an embarrassed multi-national caught flat-footed by wily "hackers." Plus, we're talking about Ma Bell here... a monolithic artifact from the age of true telecom bureaucracy... one would think that proceeding with caution might be warranted...</p>
+
+<p>In his piece, Rob does pose an interesting question, reductionist though it was... if you're simply modifying a single numeric value (parameter) in a URL, are you exceeding access. Of course, as I say, this is reductionist thinking, since the case bears far more than such a simple assertion. Sadly, I have to come back to the "I know it when I see it" argument... which is to say that, no, I don't think manually twiddling a couple URL parms amounts to an unauthorized access that causes significant harm. However, when you move beyond manual twiddling to a scripted attack, and then pile on irresponsible disclosure, I can certainly see where the argument starts to turn against the researcher.</p>
+
+<p>So, does this mean, as a security researcher, that you should never, ever twiddle URL parms unless you have explicit permission to do so? I would think not so much, as long as your twiddling is within reason and relatively harmless... and, most importantly, that your intent can be clearly demonstrated as non-malicious to the "reasonable man" (a reference to the jury, btw). Unfortunately, in the case of Auernheimer, their behavior was not fully above-board (as noted in <a target="_blank" href="http://www.digitaltrends.com/mobile/att-ipad-hacker-auernheimer/">this story</a>, which talks about them trolling AT&T).</p>
+
+<p><strong>In the End...</strong></p>
+
+<p>Many of the news stories and blog pieces - especially from the security community - have just been plain wrong and needlessly fatalistic about the outcome of the Auernheimer case. The fact of the matter is that the CFAA is just one of many statutes that could potentially be brought to bear in "hacking" cases. Really, attacking the CFAA is just a straw man argument that distracts from the core problem: that there will always be tension between security researchers working in gray areas and law enforcement trying to "serve and protect."</p>
+
+<p>Allow me to leave you with 5 closing thoughts:</p>
+
+<p>1) The CFAA has been updated a half-dozen times since 1986. Check out <a target="_blank" href="http://en.wikipedia.org/wiki/Computer_Fraud_and_Abuse_Act">its Wikipedia entry</a> for a bit more info, or read the entire current code at the links above.</p>
+
+<p>2) Act professionally and responsible. Responsible disclosure is paramount. Openly taunting the company you're "researching" is problem bad form. If you want to be taken seriously, then act professionally.</p>
+
+<p>3) Don't be dumb. Automating an attack, and then executing it, is not being smart. Nor is it smart to go to the press first. Assume you will be subject to intense, negative scrutiny. Document everything and, above all else, see #2.</p>
+
+<p>4) Act reasonably. It is not so fine a line between "proof of concept" and "outright attack." Don't assume that the rest of the world buys into an "everything should be open and free" mentality. More importantly, consider the opposing party's perspective. Nobody likes to be publicly embarrassed. Be reasonable and use good judgment (see #2).</p>
+
+<p>5) CYA. Document, document, document. Make sure everything you're doing is legally defensible. If there is any question at all about what you're doing may or may not exceed authorized access, or may trigger legal action, then stop and get guidance. Talk to a lawyer (EFF understands these things). Get the feds involved (I know, this sounds scary, but use a shield/lawyer - and this could mean US-CERT or FBI or DHS or some other entity/agency). There are known reputable "former hacker" personas IN the fed space now. Reach out for advice, or find someone who can do it for you. Etc. If you don't look out for yourself, then you're going to get burned.</p>
+
+<p>And... that's about it. I don't envy security researchers and the tightrope they walk. However, that said, I think there are some basic practices that they can adopt to help limit and proactively manage the risks they're carrying. At the end of the day, this comes down to making good business decisions, particularly regarding legal risk management. It's 2012... there's no excuse not to get informed, get help, or be caught unaware. Let's hope people learn from this and back away from their fatalistic interpretations of what seems like a pretty clear-cut case of not being smart.</p>
+
+<p>Oh, and, incidentally... you are authorized to <em>read</em> (directly or via RSS) and <em>comment on</em> this article. ;)</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/musings/" rel="tag">musings</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/risk-management/" rel="tag">risk-management</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>November 27, 2012 10:53 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2012/11/3-ideas-for-mitigating-robocalls.html">3 Ideas For Mitigating Robocallers</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2012/12/applying-infosec-to-public-safety.html">Applying InfoSec Lessons to Public Safety</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

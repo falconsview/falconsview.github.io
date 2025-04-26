@@ -1,0 +1,384 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>My Philosophy of Security (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2008/02/failure_to_recognize_a_creepy.html" title="Failure to Recognize a Creepy Receipt" />
+   <link rel="next" href="http://www.secureconsulting.net/2008/03/2008_goals_february_progress_r_1.html" title="2008 Goals: February Progress Report" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2008/03/my_philosophy_of_security.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/595"
+    dc:title="My Philosophy of Security"
+    dc:identifier="http://www.secureconsulting.net/2008/03/my_philosophy_of_security.html"
+    dc:subject="infosec"
+    dc:description="In 2006 I completed the Masters program in Information Security Management at the George Washington University. As part of that process, I completed a Masters thesis, in which I performed a high level review of &quot;models, frameworks, and methodologies&quot; under..."
+    dc:creator="Ben Tomhave"
+    dc:date="2008-03-02T14:19:31-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2008/03/my_philosophy_of_security.html">
+<dc:title>My Philosophy of Security</dc:title>
+<dc:description>In 2006 I completed the Masters program in Information Security Management at the George Washington University. As part of that process, I completed a Masters thesis, in which I performed a high level review of &quot;models, frameworks, and methodologies&quot; under...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2008-03-02T14:19:31-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2008/02/failure_to_recognize_a_creepy.html">&laquo; Failure to Recognize a Creepy Receipt</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2008/03/2008_goals_february_progress_r_1.html">2008 Goals: February Progress Report &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">My Philosophy of Security</h2>
+                     <div class="entry" id="entry-1790">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>In 2006 I completed the Masters program in Information Security Management at the George Washington University. As part of that process, I completed a <a href="http://falcon.secureconsulting.net/professional/papers/Tomhave_Thesis-FINAL.pdf">Masters thesis</a>, in which I performed a high level review of "models, frameworks, and methodologies" under the umbrella of "assurance" (aka "information security, "infosec assurance," "computer security," etc). The goal of this initial literature review was to find a single model that could be used across an entire assurance program, incorporating what I posited as the core competency areas of Enterprise Risk Management, Operational Security Management, and Audit Management. The result of this first phase was a determination that no such model existed. Being stymied and frustrated by this lack of enterprise-level models for instituting assurance management, I embarked on creating my own. The resultant Total Enterprise Assurance Management (TEAM) model accomplished this goal, and then some (I'll come back to this in a bit). It's worth noting, incidentally, that the literature review is now about 2.5 years old, yet I firmly believe that the conclusions are just as valid today.</p>
+
+<p>I bring this all up now because security philosophy has been bugging me over the past couple weeks. In returning to security consulting, I am again reminded that not everyone understands security beyond their niche, which can be very problematic when trying to work in a cross-organizational manner. </p>
+
+<center><a href="http://www.dragondoor.com/author_workshops.html?kbid=7000&m=29&i=82"><img border="0" src="http://affiliate.dragondoor.com/b.aspx?id=7000&mm=29&img=kettlebellworkshop_bnr.gif"/></a></center>
+
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p>The main challenge seems to be related to the notion that security largely grew out of the IT function, as least as far as the mainstream is concerns. This suspect original really puts the industry as a whole at a significant disadvantage because there is a lot more to security than simply technology.</p>
+
+<p>Where the industry has failed evolve effectively, I think, is in establishing a high-level presence within organizations that is not strictly technical in nature, but is instead business-oriented with a risk management philosophy. If you need proof that this type of focus is still not overly prevalent within the industry, you need only look at the protracted "discussions" between the concretist and Bayesian philosophies of statistics and how they relate to ROI/ROSI and risk assessment.</p>
+
+<p>Don't confuse this criticism with thinking that these issues are trivial. On the contrary, the topics are quite advanced, driving to the heart of evolving Scientific and Mathematic schools of thought. Unfortunately, the partisan nature of these discussions has hindered the ability of the industry to resolve the open questions in a satisfactory manner. But I digress...</p>
+
+<p>As an industry, we are philosophically and abstractly stagnated. Despite the continued evolution of tools, we lack adequate consensus and creation on key matters such as business-technology cooperation, collaboration, and integration. What we need is a different way to get the message into the minds of business leaders that security must be an integral, cooperative aspect of everything that they do. At the highest level, this means enterprise risk management (including having a risk management strategy that cuts across the entire organization); it means properly defining your organization (i.e. you cannot have accountability if nobody knows who is accountable to whom); it means performing business impact analysis (BIA) that properly considers all aspects, from business requirements straight through technical and technical security requirements; and so on.</p>
+
+<p>As security professionals, we have to wear not only technical hates, but we also need to wear business consultant hats. It's in this latter part that we see the most failure, because it is still relatively rare to find techies who truly understand business, or business people who truly understand technology.</p>
+
+<p>This problem is not new. The concept of "IT alignment" (or "realignment") has been around for decades. However, despite this being an old problem, one with many posited solutions, there seems to be a lack of traction with the upper echelons of management. Moreover, the regulatory landscape has seemingly created more trouble, whether it be SOX or HIPAA or GLBA or PCI DSS. Specifically, auditors - through organizations like the PCAOB, COSO, AICPA, ISACA, and the ITGI - have tried to drive agendas (in and of itself a problem) without understanding either the business OR the technology landscape of a given organization. All these competing stimuli seem to have resulted in the calcification of upper management, effectively locking out the "bridge builders" who are able to play liaison between business personnel and technologists.</p>
+
+<p>For this reason, I created the TEAM model. After performing the literature review, I concluded that the industry was full of self-serving interests pushing a specific agenda within a specific competency area, without any general formalized model (meaning, high-level abstract approach) for pulling all key competencies together. I thus set forth to create such a model, focused on requirements, around which the <a href="http://en.wikipedia.org/wiki/PDCA">ISO Plan-Do-Check-Act lifecycle</a> could be deployed.</p>
+
+<center><a href="http://www.secureconsulting.net/2008/03/02/team.jpg"><img alt="team.jpg" src="http://www.secureconsulting.net/2008/03/02/team.jpg" width="50%" height="50%" vspace="5" hspace="5"/></a></center>
+<center>(click for full-sized image)</center>
+
+<p>Without going into full details (you can <a href="http://falcon.secureconsulting.net/professional/papers/Tomhave_Thesis-FINAL.pdf">read my thesis</a> for that), I'd like to highlight a few key aspects of the model. As an aside, please note that I've made one tweak in the above diagram from the version in the thesis itself; namely, I'd previously distributed "Act" across all competencies, but have now put that within the Enterprise Risk Management competency, where I think it rightly belongs. Read <a href="http://en.wikipedia.org/wiki/PDCA">the PDCA page at Wikipedia</a> for more information, as I think it'll help one understand this decision.</p>
+
+<p>A quick terminology/acronym primer:<br />
+ * <em>Model</em>: An abstract, conceptual construct that represents processes, variables, and relationships without providing specific guidance on or practices for implementation.<br />
+ * <em>Framework</em>: A fundamental construct that defines assumptions, concepts, values, and practices, and that includes guidance for implementing itself.<br />
+ * <em>Methodology</em>: A targeted construct that defines specific practices, procedures and rules for implementation or execution of a specific task or function.  <br />
+ * <em>Universal Requirements Matrix (URM)</em>: At the core of the model, the URM represents a single definitional construct that incorporates all levels of applicable requirements, from business to technology to compliance/regulatory, etc.<br />
+ * <em>Enterprise Risk Management (ERM)</em>: The first of three competency areas, it provides the overall organizational direction for assessing and managing risk, has ownership of the policy framework, and takes on both the "Plan" and "Act" phases of the PDCA lifecycle.<br />
+ * <em>Operational Security Management (OSM)</em>: Responsible for the "Do" phase of the PDCA lifecycle, this second competency area is the recipient of directional guidance from the ERM, working to align itself to requirements articulated in the URM. OSM is a joint owner in the policy framework, with particular responsibilities for process and procedure and joint responsibility for ensuring the sanity of standards and policies.<br />
+ * <em>Audit Management (AuM)</em>: The third, and final, competency area, AuM is responsible for the "Check" phase of the PDCA lifecycle, with a requirement for maintaining independence from the other two competencies. Independence is important so as to server as an objective observer when testing controls, evaluating performance against requirements, as well as providing input to the business (represented by ERM) on potential areas of non-conformance with external requirements (such as regulations). The AuM competency does not serve to direct, but to inform, the ERM.</p>
+
+<p><a href="http://www.dragondoor.com/qigong?kbid=7000&m=14&i=51"><img border="0" align="right" vspace="5" hspace="5" src="http://affiliate.dragondoor.com/b.aspx?id=7000&mm=14&img=qigong_120x240.gif"/></a>The goal of this model is two-fold. First, it is intended to bring a requirements-centric approach to organizational management, insomuch as that the business must define what it does and clearly articulate its needs in execution around that objective. Second, the model is intended to free each competency to follow whatever frameworks and methodologies it deems appropriate, independent of each other competency, within the constraint of serving the needs of the business and meeting the requirements set forth in the URM.</p>
+
+<p>This second goal comes as a direct result of my frustration in research models, frameworks, and methodologies during the literature review. As mentioned above, everything I found seemed to have been designed to meet an agenda from within one of the competency areas. COBIT is a good example in that it grew out of the audit industry and was really created to improve the efficiency and effectiveness of control auditing. However, it was, and still is in some cases, misrepresented as the end-all-be-all solution for "security" within an organization, even though its focus was not on security, but rather IT controls.</p>
+
+<p>In the end, through implementation of the TEAM model, an organization can allow AuM to map their preferred framework to the rest of the business, independent of the other competencies. Similarly, ERM can choose a risk management approach that is appropriate to the business, and conducive to writing policies and promulgating requirements. Meanwhile, OSM can adopt whichever conventions best facility service delivery within the constrained set forth through the URM and the policy framework. The policy framework is represented in the diagram by the tiered triangle on the right side, reflecting its source in ERM, base in OSM, and gradations of detail from Policy to Standard and Guideline to Process and Procedure.</p>
+
+<p>Some have said that this model for enterprise assurance management is obvious and logical. Good - I hope so! Such comments have been leveled as criticism, and yet nowhere have I found a formalization of this approach. My hope is that putting this information out there for review and consideration will be helpful to individuals and organizations grappling with how to best move their security programs forward. Industry stagnation is, in my opinion, directly attributable to a failure to consolidate theory, reach consensus, and regroup for a new push. To borrow from <a href="http://blog.guykawasaki.com/">Guy Kawasaki</a>, we need to jump to the next curve, which means that we need to stop fighting the old battles and start thinking about new paradigms.</p>
+
+<center><SCRIPT charset="utf-8" type="text/javascript" src="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822/US/thfasvi-20/8002/d4a76658-58a1-43aa-87e2-3dde926245ac"> </SCRIPT> <NOSCRIPT><A HREF="http://ws.amazon.com/widgets/q?ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fthfasvi-20%2F8002%2Fd4a76658-58a1-43aa-87e2-3dde926245ac&Operation=NoScript">Amazon.com Widgets</A></NOSCRIPT></center>
+
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=leadership&amp;limit=20" rel="tag">leadership</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=research&amp;limit=20" rel="tag">research</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=TEAM%20model&amp;limit=20" rel="tag">TEAM model</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on March  2, 2008  2:19 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2008/03/my_philosophy_of_security.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/595</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2008/03/my_philosophy_of_security.html" rel="nofollow">My Philosophy of Security</a>:</p>
+                           
+                           <a id="p1627"></a>
+                           <div class="trackback" id="ping-1627">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2008/03/2008_goals_february_progress_r.html" rel="nofollow">2008 Goals: February Progress Report</a> from The Falcon's View<br />
+                                    This post is a continuation of my plan to provide a monthly reflection piece on progress against my 2008 Goals (previous report: January). Overall, February was a decent month marked by a forward-looking obsession. With a baby on the way,... <a href="http://www.secureconsulting.net/2008/03/2008_goals_february_progress_r.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1627" rel="nofollow">March  2, 2008  3:51 PM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1630"></a>
+                           <div class="trackback" id="ping-1630">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2008/03/transformational_change_starts.html" rel="nofollow">Transformational Change Starts with the Business</a> from The Falcon's View<br />
+                                    You can lead a horse to water, but you can't make it drink. As I've recently noted, the information security industry seems to be stagnated. We've come a long way from the old days of "security==firewall" - and yet, it... <a href="http://www.secureconsulting.net/2008/03/transformational_change_starts.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1630" rel="nofollow">March  6, 2008  9:43 PM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1635"></a>
+                           <div class="trackback" id="ping-1635">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2008/03/unbalancing_the_equation_to_ac.html" rel="nofollow">Unbalancing the Equation to Achieve Improved Data Privacy and Security</a> from The Falcon's View<br />
+                                    "Insanity: doing the same thing over and over again and expecting different results." - Albert Einstein If you've watched the Matrix trilogy of movies, then you might recall one of the themes from the movie. In the second installment, Neo... <a href="http://www.secureconsulting.net/2008/03/unbalancing_the_equation_to_ac.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1635" rel="nofollow">March 25, 2008  9:28 PM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1652"></a>
+                           <div class="trackback" id="ping-1652">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2008/08/a_systematic_approach_to_risk.html" rel="nofollow">A Systematic Approach to Risk Management</a> from The Falcon's View<br />
+                                    Ever since I took Systems Engineering I in my masters program at GW, I've viewed information security and risk management a little differently. In fact, as I've matured over the years, I've come to view the field(s) through multiple lenses,... <a href="http://www.secureconsulting.net/2008/08/a_systematic_approach_to_risk.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1652" rel="nofollow">August 14, 2008  9:06 AM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1670"></a>
+                           <div class="trackback" id="ping-1670">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/06/pci_is_a_distraction_proof.html" rel="nofollow">PCI Is a Distraction (proof!)</a> from The Falcon's View<br />
+                                    I don't care what anybody on the pro-PCI side of the argument says, PCI is absolutely a distraction. How do I know? Because I've just realized that I've been completely distracted by it in my new/current position. For those who... <a href="http://www.secureconsulting.net/2009/06/pci_is_a_distraction_proof.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1670" rel="nofollow">June  2, 2009 11:19 AM</a>
+                              </p>
+                           </div>
+                           
+                        
+                           
+                           <a id="p1687"></a>
+                           <div class="trackback" id="ping-1687">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">How NOT To Build a Security Program</a> from The Falcon's View<br />
+                                    Andy Willingham (Andy ITGuy, @andywillingham) had a post up early this week titled "Building a security program from the ground up". It's an interesting read, though a bit on the naive side. Having just come out of an environment where... <a href="http://www.secureconsulting.net/2009/11/how_not_to_build_a_security_pr_1.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1687" rel="nofollow">November 13, 2009  5:15 PM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="1790" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 1790);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>March  2, 2008  2:19 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2008/02/failure_to_recognize_a_creepy.html">Failure to Recognize a Creepy Receipt</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2008/03/2008_goals_february_progress_r_1.html">2008 Goals: February Progress Report</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

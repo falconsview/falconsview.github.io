@@ -1,0 +1,268 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Security, Development, Incentives, and Acceptable Use (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/02/you_cant_manage_security_witho.html" title="You Can't Manage Security Without Risk Management" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/03/attacks_on_chip_n_pin_tomtom_l.html" title="Attacks on Chip n PIN, TomTom (Linux)" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/03/security_development_incentive.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/850"
+    dc:title="Security, Development, Incentives, and Acceptable Use"
+    dc:identifier="http://www.secureconsulting.net/2009/03/security_development_incentive.html"
+    dc:subject="infosec"
+    dc:description="James McGovern has an excellent post recently on how agile development has grown to become the antithesis to security (see &quot;Agile is the antithesis to security...&quot;). He argues, quite correctly, that agile development is really just short-hand for &quot;really crappy..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-03-02T15:11:45-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/03/security_development_incentive.html">
+<dc:title>Security, Development, Incentives, and Acceptable Use</dc:title>
+<dc:description>James McGovern has an excellent post recently on how agile development has grown to become the antithesis to security (see &quot;Agile is the antithesis to security...&quot;). He argues, quite correctly, that agile development is really just short-hand for &quot;really crappy...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-03-02T15:11:45-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/02/you_cant_manage_security_witho.html">&laquo; You Can't Manage Security Without Risk Management</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/03/attacks_on_chip_n_pin_tomtom_l.html">Attacks on Chip n PIN, TomTom (Linux) &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Security, Development, Incentives, and Acceptable Use</h2>
+                     <div class="entry" id="entry-2074">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>James McGovern has an excellent post recently on how agile development has grown to become the antithesis to security (see <a href="http://duckdown.blogspot.com/2009/02/agile-is-antithesis-to-security.html">"Agile is the antithesis to security..."</a>). He argues, quite correctly, that agile development is really just short-hand for "really crappy coding practices". As <a href="http://telicthoughts.blogspot.com/2009/02/software-security-is-engineering.html">Telic Thoughts</a> discusses, security has to be built-in via quality software engineering principles - the very thing that is missing from agile dev practices. Unfortunately, these days there is very little "engineering" involved in software development. To me, this seems to be a side-effect of the evolution of the Internet. Most "applications" are web-based, written in some sort of scripting language, rarely compiled, and almost never optimized.</p>
+
+<p>These practices, or lack thereof, contribute to a state of insecurity that plagues the enterprise. However, none of this should surprise us because there's little incentive for businesses to implement secure practices (see Bruce Schneier's post <a href="http://www.schneier.com/blog/archives/2009/03/perverse_securi.html">"Perverse Security Incentives"</a>). Business is incentivized to do what the business ideally does best: make money. Anything that gets in the way of that purpose - including security - is often seen as a negative detractor; something to be ignored. Oftentimes we in the security industry make it very easy for this attitude to pervade the enterprise, putting us at a disadvantage.</p>
+
+<p>When you get down to it, the trick here is in finding a way to position security as an enabler; as a way to optimize the business. As Schneier notes in his post, Legal departments have been successfully making this case for years. After all, if you reduce liability exposure, you're reducing the risk of a significant financial loss. For security - and, really we should say IT security - we need to accomplish the same task within our different genre. Reducing risk resulting from poor IT security practices should be seen as a way of reducing the likelihood of financial loss. In fact, this is the exact goal that regulations like the Payment Card Industry Data Security Standard (PCI DSS) are hoping to accomplish (leaving aside who is making the changes and whose risk is being reduced).<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p>Toward this end, one of the areas where one can make ready changes to reduce your risk profile is through a combination of well-written (read: accessible to the average user) security policies and an active training and awareness program. In terms of policies, one of the best places to start is with acceptable usage policies (for an example, see the Think Smarter blog post <a href="http://think-smarter.blogspot.com/2009/03/acceptable-usage-polices.html">Acceptable Usage Polices</a>). As discussed in the Think Smarter piece - and a favorite axiom of mine - if you don't set expectations for performance and behavior, then you shouldn't be surprised when people don't meet them. Or, put another way, if you don't spell out who can do what with data, then people will get creative and do what they think is best, whether or not it's appropriate, in the best interest of the company, or performed in a proper (secure) manner.</p>
+
+<p>Just having policies, however, is not adequate. You can write policies until the end of time, but they won't mean a thing if they aren't written in understandable language, distributed to all personnel, kept in a place known to and accessible to all personnel, and reinforced through training and awareness initiatives (incidentally, as required by the PCI DSS).</p>
+
+<p>First, on understandable, or accessible, language... what I'm talking about here is writing policies, standards, guidelines, etc., in plain English (or whatever your locale's native language might be) using vernacular that is common to everyone. While it's easy to write broad, general, abstract policies, be careful not to just leave them in that format, but rather support them with more detailed guidance, including examples, that get the point across. For example, just saying "computing resources must only be used for business-related purposes" is a fine start, but back it up with examples of good or bad behavior, such as "for example, email is not to be used for personal business, nor should sensitive materials be sent via email without being encrypted." Linking to the IT department at this point, or to approved tools for encryption, would make this statement even better.</p>
+
+<p>Speaking of linking out, how do you publish your policies? Are they all in print somewhere? Or maybe published as Word or PDF documents? This might be fine in terms of trying to protect the content from change, but are these documents really accessible, then? What about publishing them in a wiki or sharepoint site format? If everyone knows to visit a given site, then that's where your policies, et al, should be. Most wikis, in particular, provide access controls to limit who can edit policies, and the text is automatically searchable. Using tools like a wiki are a great way to improve the accessibility of your policies, while providing an innovative way to cross-reference applicable tools and information.</p>
+
+<p>Last, training and awareness is an effective way to reduce the risks associated with bad practices by well-intentioned personnel. Training allows you to put clear examples in front of folks as to what they should and should not be doing. Awareness around basic topics like proper handling of data, the types of hacks that may be used against them directly, and even the basics of risk assessment and risk management can be useful. The key, however, is keeping each training session lively, dynamic, and filled with quick, memorable bits on important topics. The best examples will be from your own organization, presented in a non-indicting manner (excluding names) to demonstrate that given threats are real for the organization.</p>
+
+<p>In the end, if you put this all together - improved engineering practices in software development, understandable and accessible policies - including acceptable use policies, and security training and awareness - you should see measurable reduction in overall risk to the enterprise. Best of all, none of these changes should represent a major cost increase, and if done well could even help reduce costs by virtue of improving general practices and efficiencies.</p>
+
+<p>(<em>cross-posted to <a href="http://www.t2pa.com/cores/security-and-privacy/practical-security">http://www.t2pa.com/cores/security-and-privacy/practical-security</a></em>)</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=awareness&amp;limit=20" rel="tag">awareness</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=development&amp;limit=20" rel="tag">development</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=incentive&amp;limit=20" rel="tag">incentive</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=policy&amp;limit=20" rel="tag">policy</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=training&amp;limit=20" rel="tag">training</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on March  2, 2009  3:11 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/03/security_development_incentive.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/850</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2074" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2074);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>March  2, 2009  3:11 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/02/you_cant_manage_security_witho.html">You Can't Manage Security Without Risk Management</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/03/attacks_on_chip_n_pin_tomtom_l.html">Attacks on Chip n PIN, TomTom (Linux)</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

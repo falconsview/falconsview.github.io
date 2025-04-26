@@ -1,0 +1,41 @@
+References
+
+Hoff's Survivability Links (with many other links):
+http://www.rationalsurvivability.com/blog/?p=168http://www.rationalsurvivability.com/blog/?p=283http://www.rationalsurvivability.com/blog/?p=287http://www.rationalsurvivability.com/blog/?p=529http://www.rationalsurvivability.com/blog/?p=279
+
+Dilbert - STRIP FOR Sep 3, 2008 - on "best practices"
+http://www.dilbert.com/strips/comic/2008-09-03/
+
+NIST “Risk Management Framework (RMF) Overview”
+http://csrc.nist.gov/groups/SMA/fisma/framework.html
+
+COSO “Enterprise Risk Management Framework”
+http://www.erm.coso.org/
+
+EDUCAUSE/Internet2 “Risk Management Framework”
+http://www.educause.edu/security/riskframework
+
+Strategic and operational risk management
+New Risk Management Standard ISO 31000 2009
+http://www.vmia.vic.gov.au/display.asp?entityid=5536
+
+ISO/IEC 27005:2008  Information technology -- Security techniques -- Information security risk management
+http://www.iso27001security.com/html/27005.html
+
+ISO 31000
+http://en.wikipedia.org/wiki/ISO_31000
+
+ISO 31000  Risk Management Standard 
+Ottawa February 27, 2008 
+John Shortreed, Director, Institute for Risk Research 
+University of Waterloo
+http://www.irr-neram.ca/pdf_files/ISO%2031000.pdf
+
+CIS Security Metrics
+http://www.cisecurity.org/securitymetrics.html
+
+SecurityMetrics.org / MetriCon
+http://www.securitymetrics.org/
+
+NIST SP 800-55 "Performance Measurement Guide for Information Security"
+http://csrc.nist.gov/publications/nistpubs/800-55-Rev1/SP800-55-rev1.pdf
