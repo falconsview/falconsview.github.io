@@ -1,0 +1,290 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Creating Epic Fail Conditions: PCI and Best Practices (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/11/befuddled_by_risk.html" title="BeFUDdled by Risk" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/12/embrace_murphys_law.html" title="Embrace Murphy's Law" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/963"
+    dc:title="Creating Epic Fail Conditions: PCI and Best Practices"
+    dc:identifier="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html"
+    dc:subject="infosec"
+    dc:description="I grow increasingly impatient over the entrenched status quo. Throughout all the blah-blah from vendors, analysts, consultants, etc., there is very little new - let alone hopeful - news to look forward to. Why? Because the old school mindset fails..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-12-04T16:56:23-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html">
+<dc:title>Creating Epic Fail Conditions: PCI and Best Practices</dc:title>
+<dc:description>I grow increasingly impatient over the entrenched status quo. Throughout all the blah-blah from vendors, analysts, consultants, etc., there is very little new - let alone hopeful - news to look forward to. Why? Because the old school mindset fails...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-12-04T16:56:23-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/11/befuddled_by_risk.html">&laquo; BeFUDdled by Risk</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/12/embrace_murphys_law.html">Embrace Murphy's Law &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Creating Epic Fail Conditions: PCI and Best Practices</h2>
+                     <div class="entry" id="entry-2191">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>I grow increasingly impatient over the entrenched status quo. Throughout all the blah-blah from vendors, analysts, consultants, etc., there is very little new - let alone hopeful - news to look forward to. Why? Because the old school mindset fails time and time again. Why? Because the objectives are all wrong. Forget about risk - there's <em>almost</em> no point in trying to manage it right now (for a number reasons, as if organizations are really managing info risk right now anyway). If you want to survive, then you must establish a (legally) defensible position and then focus on recoverability, since it's not <em>if</em> but <em>when</em> bad things will happen.</p>
+
+<p>Fear not... despite the semi-angst-like nature of my opening paragraph, not all hope is lost. In fact, honestly, there's reason to be very hopeful, if only we can get mainstream thinking to shift away from the failed old ways. Old ways such as relying on "best practices" (aka <a target="_blank" href="http://www.dilbert.com/strips/comic/2008-09-03/">"mediocrity"</a>) and checklists (*cough*PCI*cough*). You cannot simply look for a list of known bad things (*ahem*AVIDSIPSFWACLDLP*ahem*) and then hope that everything will be ok. Instead, you absolutely, positively MUST build a program that is flexible (see my Sept. '09 ISSA Journal article <a target="_blank" href="http://falcon.secureconsulting.net/pubs-talks/Elasticity-ISSA-Journal-Sept-2009.pdf">"Elasticity: Will your organization bend or break?"</a>), that seeks to achieve a (legally) defensible position, and that optimizes recoverability for its environment (see <a target="_blank" href="http://www.secureconsulting.net/2009/08/defensibility_and_recoverabili.html">"Defensibility and Recoverability"</a>).<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p>This latest line of contention (perhaps sounding like a broken record from me) was triggered by a couple things I read today. First up, <a target="_blank" href="http://www.csoonline.com/article/509739/Ending_the_PCI_Blame_Game">"Ending the PCI Blame Game"</a> by Phil Mellinger (CEO, Turiss) posted on CSO Online. In it, Mellinger proposes changing the game, in part to get away from the "blame game" (aka "litigation"), though it's unclear what the new game is really supposed to be. He proposes five steps to the future, which are:</p>
+
+<p>1) <em>A moratorium on litigation to eliminate the "blame game"</em> - This is just a bad idea, because the "blame game" (aka "litigation") <em>should</em> drive companies toward adopting a legally defensible position. A short-term moratorium might be ok, but only to give companies a chance to refocus on doing the right things (i.e. defensibility and recoverability). More importantly, achieving such a moratorium would really take an act of Congress, and that seems highly unlikely to happen.</p>
+
+<p>2) <em>Mellinger wants PCI to evolve to address so-called "third-wave attacks"</em> - This is a moronic approach, promoting more of the same stupidity that got us here in the first place. We need to quit writing checklist responses to known threats. Instead, we need to require due diligence and define how you measure due diligence and then let the details sort themselves out (in court and on the books). If the position is not legally defensible, then companies will lose in court and the markets, plain and simple.</p>
+
+<p>3) <em>Improve fraud intelligence</em> - This is very reasonable, though as part of an overall program, NOT simply adding more checklist items to PCI. Mellinger says "This is a complete change in our current PCI dogma..." but I'm not convinced what he's asking for really is a change. What he's advocating is more of the same reactivity and checklist response. Threat intelligence is great for feeding the evolution of security programs, but only when the programs focus on defensibility and recoverability (i.e. survivability).</p>
+
+<p>4) <em>Changes are needed in international laws that create sanctuaries for attackers</em> - I absolutely agree, though this is only the responsibility of companies involved from a lobbying perspective. Addressing this issue will require political leverage and diplomacy. Good luck with that - I won't hold my breath. Competing nation-states have too much to gain strategically in maintaining these sanctuaries. The only way I could see this really happening is if the number of attacks originating from countries like the USA against countries like Russia and China were to increase dramatically (and be incredibly successful). Such a shift in the balance of attacks could drive all parties toward unilateral agreements equivalent to Cold War era agreements.</p>
+
+<p>5) <em>"...new security approaches must be developed to thwart attackers and their weapons..."</em> - Yes, this is definitely a good idea, but again, this should be driven by the desire for achieving a (legally) defensible position and for optimizing recoverability; it should NOT be driven by some sort of old school reactionary mindset.</p>
+
+<p>The other article that got me thinking about how things are so broken, but that there may be a light at the end of the tunnel, was Bejtlich's <a target="_blank" href="http://taosecurity.blogspot.com/2009/12/let-hundred-flowers-blossom.html">"Let a Hundred Flowers Blossom"</a> post today. Overall, I think he's pretty solid on his premise, though - as usual - he makes me nervous as his progressiveness sounds marginally reactive. It's striking the balance that is important, of course, between reactive and proactive measures. Field-assessed security, done well, can be very effective in building a defensible position, but it does not in any way decrease the importance of recoverability.</p>
+
+<p>One thing he does bring up that concerns me is the mono-culture argument... is this argument really valid any more? It seems to me that there are a couple flaws in it. Part of the mono-culture argument is that you don't want everything on the exact same system, because if you do that, then one compromise can affect everything. However, this isn't terribly close to reality, is it? Rarely will a single OS-level exploit (for example) successfully target Windows XP, Vista, 2003 Server, 2008 Server, and Windows 7 (dare I say it would never happen?). Application-level attacks would be a different story, of course, but the point is this: is there even such a thing as a mono-culture any more?</p>
+
+<p>The other aspect of the mono-culture argument is based on a premise that one slice of the pie is significantly larger than all the other slices, such that moving platform to a smaller slice will benefit you by making you less of a target. Unfortunately, if enough platforms switch over time (as has happened), then the slices become more comparable in size. At some point, all (major) slices become equally appealing. While this may reduce the number of attacks against the originally dominate platform, one would expect to see a correlated increase in attacks against the other major slices. As such, has anything improved from a security standpoint? It seems that you still have to focus on defensibility and recoverability, and simply relying on a less popular platform is nowhere near adequate in either case.</p>
+
+<p>Lastly, I would agree with him that some standards are needed, but I think they need to be outcome-oriented, requiring:<br />
+ - analysis and capabilities that achieve recoverability objectives<br />
+ - adequate measures be implemented to achieve a legally defensible posture<br />
+ - a shift in mindset from "winnable" to "survivable" online conflicts/incidents/events</p>
+
+<p>Comparably, attackers have nothing to lose while the targets have everything to lose. This sort of skewed loss ratio tells us that we cannot hope to be 100% successful, and thus must focus on reducing the size of the losses. We can only achieve this through a survivability approach that seeks to build a (legally) defensible position with optimized recoverability.<br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=innovation&amp;limit=20" rel="tag">innovation</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on December  4, 2009  4:56 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/963</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html" rel="nofollow">Creating Epic Fail Conditions: PCI and Best Practices</a>:</p>
+                           
+                           <a id="p1697"></a>
+                           <div class="trackback" id="ping-1697">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2010/03/legal_defensibility_doctrine.html" rel="nofollow">Legal Defensibility Doctrine</a> from The Falcon's View<br />
+                                    In August 2009 I wrote about "Defensibility and Recoverability", in which I started developing the notion of using a legal basis for building a defensible position. I later expanded on this notion in the post "Creating Epic Fail Conditions: PCI... <a href="http://www.secureconsulting.net/2010/03/legal_defensibility_doctrine.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1697" rel="nofollow">March 24, 2010 10:56 AM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2191" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2191);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>December  4, 2009  4:56 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/11/befuddled_by_risk.html">BeFUDdled by Risk</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/12/embrace_murphys_law.html">Embrace Murphy's Law</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

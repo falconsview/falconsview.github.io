@@ -1,0 +1,1067 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2011/03/survivability-rather-than-secu.html">
+<dc:title>Survivability Rather Than Security Metrics </dc:title>
+<dc:description>(Note: this is a somewhat incomplete thought.) There&apos;s been a lot of talk of late about security metrics, but I&apos;m increasingly inclined to think that we&apos;re shooting at the wrong elusive target. Why do we keep chasing after measuring relatively...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-03-02T14:29:32-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2011/03/survivability-rather-than-secu.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2011/02/rsa-2011-in-summary.html" title="RSA 2011: In Summary" />
+    <link rel="next bookmark" href="http://54.197.56.127/2011/03/appsec-dc-2010-video-posted.html" title="AppSec DC 2010 Video Posted" />
+    
+    
+    <title>Survivability Rather Than Security Metrics  - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2341" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Survivability Rather Than Security Metrics </h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2011-03-02T14:29:32-05:00">March  2, 2011  2:29 PM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/03/survivability-rather-than-secu.html#comments">2 Comments</a>
+
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2011/03/survivability-rather-than-secu.html#trackbacks">1 TrackBack</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>(Note: this is a somewhat incomplete thought.)<br />
+There's been a lot of talk of late about security metrics, but I'm increasingly inclined to think that we're shooting at the wrong elusive target. Why do we keep chasing after measuring relatively immeasurable things? Instead, I think we should be starting with the things that we can measure. After all, security is a feeling, not a tangible outcome, right?<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>Instead of measuring something so squishy, let's instead look at the operational metrics that we can absolutely measure. For example:<br />
+ - Uptime<br />
+ - Availability<br />
+ - Performance (e.g., TPS, MIPS)<br />
+ - Time-to-Fix<br />
+ - <a target="_blank" href="http://en.wikipedia.org/wiki/Mean_time_between_failures">MTBF</a> (for a broad definition of "failure") <br />
+ - SNR (representative here - i.e., how much "background noise" do we get from scans vs. detected legit attacks)<br />
+ - Visibility (into code, into environment, etc.)</p>
+
+<p>These strike me as useful metrics to track, at least operationally, with an ability to then roll them up into tactical, and even strategic, reports. Thinking about this all in terms of survivability, then, we want to be able to answer these questions:<br />
+ - Have operations been negatively impacted?<br />
+ - Were we able to continue operations despite degraded conditions?<br />
+ - What measurable impact occurred during the impact period?<br />
+ - How quickly can we resolve issues once detected?</p>
+
+<p>These, I think, are very useful metrics to monitor. One could rightly argue that they're primarily IT operations metrics, but they go directly toward key infosec objectives, too. In terms of survivability, they help us gain a better picture about resiliency, such as benchmarking how recoverability, as well as to a degree defensibility.</p>
+
+<p>Defensibility, of course, is where we start potentially getting back into squishiness. We have a similar problem with performing a FAIR risk analysis, too, when we look at the "Vulnerability" factor, since there's no simple, reliable, consistent way to measure it (i.e., this is one of the more subjective values in the overall scheme of things).</p>
+
+<p>Putting this thought into a properly framed risk management context, based around survivability as the main driver, I think that metrics developed along these lines are more useful today, while also being reasonably accurate and precise. It's time to put aside fuzzy "security" metrics in favor of something that tells the business just how reliable its systems and applications are.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=metrics&amp;limit=20';return false;" rel="tag">metrics</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=survivability&amp;limit=20';return false;" rel="tag">survivability</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">1 TrackBack</h2>
+
+    
+    
+
+
+    
+    
+        
+    <div class="trackbacks-content">
+        
+        <div class="trackback" id="ping-1894">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2011/03/lord-kelvin-was-wrong.html" rel="nofollow">Lord Kelvin Was Wrong</a> from The Falcon's View on <a href="#ping-1894" rel="nofollow">March 29, 2011  2:32 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        Subtitle: Why Evidence-Based Risk Management Is As Good As Good As It Can Get "If you cannot measure it, you cannot improve it." (Lord Kelvin) I go round-and-round on the whole "information risk" topic... I believed in it for a... <a href="http://www.secureconsulting.net/2011/03/lord-kelvin-was-wrong.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+</div>
+
+
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">2 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-848" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://appsandsecurity.blogspot.com" href="http://appsandsecurity.blogspot.com" rel="nofollow">John Wilander</a></span>
+
+                    | <a href="http://54.197.56.127/2011/03/survivability-rather-than-secu.html#comment-848"><abbr class="published" title="2011-03-02T15:16:14-05:00">March  2, 2011  3:16 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Interesting thoughts. For me it relates to the formal logic space and "Safety Properties" and "Liveness Properties" of computer programs. When I read up on those things a few years back many puzzle pieces fell into place in my head. Just a taste ...</p>
+
+<p>A safety property specifies that â€œnothing bad happens during execution.â€ Informally, it states that once a bad action has taken place (thereby excluding the execution from the property) there is no extension of that execution that can remedy the situation.<br />
+For example, access-control policies are safety properties since once the restricted resource has been accessed the policy is broken. There is no way to â€œun-accessâ€ the resource and ï¬x the situation afterward.</p>
+
+<p>A liveness property, in contrast to a safety property, is a property in which nothing exceptionally bad can happen in any ï¬nite amount of time. Any ï¬nite sequence of actions can always be extended so that it lies within the property.<br />
+Availability is a liveness property. If the program has acquired a resource, we can always extend its execution so that it releases the resource in the next step.</p>
+
+<p>Check for instance out "More Enforceable Security Policies" <a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.18.3048" rel="nofollow">http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.18.3048</a><br />
+It has most good references back to the original work too.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-849" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.thirddefense.com" href="http://www.thirddefense.com" rel="nofollow">Jared Pfost</a></span>
+
+                    | <a href="http://54.197.56.127/2011/03/survivability-rather-than-secu.html#comment-849"><abbr class="published" title="2011-03-02T19:42:40-05:00">March  2, 2011  7:42 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Agree. However I wouldn't mix metrics (measurement vs. target value) with risk assessment (loss predictions). I know you get that, curious what inspired this post?</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>March  2, 2011  2:29 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2011/02/rsa-2011-in-summary.html">RSA 2011: In Summary</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2011/03/appsec-dc-2010-video-posted.html">AppSec DC 2010 Video Posted</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

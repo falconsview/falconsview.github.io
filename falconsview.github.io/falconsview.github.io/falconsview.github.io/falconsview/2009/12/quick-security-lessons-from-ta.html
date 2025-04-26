@@ -1,0 +1,946 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2009/12/quick-security-lessons-from-ta.html">
+<dc:title>Quick Security Lessons From Target</dc:title>
+<dc:description>I really hate shopping at Target, which is probably why I end up spending so much time there every week. Every time I go to one it&apos;s like going on safari: you never know what you&apos;ll see, but you&apos;re hopeful...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-12-09T22:23:14-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2009/12/quick-security-lessons-from-ta.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2009/12/how-not-to-talk-to-customers.html" title="How Not To Talk To Customers" />
+    <link rel="next bookmark" href="http://54.197.56.127/2009/12/more-on-possibility-and-risk.html" title="More On Possibility and &quot;Risk&quot;" />
+    
+    
+    <title>Quick Security Lessons From Target - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2195" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Quick Security Lessons From Target</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2009-12-09T22:23:14-05:00">December  9, 2009 10:23 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>I really hate shopping at Target, which is probably why I end up spending so much time there every week. Every time I go to one it's like going on safari: you never know what you'll see, but you're hopeful you'll get something good. And, frankly, it's absolutely maddening. I've lost count of the number of times that I've purchased something trivial there (soap, for instance) only to come back to restock and find that the product is out or, more likely, not carried any more.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>In thinking about it, the Target shopping experience is a lot like dealing with the faithful opposition in information security. There's a method to their madness, all designed to help drive up profitability, such as through increased spontaneous purchases. Following are three attributes of Target stores that can be generalized to our own infosec industry.<br />
+<ul><br />
+<li><strong>Inconsistency:</strong> If you've visited a few Target stores, one of the things you'll notice is that seemingly no two are laid out exactly the same way. There are about a half-dozen here in the area that I visit on a somewhat regular basis, depending on convenience, and every single one has a unique layout. In infosec - and particularly as regards phishing, spam, and web appsec - we find that inconsistency leads to confusion, which in turn leads to user error and compromise. Spam filters, URL filters, AV, IDS/IPS... these all rely on being able to match a consistent pattern. When the consistency isn't there, then the tools aren't overly useful. As for the attackers, they love to leverage off inconsistency to optimize their attacks. We need to find better ways to establish consistency in key areas (such as with authentication, reputation, identity, warnings, and errors) that can be used universally without limiting developer creativity.</li><br />
+<li><strong>Randomness:</strong> I swear, Target must use some sort of randomization engine in determining what products get sent to what stores, and for how long a given product will be carried. Randomness, of course, causes me to wander around looking for a suitable alternative, increasing the likelihood that I'll see other things and buy them. Similarly, attackers online use randomness to help evade security controls and to attract your attention.</li><br />
+<li><strong>Driving Spontaneity:</strong> Bouncing people around, causing them to browse just to find their normal purchases, helps increase spontaneous purchases. This effect is similar to "limited time only" sales, which is, of course, a popular phishing and spammer technique to drive people to make a hasty, bad decision. Every purchase you make at Target that was not planned or necessary is a win for them, just as every spam link you click is a win for the bad guys. It all comes down to finding the right triggers to cause you to react automatically instead of with forethought and planning.</li><br />
+</ul></p>
+
+<p>The next time you make a shopping trip to Target, consciously look at the end-cap displays. Note how much you have to wander, or even criss-cross, the store just to find the few things you're seeking. The entire situation is skewed in their favor with the intent toward causing you to do something you wouldn't, under consideration, really need or want to do. Now compare this to common online attacks. The similarities are interesting, and suggest that these bad guys are as well-versed in influence, social engineering, and marketing as the supposed "good guys" are in the retail industry. :)</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20';return false;" rel="tag">infosec</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=psychology&amp;limit=20';return false;" rel="tag">psychology</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>December  9, 2009 10:23 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2009/12/how-not-to-talk-to-customers.html">How Not To Talk To Customers</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2009/12/more-on-possibility-and-risk.html">More On Possibility and "Risk"</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

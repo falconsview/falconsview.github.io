@@ -1,0 +1,259 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Which Came First: The Software or The Security? (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/05/does_tokenization_solve_anythi.html" title="Does Tokenization Solve Anything?" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/05/dowsing_your_way_through_enter.html" title="Dowsing Your Way Through Enterprise Risk" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/05/which_came_first_the_software.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/887"
+    dc:title="Which Came First: The Software or The Security?"
+    dc:identifier="http://www.secureconsulting.net/2009/05/which_came_first_the_software.html"
+    dc:subject="infosec"
+    dc:description="A very common chant in the secure coding (or application security, or just plain infosec) community is &quot;bake security in from the beginning.&quot; From the perspective of writing new code, building new apps and systems, and so on, this makes..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-05-15T20:00:06-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/05/which_came_first_the_software.html">
+<dc:title>Which Came First: The Software or The Security?</dc:title>
+<dc:description>A very common chant in the secure coding (or application security, or just plain infosec) community is &quot;bake security in from the beginning.&quot; From the perspective of writing new code, building new apps and systems, and so on, this makes...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-05-15T20:00:06-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/05/does_tokenization_solve_anythi.html">&laquo; Does Tokenization Solve Anything?</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/05/dowsing_your_way_through_enter.html">Dowsing Your Way Through Enterprise Risk &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Which Came First: The Software or The Security?</h2>
+                     <div class="entry" id="entry-2112">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>A very common chant in the secure coding (or application security, or just plain infosec) community is "bake security in from the beginning." From the perspective of writing new code, building new apps and systems, and so on, this makes perfect, wonderful, logical sense. And, for that matter, while it may on the surface look like fixing vulnerabilities after the fact is cheaper, those calculations often leave out the cost of resolving a compromise (see <a href="http://jeremiahgrossman.blogspot.com/2009/05/mythbusting-secure-code-is-less.html">"Mythbusting, Secure code is less expensive to develop"</a>). But, in chatting with my <a href="http://www.developingsecurity.com/">good buddy</a> yesterday, an interesting question was raised: what about all the software that's already out there?</p>
+
+<p>Historically, it's pretty clear that software came well before software security. Systems were originally closed and the level of expertise and access necessary to fool with them was generally quite high. This is not to say that security didn't exist - in fact, quite the opposite, security has obviously existed long before software. The problem, however, is that security up until the advent of modern technology was oriented toward physical security, supplemented by policy and law. This problem plagues us to this day insomuch as the human brain is not wired to handle non-physical threats very well.</p>
+
+<p>As a result of this order of evolution, an interesting problem pops up; that of retroactively applying software security practice to legacy code and systems. Perhaps the best example of this type of problem is the Y2K rush to fix billions of lines of legacy code before the rollover to 2000. Millions - perhaps billions - perhaps trillions - of dollars were poured into addressing this one little bug. Now think about legacy software - such as SCADA networks - and consider that fixing those problems are not trivial. Now look at the PCI DSS. Here is a standard that expects companies to address a long list of problems in <em>legacy systems and applications</em> that may or may not be conducive to retrofitting security measures.</p>
+
+<p>Flipping back to the Y2K comparison, the estimate at the end of 1999 was that <a href="http://news.cnet.com/Y2K-cost-estimate-cut-by-2-billion/2100-1091_3-235131.html">$21B was spent</a> fixing all that code. $21B - yes, billion. What's particularly interesting about those cost estimates, however, is who was generally stuck footing that bill. <a href="http://news.cnet.com/GE-pins-Y2K-costs-at-550-million/2100-1091_3-217859.html">GE estimated $550M spent</a>. And then there's the insurance industry, which <a href="http://www.faqs.org/abstracts/Insurance/Insurers-Y2K-Costs-Could-Top-658-Billion-Pricing-and-consolidation-farewell-to-the-P-C-cycle.html">spent an estimated $6.8B</a>. Now consider who else was frequently stuck fixing this problem: vendors, banks, and other large corps.</p>
+
+<p>Now let's compare this to compliance with the PCI DSS. No longer are the costs just borne by large corps. This isn't a problem addressed only at companies with billion dollar budgets. In fact, just the opposite is true. Many organizations affected are small in comparison with the Y2K companies. And yet, when you get down to it, we're looking at requirements that are much more extensive than fixing a date calculation bug. Yes, Y2K had many challenging logic problems to fix, but that's not the point. The point is that small companies are oftentimes locked into platforms that are by definition legacy and that may never achieve PCI compliance - certainly not at the hands of the merchants (I'm somewhat excluding compensating controls here - please allow that to slide;).</p>
+
+<p>There is, of course, a counter-argument. Whereas many Y2K systems were mainframes coded in the 70s and 80s, using such fun languages as ADA and COBOL, the current applications are coded using much more modern codebases. In fact, a significant number of in-scope systems are web-based, and thus represent a fairly mild challenge in terms of fixing. But let's not forget that there are dozens of requirements to address in these environments, and the scope can very easily explode if simple things like network segregation do not exist.</p>
+
+<p>None of this is to say that companies should not be doing what is required in PCI. In fact, just the opposite, they should be applying these principles - <strong>within a risk management framework</strong> - to their entire organization. However, that being said, it is important to consider regulations like PCI in a proper context that is weighted to include the cost of addressing legacy systems and applications. Then add in time estimates. Y2K was not addressed overnight. It took a few years of extensive work, and even then it was never fully done. To expect that organizations will be able to rapidly address all their software security weaknesses in short order is similar folly.</p>
+
+<p>This situation then introduces an interesting challenge: does security testing, planning, and remediation include a time component? Should it? The answer, I believe, is a resounding "YES!" with a caveat. That caveat is - wait for it - risk assessment and management. *TADA!* The best reasonable way to factor in time considerations for addressing security concerns is by assessing the risks and prioritizing them accordingly. Bringing this back to PCI, I will then point you at the <a href="https://www.pcisecuritystandards.org/education/prioritized.shtml">"Prioritized Approach for DSS 1.2"</a>, which effectively acknowledges that it is not reasonable to expect instant full compliance with the DSS. Just the opposite, the card brands recognize the costs and challenges involved. Of course, it would be interesting to know how their risk assessment maps to yours, but that's a different story. :)</p>
+
+<p>So which came first, the software or the security? I guess it depends on what kind of security we're talking about and when the software was created. :)</p>
+                           </div>
+                           
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=PCI&amp;limit=20" rel="tag">PCI</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=software&amp;limit=20" rel="tag">software</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=time&amp;limit=20" rel="tag">time</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on May 15, 2009  8:00 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/05/which_came_first_the_software.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/887</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2112" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2112);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>May 15, 2009  8:00 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/05/does_tokenization_solve_anythi.html">Does Tokenization Solve Anything?</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/05/dowsing_your_way_through_enter.html">Dowsing Your Way Through Enterprise Risk</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

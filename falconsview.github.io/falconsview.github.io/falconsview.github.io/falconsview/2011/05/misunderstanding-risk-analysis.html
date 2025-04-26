@@ -1,0 +1,982 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2011/05/misunderstanding-risk-analysis.html">
+<dc:title>Misunderstanding Risk Analysis</dc:title>
+<dc:description>I&apos;ve been peripherally aware of the &quot;Understanding and Managing Risk in Security Systems for the DOE Nuclear Weapons Complex&quot; report released over the past couple weeks, including the bit of a stir it&apos;s caused. However, it wasn&apos;t until reading Jack...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2011-05-24T10:17:17-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2011/05/misunderstanding-risk-analysis.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2011/05/thoughts-on-the-dropbox-contro.html" title="Thoughts On the Dropbox Controversy" />
+    <link rel="next bookmark" href="http://54.197.56.127/2011/05/the-marginal-utility-of-breach.html" title="The Marginal Utility of Breach Data" />
+    
+    
+    <title>Misunderstanding Risk Analysis - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2366" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Misunderstanding Risk Analysis</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2011-05-24T10:17:17-05:00">May 24, 2011 10:17 AM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>I've been peripherally aware of the <a target="_blank" href="http://www.nap.edu/catalog.php?record_id=13108">"Understanding and Managing Risk in Security Systems for the DOE Nuclear Weapons Complex"</a> report released over the past couple weeks, including the bit of a stir it's caused. However, it wasn't until reading <a target="_blank" href="http://blog.uncommonsensesecurity.com/2011/05/risk-analysis-and-things-that-go-boom.html">Jack Daniel's post</a> that I sat up and started to take notice. Why? Well, for starters, because I get irritated when people criticize something that I don't think they understand (and, here, I'm really talking more about Nuclear and Radiation Studies Board than anybody else).</p>
+
+<p>The fundamental problem with the report is that it seems to be both misleading and misinformed. On the first count, I believe the Abbreviated Version does not really get across the true sentiments of the Board. They both disparage use of quantitative models, and yet endorse their use in certain scenarios. I believe there's a reason for this, which I'll come back to in a minute. On the second count, the comments they make against quantitative risk analysis methods take on a tone very common in criticism of these methods. Specifically, they're questioning the ability to estimate the abilities of an attacker, with a dash of "black swan" thrown in for fun. More on that later as well.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>Key Quotes</strong></p>
+
+<p>First, I want to start with analysis of some key quotes from the Abbreviated Version of the report.<br />
+<blockquote>"The committee concluded that the solution to balancing cost, security, and operations at facilities in the nuclear weapons complex is not to assess security risks more quantitatively or more precisely. This is primarily because there is no comprehensive analytical basis for defining the attack strategies that a malicious, creative, and deliberate adversary might employ or the probabilities associated with them. However, using structured thinking processes and techniques to characterize security risk could improve NNSA's understanding of security vulnerabilities and guide more effective resource allocation."</blockquote></p>
+
+<p>This paragraph makes me both nod and wince. I nod, because I recognize key terms like "precisely" in there that reflect a potentially useful understanding that accuracy is more important than precision. Perhaps they understand that they don't need more specific information to make reasoned assessments. However, they then turn around and talk about the inability to do a "comprehensive" analysis because there's no way to enumerate all threat variations. While this statement is true - that you cannot enumerate all threat variations in detail - it does not preclude use of quantitative risk analysis methods, and suggests that the Board doesn't truly understand the methods available.</p>
+
+<blockquote>"The committee has concluded that defining security risks more precisely (e.g., by using a probabilistic risk assessment approach) will not significantly improve NNSA's security planning. This is primarily because there is no comprehensive analytical basis for defining the attack strategies an adversary might employ or the probabilities of success associated with them."</blockquote>
+
+<p>Here, again, we see some confusing and contradictory statements. There seems to be an incorrect belief that "quantitative" equals "precise," which in my experience isn't correct. Instead, it should equate to "accurate" (or "more accurate"). This is a common misunderstanding amongst people new to quantitative risk analysis, as well as to critics. When you ask someone to make an estimate, they typically err toward precision instead of accuracy, choosing a single point value rather than selecting a range. Useful quantitative analysis will focus on this latter method, and then will work - using calibration techniques - to refine the range so that it can be as precise as possible without sacrificing accuracy. This may seem like semantics, but I assure you that it's not.</p>
+
+<p>Also troubling here is that they are hung-up on "attack strategies" instead of instead focusing on the asset and how it could be compromised. Through a basic analysis, I think you would find that there's really only one way to possess a physical asset: to actually take physical control of it. Knowing this, you can then shift your thinking away from being so concerned about specific attacks and instead look at survivability strategies that make sense.</p>
+
+<blockquote>"RECOMMENDATION 3-1: The committee advises against the use of probabilistic risk assessment (PRA) in designing security for the DOE nuclear weapons complex at this time. However, the committee recommends the use of some tools and techniques traditionally associated with PRA to improve NNSA's understanding of the full spectrum of risks to the complex."</blockquote>
+
+<p>I wanted to highlight this recommendation because in one paragraph they have both recommended against using quantitative risk analysis (reduced to PRA in their report), and yet also recommend using it. Talk about misleading...</p>
+
+<blockquote>"RECOMMENDATION 4-1: The committee recommends that DOE/NNSA generate a range of plausible and specific objectives that the site security system is intended to preclude, for use in scenario generation. An adversary perspective should be taken into account when generating these objectives."</blockquote>
+
+<p>I'd be shocked if this wasn't being done already. This is physsec 101 for high-value assets. You have to understand the value of the asset being protected, and you have to understand the environment in which it's being protected. Then and only then can you take a strategic approach to making good decisions to implement security measures, which can and <em>should</em> be supported through a formal risk analysis process (remember: we're talking strategic planning here and, by extension, decision analysis, ergo risk analysis). This recommendation is at best obvious, and at worst implies scary things about the lack of preparedness of key sectors.</p>
+
+<p><strong>Misleading Statements</strong></p>
+
+<p>My first impression of the report was that its statements were particularly misleading. Why would quantitative analysis be deemed pointless in this case? First, let's stop to understand how a quant risk analysis method like FAIR would analysis a given scenario. In FAIR, "risk" is a derived value defined as the probably frequency and probably magnitude of future loss. In this calculation, you look at two aggregate figures: Loss Event Frequency (LEF) and Loss Magnitude (LM). Before I go into more details on what LEF is, let's short-circuit the analysis right here and understand why the Board likely thinks a quant approach doesn't make sense.</p>
+
+<p>If you understand basic mathematics, then you realize that multiplying infinity by any number still gives you infinity. If you consider that the stockpile of nuclear weapons has a very large value, then the estimated magnitude of a loss event (LM) would be very large. As such, even if LEF ends up being very, very, very low, it ends up not mattering all that much since LEF*LM will still be a very big number. In this sense, I can absolutely see why the Board recommends against use of a quant risk analysis method.</p>
+
+<p>Now, that being said, I don't think they understand how risk analysis would operate on such a scale. Moreover, I really wonder if they are providing reasonable estimates on LM, or if they're grossly inflating them based on FUD. I'm not an expert in the field, but I wonder about the following things:<br />
+ * Who would know about these facilities and assets?<br />
+ * Who would be capable of compromising the assets?<br />
+ * Who would be capable of doing something with the assets?<br />
+ * Is there any scenario where someone could accidentally cause an incident (i.e., not a malicious actor)?<br />
+ * What are the worst-case scenarios?</p>
+
+<p>From a purely hypothetical perspective, my guess is that you're worried about 2 things: 1) Compromise of the asset by a malicious actor. 2) Disabling the facility so that the assets cannot be used for their intended purpose (offensive or defensive). In both of these cases, I think a quantitative risk analysis can be performed. Given that we can only see part of the report, I have to wonder if much of this is represented already, but simply not shared. On the flip side, maybe things really are so poorly protected today that the Board felt it necessary to force the DOE to go back to basics (how sad and disturbing if true).</p>
+
+<p><strong>Misinformed Statements</strong></p>
+
+<p>As noted in the "Key Quotes" section above, there are several instances where statements are made that suggest a lack of understanding of how quantitative risk analysis methods operate. It seems to suggest a lack of real experience using these methods, and/or a lack of exposure to a variety of methods. I find it unsurprising that a number of experienced and highly credentialed people - particularly from academia - would not balk at spouting off on topics about which they seem to have, at best, a broken understanding.</p>
+
+<p>Some of the fundamental issues in the report include:<br />
+ * A focus on "precision" with no accounting for "accuracy." This suggests that they're not familiar with estimation and calibration techniques.<br />
+ * Excessive focus on "probabilistic risk assessment" in a generic sense, with the criticism hinging on "imperfect data." If they truly understood how quantitative risk analysis worked, then they would not discount it.<br />
+ * A tendency to lean toward scenario-based analysis, which is fine, but without an understanding that such an analysis would be improved through use of quantitative methods. It's almost like they viewed the notions as being incompatible when, in fact, the opposite is true.</p>
+
+<p><strong>Final Thoughts</strong></p>
+
+<p>All of this is to say that I have a hard time lending the Board much credence or credibility given what seems to be a failure to properly understand the topic that they were charged with evaluating. If they cannot provide a more cogent and consistent argument, then the report must be discounted accordingly. I very much question the rigor in the analysis, not to mention qualifications of those making the assessment. There are simply too many apparent errors.<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>May 24, 2011 10:17 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2011/05/thoughts-on-the-dropbox-contro.html">Thoughts On the Dropbox Controversy</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2011/05/the-marginal-utility-of-breach.html">The Marginal Utility of Breach Data</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

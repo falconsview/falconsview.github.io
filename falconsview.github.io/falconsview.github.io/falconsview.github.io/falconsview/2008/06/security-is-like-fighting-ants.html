@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2008/06/security-is-like-fighting-ants.html">
+<dc:title>Security is Like Fighting Ants</dc:title>
+<dc:description>Have you ever had to deal with an ant infestation around your home? We&apos;ve recently moved into a rental home, and our first major headache has been dealing with ants. It&apos;s apparently a seasonal thing (beginning and end of Summer),...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2008-06-18T16:00:03-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2008/06/security-is-like-fighting-ants.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2008/06/good-commentary-on-airport-sec.html" title="Good Commentary on Airport Security Insanity" />
+    <link rel="next bookmark" href="http://54.197.56.127/2008/06/urgent-call-congress-telecom-i.html" title="Urgent: Call Congress - Telecom Immunity (again!)" />
+    
+    
+    <title>Security is Like Fighting Ants - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-1915" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Security is Like Fighting Ants</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2008-06-18T16:00:03-05:00">June 18, 2008  4:00 PM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>Have you ever had to deal with an ant infestation around your home? We've recently moved into a rental home, and our first major headache has been dealing with ants. It's apparently a seasonal thing (beginning and end of Summer), but it was still quite annoying, not to mention a bit gross. The first incursion occurred on move-in day. After having several guys help out, we grilled, and from around the door to the deck I noted a steady stream of ants that followed the trail of crumbs all the way to the nearby kitchen sink. Suffice to say, cleaning has become a much higher priority since then.</p>
+
+<p>Dealing with this matter has gotten me thinking about corollaries with security. These ants are external attackers (which is now known to be our primary concern, thanks to Verizon's report), and they seem to be very motivated to get through the perimeter. Once past the perimeter, they're much harder to contain. Also, how you defend against them varies depending on your goals.<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><a href="http://www.pntrac.com/t/RD1GRUBDPUhDR0k9RkZBSQ"><img src="http://www.pntrac.com/b/RD1GRUBDPUhDR0k9RkZBSQ" border="0" align="right" vspace="5" hspace="5" width="120" height="600" title="Shop and Learn about Supreme Fitness and Well Being" alt="Shop and Learn about Supreme Fitness and Well Being"></a><strong>A Porous Perimeter</strong><br />
+In hunting down the source of our ant infestation, I noticed a steady stream emanating from under the front door. When I looked at where the foundation joined, sure enough, there were the ants, clearly coming through what must be a crack in the foundation. I sprayed the heck out of it with a strong neurotoxin, and that helped somewhat, but it was at best a quick fix. When the owner's handyman came by, I asked him about.</p>
+
+<p>"Say, I've been dealing with ants, which seem to have found a crack near the step by the front door. Is it possible to seal it?"<br />
+"Sure, you can seal it, but they'll just find another place to come in. Your foundation is full of cracks, and there's simply no way to patch them all."</p>
+
+<p>This scenario is very similar to the modern enterprise network. With all the internet services in use today, network perimeters are very porous, and it's simply not adequate to try and plug all the holes. In fact, for business reasons, you don't want all the holes plugged!</p>
+
+<p>It's thus very important to move to a risk resiliency mindset. You cannot eliminate the risk, so your only alternative is to become more resilient to them. A balance of corrective, detective, and preventative measures will provide the depth or protection necessary to create a survivable exposure.</p>
+
+<p><strong>Short-Term vs Long-Term Protection</strong><br />
+In tackling the ant problem, there are a couple key approaches. In the short-term, Raid was my friend, quickly killing the initial incursion, and offering "up to 4 weeks" of protection. However, when I moved to the next incursion by the front door, it quickly became evident that Raid was not going to solve the problem completely.</p>
+
+<p>My next step was a trip to Home Depot to find longer-lasting solutions. I quickly honed in on the Ortho Home Defense and MAX Defense product lines. Both claimed "up to 12 months" of protection, which sounded a lot better than 4 weeks. I started by spreading the Home Defense granules around the external perimeter of the house (look - more perimeter defense!). This solution didn't seem to have much effect, to be quite honest, and I'm sure the heavy rains this Spring made it worse.</p>
+
+<p>Next, I moved to indoor perimeter defense using the Home Defense spray. This spray is essentially a neurotoxin and it was very effective at killing ants as they tried their frontal assault. However, it didn't address the root problem. For that, there are two key approaches: the Ortho MAX Defense lawn treatment, and the Ortho Ant-B-Gone treatment. I have a bag of the MAX Defense waiting for application, but the handyman recommend Ant-B-Gone, and that seems to have been useful.</p>
+
+<p>This approach corresponds well to incident response, and particularly correction. If you have an active breach, you're going to want to address is quickly and concisely. You may need to collect data around the breach to support a legal investigation, or for postmortem debriefings. However, beyond that, you really want to plug the immediate hole asap.</p>
+
+<p>However, once that hole is plugged (in my case, spraying the dickens out of the stream under the front door), you need to move into a more strategic approach that addresses the larger problem. In my case, this is where the Ant-B-Gone came into play. Ant-B-Gone is a fine powder that sticks to the ants without killing them right away. They then track it back to the nest, which in turn works to kill the larva in addition to the workers themselves.</p>
+
+<p>In IT, this may mean changing patch management practices, adding better logging and monitoring, or even migrating an application to an entirely different platform or access method. From a business perspective, it means providing a long-term outlook on risk and working jointly to understand the tolerance for given degrees of risk, translating this tolerance into actionable and budgeted approaches for effectively managing the risk. Again, the goal is resiliency that will lead to survivability.</p>
+
+<p><a href="http://www.pntrac.com/t/RD1GRUBEPUhDR0k9RkZBSQ"><img src="http://www.pntrac.com/b/RD1GRUBEPUhDR0k9RkZBSQ" border="0" align="left" vspace="5" hspace="5" width="120" height="60" title="Shop and Learn about Supreme Fitness and Well Being" alt="Shop and Learn about Supreme Fitness and Well Being"></a><strong>Triage and Root Cause Analysis</strong><br />
+In applying the Ant-B-Gone treatment, you don't just carpet-bomb the entire yard (in contrast to the MAX Defense solution, which is a whole-yard treatment). Instead, you have to look for concentrations of ants and then sprinkle a bit of the powder over them and the path, all the way back to the apparent source (nest). I tried this yesterday, in fact, powdering a long line to where they disappeared under a timber around the front of the house. One day later, that stream of ants is gone, and there doesn't seem to be new motion elsewhere.</p>
+
+<p>Within security, we must do the same thing. In an incident response situation, your first step is to perform triage (much like in the ER) to determine where the problem exists, formulating a plan for immediate response. After the immediate response, you then move on to root cause analysis. Why did the incident occur? Or, what is the source of the vulnerability?</p>
+
+<p>As noted under the last point, your goal is to identify strategic (or possibly tactical) improvements that will lead to an overall improvement in the resiliency of the organization. The goal is not just to address the specific issue, but to find ways to effectively address an entire class of risks, if at all possible.</p>
+
+<p>Root cause analysis is an excellent approach to ferreting out these problems. It's akin to pulling a thread on a sweater in order to see where it unravels. However, in this case you're goal is to track an issue back as far as possible to identify the <em>practices</em> that were deficient and led to the specific issue.</p>
+
+<p><strong>Correction vs Prevention, and the Importance of Detection</strong><br />
+My last observation on the ant issue relates to the difference in approach between correction and prevention. When I first detected an ant incursion, I immediately worked to correct the problem through use of Raid, and I also sought to take preventative actions in keeping a cleaner home. However, no matter how clean the house was, the ants still kept coming through the front door. Simple prevention alone was not adequate.</p>
+
+<p>Thus came the evolved need for a proactive prevention method that was almost corrective in nature. Taking this more forward approach has proven to be far more effective in keeping the ants out. None of which is to understate the importance of detection. If you don't move around with your eyes open, you're going to miss things. If you don't run regular tests on your environment, you're going to have weaknesses just waiting to be exploited.</p>
+
+<p>And this, I think, is the most important lesson from the whole situation. No matter what corrective and preventive actions I took, it still was important to vigilantly monitor for new incursions. The ants are still out there, wanting to come inside, much as hackers want to compromise your data or systems. Logging and monitoring, with an active capability to actually review those logs on a regular basis, are an extremely important component to the risk resilient enterprise. After all, how can you correct something you don't know about, and how limited will your preventative measures be if you don't constantly evolve them? Detection is knowledge, and knowledge is power.</p>
+
+<center><a href="http://www.pntrac.com/t/RD1GREZJPUhDR0k9RkZBSQ"><img src="http://www.pntrac.com/b/RD1GREZJPUhDR0k9RkZBSQ" border="0" width="468" height="60" title="Kettlebells at DragonDoor.com" alt="Kettlebells at DragonDoor.com"></a></center>
+
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20';return false;" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>June 18, 2008  4:00 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2008/06/good-commentary-on-airport-sec.html">Good Commentary on Airport Security Insanity</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2008/06/urgent-call-congress-telecom-i.html">Urgent: Call Congress - Telecom Immunity (again!)</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

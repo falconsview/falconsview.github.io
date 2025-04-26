@@ -1,0 +1,1065 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2009/11/how-not-to-build-a-security-pr-1.html">
+<dc:title>How NOT To Build a Security Program</dc:title>
+<dc:description>Andy Willingham (Andy ITGuy, @andywillingham) had a post up early this week titled &quot;Building a security program from the ground up&quot;. It&apos;s an interesting read, though a bit on the naive side. Having just come out of an environment where...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-11-13T17:12:39-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2009/11/how-not-to-build-a-security-pr-1.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2009/11/a-couple-brief-political-quibb.html" title="A Couple (Brief) Political Quibbles..." />
+    <link rel="next bookmark" href="http://54.197.56.127/2009/11/top-11-signs-we-never-settled.html" title="Top 11 Signs We Never Settled in Phoenix" />
+    
+    
+    <title>How NOT To Build a Security Program - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2186" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">How NOT To Build a Security Program</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2009-11-13T17:12:39-05:00">November 13, 2009  5:12 PM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2009/11/how-not-to-build-a-security-pr-1.html#comments">2 Comments</a>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>Andy Willingham (Andy ITGuy, @andywillingham) had a post up early this week titled <a href="http://www.andyitguy.com/blog/?p=822">"Building a security program from the ground up"</a>. It's an interesting read, though a bit on the naive side. Having just come out of an environment where my role was to build a security program from the ground up, I have a little bit of insight into this challenge. Despite my own failure and eventual inexplicable job loss, there is still much to learn, and much that I can add to this discussion.</p>
+
+<p>Of course, it wouldn't be right to talk about this topic without first acknowledging one of my major biases; that is, my strong preference toward the model I developed specifically toward how to structure an information assurance program (see my earlier posts <a href="http://www.secureconsulting.net/2009/07/do_you_need_a_security_departm.html">"Do You Need a Security Department?"</a> and the slightly older <a href="http://www.secureconsulting.net/2008/03/my_philosophy_of_security.html">"My Philosophy of Security"</a>). Below is a snapshot of the TEAM Model, which I'll most likely mention in my responses.<br />
+<center><a href="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"><img src="http://www.secureconsulting.net/2009/07/16/TEAMv2.png" border="0" vspace="5" hspace="5" width="50%" height="50%"></a></center><br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p>With that said, let me tackle some of Andy's comments and my gripe with them. Please note that I am working from the assumption of "building a security program from the ground up" and all that this implies (such as that there isn't already a program in place).</p>
+
+<blockquote>"Here are a couple of assumptions: They already have a firewall and host based security suite installed and up to date. Beyond that, itâ€™s a crap shoot."</blockquote>
+
+<p>These are rather unfortunate assumptions. What is meant by "host based security suite"? AV? Something else? If you're coming into an existing organization to build a security program from the ground up, then you shouldn't come in with any assumptions. I've been in more than one organization that hasn't had a firewall, let along ANY host-based security (no AV, no HIDS, no logging, no monitoring, etc). Assumptions - especially bad assumptions - can be very bad things (see what <a href="http://securosis.com/blog/always-assume">a certain analyst says on this topic</a>).</p>
+
+<p>If you're going to assume anything going into a new "green field" opportunity like this, it should be that nothing exists, nothing is being done, and that you will be met with inordinate amounts of resistance and organizational inertia. You should assume that you will have been given the "happy" story during the interview process, and that reality is far more stark. You should also assume that, despite the lip service paid in the interviews, there will be no way to know the commitment of executive management until you are actually onboard and asking them to put some skin in the game.</p>
+
+<blockquote>"If I were coming into a company and had a free hand to do what I wanted I would first look at what I could do to get the biggest bang for my buck quickly and then focus on the long-term strategic planning."</blockquote>
+
+<p>Here we have another bad implicit assumption. There's no such thing as having a "free hand to do what I wanted" in an existing organization. To think otherwise is to be somewhat deluded. The reality is that the business existed before you got there, and it's likely to exist without you being there in the future, or so they'll all be thinking in the back of their minds.</p>
+
+<p>In the comments of Andy's post Kevin Riggins makes the excellent observation that one of the first things you're going to need to do is go back to executive management AFTER the interview (and after you've started, presumably) to truly test their commitment and support. Without it, your life will be much more difficult. If you're thinking "not true, you can always do bottom-up", then sure, that's ok for certain operational concerns, but don't you dare bring up strategy or risk. :)</p>
+
+<blockquote>"Iâ€™d say the first thing Iâ€™d do is implement a monitoring system so I can have some insight into what is going on."</blockquote>
+
+<p>This comment isn't wrong, per se, it just fast-forwards through a number of steps. Monitor what? Logs? IDS? Firewall logs? Do you have a log server? Are you talking about *shudder* a SIEM solution? At the same time, what about policies and practices? So you're monitoring and seeing bad things... then what? Do you have the policies and executive support necessary to actually do something when you start seeing badness (and it definitely is <em>when</em> and not if).</p>
+
+<p>Your goal from the outset should be to quickly assess the state of the environment and start architecting a path to a defensible and recoverable posture (see my posts <a href="http://www.secureconsulting.net/2009/08/defensibility_and_recoverabili.html">"Defensibility and Recoverability"</a> and <a href="http://www.secureconsulting.net/2009/10/surviving_in_degraded_conditio.html">"Surviving in Degraded Conditions: A Human Analogy"</a> for more on what this means). Note that I say "quickly assess". Depending on the size of the organization, this could be done fairly quickly. Walk through a facility or two, talk to as many people as people, from execs to tech to the manager in between, and then start building that roadmap.</p>
+
+<p>More important that anything here is that you need to learn what is critical to the business. If X blows up, then Y really bad consequence will occur. That sort of thing.</p>
+
+<p>Also, note here that I'm not even talking about "risk" at all. Forget about risk for a moment and just think about basic prioritization. It very simply comes down to a) identifying what's critical to the business, b) defending what's critical to the business, and c) building contingency plans for adequate recovery of what's critical to the business <strong>when</strong> something bad happens.</p>
+
+<blockquote>"Once that was in place Iâ€™d probably implement a Vulnerability Management program that starts with Application and OS patching and then focus on the scanning, testing, exploiting etc..."</blockquote>
+
+<p>I have to be honest, my jaw dropped a bit when I read this one. That's quite the leap in logic. Don't get me wrong, patching is very important, but the way he says it here, almost nonchalantly, gives one the false impression that this is somehow easy or trivial. There is, in fact, so much more that needs to be done than simply going out and implementing such a program. Change management, configuration management, access control and management, etc. Sure, none of these are mandatory for patching, but they absolutely have ties into a Vulnerability Management program. As for scanning, testing, and exploiting... well, let's just say that this is somewhat jumping the gun, and an area where one needs to be very cautious, too.</p>
+
+<p>Specifically, as you shift from the "push and pray" patch model to a formal Vulnerability Management program, don't forget that you are going to need to know what changes are being in your environment, when they're going in, what they're doing (impact), who made the change, and who authorized them, among other things. Yes, get the patching going (if it's not already), but hold off on the Vulnerability Management project until you have a better handle on processes.</p>
+
+<p>---<br />
+After the last quote he talks about awareness training, governance, and policies & procedures being all run in parallel as much as possible. Gack. He talks earlier about long-term strategic planning, which is good in theory, but in practice not so much. He ends with "This is just a starting point." Fair enough, but the approach is far too technical without really knowing or understanding anything about the business, the environment, and - far more importantly - the people.</p>
+
+<p>Allow me to offer alternative advice:<ol><li><strong>Garner Strong Executive Support:</strong> You must have strong executive support. None of this <a href="http://www.secureconsulting.net/2009/07/on_responsibility_without_auth.html">"responsibility without authority"</a> nonsense. The minute you walk through the door, you will have to seek out and build support for everything you want to do. Unless you're given the authority to go make changes directly (extremely unlikely) then you will have to get various levels of management onboard for everything you want to do. Passive resistance can be deadly.</li><br />
+<li><strong>Lightning Assessment:</strong> You must understand what is important to the business, as well as begin to get a picture of why things are the way they are today (tech decisions, etc.). I'm not advocating here any sort of formal assessment, and I'm certainly not talking about "risk" anything. This is quite literally a very rapid organizational walk-through, if you will, to see who's around, what people do, and, more important than anything else, what is absolutely critical to the business. If you're unable to find this out, then I suggest looking for a new job, because what you're facing will be a situation not dissimilar to the one I was in. If the business doesn't have a solid direction ("making money" is not a solid direction), then you're not going to have much luck contributing to the success of the business. By the way, in addition to identifying what is critical to the business, you should also keep your eyes peeled for major gaping holes that need immediate redress.</li><br />
+<li><strong>Share Responsibility, Gain Accountability:</strong> Security needs to be a responsibility shared by everybody in the organization. Hence the role of basic awareness training. What I'm talking about here is something more radical. It's not enough to try to make people aware of security. Instead, you need them to have a vested interest in making sure critical assets are defended and can be recovered rapidly when something bad happens. From the investment comes a lever for establishing accountability. And, sad to say, it's then time to help move the business back from the squishy touchy-feely approach and get HR engaged so that when people do dumb, stupid, or patently bad things, they are disciplined accordingly, up to and including termination of employment. We seem to have lost the edge in the business world, and this is one area where we can start getting it back.</li><br />
+<li><strong>Not All Low-Hanging Fruit Are Equal:</strong> It's very tempting to walk into a new situation and immediately chase after the things that you personally know how to handle quickly and easily. Unfortunately, those things may be completely worthless in the grand scheme of things (well, not <em>completely</em>, I suppose). Based on the outcome of your Lightning Assessment above, you should know what's truly important to the business. From this, you should then be able to start focusing on how well protected those critical assets are. This is where you should start tackling low-hanging fruit. Now, obviously at the same time you need to keep an eye out for gaping holes that are so egregious that they cannot be allowed to stand.</li><br />
+<li><strong>Fight to Simplify:</strong> One of the biggest challenges in a ground-up opportunity is keeping yourself grounded. It's too easy - as I can attest from first-hand experience - to get completely overwhelmed by everything that needs to be done. This is why I recommend the previous steps, forcing yourself to find the truly important systems and then focus almost exclusively on them. It could be argued that this approach could be dangerous, and that is absolutely true. A long-term focus on just a narrow slice of the enterprise is fool-hardy. It will lead you to an outcome akin to all the major breaches we've read about recently. Now, in fact, this whole stripped-down approach is meant as a starter, not as a long-term strategy. At some point, you will have to look at the big picture. BUT... you can't really do any of that until you first establish the basics, building some political capital that will then free you to move onto bigger, better things.</li><br />
+<li><strong>Documentation and Processes:</strong> The one thing you will definitely have in your control is the ability to generate documentation. Whether it goes anywhere is, of course, a different story, but it is at least one thing you can - and definitely should - make use of. You'll want to document your findings, your short-term plans, your ideas, your low-hanging fruit, your critical business findings, etc. The other piece of documentation that is very useful relates to processes. It's great to start by documenting what people are doing today, and then offering incremental improvements to better formalize and standards those practices. Similarly, if nothing formal is being done (e.g. change management), you can develop basic processes to get the fundamentals in place (a formal write-up, a formal approval, a paper trail) and then you can go about iterating through incremental improvements over time as necessary. The key take-aways here are that a) you can write documentation from Day 1, b) make sure to bear in mind the difference between writing a process and having it followed.</li><br />
+<li><strong>Strategy:</strong> Everybody wants one, but how many actually use them? Seriously. Security has historically been reactive in nature. There are many proactive things we can do to help reduce some threats, but in the grand scheme of things it can be very difficult to make a case for proactive efforts until you have a baseline against which to measure success. Nonetheless, you will need a big picture at some point - though preferably after the first 6 months. The important role of a strategy is that it will look at the full breadth of the organization, rather than the short-term focus you've maintained just on critical resources. You NEED to look at everything at some point, because it is the weak links that will lead to the deepest attacks. Your strategy should also establish levels of tolerance for downtime, interruption, and loss of data. What we're talking about here is taking the critical resources initial assessment and expanding that into a broader conversation with executive management about how much pain they can tolerate in certain areas. This will help you set overarching priorities for the long-term. It will help you determine what your minimal level of defensibility and recoverability will need to be.</li><br />
+</ol></p>
+
+<p>It would be easy to go on and on and on here, but I think the main points are covered. Certainly, there are other ways to tackle this challenge, but the above represents a significant chunk of what I learned in my 7 months facing such a challenge.</p>
+
+<p><em>(Please Note: This is cross-posted from the <a href="http://www.t2pa.com/cores/security-and-privacy/practical-security">T2PA Practical Security Core</a>.)</em><br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=green%20field&amp;limit=20';return false;" rel="tag">green field</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=program&amp;limit=20';return false;" rel="tag">program</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=security&amp;limit=20';return false;" rel="tag">security</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">2 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-680" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.andyitguy.com" href="http://www.andyitguy.com" rel="nofollow">Andy Willingham</a></span>
+
+                    | <a href="http://54.197.56.127/2009/11/how-not-to-build-a-security-pr-1.html#comment-680"><abbr class="published" title="2009-11-13T19:12:29-05:00">November 13, 2009  7:12 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Ben, You have some great content in here but I think you missed the entire point of my post. It wasn't to tell you how to build your program because I can't tell you how to build your program. The point was to talk about what are some of the things that would possible give you the biggest advantage if you came into an environment that had nothing more than a firewall and host based security suite whether it consist of av, hids, ips, firewall or whatever. The point was to generate conversation around this very topic. It wasn't a treatise on everything that has to be done. It's a 50,000 foot view.</p>
+
+<p>Obviously you don't just throw out a Vuln Mgmt program. I was making the assumption (there's that word again) that my readers would understand that fact. Also the choice of the word assumptions was a poor one. I should have said made it clear that you knew that the only security was a firewall and a host suite and that you knew exactly what it consisted of.</p>
+
+<p>I greatly appreciate your input into the conversation and am sorry that your last position didn't go as you would have liked. </p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-681" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2009/11/how-not-to-build-a-security-pr-1.html#comment-681"><abbr class="published" title="2009-11-13T21:57:24-05:00">November 13, 2009  9:57 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>@Andy -</p>
+
+<p>I think I did understand exactly your point, which is why I felt compelled to interject my own opinions into the fray and, relative to your post, try to correct what I saw as some bad base assumptions. I absolutely saw your preliminary criteria (firewalls, host-based security), and in fact spoke to that in my post.</p>
+
+<p>The big problem here is that people often make bad assumptions, and implicit ones at that (see Rich Mogull's piece on assumptions from this week - <a href="http://securosis.com/blog/always-assume)." rel="nofollow">http://securosis.com/blog/always-assume).</a> Your post had a lot of assumptions, many of which were based more in fantasy than reality. Believe me, I know, because I went into my last situation thinking all the things you were talking about, and I got completely crushed in the process.</p>
+
+<p>So, hey, it's all my opinion, blah blah blah, but know this: I read your entire piece through multiple times before publishing and understood exactly what you were saying. I just happened to believe that most of what you were saying was wrong. *shrug* It's the great thing about opinions - we all get to have them.</p>
+
+<p>cheers, and thanks for reading and responding!</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>November 13, 2009  5:12 PM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2009/11/a-couple-brief-political-quibb.html">A Couple (Brief) Political Quibbles...</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2009/11/top-11-signs-we-never-settled.html">Top 11 Signs We Never Settled in Phoenix</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

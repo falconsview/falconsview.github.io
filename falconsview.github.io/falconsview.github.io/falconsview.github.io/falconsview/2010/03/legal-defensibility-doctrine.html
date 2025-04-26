@@ -1,0 +1,1269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html">
+<dc:title>Legal Defensibility Doctrine</dc:title>
+<dc:description>In August 2009 I wrote about &quot;Defensibility and Recoverability&quot;, in which I started developing the notion of using a legal basis for building a defensible position. I later expanded on this notion in the post &quot;Creating Epic Fail Conditions: PCI...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-03-24T10:52:49-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2010/03/bsidesaustin-2010-recap.html" title="#BSidesAustin 2010 Recap" />
+    <link rel="next bookmark" href="http://54.197.56.127/2010/03/freeconference-is-freaking-out.html" title="FreeConference Is Freaking Out" />
+    
+    
+    <title>Legal Defensibility Doctrine - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2239" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Legal Defensibility Doctrine</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2010-03-24T10:52:49-05:00">March 24, 2010 10:52 AM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html#comments">6 Comments</a>
+
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html#trackbacks">5 TrackBacks</a>
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>In August 2009 I wrote about <a target="_blank" href="http://www.secureconsulting.net/2009/08/defensibility_and_recoverabili.html">"Defensibility and Recoverability"</a>, in which I started developing the notion of using a legal basis for building a defensible position. I later expanded on this notion in the post <a target="_blank" href="http://www.secureconsulting.net/2009/12/creating_epic_fail_conditions.html">"Creating Epic Fail Conditions: PCI and Best Practices"</a>, along with touching on it in a few other places. More recently, I used the idea of "legal defensibility" through the article "Architecting Adequacy: When Good Enough Really Is" in the March 2010 issue of <a target="_blank" href="https://www.issa.org/Members/Journal/">The ISSA Journal</a> (I'll post an ungated copy of the article when I get a chance). I also floated the idea at the ABA InfoSec Committee meeting during RSA, where I the response was very positive, including getting some air time on a couple panels in the LAW track at RSA.</p>
+
+<p>So, that's a brief background, but what is it, really? What is "legal defensibility" and why do I think it amount to a new doctrine for the infosec community as a whole? More importantly, how can this new notion be used to successfully promote security initiatives, and why should you take it as a legitimate new argument and approach?<br />
+</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>A Definition</strong></p>
+
+<p>Legal defensibility is defined as follows: An organization must proactively build a case that can withstand legal scrutiny, which demonstrates that it has done everything reasonable to protect itself and its assets in order to preserve and build long-term value. It should operate under the assumptions that it will experience a security incident, and that as a result of such an incident, it will be subject to legal proceedings (civil or criminal) that challenge whether or not it did what was necessary and reasonable in protecting itself. The principles inherent in <a target="_blank" href="http://www.cert.org/research/97tr013.pdf">networked system survivability</a>, including defensibility and recoverability, should become the basis of the proactive approach to building such a case.</p>
+
+<p><strong>A Security Strategy</strong></p>
+
+<p>First and foremost, I view legal defensibility as a <em>security</em> strategy, rather than as a legal strategy. <a target="_blank" href="http://en.wikipedia.org/wiki/IANAL">IANAL</a>, and thus this is <em>not</em> legal advice. The main driving factor behind this approach is that the traditional arguments are tired and failed. We've been only marginally successful within infosec in compelling business and government to do what is necessary to protect its own interests, protect its intellectual property, and to do what is right for its shareholders, employees, and customers.</p>
+
+<p>The best two examples I can give for why this is a plausible and useful security strategy are:<br />
+<blockquote>1) <em>The case of Heartland</em>: Heartland Payment Systems thought that they were compliance with PCI DSS. They thought that they were secure. However, as <a target="_blank" href="http://www.csoonline.com/article/499527/Heartland_CEO_on_Data_Breach_QSAs_Let_Us_Down">this interview with their CEO shows</a>, they didn't look at security holistically, but rather took on blind faith that compliance with a single regulation (that only covered a portion of their environment) somehow made them "secure."</p>
+
+<p>2) <em>Risk management confusion</em>: Let's be honest for a minute and realize a couple things. First, outside insurance and financial services, very few organizations are doing true, formal risk management. Second, most "risk management" is based on a house a cards, failing to pin the risk ratings to anything meaningful to the assessed organization. As a result, there is generally a lot of confusion among executives and senior management about what information "risk" means at any given point in time. There's a failure to link the risk assessment findings to concrete business ideas.</blockquote></p>
+
+<p>The goal of legal defensibility is to provide a far less abstract approach to enterprise security that looks at the whole of the organization, starting from what is core to the business, and working on a couple key premises.</p>
+
+<p><strong>Fundamental Premises of Legal Defensibility</strong></p>
+
+<p>There are two fundamental premises that underpin the notion of legal defensibility:<br />
+ * <em>When, not if</em>: The reality today is that all organizations should expect a security incident to occur. In fact, it's a reasonable expectation that every organization has already experienced, or is currently experiencing, a security incident of some type. These incidents may range from malware infections to targeted attacks to an actual data breach. Regardless, there can be no speculation about "if" an incident will occur, but rather the focus should be exclusively on "when" a breach will occur and then how your organization will respond to the breach.</p>
+
+<p> * <em>Protect what's valuable</em>: As part of this doctrine, it is important to know what is important to the business (and we're really talking about material value here - if X is affected, then it will have Y impact on your business - that kind of idea). In my experience, businesses tend to intuitively know what is mostly important, but it seems rare - especially in the SMB space - that businesses are actually acting in their own self-interest these days (see my grip <a target="_blank" href="http://www.secureconsulting.net/2010/02/a_sense_of_selfpreservation.html">"A Sense of Self-Preservation"</a> from February 2010). It is imperative that organizations know themselves very well, and that they then act in a self-preserving manner that looks at long-term value rather than obsessing over quarterly results.</p>
+
+<p>There's also a bonus attribute that should be considered: Publicity of data breaches does not have long-term negative financial impact. Again taking the case of Heartland, they took an initial hit on their stock price (see <a target="_blank" href="http://www.transactionworld.net/articles/2009/july/cover_story.asp">this analysis</a> from July 2009), but they're now back to trading around the same levels they were at pre-breach announcement (see <a target="_blank" href="http://www.google.com/finance?client=ob&q=NYSE:HPY">Google finance: HPY</a>). More importantly, they've developed a new product strategy that will undoubtedly add long-term value to their business.</p>
+
+<p><strong>The Key: Reasonability</strong></p>
+
+<p>Back to legal defensibility, then, as a concept, it's useful to understand the key to its success, and on what a lot of its viability will hinge: reasonability. In the court system, the concept of "the reasonable man" is often used to gauge whether actions were appropriate in a given context. This concept has ties back into the world of "common law" and if you're super-interested, I recommend taking a couple law classes just to see how crazy the legal system used to be. ;)</p>
+
+<p>In this instance, there are two uses of reasonability that are core to the doctrine:<br />
+ * <em>Reasonable standard of care</em>: A concept that I've heard lawyer bandy about, a "reasonable standard of care" essentially means that your organization has done what is demonstrably "reasonable" in protecting its assets. The key term here, though, is "reasonable" and whether or not your interpretation meets the interpretation of the general populace. The case I've heard referenced in a classroom environment is that of <a target="_blank" href="http://www.lawnix.com/cases/the-tj-hooper.html">T.J. Hooper</a>, where a shipping company didn't use technology that was "so extensive as to be a nearly universal practice or custom, but not required by statute," resulting in a major loss (to their client), resulting in their being found negligent. While this case may not be popular in modern case law, it nonetheless gives us a notion of how the courts can interpret "reasonable standard of care."</p>
+
+<p> * <em>Reasonably foreseeable</em>: The other attribute here that makes the concept a bit challenging is that of what is reasonably foreseeable. We've already set the concession that it's not if, but when, an incident will occur. In building your defenses, and hedging with recoverability capabilities, what if you don't defend against the latest, greatest 0-day attack? Were you negligent? While this is certainly a concern, and a potential threat to this doctrine, the answer I think lies in the development of case law and the fair application of law. You should be prepared for 0-day vulnerabilities and exploits, and you should have a methodology in place for addressing them. However, it is not reasonable to expect that you will somehow have patched an 0-day before a patch is available, though you should be expected to have assessed the impact to your environment and taken reasonable compensating efforts to protect yourself in the interim.</p>
+
+<p>The bottom line here is that you'll need to be prepared to make an argument to <a target="_blank" href="http://en.wikipedia.org/wiki/12_Angry_Men_%281957_film%29">12 angry men</a> that demonstrates your organization did what was reasonable to protect itself and its assets. Failing to make such a compelling argument will inevitably result in a conclusion that your organization was not competent, may have been negligent, and who knows what else.</p>
+
+<p><strong>Not Just "Due Diligence"</strong></p>
+
+<p>My friend Alex recently wrote an article titled <a target="_blank" href="http://newschoolsecurity.com/2010/03/why-im-skeptical-of-due-diligence-based-security/">"Why I'm Skeptical of 'Due Diligence' Based Security"</a> in which he talks about some potential failings in the traditional "due diligence" approach to security. As he rightly points out, this approach is really the same as the compliance mindset, which focuses not on doing what is right or adequate, but on doing the bare minimum to meet the technical requirements of regulations and agreements, but without doing what is necessary to protect the business itself.</p>
+
+<p>Legal defensibility is about far more than due diligence. Due diligence and compliance, along with risk management, are certainly part of building a legally defensible position, but they are not the end - just part of the means to the end. Instead, legal defensibility is very broad, very flexible, and heavily emphasizing proactivity.</p>
+
+<p><strong>Inclusive, Holistic, Comprehensive</strong></p>
+
+<p>One of the comments I commonly make is that we need to throw out information risk management when we first start talking about legal defensibility. For too long we've tried to use a risk-based approach to securing the business, only to have it fail time and time again. The reasons for these failures are myriad, and to much to cover in-depth here. Suffice to say, there are a number of failings, ranging from the concept being too abstract (or, not tied concretely to business values) to the specific methodologies themselves being wrapped in controversy (true or fake), such as whether or not we have any reasonable way to estimate the probability that a certain bad thing will happen. Overall, I view risk management as being too myopic. It lacks the breadth of view and knowledge necessary to make quality decisions for the whole enterprise.</p>
+
+<p>This is not to say that there is not a time, place, and purpose for risk management. Within a legal defensibility approach there is absolutely a place for risk management. In fact, in action you will find that you still very much need risk management - just not as the sole driving force. In fact, most areas of security management have a place in a legal defensibility case. How much do I believe this to be true? Enough so that I still believe that my TEAM Model v2 (picture below) still provides an excellent roadmap for implementing a legally defensible position. If you examine the picture (click to see it full-size), you will see that there is a place for knowing the business, a place for information risk management, a place for information security operations, and a place for quality and performance management (which includes audit, compliance, pentesting, code analysis, and various metrics and measurements).<br />
+<center><a target="_blank" href="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"><img border="0" hspace="5" vspace="5" src="http://www.secureconsulting.net/2009/07/16/TEAMv2.png"></a></center></p>
+
+<p>The point here is this: Legal defensibility doctrine promotes an inclusive, holistic approach to protecting the business. By it's vary nature, it cannot exclude anything that is reasonably part of a comprehensive strategy, barring measures that simply aren't cost-effective.</p>
+
+<p><strong>Promotes Proactivity</strong></p>
+
+<p>Perhaps the most important aspect of legal defensibility doctrine is that it promotes a proactive approach to protecting the business that allows the business to define itself in a manner that makes business sense. This approach requires de-emphasizing activities that are tied exclusively to regulatory compliance in favor of planning measures that benefit the business and help protect and grow long-term value. Simply put: if a given measure costs more than it benefits the business, then a legitimate argument can be made - proactively - that the measure will not be used simply because it does not add long-term value. As long as that analysis is reasonably complete, and that the decision is thoroughly documented for posterity, then it seems to follow that the position is defensible.</p>
+
+<p><strong>Codifiable</strong></p>
+
+<p>Part of the elegance in legal defensibility is that it is flexible in a way few other regulations currently are. And, unlike regulations like Sarbanes-Oxley (SOX) or Gram-Leach-Bliley (GLBA), though legal defensibility would not specify exact technical countermeasures, it does create the basis for legal arguments that go to the heart of competence and negligence in the managing of the business. If there is one thing American business culture could use right now, then it is a legal framework that sets the machinery in motion to start building case law around what can be reasonably expected of businesses in terms of protecting themselves and building long-term value.</p>
+
+<p><strong>Concluding Thoughts</strong></p>
+
+<p>Legal defensibility as a concept is still developing, but thus far all the feedback I've received has been extremely positive. It makes sense and is easily explained to people, regardless of their background. Part of the beauty in this approach is that the majority of people implicitly understand the goal: to make an argument that we did what we reasonable thought or knew to be right in protecting our assets.</p>
+
+<p>At the same time, legal defensibility provides a strong tool to present to executives, boards, and senior management to say "listen, we are not doing what we need to be doing to protect ourselves, and it's going to lead to bad consequences." It also creates an excellent opportunity for security teams to partner with legal teams (who often hold more sway with executives and boards) to start making strong points that more needs to be done to protect the business from online threats. Add in the potential for codifying this as part of law, making negligent actions not only costly in civil court, but potentially criminal, and it seems likely that executives will start paying closer attention.</p>
+
+<p>Hopefully you'll find this argument compelling. I look forward to your feedback. :)<br />
+</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/leadershipmanagement/" rel="tag">leadership-management</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=defensibility&amp;limit=20';return false;" rel="tag">defensibility</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=infosec&amp;limit=20';return false;" rel="tag">infosec</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=innovation&amp;limit=20';return false;" rel="tag">innovation</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=legal&amp;limit=20';return false;" rel="tag">legal</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    <div id="trackbacks" class="trackbacks">
+    <h2 class="trackbacks-header">5 TrackBacks</h2>
+
+    
+    
+
+
+    
+    
+        
+    <div class="trackbacks-content">
+        
+        <div class="trackback" id="ping-1700">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2010/05/work_hard_to_avoid_stupidity.html" rel="nofollow">Work Hard to Avoid Stupidity</a> from The Falcon's View on <a href="#ping-1700" rel="nofollow">May 10, 2010 11:05 AM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        I was reading this CSM summary of this year's Warren Buffett shareholder meeting and loved the closing comment about working hard to avoid stupidity. This sounds like an excellent goal for infosec, too. In fact, I'd go so far as... <a href="http://www.secureconsulting.net/2010/05/work_hard_to_avoid_stupidity.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div class="trackback" id="ping-1701">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2010/05/compliance_risk_management_are.html" rel="nofollow">Compliance & Risk Management Are Not the Devil</a> from The Falcon's View on <a href="#ping-1701" rel="nofollow">May 25, 2010  2:30 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        I am getting really tired of listening to whining without posited solutions. Not only has the security subset of the blogosphere dried up over the last few months, but the whining seems to be increasing. Compliance has been the whipping... <a href="http://www.secureconsulting.net/2010/05/compliance_risk_management_are.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div class="trackback" id="ping-1704">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2010/06/its_your_methods_not_your_madn.html" rel="nofollow">It's Your Methods, Not Your Madness</a> from The Falcon's View on <a href="#ping-1704" rel="nofollow">June  1, 2010  4:04 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        There has been a lot of negative, cynical chatter lately about risk assessment and risk management. The average person doesn't understand it, and people who should understand it oftentimes throw up their hands in despair when citing examples such as... <a href="http://www.secureconsulting.net/2010/06/its_your_methods_not_your_madn.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div class="trackback" id="ping-1711">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2010/08/approaching_the_problem_backwa.html" rel="nofollow">Approaching the Problem Backwards</a> from The Falcon's View on <a href="#ping-1711" rel="nofollow">August 24, 2010 11:09 AM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        I've read recently, with much interest, a post by Martin McKeay about how he would redesign the PCI framework, as well as an in-depth summary from InfoLawGroup about the most recent entry into the draft legislation pool on security and... <a href="http://www.secureconsulting.net/2010/08/approaching_the_problem_backwa.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    
+        
+        <div class="trackback" id="ping-1721">
+            <div class="inner">
+                <div class="trackback-header">
+                    <div class="asset-meta">
+                        <a href="http://www.secureconsulting.net/2010/12/you_cant_solve_whats_undefined.html" rel="nofollow">You Can't Solve What's Undefined </a> from The Falcon's View on <a href="#ping-1721" rel="nofollow">December  9, 2010  2:16 PM</a>
+                    </div>
+                </div>
+                <div class="trackback-content">
+                    <p>
+                        It's all over the news, whether we're talking about the TSA and "security theater" or Wikileaks and the sensitive data spewing out of government, business, and academia (there's a certain irony here, btw, insomuch as much of this data has... <a href="http://www.secureconsulting.net/2010/12/you_cant_solve_whats_undefined.html" rel="nofollow">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+</div>
+
+
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">6 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-742" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.securityarchitecture.com" href="http://www.securityarchitecture.com" rel="nofollow">Steve Gantz</a></span>
+
+                    | <a href="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html#comment-742"><abbr class="published" title="2010-03-24T14:48:00-05:00">March 24, 2010  2:48 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Agree with the premise, especially given the legal bind that organizations can find themselves in under the standard of due care. One clarification - in the Hooper case the shipping company was held liable for losses that could have been prevented had the boats been using radios, even though the use of radios was *NOT* a widespread or universal practice at the time. The analog to modern security practice is, say you hold off on deploying a promising leading edge security technology until it becomes pervasive. If the plaintiffs in a civil suit against you successfully argue that use of the new technology would have prevented the loss, that's it, you're liable. This often exceeds what an organization might choose to do following the standard risk-based approach to security unless organizations inlude the potential loss to customers as part of their impact calculations. That's exactly what I like about your legal defensibility concept, because (as I understand it) it makes organizations consider what they should do in their own protection, instead of managing for compliance or some other misguided approach.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-743" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html#comment-743"><abbr class="published" title="2010-03-24T16:15:49-05:00">March 24, 2010  4:15 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Thanks, Steve, you're absolutely correct on Hooper. I think this gets down to the question of what is or is not "reasonable" and "reasonably foreseeable." I think I misstated it a bit above (will look into that and change it as necessary). It seems in the case of Hooper that, while the use of radios was not prevalent on barges, if I recall the overall case correctly, the use of radios in general had become fairly widespread, including in other types of shipping operations. Arguing that "oh, it's not required or commonplace in my niche industry" isn't then a defense against adopting a technology that help mitigate a reasonably foreseeable threat.</p>
+
+<p>Thanks for your additional comments, too. I think you've summarized things quite well.</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-748" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://thirddefense.com" href="http://thirddefense.com" rel="nofollow">Jared Pfost</a></span>
+
+                    | <a href="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html#comment-748"><abbr class="published" title="2010-03-31T12:53:27-05:00">March 31, 2010 12:53 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>I find it interesting how a business risk approach can be myopic and an approach to satisfy 12 angry men holistic? Legal defensibility is just another impact driver, of course you should add legal to your business justification. However I don't suggest leading with it. Sales manager, "first we had to do x because of compliance, now we have to do y because of lawyers." How about letting the business decide what's best after you educate them, including legal precedent? Determining acceptable risk (Risk Management) isn't that hard if you align with the business goals and make them participate in the decisions. <br />
+Courts will define a new floor just as compliance has. Aiming for it may not be best for your business.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-3724" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://thirddefense.wordpress.com/" href="http://thirddefense.wordpress.com/" rel="nofollow">Jared Pfost</a></span>
+
+                    | <a href="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html#comment-3724"><abbr class="published" title="2011-05-04T21:53:21-05:00">May  4, 2011  9:53 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Given the lawsuits cropping up post breach, I think my comment last year was a bit myopicâ€¦ The first big precedent where a defendant is compliant but not legally defensible will be a whopper!</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-3725" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html#comment-3725"><abbr class="published" title="2011-05-04T22:51:37-05:00">May  4, 2011 10:51 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>It's good to see that you're coming around on this topic, Jared. :) My belief is that legal defensibility provides a sound, rational basis that could be codified easily while allowing us to move away from the particularly limited compliance mindset. The bar will continue to move forward over time, which will increase pressure on the business to not only properly assess its position on matters, but to also revisit those positions over time (i.e. what's adequate today may become inadequate tomorrow). Perhaps even more importantly - and inline with evidence-based risk management - is the notion that these decisions should all be thoroughly documented, dramatically shifting the burden onto the plaintiff.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-19475" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.bizworldusa.com/" href="http://www.bizworldusa.com/" rel="nofollow">Bizworldusa</a></span>
+
+                    | <a href="http://54.197.56.127/2010/03/legal-defensibility-doctrine.html#comment-19475"><abbr class="published" title="2012-07-24T03:22:05-05:00">July 24, 2012  3:22 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Nice article. I find it interesting how a business risk approach can be myopic and an approach to satisfy 12 angry men holistic? Legal defensibility is just another impact driver, of course you should add legal to your business justification. Thanks for sharing this information..........</p>
+
+<p>Thank you <br />
+Bizworldusa<br />
+</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>March 24, 2010 10:52 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2010/03/bsidesaustin-2010-recap.html">#BSidesAustin 2010 Recap</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2010/03/freeconference-is-freaking-out.html">FreeConference Is Freaking Out</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

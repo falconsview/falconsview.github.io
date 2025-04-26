@@ -1,0 +1,323 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>SAS 70 and the Lies Auditors Tell (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2010/03/freeconference_is_freaking_out.html" title="FreeConference Is Freaking Out" />
+   <link rel="next" href="http://www.secureconsulting.net/2010/04/i_am_infosec_and_so_can_you.html" title="I Am InfoSec, and So Can You" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2010/04/sas_70_and_the_lies_auditors_t.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/1015"
+    dc:title="SAS 70 and the Lies Auditors Tell"
+    dc:identifier="http://www.secureconsulting.net/2010/04/sas_70_and_the_lies_auditors_t.html"
+    dc:subject="infosec"
+    dc:description="If you&apos;ve been in the infosec industry for very long at all, then you&apos;ve probably run across auditors (either internal or external). In fact, if you&apos;ve been in the industry for a while, then there&apos;s a good chance you&apos;ve been..."
+    dc:creator="Ben Tomhave"
+    dc:date="2010-04-05T13:42:30-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2010/04/sas_70_and_the_lies_auditors_t.html">
+<dc:title>SAS 70 and the Lies Auditors Tell</dc:title>
+<dc:description>If you&apos;ve been in the infosec industry for very long at all, then you&apos;ve probably run across auditors (either internal or external). In fact, if you&apos;ve been in the industry for a while, then there&apos;s a good chance you&apos;ve been...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-04-05T13:42:30-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2010/03/freeconference_is_freaking_out.html">&laquo; FreeConference Is Freaking Out</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2010/04/i_am_infosec_and_so_can_you.html">I Am InfoSec, and So Can You &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">SAS 70 and the Lies Auditors Tell</h2>
+                     <div class="entry" id="entry-2243">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>If you've been in the infosec industry for very long at all, then you've probably run across auditors (either internal or external). In fact, if you've been in the industry for a while, then there's a good chance you've <em>been</em> an auditor. Regardless of your history with or view of auditors and audits, it is indisputable that audits are here, have been here for a while, and probably aren't going anywhere any time soon.</p>
+
+<p>This little rant today - and make no mistakes, it is a rant - is focused on that famous little audit standard known as <a target="_blank" href="http://en.wikipedia.org/wiki/Statement_on_Auditing_Standards_No._70:_Service_Organizations">SAS 70, or "Statement on Auditing Standards No. 70: Service Organizations"</a> in long-hand (<a target="_blank" href="http://umiss.lib.olemiss.edu:82/record=b1038093">full text here</a>). I've chosen the SAS 70 as an example because it is very prevalent in the industry, generally overused, and typically afforded far more weight than is really healthy or important. Specifically, the SAS 70 is so ubiquitous that one might think it was one of the most valuable tools in the world, while nothing could be further from the truth.<br />
+</p>
+                           </div>
+                           
+                           
+                           <div id="more" class="entry-more">
+                              <p><strong>A Little Background</strong></p>
+
+<p>To understand SAS 70, you need to first understand that there are 2 types of audits with nuanced differences. I like Wikipedia's description, so here ya go:<br />
+<blockquote>"There are two types of service auditor reports. A Type I service auditor’s report includes the service auditor's opinion on the fairness of the presentation of the service organization's description of controls that had been placed in operation and the suitability of the design of the controls to achieve the specified control objectives. A Type II service auditor’s report includes the information contained in a Type I service auditor's report and also includes the service auditor's opinion on whether the specific controls were operating effectively during the period under review."</blockquote><br />
+So, in a nutshell, Type 1 is combination paper- and interview-based exercise meant to identify and document controls in place, with the auditor's report provide an opinion on the presentation of the materials. As we'll note below, however, this opinion can be rather sketchy. The Type II report does actual tests of the effectiveness of the controls identified in the Type I report.</p>
+
+<p>I've seen a Type I take anywhere from 3-9 months, depending on how mature the organization is in terms of documented controls, and depending largely on the tenacity of the auditor. A SAS 70 15 years ago was a vastly different beast than the one we see today. Moreover, for better or worse I've even now seen large tech organizations making use of a SAS 70 for internal audit (or, so they claimed), since in such large orgs your internal auditors are effectively 3rd parties. But is any of this based on reality?</p>
+
+<p><strong>The Standard's Got No Clothes</strong></p>
+
+<p>If you read the <a target="_blank" href="http://umiss.lib.olemiss.edu:82/record=b1038093">full text</a> of SAS 70, the first thing you should notice is that it <strong>does not</strong> contain a controls framework. It is merely an audit standard that prescribes the <em>process</em> that must be followed when performing this particular type of audit. For those more familiar with PCI DSS, this reality will seem quite strange. An audit standard that provides no controls framework?</p>
+
+<p>This dirty little secret of SAS 70 has been abused for more than a decade, particularly by the likes of people aligned with ISACA and the AICPA who have hidden agenda. The Type I report is meant to identify controls and then document auditor opinion on those controls. But what is the basis for this opinion? The standard has no defined controls, and was in fact released in April 1992! We are following an audit standard that was written well before eCommerce was a reality.</p>
+
+<p>The sad fact is that, more often than not, organizations are being held to either a subjective set of controls for comparison or, worse, a framework that may not have been disclosed or may not have any relevance to their given environment (e.g. CObIT, COSO). Auditors generally bring to the table their experience, but sadly they are rarely current or former security practitioners, nor are they typically all that technical (though this is less the case today than 10 years ago). Especially if you're dealing with the Big N audit firms, it is not unusual to get extremely green and inexperienced auditors making recommendations without having an even remotely adequate background to provide such advice.</p>
+
+<p>Instead, many auditors will cling to their control framework of choice - typically CObIT - and then try to jam that cross-wise down the throat of the audited organization, whether their guidance makes any sense at all. This is, in fact, part of a greater conspiracy by the organizations who train and certify these auditors to push their own mantras regardless of fit to the client organization. Why? For the bottom line, of course. The more closely your organization aligns to the auditor's audit framework, then the more easily the auditors can audit your organization, reducing the amount of time they spend on the audit, and thus increasing their operating profitability since most audits are performed on a flat-rate or long-term contract basis.</p>
+
+<p><strong>ISACA, AICPA, and SOX</strong></p>
+
+<p>One of the more fascinating aspects of the audit business, and a part that often rears its head during SAS 70 audits, is the background role of ISACA and the AICPA. This role first became most apparent to me when I encountered the initial push for <a target="_blank" href="http://en.wikipedia.org/wiki/Sarbanes%E2%80%93Oxley_Act">Sarbanes–Oxley Act of 2002 (SOX)</a> compliance audits. SOX is a very poorly written Act that makes vague hand-waving motions about requiring better internal controls over financial processes and systems. It was drafted hastily in the wake of Enron scandal and really serves as a warning of what can happen if industry leaves regulation to Congress in the event of an ethical collapse.</p>
+
+<p>Fast-forward to the relevant section here... SOX Section 404... the requirement for annual reporting (by public companies) on the assessment of internal controls <em>as pertain to financial reporting</em>. Note the key qualifier here in that it highly limits scope. SOX has been taken by the <a target="_blank" href="http://en.wikipedia.org/wiki/Public_Company_Accounting_Oversight_Board">Public Company Accounting Oversight Board (PCAOB)</a> and the SEC and been turned into this rather egregious and nasty audit tarpit wherein publicly traded companies are now given very explicit requirements of duties to perform. In general, a risk-based approach must be used to managed these environments, with a risk assessment performed on a regular basis. However, if you listen to the ISACA/AICPA/PCAOB folks - who are oftentimes the same people, or at heavily allied - then you will see a general alignment around COSO for risk management, and ultimately a unified push toward control frameworks like CObIT.</p>
+
+<p>The interesting thing here is that SOX 404 does not mandate these frameworks. In fact, SOX 404 doesn't mandate much of anything at all. Instead, in empowering the PCAOB, and by extension the AICPA and ISACA, SOX 404 has been used to try and force publicly traded companies to use COSO and CObIT, even if companies have other preferred approaches that better match their environments.</p>
+
+<p>Given this psuedo-sanctioned pseudo-codification of COSO and CObIT under SOX 404 enforcement activities, it is often then further misconstrued that other audits, such as SAS 70, should be based on these frameworks. Of course, nothing could be further from the truth. Unfortunately, many auditors will implicitly use these frameworks as the basis for their audit guidance, oftentimes with dissonant results that steer organizations toward practices that may not make much sense in their given context whatsoever.</p>
+
+<p><strong>Auditor Independence</strong></p>
+
+<p>One of my biggest complaints with the role and empowerment of auditors today is the erosion of auditor independence. This attribute is in fact one of the key facets of SOX - one that is oftentimes downplayed by the auditors themselves. There are a couple key aspects to auditor important that are important.</p>
+
+<p>First, on its face, external auditors must not have a vested interest in the financial performance of the company they're auditing. If they do have a vested interest, then a conflict exists wherein the auditor must choose between providing a favorable audit report that could positively affect financial performance, or providing a negative audit report that could negative affect financial performance. This aspect of the rule is fairly self-evident.</p>
+
+<p>However, the second aspect of auditor importance - and one that is frequently overlooked or easily dismissed - pertains to ensuring that the auditors are not in fact running the organization that they are auditing. As a general rule, auditors are not security experts, nor are they business experts, nor are they policy experts, and so on. A good auditor will be expert in audit process, plain and simple, and will understand their role in the overall organization. Unfortunately, many auditors are ambitious and thus wish to transcend their role as "mere auditors."</p>
+
+<p>Unfortunately, if your risk and/or IT organizations are driven or run by auditors (internal OR external), then you have a serious conflict of interest in-hand that must be addressed, because the auditors are effectively writing the rules that they are then testing. That is, the rules exist in a vacuum that most likely lacks any sort of contextual relevance. More importantly, without independence, you cannot rely on the opinion of the auditors because they are codifying their biases into the rules.</p>
+
+<p>It is thus imperative that auditors have minimal vested interest in the performance of the organization. For this reason, I would caution the use of internal auditors without first putting in place very strict barrier to prevent them from having a role in writing the rules that they will later be asked to inspect as part of enforcement. This is not to say that internal audit does not have a role, especially in large organizations. Instead, it is to say that auditors should have their roles well-defined and intentionally segregated from the rest of risk management and operations to help ensure that their objectivity can be optimized.</p>
+
+<p><strong>It's All About Scope</strong></p>
+
+<p>Back to SAS 70... let's talk about one of its biggest weaknesses; a weakness that in fact applies to many audits, including PCI DSS. That weakness is scope. A standard practice in audit and assessment, and one that is particularly exercised with SAS 70, is to define a limited scope. Again, bear in mind that SAS 70 does not itself define a controls framework. As such, there is no real starting point or basis for audit. Instead, it's up to the auditor and the client to define what is to be audited. That scope can be as small or large as the client desires, with a particular tendency toward it being small. Sometimes 3rd party requirements will apply, such as contractual obligations, but otherwise the scope is purely discretionary.</p>
+
+<p>The problem here, of course, is that a client can eventually claim that they've "passed" a SAS 70 audit while barely testing anything at all. And this is of course allowed and perfectly acceptable, though if the reality were to get out, then it may end up doing more harm than good.</p>
+
+<p>At the same time, scope can be an excellent shield against auditor intrusiveness. SOX is again an excellent example. In the first year of compliance audits, it was not uncommon for the auditors to come in and tell organizations what would and would not be in scope. For the most part, this egregious violation of auditor independence resulted in massive audits that went well beyond the necessary scope. Even now I've seen cases where auditors will come in as part of the annual SOX audit and try to say that a certain area will be part of an "extra" value-add audit, even though that extra area is not part of the approved scope, and which has not really been prepared for auditor review.</p>
+
+<p>As such, it is important for client organizations to spend a reasonable amount of time defining the audit scope before the auditors arrive, and then fight vehemently against any changes in scope that auditors may push that do not have direct bearing on the desired audit activities. Do not let your auditors push you around. You're on the hook for the scope - sometimes legally (as is the case with SOX) - and thus you need to be satisfied with the audit scope.</p>
+
+<p><strong>A Snapshot in Time</strong></p>
+
+<p>I think it's conventional wisdom now, but it bears citing nonetheless. Audits, as assessments, are merely a snapshot in time. And, let's be honest, a lot can happen in a short period of time, even in the largest, slaggiest corporations. Consider, for example, a recent client. They were undertaking remediation ahead of a Type II evaluation period based in large part on Type I findings. The problem, however, was that the entire operational leadership team had changed during the course of the Type I audit. Findings that had likely been relevant and accurate at the beginning of the Type I audit 4 months earlier were now being challenged aggressively because new leaders had come onboard and had taken a more charitable view of their own teams.</p>
+
+<p>An audit or assessment is only accurate to the time at which it was performed. If it takes a month or two to close out the report, then there's a strong chance that things will change. This temporal limitation can be very vexatious in trying to perform remediation later.</p>
+
+<p><strong>Certify What?</strong></p>
+
+<p>One of the more annoying things I hear on a regular basis is that such-n-such organization has completed their "SAS 70 certification." Well, umm, no, that's not true. There is no such thing as a "SAS 70 certification." How could there be? As already noted ad nauseum, SAS 70 does not define a controls framework. As such, there's nothing to certify against. Contrast this with ISO 27001/27002, where a list of control objectives and controls are defined, and you will see the folly in claiming a SAS 70 "certification."</p>
+
+<p>What you get from a SAS 70 is an auditor's report, plain and simple. Nothing more, nothing less. It's a report with opinions, either on the completeness of the in-scope controls, or on the operating effectiveness of in-scope controls, but it is still just a report.</p>
+
+<p>Where I really choke on this notion of "SAS 70 certification" is when I find it in contracts. It's essentially a term that cannot be met. Lawyers and business people generally ignore the discrepancy and just do the needful in getting a SAS 70 completed, but if you wanted to really hinge on the fine details, this could be a real interesting test of competency. Personally, if I were writing contract terms, I think that I would be tempted to put in requirements like this just to test the competency of the other side as a basis for gauging whether we should even be working with them. Of course, IANAL, and there's probably a good reason for that... ;)</p>
+
+<p><strong>Final Thoughts</strong></p>
+
+<p>To wrap this up, here are the key take-aways for this post...<br />
+ * There is a role for audit, but it must be limited and controlled.<br />
+ * SAS 70 is just an audit process, it does not define controls.<br />
+ * Beware auditor bias and false assertions.<br />
+ * Beware attempts to under-scope or over-scope audits.<br />
+ * Bear in mind the temporal limitations of all audits and assessments.<br />
+ * In the end, audit is just one piece of the overall puzzle.<br />
+</p>
+                           </div>
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=audit&amp;limit=20" rel="tag">audit</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=auditors&amp;limit=20" rel="tag">auditors</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=insanity&amp;limit=20" rel="tag">insanity</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=SAS%2070&amp;limit=20" rel="tag">SAS 70</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on April  5, 2010  1:42 PM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2010/04/sas_70_and_the_lies_auditors_t.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/1015</p>
+                        </div>
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2243" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2243);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>April  5, 2010  1:42 PM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2010/03/freeconference_is_freaking_out.html">FreeConference Is Freaking Out</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2010/04/i_am_infosec_and_so_can_you.html">I Am InfoSec, and So Can You</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

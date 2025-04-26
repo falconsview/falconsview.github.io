@@ -1,0 +1,365 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta name="generator" content="Movable Type Pro 5.04" />
+
+   <link rel="stylesheet" href="http://www.secureconsulting.net/styles-site.css" type="text/css" />
+   <link rel="alternate" type="application/atom+xml" title="Atom" href="http://www.secureconsulting.net/atom.xml" />
+   <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://www.secureconsulting.net/index.xml" />
+
+   <title>Sorry Anton, PCI Absolutely Is a Checklisty Distraction (The Falcon's View)</title>
+
+   <link rel="start" href="http://www.secureconsulting.net/" title="Home" />
+   <link rel="prev" href="http://www.secureconsulting.net/2009/04/the_elephant_and_the_eye_of_th.html" title="The Elephant and the Eye of the Needle" />
+   <link rel="next" href="http://www.secureconsulting.net/2009/04/wheres_ben_rsa_reminder.html" title="Where's Ben? / RSA Reminder" />
+
+   <!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/">
+<rdf:Description
+    rdf:about="http://www.secureconsulting.net/2009/04/sorry_anton_pci_absolutely_is.html"
+    trackback:ping="http://www.secureconsulting.net/MT/mt-tb.cgi/866"
+    dc:title="Sorry Anton, PCI Absolutely Is a Checklisty Distraction"
+    dc:identifier="http://www.secureconsulting.net/2009/04/sorry_anton_pci_absolutely_is.html"
+    dc:subject="infosec"
+    dc:description="Anton had an interesting post up yesterday titled &quot;Five Reasons to Dislike PCI DSS – And Why They Are WRONG!&quot;. As per usual, it&apos;s decent writing, EXCEPT that poor Anton is wrong himself (not to mention that he listed 5..."
+    dc:creator="Ben Tomhave"
+    dc:date="2009-04-10T08:14:03-05:00" />
+</rdf:RDF>
+-->
+
+
+   
+   <!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://www.secureconsulting.net/2009/04/sorry_anton_pci_absolutely_is.html">
+<dc:title>Sorry Anton, PCI Absolutely Is a Checklisty Distraction</dc:title>
+<dc:description>Anton had an interesting post up yesterday titled &quot;Five Reasons to Dislike PCI DSS – And Why They Are WRONG!&quot;. As per usual, it&apos;s decent writing, EXCEPT that poor Anton is wrong himself (not to mention that he listed 5...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2009-04-10T08:14:03-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+   
+   <script type="text/javascript" src="http://www.secureconsulting.net/mt-site.js"></script>
+</head>
+<body class="layout-two-column-right individual-entry-archive" onload="individualArchivesOnLoad(commenter_name)">
+   <div id="container">
+      <div id="container-inner" class="pkg">
+
+         <div id="banner">
+            <div id="banner-inner" class="pkg">
+               <h1 id="banner-header"><a href="http://www.secureconsulting.net/" accesskey="1">The Falcon's View</a></h1>
+               <h2 id="banner-description">Mental meanderings of an infosec obsessive...</h2>
+            </div>
+         </div>
+
+         <div id="pagebody">
+            <div id="pagebody-inner" class="pkg">
+               <div id="alpha">
+                  <div id="alpha-inner" class="pkg">
+
+                     <p class="content-nav">
+                        <a href="http://www.secureconsulting.net/2009/04/the_elephant_and_the_eye_of_th.html">&laquo; The Elephant and the Eye of the Needle</a> |
+                        <a href="http://www.secureconsulting.net/">Main</a>
+                        | <a href="http://www.secureconsulting.net/2009/04/wheres_ben_rsa_reminder.html">Where's Ben? / RSA Reminder &raquo;</a>
+                     </p>
+
+
+                     <h2 id="archive-title">Sorry Anton, PCI Absolutely Is a Checklisty Distraction</h2>
+                     <div class="entry" id="entry-2090">
+                        <div class="entry-content">
+                           
+                           <div class="entry-body">
+                              <p>Anton had an interesting post up yesterday titled <a href="http://chuvakin.blogspot.com/2009/04/five-reasons-to-dislike-pci-dss-and-why.html">"Five Reasons to Dislike PCI DSS – And Why They Are WRONG!"</a>. As per usual, it's decent writing, EXCEPT that poor Anton is wrong himself (not to mention that he listed 5 "wrong" things, but then the fifth he says "right" to - a little confused by that!:).</p>
+
+<p>So, the two "wrong" reasons that I take issue with are:<blockquote>1. PCI DSS is a distraction from “real” risk management and security: WRONG!<br />
+2. PCI is just checklist security: WRONG!</blockquote>Anton elaborates on them further (read <a href="http://chuvakin.blogspot.com/2009/04/five-reasons-to-dislike-pci-dss-and-why.html">his post</a> for the full details).</p>
+
+<p>Here's the thing, I why I have to disagree with him... <em>perception</em> is far more important than <em>reality</em>. Just because the PCI Security Council actually intended for a risk-based approach, and just because they did not intend for it to be checklist security, does not mean this is in fact how it is perceived, let alone used. The fatal flaw is that the preamble of PCI in the beginning (v1.0) did not start "the following may appear to be a prescriptive checklist, but it is instead a way to benchmark organizational maturity using a risk-based model." The fact of the matter is that the PCI DSS does not define risk, does not tell you to setup a risk-based model, does not talk about maturity, etc. They tell you prescriptively what you have to do to become compliant. It's really a hideously bad thing, precisely because of Anton's #3 ("We “got compliant” and now we are breached – it’s PCI’s fault: WRONG!").</p>
+
+<p>The folly behind all this is: if you tell people specifically what needs to be done to achieve compliance, they will do that, and only that. It's the path of least resistance. And no matter how much you disclaim that "PCI compliance does not make you hacker proof" people will still think that compliance == security. Is this right? No. Does this make sense? No. Well, sort of. The problem is that people (generically) still do not fully understand information security. The feedback loops simply don't exist in the brain yet for understanding and reacting to infosec.</p>
+
+<p>So, to Anton, and others, I say that the PCI DSS has brought us to this failure scenario precisely because it used the wrong approach in <em>communicating</em> its mission and intent. The goal stated has always been one of compliance, rather than one of risk reduction, risk resiliency, or proper risk management. The reason we know the goal has always been compliance is because it's mandatory to meet all of their prescriptive requirements. This makes PCI DSS checklist security, whether they intended it to be that or not. Why? Because that's the path of least resistance - the easiest way to get that box checked.<br />
+</p>
+                           </div>
+                           
+                                        
+                           
+                           <div class="entry-tags">
+                               <h4 class="entry-tags-header">Tags:</h4> 
+                               <ul class="entry-tags-list">
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=infosec&amp;limit=20" rel="tag">infosec</a></li>
+                                   
+                                       <li class="entry-tag"><a href="http://www.secureconsulting.net/MT/mt-search.cgi?blog_id=12&amp;tag=PCI&amp;limit=20" rel="tag">PCI</a></li>
+                                   
+                               </ul>
+                           </div>
+                           
+                        </div>
+                        <p class="entry-footer">
+                           <span class="post-footers">
+                               
+                                   Posted by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> on April 10, 2009  8:14 AM
+                               
+                               
+                           </span> 
+                           <span class="separator">|</span> <a class="permalink" href="http://www.secureconsulting.net/2009/04/sorry_anton_pci_absolutely_is.html">Permalink</a>
+                        </p>
+                     </div>
+
+                     
+                     <div class="trackbacks">
+                        <h3 id="trackback" class="trackbacks-header">TrackBack</h3>
+                        <div id="trackbacks-info">
+                           <p>TrackBack URL for this entry:<br />http://www.secureconsulting.net/MT/mt-tb.cgi/866</p>
+                        </div>
+                        
+                           
+                              <div class="trackbacks-content">
+                              <p>Listed below are links to weblogs that reference <a href="http://www.secureconsulting.net/2009/04/sorry_anton_pci_absolutely_is.html" rel="nofollow">Sorry Anton, PCI Absolutely Is a Checklisty Distraction</a>:</p>
+                           
+                           <a id="p1662"></a>
+                           <div class="trackback" id="ping-1662">
+                              <div class="trackback-content">
+                                 <p>
+                                    &raquo; <a href="http://www.secureconsulting.net/2009/04/falcon_shrugged_debunking_myth.html" rel="nofollow">Falcon Shrugged: Debunking Myths of "PCI Shrugged"</a> from The Falcon's View<br />
+                                    I've finally had a chance to sit down and read "PCI Shrugged: Debunking Criticisms of PCI DSS" by Anton Chuvakin and Ben Rothke. My response to the article can also be construed as a follow-up to my earlier post, here.... <a href="http://www.secureconsulting.net/2009/04/falcon_shrugged_debunking_myth.html" rel="nofollow">[Read More]</a>
+                                 </p>
+                              </div>
+                              <p class="trackback-footer">
+                                 Tracked on <a href="#ping-1662" rel="nofollow">April 18, 2009  2:09 PM</a>
+                              </p>
+                           </div>
+                           
+                              </div>
+                           
+                        
+                     </div>
+                     
+
+                     
+                     <div id="comments" class="comments">
+                        
+                           
+                              <div class="comments-content">
+                                 <h3 class="comments-header">Comments (3)</h3>
+                           
+                                 <a id="c000601"></a>
+                                 <div class="comment" id="comment-601">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          Cory Scott:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>"If you tell people specifically what needs to be done to achieve compliance, they will do that, and only that." </p>
+
+<p>That's true --- for the subset of organizations who wouldn't have even implemented all of the baseline PCI DSS security measures in the first place. </p>
+
+<p>Look, I know the constant refrain that compliance != security, and in some cases, compliance inhibits security, diverts scarce resources away from more effective measures, and can give a "false sense" of security.</p>
+
+<p>However, the entire payment card industry is based on a shared trust model. Acquiring banks, issuers, merchants, and processors all need to handle data with a minimum baseline of security controls. When a single entity fails, many "innocent" partners and individuals take a loss.</p>
+
+<p>We could let each organization determine their own risk profile, assess, and customize a control set that is most effective for their organization and release them from oppressive and ridiculous chains of PCI DSS. However, how would you even start to assess the security of your partners in that trust chain if they all went off and did their own thing?</p>
+
+<p>"Proper" risk management requires understanding the transitive nature of trust and risk with the people you do business with. PCI DSS attempts do to that for a very complex and diverse environment. Compliance-oriented activity and checklists are a critical component, like it or not.</p>
+
+<p>What people continue to forget about PCI DSS is that it is a prescriptive set of security measures for the payment card system ecosystem - not for just a single organization. It is intended to strengthen the weakest links in the chain of trust, not replace your security program. </p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          Cory Scott  |
+                                          <a href="#comment-601">April 10, 2009 11:23 AM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-601" title="Permalink to this comment">April 10, 2009 11:23</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000602"></a>
+                                 <div class="comment" id="comment-602">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.chuvakin.org" href="http://www.chuvakin.org" rel="nofollow">Anton Chuvakin</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>Thanks for writing this; this totally inspires me to write a follow-up post :-)</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.chuvakin.org" href="http://www.chuvakin.org" rel="nofollow">Anton Chuvakin</a>  |
+                                          <a href="#comment-602">April 10, 2009  1:08 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-602" title="Permalink to this comment">April 10, 2009 13:08</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                        
+                           
+                                 <a id="c000603"></a>
+                                 <div class="comment" id="comment-603">
+                                    <div class="comment-inner">
+                                       <div class="comment-header">
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>:
+                                       </div>
+                                       <div class="comment-content">
+                                          <p>@Cory Scott:</p>
+
+<p>"the entire payment card industry is based on a shared trust model"</p>
+
+<p>I think you've hit on a key issue here, and one of my major bones of contention with the PCI DSS. Rather than fix the problem directly through improved technology in the cards themselves, the card brands have instead decided to pass the buck. Rather than add another $5/card in cost, they're asking each merchant (L1 and L2, anyway) to shell out $1m and up PER YEAR for compliance. And then they still get hacked. What problem has been solved here?</p>
+
+<p>Let's talk about one very straightforward solution. All data on the card should be block encrypted and should only be decrypted by, at least the bank, and ideally by the card brands themselves. Merchants can store that encrypted block all they want, it won't harm anything. Then you shift the responsibility for protecting the PAN itself to the bank and/or brands.</p>
+
+<p>I think that doing something like this would then shift the focus to implementing strong auth. But, the good news here, is that you /can/ come up with a one size fits all strong auth solution that is then mandated. Then you can reduce much of the DSS to something straight-forward, sensible, and easily implemented: system security and physical security.</p>
+
+<p>Barring this, I think that PCI DSS needs to mandate a risk mgmt approach, probably related to a maturity model of some sort (SSE-CMM, for example) and that builds off a more standardized security approach (e.g. ISO 27001), but one that is graduated/flexible to better match the needs of the wide range of orgs. PCI should not be so concerned about spelling out in painful details exactly what to implement on your network. They should be concerned that companies have good risk assessment, risk mgmt, and a security program to support it all. Good security == Good security.</p>
+                                       </div>
+                                       <p class="comment-footer">
+                                          Posted by
+                                          <a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a>  |
+                                          <a href="#comment-603">April 13, 2009  5:59 PM</a>
+                                       </p>
+                                       <p class="comment-footer-experimental">
+                                          Posted on
+                                          <a href="#comment-603" title="Permalink to this comment">April 13, 2009 17:59</a>
+                                       </p>
+                                    </div>
+                                 </div>
+                           
+                              </div>
+                           
+                        
+
+                         
+                        <form method="post" action="http://www.secureconsulting.net/MT/mt-comments.cgi" name="comments_form" onsubmit="if (this.bakecookie.checked) rememberMe(this)">
+                           <input type="hidden" name="static" value="1" />
+                           <input type="hidden" name="entry_id" value="2090" />
+                           
+                           <div class="comments-open" id="comments-open">
+                              <h2 class="comments-open-header">Post a comment</h2>
+                              
+                              <div class="comments-open-content">
+                                 <script type="text/javascript">
+                                 <!--
+                                 writeTypeKeyGreeting(commenter_name, 2090);
+                                 //-->
+                                 </script>
+                              
+                                 
+
+                                 <div id="comments-open-data">
+                                    <div id="name-email">
+                                       <p>
+                                          <label for="comment-author">Name:</label>
+                                          <input id="comment-author" name="author" size="30" />
+                                       </p>
+                                       <p>
+                                          <label for="comment-email">Email Address:</label>
+                                          <input id="comment-email" name="email" size="30" />
+                                       </p>
+                                    </div>
+
+                                    <p>
+                                       <label for="comment-url">URL:</label>
+                                       <input id="comment-url" name="url" size="30" />
+                                    </p>
+                                    <p>
+                                       <label for="comment-bake-cookie"><input type="checkbox"
+                                          id="comment-bake-cookie" name="bakecookie" onclick="if (!this.checked) forgetMe(document.comments_form)" value="1" />
+                                          Remember personal info?</label>
+                                    </p>
+                                 </div>
+
+                                 <p id="comments-open-text">
+                                    <label for="comment-text">Comments: </label>
+                                    <textarea id="comment-text" name="text" rows="15" cols="50"></textarea>
+                                 </p>
+                                 <div id="comments-open-footer" class="comments-open-footer">
+                                    <input type="submit" accesskey="v" name="preview" id="comment-preview" value="Preview" />
+                                    <input type="submit" accesskey="s" name="post" id="comment-post" value="Post" />
+                                 </div>
+                              </div>
+                           </div>
+                        </form>
+                        
+                     </div>
+                     
+                  </div>
+               </div>
+               <div id="beta">
+                  <div id="beta-inner" class="pkg">
+
+                      <div class="module-search module">
+                         <h2 class="module-header">Search</h2>
+                         <div class="module-content">
+                            <form method="get" action="http://www.secureconsulting.net/MT/mt-search.cgi">
+                               <input type="hidden" name="IncludeBlogs" value="12" />
+                               <label for="search" accesskey="4">Search this blog:</label><br />
+                               <input id="search" name="search" size="20" />
+                               <input type="submit" value="Search" />
+                            </form>
+                         </div>
+                      </div>
+
+                      <div class="module-welcome module">
+                         <h2 class="module-header">About</h2>
+                         <div class="module-content">
+                             <p class="first">This page contains a single entry from the blog posted on <strong>April 10, 2009  8:14 AM</strong>.</p>
+                             <p>The previous post in this blog was <a href="http://www.secureconsulting.net/2009/04/the_elephant_and_the_eye_of_th.html">The Elephant and the Eye of the Needle</a>.</p>
+
+                             <p>The next post in this blog is <a href="http://www.secureconsulting.net/2009/04/wheres_ben_rsa_reminder.html">Where's Ben? / RSA Reminder</a>.</p>
+
+                             <p>Many more can be found on the <a href="http://www.secureconsulting.net/">main index page</a> or by looking through <a href="http://www.secureconsulting.net/archives.html">the archives</a>.</p>
+                             
+                         </div>
+                      </div>
+
+                      <div class="module-syndicate module">
+                         <div class="module-content">
+                            <a href="http://www.secureconsulting.net/atom.xml">Subscribe to this blog's feed</a><br />
+                            [<a href="http://www.sixapart.com/about/feeds">What is this?</a>]
+                         </div>
+                      </div>
+
+                      
+                      <div class="module-creative-commons module">
+                         <div class="module-content">
+                            <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/"><img alt="Creative Commons License" src="http://i.creativecommons.org/l/by-nc-sa/2.5/88x31.png" /></a><br />
+                            This weblog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                         </div>
+                      </div>
+                      
+
+                      <div class="module-powered module">
+                         <div class="module-content">
+                            Powered by<br /><a href="http://www.sixapart.com/movabletype/">Movable Type Pro 5.04</a>
+                         </div>
+                      </div>
+
+                  </div>
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+</html>

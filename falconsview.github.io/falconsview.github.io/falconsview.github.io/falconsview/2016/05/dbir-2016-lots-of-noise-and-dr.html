@@ -1,0 +1,981 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2016/05/dbir-2016-lots-of-noise-and-dr.html">
+<dc:title>DBIR 2016: Lots of Noise and Drama, But Patching Still Sucks</dc:title>
+<dc:description>Unless you&apos;ve been offline in a remote land for the past month or so, you&apos;ve undoubtedly heard that the 2016 VzB DBIR is out. As with every year, two things have happened: 1) DBIR is now the basis of almost...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2016-05-06T09:32:22-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2016/05/dbir-2016-lots-of-noise-and-dr.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2016/04/on-the-approachability-of-prob.html" title="On the Approachability of Problems" />
+    <link rel="next bookmark" href="http://54.197.56.127/2016/05/alone-in-this-world.html" title="Alone In This World" />
+    
+    
+    <title>DBIR 2016: Lots of Noise and Drama, But Patching Still Sucks - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2511" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">DBIR 2016: Lots of Noise and Drama, But Patching Still Sucks</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2016-05-06T09:32:22-05:00">May  6, 2016  9:32 AM</abbr>
+
+                                        </span>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>Unless you've been offline in a remote land for the past month or so, you've undoubtedly heard that the <a href="http://www.verizonenterprise.com/verizon-insights-lab/dbir/" target="_blank">2016 VzB DBIR is out</a>. As with every year, two things have happened: 1) DBIR is now the basis of almost all infosec vendor marketing promos, and 2) data analysts are coming out of the woodwork to levy the same old criticisms and accusations that we hear every year.</p>
+
+<p>At the end of the day, there's a few consistent takeaways. First, yes, the data is biased. All data is biased. That's life. Welcome to data analysis 101. There's no such thing as "pure objectivity," only "more or less subjective." Second, yes, the data is dirty. It's inevitable, especially at scale coming from multiple sources. I think the bulk of the incident data is decent. Where things, as always, go off the rails is around the much-maligned vulnerability section (for example, <a href="https://blog.trailofbits.com/2016/05/05/the-dbirs-forest-of-exploit-signatures/" target="_blank">read Dan Guido's criticism piece</a>read Dan Guido's criticism piece, which links to others as well). Third, for all the noise and drama and bickering and ad hominem attacks, my conclusions don't change. At. All.</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>Patching Sucks</strong></p>
+
+<p>First and foremost, guess what? Orgs still suck at patching. Like, super-duper big-time suckage. From the plethora of IR reports, we know that vulns typically exist unpatched in live production environments for anywhere from 3-9 months, and oftentimes much, much, much longer. I've seen places that had vulnerable, unpatched apps and services that date back <em>years</em>. It's sad.</p>
+
+<p>Now, why does this happen? Well, several reasons. For one thing, patch-in-place can be tricky as it has this lovely tendency to break applications. For another thing, patching tools are still generally so-so at best. For another other thing, it's a still oftentimes a highly manual process that simply doesn't scale well, and we're dealing with insufficient resources to maintain everything. Consider, 20 years ago we often talked about sysadmin-to-server ratios of 1:10 or 1:20. Today, thanks to the promise of automation and orchestration tools (note, I say promise, not necessarily delivery), we're instead in the range of at least 1:100 if not 1:1000 or even 1:10000. That's at least how sysadmin positions seem to be staffed and funded today. Which would be all good and fine if all those systems (hosts, images, instances, whatever) were setup cleanly in the first place and fully leveraged vuln and patch mgmt tools that heavily automate the process. Alas, that's not generally reality.</p>
+
+<p>The answer, at least in terms of servers, is moving to a DevOps model, and even possibly to the containerized micro-services architecture model. In both these cases, you update your golden images and automatically run everything through the CI/CD pipeline, quickly build and test, push out in an A/B fashion, ramp up the new, ramp down the old, and fallback to the old if something breaks. Easy-peasy, right? Of course, how many orgs are operating in this fashion today? Very few. And note this doesn't do anything to address one of the most vulnerable endpoints: the one in the hands of your users!</p>
+
+<p>Rather than talk about the challenges to endpoint security, instead let me simply <a href="http://www.secureconsulting.net/2016/04/solving-endpoint-security.html" target="_blank">point you to my piece on how to solve that problem</a> by solving the underlying model itself. </p>
+
+<p>There's one other attribute to patching that is often overlooked, though finally gaining some visibility and tracking, and that's around application security and the presence of latent vulnerabilities in known bad libraries. At Gartner, we referred to this as "software composition analysis," and I think in general "component vulnerabilities" is the general phrase that describe things. Rather than go in-depth on the topic, I'll point you to <a href="http://www.veracode.com/VDBIR_%20Demonstrates_Traditional_Approaches_AppSec_Aren%E2%80%99t_Working" target="_blank">Veracode's blog post</a> on DBIR highlighting this issue as well as note that you can address this in your CI/CD pipeline for free simply by implementing <a href="https://www.owasp.org/index.php/OWASP_Dependency_Check" target="_blank">OWASP Dependency Check</a>, which I highly recommend doing. (no, seriously, stop reading, go implement it, then come back and finish reading - this blog post will still be here later)</p>
+
+<p><strong>People Suck</strong></p>
+
+<p>The second major theme from DBIR and myriad other reports is that people continue to be the weakest link in security models. Now, this is for a number of reasons, most of which revolve around the fact that we give them easily exploited systems and then somehow expect them to magically protect these vulnerable boxen without any tools for self-defense. So, ultimately, as infosec and IT professionals, it's our fault that people suck, because we're making them suck. Think about that the next time you want to mutter "stupid users" over the latest compromise.</p>
+
+<p>Beyond the fundamental failures of expecting people to not get pwnd in a vulnerable environment, there are other things that can and should be done. Doing security awareness in the traditional, stupid, CBT-driven way is not it. Instead, we need to do a far better job engaging our target audience and embed practices and awareness into their DNA. You cannot do this in one standard cookie cutter manner, but instead must invest in more progressive methods.</p>
+
+<p>Rather than delve into details about this topic, about which I'm in no way an expert, instead let me point you to a true expert on the topic, Samantha Davison. Check out <a href="https://www.rsaconference.com/events/us16/agenda/sessions/2489/300-cities-millennials-and-a-mobile-workforce-a" target="_blank">her RSA 2016 talk slides</a> and then go watch her <a href="https://products.office.com/en-us/business/modern-workplace/inside-security" target="_blank">interview on Microsoft's Modern Workplace web series</a>. </p>
+
+<p><strong>Data Dicks Abound</strong></p>
+
+<p>As eluded to earlier, every year there seems to be an uproar over the data and analysis that goes into the DBIR. In fact, it seems to ratchet-up more and more shrill every year, and frankly, it's getting a bit annoying. As already noted, yes, the data is dirty, yes there are biases, yes there are things that can (and should) be done differently and better. Great, make the point, criticize the methods and the data sets and then move on.</p>
+
+<p>Unfortunately, we have a very strongly opinionated subset of data investigators (get it, "dicks" is a reference to PIs, as in investigators haha I made a funny)... and, of course, when you take strong personalities and put them into a debate over minutiae, well, you're gone get some classic top grade drama. BUT... I have to ask... in all of this snarling and gnashing of teeth and devolution to ad hominem attacks... ARE YOU MAKING ANYTHING BETTER?</p>
+
+<p>I submit two things here: First, no, the public rants and shame-fests are <em>not</em> contributing positively to the discussion or the industry. In fact, in many ways, it tries to tear down the entire report, even though I don't think anybody anywhere would disagree with the main conclusions that we suck at patching and people are easily compromised. So, praytell, why waste the energy? Second, there absolutely could be a positive outcome from these criticisms... if and only if they remain focused on the data and methods, and propose ways to fix the problem, rather than simply piling on without construct solutions.</p>
+
+<p>There are a LOT of smart people involved in these raucous debates... many of whom I respect... and yet, I find it grossly disappointing that they've become data dicks under an alternative meaning and are not seemingly providing a positive addition to the industry.</p>
+
+<p>Of course, some of this also derives from the outright abuse of trust at the hands of industry of the previously free and public OSVDB, <a href="https://blog.osvdb.org/2016/04/05/osvdb-fin/" target="_blank">which shutdown in April</a> because vendors were taking advantage of free data for commercial purposes rather than paying a paltry sum to keep the project, and Open Security Foundation (OSF) up and running.</p>
+
+<p>Suffice to say, there's much angst to go around, but I think there's also a key takeaway here, which is this: We need to have the discipline and self-control to direct these discussions toward constructive criticisms and how to make things better, rather than letting everything devolve into a high school hallway slap-fest. At the end of the day, I really don't care <em>how</em> companies prioritize their patches, just that they get their heads out of the sand and actually patch things in a timely fashion! Leave the rest of haggling and wrangling to vendors selling products.</p>
+
+<p>---<br />
+At the end of the day, we know a few things, because they're consistent across all reports all over the place. People are easily duped via phishing attacks. Malware is still easily successful. Patching is still highly problematic (and indicative of a larger problem with how we deploy and maintain systems/environments).</p>
+
+<p>All the kibitzing over data and analysis and recommendations ends up being a rather pedantic, arcane exercise at this point, because once again we see that orgs are simply not evolving or maturing rapidly enough. We need better <em>operational</em> models more than better analytical models or even better data sets.</p>
+
+<p>So, please, don't worry too much about the ivory tower debates amongst the data dicks. Instead, focus on fixing your processes, practices, and architecture. Focus on key metrics like Mean Time To Compromise (MTTC), Mean Time To Detection (MTTD), and Mean Time To Remediation/Recovery/Repair (MTTR). I think you'll find that these simple <em>engineering</em> metrics will serve you far better than arguing over the best way to prioritize patches for your environment. Why? Because many/most orgs aren't even patching, let alone trying to figure out which patches to apply first. Oy.</p>
+
+<p>Have a good day!</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/musings/" rel="tag">musings</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=2016&amp;limit=20';return false;" rel="tag">2016</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=DBIR&amp;limit=20';return false;" rel="tag">DBIR</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=patching&amp;limit=20';return false;" rel="tag">patching</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=people&amp;limit=20';return false;" rel="tag">people</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=rants&amp;limit=20';return false;" rel="tag">rants</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=suckage&amp;limit=20';return false;" rel="tag">suckage</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>May  6, 2016  9:32 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2016/04/on-the-approachability-of-prob.html">On the Approachability of Problems</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2016/05/alone-in-this-world.html">Alone In This World</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

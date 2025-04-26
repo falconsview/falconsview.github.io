@@ -1,0 +1,1029 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2012/10/the-absurdity-that-is-egrc.html">
+<dc:title>The Absurdity That is EGRC</dc:title>
+<dc:description>You may have heard that Gartner&apos;s latest Magic Quadrant for Enterprise GRC (EGRC) was released this month (see a summary here, or go buy a full copy over here). There&apos;s been a ton of press releases and media coverage since...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2012-10-15T09:58:49-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2012/10/the-absurdity-that-is-egrc.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2012/10/feds-persist-with-eo-talk.html" title="Feds Persist with EO Talk, Despite Being Pwn3d" />
+    <link rel="next bookmark" href="http://54.197.56.127/2012/10/smbs-security-is-important-unconcerning.html" title="SMBs: Security is Important, Threats Aren&#039;t Concerning?" />
+    
+    
+    <title>The Absurdity That is EGRC - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2440" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">The Absurdity That is EGRC</h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2012-10-15T09:58:49-05:00">October 15, 2012  9:58 AM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2012/10/the-absurdity-that-is-egrc.html#comments">2 Comments</a>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>You may have heard that Gartner's latest Magic Quadrant for Enterprise GRC (EGRC) was released this month (see a summary <a target="_blank" href="http://www.gartner.com/technology/reprints.do?id=1-1CD8M80&ct=121004&st=sb">here</a>, or go buy a full copy over <a target="_blank" href="http://www.gartner.com/DisplayDocument?ref=clientFriendlyUrl&id=2186915">here</a>). There's been a ton of press releases and media coverage since Gartner's announcement, as well as some interesting responses. However, if you look at <a target="_blank" href="http://imagesrv.gartner.com/reprints/226100/226167/226167_1.png">the MQ graphic itself</a>, what you'll find is a melange of random tech companies providing solutions in a wide range of areas that may or may not qualify as "EGRC."</p>
+
+<p>According to their summary report, Gartner says that they define EGRC around four (4) key functions: risk management, audit management, compliance and policy management, and regulatory change management. However, as much as this might sound like a coherent set of criteria, their application of this definition is odd and inconsistent. For example, SAP and SAS both show up in the "Leaders" quadrant, yet SAS appears to barely meets these four functions, and certainly not in the comprehensive way you might expect, and SAP is even weaker at meeting these criteria (their "EGRC" solution is just one plugin module in their overall ERP framework). In both cases you would be far more likely to look to these technologies for financial risk management, and not for enterprise risk management. It's rare to encounter either of these products in the GRC RFPs and bake-offs we're seeing every month, and yet they're supposedly "Leaders" in the space? The same can in fact be said for 7 of the 9 products listed in that quadrant; they're simply not seen in routine GRC competitive situations much, if at all.</p>
+
+<p>Michael Rasmussen, who by most accounts invented the "GRC" monicker to describe the market space, <a target="_blank" href="http://www.corp-integrity.com/grc-technology/rethinking-grc-analyst-rant-gartners-2012-egrc-magic-quadrant">has posted a vitriolic rant</a> about this latest Gartner report, highlighting many of the discrepancies that the report and associated research process contain. Of his complaints, I think the most important one is that the report is "a mile wide and an inch deep." In <a target="_blank" href="http://blogs.gartner.com/french_caldwell/2012/10/10/oh-michael-your-rant/">his retort</a>, French Caldwell (co-author of the MQ report) even agrees that this is a shortcoming of the process and marketspace. This is curious to me... if you, as the authoring analyst, realize that you've defined the space too broadly, why would you then move forward with publishing a report at all? It seems to me that EGRC is ripe for re-segmenting, such as around Financial GRC, Legal GRC, etc.</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <p><strong>The Core Problem</strong></p>
+
+<p>At the heart of the matter is this: The report doesn't make sense and isn't useful for differentiating products! Just looking at the "Leaders" quadrant, are prospective customers really expected to compare SAP vs. SAS vs. bWise vs. RSA Archer vs. MetricStream?! Let's be really, truly honest here... just this quadrant alone is woefully inconsistent and incoherent. Unlike the IT GRC Magic Quadrant (a new market scope is expected out by end of year, with a new MQ out early next year), or the similar Forrester Wave for IT GRC, where we at least have a reasonably clear understanding of the types of data and functionality involved, as well as the placement in IT and executive reporting, EGRC has no clear sense of space or placement. Who are the customers and stakeholders? What business requirements are being met? What problem is being solved?</p>
+
+<p>Perhaps most disconcerting about Gartner's report is that it effectively misrepresents the capabilities of products that aren't even necessarily competing in the same space. For example, if you're looking to do better financial governance and risk management, you would almost certainly look to SAP or SAS or a similar company, and <em>not</em> to one of the providers who also have strong roots within IT GRC. On the other hand, if you're looking for a platform to aggregate, report on, and manage enterprise risk management across the board, then you might have cause to look more broadly. However, ultimately it's going to depend on business requirements and - more importantly - business stakeholders.</p>
+
+<p><strong>One Platform to Rule Them All?</strong></p>
+
+<p>One thought that this situation brings to mind is whether or not the end goal is to have one GRC platform to "rule them all" (so to speak). At the end of the day, do you need or want a single GRC solution to which everything is aggregated, and from which all reporting is done? I'm not convinced that the answer here is "yes." Rather, I think what we're finding is that there is a limit to how far you can aggregate and reduce data into single reports or super-metrics (a point I speak to in <a target="_blank" href="http://www.govtech.com/policy-management/Beware--Super-Metric-Analytics-Advice.html">a recent piece over on GovTech</a>). Over-aggregating data into super-metrics is a dangerous practice that can obscure much-needed detail and insight. One need only look at the 2008 credit crisis to see the potential outcome of such practices.</p>
+
+<p>Rather, I think it's far more logical to conclude that organizations (especially large orgs) will need 2-3 different platforms to help manage the different aspects of their business governance and risk management. For instance, a good segmentation could be Financial, Legal, and IT GRC, wherein all three are integrated to provide cross-feeds on key reports, but that are targeted to different audiences (e.g., CEO, CFO, CIO, COO, General Counsel). There are ways to pull reports into disparate platforms (usually), which means that executives would not need to whine about having to login to multiple systems, while the producers and managers of these datasets and reports could work within their respective systems to ensure that their respective areas of concern are properly managed. All of this is reasonable and rational; more so than defining some ill-fitting, nebulous area like Gartner has done with this absurd EGRC Magic Quadrant.</p>
+
+<p><strong>Not Really "Enterprise" Risk Management</strong></p>
+
+<p>Another key consideration here is whether any current "GRC" product truly does "enterprise" risk management (ERM). The short answer is: absolutely not! For a brief reminder, enterprise risk management is the overarching umbrella that includes all the subsets of risk management, such as financial, legal, credit, market, and operational risk (which itself includes IT/infosec/info risk). Today, no GRC solutions are really oriented toward aggregating these values up. More importantly, there's a strong case to be made that "enterprise risk management" is itself not an appropriate level of aggregation.</p>
+
+<p>At the end of the day, business leaders are not looking for a single magic ERM number. Instead, they're looking at the next layer down to analyze datasets around each of the respective verticals. In this way, ERM serves to define a discipline, but it is not ideally intended as a roll-up reporting level. Moreover, reporting at this level would be irresponsible and deceptive. How can you effectively manage risk in your organization if all you're seeing is a single gauge? You certainly wouldn't steer a vehicle in this manner, would you? Imagine if your car only had one magic gauge, with no external visibility. Would you trust it? Of course not!</p>
+
+<p><strong>Closing Thoughts</strong></p>
+
+<p>The best advice I can give you here is this: Ignore this latest report from Gartner on EGRC; this Magic Quadrant is not helpful, and will only serve to generate considerable confusion going forward (in fact, it already has). It's very clear that "EGRC" is not a coherent, well-defined market space, and as such we need to stop perpetuating it. Instead, it is better to continue what was already started when IT GRC was spun off into its own space. Similar changes need to be made, such as in spinning off Financial and Legal GRC, as well possibly several other spaces, along with reasonable, coherent definitions of each of these spaces.</p>
+
+<p>The challenge, however, will come in how to pull together all of these products. Toward that end, I think we need to go back to the drawing board. Each GRC sub-sector serves a valuable purpose, but we still need to see how they fit together in the big picture. I do <em>not</em> believe that there is, or should be, a single platform to rule them all. Instead, I believe that we need to find ways to integrate GRC platforms so that reporting can be cross-fed to provide the right views to each respective part of the business. Half of the challenge is getting reasonable reports created from various disparate - but related - datasets. The other half of the challenge is ensuring that we have not over-aggregated these datasets to the point of being meaningless super-metrics that obscure the truth about our environments (again, as reflected in the faulty risk models revealed in the fall-out of the 2008 credit crisis).</p>
+
+<p>Toward this end, we need to stop perpetuating myths, such as "EGRC," such as single "how compliant are we?" reports/metrics, such as single super-metrics around enterprise risk, and so on. We have good tools in given spaces already; we need only improve how bring them together. <em>That</em> should be our overarching directive in defining these markets, and not some farcical attempt to over-simplify and dilute one super-set market space, which results in an outcome like the 2012 EGRC MQ.</p>
+
+<p>Just say no to EGRC and demand something better.</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/musings/" rel="tag">musings</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/risk-management/" rel="tag">risk-management</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                </div>
+                            </div>
+
+
+                    
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">2 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-56418" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author">Tunde</span>
+
+                    | <a href="http://54.197.56.127/2012/10/the-absurdity-that-is-egrc.html#comment-56418"><abbr class="published" title="2013-03-16T18:56:01-05:00">March 16, 2013  6:56 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>The question at the back of mind now is: How then do we truly define the standards? from what I read here, it simply means there are no standards at all, and once the standards do not exist, then there is no way to even draw out a road map for a wholistic GRC strategy that would encompass the varous subsectors  - Fin GRC, IT GRC etc.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-57002" class="comment comment-reply">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span> replied to <a href="http://54.197.56.127/2012/10/the-absurdity-that-is-egrc.html#comment-56418">comment from Tunde</a>
+
+                    | <a href="http://54.197.56.127/2012/10/the-absurdity-that-is-egrc.html#comment-57002"><abbr class="published" title="2013-03-25T17:49:10-05:00">March 25, 2013  5:49 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>I hope that it's not so dire. I think there is room - and need - to produce standard definitions within each of the appropriate spaces. Where I think things fall down is in believing that the enterprise is truly a pyramid structure, and that at the tippy top there is only one standard. Instead, I believe that there are really a couple to a handful of roles at the top, such as CEO, COO, CFO, GC. These people are really all peers, and the areas for which they're responsible are, in many ways, standardized (e.g., standard accounting practices, business management and governance standards, legal standards, operational management standards including operational risk management standards).</p>
+
+<p>We should not over-aggregate to values that become less useful. We should only aggregate to the point where we can maximize reporting without losing value. EGRC and, really, ERM seem to me to be over-aggregating. You don't roll-up all your risk analyses into a single magic number, right? Few, if any, decisions are made on a single value, but will consider financial risk, legal risk, and operational risk. That's really my main point in the post.</p>
+
+<p>Thanks for the comment!</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>October 15, 2012  9:58 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2012/10/feds-persist-with-eo-talk.html">Feds Persist with EO Talk, Despite Being Pwn3d</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2012/10/smbs-security-is-important-unconcerning.html">SMBs: Security is Important, Threats Aren't Concerning?</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>

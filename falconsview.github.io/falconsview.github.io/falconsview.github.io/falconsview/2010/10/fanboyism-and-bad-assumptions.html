@@ -1,0 +1,1243 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" id="sixapart-standard">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="generator" content="Movable Type Pro 6.3.7" />
+<link rel="stylesheet" href="http://54.197.56.127/styles.css" type="text/css" />
+<link rel="start" href="http://54.197.56.127/" title="Home" />
+<link rel="alternate" type="application/atom+xml" title="Recent Entries" href="http://54.197.56.127/atom.xml" />
+<script type="text/javascript" src="http://54.197.56.127/mt.js"></script>
+<!--
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html">
+<dc:title>Fanboyism and Bad Assumptions </dc:title>
+<dc:description>Proving that writing a book does not make you right... Anton has a new blog post up (cross-posted, in fact) titled &quot;On Scope Shrinkage in PCI DSS&quot; - a sad little piece based on a lot of bad assumptions, and...</dc:description>
+<dc:creator>Ben Tomhave</dc:creator>
+<dc:date>2010-10-11T09:54:01-05:00</dc:date>
+<license rdf:resource="http://creativecommons.org/licenses/by-nc-sa/2.5/" />
+</Work>
+<License rdf:about="http://creativecommons.org/licenses/by-nc-sa/2.5/">
+</License>
+</rdf:RDF>
+-->
+
+<link rel="canonical" href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html" />
+
+
+    
+    <link rel="prev bookmark" href="http://54.197.56.127/2010/10/there-is-no-win.html" title="There Is No &quot;Win&quot;" />
+    <link rel="next bookmark" href="http://54.197.56.127/2010/10/fyi-novadcmd-infosec-career-fa.html" title="FYI NoVA/DC/MD: InfoSec Career Fair Tomorrow!" />
+    
+    
+    <title>Fanboyism and Bad Assumptions  - The Falcon&#039;s View</title>
+</head>
+<body id="classic-blog" class="mt-entry-archive layout-wt">
+    <div id="container">
+        <div id="container-inner">
+
+
+            <div id="header">
+    <div id="header-inner">
+        <div id="header-content">
+
+
+            <div id="header-name"><a href="http://54.197.56.127/" accesskey="1">The Falcon&#039;s View</a></div>
+            <div id="header-description">Mental meanderings of an infosec obsessive...</div>
+
+        </div>
+    </div>
+</div>
+
+
+
+            <div id="content">
+                <div id="content-inner">
+
+
+                    <div id="alpha">
+                        <div id="alpha-inner">
+
+
+                            <div id="entry-2299" class="entry-asset asset hentry">
+                                <div class="asset-header">
+                                    <h1 id="page-title" class="asset-name entry-title">Fanboyism and Bad Assumptions </h1>
+                                    <div class="asset-meta">
+                                        <span class="byline">
+
+                                            By <span class="vcard author"><a class="fn url" href="http://www.secureconsulting.net/">Ben Tomhave</a></span> on <abbr class="published" title="2010-10-11T09:54:01-05:00">October 11, 2010  9:54 AM</abbr>
+
+                                        </span>
+
+                                        <span class="separator">|</span> <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comments">10 Comments</a>
+
+
+                                    </div>
+                                </div>
+                                <div class="asset-content entry-content">
+
+                                    <div class="asset-body">
+                                        <p>Proving that writing a book does not make you right... Anton has a new blog post up (cross-posted, in fact) titled <a target="_blank" href="http://chuvakin.blogspot.com/2010/10/reposted-on-scope-shrinkage-in-pci-dss.html">"On Scope Shrinkage in PCI DSS"</a> - a sad little piece based on a lot of bad assumptions, and rooted in his blatant fanboyism for the standard that many have come to loath. In my typical fashion, here are some quotes and my thoughts on them...</p>
+                                    </div>
+
+
+                                    <div id="more" class="asset-more">
+                                        <blockquote>"People who came to PCI DSS assessments and related services... from doing pure information security often view PCI scope reduction as 'a cheap trick' aimed at making PCI DSS compliance undeservedly easier. They only think of scope reduction as of limiting the area where PCI DSS security controls apply - with negligence, supposedly, reigning supreme outside of that sacred area."</blockquote>
+
+<p>First, what is "pure information security"? Can anybody really claim this? I don't know anybody who started in infosec and had no background in another area, like network administration, systems administration, or software development. I mean, seriously... this is meaningless...</p>
+
+<p>Second, yes, of course the whole point of PCI scope reduction is to limit where the PCI controls apply - duh?! And, as we've seen, when smart hackers attack, they go after the non-PCI areas first, and then escalate access from there. Why bother attacking a hardened environment if you can simply pop an admin workstation and then enter through the admin back door? In my opinion, one of the greatest failings of PCI DSS is allowing the majority of an IT environment to be de-scoped simply by putting up a firewall. It's like putting an ATM in a remote, open field, and then saying "well, if we just put a fence around it, then you need only worry about securing the ATM" as if that would make it any harder to abscond with the unit.</p>
+
+<blockquote>"PCI on-site assessment is not an audit, stop calling it that!"</blockquote>
+
+<p>Let's see. There's a checklist. And there's a person who comes onsite to check items on that checklist. Sure sounds like an "audit" to me. Just because PCI calls them "assessors" does not mean it's not an audit, but nice try at playing semantic games. It certainly is not a security assessment being performed. And, btw, the comparison to SOX audits is ironic considering most major SOX audits end up performing almost the exact same tasks as a PCI audit. Sure, the requirements for SOX are ill-defined, but that doesn't stop auditors from making arbitrary comparisons and assertions, typically based on CObIT or similar cruft...</p>
+
+<p>Incidentally, if you look at #5 on his related annoyance list "Donâ€™t call QSA (Qualified Security Assessor) 'an auditor.' That 'A' does NOT stand for 'auditor' and PCI on-site assessment is not the same as, say, SOX audit." This is a load of BS. I don't care what you call the person performing the job, the job being performed is an audit, which is <a target="_blank" href="http://dictionary.reference.com/browse/audit">defined as "an official examination and verification of accounts and records."</a> The customer isn't being rated on a spectrum, they're being told on a binary scale whether or not they are compliant. It makes a difference, since audits don't promote growth and evolution, whereas assessments do/should.</p>
+
+<blockquote>"...tokenization, data vaults, virtual terminals, hashing, network segmentation, transient PAN storage all reduce scope and reduce risk â€“ at the same time. These are the things that make PCI compliance easier WHILE reducing the risk of damaging compromise."</blockquote>
+
+<p>Ah, but do all these things really reduce the risk? It seems that, really, the only thing that effectively and assuredly reduces risk is getting data out of the environment altogether. We've seen network segmentation fail. Data vaults and tokenization aren't completely reliable and in some cases are jinxed by shoddy solutions architecture. And so on... more importantly, I still think we're going to see a class break in payment systems that show tokenization to be a mild annoyance - a limiting factor - not an effective security measure.</p>
+
+<p>The simple truth is that many efforts to reduce PCI scope are merely parlor tricks and do not effectively increase security OR reduce risk. They're sleight of hand designed to give the illusion of either security as an emerging property or reduced exposure of data, when in reality shoddy practices, short-sightedness, or lousy implementations rule the day. Remember, in recent major breaches (e.g., Heartland), each merchant believed that they had met the <em>audit</em> requirements of PCI DSS, only to find out that these requirements weren't ironclad. Network segmentation is a perfect example where organizations greatly reduced the scope of PCI compliance, yet didn't do anything to improve the security of their overall environment, nor did they reduced the amount of sensitive data in their environment.</p>
+                                    </div>
+
+                                </div>
+                                <div class="asset-footer">
+
+    
+                                    <div class="entry-categories">
+                                        <h4>Categories<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a><span class="delimiter">,</span></li> <li class="entry-category"><a href="http://54.197.56.127/infosec/" rel="tag">infosec</a></li>
+                                        </ul>
+                                    </div>
+    
+
+
+                                    <div class="entry-tags">
+                                        <h4>Tags<span class="delimiter">:</span></h4>
+                                        <ul>
+                                            <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=gag&amp;limit=20';return false;" rel="tag">gag</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=PCI&amp;limit=20';return false;" rel="tag">PCI</a><span class="delimiter">,</span></li> <li><a href="javascript:void(0)" onclick="location.href='http://54.197.56.127/mt/mt-search.cgi?IncludeBlogs=12&amp;tag=scope&amp;limit=20';return false;" rel="tag">scope</a></li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                    
+                    <div id="comments" class="comments">
+
+
+    
+    
+        
+    <h2 class="comments-header">10 Comments</h2>
+            
+    <div id="comments-content" class="comments-content">
+        
+        <div id="comment-800" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-800"><abbr class="published" title="2010-10-13T21:21:44-05:00">October 13, 2010  9:21 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Hi Ben,</p>
+
+<p>First time poster, first time reader. I was reading through your post and on many points we agree. I too have a beef with "audit" vs. "assessment" -- who cares?! To the average merchant they are just different words meaning the same thing. In fact, many merchants have a different word to represent the "A" in QSA.</p>
+
+<p>Now I'm with you up until "...It seems that, really, the only thing that effectively and assuredly reduces risk is getting data out of the environment altogether... Data vaults and tokenization aren't completely reliable and in some cases are jinxed by shoddy solutions architecture. And so on... more importantly, I still think we're going to see a class break in payment systems that show tokenization to be a mild annoyance - a limiting factor - not an effective security measure."</p>
+
+<p>This seems like a very confused statement. You can reduce risk by getting the sensitive data out of the environment but because some tokenization vendors have shoddy solutions, tokenization will be nothing more than a speed bump for hackers? That is a very broad brush. What about a tokenization solution that is not based on a shoddy architecture and securely sends the data off site? Not all tokenization solutions are made equal. The weakest point of most tokenization solutions (at least offsite solutions) is what PCI refers to a the de-tokenization layer. But not all tokenization solutions have this layer available. If the tokens are not mathematically generated based on the card number (which they should not based on the original definition of "tokenization"), and if the de-tokenization layer is not available (as in a third-party payment gateway where card numbers enter, but only tokens are ever returned), please explain the weakness that these hackers will exploit.<br />
+</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-801" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-801"><abbr class="published" title="2010-10-13T22:07:41-05:00">October 13, 2010 10:07 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Hi Steve -</p>
+
+<p>Thanks for your comment! My main concern with most tokenization solutions is that the merchant typically retains their existing, and often broken, payment system. Hopefully I'll be proven wrong, but I will not be surprised to start hearing about a class break of these systems that results in fraudulent charges/credits made through the systems, regardless of the use of tokenization.</p>
+
+<p>Obviously compromising the tokens isn't a major concern, unless the tokenization solution isn't good. Hopefully gateways are issuing unique tokens that are bound to specific merchants and cannot be used from non-merchant systems. Controls like this would help reduce the scope of a breach. SaaS solutions like yours are potentially interesting, and I'd hope that these types of services employee a high degree of compartmentalization between customers, systems, data, etc. We should always assume that a breach will happen and then proceed from there in terms of limiting damage, ensuring continued operations despite degraded conditions, and optimizing recovery.</p>
+
+<p>Lastly, I recommend reading my post about Akamai's EdgeTokenization solution as it probably does a better job describing some of my concerns. You can read it here:<br />
+<a href="http://www.secureconsulting.net/2010/09/thoughts_on_akamais_edgetokeni.html" rel="nofollow">http://www.secureconsulting.net/2010/09/thoughts_on_akamais_edgetokeni.html</a></p>
+
+<p>Thank you,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-802" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-802"><abbr class="published" title="2010-10-14T13:04:49-05:00">October 14, 2010  1:04 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>Thanks for the reference and I will give it a read. I think what you're describing is an onsite tokenization solution and yes, this just moves the risk around and I don't see any scope differences for the merchant overall -- the merchant and most all the systems are in full PCI scope. The merchant may be able to shore up some weak POS systems with a solution like this if properly implimented, but most merchants will get more bang for the buck with an offsite tokenization solution (if de-tokenization can be avoided).</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-805" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.chuvakin.org" href="http://www.chuvakin.org" rel="nofollow">Anton Chuvakin</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-805"><abbr class="published" title="2010-10-15T16:38:38-05:00">October 15, 2010  4:38 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>>really, the only thing that effectively and assuredly reduces risk is getting data out of the environment altogether.</p>
+
+<p></p>
+
+<p>Dude, this seems like one of the key point and it just makes no sense. Why REMOVING the data reduces the risk, but REDUCING THE AMOUNT of data or REDUCING THE SPREAD of data doesn't?</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-806" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-806"><abbr class="published" title="2010-10-18T07:38:35-05:00">October 18, 2010  7:38 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>@Steve -</p>
+
+<p>I think tokenization in the cloud is equally problematic when the legacy payment platform is still maintained. I very much believe that we'll see attacks on these payment platforms that, while they'll not directly expose credit card data, will be abused to make fraudulent charges or charge-backs. It's all part of the enablement culture where we (infosec people, services, vendors) start taking away responsibilities from merchants, and so they think they're safe and don't do anything at all, making them easier to compromise, and then we either have to take on even more responsibilities (like fraud monitoring and detection), or we have to give it all back to them and make them responsible. Tokenization solutions are only half-way, and thus imo kludged. Why stop at tokenization? Why not take away the payment platform altogether?</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-808" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-808"><abbr class="published" title="2010-10-18T07:47:43-05:00">October 18, 2010  7:47 AM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>@Anton - </p>
+
+<p>I would argue that "reducing the amount of data" is the same as "removing data from the environment." In terms of "reducing the spread" - I disagree. As long as the data is in the environment, there's inherent risk involved. I've seen enough lousy implementations of centralized data warehouses full of this data that I'm not convinced at all that centralizing reducing the risk all that much. It makes for a really big target, and typically one that tombstones records rather than expunging them. *shrug* I still think that we shouldn't be wasting our time with this tokenization kludge and should be skipping straight to "Level 3 and 4 merchants are prohibited from storing cardholder data in their environments." There are already viable alternatives, and I think those should be favored strongly over tokenization and similar kludges.</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-809" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-809"><abbr class="published" title="2010-10-18T13:13:58-05:00">October 18, 2010  1:13 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>RE: "Why not take away the payment platform altogether?" and "...I still think that we shouldn't be wasting our time with this tokenization kludge and should be skipping straight to 'Level 3 and 4 merchants are prohibited from storing cardholder data in their environments.'"</p>
+
+<p>So I take it your promoting stand-beside CC environments for level 3 & 4 merchants. I would argue that these stand-beside solutions come with all the same risks and vulnerabilities that the integrated solutions you are replacing have. These stand-beside solutions still rely on CPU's, communication ports, connectivity of some sort, usually either phone or IP over the Internet, and these devices can still be hacked (again, I would argue much more easily than a properly configured "kludged" solution as you call it). If you're talking phone, most dial-up terminals (all that I have hands-on experience with) do not encrypt the traffic on the phone line so to me this is a bigger hole than you are trying to solve. Storing a token vs. not storing any info are virtually the same as far as risk profile goes (ignoring the fact that you limit the merchants ability to fight a charge-back). Whether tokens are used or not, the weakest point is the transfer of the CC info to whatever system is tokenizing or processing the data.</p>
+
+<p>Lastly you mentioned the possibility of fraudulent charges and charge-backs using a tokenization or kludged solution -- this is a fluff statement because this risk exists in all payment systems (token, non-token, and stand-beside). Any half way decent payment system must address this risk, either via reporting and/or risk scoring during the authorization process.<br />
+</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-810" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-810"><abbr class="published" title="2010-10-18T13:24:46-05:00">October 18, 2010  1:24 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>@Steve - </p>
+
+<p>No idea what a "stand-beside solution" is, sorry. What I'm saying is that smaller merchants should not be hosting their payment application, nor should they be hosting any of the sensitive data (cardholder info, customer info, etc.). Is that what you're talking about? The complaint from merchants is that they can't afford to fix their stuff. A service provider, on the other hand, would have to build these security requirements into their business model, and thus would by definition be able to afford the costs.</p>
+
+<p>As for your last quip on fraudulent charges and charge-backs, this is exactly my point! There is no difference, token or no token. So, what improvement has been made here? Tokenization protects the card brands, not the merchant. It doesn't improve security, it merely reduces the risk associated with the likely loss magnitude. However, it does not eliminate fraudulent transactions, but merely limits the scope of the fraud from a single breach.</p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-812" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.shift4.com/" href="http://www.shift4.com/" rel="nofollow">Steve Sommers</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-812"><abbr class="published" title="2010-10-18T14:30:16-05:00">October 18, 2010  2:30 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>"Stand-beside" as in a little dedicated mom-integrated credit card terminal you see at usually smaller merchant establishments from time to time. Sorry, I thought you were promoting these devices. I fully agree that in most situations (possibly all situations), merchants, no matter what size (levels 1-4), should not be storing credit card information.</p>
+        </div>
+    </div>
+</div>
+        
+    
+        
+        <div id="comment-813" class="comment">
+    <div class="inner">
+        <div class="comment-header">
+            <div class="asset-meta">
+                <span class="byline">
+                    
+
+                    <span class="vcard author"><a title="http://www.secureconsulting.net/" href="http://www.secureconsulting.net/" rel="nofollow">Ben</a></span>
+
+                    | <a href="http://54.197.56.127/2010/10/fanboyism-and-bad-assumptions.html#comment-813"><abbr class="published" title="2010-10-18T14:53:26-05:00">October 18, 2010  2:53 PM</abbr></a>
+
+                </span>
+            </div>
+        </div>
+        <div class="comment-content">
+            <p>@Steve - </p>
+
+<p>I'm no vendor, have no horse in this race. I try to look at these things from a more strategic perspective, perhaps with a skew toward favoring the merchants. Where I disagree with something like PCI is that it takes a problem that is directly attributable to decisions that the card brands have made and assigns responsibility for mitigation to the merchants, who are really just the customer here. It's a modern oddity that the service providers think the customers should have to pay for their own weaknesses and failings. IANAL, but at some point I have to think this turns into negligence of breach of contract or what-have-you. Anyway.</p>
+
+<p>cheers,</p>
+
+<p>-ben</p>
+        </div>
+    </div>
+</div>
+        
+    </div>
+            
+        
+    
+    
+    
+
+
+</div>
+
+
+
+
+                        </div>
+                    </div>
+
+
+                    <div id="beta">
+    <div id="beta-inner">
+
+
+    
+    <div class="widget-search widget">
+    <h3 class="widget-header">Search</h3>
+    <div class="widget-content">
+        <form method="get" action="http://54.197.56.127/mt/mt-search.cgi">
+            <input type="text" id="search" class="ti" name="search" value="" />
+
+            <input type="hidden" name="IncludeBlogs" value="12" />
+
+            <input type="hidden" name="limit" value="20" />
+            <input type="submit" accesskey="4" value="Search" />
+        </form>
+    </div>
+</div>
+
+<div class="widget-about-this-page widget">
+    <h3 class="widget-header">
+
+        About this Entry
+
+
+    </h3>
+    <div class="widget-content">
+
+
+        <p class="first">This page contains a single entry by <a href="http://www.secureconsulting.net/">Ben Tomhave</a> published on <em>October 11, 2010  9:54 AM</em>.</p>
+    
+        <p><a href="http://54.197.56.127/2010/10/there-is-no-win.html">There Is No "Win"</a> was the previous entry in this blog.</p>
+    
+    
+        <p><a href="http://54.197.56.127/2010/10/fyi-novadcmd-infosec-career-fa.html">FYI NoVA/DC/MD: InfoSec Career Fair Tomorrow!</a> is the next entry in this blog.</p>
+    
+
+
+
+
+
+        <p>Find recent content on the <a href="http://54.197.56.127/">main index</a> or look in the <a href="http://54.197.56.127/archives.html">archives</a> to find all content.</p>
+
+    </div>
+</div>
+
+<div class="widget-archive widget-archive-category widget">
+    <h3 class="widget-header">Categories</h3>
+    <div class="widget-content">
+    
+        
+        <ul>
+        
+        
+            <li><a href="http://54.197.56.127/booksreading/">books-reading (41)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/conferences/">conferences (29)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/economics/">economics (17)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/education/">education (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/entertainment/">entertainment (11)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/healthwellness/">health-wellness (37)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/humor/">humor (31)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/ihatetraffic/">IHateTraffic (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/infosec/">infosec (354)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/leadershipmanagement/">leadership-management (16)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li>LiveBlog-SpecialEvent
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/miscellaneous/">miscellaneous (74)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/musings/">musings (161)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/">personal (35)</a>
+        
+        
+        
+        <ul>
+        
+        
+            <li>Laila
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/personal/life-lessons/">Life_Lessons (3)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/politics/">politics (145)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/psychology/">psychology (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sports/">sports (14)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/technology/">technology (38)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/travel/">travel (24)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/weirdscience/">weird-science (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/wine/">wine (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/workjobs/">work-jobs (34)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/writing/">writing (4)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/devops/">DevOps (1)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/sira/">SIRA (2)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/research/">research (5)</a>
+        
+        
+            </li>
+        
+    
+        
+        
+            <li><a href="http://54.197.56.127/risk-management/">risk-management (25)</a>
+        
+        
+            </li>
+        
+        </ul>
+        
+    
+    </div>
+</div>
+
+
+
+
+    <div class="widget-archive-monthly widget-archive widget">
+    <h3 class="widget-header">Monthly <a href="http://54.197.56.127/archives.html">Archives</a></h3>
+    <div class="widget-content">
+        <ul>
+        
+            <li><a href="http://54.197.56.127/2018/01/">January 2018 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/10/">October 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/09/">September 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/08/">August 2017 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/03/">March 2017 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/02/">February 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2017/01/">January 2017 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/12/">December 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/09/">September 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/08/">August 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/07/">July 2016 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/05/">May 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/04/">April 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2016/02/">February 2016 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/11/">November 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/09/">September 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/07/">July 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/06/">June 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/05/">May 2015 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/04/">April 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/03/">March 2015 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2015/01/">January 2015 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/09/">September 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/08/">August 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/07/">July 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/04/">April 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/03/">March 2014 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/02/">February 2014 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2014/01/">January 2014 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/12/">December 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/11/">November 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/10/">October 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/09/">September 2013 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/08/">August 2013 (1)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/07/">July 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/06/">June 2013 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/03/">March 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/02/">February 2013 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2013/01/">January 2013 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/12/">December 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/11/">November 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/10/">October 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/09/">September 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/08/">August 2012 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/07/">July 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/06/">June 2012 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/05/">May 2012 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/04/">April 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/03/">March 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/02/">February 2012 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2012/01/">January 2012 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/12/">December 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/11/">November 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/10/">October 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/09/">September 2011 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/08/">August 2011 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/07/">July 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/06/">June 2011 (4)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/05/">May 2011 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/04/">April 2011 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/03/">March 2011 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/02/">February 2011 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2011/01/">January 2011 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/12/">December 2010 (2)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/11/">November 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/10/">October 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/09/">September 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/08/">August 2010 (7)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/07/">July 2010 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/06/">June 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/05/">May 2010 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/04/">April 2010 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/03/">March 2010 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/02/">February 2010 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2010/01/">January 2010 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/12/">December 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/11/">November 2009 (9)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/10/">October 2009 (5)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/09/">September 2009 (6)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/08/">August 2009 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/07/">July 2009 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/06/">June 2009 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/05/">May 2009 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/04/">April 2009 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/03/">March 2009 (14)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/02/">February 2009 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2009/01/">January 2009 (3)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/12/">December 2008 (11)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/11/">November 2008 (12)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/10/">October 2008 (18)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/09/">September 2008 (21)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/08/">August 2008 (25)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/07/">July 2008 (17)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/06/">June 2008 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/05/">May 2008 (19)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/04/">April 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/03/">March 2008 (32)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/02/">February 2008 (39)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2008/01/">January 2008 (41)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/12/">December 2007 (26)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/11/">November 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/10/">October 2007 (15)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/09/">September 2007 (8)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/08/">August 2007 (20)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/07/">July 2007 (10)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/06/">June 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/05/">May 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/04/">April 2007 (22)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/03/">March 2007 (23)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/02/">February 2007 (13)</a></li>
+        
+    
+        
+            <li><a href="http://54.197.56.127/2007/01/">January 2007 (20)</a></li>
+        
+        </ul>
+    </div>
+</div>
+        
+    
+
+
+
+<div class="widget-pages widget">
+    <h3 class="widget-header">Pages</h3>
+    <div class="widget-content">
+        <ul>
+    
+    
+            <li class="folder folder-78"><strong>about</strong>
+        
+            </li>
+        
+    
+        </ul>
+    </div>
+</div>
+
+<div class="widget-syndication widget">
+    <div class="widget-content">
+        <ul>
+            <li><img src="http://54.197.56.127/mt-static/images/status_icons/feed.gif" alt="Subscribe to feed" width="9" height="9" /> <a href="http://54.197.56.127/atom.xml">Subscribe to this blog's feed</a></li>
+
+        </ul>
+    </div>
+</div>
+<div class="widget-powered widget">
+    <div class="widget-content">
+        <a href="http://www.movabletype.com/"><img src="http://54.197.56.127/mt-static/images/bug-pbmt-white.png" alt="Powered by Movable Type 6.3.7" width="80" height="61" /></a>
+    </div>
+</div>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+                </div>
+            </div>
+
+
+            <div id="footer">
+    <div id="footer-inner">
+        <div id="footer-content">
+            <div class="widget-powered widget">
+                <div class="widget-content">
+                    Powered by <a href="http://www.movabletype.org/">Movable Type Pro</a>
+                </div>
+            </div>
+
+            <div class="widget-creative-commons widget">
+                <div class="widget-content">
+                    This blog is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/2.5/">Creative Commons License</a>.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+        </div>
+    </div>
+</body>
+</html>
